@@ -1,4 +1,4 @@
-Thinking back to [[The Playbook - EP3 - Watching Notes|The Playbook - EP3]], and one of the rules that has been bouncing around my head [[20201-02-02|today]] has been
+Thinking back to [[The Playbook - EP3 - Watching Notes|The Playbook - EP3]], and one of the rules that has been bouncing around my head [[2021-02-02|today]] has been
 
 
 > [[The Playbook - EP3 - Watching Notes#6 Don't Coach the Player coach the Team|Don't Coach The Player - Coach The Team]]

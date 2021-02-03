@@ -4,27 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "7b30581f529758bf",
+        "id": "81fb4810fed2f798",
         "type": "leaf",
+        "active": true,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/the evening ramble/2021-02-02 - The Evening Ramble.md",
-            "mode": "preview"
+            "file": "daily/the morning pages/2021-02-03 - The Morning Pages].md",
+            "mode": "source"
           },
           "pinned": true
         }
       },
       {
-        "id": "81fb4810fed2f798",
+        "id": "985d4f4f861193fc",
         "type": "leaf",
-        "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tweet-threads/kefimochi/1356774215001640962 - would a jr survive if ghosted by their manager.md",
-            "mode": "preview"
+            "file": "daily/2021-02-02.md",
+            "mode": "source"
           }
         }
       }
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#tk",
+                "query": "20201",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -90,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tweet-threads/kefimochi/1356774215001640962 - would a jr survive if ghosted by their manager.md",
+                "file": "daily/the morning pages/2021-02-03 - The Morning Pages].md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tweet-threads/kefimochi/1356774215001640962 - would a jr survive if ghosted by their manager.md"
+                "file": "daily/the morning pages/2021-02-03 - The Morning Pages].md"
               }
             }
           },
@@ -135,15 +136,15 @@
     "width": 300
   },
   "lastOpenFiles": [
-    "tweet-threads/kefimochi/1356774215001640962 - would a jr survive if ghosted by their manager.md",
-    "tweet-threads/evan_just_evan/@evan_just_evan.md",
-    "tweet-threads/e_p82/@e_p82.md",
-    "tweet-threads/kefimochi/@kefimochi.md",
-    "tweet-threads/Neurodiverse Twitter.md",
-    "tweet-threads/Tech Twitter.md",
+    "daily/the morning pages/2021-02-03 - The Morning Pages].md",
+    "inbox/refactored/2021/02/03/2102030801- and now, done the shift from tweeting in bed to standing at my desk.md",
     "daily/2021-02-02.md",
-    "tweet-threads/evan_just_evan/1356781702312570884 - Avoid ghosting new hires.md",
-    "tweet-threads/kefimochi/Untitled.md",
-    "tweet-threads/evan_just_evan/@kefimochi.md"
+    "daily/the evening ramble/_notes/Coach The Team Not The Player - adapting to change.md",
+    "daily/the evening ramble/2021-02-02 - The Evening Ramble.md",
+    "daily/the evening ramble/2021-02-01 - The Evening Ramble.md",
+    "daily/the morning pages/learning to trust happy.md",
+    "daily/the morning pages/tk.md",
+    "daily/the morning pages/The Morning Pages Prompts.md",
+    "daily/the morning pages/Good Morning Evan, how are you doing this morning.md"
   ]
 }
