@@ -1,0 +1,1 @@
+[[maybe part of the problem with diversity guild was it being a guild in the first place]]

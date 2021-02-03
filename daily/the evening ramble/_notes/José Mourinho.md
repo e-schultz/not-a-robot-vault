@@ -1,0 +1,3 @@
+---
+aliases: [José Mourinho, Mourinho]
+---

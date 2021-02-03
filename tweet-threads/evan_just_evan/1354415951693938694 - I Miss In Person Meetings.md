@@ -1,0 +1,51 @@
+---
+aliases: ["@evan_just_evan - I miss in person meetings"]
+---
+- [Tweet](https://twitter.com/i/status/1354415951693938694) by [[@evan_just_evan]] [🐦](https://twitter.com/evan_just_evan) on [[2021-01-27]]:  [[Tech Twitter]]
+- I miss in person meetings.
+  - Being able to look around the room - have my eyes able to switch between people, what's being projected on the screen, or down to my notebook.
+  - The fixed distance to my monitor all the time is exhausting.
+- There are also so many subtle things that you pick up on from body language, who sat next to who - who is avoiding who, the glance that someone gives someone else when something is said.
+- Even with the best connection and high quality cameras - so many micro expressions get lost, and that slight lag will always be there.
+  - People turning off thier cameras is getting to be more normal - I appreciate that, as the constant wall of zoom faces is exhausting to process.
+- Even with the best connection and high quality cameras - so many micro expressions get lost, and that slight lag will always be there.
+  - People turning off thier cameras is getting to be more normal - I appreciate that, as the constant wall of zoom faces is exhausting to process.
+- I miss meetings where I'd be facilitating - getting the room ready with post it notes and markers
+  - Able to walk around the room - Write things down on the board.
+- Found it easier to keep track of who was being talkative, who was being quiet - able to create space for other voices to speak up.
+  - So many of the queues of "I am now done talking", and a natural point for someone else to speak up are harder to read - body language, eye contact,
+- is that pause intentional - or did zoom just freeze.
+- The small talking you'd have outside of the room waiting for another meeting to end.
+  - The walk through the office giving you the opportunity to see other people you haven't seen in awhile - and maybe jog a memory of
+  - "oh yeah - I needed to talk to soandso about X"
+- The way that associative memory works - walking the floor and seeing people reminding me of things I need to do, instead of always needing to rely on my todo list and reminders.
+- Even just the ebb and flow of people in the office - seeing someone walk by my desk "oh yeah I'm in that meeting with them", and tagging along on the walk instead of the 10th digital reminder of 20 for the day.
+- When I'm lost in Hyperfocus - the movement of people around the office being a much more gentle nudge out of that headspace and a reminder that I should go ear, use the washroom, get some water, go for lunch.
+- I love the ability to work from home, but long term remote work is not for me, or at least how I'm working remote right now.
+  - Maybe that's the difference between remote first companies, and companies adapting to remote.
+- But it feels like I'm in a cycle of my brain continually breaking - putting it back together with tape, chewing gum and a bit of hope.
+  - I'm exhausted in ways that I didn't know that I could be exhausted.
+- It's impacting my personal life, and personal life is impacting work.
+  - When everything happens in the same glass shoebox in the sky - it's hard not to.
+- I've had weeks where I've forgotten to get groceries - or I've meant to, but so tapped and drained it turns into another delivery order.
+  - I've had Sunday's roll by and realize that I haven't had a shower in days.
+- Trying to rebuild my self care routine - adjusting what's worked before to fit the new reality.
+  - Tossing out some old tools as they are not longer working or relevant, trying new ones.
+- Trying to fit the into the rhythm of sprints and backlogs and regular meetings.
+  - But when the basic elements of self care are falling out from under me - I'm grasping at straws trying to stay afloat.
+- I've been in similar headspaces before.
+  - I'm starting to recgonize some patterns.
+  - Part recognizing the warning signs - and I need to stop hitting snooze on those alarms.
+  - Part reminder that I have pulled myself out of this loop before.
+- My head is switching from a shut down mode blank slate, to suddenly being a roar of a thousand fog horns blasting of all at once.
+- A silence where trying to connect to thoughts feels impossible.
+  - Or a wall of sound where any single thought is indistinguishable from another.
+- [[Trying to navigate to an in between so I can start to sort out this mess that is my brain]].
+  - But I'm so
+  - Fucking
+  - Exhausted
+- And the frustrating thing - put another person infront of me, and ask me how I'm doing.
+  - The perky everything is fine mask comes on - vocalizing my own needs feels like doing a root canal on my brain.
+  - I deflect to talk about and address the needs of others while ignoring my own
+- I'm the fool ensuring everyone else has thier oxygen mask first on while I'm gasping for air.
+- .... This thread took a sharp turn.

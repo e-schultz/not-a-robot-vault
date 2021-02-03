@@ -1,0 +1,149 @@
+{
+  "main": {
+    "id": "e31e966e13c2a9c1",
+    "type": "split",
+    "children": [
+      {
+        "id": "7b30581f529758bf",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "daily/the evening ramble/2021-02-02 - The Evening Ramble.md",
+            "mode": "preview"
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "81fb4810fed2f798",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "tweet-threads/kefimochi/1356774215001640962 - would a jr survive if ghosted by their manager.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c39d7997f0fbb701",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef7aa77aa0cfdd25",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bfcb8d1dc575e15a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "5fa20e823c39564a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#tk",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "39d72d53b77c880f",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ae0222fa3723fc85",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe4ff189b28197c0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "50298848f796e1bc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "tweet-threads/kefimochi/1356774215001640962 - would a jr survive if ghosted by their manager.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "40e14598a7f24177",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "42c1161ce3d86ef9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "tweet-threads/kefimochi/1356774215001640962 - would a jr survive if ghosted by their manager.md"
+              }
+            }
+          },
+          {
+            "id": "de9c60cb6040faf7",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "lastOpenFiles": [
+    "tweet-threads/kefimochi/1356774215001640962 - would a jr survive if ghosted by their manager.md",
+    "tweet-threads/evan_just_evan/@evan_just_evan.md",
+    "tweet-threads/e_p82/@e_p82.md",
+    "tweet-threads/kefimochi/@kefimochi.md",
+    "tweet-threads/Neurodiverse Twitter.md",
+    "tweet-threads/Tech Twitter.md",
+    "daily/2021-02-02.md",
+    "tweet-threads/evan_just_evan/1356781702312570884 - Avoid ghosting new hires.md",
+    "tweet-threads/kefimochi/Untitled.md",
+    "tweet-threads/evan_just_evan/@kefimochi.md"
+  ]
+}
