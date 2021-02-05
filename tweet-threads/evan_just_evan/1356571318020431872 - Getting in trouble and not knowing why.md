@@ -42,9 +42,9 @@
   - When hands down eyes up - so focuses on paying attention, that I didn't hear what the teacher was saying.
   - But hey - I looked like I was paying attention.
 
-- When your neurodiverse, and bullied for stuttering and being gay.
-  - Getting in trouble and bullied for simply existing and about things that you don't understand - and can't change.
-  - Becoming invisible can feel like the next best option.
+- When your [[neurodivergent|neurodiverse]], and bullied for stuttering and being gay. ^7b01d9
+  - Getting in trouble and bullied for simply existing and about things that you don't understand - and can't change. ^2db210
+  - Becoming invisible can feel like the next best option. ^526008
 
 - Eventually you learn to mask I guess.
   - In high school I lucked out and got a few good teachers that let me be me, and became pockets of safe space - during, and outside of class.

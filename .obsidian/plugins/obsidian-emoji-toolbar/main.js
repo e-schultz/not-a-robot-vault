@@ -31,44 +31,6 @@ function __extends(d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 }
 
-var __assign = function() {
-    __assign = Object.assign || function __assign(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-
-function __rest(s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-}
-
-function __decorate(decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function __param(paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function __metadata(metadataKey, metadataValue) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
 function __awaiter(thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -107,20701 +69,17118 @@ function __generator(thisArg, body) {
     }
 }
 
-var __createBinding = Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-});
-
-function __exportStar(m, o) {
-    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
-}
-
-function __values(o) {
-    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-    if (m) return m.call(o);
-    if (o && typeof o.length === "number") return {
-        next: function () {
-            if (o && i >= o.length) o = void 0;
-            return { value: o && o[i++], done: !o };
-        }
-    };
-    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function __read(o, n) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator];
-    if (!m) return o;
-    var i = m.call(o), r, ar = [], e;
-    try {
-        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-    }
-    catch (error) { e = { error: error }; }
-    finally {
-        try {
-            if (r && !r.done && (m = i["return"])) m.call(i);
-        }
-        finally { if (e) throw e.error; }
-    }
-    return ar;
-}
-
-function __spread() {
-    for (var ar = [], i = 0; i < arguments.length; i++)
-        ar = ar.concat(__read(arguments[i]));
-    return ar;
-}
-
-function __spreadArrays() {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
-};
-
-function __await(v) {
-    return this instanceof __await ? (this.v = v, this) : new __await(v);
-}
-
-function __asyncGenerator(thisArg, _arguments, generator) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var g = generator.apply(thisArg, _arguments || []), i, q = [];
-    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
-    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
-    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-    function fulfill(value) { resume("next", value); }
-    function reject(value) { resume("throw", value); }
-    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function __asyncDelegator(o) {
-    var i, p;
-    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
-}
-
-function __asyncValues(o) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var m = o[Symbol.asyncIterator], i;
-    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function __makeTemplateObject(cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
-};
-
-var __setModuleDefault = Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-};
-
-function __importStar(mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-}
-
-function __importDefault(mod) {
-    return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function __classPrivateFieldGet(receiver, privateMap) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to get private field on non-instance");
-    }
-    return privateMap.get(receiver);
-}
-
-function __classPrivateFieldSet(receiver, privateMap, value) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to set private field on non-instance");
-    }
-    privateMap.set(receiver, value);
-    return value;
-}
-
-var grinning = {
-	keywords: [
-		"face",
-		"smile",
-		"happy",
-		"joy",
-		":D",
-		"grin"
-	],
-	char: "😀",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var grimacing = {
-	keywords: [
-		"face",
-		"grimace",
-		"teeth"
-	],
-	char: "😬",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var grin = {
-	keywords: [
-		"face",
-		"happy",
-		"smile",
-		"joy",
-		"kawaii"
-	],
-	char: "😁",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var joy = {
-	keywords: [
-		"face",
-		"cry",
-		"tears",
-		"weep",
-		"happy",
-		"happytears",
-		"haha"
-	],
-	char: "😂",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var rofl = {
-	keywords: [
-		"face",
-		"rolling",
-		"floor",
-		"laughing",
-		"lol",
-		"haha"
-	],
-	char: "🤣",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var partying = {
-	keywords: [
-		"face",
-		"celebration",
-		"woohoo"
-	],
-	char: "🥳",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var smiley = {
-	keywords: [
-		"face",
-		"happy",
-		"joy",
-		"haha",
-		":D",
-		":)",
-		"smile",
-		"funny"
-	],
-	char: "😃",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var smile = {
-	keywords: [
-		"face",
-		"happy",
-		"joy",
-		"funny",
-		"haha",
-		"laugh",
-		"like",
-		":D",
-		":)"
-	],
-	char: "😄",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var sweat_smile = {
-	keywords: [
-		"face",
-		"hot",
-		"happy",
-		"laugh",
-		"sweat",
-		"smile",
-		"relief"
-	],
-	char: "😅",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var laughing = {
-	keywords: [
-		"happy",
-		"joy",
-		"lol",
-		"satisfied",
-		"haha",
-		"face",
-		"glad",
-		"XD",
-		"laugh"
-	],
-	char: "😆",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var innocent = {
-	keywords: [
-		"face",
-		"angel",
-		"heaven",
-		"halo"
-	],
-	char: "😇",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var wink = {
-	keywords: [
-		"face",
-		"happy",
-		"mischievous",
-		"secret",
-		";)",
-		"smile",
-		"eye"
-	],
-	char: "😉",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var blush = {
-	keywords: [
-		"face",
-		"smile",
-		"happy",
-		"flushed",
-		"crush",
-		"embarrassed",
-		"shy",
-		"joy"
-	],
-	char: "😊",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var slightly_smiling_face = {
-	keywords: [
-		"face",
-		"smile"
-	],
-	char: "🙂",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var upside_down_face = {
-	keywords: [
-		"face",
-		"flipped",
-		"silly",
-		"smile"
-	],
-	char: "🙃",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var relaxed = {
-	keywords: [
-		"face",
-		"blush",
-		"massage",
-		"happiness"
-	],
-	char: "☺️",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var yum = {
-	keywords: [
-		"happy",
-		"joy",
-		"tongue",
-		"smile",
-		"face",
-		"silly",
-		"yummy",
-		"nom",
-		"delicious",
-		"savouring"
-	],
-	char: "😋",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var relieved = {
-	keywords: [
-		"face",
-		"relaxed",
-		"phew",
-		"massage",
-		"happiness"
-	],
-	char: "😌",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var heart_eyes = {
-	keywords: [
-		"face",
-		"love",
-		"like",
-		"affection",
-		"valentines",
-		"infatuation",
-		"crush",
-		"heart"
-	],
-	char: "😍",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var smiling_face_with_three_hearts = {
-	keywords: [
-		"face",
-		"love",
-		"like",
-		"affection",
-		"valentines",
-		"infatuation",
-		"crush",
-		"hearts",
-		"adore"
-	],
-	char: "🥰",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var kissing_heart = {
-	keywords: [
-		"face",
-		"love",
-		"like",
-		"affection",
-		"valentines",
-		"infatuation",
-		"kiss"
-	],
-	char: "😘",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var kissing = {
-	keywords: [
-		"love",
-		"like",
-		"face",
-		"3",
-		"valentines",
-		"infatuation",
-		"kiss"
-	],
-	char: "😗",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var kissing_smiling_eyes = {
-	keywords: [
-		"face",
-		"affection",
-		"valentines",
-		"infatuation",
-		"kiss"
-	],
-	char: "😙",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var kissing_closed_eyes = {
-	keywords: [
-		"face",
-		"love",
-		"like",
-		"affection",
-		"valentines",
-		"infatuation",
-		"kiss"
-	],
-	char: "😚",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var stuck_out_tongue_winking_eye = {
-	keywords: [
-		"face",
-		"prank",
-		"childish",
-		"playful",
-		"mischievous",
-		"smile",
-		"wink",
-		"tongue"
-	],
-	char: "😜",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var zany = {
-	keywords: [
-		"face",
-		"goofy",
-		"crazy"
-	],
-	char: "🤪",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var raised_eyebrow = {
-	keywords: [
-		"face",
-		"distrust",
-		"scepticism",
-		"disapproval",
-		"disbelief",
-		"surprise"
-	],
-	char: "🤨",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var monocle = {
-	keywords: [
-		"face",
-		"stuffy",
-		"wealthy"
-	],
-	char: "🧐",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var stuck_out_tongue_closed_eyes = {
-	keywords: [
-		"face",
-		"prank",
-		"playful",
-		"mischievous",
-		"smile",
-		"tongue"
-	],
-	char: "😝",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var stuck_out_tongue = {
-	keywords: [
-		"face",
-		"prank",
-		"childish",
-		"playful",
-		"mischievous",
-		"smile",
-		"tongue"
-	],
-	char: "😛",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var money_mouth_face = {
-	keywords: [
-		"face",
-		"rich",
-		"dollar",
-		"money"
-	],
-	char: "🤑",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var nerd_face = {
-	keywords: [
-		"face",
-		"nerdy",
-		"geek",
-		"dork"
-	],
-	char: "🤓",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var sunglasses = {
-	keywords: [
-		"face",
-		"cool",
-		"smile",
-		"summer",
-		"beach",
-		"sunglass"
-	],
-	char: "😎",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var star_struck = {
-	keywords: [
-		"face",
-		"smile",
-		"starry",
-		"eyes",
-		"grinning"
-	],
-	char: "🤩",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var clown_face = {
-	keywords: [
-		"face"
-	],
-	char: "🤡",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var cowboy_hat_face = {
-	keywords: [
-		"face",
-		"cowgirl",
-		"hat"
-	],
-	char: "🤠",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var hugs = {
-	keywords: [
-		"face",
-		"smile",
-		"hug"
-	],
-	char: "🤗",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var smirk = {
-	keywords: [
-		"face",
-		"smile",
-		"mean",
-		"prank",
-		"smug",
-		"sarcasm"
-	],
-	char: "😏",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var no_mouth = {
-	keywords: [
-		"face",
-		"hellokitty"
-	],
-	char: "😶",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var neutral_face = {
-	keywords: [
-		"indifference",
-		"meh",
-		":|",
-		"neutral"
-	],
-	char: "😐",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var expressionless = {
-	keywords: [
-		"face",
-		"indifferent",
-		"-_-",
-		"meh",
-		"deadpan"
-	],
-	char: "😑",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var unamused = {
-	keywords: [
-		"indifference",
-		"bored",
-		"straight face",
-		"serious",
-		"sarcasm",
-		"unimpressed",
-		"skeptical",
-		"dubious",
-		"side_eye"
-	],
-	char: "😒",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var roll_eyes = {
-	keywords: [
-		"face",
-		"eyeroll",
-		"frustrated"
-	],
-	char: "🙄",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var thinking = {
-	keywords: [
-		"face",
-		"hmmm",
-		"think",
-		"consider"
-	],
-	char: "🤔",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var lying_face = {
-	keywords: [
-		"face",
-		"lie",
-		"pinocchio"
-	],
-	char: "🤥",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var hand_over_mouth = {
-	keywords: [
-		"face",
-		"whoops",
-		"shock",
-		"surprise"
-	],
-	char: "🤭",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var shushing = {
-	keywords: [
-		"face",
-		"quiet",
-		"shhh"
-	],
-	char: "🤫",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var symbols_over_mouth = {
-	keywords: [
-		"face",
-		"swearing",
-		"cursing",
-		"cussing",
-		"profanity",
-		"expletive"
-	],
-	char: "🤬",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var exploding_head = {
-	keywords: [
-		"face",
-		"shocked",
-		"mind",
-		"blown"
-	],
-	char: "🤯",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var flushed = {
-	keywords: [
-		"face",
-		"blush",
-		"shy",
-		"flattered"
-	],
-	char: "😳",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var disappointed = {
-	keywords: [
-		"face",
-		"sad",
-		"upset",
-		"depressed",
-		":("
-	],
-	char: "😞",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var worried = {
-	keywords: [
-		"face",
-		"concern",
-		"nervous",
-		":("
-	],
-	char: "😟",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var angry = {
-	keywords: [
-		"mad",
-		"face",
-		"annoyed",
-		"frustrated"
-	],
-	char: "😠",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var rage = {
-	keywords: [
-		"angry",
-		"mad",
-		"hate",
-		"despise"
-	],
-	char: "😡",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var pensive = {
-	keywords: [
-		"face",
-		"sad",
-		"depressed",
-		"upset"
-	],
-	char: "😔",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var confused = {
-	keywords: [
-		"face",
-		"indifference",
-		"huh",
-		"weird",
-		"hmmm",
-		":/"
-	],
-	char: "😕",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var slightly_frowning_face = {
-	keywords: [
-		"face",
-		"frowning",
-		"disappointed",
-		"sad",
-		"upset"
-	],
-	char: "🙁",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var frowning_face = {
-	keywords: [
-		"face",
-		"sad",
-		"upset",
-		"frown"
-	],
-	char: "☹",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var persevere = {
-	keywords: [
-		"face",
-		"sick",
-		"no",
-		"upset",
-		"oops"
-	],
-	char: "😣",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var confounded = {
-	keywords: [
-		"face",
-		"confused",
-		"sick",
-		"unwell",
-		"oops",
-		":S"
-	],
-	char: "😖",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var tired_face = {
-	keywords: [
-		"sick",
-		"whine",
-		"upset",
-		"frustrated"
-	],
-	char: "😫",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var weary = {
-	keywords: [
-		"face",
-		"tired",
-		"sleepy",
-		"sad",
-		"frustrated",
-		"upset"
-	],
-	char: "😩",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var pleading = {
-	keywords: [
-		"face",
-		"begging",
-		"mercy"
-	],
-	char: "🥺",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var triumph = {
-	keywords: [
-		"face",
-		"gas",
-		"phew",
-		"proud",
-		"pride"
-	],
-	char: "😤",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var open_mouth = {
-	keywords: [
-		"face",
-		"surprise",
-		"impressed",
-		"wow",
-		"whoa",
-		":O"
-	],
-	char: "😮",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var scream = {
-	keywords: [
-		"face",
-		"munch",
-		"scared",
-		"omg"
-	],
-	char: "😱",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var fearful = {
-	keywords: [
-		"face",
-		"scared",
-		"terrified",
-		"nervous",
-		"oops",
-		"huh"
-	],
-	char: "😨",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var cold_sweat = {
-	keywords: [
-		"face",
-		"nervous",
-		"sweat"
-	],
-	char: "😰",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var hushed = {
-	keywords: [
-		"face",
-		"woo",
-		"shh"
-	],
-	char: "😯",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var frowning = {
-	keywords: [
-		"face",
-		"aw",
-		"what"
-	],
-	char: "😦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var anguished = {
-	keywords: [
-		"face",
-		"stunned",
-		"nervous"
-	],
-	char: "😧",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var cry = {
-	keywords: [
-		"face",
-		"tears",
-		"sad",
-		"depressed",
-		"upset",
-		":'("
-	],
-	char: "😢",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var disappointed_relieved = {
-	keywords: [
-		"face",
-		"phew",
-		"sweat",
-		"nervous"
-	],
-	char: "😥",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var drooling_face = {
-	keywords: [
-		"face"
-	],
-	char: "🤤",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var sleepy = {
-	keywords: [
-		"face",
-		"tired",
-		"rest",
-		"nap"
-	],
-	char: "😪",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var sweat = {
-	keywords: [
-		"face",
-		"hot",
-		"sad",
-		"tired",
-		"exercise"
-	],
-	char: "😓",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var hot = {
-	keywords: [
-		"face",
-		"feverish",
-		"heat",
-		"red",
-		"sweating"
-	],
-	char: "🥵",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var cold = {
-	keywords: [
-		"face",
-		"blue",
-		"freezing",
-		"frozen",
-		"frostbite",
-		"icicles"
-	],
-	char: "🥶",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var sob = {
-	keywords: [
-		"face",
-		"cry",
-		"tears",
-		"sad",
-		"upset",
-		"depressed"
-	],
-	char: "😭",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var dizzy_face = {
-	keywords: [
-		"spent",
-		"unconscious",
-		"xox",
-		"dizzy"
-	],
-	char: "😵",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var astonished = {
-	keywords: [
-		"face",
-		"xox",
-		"surprised",
-		"poisoned"
-	],
-	char: "😲",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var zipper_mouth_face = {
-	keywords: [
-		"face",
-		"sealed",
-		"zipper",
-		"secret"
-	],
-	char: "🤐",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var nauseated_face = {
-	keywords: [
-		"face",
-		"vomit",
-		"gross",
-		"green",
-		"sick",
-		"throw up",
-		"ill"
-	],
-	char: "🤢",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var sneezing_face = {
-	keywords: [
-		"face",
-		"gesundheit",
-		"sneeze",
-		"sick",
-		"allergy"
-	],
-	char: "🤧",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var vomiting = {
-	keywords: [
-		"face",
-		"sick"
-	],
-	char: "🤮",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var mask = {
-	keywords: [
-		"face",
-		"sick",
-		"ill",
-		"disease"
-	],
-	char: "😷",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var face_with_thermometer = {
-	keywords: [
-		"sick",
-		"temperature",
-		"thermometer",
-		"cold",
-		"fever"
-	],
-	char: "🤒",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var face_with_head_bandage = {
-	keywords: [
-		"injured",
-		"clumsy",
-		"bandage",
-		"hurt"
-	],
-	char: "🤕",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var woozy = {
-	keywords: [
-		"face",
-		"dizzy",
-		"intoxicated",
-		"tipsy",
-		"wavy"
-	],
-	char: "🥴",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var sleeping = {
-	keywords: [
-		"face",
-		"tired",
-		"sleepy",
-		"night",
-		"zzz"
-	],
-	char: "😴",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var zzz = {
-	keywords: [
-		"sleepy",
-		"tired",
-		"dream"
-	],
-	char: "💤",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var poop = {
-	keywords: [
-		"hankey",
-		"shitface",
-		"fail",
-		"turd",
-		"shit"
-	],
-	char: "💩",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var smiling_imp = {
-	keywords: [
-		"devil",
-		"horns"
-	],
-	char: "😈",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var imp = {
-	keywords: [
-		"devil",
-		"angry",
-		"horns"
-	],
-	char: "👿",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var japanese_ogre = {
-	keywords: [
-		"monster",
-		"red",
-		"mask",
-		"halloween",
-		"scary",
-		"creepy",
-		"devil",
-		"demon",
-		"japanese",
-		"ogre"
-	],
-	char: "👹",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var japanese_goblin = {
-	keywords: [
-		"red",
-		"evil",
-		"mask",
-		"monster",
-		"scary",
-		"creepy",
-		"japanese",
-		"goblin"
-	],
-	char: "👺",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var skull = {
-	keywords: [
-		"dead",
-		"skeleton",
-		"creepy",
-		"death"
-	],
-	char: "💀",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var ghost = {
-	keywords: [
-		"halloween",
-		"spooky",
-		"scary"
-	],
-	char: "👻",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var alien = {
-	keywords: [
-		"UFO",
-		"paul",
-		"weird",
-		"outer_space"
-	],
-	char: "👽",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var robot = {
-	keywords: [
-		"computer",
-		"machine",
-		"bot"
-	],
-	char: "🤖",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var smiley_cat = {
-	keywords: [
-		"animal",
-		"cats",
-		"happy",
-		"smile"
-	],
-	char: "😺",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var smile_cat = {
-	keywords: [
-		"animal",
-		"cats",
-		"smile"
-	],
-	char: "😸",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var joy_cat = {
-	keywords: [
-		"animal",
-		"cats",
-		"haha",
-		"happy",
-		"tears"
-	],
-	char: "😹",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var heart_eyes_cat = {
-	keywords: [
-		"animal",
-		"love",
-		"like",
-		"affection",
-		"cats",
-		"valentines",
-		"heart"
-	],
-	char: "😻",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var smirk_cat = {
-	keywords: [
-		"animal",
-		"cats",
-		"smirk"
-	],
-	char: "😼",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var kissing_cat = {
-	keywords: [
-		"animal",
-		"cats",
-		"kiss"
-	],
-	char: "😽",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var scream_cat = {
-	keywords: [
-		"animal",
-		"cats",
-		"munch",
-		"scared",
-		"scream"
-	],
-	char: "🙀",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var crying_cat_face = {
-	keywords: [
-		"animal",
-		"tears",
-		"weep",
-		"sad",
-		"cats",
-		"upset",
-		"cry"
-	],
-	char: "😿",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var pouting_cat = {
-	keywords: [
-		"animal",
-		"cats"
-	],
-	char: "😾",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var palms_up = {
-	keywords: [
-		"hands",
-		"gesture",
-		"cupped",
-		"prayer"
-	],
-	char: "🤲",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var raised_hands = {
-	keywords: [
-		"gesture",
-		"hooray",
-		"yea",
-		"celebration",
-		"hands"
-	],
-	char: "🙌",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var clap = {
-	keywords: [
-		"hands",
-		"praise",
-		"applause",
-		"congrats",
-		"yay"
-	],
-	char: "👏",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var wave = {
-	keywords: [
-		"hands",
-		"gesture",
-		"goodbye",
-		"solong",
-		"farewell",
-		"hello",
-		"hi",
-		"palm"
-	],
-	char: "👋",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var call_me_hand = {
-	keywords: [
-		"hands",
-		"gesture"
-	],
-	char: "🤙",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var facepunch = {
-	keywords: [
-		"angry",
-		"violence",
-		"fist",
-		"hit",
-		"attack",
-		"hand"
-	],
-	char: "👊",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var fist = {
-	keywords: [
-		"fingers",
-		"hand",
-		"grasp"
-	],
-	char: "✊",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var fist_left = {
-	keywords: [
-		"hand",
-		"fistbump"
-	],
-	char: "🤛",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var fist_right = {
-	keywords: [
-		"hand",
-		"fistbump"
-	],
-	char: "🤜",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var v = {
-	keywords: [
-		"fingers",
-		"ohyeah",
-		"hand",
-		"peace",
-		"victory",
-		"two"
-	],
-	char: "✌",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var ok_hand = {
-	keywords: [
-		"fingers",
-		"limbs",
-		"perfect",
-		"ok",
-		"okay"
-	],
-	char: "👌",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var raised_hand = {
-	keywords: [
-		"fingers",
-		"stop",
-		"highfive",
-		"palm",
-		"ban"
-	],
-	char: "✋",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var raised_back_of_hand = {
-	keywords: [
-		"fingers",
-		"raised",
-		"backhand"
-	],
-	char: "🤚",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var open_hands = {
-	keywords: [
-		"fingers",
-		"butterfly",
-		"hands",
-		"open"
-	],
-	char: "👐",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var muscle = {
-	keywords: [
-		"arm",
-		"flex",
-		"hand",
-		"summer",
-		"strong",
-		"biceps"
-	],
-	char: "💪",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var pray = {
-	keywords: [
-		"please",
-		"hope",
-		"wish",
-		"namaste",
-		"highfive"
-	],
-	char: "🙏",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var foot = {
-	keywords: [
-		"kick",
-		"stomp"
-	],
-	char: "🦶",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var leg = {
-	keywords: [
-		"kick",
-		"limb"
-	],
-	char: "🦵",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var handshake = {
-	keywords: [
-		"agreement",
-		"shake"
-	],
-	char: "🤝",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var point_up = {
-	keywords: [
-		"hand",
-		"fingers",
-		"direction",
-		"up"
-	],
-	char: "☝",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var point_up_2 = {
-	keywords: [
-		"fingers",
-		"hand",
-		"direction",
-		"up"
-	],
-	char: "👆",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var point_down = {
-	keywords: [
-		"fingers",
-		"hand",
-		"direction",
-		"down"
-	],
-	char: "👇",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var point_left = {
-	keywords: [
-		"direction",
-		"fingers",
-		"hand",
-		"left"
-	],
-	char: "👈",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var point_right = {
-	keywords: [
-		"fingers",
-		"hand",
-		"direction",
-		"right"
-	],
-	char: "👉",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var fu = {
-	keywords: [
-		"hand",
-		"fingers",
-		"rude",
-		"middle",
-		"flipping"
-	],
-	char: "🖕",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var raised_hand_with_fingers_splayed = {
-	keywords: [
-		"hand",
-		"fingers",
-		"palm"
-	],
-	char: "🖐",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var love_you = {
-	keywords: [
-		"hand",
-		"fingers",
-		"gesture"
-	],
-	char: "🤟",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var metal = {
-	keywords: [
-		"hand",
-		"fingers",
-		"evil_eye",
-		"sign_of_horns",
-		"rock_on"
-	],
-	char: "🤘",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var crossed_fingers = {
-	keywords: [
-		"good",
-		"lucky"
-	],
-	char: "🤞",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var vulcan_salute = {
-	keywords: [
-		"hand",
-		"fingers",
-		"spock",
-		"star trek"
-	],
-	char: "🖖",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var writing_hand = {
-	keywords: [
-		"lower_left_ballpoint_pen",
-		"stationery",
-		"write",
-		"compose"
-	],
-	char: "✍",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var selfie = {
-	keywords: [
-		"camera",
-		"phone"
-	],
-	char: "🤳",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var nail_care = {
-	keywords: [
-		"beauty",
-		"manicure",
-		"finger",
-		"fashion",
-		"nail"
-	],
-	char: "💅",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var lips = {
-	keywords: [
-		"mouth",
-		"kiss"
-	],
-	char: "👄",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var tooth = {
-	keywords: [
-		"teeth",
-		"dentist"
-	],
-	char: "🦷",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var tongue = {
-	keywords: [
-		"mouth",
-		"playful"
-	],
-	char: "👅",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var ear = {
-	keywords: [
-		"face",
-		"hear",
-		"sound",
-		"listen"
-	],
-	char: "👂",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var nose = {
-	keywords: [
-		"smell",
-		"sniff"
-	],
-	char: "👃",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var eye = {
-	keywords: [
-		"face",
-		"look",
-		"see",
-		"watch",
-		"stare"
-	],
-	char: "👁",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var eyes = {
-	keywords: [
-		"look",
-		"watch",
-		"stalk",
-		"peek",
-		"see"
-	],
-	char: "👀",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var brain = {
-	keywords: [
-		"smart",
-		"intelligent"
-	],
-	char: "🧠",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var bust_in_silhouette = {
-	keywords: [
-		"user",
-		"person",
-		"human"
-	],
-	char: "👤",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var busts_in_silhouette = {
-	keywords: [
-		"user",
-		"person",
-		"human",
-		"group",
-		"team"
-	],
-	char: "👥",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var speaking_head = {
-	keywords: [
-		"user",
-		"person",
-		"human",
-		"sing",
-		"say",
-		"talk"
-	],
-	char: "🗣",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var baby = {
-	keywords: [
-		"child",
-		"boy",
-		"girl",
-		"toddler"
-	],
-	char: "👶",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var child = {
-	keywords: [
-		"gender-neutral",
-		"young"
-	],
-	char: "🧒",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var boy = {
-	keywords: [
-		"man",
-		"male",
-		"guy",
-		"teenager"
-	],
-	char: "👦",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var girl = {
-	keywords: [
-		"female",
-		"woman",
-		"teenager"
-	],
-	char: "👧",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var adult = {
-	keywords: [
-		"gender-neutral",
-		"person"
-	],
-	char: "🧑",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man = {
-	keywords: [
-		"mustache",
-		"father",
-		"dad",
-		"guy",
-		"classy",
-		"sir",
-		"moustache"
-	],
-	char: "👨",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman = {
-	keywords: [
-		"female",
-		"girls",
-		"lady"
-	],
-	char: "👩",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var blonde_woman = {
-	keywords: [
-		"woman",
-		"female",
-		"girl",
-		"blonde",
-		"person"
-	],
-	char: "👱‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var blonde_man = {
-	keywords: [
-		"man",
-		"male",
-		"boy",
-		"blonde",
-		"guy",
-		"person"
-	],
-	char: "👱",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var bearded_person = {
-	keywords: [
-		"person",
-		"bewhiskered"
-	],
-	char: "🧔",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var older_adult = {
-	keywords: [
-		"human",
-		"elder",
-		"senior",
-		"gender-neutral"
-	],
-	char: "🧓",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var older_man = {
-	keywords: [
-		"human",
-		"male",
-		"men",
-		"old",
-		"elder",
-		"senior"
-	],
-	char: "👴",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var older_woman = {
-	keywords: [
-		"human",
-		"female",
-		"women",
-		"lady",
-		"old",
-		"elder",
-		"senior"
-	],
-	char: "👵",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_with_gua_pi_mao = {
-	keywords: [
-		"male",
-		"boy",
-		"chinese"
-	],
-	char: "👲",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_with_headscarf = {
-	keywords: [
-		"female",
-		"hijab",
-		"mantilla",
-		"tichel"
-	],
-	char: "🧕",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_with_turban = {
-	keywords: [
-		"female",
-		"indian",
-		"hinduism",
-		"arabs",
-		"woman"
-	],
-	char: "👳‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_with_turban = {
-	keywords: [
-		"male",
-		"indian",
-		"hinduism",
-		"arabs"
-	],
-	char: "👳",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var policewoman = {
-	keywords: [
-		"woman",
-		"police",
-		"law",
-		"legal",
-		"enforcement",
-		"arrest",
-		"911",
-		"female"
-	],
-	char: "👮‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var policeman = {
-	keywords: [
-		"man",
-		"police",
-		"law",
-		"legal",
-		"enforcement",
-		"arrest",
-		"911"
-	],
-	char: "👮",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var construction_worker_woman = {
-	keywords: [
-		"female",
-		"human",
-		"wip",
-		"build",
-		"construction",
-		"worker",
-		"labor",
-		"woman"
-	],
-	char: "👷‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var construction_worker_man = {
-	keywords: [
-		"male",
-		"human",
-		"wip",
-		"guy",
-		"build",
-		"construction",
-		"worker",
-		"labor"
-	],
-	char: "👷",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var guardswoman = {
-	keywords: [
-		"uk",
-		"gb",
-		"british",
-		"female",
-		"royal",
-		"woman"
-	],
-	char: "💂‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var guardsman = {
-	keywords: [
-		"uk",
-		"gb",
-		"british",
-		"male",
-		"guy",
-		"royal"
-	],
-	char: "💂",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var female_detective = {
-	keywords: [
-		"human",
-		"spy",
-		"detective",
-		"female",
-		"woman"
-	],
-	char: "🕵️‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var male_detective = {
-	keywords: [
-		"human",
-		"spy",
-		"detective"
-	],
-	char: "🕵",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_health_worker = {
-	keywords: [
-		"doctor",
-		"nurse",
-		"therapist",
-		"healthcare",
-		"woman",
-		"human"
-	],
-	char: "👩‍⚕️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_health_worker = {
-	keywords: [
-		"doctor",
-		"nurse",
-		"therapist",
-		"healthcare",
-		"man",
-		"human"
-	],
-	char: "👨‍⚕️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_farmer = {
-	keywords: [
-		"rancher",
-		"gardener",
-		"woman",
-		"human"
-	],
-	char: "👩‍🌾",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_farmer = {
-	keywords: [
-		"rancher",
-		"gardener",
-		"man",
-		"human"
-	],
-	char: "👨‍🌾",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_cook = {
-	keywords: [
-		"chef",
-		"woman",
-		"human"
-	],
-	char: "👩‍🍳",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_cook = {
-	keywords: [
-		"chef",
-		"man",
-		"human"
-	],
-	char: "👨‍🍳",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_student = {
-	keywords: [
-		"graduate",
-		"woman",
-		"human"
-	],
-	char: "👩‍🎓",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_student = {
-	keywords: [
-		"graduate",
-		"man",
-		"human"
-	],
-	char: "👨‍🎓",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_singer = {
-	keywords: [
-		"rockstar",
-		"entertainer",
-		"woman",
-		"human"
-	],
-	char: "👩‍🎤",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_singer = {
-	keywords: [
-		"rockstar",
-		"entertainer",
-		"man",
-		"human"
-	],
-	char: "👨‍🎤",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_teacher = {
-	keywords: [
-		"instructor",
-		"professor",
-		"woman",
-		"human"
-	],
-	char: "👩‍🏫",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_teacher = {
-	keywords: [
-		"instructor",
-		"professor",
-		"man",
-		"human"
-	],
-	char: "👨‍🏫",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_factory_worker = {
-	keywords: [
-		"assembly",
-		"industrial",
-		"woman",
-		"human"
-	],
-	char: "👩‍🏭",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_factory_worker = {
-	keywords: [
-		"assembly",
-		"industrial",
-		"man",
-		"human"
-	],
-	char: "👨‍🏭",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_technologist = {
-	keywords: [
-		"coder",
-		"developer",
-		"engineer",
-		"programmer",
-		"software",
-		"woman",
-		"human",
-		"laptop",
-		"computer"
-	],
-	char: "👩‍💻",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_technologist = {
-	keywords: [
-		"coder",
-		"developer",
-		"engineer",
-		"programmer",
-		"software",
-		"man",
-		"human",
-		"laptop",
-		"computer"
-	],
-	char: "👨‍💻",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_office_worker = {
-	keywords: [
-		"business",
-		"manager",
-		"woman",
-		"human"
-	],
-	char: "👩‍💼",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_office_worker = {
-	keywords: [
-		"business",
-		"manager",
-		"man",
-		"human"
-	],
-	char: "👨‍💼",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_mechanic = {
-	keywords: [
-		"plumber",
-		"woman",
-		"human",
-		"wrench"
-	],
-	char: "👩‍🔧",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_mechanic = {
-	keywords: [
-		"plumber",
-		"man",
-		"human",
-		"wrench"
-	],
-	char: "👨‍🔧",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_scientist = {
-	keywords: [
-		"biologist",
-		"chemist",
-		"engineer",
-		"physicist",
-		"woman",
-		"human"
-	],
-	char: "👩‍🔬",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_scientist = {
-	keywords: [
-		"biologist",
-		"chemist",
-		"engineer",
-		"physicist",
-		"man",
-		"human"
-	],
-	char: "👨‍🔬",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_artist = {
-	keywords: [
-		"painter",
-		"woman",
-		"human"
-	],
-	char: "👩‍🎨",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_artist = {
-	keywords: [
-		"painter",
-		"man",
-		"human"
-	],
-	char: "👨‍🎨",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_firefighter = {
-	keywords: [
-		"fireman",
-		"woman",
-		"human"
-	],
-	char: "👩‍🚒",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_firefighter = {
-	keywords: [
-		"fireman",
-		"man",
-		"human"
-	],
-	char: "👨‍🚒",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_pilot = {
-	keywords: [
-		"aviator",
-		"plane",
-		"woman",
-		"human"
-	],
-	char: "👩‍✈️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_pilot = {
-	keywords: [
-		"aviator",
-		"plane",
-		"man",
-		"human"
-	],
-	char: "👨‍✈️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_astronaut = {
-	keywords: [
-		"space",
-		"rocket",
-		"woman",
-		"human"
-	],
-	char: "👩‍🚀",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_astronaut = {
-	keywords: [
-		"space",
-		"rocket",
-		"man",
-		"human"
-	],
-	char: "👨‍🚀",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_judge = {
-	keywords: [
-		"justice",
-		"court",
-		"woman",
-		"human"
-	],
-	char: "👩‍⚖️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_judge = {
-	keywords: [
-		"justice",
-		"court",
-		"man",
-		"human"
-	],
-	char: "👨‍⚖️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_superhero = {
-	keywords: [
-		"woman",
-		"female",
-		"good",
-		"heroine",
-		"superpowers"
-	],
-	char: "🦸‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_superhero = {
-	keywords: [
-		"man",
-		"male",
-		"good",
-		"hero",
-		"superpowers"
-	],
-	char: "🦸‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_supervillain = {
-	keywords: [
-		"woman",
-		"female",
-		"evil",
-		"bad",
-		"criminal",
-		"heroine",
-		"superpowers"
-	],
-	char: "🦹‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_supervillain = {
-	keywords: [
-		"man",
-		"male",
-		"evil",
-		"bad",
-		"criminal",
-		"hero",
-		"superpowers"
-	],
-	char: "🦹‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var mrs_claus = {
-	keywords: [
-		"woman",
-		"female",
-		"xmas",
-		"mother christmas"
-	],
-	char: "🤶",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var santa = {
-	keywords: [
-		"festival",
-		"man",
-		"male",
-		"xmas",
-		"father christmas"
-	],
-	char: "🎅",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var sorceress = {
-	keywords: [
-		"woman",
-		"female",
-		"mage",
-		"witch"
-	],
-	char: "🧙‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var wizard = {
-	keywords: [
-		"man",
-		"male",
-		"mage",
-		"sorcerer"
-	],
-	char: "🧙‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_elf = {
-	keywords: [
-		"woman",
-		"female"
-	],
-	char: "🧝‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_elf = {
-	keywords: [
-		"man",
-		"male"
-	],
-	char: "🧝‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_vampire = {
-	keywords: [
-		"woman",
-		"female"
-	],
-	char: "🧛‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_vampire = {
-	keywords: [
-		"man",
-		"male",
-		"dracula"
-	],
-	char: "🧛‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_zombie = {
-	keywords: [
-		"woman",
-		"female",
-		"undead",
-		"walking dead"
-	],
-	char: "🧟‍♀️",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var man_zombie = {
-	keywords: [
-		"man",
-		"male",
-		"dracula",
-		"undead",
-		"walking dead"
-	],
-	char: "🧟‍♂️",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var woman_genie = {
-	keywords: [
-		"woman",
-		"female"
-	],
-	char: "🧞‍♀️",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var man_genie = {
-	keywords: [
-		"man",
-		"male"
-	],
-	char: "🧞‍♂️",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var mermaid = {
-	keywords: [
-		"woman",
-		"female",
-		"merwoman",
-		"ariel"
-	],
-	char: "🧜‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var merman = {
-	keywords: [
-		"man",
-		"male",
-		"triton"
-	],
-	char: "🧜‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_fairy = {
-	keywords: [
-		"woman",
-		"female"
-	],
-	char: "🧚‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_fairy = {
-	keywords: [
-		"man",
-		"male"
-	],
-	char: "🧚‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var angel = {
-	keywords: [
-		"heaven",
-		"wings",
-		"halo"
-	],
-	char: "👼",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var pregnant_woman = {
-	keywords: [
-		"baby"
-	],
-	char: "🤰",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var breastfeeding = {
-	keywords: [
-		"nursing",
-		"baby"
-	],
-	char: "🤱",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var princess = {
-	keywords: [
-		"girl",
-		"woman",
-		"female",
-		"blond",
-		"crown",
-		"royal",
-		"queen"
-	],
-	char: "👸",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var prince = {
-	keywords: [
-		"boy",
-		"man",
-		"male",
-		"crown",
-		"royal",
-		"king"
-	],
-	char: "🤴",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var bride_with_veil = {
-	keywords: [
-		"couple",
-		"marriage",
-		"wedding",
-		"woman",
-		"bride"
-	],
-	char: "👰",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_in_tuxedo = {
-	keywords: [
-		"couple",
-		"marriage",
-		"wedding",
-		"groom"
-	],
-	char: "🤵",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var running_woman = {
-	keywords: [
-		"woman",
-		"walking",
-		"exercise",
-		"race",
-		"running",
-		"female"
-	],
-	char: "🏃‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var running_man = {
-	keywords: [
-		"man",
-		"walking",
-		"exercise",
-		"race",
-		"running"
-	],
-	char: "🏃",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var walking_woman = {
-	keywords: [
-		"human",
-		"feet",
-		"steps",
-		"woman",
-		"female"
-	],
-	char: "🚶‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var walking_man = {
-	keywords: [
-		"human",
-		"feet",
-		"steps"
-	],
-	char: "🚶",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var dancer = {
-	keywords: [
-		"female",
-		"girl",
-		"woman",
-		"fun"
-	],
-	char: "💃",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_dancing = {
-	keywords: [
-		"male",
-		"boy",
-		"fun",
-		"dancer"
-	],
-	char: "🕺",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var dancing_women = {
-	keywords: [
-		"female",
-		"bunny",
-		"women",
-		"girls"
-	],
-	char: "👯",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var dancing_men = {
-	keywords: [
-		"male",
-		"bunny",
-		"men",
-		"boys"
-	],
-	char: "👯‍♂️",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var couple = {
-	keywords: [
-		"pair",
-		"people",
-		"human",
-		"love",
-		"date",
-		"dating",
-		"like",
-		"affection",
-		"valentines",
-		"marriage"
-	],
-	char: "👫",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var two_men_holding_hands = {
-	keywords: [
-		"pair",
-		"couple",
-		"love",
-		"like",
-		"bromance",
-		"friendship",
-		"people",
-		"human"
-	],
-	char: "👬",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var two_women_holding_hands = {
-	keywords: [
-		"pair",
-		"friendship",
-		"couple",
-		"love",
-		"like",
-		"female",
-		"people",
-		"human"
-	],
-	char: "👭",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var bowing_woman = {
-	keywords: [
-		"woman",
-		"female",
-		"girl"
-	],
-	char: "🙇‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var bowing_man = {
-	keywords: [
-		"man",
-		"male",
-		"boy"
-	],
-	char: "🙇",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_facepalming = {
-	keywords: [
-		"man",
-		"male",
-		"boy",
-		"disbelief"
-	],
-	char: "🤦‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_facepalming = {
-	keywords: [
-		"woman",
-		"female",
-		"girl",
-		"disbelief"
-	],
-	char: "🤦‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_shrugging = {
-	keywords: [
-		"woman",
-		"female",
-		"girl",
-		"confused",
-		"indifferent",
-		"doubt"
-	],
-	char: "🤷",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_shrugging = {
-	keywords: [
-		"man",
-		"male",
-		"boy",
-		"confused",
-		"indifferent",
-		"doubt"
-	],
-	char: "🤷‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var tipping_hand_woman = {
-	keywords: [
-		"female",
-		"girl",
-		"woman",
-		"human",
-		"information"
-	],
-	char: "💁",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var tipping_hand_man = {
-	keywords: [
-		"male",
-		"boy",
-		"man",
-		"human",
-		"information"
-	],
-	char: "💁‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var no_good_woman = {
-	keywords: [
-		"female",
-		"girl",
-		"woman",
-		"nope"
-	],
-	char: "🙅",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var no_good_man = {
-	keywords: [
-		"male",
-		"boy",
-		"man",
-		"nope"
-	],
-	char: "🙅‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var ok_woman = {
-	keywords: [
-		"women",
-		"girl",
-		"female",
-		"pink",
-		"human",
-		"woman"
-	],
-	char: "🙆",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var ok_man = {
-	keywords: [
-		"men",
-		"boy",
-		"male",
-		"blue",
-		"human",
-		"man"
-	],
-	char: "🙆‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var raising_hand_woman = {
-	keywords: [
-		"female",
-		"girl",
-		"woman"
-	],
-	char: "🙋",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var raising_hand_man = {
-	keywords: [
-		"male",
-		"boy",
-		"man"
-	],
-	char: "🙋‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var pouting_woman = {
-	keywords: [
-		"female",
-		"girl",
-		"woman"
-	],
-	char: "🙎",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var pouting_man = {
-	keywords: [
-		"male",
-		"boy",
-		"man"
-	],
-	char: "🙎‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var frowning_woman = {
-	keywords: [
-		"female",
-		"girl",
-		"woman",
-		"sad",
-		"depressed",
-		"discouraged",
-		"unhappy"
-	],
-	char: "🙍",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var frowning_man = {
-	keywords: [
-		"male",
-		"boy",
-		"man",
-		"sad",
-		"depressed",
-		"discouraged",
-		"unhappy"
-	],
-	char: "🙍‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var haircut_woman = {
-	keywords: [
-		"female",
-		"girl",
-		"woman"
-	],
-	char: "💇",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var haircut_man = {
-	keywords: [
-		"male",
-		"boy",
-		"man"
-	],
-	char: "💇‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var massage_woman = {
-	keywords: [
-		"female",
-		"girl",
-		"woman",
-		"head"
-	],
-	char: "💆",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var massage_man = {
-	keywords: [
-		"male",
-		"boy",
-		"man",
-		"head"
-	],
-	char: "💆‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var woman_in_steamy_room = {
-	keywords: [
-		"female",
-		"woman",
-		"spa",
-		"steamroom",
-		"sauna"
-	],
-	char: "🧖‍♀️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var man_in_steamy_room = {
-	keywords: [
-		"male",
-		"man",
-		"spa",
-		"steamroom",
-		"sauna"
-	],
-	char: "🧖‍♂️",
-	fitzpatrick_scale: true,
-	category: "people"
-};
-var couple_with_heart_woman_man = {
-	keywords: [
-		"pair",
-		"love",
-		"like",
-		"affection",
-		"human",
-		"dating",
-		"valentines",
-		"marriage"
-	],
-	char: "💑",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var couple_with_heart_woman_woman = {
-	keywords: [
-		"pair",
-		"love",
-		"like",
-		"affection",
-		"human",
-		"dating",
-		"valentines",
-		"marriage"
-	],
-	char: "👩‍❤️‍👩",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var couple_with_heart_man_man = {
-	keywords: [
-		"pair",
-		"love",
-		"like",
-		"affection",
-		"human",
-		"dating",
-		"valentines",
-		"marriage"
-	],
-	char: "👨‍❤️‍👨",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var couplekiss_man_woman = {
-	keywords: [
-		"pair",
-		"valentines",
-		"love",
-		"like",
-		"dating",
-		"marriage"
-	],
-	char: "💏",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var couplekiss_woman_woman = {
-	keywords: [
-		"pair",
-		"valentines",
-		"love",
-		"like",
-		"dating",
-		"marriage"
-	],
-	char: "👩‍❤️‍💋‍👩",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var couplekiss_man_man = {
-	keywords: [
-		"pair",
-		"valentines",
-		"love",
-		"like",
-		"dating",
-		"marriage"
-	],
-	char: "👨‍❤️‍💋‍👨",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_man_woman_boy = {
-	keywords: [
-		"home",
-		"parents",
-		"child",
-		"mom",
-		"dad",
-		"father",
-		"mother",
-		"people",
-		"human"
-	],
-	char: "👪",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_man_woman_girl = {
-	keywords: [
-		"home",
-		"parents",
-		"people",
-		"human",
-		"child"
-	],
-	char: "👨‍👩‍👧",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_man_woman_girl_boy = {
-	keywords: [
-		"home",
-		"parents",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👨‍👩‍👧‍👦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_man_woman_boy_boy = {
-	keywords: [
-		"home",
-		"parents",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👨‍👩‍👦‍👦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_man_woman_girl_girl = {
-	keywords: [
-		"home",
-		"parents",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👨‍👩‍👧‍👧",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_woman_woman_boy = {
-	keywords: [
-		"home",
-		"parents",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👩‍👩‍👦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_woman_woman_girl = {
-	keywords: [
-		"home",
-		"parents",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👩‍👩‍👧",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_woman_woman_girl_boy = {
-	keywords: [
-		"home",
-		"parents",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👩‍👩‍👧‍👦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_woman_woman_boy_boy = {
-	keywords: [
-		"home",
-		"parents",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👩‍👩‍👦‍👦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_woman_woman_girl_girl = {
-	keywords: [
-		"home",
-		"parents",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👩‍👩‍👧‍👧",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_man_man_boy = {
-	keywords: [
-		"home",
-		"parents",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👨‍👨‍👦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_man_man_girl = {
-	keywords: [
-		"home",
-		"parents",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👨‍👨‍👧",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_man_man_girl_boy = {
-	keywords: [
-		"home",
-		"parents",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👨‍👨‍👧‍👦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_man_man_boy_boy = {
-	keywords: [
-		"home",
-		"parents",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👨‍👨‍👦‍👦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_man_man_girl_girl = {
-	keywords: [
-		"home",
-		"parents",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👨‍👨‍👧‍👧",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_woman_boy = {
-	keywords: [
-		"home",
-		"parent",
-		"people",
-		"human",
-		"child"
-	],
-	char: "👩‍👦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_woman_girl = {
-	keywords: [
-		"home",
-		"parent",
-		"people",
-		"human",
-		"child"
-	],
-	char: "👩‍👧",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_woman_girl_boy = {
-	keywords: [
-		"home",
-		"parent",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👩‍👧‍👦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_woman_boy_boy = {
-	keywords: [
-		"home",
-		"parent",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👩‍👦‍👦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_woman_girl_girl = {
-	keywords: [
-		"home",
-		"parent",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👩‍👧‍👧",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_man_boy = {
-	keywords: [
-		"home",
-		"parent",
-		"people",
-		"human",
-		"child"
-	],
-	char: "👨‍👦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_man_girl = {
-	keywords: [
-		"home",
-		"parent",
-		"people",
-		"human",
-		"child"
-	],
-	char: "👨‍👧",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_man_girl_boy = {
-	keywords: [
-		"home",
-		"parent",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👨‍👧‍👦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_man_boy_boy = {
-	keywords: [
-		"home",
-		"parent",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👨‍👦‍👦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var family_man_girl_girl = {
-	keywords: [
-		"home",
-		"parent",
-		"people",
-		"human",
-		"children"
-	],
-	char: "👨‍👧‍👧",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var yarn = {
-	keywords: [
-		"ball",
-		"crochet",
-		"knit"
-	],
-	char: "🧶",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var thread = {
-	keywords: [
-		"needle",
-		"sewing",
-		"spool",
-		"string"
-	],
-	char: "🧵",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var coat = {
-	keywords: [
-		"jacket"
-	],
-	char: "🧥",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var labcoat = {
-	keywords: [
-		"doctor",
-		"experiment",
-		"scientist",
-		"chemist"
-	],
-	char: "🥼",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var womans_clothes = {
-	keywords: [
-		"fashion",
-		"shopping_bags",
-		"female"
-	],
-	char: "👚",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var tshirt = {
-	keywords: [
-		"fashion",
-		"cloth",
-		"casual",
-		"shirt",
-		"tee"
-	],
-	char: "👕",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var jeans = {
-	keywords: [
-		"fashion",
-		"shopping"
-	],
-	char: "👖",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var necktie = {
-	keywords: [
-		"shirt",
-		"suitup",
-		"formal",
-		"fashion",
-		"cloth",
-		"business"
-	],
-	char: "👔",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var dress = {
-	keywords: [
-		"clothes",
-		"fashion",
-		"shopping"
-	],
-	char: "👗",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var bikini = {
-	keywords: [
-		"swimming",
-		"female",
-		"woman",
-		"girl",
-		"fashion",
-		"beach",
-		"summer"
-	],
-	char: "👙",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var kimono = {
-	keywords: [
-		"dress",
-		"fashion",
-		"women",
-		"female",
-		"japanese"
-	],
-	char: "👘",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var lipstick = {
-	keywords: [
-		"female",
-		"girl",
-		"fashion",
-		"woman"
-	],
-	char: "💄",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var kiss = {
-	keywords: [
-		"face",
-		"lips",
-		"love",
-		"like",
-		"affection",
-		"valentines"
-	],
-	char: "💋",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var footprints = {
-	keywords: [
-		"feet",
-		"tracking",
-		"walking",
-		"beach"
-	],
-	char: "👣",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var flat_shoe = {
-	keywords: [
-		"ballet",
-		"slip-on",
-		"slipper"
-	],
-	char: "🥿",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var high_heel = {
-	keywords: [
-		"fashion",
-		"shoes",
-		"female",
-		"pumps",
-		"stiletto"
-	],
-	char: "👠",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var sandal = {
-	keywords: [
-		"shoes",
-		"fashion",
-		"flip flops"
-	],
-	char: "👡",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var boot = {
-	keywords: [
-		"shoes",
-		"fashion"
-	],
-	char: "👢",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var mans_shoe = {
-	keywords: [
-		"fashion",
-		"male"
-	],
-	char: "👞",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var athletic_shoe = {
-	keywords: [
-		"shoes",
-		"sports",
-		"sneakers"
-	],
-	char: "👟",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var hiking_boot = {
-	keywords: [
-		"backpacking",
-		"camping",
-		"hiking"
-	],
-	char: "🥾",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var socks = {
-	keywords: [
-		"stockings",
-		"clothes"
-	],
-	char: "🧦",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var gloves = {
-	keywords: [
-		"hands",
-		"winter",
-		"clothes"
-	],
-	char: "🧤",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var scarf = {
-	keywords: [
-		"neck",
-		"winter",
-		"clothes"
-	],
-	char: "🧣",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var womans_hat = {
-	keywords: [
-		"fashion",
-		"accessories",
-		"female",
-		"lady",
-		"spring"
-	],
-	char: "👒",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var tophat = {
-	keywords: [
-		"magic",
-		"gentleman",
-		"classy",
-		"circus"
-	],
-	char: "🎩",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var billed_hat = {
-	keywords: [
-		"cap",
-		"baseball"
-	],
-	char: "🧢",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var rescue_worker_helmet = {
-	keywords: [
-		"construction",
-		"build"
-	],
-	char: "⛑",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var mortar_board = {
-	keywords: [
-		"school",
-		"college",
-		"degree",
-		"university",
-		"graduation",
-		"cap",
-		"hat",
-		"legal",
-		"learn",
-		"education"
-	],
-	char: "🎓",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var crown = {
-	keywords: [
-		"king",
-		"kod",
-		"leader",
-		"royalty",
-		"lord"
-	],
-	char: "👑",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var school_satchel = {
-	keywords: [
-		"student",
-		"education",
-		"bag",
-		"backpack"
-	],
-	char: "🎒",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var luggage = {
-	keywords: [
-		"packing",
-		"travel"
-	],
-	char: "🧳",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var pouch = {
-	keywords: [
-		"bag",
-		"accessories",
-		"shopping"
-	],
-	char: "👝",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var purse = {
-	keywords: [
-		"fashion",
-		"accessories",
-		"money",
-		"sales",
-		"shopping"
-	],
-	char: "👛",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var handbag = {
-	keywords: [
-		"fashion",
-		"accessory",
-		"accessories",
-		"shopping"
-	],
-	char: "👜",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var briefcase = {
-	keywords: [
-		"business",
-		"documents",
-		"work",
-		"law",
-		"legal",
-		"job",
-		"career"
-	],
-	char: "💼",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var eyeglasses = {
-	keywords: [
-		"fashion",
-		"accessories",
-		"eyesight",
-		"nerdy",
-		"dork",
-		"geek"
-	],
-	char: "👓",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var dark_sunglasses = {
-	keywords: [
-		"face",
-		"cool",
-		"accessories"
-	],
-	char: "🕶",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var goggles = {
-	keywords: [
-		"eyes",
-		"protection",
-		"safety"
-	],
-	char: "🥽",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var ring = {
-	keywords: [
-		"wedding",
-		"propose",
-		"marriage",
-		"valentines",
-		"diamond",
-		"fashion",
-		"jewelry",
-		"gem",
-		"engagement"
-	],
-	char: "💍",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var closed_umbrella = {
-	keywords: [
-		"weather",
-		"rain",
-		"drizzle"
-	],
-	char: "🌂",
-	fitzpatrick_scale: false,
-	category: "people"
-};
-var dog = {
-	keywords: [
-		"animal",
-		"friend",
-		"nature",
-		"woof",
-		"puppy",
-		"pet",
-		"faithful"
-	],
-	char: "🐶",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var cat = {
-	keywords: [
-		"animal",
-		"meow",
-		"nature",
-		"pet",
-		"kitten"
-	],
-	char: "🐱",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var mouse = {
-	keywords: [
-		"animal",
-		"nature",
-		"cheese_wedge",
-		"rodent"
-	],
-	char: "🐭",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var hamster = {
-	keywords: [
-		"animal",
-		"nature"
-	],
-	char: "🐹",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var rabbit = {
-	keywords: [
-		"animal",
-		"nature",
-		"pet",
-		"spring",
-		"magic",
-		"bunny"
-	],
-	char: "🐰",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var fox_face = {
-	keywords: [
-		"animal",
-		"nature",
-		"face"
-	],
-	char: "🦊",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var bear = {
-	keywords: [
-		"animal",
-		"nature",
-		"wild"
-	],
-	char: "🐻",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var panda_face = {
-	keywords: [
-		"animal",
-		"nature",
-		"panda"
-	],
-	char: "🐼",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var koala = {
-	keywords: [
-		"animal",
-		"nature"
-	],
-	char: "🐨",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var tiger = {
-	keywords: [
-		"animal",
-		"cat",
-		"danger",
-		"wild",
-		"nature",
-		"roar"
-	],
-	char: "🐯",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var lion = {
-	keywords: [
-		"animal",
-		"nature"
-	],
-	char: "🦁",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var cow = {
-	keywords: [
-		"beef",
-		"ox",
-		"animal",
-		"nature",
-		"moo",
-		"milk"
-	],
-	char: "🐮",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var pig = {
-	keywords: [
-		"animal",
-		"oink",
-		"nature"
-	],
-	char: "🐷",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var pig_nose = {
-	keywords: [
-		"animal",
-		"oink"
-	],
-	char: "🐽",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var frog = {
-	keywords: [
-		"animal",
-		"nature",
-		"croak",
-		"toad"
-	],
-	char: "🐸",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var squid = {
-	keywords: [
-		"animal",
-		"nature",
-		"ocean",
-		"sea"
-	],
-	char: "🦑",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var octopus = {
-	keywords: [
-		"animal",
-		"creature",
-		"ocean",
-		"sea",
-		"nature",
-		"beach"
-	],
-	char: "🐙",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var shrimp = {
-	keywords: [
-		"animal",
-		"ocean",
-		"nature",
-		"seafood"
-	],
-	char: "🦐",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var monkey_face = {
-	keywords: [
-		"animal",
-		"nature",
-		"circus"
-	],
-	char: "🐵",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var gorilla = {
-	keywords: [
-		"animal",
-		"nature",
-		"circus"
-	],
-	char: "🦍",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var see_no_evil = {
-	keywords: [
-		"monkey",
-		"animal",
-		"nature",
-		"haha"
-	],
-	char: "🙈",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var hear_no_evil = {
-	keywords: [
-		"animal",
-		"monkey",
-		"nature"
-	],
-	char: "🙉",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var speak_no_evil = {
-	keywords: [
-		"monkey",
-		"animal",
-		"nature",
-		"omg"
-	],
-	char: "🙊",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var monkey = {
-	keywords: [
-		"animal",
-		"nature",
-		"banana",
-		"circus"
-	],
-	char: "🐒",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var chicken = {
-	keywords: [
-		"animal",
-		"cluck",
-		"nature",
-		"bird"
-	],
-	char: "🐔",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var penguin = {
-	keywords: [
-		"animal",
-		"nature"
-	],
-	char: "🐧",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var bird = {
-	keywords: [
-		"animal",
-		"nature",
-		"fly",
-		"tweet",
-		"spring"
-	],
-	char: "🐦",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var baby_chick = {
-	keywords: [
-		"animal",
-		"chicken",
-		"bird"
-	],
-	char: "🐤",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var hatching_chick = {
-	keywords: [
-		"animal",
-		"chicken",
-		"egg",
-		"born",
-		"baby",
-		"bird"
-	],
-	char: "🐣",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var hatched_chick = {
-	keywords: [
-		"animal",
-		"chicken",
-		"baby",
-		"bird"
-	],
-	char: "🐥",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var duck = {
-	keywords: [
-		"animal",
-		"nature",
-		"bird",
-		"mallard"
-	],
-	char: "🦆",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var eagle = {
-	keywords: [
-		"animal",
-		"nature",
-		"bird"
-	],
-	char: "🦅",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var owl = {
-	keywords: [
-		"animal",
-		"nature",
-		"bird",
-		"hoot"
-	],
-	char: "🦉",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var bat = {
-	keywords: [
-		"animal",
-		"nature",
-		"blind",
-		"vampire"
-	],
-	char: "🦇",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var wolf = {
-	keywords: [
-		"animal",
-		"nature",
-		"wild"
-	],
-	char: "🐺",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var boar = {
-	keywords: [
-		"animal",
-		"nature"
-	],
-	char: "🐗",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var horse = {
-	keywords: [
-		"animal",
-		"brown",
-		"nature"
-	],
-	char: "🐴",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var unicorn = {
-	keywords: [
-		"animal",
-		"nature",
-		"mystical"
-	],
-	char: "🦄",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var honeybee = {
-	keywords: [
-		"animal",
-		"insect",
-		"nature",
-		"bug",
-		"spring",
-		"honey"
-	],
-	char: "🐝",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var bug = {
-	keywords: [
-		"animal",
-		"insect",
-		"nature",
-		"worm"
-	],
-	char: "🐛",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var butterfly = {
-	keywords: [
-		"animal",
-		"insect",
-		"nature",
-		"caterpillar"
-	],
-	char: "🦋",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var snail = {
-	keywords: [
-		"slow",
-		"animal",
-		"shell"
-	],
-	char: "🐌",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var beetle = {
-	keywords: [
-		"animal",
-		"insect",
-		"nature",
-		"ladybug"
-	],
-	char: "🐞",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var ant = {
-	keywords: [
-		"animal",
-		"insect",
-		"nature",
-		"bug"
-	],
-	char: "🐜",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var grasshopper = {
-	keywords: [
-		"animal",
-		"cricket",
-		"chirp"
-	],
-	char: "🦗",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var spider = {
-	keywords: [
-		"animal",
-		"arachnid"
-	],
-	char: "🕷",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var scorpion = {
-	keywords: [
-		"animal",
-		"arachnid"
-	],
-	char: "🦂",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var crab = {
-	keywords: [
-		"animal",
-		"crustacean"
-	],
-	char: "🦀",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var snake = {
-	keywords: [
-		"animal",
-		"evil",
-		"nature",
-		"hiss",
-		"python"
-	],
-	char: "🐍",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var lizard = {
-	keywords: [
-		"animal",
-		"nature",
-		"reptile"
-	],
-	char: "🦎",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var sauropod = {
-	keywords: [
-		"animal",
-		"nature",
-		"dinosaur",
-		"brachiosaurus",
-		"brontosaurus",
-		"diplodocus",
-		"extinct"
-	],
-	char: "🦕",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var turtle = {
-	keywords: [
-		"animal",
-		"slow",
-		"nature",
-		"tortoise"
-	],
-	char: "🐢",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var tropical_fish = {
-	keywords: [
-		"animal",
-		"swim",
-		"ocean",
-		"beach",
-		"nemo"
-	],
-	char: "🐠",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var fish = {
-	keywords: [
-		"animal",
-		"food",
-		"nature"
-	],
-	char: "🐟",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var blowfish = {
-	keywords: [
-		"animal",
-		"nature",
-		"food",
-		"sea",
-		"ocean"
-	],
-	char: "🐡",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var dolphin = {
-	keywords: [
-		"animal",
-		"nature",
-		"fish",
-		"sea",
-		"ocean",
-		"flipper",
-		"fins",
-		"beach"
-	],
-	char: "🐬",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var shark = {
-	keywords: [
-		"animal",
-		"nature",
-		"fish",
-		"sea",
-		"ocean",
-		"jaws",
-		"fins",
-		"beach"
-	],
-	char: "🦈",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var whale = {
-	keywords: [
-		"animal",
-		"nature",
-		"sea",
-		"ocean"
-	],
-	char: "🐳",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var whale2 = {
-	keywords: [
-		"animal",
-		"nature",
-		"sea",
-		"ocean"
-	],
-	char: "🐋",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var crocodile = {
-	keywords: [
-		"animal",
-		"nature",
-		"reptile",
-		"lizard",
-		"alligator"
-	],
-	char: "🐊",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var leopard = {
-	keywords: [
-		"animal",
-		"nature"
-	],
-	char: "🐆",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var zebra = {
-	keywords: [
-		"animal",
-		"nature",
-		"stripes",
-		"safari"
-	],
-	char: "🦓",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var tiger2 = {
-	keywords: [
-		"animal",
-		"nature",
-		"roar"
-	],
-	char: "🐅",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var water_buffalo = {
-	keywords: [
-		"animal",
-		"nature",
-		"ox",
-		"cow"
-	],
-	char: "🐃",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var ox = {
-	keywords: [
-		"animal",
-		"cow",
-		"beef"
-	],
-	char: "🐂",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var cow2 = {
-	keywords: [
-		"beef",
-		"ox",
-		"animal",
-		"nature",
-		"moo",
-		"milk"
-	],
-	char: "🐄",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var deer = {
-	keywords: [
-		"animal",
-		"nature",
-		"horns",
-		"venison"
-	],
-	char: "🦌",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var dromedary_camel = {
-	keywords: [
-		"animal",
-		"hot",
-		"desert",
-		"hump"
-	],
-	char: "🐪",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var camel = {
-	keywords: [
-		"animal",
-		"nature",
-		"hot",
-		"desert",
-		"hump"
-	],
-	char: "🐫",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var giraffe = {
-	keywords: [
-		"animal",
-		"nature",
-		"spots",
-		"safari"
-	],
-	char: "🦒",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var elephant = {
-	keywords: [
-		"animal",
-		"nature",
-		"nose",
-		"th",
-		"circus"
-	],
-	char: "🐘",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var rhinoceros = {
-	keywords: [
-		"animal",
-		"nature",
-		"horn"
-	],
-	char: "🦏",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var goat = {
-	keywords: [
-		"animal",
-		"nature"
-	],
-	char: "🐐",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var ram = {
-	keywords: [
-		"animal",
-		"sheep",
-		"nature"
-	],
-	char: "🐏",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var sheep = {
-	keywords: [
-		"animal",
-		"nature",
-		"wool",
-		"shipit"
-	],
-	char: "🐑",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var racehorse = {
-	keywords: [
-		"animal",
-		"gamble",
-		"luck"
-	],
-	char: "🐎",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var pig2 = {
-	keywords: [
-		"animal",
-		"nature"
-	],
-	char: "🐖",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var rat = {
-	keywords: [
-		"animal",
-		"mouse",
-		"rodent"
-	],
-	char: "🐀",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var mouse2 = {
-	keywords: [
-		"animal",
-		"nature",
-		"rodent"
-	],
-	char: "🐁",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var rooster = {
-	keywords: [
-		"animal",
-		"nature",
-		"chicken"
-	],
-	char: "🐓",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var turkey = {
-	keywords: [
-		"animal",
-		"bird"
-	],
-	char: "🦃",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var dove = {
-	keywords: [
-		"animal",
-		"bird"
-	],
-	char: "🕊",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var dog2 = {
-	keywords: [
-		"animal",
-		"nature",
-		"friend",
-		"doge",
-		"pet",
-		"faithful"
-	],
-	char: "🐕",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var poodle = {
-	keywords: [
-		"dog",
-		"animal",
-		"101",
-		"nature",
-		"pet"
-	],
-	char: "🐩",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var cat2 = {
-	keywords: [
-		"animal",
-		"meow",
-		"pet",
-		"cats"
-	],
-	char: "🐈",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var rabbit2 = {
-	keywords: [
-		"animal",
-		"nature",
-		"pet",
-		"magic",
-		"spring"
-	],
-	char: "🐇",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var chipmunk = {
-	keywords: [
-		"animal",
-		"nature",
-		"rodent",
-		"squirrel"
-	],
-	char: "🐿",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var hedgehog = {
-	keywords: [
-		"animal",
-		"nature",
-		"spiny"
-	],
-	char: "🦔",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var raccoon = {
-	keywords: [
-		"animal",
-		"nature"
-	],
-	char: "🦝",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var llama = {
-	keywords: [
-		"animal",
-		"nature",
-		"alpaca"
-	],
-	char: "🦙",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var hippopotamus = {
-	keywords: [
-		"animal",
-		"nature"
-	],
-	char: "🦛",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var kangaroo = {
-	keywords: [
-		"animal",
-		"nature",
-		"australia",
-		"joey",
-		"hop",
-		"marsupial"
-	],
-	char: "🦘",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var badger = {
-	keywords: [
-		"animal",
-		"nature",
-		"honey"
-	],
-	char: "🦡",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var swan = {
-	keywords: [
-		"animal",
-		"nature",
-		"bird"
-	],
-	char: "🦢",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var peacock = {
-	keywords: [
-		"animal",
-		"nature",
-		"peahen",
-		"bird"
-	],
-	char: "🦚",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var parrot = {
-	keywords: [
-		"animal",
-		"nature",
-		"bird",
-		"pirate",
-		"talk"
-	],
-	char: "🦜",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var lobster = {
-	keywords: [
-		"animal",
-		"nature",
-		"bisque",
-		"claws",
-		"seafood"
-	],
-	char: "🦞",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var mosquito = {
-	keywords: [
-		"animal",
-		"nature",
-		"insect",
-		"malaria"
-	],
-	char: "🦟",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var paw_prints = {
-	keywords: [
-		"animal",
-		"tracking",
-		"footprints",
-		"dog",
-		"cat",
-		"pet",
-		"feet"
-	],
-	char: "🐾",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var dragon = {
-	keywords: [
-		"animal",
-		"myth",
-		"nature",
-		"chinese",
-		"green"
-	],
-	char: "🐉",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var dragon_face = {
-	keywords: [
-		"animal",
-		"myth",
-		"nature",
-		"chinese",
-		"green"
-	],
-	char: "🐲",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var cactus = {
-	keywords: [
-		"vegetable",
-		"plant",
-		"nature"
-	],
-	char: "🌵",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var christmas_tree = {
-	keywords: [
-		"festival",
-		"vacation",
-		"december",
-		"xmas",
-		"celebration"
-	],
-	char: "🎄",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var evergreen_tree = {
-	keywords: [
-		"plant",
-		"nature"
-	],
-	char: "🌲",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var deciduous_tree = {
-	keywords: [
-		"plant",
-		"nature"
-	],
-	char: "🌳",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var palm_tree = {
-	keywords: [
-		"plant",
-		"vegetable",
-		"nature",
-		"summer",
-		"beach",
-		"mojito",
-		"tropical"
-	],
-	char: "🌴",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var seedling = {
-	keywords: [
-		"plant",
-		"nature",
-		"grass",
-		"lawn",
-		"spring"
-	],
-	char: "🌱",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var herb = {
-	keywords: [
-		"vegetable",
-		"plant",
-		"medicine",
-		"weed",
-		"grass",
-		"lawn"
-	],
-	char: "🌿",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var shamrock = {
-	keywords: [
-		"vegetable",
-		"plant",
-		"nature",
-		"irish",
-		"clover"
-	],
-	char: "☘",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var four_leaf_clover = {
-	keywords: [
-		"vegetable",
-		"plant",
-		"nature",
-		"lucky",
-		"irish"
-	],
-	char: "🍀",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var bamboo = {
-	keywords: [
-		"plant",
-		"nature",
-		"vegetable",
-		"panda",
-		"pine_decoration"
-	],
-	char: "🎍",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var tanabata_tree = {
-	keywords: [
-		"plant",
-		"nature",
-		"branch",
-		"summer"
-	],
-	char: "🎋",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var leaves = {
-	keywords: [
-		"nature",
-		"plant",
-		"tree",
-		"vegetable",
-		"grass",
-		"lawn",
-		"spring"
-	],
-	char: "🍃",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var fallen_leaf = {
-	keywords: [
-		"nature",
-		"plant",
-		"vegetable",
-		"leaves"
-	],
-	char: "🍂",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var maple_leaf = {
-	keywords: [
-		"nature",
-		"plant",
-		"vegetable",
-		"ca",
-		"fall"
-	],
-	char: "🍁",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var ear_of_rice = {
-	keywords: [
-		"nature",
-		"plant"
-	],
-	char: "🌾",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var hibiscus = {
-	keywords: [
-		"plant",
-		"vegetable",
-		"flowers",
-		"beach"
-	],
-	char: "🌺",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var sunflower = {
-	keywords: [
-		"nature",
-		"plant",
-		"fall"
-	],
-	char: "🌻",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var rose = {
-	keywords: [
-		"flowers",
-		"valentines",
-		"love",
-		"spring"
-	],
-	char: "🌹",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var wilted_flower = {
-	keywords: [
-		"plant",
-		"nature",
-		"flower"
-	],
-	char: "🥀",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var tulip = {
-	keywords: [
-		"flowers",
-		"plant",
-		"nature",
-		"summer",
-		"spring"
-	],
-	char: "🌷",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var blossom = {
-	keywords: [
-		"nature",
-		"flowers",
-		"yellow"
-	],
-	char: "🌼",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var cherry_blossom = {
-	keywords: [
-		"nature",
-		"plant",
-		"spring",
-		"flower"
-	],
-	char: "🌸",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var bouquet = {
-	keywords: [
-		"flowers",
-		"nature",
-		"spring"
-	],
-	char: "💐",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var mushroom = {
-	keywords: [
-		"plant",
-		"vegetable"
-	],
-	char: "🍄",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var chestnut = {
-	keywords: [
-		"food",
-		"squirrel"
-	],
-	char: "🌰",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var jack_o_lantern = {
-	keywords: [
-		"halloween",
-		"light",
-		"pumpkin",
-		"creepy",
-		"fall"
-	],
-	char: "🎃",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var shell = {
-	keywords: [
-		"nature",
-		"sea",
-		"beach"
-	],
-	char: "🐚",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var spider_web = {
-	keywords: [
-		"animal",
-		"insect",
-		"arachnid",
-		"silk"
-	],
-	char: "🕸",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var earth_americas = {
-	keywords: [
-		"globe",
-		"world",
-		"USA",
-		"international"
-	],
-	char: "🌎",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var earth_africa = {
-	keywords: [
-		"globe",
-		"world",
-		"international"
-	],
-	char: "🌍",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var earth_asia = {
-	keywords: [
-		"globe",
-		"world",
-		"east",
-		"international"
-	],
-	char: "🌏",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var full_moon = {
-	keywords: [
-		"nature",
-		"yellow",
-		"twilight",
-		"planet",
-		"space",
-		"night",
-		"evening",
-		"sleep"
-	],
-	char: "🌕",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var waning_gibbous_moon = {
-	keywords: [
-		"nature",
-		"twilight",
-		"planet",
-		"space",
-		"night",
-		"evening",
-		"sleep",
-		"waxing_gibbous_moon"
-	],
-	char: "🌖",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var last_quarter_moon = {
-	keywords: [
-		"nature",
-		"twilight",
-		"planet",
-		"space",
-		"night",
-		"evening",
-		"sleep"
-	],
-	char: "🌗",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var waning_crescent_moon = {
-	keywords: [
-		"nature",
-		"twilight",
-		"planet",
-		"space",
-		"night",
-		"evening",
-		"sleep"
-	],
-	char: "🌘",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var new_moon = {
-	keywords: [
-		"nature",
-		"twilight",
-		"planet",
-		"space",
-		"night",
-		"evening",
-		"sleep"
-	],
-	char: "🌑",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var waxing_crescent_moon = {
-	keywords: [
-		"nature",
-		"twilight",
-		"planet",
-		"space",
-		"night",
-		"evening",
-		"sleep"
-	],
-	char: "🌒",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var first_quarter_moon = {
-	keywords: [
-		"nature",
-		"twilight",
-		"planet",
-		"space",
-		"night",
-		"evening",
-		"sleep"
-	],
-	char: "🌓",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var waxing_gibbous_moon = {
-	keywords: [
-		"nature",
-		"night",
-		"sky",
-		"gray",
-		"twilight",
-		"planet",
-		"space",
-		"evening",
-		"sleep"
-	],
-	char: "🌔",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var new_moon_with_face = {
-	keywords: [
-		"nature",
-		"twilight",
-		"planet",
-		"space",
-		"night",
-		"evening",
-		"sleep"
-	],
-	char: "🌚",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var full_moon_with_face = {
-	keywords: [
-		"nature",
-		"twilight",
-		"planet",
-		"space",
-		"night",
-		"evening",
-		"sleep"
-	],
-	char: "🌝",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var first_quarter_moon_with_face = {
-	keywords: [
-		"nature",
-		"twilight",
-		"planet",
-		"space",
-		"night",
-		"evening",
-		"sleep"
-	],
-	char: "🌛",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var last_quarter_moon_with_face = {
-	keywords: [
-		"nature",
-		"twilight",
-		"planet",
-		"space",
-		"night",
-		"evening",
-		"sleep"
-	],
-	char: "🌜",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var sun_with_face = {
-	keywords: [
-		"nature",
-		"morning",
-		"sky"
-	],
-	char: "🌞",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var crescent_moon = {
-	keywords: [
-		"night",
-		"sleep",
-		"sky",
-		"evening",
-		"magic"
-	],
-	char: "🌙",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var star = {
-	keywords: [
-		"night",
-		"yellow"
-	],
-	char: "⭐",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var star2 = {
-	keywords: [
-		"night",
-		"sparkle",
-		"awesome",
-		"good",
-		"magic"
-	],
-	char: "🌟",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var dizzy = {
-	keywords: [
-		"star",
-		"sparkle",
-		"shoot",
-		"magic"
-	],
-	char: "💫",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var sparkles = {
-	keywords: [
-		"stars",
-		"shine",
-		"shiny",
-		"cool",
-		"awesome",
-		"good",
-		"magic"
-	],
-	char: "✨",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var comet = {
-	keywords: [
-		"space"
-	],
-	char: "☄",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var sunny = {
-	keywords: [
-		"weather",
-		"nature",
-		"brightness",
-		"summer",
-		"beach",
-		"spring"
-	],
-	char: "☀️",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var sun_behind_small_cloud = {
-	keywords: [
-		"weather"
-	],
-	char: "🌤",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var partly_sunny = {
-	keywords: [
-		"weather",
-		"nature",
-		"cloudy",
-		"morning",
-		"fall",
-		"spring"
-	],
-	char: "⛅",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var sun_behind_large_cloud = {
-	keywords: [
-		"weather"
-	],
-	char: "🌥",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var sun_behind_rain_cloud = {
-	keywords: [
-		"weather"
-	],
-	char: "🌦",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var cloud = {
-	keywords: [
-		"weather",
-		"sky"
-	],
-	char: "☁️",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var cloud_with_rain = {
-	keywords: [
-		"weather"
-	],
-	char: "🌧",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var cloud_with_lightning_and_rain = {
-	keywords: [
-		"weather",
-		"lightning"
-	],
-	char: "⛈",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var cloud_with_lightning = {
-	keywords: [
-		"weather",
-		"thunder"
-	],
-	char: "🌩",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var zap = {
-	keywords: [
-		"thunder",
-		"weather",
-		"lightning bolt",
-		"fast"
-	],
-	char: "⚡",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var fire = {
-	keywords: [
-		"hot",
-		"cook",
-		"flame"
-	],
-	char: "🔥",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var boom = {
-	keywords: [
-		"bomb",
-		"explode",
-		"explosion",
-		"collision",
-		"blown"
-	],
-	char: "💥",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var snowflake = {
-	keywords: [
-		"winter",
-		"season",
-		"cold",
-		"weather",
-		"christmas",
-		"xmas"
-	],
-	char: "❄️",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var cloud_with_snow = {
-	keywords: [
-		"weather"
-	],
-	char: "🌨",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var snowman = {
-	keywords: [
-		"winter",
-		"season",
-		"cold",
-		"weather",
-		"christmas",
-		"xmas",
-		"frozen",
-		"without_snow"
-	],
-	char: "⛄",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var snowman_with_snow = {
-	keywords: [
-		"winter",
-		"season",
-		"cold",
-		"weather",
-		"christmas",
-		"xmas",
-		"frozen"
-	],
-	char: "☃",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var wind_face = {
-	keywords: [
-		"gust",
-		"air"
-	],
-	char: "🌬",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var dash = {
-	keywords: [
-		"wind",
-		"air",
-		"fast",
-		"shoo",
-		"fart",
-		"smoke",
-		"puff"
-	],
-	char: "💨",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var tornado = {
-	keywords: [
-		"weather",
-		"cyclone",
-		"twister"
-	],
-	char: "🌪",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var fog = {
-	keywords: [
-		"weather"
-	],
-	char: "🌫",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var open_umbrella = {
-	keywords: [
-		"weather",
-		"spring"
-	],
-	char: "☂",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var umbrella = {
-	keywords: [
-		"rainy",
-		"weather",
-		"spring"
-	],
-	char: "☔",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var droplet = {
-	keywords: [
-		"water",
-		"drip",
-		"faucet",
-		"spring"
-	],
-	char: "💧",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var sweat_drops = {
-	keywords: [
-		"water",
-		"drip",
-		"oops"
-	],
-	char: "💦",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var ocean = {
-	keywords: [
-		"sea",
-		"water",
-		"wave",
-		"nature",
-		"tsunami",
-		"disaster"
-	],
-	char: "🌊",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-};
-var green_apple = {
-	keywords: [
-		"fruit",
-		"nature"
-	],
-	char: "🍏",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var apple = {
-	keywords: [
-		"fruit",
-		"mac",
-		"school"
-	],
-	char: "🍎",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var pear = {
-	keywords: [
-		"fruit",
-		"nature",
-		"food"
-	],
-	char: "🍐",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var tangerine = {
-	keywords: [
-		"food",
-		"fruit",
-		"nature",
-		"orange"
-	],
-	char: "🍊",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var lemon = {
-	keywords: [
-		"fruit",
-		"nature"
-	],
-	char: "🍋",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var banana = {
-	keywords: [
-		"fruit",
-		"food",
-		"monkey"
-	],
-	char: "🍌",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var watermelon = {
-	keywords: [
-		"fruit",
-		"food",
-		"picnic",
-		"summer"
-	],
-	char: "🍉",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var grapes = {
-	keywords: [
-		"fruit",
-		"food",
-		"wine"
-	],
-	char: "🍇",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var strawberry = {
-	keywords: [
-		"fruit",
-		"food",
-		"nature"
-	],
-	char: "🍓",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var melon = {
-	keywords: [
-		"fruit",
-		"nature",
-		"food"
-	],
-	char: "🍈",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var cherries = {
-	keywords: [
-		"food",
-		"fruit"
-	],
-	char: "🍒",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var peach = {
-	keywords: [
-		"fruit",
-		"nature",
-		"food"
-	],
-	char: "🍑",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var pineapple = {
-	keywords: [
-		"fruit",
-		"nature",
-		"food"
-	],
-	char: "🍍",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var coconut = {
-	keywords: [
-		"fruit",
-		"nature",
-		"food",
-		"palm"
-	],
-	char: "🥥",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var kiwi_fruit = {
-	keywords: [
-		"fruit",
-		"food"
-	],
-	char: "🥝",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var mango = {
-	keywords: [
-		"fruit",
-		"food",
-		"tropical"
-	],
-	char: "🥭",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var avocado = {
-	keywords: [
-		"fruit",
-		"food"
-	],
-	char: "🥑",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var broccoli = {
-	keywords: [
-		"fruit",
-		"food",
-		"vegetable"
-	],
-	char: "🥦",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var tomato = {
-	keywords: [
-		"fruit",
-		"vegetable",
-		"nature",
-		"food"
-	],
-	char: "🍅",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var eggplant = {
-	keywords: [
-		"vegetable",
-		"nature",
-		"food",
-		"aubergine"
-	],
-	char: "🍆",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var cucumber = {
-	keywords: [
-		"fruit",
-		"food",
-		"pickle"
-	],
-	char: "🥒",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var carrot = {
-	keywords: [
-		"vegetable",
-		"food",
-		"orange"
-	],
-	char: "🥕",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var hot_pepper = {
-	keywords: [
-		"food",
-		"spicy",
-		"chilli",
-		"chili"
-	],
-	char: "🌶",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var potato = {
-	keywords: [
-		"food",
-		"tuber",
-		"vegatable",
-		"starch"
-	],
-	char: "🥔",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var corn = {
-	keywords: [
-		"food",
-		"vegetable",
-		"plant"
-	],
-	char: "🌽",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var leafy_greens = {
-	keywords: [
-		"food",
-		"vegetable",
-		"plant",
-		"bok choy",
-		"cabbage",
-		"kale",
-		"lettuce"
-	],
-	char: "🥬",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var sweet_potato = {
-	keywords: [
-		"food",
-		"nature"
-	],
-	char: "🍠",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var peanuts = {
-	keywords: [
-		"food",
-		"nut"
-	],
-	char: "🥜",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var honey_pot = {
-	keywords: [
-		"bees",
-		"sweet",
-		"kitchen"
-	],
-	char: "🍯",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var croissant = {
-	keywords: [
-		"food",
-		"bread",
-		"french"
-	],
-	char: "🥐",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var bread = {
-	keywords: [
-		"food",
-		"wheat",
-		"breakfast",
-		"toast"
-	],
-	char: "🍞",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var baguette_bread = {
-	keywords: [
-		"food",
-		"bread",
-		"french"
-	],
-	char: "🥖",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var bagel = {
-	keywords: [
-		"food",
-		"bread",
-		"bakery",
-		"schmear"
-	],
-	char: "🥯",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var pretzel = {
-	keywords: [
-		"food",
-		"bread",
-		"twisted"
-	],
-	char: "🥨",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var cheese = {
-	keywords: [
-		"food",
-		"chadder"
-	],
-	char: "🧀",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var egg = {
-	keywords: [
-		"food",
-		"chicken",
-		"breakfast"
-	],
-	char: "🥚",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var bacon = {
-	keywords: [
-		"food",
-		"breakfast",
-		"pork",
-		"pig",
-		"meat"
-	],
-	char: "🥓",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var steak = {
-	keywords: [
-		"food",
-		"cow",
-		"meat",
-		"cut",
-		"chop",
-		"lambchop",
-		"porkchop"
-	],
-	char: "🥩",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var pancakes = {
-	keywords: [
-		"food",
-		"breakfast",
-		"flapjacks",
-		"hotcakes"
-	],
-	char: "🥞",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var poultry_leg = {
-	keywords: [
-		"food",
-		"meat",
-		"drumstick",
-		"bird",
-		"chicken",
-		"turkey"
-	],
-	char: "🍗",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var meat_on_bone = {
-	keywords: [
-		"good",
-		"food",
-		"drumstick"
-	],
-	char: "🍖",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var bone = {
-	keywords: [
-		"skeleton"
-	],
-	char: "🦴",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var fried_shrimp = {
-	keywords: [
-		"food",
-		"animal",
-		"appetizer",
-		"summer"
-	],
-	char: "🍤",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var fried_egg = {
-	keywords: [
-		"food",
-		"breakfast",
-		"kitchen",
-		"egg"
-	],
-	char: "🍳",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var hamburger = {
-	keywords: [
-		"meat",
-		"fast food",
-		"beef",
-		"cheeseburger",
-		"mcdonalds",
-		"burger king"
-	],
-	char: "🍔",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var fries = {
-	keywords: [
-		"chips",
-		"snack",
-		"fast food"
-	],
-	char: "🍟",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var stuffed_flatbread = {
-	keywords: [
-		"food",
-		"flatbread",
-		"stuffed",
-		"gyro"
-	],
-	char: "🥙",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var hotdog = {
-	keywords: [
-		"food",
-		"frankfurter"
-	],
-	char: "🌭",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var pizza = {
-	keywords: [
-		"food",
-		"party"
-	],
-	char: "🍕",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var sandwich = {
-	keywords: [
-		"food",
-		"lunch",
-		"bread"
-	],
-	char: "🥪",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var canned_food = {
-	keywords: [
-		"food",
-		"soup"
-	],
-	char: "🥫",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var spaghetti = {
-	keywords: [
-		"food",
-		"italian",
-		"noodle"
-	],
-	char: "🍝",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var taco = {
-	keywords: [
-		"food",
-		"mexican"
-	],
-	char: "🌮",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var burrito = {
-	keywords: [
-		"food",
-		"mexican"
-	],
-	char: "🌯",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var green_salad = {
-	keywords: [
-		"food",
-		"healthy",
-		"lettuce"
-	],
-	char: "🥗",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var shallow_pan_of_food = {
-	keywords: [
-		"food",
-		"cooking",
-		"casserole",
-		"paella"
-	],
-	char: "🥘",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var ramen = {
-	keywords: [
-		"food",
-		"japanese",
-		"noodle",
-		"chopsticks"
-	],
-	char: "🍜",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var stew = {
-	keywords: [
-		"food",
-		"meat",
-		"soup"
-	],
-	char: "🍲",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var fish_cake = {
-	keywords: [
-		"food",
-		"japan",
-		"sea",
-		"beach",
-		"narutomaki",
-		"pink",
-		"swirl",
-		"kamaboko",
-		"surimi",
-		"ramen"
-	],
-	char: "🍥",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var fortune_cookie = {
-	keywords: [
-		"food",
-		"prophecy"
-	],
-	char: "🥠",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var sushi = {
-	keywords: [
-		"food",
-		"fish",
-		"japanese",
-		"rice"
-	],
-	char: "🍣",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var bento = {
-	keywords: [
-		"food",
-		"japanese",
-		"box"
-	],
-	char: "🍱",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var curry = {
-	keywords: [
-		"food",
-		"spicy",
-		"hot",
-		"indian"
-	],
-	char: "🍛",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var rice_ball = {
-	keywords: [
-		"food",
-		"japanese"
-	],
-	char: "🍙",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var rice = {
-	keywords: [
-		"food",
-		"china",
-		"asian"
-	],
-	char: "🍚",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var rice_cracker = {
-	keywords: [
-		"food",
-		"japanese"
-	],
-	char: "🍘",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var oden = {
-	keywords: [
-		"food",
-		"japanese"
-	],
-	char: "🍢",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var dango = {
-	keywords: [
-		"food",
-		"dessert",
-		"sweet",
-		"japanese",
-		"barbecue",
-		"meat"
-	],
-	char: "🍡",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var shaved_ice = {
-	keywords: [
-		"hot",
-		"dessert",
-		"summer"
-	],
-	char: "🍧",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var ice_cream = {
-	keywords: [
-		"food",
-		"hot",
-		"dessert"
-	],
-	char: "🍨",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var icecream = {
-	keywords: [
-		"food",
-		"hot",
-		"dessert",
-		"summer"
-	],
-	char: "🍦",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var pie = {
-	keywords: [
-		"food",
-		"dessert",
-		"pastry"
-	],
-	char: "🥧",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var cake = {
-	keywords: [
-		"food",
-		"dessert"
-	],
-	char: "🍰",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var cupcake = {
-	keywords: [
-		"food",
-		"dessert",
-		"bakery",
-		"sweet"
-	],
-	char: "🧁",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var moon_cake = {
-	keywords: [
-		"food",
-		"autumn"
-	],
-	char: "🥮",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var birthday = {
-	keywords: [
-		"food",
-		"dessert",
-		"cake"
-	],
-	char: "🎂",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var custard = {
-	keywords: [
-		"dessert",
-		"food"
-	],
-	char: "🍮",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var candy = {
-	keywords: [
-		"snack",
-		"dessert",
-		"sweet",
-		"lolly"
-	],
-	char: "🍬",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var lollipop = {
-	keywords: [
-		"food",
-		"snack",
-		"candy",
-		"sweet"
-	],
-	char: "🍭",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var chocolate_bar = {
-	keywords: [
-		"food",
-		"snack",
-		"dessert",
-		"sweet"
-	],
-	char: "🍫",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var popcorn = {
-	keywords: [
-		"food",
-		"movie theater",
-		"films",
-		"snack"
-	],
-	char: "🍿",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var dumpling = {
-	keywords: [
-		"food",
-		"empanada",
-		"pierogi",
-		"potsticker"
-	],
-	char: "🥟",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var doughnut = {
-	keywords: [
-		"food",
-		"dessert",
-		"snack",
-		"sweet",
-		"donut"
-	],
-	char: "🍩",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var cookie = {
-	keywords: [
-		"food",
-		"snack",
-		"oreo",
-		"chocolate",
-		"sweet",
-		"dessert"
-	],
-	char: "🍪",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var milk_glass = {
-	keywords: [
-		"beverage",
-		"drink",
-		"cow"
-	],
-	char: "🥛",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var beer = {
-	keywords: [
-		"relax",
-		"beverage",
-		"drink",
-		"drunk",
-		"party",
-		"pub",
-		"summer",
-		"alcohol",
-		"booze"
-	],
-	char: "🍺",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var beers = {
-	keywords: [
-		"relax",
-		"beverage",
-		"drink",
-		"drunk",
-		"party",
-		"pub",
-		"summer",
-		"alcohol",
-		"booze"
-	],
-	char: "🍻",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var clinking_glasses = {
-	keywords: [
-		"beverage",
-		"drink",
-		"party",
-		"alcohol",
-		"celebrate",
-		"cheers",
-		"wine",
-		"champagne",
-		"toast"
-	],
-	char: "🥂",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var wine_glass = {
-	keywords: [
-		"drink",
-		"beverage",
-		"drunk",
-		"alcohol",
-		"booze"
-	],
-	char: "🍷",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var tumbler_glass = {
-	keywords: [
-		"drink",
-		"beverage",
-		"drunk",
-		"alcohol",
-		"liquor",
-		"booze",
-		"bourbon",
-		"scotch",
-		"whisky",
-		"glass",
-		"shot"
-	],
-	char: "🥃",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var cocktail = {
-	keywords: [
-		"drink",
-		"drunk",
-		"alcohol",
-		"beverage",
-		"booze",
-		"mojito"
-	],
-	char: "🍸",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var tropical_drink = {
-	keywords: [
-		"beverage",
-		"cocktail",
-		"summer",
-		"beach",
-		"alcohol",
-		"booze",
-		"mojito"
-	],
-	char: "🍹",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var champagne = {
-	keywords: [
-		"drink",
-		"wine",
-		"bottle",
-		"celebration"
-	],
-	char: "🍾",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var sake = {
-	keywords: [
-		"wine",
-		"drink",
-		"drunk",
-		"beverage",
-		"japanese",
-		"alcohol",
-		"booze"
-	],
-	char: "🍶",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var tea = {
-	keywords: [
-		"drink",
-		"bowl",
-		"breakfast",
-		"green",
-		"british"
-	],
-	char: "🍵",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var cup_with_straw = {
-	keywords: [
-		"drink",
-		"soda"
-	],
-	char: "🥤",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var coffee = {
-	keywords: [
-		"beverage",
-		"caffeine",
-		"latte",
-		"espresso"
-	],
-	char: "☕",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var baby_bottle = {
-	keywords: [
-		"food",
-		"container",
-		"milk"
-	],
-	char: "🍼",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var salt = {
-	keywords: [
-		"condiment",
-		"shaker"
-	],
-	char: "🧂",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var spoon = {
-	keywords: [
-		"cutlery",
-		"kitchen",
-		"tableware"
-	],
-	char: "🥄",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var fork_and_knife = {
-	keywords: [
-		"cutlery",
-		"kitchen"
-	],
-	char: "🍴",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var plate_with_cutlery = {
-	keywords: [
-		"food",
-		"eat",
-		"meal",
-		"lunch",
-		"dinner",
-		"restaurant"
-	],
-	char: "🍽",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var bowl_with_spoon = {
-	keywords: [
-		"food",
-		"breakfast",
-		"cereal",
-		"oatmeal",
-		"porridge"
-	],
-	char: "🥣",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var takeout_box = {
-	keywords: [
-		"food",
-		"leftovers"
-	],
-	char: "🥡",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var chopsticks = {
-	keywords: [
-		"food"
-	],
-	char: "🥢",
-	fitzpatrick_scale: false,
-	category: "food_and_drink"
-};
-var soccer = {
-	keywords: [
-		"sports",
-		"football"
-	],
-	char: "⚽",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var basketball = {
-	keywords: [
-		"sports",
-		"balls",
-		"NBA"
-	],
-	char: "🏀",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var football = {
-	keywords: [
-		"sports",
-		"balls",
-		"NFL"
-	],
-	char: "🏈",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var baseball = {
-	keywords: [
-		"sports",
-		"balls"
-	],
-	char: "⚾",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var softball = {
-	keywords: [
-		"sports",
-		"balls"
-	],
-	char: "🥎",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var tennis = {
-	keywords: [
-		"sports",
-		"balls",
-		"green"
-	],
-	char: "🎾",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var volleyball = {
-	keywords: [
-		"sports",
-		"balls"
-	],
-	char: "🏐",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var rugby_football = {
-	keywords: [
-		"sports",
-		"team"
-	],
-	char: "🏉",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var flying_disc = {
-	keywords: [
-		"sports",
-		"frisbee",
-		"ultimate"
-	],
-	char: "🥏",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var golf = {
-	keywords: [
-		"sports",
-		"business",
-		"flag",
-		"hole",
-		"summer"
-	],
-	char: "⛳",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var golfing_woman = {
-	keywords: [
-		"sports",
-		"business",
-		"woman",
-		"female"
-	],
-	char: "🏌️‍♀️",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var golfing_man = {
-	keywords: [
-		"sports",
-		"business"
-	],
-	char: "🏌",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var ping_pong = {
-	keywords: [
-		"sports",
-		"pingpong"
-	],
-	char: "🏓",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var badminton = {
-	keywords: [
-		"sports"
-	],
-	char: "🏸",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var goal_net = {
-	keywords: [
-		"sports"
-	],
-	char: "🥅",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var ice_hockey = {
-	keywords: [
-		"sports"
-	],
-	char: "🏒",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var field_hockey = {
-	keywords: [
-		"sports"
-	],
-	char: "🏑",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var lacrosse = {
-	keywords: [
-		"sports",
-		"ball",
-		"stick"
-	],
-	char: "🥍",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var cricket = {
-	keywords: [
-		"sports"
-	],
-	char: "🏏",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var ski = {
-	keywords: [
-		"sports",
-		"winter",
-		"cold",
-		"snow"
-	],
-	char: "🎿",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var skier = {
-	keywords: [
-		"sports",
-		"winter",
-		"snow"
-	],
-	char: "⛷",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var snowboarder = {
-	keywords: [
-		"sports",
-		"winter"
-	],
-	char: "🏂",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var person_fencing = {
-	keywords: [
-		"sports",
-		"fencing",
-		"sword"
-	],
-	char: "🤺",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var women_wrestling = {
-	keywords: [
-		"sports",
-		"wrestlers"
-	],
-	char: "🤼‍♀️",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var men_wrestling = {
-	keywords: [
-		"sports",
-		"wrestlers"
-	],
-	char: "🤼‍♂️",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var woman_cartwheeling = {
-	keywords: [
-		"gymnastics"
-	],
-	char: "🤸‍♀️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var man_cartwheeling = {
-	keywords: [
-		"gymnastics"
-	],
-	char: "🤸‍♂️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var woman_playing_handball = {
-	keywords: [
-		"sports"
-	],
-	char: "🤾‍♀️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var man_playing_handball = {
-	keywords: [
-		"sports"
-	],
-	char: "🤾‍♂️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var ice_skate = {
-	keywords: [
-		"sports"
-	],
-	char: "⛸",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var curling_stone = {
-	keywords: [
-		"sports"
-	],
-	char: "🥌",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var skateboard = {
-	keywords: [
-		"board"
-	],
-	char: "🛹",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var sled = {
-	keywords: [
-		"sleigh",
-		"luge",
-		"toboggan"
-	],
-	char: "🛷",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var bow_and_arrow = {
-	keywords: [
-		"sports"
-	],
-	char: "🏹",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var fishing_pole_and_fish = {
-	keywords: [
-		"food",
-		"hobby",
-		"summer"
-	],
-	char: "🎣",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var boxing_glove = {
-	keywords: [
-		"sports",
-		"fighting"
-	],
-	char: "🥊",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var martial_arts_uniform = {
-	keywords: [
-		"judo",
-		"karate",
-		"taekwondo"
-	],
-	char: "🥋",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var rowing_woman = {
-	keywords: [
-		"sports",
-		"hobby",
-		"water",
-		"ship",
-		"woman",
-		"female"
-	],
-	char: "🚣‍♀️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var rowing_man = {
-	keywords: [
-		"sports",
-		"hobby",
-		"water",
-		"ship"
-	],
-	char: "🚣",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var climbing_woman = {
-	keywords: [
-		"sports",
-		"hobby",
-		"woman",
-		"female",
-		"rock"
-	],
-	char: "🧗‍♀️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var climbing_man = {
-	keywords: [
-		"sports",
-		"hobby",
-		"man",
-		"male",
-		"rock"
-	],
-	char: "🧗‍♂️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var swimming_woman = {
-	keywords: [
-		"sports",
-		"exercise",
-		"human",
-		"athlete",
-		"water",
-		"summer",
-		"woman",
-		"female"
-	],
-	char: "🏊‍♀️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var swimming_man = {
-	keywords: [
-		"sports",
-		"exercise",
-		"human",
-		"athlete",
-		"water",
-		"summer"
-	],
-	char: "🏊",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var woman_playing_water_polo = {
-	keywords: [
-		"sports",
-		"pool"
-	],
-	char: "🤽‍♀️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var man_playing_water_polo = {
-	keywords: [
-		"sports",
-		"pool"
-	],
-	char: "🤽‍♂️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var woman_in_lotus_position = {
-	keywords: [
-		"woman",
-		"female",
-		"meditation",
-		"yoga",
-		"serenity",
-		"zen",
-		"mindfulness"
-	],
-	char: "🧘‍♀️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var man_in_lotus_position = {
-	keywords: [
-		"man",
-		"male",
-		"meditation",
-		"yoga",
-		"serenity",
-		"zen",
-		"mindfulness"
-	],
-	char: "🧘‍♂️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var surfing_woman = {
-	keywords: [
-		"sports",
-		"ocean",
-		"sea",
-		"summer",
-		"beach",
-		"woman",
-		"female"
-	],
-	char: "🏄‍♀️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var surfing_man = {
-	keywords: [
-		"sports",
-		"ocean",
-		"sea",
-		"summer",
-		"beach"
-	],
-	char: "🏄",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var bath = {
-	keywords: [
-		"clean",
-		"shower",
-		"bathroom"
-	],
-	char: "🛀",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var basketball_woman = {
-	keywords: [
-		"sports",
-		"human",
-		"woman",
-		"female"
-	],
-	char: "⛹️‍♀️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var basketball_man = {
-	keywords: [
-		"sports",
-		"human"
-	],
-	char: "⛹",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var weight_lifting_woman = {
-	keywords: [
-		"sports",
-		"training",
-		"exercise",
-		"woman",
-		"female"
-	],
-	char: "🏋️‍♀️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var weight_lifting_man = {
-	keywords: [
-		"sports",
-		"training",
-		"exercise"
-	],
-	char: "🏋",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var biking_woman = {
-	keywords: [
-		"sports",
-		"bike",
-		"exercise",
-		"hipster",
-		"woman",
-		"female"
-	],
-	char: "🚴‍♀️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var biking_man = {
-	keywords: [
-		"sports",
-		"bike",
-		"exercise",
-		"hipster"
-	],
-	char: "🚴",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var mountain_biking_woman = {
-	keywords: [
-		"transportation",
-		"sports",
-		"human",
-		"race",
-		"bike",
-		"woman",
-		"female"
-	],
-	char: "🚵‍♀️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var mountain_biking_man = {
-	keywords: [
-		"transportation",
-		"sports",
-		"human",
-		"race",
-		"bike"
-	],
-	char: "🚵",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var horse_racing = {
-	keywords: [
-		"animal",
-		"betting",
-		"competition",
-		"gambling",
-		"luck"
-	],
-	char: "🏇",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var business_suit_levitating = {
-	keywords: [
-		"suit",
-		"business",
-		"levitate",
-		"hover",
-		"jump"
-	],
-	char: "🕴",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var trophy = {
-	keywords: [
-		"win",
-		"award",
-		"contest",
-		"place",
-		"ftw",
-		"ceremony"
-	],
-	char: "🏆",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var running_shirt_with_sash = {
-	keywords: [
-		"play",
-		"pageant"
-	],
-	char: "🎽",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var medal_sports = {
-	keywords: [
-		"award",
-		"winning"
-	],
-	char: "🏅",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var medal_military = {
-	keywords: [
-		"award",
-		"winning",
-		"army"
-	],
-	char: "🎖",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var reminder_ribbon = {
-	keywords: [
-		"sports",
-		"cause",
-		"support",
-		"awareness"
-	],
-	char: "🎗",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var rosette = {
-	keywords: [
-		"flower",
-		"decoration",
-		"military"
-	],
-	char: "🏵",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var ticket = {
-	keywords: [
-		"event",
-		"concert",
-		"pass"
-	],
-	char: "🎫",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var tickets = {
-	keywords: [
-		"sports",
-		"concert",
-		"entrance"
-	],
-	char: "🎟",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var performing_arts = {
-	keywords: [
-		"acting",
-		"theater",
-		"drama"
-	],
-	char: "🎭",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var art = {
-	keywords: [
-		"design",
-		"paint",
-		"draw",
-		"colors"
-	],
-	char: "🎨",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var circus_tent = {
-	keywords: [
-		"festival",
-		"carnival",
-		"party"
-	],
-	char: "🎪",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var woman_juggling = {
-	keywords: [
-		"juggle",
-		"balance",
-		"skill",
-		"multitask"
-	],
-	char: "🤹‍♀️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var man_juggling = {
-	keywords: [
-		"juggle",
-		"balance",
-		"skill",
-		"multitask"
-	],
-	char: "🤹‍♂️",
-	fitzpatrick_scale: true,
-	category: "activity"
-};
-var microphone = {
-	keywords: [
-		"sound",
-		"music",
-		"PA",
-		"sing",
-		"talkshow"
-	],
-	char: "🎤",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var headphones = {
-	keywords: [
-		"music",
-		"score",
-		"gadgets"
-	],
-	char: "🎧",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var musical_score = {
-	keywords: [
-		"treble",
-		"clef",
-		"compose"
-	],
-	char: "🎼",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var musical_keyboard = {
-	keywords: [
-		"piano",
-		"instrument",
-		"compose"
-	],
-	char: "🎹",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var drum = {
-	keywords: [
-		"music",
-		"instrument",
-		"drumsticks",
-		"snare"
-	],
-	char: "🥁",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var saxophone = {
-	keywords: [
-		"music",
-		"instrument",
-		"jazz",
-		"blues"
-	],
-	char: "🎷",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var trumpet = {
-	keywords: [
-		"music",
-		"brass"
-	],
-	char: "🎺",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var guitar = {
-	keywords: [
-		"music",
-		"instrument"
-	],
-	char: "🎸",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var violin = {
-	keywords: [
-		"music",
-		"instrument",
-		"orchestra",
-		"symphony"
-	],
-	char: "🎻",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var clapper = {
-	keywords: [
-		"movie",
-		"film",
-		"record"
-	],
-	char: "🎬",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var video_game = {
-	keywords: [
-		"play",
-		"console",
-		"PS4",
-		"controller"
-	],
-	char: "🎮",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var space_invader = {
-	keywords: [
-		"game",
-		"arcade",
-		"play"
-	],
-	char: "👾",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var dart = {
-	keywords: [
-		"game",
-		"play",
-		"bar",
-		"target",
-		"bullseye"
-	],
-	char: "🎯",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var game_die = {
-	keywords: [
-		"dice",
-		"random",
-		"tabletop",
-		"play",
-		"luck"
-	],
-	char: "🎲",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var chess_pawn = {
-	keywords: [
-		"expendable"
-	],
-	char: "♟",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var slot_machine = {
-	keywords: [
-		"bet",
-		"gamble",
-		"vegas",
-		"fruit machine",
-		"luck",
-		"casino"
-	],
-	char: "🎰",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var jigsaw = {
-	keywords: [
-		"interlocking",
-		"puzzle",
-		"piece"
-	],
-	char: "🧩",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var bowling = {
-	keywords: [
-		"sports",
-		"fun",
-		"play"
-	],
-	char: "🎳",
-	fitzpatrick_scale: false,
-	category: "activity"
-};
-var red_car = {
-	keywords: [
-		"red",
-		"transportation",
-		"vehicle"
-	],
-	char: "🚗",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var taxi = {
-	keywords: [
-		"uber",
-		"vehicle",
-		"cars",
-		"transportation"
-	],
-	char: "🚕",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var blue_car = {
-	keywords: [
-		"transportation",
-		"vehicle"
-	],
-	char: "🚙",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var bus = {
-	keywords: [
-		"car",
-		"vehicle",
-		"transportation"
-	],
-	char: "🚌",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var trolleybus = {
-	keywords: [
-		"bart",
-		"transportation",
-		"vehicle"
-	],
-	char: "🚎",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var racing_car = {
-	keywords: [
-		"sports",
-		"race",
-		"fast",
-		"formula",
-		"f1"
-	],
-	char: "🏎",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var police_car = {
-	keywords: [
-		"vehicle",
-		"cars",
-		"transportation",
-		"law",
-		"legal",
-		"enforcement"
-	],
-	char: "🚓",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var ambulance = {
-	keywords: [
-		"health",
-		"911",
-		"hospital"
-	],
-	char: "🚑",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var fire_engine = {
-	keywords: [
-		"transportation",
-		"cars",
-		"vehicle"
-	],
-	char: "🚒",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var minibus = {
-	keywords: [
-		"vehicle",
-		"car",
-		"transportation"
-	],
-	char: "🚐",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var truck = {
-	keywords: [
-		"cars",
-		"transportation"
-	],
-	char: "🚚",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var articulated_lorry = {
-	keywords: [
-		"vehicle",
-		"cars",
-		"transportation",
-		"express"
-	],
-	char: "🚛",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var tractor = {
-	keywords: [
-		"vehicle",
-		"car",
-		"farming",
-		"agriculture"
-	],
-	char: "🚜",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var kick_scooter = {
-	keywords: [
-		"vehicle",
-		"kick",
-		"razor"
-	],
-	char: "🛴",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var motorcycle = {
-	keywords: [
-		"race",
-		"sports",
-		"fast"
-	],
-	char: "🏍",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var bike = {
-	keywords: [
-		"sports",
-		"bicycle",
-		"exercise",
-		"hipster"
-	],
-	char: "🚲",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var motor_scooter = {
-	keywords: [
-		"vehicle",
-		"vespa",
-		"sasha"
-	],
-	char: "🛵",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var rotating_light = {
-	keywords: [
-		"police",
-		"ambulance",
-		"911",
-		"emergency",
-		"alert",
-		"error",
-		"pinged",
-		"law",
-		"legal"
-	],
-	char: "🚨",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var oncoming_police_car = {
-	keywords: [
-		"vehicle",
-		"law",
-		"legal",
-		"enforcement",
-		"911"
-	],
-	char: "🚔",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var oncoming_bus = {
-	keywords: [
-		"vehicle",
-		"transportation"
-	],
-	char: "🚍",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var oncoming_automobile = {
-	keywords: [
-		"car",
-		"vehicle",
-		"transportation"
-	],
-	char: "🚘",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var oncoming_taxi = {
-	keywords: [
-		"vehicle",
-		"cars",
-		"uber"
-	],
-	char: "🚖",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var aerial_tramway = {
-	keywords: [
-		"transportation",
-		"vehicle",
-		"ski"
-	],
-	char: "🚡",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var mountain_cableway = {
-	keywords: [
-		"transportation",
-		"vehicle",
-		"ski"
-	],
-	char: "🚠",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var suspension_railway = {
-	keywords: [
-		"vehicle",
-		"transportation"
-	],
-	char: "🚟",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var railway_car = {
-	keywords: [
-		"transportation",
-		"vehicle"
-	],
-	char: "🚃",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var train = {
-	keywords: [
-		"transportation",
-		"vehicle",
-		"carriage",
-		"public",
-		"travel"
-	],
-	char: "🚋",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var monorail = {
-	keywords: [
-		"transportation",
-		"vehicle"
-	],
-	char: "🚝",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var bullettrain_side = {
-	keywords: [
-		"transportation",
-		"vehicle"
-	],
-	char: "🚄",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var bullettrain_front = {
-	keywords: [
-		"transportation",
-		"vehicle",
-		"speed",
-		"fast",
-		"public",
-		"travel"
-	],
-	char: "🚅",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var light_rail = {
-	keywords: [
-		"transportation",
-		"vehicle"
-	],
-	char: "🚈",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var mountain_railway = {
-	keywords: [
-		"transportation",
-		"vehicle"
-	],
-	char: "🚞",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var steam_locomotive = {
-	keywords: [
-		"transportation",
-		"vehicle",
-		"train"
-	],
-	char: "🚂",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var train2 = {
-	keywords: [
-		"transportation",
-		"vehicle"
-	],
-	char: "🚆",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var metro = {
-	keywords: [
-		"transportation",
-		"blue-square",
-		"mrt",
-		"underground",
-		"tube"
-	],
-	char: "🚇",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var tram = {
-	keywords: [
-		"transportation",
-		"vehicle"
-	],
-	char: "🚊",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var station = {
-	keywords: [
-		"transportation",
-		"vehicle",
-		"public"
-	],
-	char: "🚉",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var flying_saucer = {
-	keywords: [
-		"transportation",
-		"vehicle",
-		"ufo"
-	],
-	char: "🛸",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var helicopter = {
-	keywords: [
-		"transportation",
-		"vehicle",
-		"fly"
-	],
-	char: "🚁",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var small_airplane = {
-	keywords: [
-		"flight",
-		"transportation",
-		"fly",
-		"vehicle"
-	],
-	char: "🛩",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var airplane = {
-	keywords: [
-		"vehicle",
-		"transportation",
-		"flight",
-		"fly"
-	],
-	char: "✈️",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var flight_departure = {
-	keywords: [
-		"airport",
-		"flight",
-		"landing"
-	],
-	char: "🛫",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var flight_arrival = {
-	keywords: [
-		"airport",
-		"flight",
-		"boarding"
-	],
-	char: "🛬",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var sailboat = {
-	keywords: [
-		"ship",
-		"summer",
-		"transportation",
-		"water",
-		"sailing"
-	],
-	char: "⛵",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var motor_boat = {
-	keywords: [
-		"ship"
-	],
-	char: "🛥",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var speedboat = {
-	keywords: [
-		"ship",
-		"transportation",
-		"vehicle",
-		"summer"
-	],
-	char: "🚤",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var ferry = {
-	keywords: [
-		"boat",
-		"ship",
-		"yacht"
-	],
-	char: "⛴",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var passenger_ship = {
-	keywords: [
-		"yacht",
-		"cruise",
-		"ferry"
-	],
-	char: "🛳",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var rocket = {
-	keywords: [
-		"launch",
-		"ship",
-		"staffmode",
-		"NASA",
-		"outer space",
-		"outer_space",
-		"fly"
-	],
-	char: "🚀",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var artificial_satellite = {
-	keywords: [
-		"communication",
-		"gps",
-		"orbit",
-		"spaceflight",
-		"NASA",
-		"ISS"
-	],
-	char: "🛰",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var seat = {
-	keywords: [
-		"sit",
-		"airplane",
-		"transport",
-		"bus",
-		"flight",
-		"fly"
-	],
-	char: "💺",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var canoe = {
-	keywords: [
-		"boat",
-		"paddle",
-		"water",
-		"ship"
-	],
-	char: "🛶",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var anchor = {
-	keywords: [
-		"ship",
-		"ferry",
-		"sea",
-		"boat"
-	],
-	char: "⚓",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var construction = {
-	keywords: [
-		"wip",
-		"progress",
-		"caution",
-		"warning"
-	],
-	char: "🚧",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var fuelpump = {
-	keywords: [
-		"gas station",
-		"petroleum"
-	],
-	char: "⛽",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var busstop = {
-	keywords: [
-		"transportation",
-		"wait"
-	],
-	char: "🚏",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var vertical_traffic_light = {
-	keywords: [
-		"transportation",
-		"driving"
-	],
-	char: "🚦",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var traffic_light = {
-	keywords: [
-		"transportation",
-		"signal"
-	],
-	char: "🚥",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var checkered_flag = {
-	keywords: [
-		"contest",
-		"finishline",
-		"race",
-		"gokart"
-	],
-	char: "🏁",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var ship = {
-	keywords: [
-		"transportation",
-		"titanic",
-		"deploy"
-	],
-	char: "🚢",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var ferris_wheel = {
-	keywords: [
-		"photo",
-		"carnival",
-		"londoneye"
-	],
-	char: "🎡",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var roller_coaster = {
-	keywords: [
-		"carnival",
-		"playground",
-		"photo",
-		"fun"
-	],
-	char: "🎢",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var carousel_horse = {
-	keywords: [
-		"photo",
-		"carnival"
-	],
-	char: "🎠",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var building_construction = {
-	keywords: [
-		"wip",
-		"working",
-		"progress"
-	],
-	char: "🏗",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var foggy = {
-	keywords: [
-		"photo",
-		"mountain"
-	],
-	char: "🌁",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var tokyo_tower = {
-	keywords: [
-		"photo",
-		"japanese"
-	],
-	char: "🗼",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var factory = {
-	keywords: [
-		"building",
-		"industry",
-		"pollution",
-		"smoke"
-	],
-	char: "🏭",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var fountain = {
-	keywords: [
-		"photo",
-		"summer",
-		"water",
-		"fresh"
-	],
-	char: "⛲",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var rice_scene = {
-	keywords: [
-		"photo",
-		"japan",
-		"asia",
-		"tsukimi"
-	],
-	char: "🎑",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var mountain = {
-	keywords: [
-		"photo",
-		"nature",
-		"environment"
-	],
-	char: "⛰",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var mountain_snow = {
-	keywords: [
-		"photo",
-		"nature",
-		"environment",
-		"winter",
-		"cold"
-	],
-	char: "🏔",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var mount_fuji = {
-	keywords: [
-		"photo",
-		"mountain",
-		"nature",
-		"japanese"
-	],
-	char: "🗻",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var volcano = {
-	keywords: [
-		"photo",
-		"nature",
-		"disaster"
-	],
-	char: "🌋",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var japan = {
-	keywords: [
-		"nation",
-		"country",
-		"japanese",
-		"asia"
-	],
-	char: "🗾",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var camping = {
-	keywords: [
-		"photo",
-		"outdoors",
-		"tent"
-	],
-	char: "🏕",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var tent = {
-	keywords: [
-		"photo",
-		"camping",
-		"outdoors"
-	],
-	char: "⛺",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var national_park = {
-	keywords: [
-		"photo",
-		"environment",
-		"nature"
-	],
-	char: "🏞",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var motorway = {
-	keywords: [
-		"road",
-		"cupertino",
-		"interstate",
-		"highway"
-	],
-	char: "🛣",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var railway_track = {
-	keywords: [
-		"train",
-		"transportation"
-	],
-	char: "🛤",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var sunrise = {
-	keywords: [
-		"morning",
-		"view",
-		"vacation",
-		"photo"
-	],
-	char: "🌅",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var sunrise_over_mountains = {
-	keywords: [
-		"view",
-		"vacation",
-		"photo"
-	],
-	char: "🌄",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var desert = {
-	keywords: [
-		"photo",
-		"warm",
-		"saharah"
-	],
-	char: "🏜",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var beach_umbrella = {
-	keywords: [
-		"weather",
-		"summer",
-		"sunny",
-		"sand",
-		"mojito"
-	],
-	char: "🏖",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var desert_island = {
-	keywords: [
-		"photo",
-		"tropical",
-		"mojito"
-	],
-	char: "🏝",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var city_sunrise = {
-	keywords: [
-		"photo",
-		"good morning",
-		"dawn"
-	],
-	char: "🌇",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var city_sunset = {
-	keywords: [
-		"photo",
-		"evening",
-		"sky",
-		"buildings"
-	],
-	char: "🌆",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var cityscape = {
-	keywords: [
-		"photo",
-		"night life",
-		"urban"
-	],
-	char: "🏙",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var night_with_stars = {
-	keywords: [
-		"evening",
-		"city",
-		"downtown"
-	],
-	char: "🌃",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var bridge_at_night = {
-	keywords: [
-		"photo",
-		"sanfrancisco"
-	],
-	char: "🌉",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var milky_way = {
-	keywords: [
-		"photo",
-		"space",
-		"stars"
-	],
-	char: "🌌",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var stars = {
-	keywords: [
-		"night",
-		"photo"
-	],
-	char: "🌠",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var sparkler = {
-	keywords: [
-		"stars",
-		"night",
-		"shine"
-	],
-	char: "🎇",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var fireworks = {
-	keywords: [
-		"photo",
-		"festival",
-		"carnival",
-		"congratulations"
-	],
-	char: "🎆",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var rainbow = {
-	keywords: [
-		"nature",
-		"happy",
-		"unicorn_face",
-		"photo",
-		"sky",
-		"spring"
-	],
-	char: "🌈",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var houses = {
-	keywords: [
-		"buildings",
-		"photo"
-	],
-	char: "🏘",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var european_castle = {
-	keywords: [
-		"building",
-		"royalty",
-		"history"
-	],
-	char: "🏰",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var japanese_castle = {
-	keywords: [
-		"photo",
-		"building"
-	],
-	char: "🏯",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var stadium = {
-	keywords: [
-		"photo",
-		"place",
-		"sports",
-		"concert",
-		"venue"
-	],
-	char: "🏟",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var statue_of_liberty = {
-	keywords: [
-		"american",
-		"newyork"
-	],
-	char: "🗽",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var house = {
-	keywords: [
-		"building",
-		"home"
-	],
-	char: "🏠",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var house_with_garden = {
-	keywords: [
-		"home",
-		"plant",
-		"nature"
-	],
-	char: "🏡",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var derelict_house = {
-	keywords: [
-		"abandon",
-		"evict",
-		"broken",
-		"building"
-	],
-	char: "🏚",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var office = {
-	keywords: [
-		"building",
-		"bureau",
-		"work"
-	],
-	char: "🏢",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var department_store = {
-	keywords: [
-		"building",
-		"shopping",
-		"mall"
-	],
-	char: "🏬",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var post_office = {
-	keywords: [
-		"building",
-		"envelope",
-		"communication"
-	],
-	char: "🏣",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var european_post_office = {
-	keywords: [
-		"building",
-		"email"
-	],
-	char: "🏤",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var hospital = {
-	keywords: [
-		"building",
-		"health",
-		"surgery",
-		"doctor"
-	],
-	char: "🏥",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var bank = {
-	keywords: [
-		"building",
-		"money",
-		"sales",
-		"cash",
-		"business",
-		"enterprise"
-	],
-	char: "🏦",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var hotel = {
-	keywords: [
-		"building",
-		"accomodation",
-		"checkin"
-	],
-	char: "🏨",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var convenience_store = {
-	keywords: [
-		"building",
-		"shopping",
-		"groceries"
-	],
-	char: "🏪",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var school = {
-	keywords: [
-		"building",
-		"student",
-		"education",
-		"learn",
-		"teach"
-	],
-	char: "🏫",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var love_hotel = {
-	keywords: [
-		"like",
-		"affection",
-		"dating"
-	],
-	char: "🏩",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var wedding = {
-	keywords: [
-		"love",
-		"like",
-		"affection",
-		"couple",
-		"marriage",
-		"bride",
-		"groom"
-	],
-	char: "💒",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var classical_building = {
-	keywords: [
-		"art",
-		"culture",
-		"history"
-	],
-	char: "🏛",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var church = {
-	keywords: [
-		"building",
-		"religion",
-		"christ"
-	],
-	char: "⛪",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var mosque = {
-	keywords: [
-		"islam",
-		"worship",
-		"minaret"
-	],
-	char: "🕌",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var synagogue = {
-	keywords: [
-		"judaism",
-		"worship",
-		"temple",
-		"jewish"
-	],
-	char: "🕍",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var kaaba = {
-	keywords: [
-		"mecca",
-		"mosque",
-		"islam"
-	],
-	char: "🕋",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var shinto_shrine = {
-	keywords: [
-		"temple",
-		"japan",
-		"kyoto"
-	],
-	char: "⛩",
-	fitzpatrick_scale: false,
-	category: "travel_and_places"
-};
-var watch = {
-	keywords: [
-		"time",
-		"accessories"
-	],
-	char: "⌚",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var iphone = {
-	keywords: [
-		"technology",
-		"apple",
-		"gadgets",
-		"dial"
-	],
-	char: "📱",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var calling = {
-	keywords: [
-		"iphone",
-		"incoming"
-	],
-	char: "📲",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var computer = {
-	keywords: [
-		"technology",
-		"laptop",
-		"screen",
-		"display",
-		"monitor"
-	],
-	char: "💻",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var keyboard = {
-	keywords: [
-		"technology",
-		"computer",
-		"type",
-		"input",
-		"text"
-	],
-	char: "⌨",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var desktop_computer = {
-	keywords: [
-		"technology",
-		"computing",
-		"screen"
-	],
-	char: "🖥",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var printer = {
-	keywords: [
-		"paper",
-		"ink"
-	],
-	char: "🖨",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var computer_mouse = {
-	keywords: [
-		"click"
-	],
-	char: "🖱",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var trackball = {
-	keywords: [
-		"technology",
-		"trackpad"
-	],
-	char: "🖲",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var joystick = {
-	keywords: [
-		"game",
-		"play"
-	],
-	char: "🕹",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var clamp = {
-	keywords: [
-		"tool"
-	],
-	char: "🗜",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var minidisc = {
-	keywords: [
-		"technology",
-		"record",
-		"data",
-		"disk",
-		"90s"
-	],
-	char: "💽",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var floppy_disk = {
-	keywords: [
-		"oldschool",
-		"technology",
-		"save",
-		"90s",
-		"80s"
-	],
-	char: "💾",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var cd = {
-	keywords: [
-		"technology",
-		"dvd",
-		"disk",
-		"disc",
-		"90s"
-	],
-	char: "💿",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var dvd = {
-	keywords: [
-		"cd",
-		"disk",
-		"disc"
-	],
-	char: "📀",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var vhs = {
-	keywords: [
-		"record",
-		"video",
-		"oldschool",
-		"90s",
-		"80s"
-	],
-	char: "📼",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var camera = {
-	keywords: [
-		"gadgets",
-		"photography"
-	],
-	char: "📷",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var camera_flash = {
-	keywords: [
-		"photography",
-		"gadgets"
-	],
-	char: "📸",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var video_camera = {
-	keywords: [
-		"film",
-		"record"
-	],
-	char: "📹",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var movie_camera = {
-	keywords: [
-		"film",
-		"record"
-	],
-	char: "🎥",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var film_projector = {
-	keywords: [
-		"video",
-		"tape",
-		"record",
-		"movie"
-	],
-	char: "📽",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var film_strip = {
-	keywords: [
-		"movie"
-	],
-	char: "🎞",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var telephone_receiver = {
-	keywords: [
-		"technology",
-		"communication",
-		"dial"
-	],
-	char: "📞",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var phone = {
-	keywords: [
-		"technology",
-		"communication",
-		"dial",
-		"telephone"
-	],
-	char: "☎️",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var pager = {
-	keywords: [
-		"bbcall",
-		"oldschool",
-		"90s"
-	],
-	char: "📟",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var fax = {
-	keywords: [
-		"communication",
-		"technology"
-	],
-	char: "📠",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var tv = {
-	keywords: [
-		"technology",
-		"program",
-		"oldschool",
-		"show",
-		"television"
-	],
-	char: "📺",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var radio = {
-	keywords: [
-		"communication",
-		"music",
-		"podcast",
-		"program"
-	],
-	char: "📻",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var studio_microphone = {
-	keywords: [
-		"sing",
-		"recording",
-		"artist",
-		"talkshow"
-	],
-	char: "🎙",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var level_slider = {
-	keywords: [
-		"scale"
-	],
-	char: "🎚",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var control_knobs = {
-	keywords: [
-		"dial"
-	],
-	char: "🎛",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var compass = {
-	keywords: [
-		"magnetic",
-		"navigation",
-		"orienteering"
-	],
-	char: "🧭",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var stopwatch = {
-	keywords: [
-		"time",
-		"deadline"
-	],
-	char: "⏱",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var timer_clock = {
-	keywords: [
-		"alarm"
-	],
-	char: "⏲",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var alarm_clock = {
-	keywords: [
-		"time",
-		"wake"
-	],
-	char: "⏰",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var mantelpiece_clock = {
-	keywords: [
-		"time"
-	],
-	char: "🕰",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var hourglass_flowing_sand = {
-	keywords: [
-		"oldschool",
-		"time",
-		"countdown"
-	],
-	char: "⏳",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var hourglass = {
-	keywords: [
-		"time",
-		"clock",
-		"oldschool",
-		"limit",
-		"exam",
-		"quiz",
-		"test"
-	],
-	char: "⌛",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var satellite = {
-	keywords: [
-		"communication",
-		"future",
-		"radio",
-		"space"
-	],
-	char: "📡",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var battery = {
-	keywords: [
-		"power",
-		"energy",
-		"sustain"
-	],
-	char: "🔋",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var electric_plug = {
-	keywords: [
-		"charger",
-		"power"
-	],
-	char: "🔌",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var bulb = {
-	keywords: [
-		"light",
-		"electricity",
-		"idea"
-	],
-	char: "💡",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var flashlight = {
-	keywords: [
-		"dark",
-		"camping",
-		"sight",
-		"night"
-	],
-	char: "🔦",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var candle = {
-	keywords: [
-		"fire",
-		"wax"
-	],
-	char: "🕯",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var fire_extinguisher = {
-	keywords: [
-		"quench"
-	],
-	char: "🧯",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var wastebasket = {
-	keywords: [
-		"bin",
-		"trash",
-		"rubbish",
-		"garbage",
-		"toss"
-	],
-	char: "🗑",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var oil_drum = {
-	keywords: [
-		"barrell"
-	],
-	char: "🛢",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var money_with_wings = {
-	keywords: [
-		"dollar",
-		"bills",
-		"payment",
-		"sale"
-	],
-	char: "💸",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var dollar = {
-	keywords: [
-		"money",
-		"sales",
-		"bill",
-		"currency"
-	],
-	char: "💵",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var yen = {
-	keywords: [
-		"money",
-		"sales",
-		"japanese",
-		"dollar",
-		"currency"
-	],
-	char: "💴",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var euro = {
-	keywords: [
-		"money",
-		"sales",
-		"dollar",
-		"currency"
-	],
-	char: "💶",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var pound = {
-	keywords: [
-		"british",
-		"sterling",
-		"money",
-		"sales",
-		"bills",
-		"uk",
-		"england",
-		"currency"
-	],
-	char: "💷",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var moneybag = {
-	keywords: [
-		"dollar",
-		"payment",
-		"coins",
-		"sale"
-	],
-	char: "💰",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var credit_card = {
-	keywords: [
-		"money",
-		"sales",
-		"dollar",
-		"bill",
-		"payment",
-		"shopping"
-	],
-	char: "💳",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var gem = {
-	keywords: [
-		"blue",
-		"ruby",
-		"diamond",
-		"jewelry"
-	],
-	char: "💎",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var balance_scale = {
-	keywords: [
-		"law",
-		"fairness",
-		"weight"
-	],
-	char: "⚖",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var toolbox = {
-	keywords: [
-		"tools",
-		"diy",
-		"fix",
-		"maintainer",
-		"mechanic"
-	],
-	char: "🧰",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var wrench = {
-	keywords: [
-		"tools",
-		"diy",
-		"ikea",
-		"fix",
-		"maintainer"
-	],
-	char: "🔧",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var hammer = {
-	keywords: [
-		"tools",
-		"build",
-		"create"
-	],
-	char: "🔨",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var hammer_and_pick = {
-	keywords: [
-		"tools",
-		"build",
-		"create"
-	],
-	char: "⚒",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var hammer_and_wrench = {
-	keywords: [
-		"tools",
-		"build",
-		"create"
-	],
-	char: "🛠",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var pick = {
-	keywords: [
-		"tools",
-		"dig"
-	],
-	char: "⛏",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var nut_and_bolt = {
-	keywords: [
-		"handy",
-		"tools",
-		"fix"
-	],
-	char: "🔩",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var gear = {
-	keywords: [
-		"cog"
-	],
-	char: "⚙",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var brick = {
-	keywords: [
-		"bricks"
-	],
-	char: "🧱",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var chains = {
-	keywords: [
-		"lock",
-		"arrest"
-	],
-	char: "⛓",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var magnet = {
-	keywords: [
-		"attraction",
-		"magnetic"
-	],
-	char: "🧲",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var gun = {
-	keywords: [
-		"violence",
-		"weapon",
-		"pistol",
-		"revolver"
-	],
-	char: "🔫",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var bomb = {
-	keywords: [
-		"boom",
-		"explode",
-		"explosion",
-		"terrorism"
-	],
-	char: "💣",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var firecracker = {
-	keywords: [
-		"dynamite",
-		"boom",
-		"explode",
-		"explosion",
-		"explosive"
-	],
-	char: "🧨",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var hocho = {
-	keywords: [
-		"knife",
-		"blade",
-		"cutlery",
-		"kitchen",
-		"weapon"
-	],
-	char: "🔪",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var dagger = {
-	keywords: [
-		"weapon"
-	],
-	char: "🗡",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var crossed_swords = {
-	keywords: [
-		"weapon"
-	],
-	char: "⚔",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var shield = {
-	keywords: [
-		"protection",
-		"security"
-	],
-	char: "🛡",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var smoking = {
-	keywords: [
-		"kills",
-		"tobacco",
-		"cigarette",
-		"joint",
-		"smoke"
-	],
-	char: "🚬",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var skull_and_crossbones = {
-	keywords: [
-		"poison",
-		"danger",
-		"deadly",
-		"scary",
-		"death",
-		"pirate",
-		"evil"
-	],
-	char: "☠",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var coffin = {
-	keywords: [
-		"vampire",
-		"dead",
-		"die",
-		"death",
-		"rip",
-		"graveyard",
-		"cemetery",
-		"casket",
-		"funeral",
-		"box"
-	],
-	char: "⚰",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var funeral_urn = {
-	keywords: [
-		"dead",
-		"die",
-		"death",
-		"rip",
-		"ashes"
-	],
-	char: "⚱",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var amphora = {
-	keywords: [
-		"vase",
-		"jar"
-	],
-	char: "🏺",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var crystal_ball = {
-	keywords: [
-		"disco",
-		"party",
-		"magic",
-		"circus",
-		"fortune_teller"
-	],
-	char: "🔮",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var prayer_beads = {
-	keywords: [
-		"dhikr",
-		"religious"
-	],
-	char: "📿",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var nazar_amulet = {
-	keywords: [
-		"bead",
-		"charm"
-	],
-	char: "🧿",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var barber = {
-	keywords: [
-		"hair",
-		"salon",
-		"style"
-	],
-	char: "💈",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var alembic = {
-	keywords: [
-		"distilling",
-		"science",
-		"experiment",
-		"chemistry"
-	],
-	char: "⚗",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var telescope = {
-	keywords: [
-		"stars",
-		"space",
-		"zoom",
-		"science",
-		"astronomy"
-	],
-	char: "🔭",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var microscope = {
-	keywords: [
-		"laboratory",
-		"experiment",
-		"zoomin",
-		"science",
-		"study"
-	],
-	char: "🔬",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var hole = {
-	keywords: [
-		"embarrassing"
-	],
-	char: "🕳",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var pill = {
-	keywords: [
-		"health",
-		"medicine",
-		"doctor",
-		"pharmacy",
-		"drug"
-	],
-	char: "💊",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var syringe = {
-	keywords: [
-		"health",
-		"hospital",
-		"drugs",
-		"blood",
-		"medicine",
-		"needle",
-		"doctor",
-		"nurse"
-	],
-	char: "💉",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var dna = {
-	keywords: [
-		"biologist",
-		"genetics",
-		"life"
-	],
-	char: "🧬",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var microbe = {
-	keywords: [
-		"amoeba",
-		"bacteria",
-		"germs"
-	],
-	char: "🦠",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var petri_dish = {
-	keywords: [
-		"bacteria",
-		"biology",
-		"culture",
-		"lab"
-	],
-	char: "🧫",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var test_tube = {
-	keywords: [
-		"chemistry",
-		"experiment",
-		"lab",
-		"science"
-	],
-	char: "🧪",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var thermometer = {
-	keywords: [
-		"weather",
-		"temperature",
-		"hot",
-		"cold"
-	],
-	char: "🌡",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var broom = {
-	keywords: [
-		"cleaning",
-		"sweeping",
-		"witch"
-	],
-	char: "🧹",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var basket = {
-	keywords: [
-		"laundry"
-	],
-	char: "🧺",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var toilet_paper = {
-	keywords: [
-		"roll"
-	],
-	char: "🧻",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var label = {
-	keywords: [
-		"sale",
-		"tag"
-	],
-	char: "🏷",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var bookmark = {
-	keywords: [
-		"favorite",
-		"label",
-		"save"
-	],
-	char: "🔖",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var toilet = {
-	keywords: [
-		"restroom",
-		"wc",
-		"washroom",
-		"bathroom",
-		"potty"
-	],
-	char: "🚽",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var shower = {
-	keywords: [
-		"clean",
-		"water",
-		"bathroom"
-	],
-	char: "🚿",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var bathtub = {
-	keywords: [
-		"clean",
-		"shower",
-		"bathroom"
-	],
-	char: "🛁",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var soap = {
-	keywords: [
-		"bar",
-		"bathing",
-		"cleaning",
-		"lather"
-	],
-	char: "🧼",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var sponge = {
-	keywords: [
-		"absorbing",
-		"cleaning",
-		"porous"
-	],
-	char: "🧽",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var lotion_bottle = {
-	keywords: [
-		"moisturizer",
-		"sunscreen"
-	],
-	char: "🧴",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var key = {
-	keywords: [
-		"lock",
-		"door",
-		"password"
-	],
-	char: "🔑",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var old_key = {
-	keywords: [
-		"lock",
-		"door",
-		"password"
-	],
-	char: "🗝",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var couch_and_lamp = {
-	keywords: [
-		"read",
-		"chill"
-	],
-	char: "🛋",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var sleeping_bed = {
-	keywords: [
-		"bed",
-		"rest"
-	],
-	char: "🛌",
-	fitzpatrick_scale: true,
-	category: "objects"
-};
-var bed = {
-	keywords: [
-		"sleep",
-		"rest"
-	],
-	char: "🛏",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var door = {
-	keywords: [
-		"house",
-		"entry",
-		"exit"
-	],
-	char: "🚪",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var bellhop_bell = {
-	keywords: [
-		"service"
-	],
-	char: "🛎",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var teddy_bear = {
-	keywords: [
-		"plush",
-		"stuffed"
-	],
-	char: "🧸",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var framed_picture = {
-	keywords: [
-		"photography"
-	],
-	char: "🖼",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var world_map = {
-	keywords: [
-		"location",
-		"direction"
-	],
-	char: "🗺",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var parasol_on_ground = {
-	keywords: [
-		"weather",
-		"summer"
-	],
-	char: "⛱",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var moyai = {
-	keywords: [
-		"rock",
-		"easter island",
-		"moai"
-	],
-	char: "🗿",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var shopping = {
-	keywords: [
-		"mall",
-		"buy",
-		"purchase"
-	],
-	char: "🛍",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var shopping_cart = {
-	keywords: [
-		"trolley"
-	],
-	char: "🛒",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var balloon = {
-	keywords: [
-		"party",
-		"celebration",
-		"birthday",
-		"circus"
-	],
-	char: "🎈",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var flags = {
-	keywords: [
-		"fish",
-		"japanese",
-		"koinobori",
-		"carp",
-		"banner"
-	],
-	char: "🎏",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var ribbon = {
-	keywords: [
-		"decoration",
-		"pink",
-		"girl",
-		"bowtie"
-	],
-	char: "🎀",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var gift = {
-	keywords: [
-		"present",
-		"birthday",
-		"christmas",
-		"xmas"
-	],
-	char: "🎁",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var confetti_ball = {
-	keywords: [
-		"festival",
-		"party",
-		"birthday",
-		"circus"
-	],
-	char: "🎊",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var tada = {
-	keywords: [
-		"party",
-		"congratulations",
-		"birthday",
-		"magic",
-		"circus",
-		"celebration"
-	],
-	char: "🎉",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var dolls = {
-	keywords: [
-		"japanese",
-		"toy",
-		"kimono"
-	],
-	char: "🎎",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var wind_chime = {
-	keywords: [
-		"nature",
-		"ding",
-		"spring",
-		"bell"
-	],
-	char: "🎐",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var crossed_flags = {
-	keywords: [
-		"japanese",
-		"nation",
-		"country",
-		"border"
-	],
-	char: "🎌",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var izakaya_lantern = {
-	keywords: [
-		"light",
-		"paper",
-		"halloween",
-		"spooky"
-	],
-	char: "🏮",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var red_envelope = {
-	keywords: [
-		"gift"
-	],
-	char: "🧧",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var email = {
-	keywords: [
-		"letter",
-		"postal",
-		"inbox",
-		"communication"
-	],
-	char: "✉️",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var envelope_with_arrow = {
-	keywords: [
-		"email",
-		"communication"
-	],
-	char: "📩",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var incoming_envelope = {
-	keywords: [
-		"email",
-		"inbox"
-	],
-	char: "📨",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var love_letter = {
-	keywords: [
-		"email",
-		"like",
-		"affection",
-		"envelope",
-		"valentines"
-	],
-	char: "💌",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var postbox = {
-	keywords: [
-		"email",
-		"letter",
-		"envelope"
-	],
-	char: "📮",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var mailbox_closed = {
-	keywords: [
-		"email",
-		"communication",
-		"inbox"
-	],
-	char: "📪",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var mailbox = {
-	keywords: [
-		"email",
-		"inbox",
-		"communication"
-	],
-	char: "📫",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var mailbox_with_mail = {
-	keywords: [
-		"email",
-		"inbox",
-		"communication"
-	],
-	char: "📬",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var mailbox_with_no_mail = {
-	keywords: [
-		"email",
-		"inbox"
-	],
-	char: "📭",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var postal_horn = {
-	keywords: [
-		"instrument",
-		"music"
-	],
-	char: "📯",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var inbox_tray = {
-	keywords: [
-		"email",
-		"documents"
-	],
-	char: "📥",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var outbox_tray = {
-	keywords: [
-		"inbox",
-		"email"
-	],
-	char: "📤",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var scroll = {
-	keywords: [
-		"documents",
-		"ancient",
-		"history",
-		"paper"
-	],
-	char: "📜",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var page_with_curl = {
-	keywords: [
-		"documents",
-		"office",
-		"paper"
-	],
-	char: "📃",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var bookmark_tabs = {
-	keywords: [
-		"favorite",
-		"save",
-		"order",
-		"tidy"
-	],
-	char: "📑",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var receipt = {
-	keywords: [
-		"accounting",
-		"expenses"
-	],
-	char: "🧾",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var bar_chart = {
-	keywords: [
-		"graph",
-		"presentation",
-		"stats"
-	],
-	char: "📊",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var chart_with_upwards_trend = {
-	keywords: [
-		"graph",
-		"presentation",
-		"stats",
-		"recovery",
-		"business",
-		"economics",
-		"money",
-		"sales",
-		"good",
-		"success"
-	],
-	char: "📈",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var chart_with_downwards_trend = {
-	keywords: [
-		"graph",
-		"presentation",
-		"stats",
-		"recession",
-		"business",
-		"economics",
-		"money",
-		"sales",
-		"bad",
-		"failure"
-	],
-	char: "📉",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var page_facing_up = {
-	keywords: [
-		"documents",
-		"office",
-		"paper",
-		"information"
-	],
-	char: "📄",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var date = {
-	keywords: [
-		"calendar",
-		"schedule"
-	],
-	char: "📅",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var calendar = {
-	keywords: [
-		"schedule",
-		"date",
-		"planning"
-	],
-	char: "📆",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var spiral_calendar = {
-	keywords: [
-		"date",
-		"schedule",
-		"planning"
-	],
-	char: "🗓",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var card_index = {
-	keywords: [
-		"business",
-		"stationery"
-	],
-	char: "📇",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var card_file_box = {
-	keywords: [
-		"business",
-		"stationery"
-	],
-	char: "🗃",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var ballot_box = {
-	keywords: [
-		"election",
-		"vote"
-	],
-	char: "🗳",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var file_cabinet = {
-	keywords: [
-		"filing",
-		"organizing"
-	],
-	char: "🗄",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var clipboard = {
-	keywords: [
-		"stationery",
-		"documents"
-	],
-	char: "📋",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var spiral_notepad = {
-	keywords: [
-		"memo",
-		"stationery"
-	],
-	char: "🗒",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var file_folder = {
-	keywords: [
-		"documents",
-		"business",
-		"office"
-	],
-	char: "📁",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var open_file_folder = {
-	keywords: [
-		"documents",
-		"load"
-	],
-	char: "📂",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var card_index_dividers = {
-	keywords: [
-		"organizing",
-		"business",
-		"stationery"
-	],
-	char: "🗂",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var newspaper_roll = {
-	keywords: [
-		"press",
-		"headline"
-	],
-	char: "🗞",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var newspaper = {
-	keywords: [
-		"press",
-		"headline"
-	],
-	char: "📰",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var notebook = {
-	keywords: [
-		"stationery",
-		"record",
-		"notes",
-		"paper",
-		"study"
-	],
-	char: "📓",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var closed_book = {
-	keywords: [
-		"read",
-		"library",
-		"knowledge",
-		"textbook",
-		"learn"
-	],
-	char: "📕",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var green_book = {
-	keywords: [
-		"read",
-		"library",
-		"knowledge",
-		"study"
-	],
-	char: "📗",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var blue_book = {
-	keywords: [
-		"read",
-		"library",
-		"knowledge",
-		"learn",
-		"study"
-	],
-	char: "📘",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var orange_book = {
-	keywords: [
-		"read",
-		"library",
-		"knowledge",
-		"textbook",
-		"study"
-	],
-	char: "📙",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var notebook_with_decorative_cover = {
-	keywords: [
-		"classroom",
-		"notes",
-		"record",
-		"paper",
-		"study"
-	],
-	char: "📔",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var ledger = {
-	keywords: [
-		"notes",
-		"paper"
-	],
-	char: "📒",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var books = {
-	keywords: [
-		"literature",
-		"library",
-		"study"
-	],
-	char: "📚",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var open_book = {
-	keywords: [
-		"book",
-		"read",
-		"library",
-		"knowledge",
-		"literature",
-		"learn",
-		"study"
-	],
-	char: "📖",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var safety_pin = {
-	keywords: [
-		"diaper"
-	],
-	char: "🧷",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var link = {
-	keywords: [
-		"rings",
-		"url"
-	],
-	char: "🔗",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var paperclip = {
-	keywords: [
-		"documents",
-		"stationery"
-	],
-	char: "📎",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var paperclips = {
-	keywords: [
-		"documents",
-		"stationery"
-	],
-	char: "🖇",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var scissors = {
-	keywords: [
-		"stationery",
-		"cut"
-	],
-	char: "✂️",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var triangular_ruler = {
-	keywords: [
-		"stationery",
-		"math",
-		"architect",
-		"sketch"
-	],
-	char: "📐",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var straight_ruler = {
-	keywords: [
-		"stationery",
-		"calculate",
-		"length",
-		"math",
-		"school",
-		"drawing",
-		"architect",
-		"sketch"
-	],
-	char: "📏",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var abacus = {
-	keywords: [
-		"calculation"
-	],
-	char: "🧮",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var pushpin = {
-	keywords: [
-		"stationery",
-		"mark",
-		"here"
-	],
-	char: "📌",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var round_pushpin = {
-	keywords: [
-		"stationery",
-		"location",
-		"map",
-		"here"
-	],
-	char: "📍",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var triangular_flag_on_post = {
-	keywords: [
-		"mark",
-		"milestone",
-		"place"
-	],
-	char: "🚩",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var white_flag = {
-	keywords: [
-		"losing",
-		"loser",
-		"lost",
-		"surrender",
-		"give up",
-		"fail"
-	],
-	char: "🏳",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var black_flag = {
-	keywords: [
-		"pirate"
-	],
-	char: "🏴",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var rainbow_flag = {
-	keywords: [
-		"flag",
-		"rainbow",
-		"pride",
-		"gay",
-		"lgbt",
-		"glbt",
-		"queer",
-		"homosexual",
-		"lesbian",
-		"bisexual",
-		"transgender"
-	],
-	char: "🏳️‍🌈",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var closed_lock_with_key = {
-	keywords: [
-		"security",
-		"privacy"
-	],
-	char: "🔐",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var lock = {
-	keywords: [
-		"security",
-		"password",
-		"padlock"
-	],
-	char: "🔒",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var unlock = {
-	keywords: [
-		"privacy",
-		"security"
-	],
-	char: "🔓",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var lock_with_ink_pen = {
-	keywords: [
-		"security",
-		"secret"
-	],
-	char: "🔏",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var pen = {
-	keywords: [
-		"stationery",
-		"writing",
-		"write"
-	],
-	char: "🖊",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var fountain_pen = {
-	keywords: [
-		"stationery",
-		"writing",
-		"write"
-	],
-	char: "🖋",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var black_nib = {
-	keywords: [
-		"pen",
-		"stationery",
-		"writing",
-		"write"
-	],
-	char: "✒️",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var memo = {
-	keywords: [
-		"write",
-		"documents",
-		"stationery",
-		"pencil",
-		"paper",
-		"writing",
-		"legal",
-		"exam",
-		"quiz",
-		"test",
-		"study",
-		"compose"
-	],
-	char: "📝",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var pencil2 = {
-	keywords: [
-		"stationery",
-		"write",
-		"paper",
-		"writing",
-		"school",
-		"study"
-	],
-	char: "✏️",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var crayon = {
-	keywords: [
-		"drawing",
-		"creativity"
-	],
-	char: "🖍",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var paintbrush = {
-	keywords: [
-		"drawing",
-		"creativity",
-		"art"
-	],
-	char: "🖌",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var mag = {
-	keywords: [
-		"search",
-		"zoom",
-		"find",
-		"detective"
-	],
-	char: "🔍",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var mag_right = {
-	keywords: [
-		"search",
-		"zoom",
-		"find",
-		"detective"
-	],
-	char: "🔎",
-	fitzpatrick_scale: false,
-	category: "objects"
-};
-var heart = {
-	keywords: [
-		"love",
-		"like",
-		"valentines"
-	],
-	char: "❤️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var orange_heart = {
-	keywords: [
-		"love",
-		"like",
-		"affection",
-		"valentines"
-	],
-	char: "🧡",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var yellow_heart = {
-	keywords: [
-		"love",
-		"like",
-		"affection",
-		"valentines"
-	],
-	char: "💛",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var green_heart = {
-	keywords: [
-		"love",
-		"like",
-		"affection",
-		"valentines"
-	],
-	char: "💚",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var blue_heart = {
-	keywords: [
-		"love",
-		"like",
-		"affection",
-		"valentines"
-	],
-	char: "💙",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var purple_heart = {
-	keywords: [
-		"love",
-		"like",
-		"affection",
-		"valentines"
-	],
-	char: "💜",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var black_heart = {
-	keywords: [
-		"evil"
-	],
-	char: "🖤",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var broken_heart = {
-	keywords: [
-		"sad",
-		"sorry",
-		"break",
-		"heart",
-		"heartbreak"
-	],
-	char: "💔",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var heavy_heart_exclamation = {
-	keywords: [
-		"decoration",
-		"love"
-	],
-	char: "❣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var two_hearts = {
-	keywords: [
-		"love",
-		"like",
-		"affection",
-		"valentines",
-		"heart"
-	],
-	char: "💕",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var revolving_hearts = {
-	keywords: [
-		"love",
-		"like",
-		"affection",
-		"valentines"
-	],
-	char: "💞",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var heartbeat = {
-	keywords: [
-		"love",
-		"like",
-		"affection",
-		"valentines",
-		"pink",
-		"heart"
-	],
-	char: "💓",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var heartpulse = {
-	keywords: [
-		"like",
-		"love",
-		"affection",
-		"valentines",
-		"pink"
-	],
-	char: "💗",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var sparkling_heart = {
-	keywords: [
-		"love",
-		"like",
-		"affection",
-		"valentines"
-	],
-	char: "💖",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var cupid = {
-	keywords: [
-		"love",
-		"like",
-		"heart",
-		"affection",
-		"valentines"
-	],
-	char: "💘",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var gift_heart = {
-	keywords: [
-		"love",
-		"valentines"
-	],
-	char: "💝",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var heart_decoration = {
-	keywords: [
-		"purple-square",
-		"love",
-		"like"
-	],
-	char: "💟",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var peace_symbol = {
-	keywords: [
-		"hippie"
-	],
-	char: "☮",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var latin_cross = {
-	keywords: [
-		"christianity"
-	],
-	char: "✝",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var star_and_crescent = {
-	keywords: [
-		"islam"
-	],
-	char: "☪",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var om = {
-	keywords: [
-		"hinduism",
-		"buddhism",
-		"sikhism",
-		"jainism"
-	],
-	char: "🕉",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var wheel_of_dharma = {
-	keywords: [
-		"hinduism",
-		"buddhism",
-		"sikhism",
-		"jainism"
-	],
-	char: "☸",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var star_of_david = {
-	keywords: [
-		"judaism"
-	],
-	char: "✡",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var six_pointed_star = {
-	keywords: [
-		"purple-square",
-		"religion",
-		"jewish",
-		"hexagram"
-	],
-	char: "🔯",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var menorah = {
-	keywords: [
-		"hanukkah",
-		"candles",
-		"jewish"
-	],
-	char: "🕎",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var yin_yang = {
-	keywords: [
-		"balance"
-	],
-	char: "☯",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var orthodox_cross = {
-	keywords: [
-		"suppedaneum",
-		"religion"
-	],
-	char: "☦",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var place_of_worship = {
-	keywords: [
-		"religion",
-		"church",
-		"temple",
-		"prayer"
-	],
-	char: "🛐",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var ophiuchus = {
-	keywords: [
-		"sign",
-		"purple-square",
-		"constellation",
-		"astrology"
-	],
-	char: "⛎",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var aries = {
-	keywords: [
-		"sign",
-		"purple-square",
-		"zodiac",
-		"astrology"
-	],
-	char: "♈",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var taurus = {
-	keywords: [
-		"purple-square",
-		"sign",
-		"zodiac",
-		"astrology"
-	],
-	char: "♉",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var gemini = {
-	keywords: [
-		"sign",
-		"zodiac",
-		"purple-square",
-		"astrology"
-	],
-	char: "♊",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var cancer = {
-	keywords: [
-		"sign",
-		"zodiac",
-		"purple-square",
-		"astrology"
-	],
-	char: "♋",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var leo = {
-	keywords: [
-		"sign",
-		"purple-square",
-		"zodiac",
-		"astrology"
-	],
-	char: "♌",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var virgo = {
-	keywords: [
-		"sign",
-		"zodiac",
-		"purple-square",
-		"astrology"
-	],
-	char: "♍",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var libra = {
-	keywords: [
-		"sign",
-		"purple-square",
-		"zodiac",
-		"astrology"
-	],
-	char: "♎",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var scorpius = {
-	keywords: [
-		"sign",
-		"zodiac",
-		"purple-square",
-		"astrology",
-		"scorpio"
-	],
-	char: "♏",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var sagittarius = {
-	keywords: [
-		"sign",
-		"zodiac",
-		"purple-square",
-		"astrology"
-	],
-	char: "♐",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var capricorn = {
-	keywords: [
-		"sign",
-		"zodiac",
-		"purple-square",
-		"astrology"
-	],
-	char: "♑",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var aquarius = {
-	keywords: [
-		"sign",
-		"purple-square",
-		"zodiac",
-		"astrology"
-	],
-	char: "♒",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var pisces = {
-	keywords: [
-		"purple-square",
-		"sign",
-		"zodiac",
-		"astrology"
-	],
-	char: "♓",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var id = {
-	keywords: [
-		"purple-square",
-		"words"
-	],
-	char: "🆔",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var atom_symbol = {
-	keywords: [
-		"science",
-		"physics",
-		"chemistry"
-	],
-	char: "⚛",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var u7a7a = {
-	keywords: [
-		"kanji",
-		"japanese",
-		"chinese",
-		"empty",
-		"sky",
-		"blue-square"
-	],
-	char: "🈳",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var u5272 = {
-	keywords: [
-		"cut",
-		"divide",
-		"chinese",
-		"kanji",
-		"pink-square"
-	],
-	char: "🈹",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var radioactive = {
-	keywords: [
-		"nuclear",
-		"danger"
-	],
-	char: "☢",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var biohazard = {
-	keywords: [
-		"danger"
-	],
-	char: "☣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var mobile_phone_off = {
-	keywords: [
-		"mute",
-		"orange-square",
-		"silence",
-		"quiet"
-	],
-	char: "📴",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var vibration_mode = {
-	keywords: [
-		"orange-square",
-		"phone"
-	],
-	char: "📳",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var u6709 = {
-	keywords: [
-		"orange-square",
-		"chinese",
-		"have",
-		"kanji"
-	],
-	char: "🈶",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var u7121 = {
-	keywords: [
-		"nothing",
-		"chinese",
-		"kanji",
-		"japanese",
-		"orange-square"
-	],
-	char: "🈚",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var u7533 = {
-	keywords: [
-		"chinese",
-		"japanese",
-		"kanji",
-		"orange-square"
-	],
-	char: "🈸",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var u55b6 = {
-	keywords: [
-		"japanese",
-		"opening hours",
-		"orange-square"
-	],
-	char: "🈺",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var u6708 = {
-	keywords: [
-		"chinese",
-		"month",
-		"moon",
-		"japanese",
-		"orange-square",
-		"kanji"
-	],
-	char: "🈷️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var eight_pointed_black_star = {
-	keywords: [
-		"orange-square",
-		"shape",
-		"polygon"
-	],
-	char: "✴️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var vs = {
-	keywords: [
-		"words",
-		"orange-square"
-	],
-	char: "🆚",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var accept = {
-	keywords: [
-		"ok",
-		"good",
-		"chinese",
-		"kanji",
-		"agree",
-		"yes",
-		"orange-circle"
-	],
-	char: "🉑",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var white_flower = {
-	keywords: [
-		"japanese",
-		"spring"
-	],
-	char: "💮",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var ideograph_advantage = {
-	keywords: [
-		"chinese",
-		"kanji",
-		"obtain",
-		"get",
-		"circle"
-	],
-	char: "🉐",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var secret = {
-	keywords: [
-		"privacy",
-		"chinese",
-		"sshh",
-		"kanji",
-		"red-circle"
-	],
-	char: "㊙️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var congratulations = {
-	keywords: [
-		"chinese",
-		"kanji",
-		"japanese",
-		"red-circle"
-	],
-	char: "㊗️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var u5408 = {
-	keywords: [
-		"japanese",
-		"chinese",
-		"join",
-		"kanji",
-		"red-square"
-	],
-	char: "🈴",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var u6e80 = {
-	keywords: [
-		"full",
-		"chinese",
-		"japanese",
-		"red-square",
-		"kanji"
-	],
-	char: "🈵",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var u7981 = {
-	keywords: [
-		"kanji",
-		"japanese",
-		"chinese",
-		"forbidden",
-		"limit",
-		"restricted",
-		"red-square"
-	],
-	char: "🈲",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var a = {
-	keywords: [
-		"red-square",
-		"alphabet",
-		"letter"
-	],
-	char: "🅰️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var b = {
-	keywords: [
-		"red-square",
-		"alphabet",
-		"letter"
-	],
-	char: "🅱️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var ab = {
-	keywords: [
-		"red-square",
-		"alphabet"
-	],
-	char: "🆎",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var cl = {
-	keywords: [
-		"alphabet",
-		"words",
-		"red-square"
-	],
-	char: "🆑",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var o2 = {
-	keywords: [
-		"alphabet",
-		"red-square",
-		"letter"
-	],
-	char: "🅾️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var sos = {
-	keywords: [
-		"help",
-		"red-square",
-		"words",
-		"emergency",
-		"911"
-	],
-	char: "🆘",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var no_entry = {
-	keywords: [
-		"limit",
-		"security",
-		"privacy",
-		"bad",
-		"denied",
-		"stop",
-		"circle"
-	],
-	char: "⛔",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var name_badge = {
-	keywords: [
-		"fire",
-		"forbid"
-	],
-	char: "📛",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var no_entry_sign = {
-	keywords: [
-		"forbid",
-		"stop",
-		"limit",
-		"denied",
-		"disallow",
-		"circle"
-	],
-	char: "🚫",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var x = {
-	keywords: [
-		"no",
-		"delete",
-		"remove",
-		"cancel",
-		"red"
-	],
-	char: "❌",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var o = {
-	keywords: [
-		"circle",
-		"round"
-	],
-	char: "⭕",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var stop_sign = {
-	keywords: [
-		"stop"
-	],
-	char: "🛑",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var anger = {
-	keywords: [
-		"angry",
-		"mad"
-	],
-	char: "💢",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var hotsprings = {
-	keywords: [
-		"bath",
-		"warm",
-		"relax"
-	],
-	char: "♨️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var no_pedestrians = {
-	keywords: [
-		"rules",
-		"crossing",
-		"walking",
-		"circle"
-	],
-	char: "🚷",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var do_not_litter = {
-	keywords: [
-		"trash",
-		"bin",
-		"garbage",
-		"circle"
-	],
-	char: "🚯",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var no_bicycles = {
-	keywords: [
-		"cyclist",
-		"prohibited",
-		"circle"
-	],
-	char: "🚳",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var underage = {
-	keywords: [
-		"18",
-		"drink",
-		"pub",
-		"night",
-		"minor",
-		"circle"
-	],
-	char: "🔞",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var no_mobile_phones = {
-	keywords: [
-		"iphone",
-		"mute",
-		"circle"
-	],
-	char: "📵",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var exclamation = {
-	keywords: [
-		"heavy_exclamation_mark",
-		"danger",
-		"surprise",
-		"punctuation",
-		"wow",
-		"warning"
-	],
-	char: "❗",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var grey_exclamation = {
-	keywords: [
-		"surprise",
-		"punctuation",
-		"gray",
-		"wow",
-		"warning"
-	],
-	char: "❕",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var question = {
-	keywords: [
-		"doubt",
-		"confused"
-	],
-	char: "❓",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var grey_question = {
-	keywords: [
-		"doubts",
-		"gray",
-		"huh",
-		"confused"
-	],
-	char: "❔",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var bangbang = {
-	keywords: [
-		"exclamation",
-		"surprise"
-	],
-	char: "‼️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var interrobang = {
-	keywords: [
-		"wat",
-		"punctuation",
-		"surprise"
-	],
-	char: "⁉️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var low_brightness = {
-	keywords: [
-		"sun",
-		"afternoon",
-		"warm",
-		"summer"
-	],
-	char: "🔅",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var high_brightness = {
-	keywords: [
-		"sun",
-		"light"
-	],
-	char: "🔆",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var trident = {
-	keywords: [
-		"weapon",
-		"spear"
-	],
-	char: "🔱",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var fleur_de_lis = {
-	keywords: [
-		"decorative",
-		"scout"
-	],
-	char: "⚜",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var part_alternation_mark = {
-	keywords: [
-		"graph",
-		"presentation",
-		"stats",
-		"business",
-		"economics",
-		"bad"
-	],
-	char: "〽️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var warning = {
-	keywords: [
-		"exclamation",
-		"wip",
-		"alert",
-		"error",
-		"problem",
-		"issue"
-	],
-	char: "⚠️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var children_crossing = {
-	keywords: [
-		"school",
-		"warning",
-		"danger",
-		"sign",
-		"driving",
-		"yellow-diamond"
-	],
-	char: "🚸",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var beginner = {
-	keywords: [
-		"badge",
-		"shield"
-	],
-	char: "🔰",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var recycle = {
-	keywords: [
-		"arrow",
-		"environment",
-		"garbage",
-		"trash"
-	],
-	char: "♻️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var u6307 = {
-	keywords: [
-		"chinese",
-		"point",
-		"green-square",
-		"kanji"
-	],
-	char: "🈯",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var chart = {
-	keywords: [
-		"green-square",
-		"graph",
-		"presentation",
-		"stats"
-	],
-	char: "💹",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var sparkle = {
-	keywords: [
-		"stars",
-		"green-square",
-		"awesome",
-		"good",
-		"fireworks"
-	],
-	char: "❇️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var eight_spoked_asterisk = {
-	keywords: [
-		"star",
-		"sparkle",
-		"green-square"
-	],
-	char: "✳️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var negative_squared_cross_mark = {
-	keywords: [
-		"x",
-		"green-square",
-		"no",
-		"deny"
-	],
-	char: "❎",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var white_check_mark = {
-	keywords: [
-		"green-square",
-		"ok",
-		"agree",
-		"vote",
-		"election",
-		"answer",
-		"tick"
-	],
-	char: "✅",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var diamond_shape_with_a_dot_inside = {
-	keywords: [
-		"jewel",
-		"blue",
-		"gem",
-		"crystal",
-		"fancy"
-	],
-	char: "💠",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var cyclone = {
-	keywords: [
-		"weather",
-		"swirl",
-		"blue",
-		"cloud",
-		"vortex",
-		"spiral",
-		"whirlpool",
-		"spin",
-		"tornado",
-		"hurricane",
-		"typhoon"
-	],
-	char: "🌀",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var loop = {
-	keywords: [
-		"tape",
-		"cassette"
-	],
-	char: "➿",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var globe_with_meridians = {
-	keywords: [
-		"earth",
-		"international",
-		"world",
-		"internet",
-		"interweb",
-		"i18n"
-	],
-	char: "🌐",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var m = {
-	keywords: [
-		"alphabet",
-		"blue-circle",
-		"letter"
-	],
-	char: "Ⓜ️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var atm = {
-	keywords: [
-		"money",
-		"sales",
-		"cash",
-		"blue-square",
-		"payment",
-		"bank"
-	],
-	char: "🏧",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var sa = {
-	keywords: [
-		"japanese",
-		"blue-square",
-		"katakana"
-	],
-	char: "🈂️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var passport_control = {
-	keywords: [
-		"custom",
-		"blue-square"
-	],
-	char: "🛂",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var customs = {
-	keywords: [
-		"passport",
-		"border",
-		"blue-square"
-	],
-	char: "🛃",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var baggage_claim = {
-	keywords: [
-		"blue-square",
-		"airport",
-		"transport"
-	],
-	char: "🛄",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var left_luggage = {
-	keywords: [
-		"blue-square",
-		"travel"
-	],
-	char: "🛅",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var wheelchair = {
-	keywords: [
-		"blue-square",
-		"disabled",
-		"a11y",
-		"accessibility"
-	],
-	char: "♿",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var no_smoking = {
-	keywords: [
-		"cigarette",
-		"blue-square",
-		"smell",
-		"smoke"
-	],
-	char: "🚭",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var wc = {
-	keywords: [
-		"toilet",
-		"restroom",
-		"blue-square"
-	],
-	char: "🚾",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var parking = {
-	keywords: [
-		"cars",
-		"blue-square",
-		"alphabet",
-		"letter"
-	],
-	char: "🅿️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var potable_water = {
-	keywords: [
-		"blue-square",
-		"liquid",
-		"restroom",
-		"cleaning",
-		"faucet"
-	],
-	char: "🚰",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var mens = {
-	keywords: [
-		"toilet",
-		"restroom",
-		"wc",
-		"blue-square",
-		"gender",
-		"male"
-	],
-	char: "🚹",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var womens = {
-	keywords: [
-		"purple-square",
-		"woman",
-		"female",
-		"toilet",
-		"loo",
-		"restroom",
-		"gender"
-	],
-	char: "🚺",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var baby_symbol = {
-	keywords: [
-		"orange-square",
-		"child"
-	],
-	char: "🚼",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var restroom = {
-	keywords: [
-		"blue-square",
-		"toilet",
-		"refresh",
-		"wc",
-		"gender"
-	],
-	char: "🚻",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var put_litter_in_its_place = {
-	keywords: [
-		"blue-square",
-		"sign",
-		"human",
-		"info"
-	],
-	char: "🚮",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var cinema = {
-	keywords: [
-		"blue-square",
-		"record",
-		"film",
-		"movie",
-		"curtain",
-		"stage",
-		"theater"
-	],
-	char: "🎦",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var signal_strength = {
-	keywords: [
-		"blue-square",
-		"reception",
-		"phone",
-		"internet",
-		"connection",
-		"wifi",
-		"bluetooth",
-		"bars"
-	],
-	char: "📶",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var koko = {
-	keywords: [
-		"blue-square",
-		"here",
-		"katakana",
-		"japanese",
-		"destination"
-	],
-	char: "🈁",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var ng = {
-	keywords: [
-		"blue-square",
-		"words",
-		"shape",
-		"icon"
-	],
-	char: "🆖",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var ok = {
-	keywords: [
-		"good",
-		"agree",
-		"yes",
-		"blue-square"
-	],
-	char: "🆗",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var up = {
-	keywords: [
-		"blue-square",
-		"above",
-		"high"
-	],
-	char: "🆙",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var cool = {
-	keywords: [
-		"words",
-		"blue-square"
-	],
-	char: "🆒",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var free = {
-	keywords: [
-		"blue-square",
-		"words"
-	],
-	char: "🆓",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var zero = {
-	keywords: [
-		"0",
-		"numbers",
-		"blue-square",
-		"null"
-	],
-	char: "0️⃣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var one = {
-	keywords: [
-		"blue-square",
-		"numbers",
-		"1"
-	],
-	char: "1️⃣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var two = {
-	keywords: [
-		"numbers",
-		"2",
-		"prime",
-		"blue-square"
-	],
-	char: "2️⃣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var three = {
-	keywords: [
-		"3",
-		"numbers",
-		"prime",
-		"blue-square"
-	],
-	char: "3️⃣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var four = {
-	keywords: [
-		"4",
-		"numbers",
-		"blue-square"
-	],
-	char: "4️⃣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var five = {
-	keywords: [
-		"5",
-		"numbers",
-		"blue-square",
-		"prime"
-	],
-	char: "5️⃣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var six = {
-	keywords: [
-		"6",
-		"numbers",
-		"blue-square"
-	],
-	char: "6️⃣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var seven = {
-	keywords: [
-		"7",
-		"numbers",
-		"blue-square",
-		"prime"
-	],
-	char: "7️⃣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var eight = {
-	keywords: [
-		"8",
-		"blue-square",
-		"numbers"
-	],
-	char: "8️⃣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var nine = {
-	keywords: [
-		"blue-square",
-		"numbers",
-		"9"
-	],
-	char: "9️⃣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var keycap_ten = {
-	keywords: [
-		"numbers",
-		"10",
-		"blue-square"
-	],
-	char: "🔟",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var asterisk = {
-	keywords: [
-		"star",
-		"keycap"
-	],
-	char: "*⃣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var eject_button = {
-	keywords: [
-		"blue-square"
-	],
-	char: "⏏️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_forward = {
-	keywords: [
-		"blue-square",
-		"right",
-		"direction",
-		"play"
-	],
-	char: "▶️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var pause_button = {
-	keywords: [
-		"pause",
-		"blue-square"
-	],
-	char: "⏸",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var next_track_button = {
-	keywords: [
-		"forward",
-		"next",
-		"blue-square"
-	],
-	char: "⏭",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var stop_button = {
-	keywords: [
-		"blue-square"
-	],
-	char: "⏹",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var record_button = {
-	keywords: [
-		"blue-square"
-	],
-	char: "⏺",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var play_or_pause_button = {
-	keywords: [
-		"blue-square",
-		"play",
-		"pause"
-	],
-	char: "⏯",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var previous_track_button = {
-	keywords: [
-		"backward"
-	],
-	char: "⏮",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var fast_forward = {
-	keywords: [
-		"blue-square",
-		"play",
-		"speed",
-		"continue"
-	],
-	char: "⏩",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var rewind = {
-	keywords: [
-		"play",
-		"blue-square"
-	],
-	char: "⏪",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var twisted_rightwards_arrows = {
-	keywords: [
-		"blue-square",
-		"shuffle",
-		"music",
-		"random"
-	],
-	char: "🔀",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var repeat = {
-	keywords: [
-		"loop",
-		"record"
-	],
-	char: "🔁",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var repeat_one = {
-	keywords: [
-		"blue-square",
-		"loop"
-	],
-	char: "🔂",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_backward = {
-	keywords: [
-		"blue-square",
-		"left",
-		"direction"
-	],
-	char: "◀️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_up_small = {
-	keywords: [
-		"blue-square",
-		"triangle",
-		"direction",
-		"point",
-		"forward",
-		"top"
-	],
-	char: "🔼",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_down_small = {
-	keywords: [
-		"blue-square",
-		"direction",
-		"bottom"
-	],
-	char: "🔽",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_double_up = {
-	keywords: [
-		"blue-square",
-		"direction",
-		"top"
-	],
-	char: "⏫",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_double_down = {
-	keywords: [
-		"blue-square",
-		"direction",
-		"bottom"
-	],
-	char: "⏬",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_right = {
-	keywords: [
-		"blue-square",
-		"next"
-	],
-	char: "➡️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_left = {
-	keywords: [
-		"blue-square",
-		"previous",
-		"back"
-	],
-	char: "⬅️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_up = {
-	keywords: [
-		"blue-square",
-		"continue",
-		"top",
-		"direction"
-	],
-	char: "⬆️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_down = {
-	keywords: [
-		"blue-square",
-		"direction",
-		"bottom"
-	],
-	char: "⬇️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_upper_right = {
-	keywords: [
-		"blue-square",
-		"point",
-		"direction",
-		"diagonal",
-		"northeast"
-	],
-	char: "↗️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_lower_right = {
-	keywords: [
-		"blue-square",
-		"direction",
-		"diagonal",
-		"southeast"
-	],
-	char: "↘️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_lower_left = {
-	keywords: [
-		"blue-square",
-		"direction",
-		"diagonal",
-		"southwest"
-	],
-	char: "↙️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_upper_left = {
-	keywords: [
-		"blue-square",
-		"point",
-		"direction",
-		"diagonal",
-		"northwest"
-	],
-	char: "↖️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_up_down = {
-	keywords: [
-		"blue-square",
-		"direction",
-		"way",
-		"vertical"
-	],
-	char: "↕️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var left_right_arrow = {
-	keywords: [
-		"shape",
-		"direction",
-		"horizontal",
-		"sideways"
-	],
-	char: "↔️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrows_counterclockwise = {
-	keywords: [
-		"blue-square",
-		"sync",
-		"cycle"
-	],
-	char: "🔄",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_right_hook = {
-	keywords: [
-		"blue-square",
-		"return",
-		"rotate",
-		"direction"
-	],
-	char: "↪️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var leftwards_arrow_with_hook = {
-	keywords: [
-		"back",
-		"return",
-		"blue-square",
-		"undo",
-		"enter"
-	],
-	char: "↩️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_heading_up = {
-	keywords: [
-		"blue-square",
-		"direction",
-		"top"
-	],
-	char: "⤴️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrow_heading_down = {
-	keywords: [
-		"blue-square",
-		"direction",
-		"bottom"
-	],
-	char: "⤵️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var hash = {
-	keywords: [
-		"symbol",
-		"blue-square",
-		"twitter"
-	],
-	char: "#️⃣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var information_source = {
-	keywords: [
-		"blue-square",
-		"alphabet",
-		"letter"
-	],
-	char: "ℹ️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var abc = {
-	keywords: [
-		"blue-square",
-		"alphabet"
-	],
-	char: "🔤",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var abcd = {
-	keywords: [
-		"blue-square",
-		"alphabet"
-	],
-	char: "🔡",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var capital_abcd = {
-	keywords: [
-		"alphabet",
-		"words",
-		"blue-square"
-	],
-	char: "🔠",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var symbols = {
-	keywords: [
-		"blue-square",
-		"music",
-		"note",
-		"ampersand",
-		"percent",
-		"glyphs",
-		"characters"
-	],
-	char: "🔣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var musical_note = {
-	keywords: [
-		"score",
-		"tone",
-		"sound"
-	],
-	char: "🎵",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var notes = {
-	keywords: [
-		"music",
-		"score"
-	],
-	char: "🎶",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var wavy_dash = {
-	keywords: [
-		"draw",
-		"line",
-		"moustache",
-		"mustache",
-		"squiggle",
-		"scribble"
-	],
-	char: "〰️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var curly_loop = {
-	keywords: [
-		"scribble",
-		"draw",
-		"shape",
-		"squiggle"
-	],
-	char: "➰",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var heavy_check_mark = {
-	keywords: [
-		"ok",
-		"nike",
-		"answer",
-		"yes",
-		"tick"
-	],
-	char: "✔️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var arrows_clockwise = {
-	keywords: [
-		"sync",
-		"cycle",
-		"round",
-		"repeat"
-	],
-	char: "🔃",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var heavy_plus_sign = {
-	keywords: [
-		"math",
-		"calculation",
-		"addition",
-		"more",
-		"increase"
-	],
-	char: "➕",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var heavy_minus_sign = {
-	keywords: [
-		"math",
-		"calculation",
-		"subtract",
-		"less"
-	],
-	char: "➖",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var heavy_division_sign = {
-	keywords: [
-		"divide",
-		"math",
-		"calculation"
-	],
-	char: "➗",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var heavy_multiplication_x = {
-	keywords: [
-		"math",
-		"calculation"
-	],
-	char: "✖️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var infinity = {
-	keywords: [
-		"forever"
-	],
-	char: "♾",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var heavy_dollar_sign = {
-	keywords: [
-		"money",
-		"sales",
-		"payment",
-		"currency",
-		"buck"
-	],
-	char: "💲",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var currency_exchange = {
-	keywords: [
-		"money",
-		"sales",
-		"dollar",
-		"travel"
-	],
-	char: "💱",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var copyright = {
-	keywords: [
-		"ip",
-		"license",
-		"circle",
-		"law",
-		"legal"
-	],
-	char: "©️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var registered = {
-	keywords: [
-		"alphabet",
-		"circle"
-	],
-	char: "®️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var tm = {
-	keywords: [
-		"trademark",
-		"brand",
-		"law",
-		"legal"
-	],
-	char: "™️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var end = {
-	keywords: [
-		"words",
-		"arrow"
-	],
-	char: "🔚",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var back = {
-	keywords: [
-		"arrow",
-		"words",
-		"return"
-	],
-	char: "🔙",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var on = {
-	keywords: [
-		"arrow",
-		"words"
-	],
-	char: "🔛",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var top = {
-	keywords: [
-		"words",
-		"blue-square"
-	],
-	char: "🔝",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var soon = {
-	keywords: [
-		"arrow",
-		"words"
-	],
-	char: "🔜",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var ballot_box_with_check = {
-	keywords: [
-		"ok",
-		"agree",
-		"confirm",
-		"black-square",
-		"vote",
-		"election",
-		"yes",
-		"tick"
-	],
-	char: "☑️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var radio_button = {
-	keywords: [
-		"input",
-		"old",
-		"music",
-		"circle"
-	],
-	char: "🔘",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var white_circle = {
-	keywords: [
-		"shape",
-		"round"
-	],
-	char: "⚪",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var black_circle = {
-	keywords: [
-		"shape",
-		"button",
-		"round"
-	],
-	char: "⚫",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var red_circle = {
-	keywords: [
-		"shape",
-		"error",
-		"danger"
-	],
-	char: "🔴",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var large_blue_circle = {
-	keywords: [
-		"shape",
-		"icon",
-		"button"
-	],
-	char: "🔵",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var small_orange_diamond = {
-	keywords: [
-		"shape",
-		"jewel",
-		"gem"
-	],
-	char: "🔸",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var small_blue_diamond = {
-	keywords: [
-		"shape",
-		"jewel",
-		"gem"
-	],
-	char: "🔹",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var large_orange_diamond = {
-	keywords: [
-		"shape",
-		"jewel",
-		"gem"
-	],
-	char: "🔶",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var large_blue_diamond = {
-	keywords: [
-		"shape",
-		"jewel",
-		"gem"
-	],
-	char: "🔷",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var small_red_triangle = {
-	keywords: [
-		"shape",
-		"direction",
-		"up",
-		"top"
-	],
-	char: "🔺",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var black_small_square = {
-	keywords: [
-		"shape",
-		"icon"
-	],
-	char: "▪️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var white_small_square = {
-	keywords: [
-		"shape",
-		"icon"
-	],
-	char: "▫️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var black_large_square = {
-	keywords: [
-		"shape",
-		"icon",
-		"button"
-	],
-	char: "⬛",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var white_large_square = {
-	keywords: [
-		"shape",
-		"icon",
-		"stone",
-		"button"
-	],
-	char: "⬜",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var small_red_triangle_down = {
-	keywords: [
-		"shape",
-		"direction",
-		"bottom"
-	],
-	char: "🔻",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var black_medium_square = {
-	keywords: [
-		"shape",
-		"button",
-		"icon"
-	],
-	char: "◼️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var white_medium_square = {
-	keywords: [
-		"shape",
-		"stone",
-		"icon"
-	],
-	char: "◻️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var black_medium_small_square = {
-	keywords: [
-		"icon",
-		"shape",
-		"button"
-	],
-	char: "◾",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var white_medium_small_square = {
-	keywords: [
-		"shape",
-		"stone",
-		"icon",
-		"button"
-	],
-	char: "◽",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var black_square_button = {
-	keywords: [
-		"shape",
-		"input",
-		"frame"
-	],
-	char: "🔲",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var white_square_button = {
-	keywords: [
-		"shape",
-		"input"
-	],
-	char: "🔳",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var speaker = {
-	keywords: [
-		"sound",
-		"volume",
-		"silence",
-		"broadcast"
-	],
-	char: "🔈",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var sound = {
-	keywords: [
-		"volume",
-		"speaker",
-		"broadcast"
-	],
-	char: "🔉",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var loud_sound = {
-	keywords: [
-		"volume",
-		"noise",
-		"noisy",
-		"speaker",
-		"broadcast"
-	],
-	char: "🔊",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var mute = {
-	keywords: [
-		"sound",
-		"volume",
-		"silence",
-		"quiet"
-	],
-	char: "🔇",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var mega = {
-	keywords: [
-		"sound",
-		"speaker",
-		"volume"
-	],
-	char: "📣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var loudspeaker = {
-	keywords: [
-		"volume",
-		"sound"
-	],
-	char: "📢",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var bell = {
-	keywords: [
-		"sound",
-		"notification",
-		"christmas",
-		"xmas",
-		"chime"
-	],
-	char: "🔔",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var no_bell = {
-	keywords: [
-		"sound",
-		"volume",
-		"mute",
-		"quiet",
-		"silent"
-	],
-	char: "🔕",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var black_joker = {
-	keywords: [
-		"poker",
-		"cards",
-		"game",
-		"play",
-		"magic"
-	],
-	char: "🃏",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var mahjong = {
-	keywords: [
-		"game",
-		"play",
-		"chinese",
-		"kanji"
-	],
-	char: "🀄",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var spades = {
-	keywords: [
-		"poker",
-		"cards",
-		"suits",
-		"magic"
-	],
-	char: "♠️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clubs = {
-	keywords: [
-		"poker",
-		"cards",
-		"magic",
-		"suits"
-	],
-	char: "♣️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var hearts = {
-	keywords: [
-		"poker",
-		"cards",
-		"magic",
-		"suits"
-	],
-	char: "♥️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var diamonds = {
-	keywords: [
-		"poker",
-		"cards",
-		"magic",
-		"suits"
-	],
-	char: "♦️",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var flower_playing_cards = {
-	keywords: [
-		"game",
-		"sunset",
-		"red"
-	],
-	char: "🎴",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var thought_balloon = {
-	keywords: [
-		"bubble",
-		"cloud",
-		"speech",
-		"thinking",
-		"dream"
-	],
-	char: "💭",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var right_anger_bubble = {
-	keywords: [
-		"caption",
-		"speech",
-		"thinking",
-		"mad"
-	],
-	char: "🗯",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var speech_balloon = {
-	keywords: [
-		"bubble",
-		"words",
-		"message",
-		"talk",
-		"chatting"
-	],
-	char: "💬",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var left_speech_bubble = {
-	keywords: [
-		"words",
-		"message",
-		"talk",
-		"chatting"
-	],
-	char: "🗨",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock1 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕐",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock2 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕑",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock3 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕒",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock4 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕓",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock5 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕔",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock6 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule",
-		"dawn",
-		"dusk"
-	],
-	char: "🕕",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock7 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕖",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock8 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕗",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock9 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕘",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock10 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕙",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock11 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕚",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock12 = {
-	keywords: [
-		"time",
-		"noon",
-		"midnight",
-		"midday",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕛",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock130 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕜",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock230 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕝",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock330 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕞",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock430 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕟",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock530 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕠",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock630 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕡",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock730 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕢",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock830 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕣",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock930 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕤",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock1030 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕥",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock1130 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕦",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var clock1230 = {
-	keywords: [
-		"time",
-		"late",
-		"early",
-		"schedule"
-	],
-	char: "🕧",
-	fitzpatrick_scale: false,
-	category: "symbols"
-};
-var afghanistan = {
-	keywords: [
-		"af",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇫",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var aland_islands = {
-	keywords: [
-		"Åland",
-		"islands",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇽",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var albania = {
-	keywords: [
-		"al",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇱",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var algeria = {
-	keywords: [
-		"dz",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇩🇿",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var american_samoa = {
-	keywords: [
-		"american",
-		"ws",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇸",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var andorra = {
-	keywords: [
-		"ad",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇩",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var angola = {
-	keywords: [
-		"ao",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇴",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var anguilla = {
-	keywords: [
-		"ai",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇮",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var antarctica = {
-	keywords: [
-		"aq",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇶",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var antigua_barbuda = {
-	keywords: [
-		"antigua",
-		"barbuda",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇬",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var argentina = {
-	keywords: [
-		"ar",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇷",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var armenia = {
-	keywords: [
-		"am",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇲",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var aruba = {
-	keywords: [
-		"aw",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇼",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var australia = {
-	keywords: [
-		"au",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇺",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var austria = {
-	keywords: [
-		"at",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇹",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var azerbaijan = {
-	keywords: [
-		"az",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇿",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var bahamas = {
-	keywords: [
-		"bs",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇸",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var bahrain = {
-	keywords: [
-		"bh",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇭",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var bangladesh = {
-	keywords: [
-		"bd",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇩",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var barbados = {
-	keywords: [
-		"bb",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇧",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var belarus = {
-	keywords: [
-		"by",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇾",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var belgium = {
-	keywords: [
-		"be",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇪",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var belize = {
-	keywords: [
-		"bz",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇿",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var benin = {
-	keywords: [
-		"bj",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇯",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var bermuda = {
-	keywords: [
-		"bm",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇲",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var bhutan = {
-	keywords: [
-		"bt",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇹",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var bolivia = {
-	keywords: [
-		"bo",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇴",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var caribbean_netherlands = {
-	keywords: [
-		"bonaire",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇶",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var bosnia_herzegovina = {
-	keywords: [
-		"bosnia",
-		"herzegovina",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇦",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var botswana = {
-	keywords: [
-		"bw",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇼",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var brazil = {
-	keywords: [
-		"br",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇷",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var british_indian_ocean_territory = {
-	keywords: [
-		"british",
-		"indian",
-		"ocean",
-		"territory",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇮🇴",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var british_virgin_islands = {
-	keywords: [
-		"british",
-		"virgin",
-		"islands",
-		"bvi",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇻🇬",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var brunei = {
-	keywords: [
-		"bn",
-		"darussalam",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇳",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var bulgaria = {
-	keywords: [
-		"bg",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇬",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var burkina_faso = {
-	keywords: [
-		"burkina",
-		"faso",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇫",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var burundi = {
-	keywords: [
-		"bi",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇮",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var cape_verde = {
-	keywords: [
-		"cabo",
-		"verde",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇻",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var cambodia = {
-	keywords: [
-		"kh",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇰🇭",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var cameroon = {
-	keywords: [
-		"cm",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇲",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var canada = {
-	keywords: [
-		"ca",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇦",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var canary_islands = {
-	keywords: [
-		"canary",
-		"islands",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇮🇨",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var cayman_islands = {
-	keywords: [
-		"cayman",
-		"islands",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇰🇾",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var central_african_republic = {
-	keywords: [
-		"central",
-		"african",
-		"republic",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇫",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var chad = {
-	keywords: [
-		"td",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇩",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var chile = {
-	keywords: [
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇱",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var cn = {
-	keywords: [
-		"china",
-		"chinese",
-		"prc",
-		"flag",
-		"country",
-		"nation",
-		"banner"
-	],
-	char: "🇨🇳",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var christmas_island = {
-	keywords: [
-		"christmas",
-		"island",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇽",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var cocos_islands = {
-	keywords: [
-		"cocos",
-		"keeling",
-		"islands",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇨",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var colombia = {
-	keywords: [
-		"co",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇴",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var comoros = {
-	keywords: [
-		"km",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇰🇲",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var congo_brazzaville = {
-	keywords: [
-		"congo",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇬",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var congo_kinshasa = {
-	keywords: [
-		"congo",
-		"democratic",
-		"republic",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇩",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var cook_islands = {
-	keywords: [
-		"cook",
-		"islands",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇰",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var costa_rica = {
-	keywords: [
-		"costa",
-		"rica",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇷",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var croatia = {
-	keywords: [
-		"hr",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇭🇷",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var cuba = {
-	keywords: [
-		"cu",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇺",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var curacao = {
-	keywords: [
-		"curaçao",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇼",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var cyprus = {
-	keywords: [
-		"cy",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇾",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var czech_republic = {
-	keywords: [
-		"cz",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇿",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var denmark = {
-	keywords: [
-		"dk",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇩🇰",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var djibouti = {
-	keywords: [
-		"dj",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇩🇯",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var dominica = {
-	keywords: [
-		"dm",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇩🇲",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var dominican_republic = {
-	keywords: [
-		"dominican",
-		"republic",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇩🇴",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var ecuador = {
-	keywords: [
-		"ec",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇪🇨",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var egypt = {
-	keywords: [
-		"eg",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇪🇬",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var el_salvador = {
-	keywords: [
-		"el",
-		"salvador",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇻",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var equatorial_guinea = {
-	keywords: [
-		"equatorial",
-		"gn",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇶",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var eritrea = {
-	keywords: [
-		"er",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇪🇷",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var estonia = {
-	keywords: [
-		"ee",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇪🇪",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var ethiopia = {
-	keywords: [
-		"et",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇪🇹",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var eu = {
-	keywords: [
-		"european",
-		"union",
-		"flag",
-		"banner"
-	],
-	char: "🇪🇺",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var falkland_islands = {
-	keywords: [
-		"falkland",
-		"islands",
-		"malvinas",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇫🇰",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var faroe_islands = {
-	keywords: [
-		"faroe",
-		"islands",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇫🇴",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var fiji = {
-	keywords: [
-		"fj",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇫🇯",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var finland = {
-	keywords: [
-		"fi",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇫🇮",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var fr = {
-	keywords: [
-		"banner",
-		"flag",
-		"nation",
-		"france",
-		"french",
-		"country"
-	],
-	char: "🇫🇷",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var french_guiana = {
-	keywords: [
-		"french",
-		"guiana",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇫",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var french_polynesia = {
-	keywords: [
-		"french",
-		"polynesia",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇵🇫",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var french_southern_territories = {
-	keywords: [
-		"french",
-		"southern",
-		"territories",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇫",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var gabon = {
-	keywords: [
-		"ga",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇦",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var gambia = {
-	keywords: [
-		"gm",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇲",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var georgia = {
-	keywords: [
-		"ge",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇪",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var de = {
-	keywords: [
-		"german",
-		"nation",
-		"flag",
-		"country",
-		"banner"
-	],
-	char: "🇩🇪",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var ghana = {
-	keywords: [
-		"gh",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇭",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var gibraltar = {
-	keywords: [
-		"gi",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇮",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var greece = {
-	keywords: [
-		"gr",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇷",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var greenland = {
-	keywords: [
-		"gl",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇱",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var grenada = {
-	keywords: [
-		"gd",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇩",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var guadeloupe = {
-	keywords: [
-		"gp",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇵",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var guam = {
-	keywords: [
-		"gu",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇺",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var guatemala = {
-	keywords: [
-		"gt",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇹",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var guernsey = {
-	keywords: [
-		"gg",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇬",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var guinea = {
-	keywords: [
-		"gn",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇳",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var guinea_bissau = {
-	keywords: [
-		"gw",
-		"bissau",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇼",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var guyana = {
-	keywords: [
-		"gy",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇾",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var haiti = {
-	keywords: [
-		"ht",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇭🇹",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var honduras = {
-	keywords: [
-		"hn",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇭🇳",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var hong_kong = {
-	keywords: [
-		"hong",
-		"kong",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇭🇰",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var hungary = {
-	keywords: [
-		"hu",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇭🇺",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var iceland = {
-	keywords: [
-		"is",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇮🇸",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var india = {
-	keywords: [
-		"in",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇮🇳",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var indonesia = {
-	keywords: [
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇮🇩",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var iran = {
-	keywords: [
-		"iran,",
-		"islamic",
-		"republic",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇮🇷",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var iraq = {
-	keywords: [
-		"iq",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇮🇶",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var ireland = {
-	keywords: [
-		"ie",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇮🇪",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var isle_of_man = {
-	keywords: [
-		"isle",
-		"man",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇮🇲",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var israel = {
-	keywords: [
-		"il",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇮🇱",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var it = {
-	keywords: [
-		"italy",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇮🇹",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var cote_divoire = {
-	keywords: [
-		"ivory",
-		"coast",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇮",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var jamaica = {
-	keywords: [
-		"jm",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇯🇲",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var jp = {
-	keywords: [
-		"japanese",
-		"nation",
-		"flag",
-		"country",
-		"banner"
-	],
-	char: "🇯🇵",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var jersey = {
-	keywords: [
-		"je",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇯🇪",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var jordan = {
-	keywords: [
-		"jo",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇯🇴",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var kazakhstan = {
-	keywords: [
-		"kz",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇰🇿",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var kenya = {
-	keywords: [
-		"ke",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇰🇪",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var kiribati = {
-	keywords: [
-		"ki",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇰🇮",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var kosovo = {
-	keywords: [
-		"xk",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇽🇰",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var kuwait = {
-	keywords: [
-		"kw",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇰🇼",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var kyrgyzstan = {
-	keywords: [
-		"kg",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇰🇬",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var laos = {
-	keywords: [
-		"lao",
-		"democratic",
-		"republic",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇱🇦",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var latvia = {
-	keywords: [
-		"lv",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇱🇻",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var lebanon = {
-	keywords: [
-		"lb",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇱🇧",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var lesotho = {
-	keywords: [
-		"ls",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇱🇸",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var liberia = {
-	keywords: [
-		"lr",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇱🇷",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var libya = {
-	keywords: [
-		"ly",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇱🇾",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var liechtenstein = {
-	keywords: [
-		"li",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇱🇮",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var lithuania = {
-	keywords: [
-		"lt",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇱🇹",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var luxembourg = {
-	keywords: [
-		"lu",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇱🇺",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var macau = {
-	keywords: [
-		"macao",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇴",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var macedonia = {
-	keywords: [
-		"macedonia,",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇰",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var madagascar = {
-	keywords: [
-		"mg",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇬",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var malawi = {
-	keywords: [
-		"mw",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇼",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var malaysia = {
-	keywords: [
-		"my",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇾",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var maldives = {
-	keywords: [
-		"mv",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇻",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var mali = {
-	keywords: [
-		"ml",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇱",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var malta = {
-	keywords: [
-		"mt",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇹",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var marshall_islands = {
-	keywords: [
-		"marshall",
-		"islands",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇭",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var martinique = {
-	keywords: [
-		"mq",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇶",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var mauritania = {
-	keywords: [
-		"mr",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇷",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var mauritius = {
-	keywords: [
-		"mu",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇺",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var mayotte = {
-	keywords: [
-		"yt",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇾🇹",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var mexico = {
-	keywords: [
-		"mx",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇽",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var micronesia = {
-	keywords: [
-		"micronesia,",
-		"federated",
-		"states",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇫🇲",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var moldova = {
-	keywords: [
-		"moldova,",
-		"republic",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇩",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var monaco = {
-	keywords: [
-		"mc",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇨",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var mongolia = {
-	keywords: [
-		"mn",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇳",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var montenegro = {
-	keywords: [
-		"me",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇪",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var montserrat = {
-	keywords: [
-		"ms",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇸",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var morocco = {
-	keywords: [
-		"ma",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇦",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var mozambique = {
-	keywords: [
-		"mz",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇿",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var myanmar = {
-	keywords: [
-		"mm",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇲",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var namibia = {
-	keywords: [
-		"na",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇳🇦",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var nauru = {
-	keywords: [
-		"nr",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇳🇷",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var nepal = {
-	keywords: [
-		"np",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇳🇵",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var netherlands = {
-	keywords: [
-		"nl",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇳🇱",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var new_caledonia = {
-	keywords: [
-		"new",
-		"caledonia",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇳🇨",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var new_zealand = {
-	keywords: [
-		"new",
-		"zealand",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇳🇿",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var nicaragua = {
-	keywords: [
-		"ni",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇳🇮",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var niger = {
-	keywords: [
-		"ne",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇳🇪",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var nigeria = {
-	keywords: [
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇳🇬",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var niue = {
-	keywords: [
-		"nu",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇳🇺",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var norfolk_island = {
-	keywords: [
-		"norfolk",
-		"island",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇳🇫",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var northern_mariana_islands = {
-	keywords: [
-		"northern",
-		"mariana",
-		"islands",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇲🇵",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var north_korea = {
-	keywords: [
-		"north",
-		"korea",
-		"nation",
-		"flag",
-		"country",
-		"banner"
-	],
-	char: "🇰🇵",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var norway = {
-	keywords: [
-		"no",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇳🇴",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var oman = {
-	keywords: [
-		"om_symbol",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇴🇲",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var pakistan = {
-	keywords: [
-		"pk",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇵🇰",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var palau = {
-	keywords: [
-		"pw",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇵🇼",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var palestinian_territories = {
-	keywords: [
-		"palestine",
-		"palestinian",
-		"territories",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇵🇸",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var panama = {
-	keywords: [
-		"pa",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇵🇦",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var papua_new_guinea = {
-	keywords: [
-		"papua",
-		"new",
-		"guinea",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇵🇬",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var paraguay = {
-	keywords: [
-		"py",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇵🇾",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var peru = {
-	keywords: [
-		"pe",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇵🇪",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var philippines = {
-	keywords: [
-		"ph",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇵🇭",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var pitcairn_islands = {
-	keywords: [
-		"pitcairn",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇵🇳",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var poland = {
-	keywords: [
-		"pl",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇵🇱",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var portugal = {
-	keywords: [
-		"pt",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇵🇹",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var puerto_rico = {
-	keywords: [
-		"puerto",
-		"rico",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇵🇷",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var qatar = {
-	keywords: [
-		"qa",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇶🇦",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var reunion = {
-	keywords: [
-		"réunion",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇷🇪",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var romania = {
-	keywords: [
-		"ro",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇷🇴",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var ru = {
-	keywords: [
-		"russian",
-		"federation",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇷🇺",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var rwanda = {
-	keywords: [
-		"rw",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇷🇼",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var st_barthelemy = {
-	keywords: [
-		"saint",
-		"barthélemy",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇧🇱",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var st_helena = {
-	keywords: [
-		"saint",
-		"helena",
-		"ascension",
-		"tristan",
-		"cunha",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇭",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var st_kitts_nevis = {
-	keywords: [
-		"saint",
-		"kitts",
-		"nevis",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇰🇳",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var st_lucia = {
-	keywords: [
-		"saint",
-		"lucia",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇱🇨",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var st_pierre_miquelon = {
-	keywords: [
-		"saint",
-		"pierre",
-		"miquelon",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇵🇲",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var st_vincent_grenadines = {
-	keywords: [
-		"saint",
-		"vincent",
-		"grenadines",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇻🇨",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var samoa = {
-	keywords: [
-		"ws",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇼🇸",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var san_marino = {
-	keywords: [
-		"san",
-		"marino",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇲",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var sao_tome_principe = {
-	keywords: [
-		"sao",
-		"tome",
-		"principe",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇹",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var saudi_arabia = {
-	keywords: [
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇦",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var senegal = {
-	keywords: [
-		"sn",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇳",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var serbia = {
-	keywords: [
-		"rs",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇷🇸",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var seychelles = {
-	keywords: [
-		"sc",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇨",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var sierra_leone = {
-	keywords: [
-		"sierra",
-		"leone",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇱",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var singapore = {
-	keywords: [
-		"sg",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇬",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var sint_maarten = {
-	keywords: [
-		"sint",
-		"maarten",
-		"dutch",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇽",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var slovakia = {
-	keywords: [
-		"sk",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇰",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var slovenia = {
-	keywords: [
-		"si",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇮",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var solomon_islands = {
-	keywords: [
-		"solomon",
-		"islands",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇧",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var somalia = {
-	keywords: [
-		"so",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇴",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var south_africa = {
-	keywords: [
-		"south",
-		"africa",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇿🇦",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var south_georgia_south_sandwich_islands = {
-	keywords: [
-		"south",
-		"georgia",
-		"sandwich",
-		"islands",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇬🇸",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var kr = {
-	keywords: [
-		"south",
-		"korea",
-		"nation",
-		"flag",
-		"country",
-		"banner"
-	],
-	char: "🇰🇷",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var south_sudan = {
-	keywords: [
-		"south",
-		"sd",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇸",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var es = {
-	keywords: [
-		"spain",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇪🇸",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var sri_lanka = {
-	keywords: [
-		"sri",
-		"lanka",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇱🇰",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var sudan = {
-	keywords: [
-		"sd",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇩",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var suriname = {
-	keywords: [
-		"sr",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇷",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var swaziland = {
-	keywords: [
-		"sz",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇿",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var sweden = {
-	keywords: [
-		"se",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇪",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var switzerland = {
-	keywords: [
-		"ch",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇨🇭",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var syria = {
-	keywords: [
-		"syrian",
-		"arab",
-		"republic",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇸🇾",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var taiwan = {
-	keywords: [
-		"tw",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇼",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var tajikistan = {
-	keywords: [
-		"tj",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇯",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var tanzania = {
-	keywords: [
-		"tanzania,",
-		"united",
-		"republic",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇿",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var thailand = {
-	keywords: [
-		"th",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇭",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var timor_leste = {
-	keywords: [
-		"timor",
-		"leste",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇱",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var togo = {
-	keywords: [
-		"tg",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇬",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var tokelau = {
-	keywords: [
-		"tk",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇰",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var tonga = {
-	keywords: [
-		"to",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇴",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var trinidad_tobago = {
-	keywords: [
-		"trinidad",
-		"tobago",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇹",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var tunisia = {
-	keywords: [
-		"tn",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇳",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var tr = {
-	keywords: [
-		"turkey",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇷",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var turkmenistan = {
-	keywords: [
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇲",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var turks_caicos_islands = {
-	keywords: [
-		"turks",
-		"caicos",
-		"islands",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇨",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var tuvalu = {
-	keywords: [
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇹🇻",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var uganda = {
-	keywords: [
-		"ug",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇺🇬",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var ukraine = {
-	keywords: [
-		"ua",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇺🇦",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var united_arab_emirates = {
-	keywords: [
-		"united",
-		"arab",
-		"emirates",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇦🇪",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var uk = {
-	keywords: [
-		"united",
-		"kingdom",
-		"great",
-		"britain",
-		"northern",
-		"ireland",
-		"flag",
-		"nation",
-		"country",
-		"banner",
-		"british",
-		"UK",
-		"english",
-		"england",
-		"union jack"
-	],
-	char: "🇬🇧",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var england = {
-	keywords: [
-		"flag",
-		"english"
-	],
-	char: "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var scotland = {
-	keywords: [
-		"flag",
-		"scottish"
-	],
-	char: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var wales = {
-	keywords: [
-		"flag",
-		"welsh"
-	],
-	char: "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var us = {
-	keywords: [
-		"united",
-		"states",
-		"america",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇺🇸",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var us_virgin_islands = {
-	keywords: [
-		"virgin",
-		"islands",
-		"us",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇻🇮",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var uruguay = {
-	keywords: [
-		"uy",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇺🇾",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var uzbekistan = {
-	keywords: [
-		"uz",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇺🇿",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var vanuatu = {
-	keywords: [
-		"vu",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇻🇺",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var vatican_city = {
-	keywords: [
-		"vatican",
-		"city",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇻🇦",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var venezuela = {
-	keywords: [
-		"ve",
-		"bolivarian",
-		"republic",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇻🇪",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var vietnam = {
-	keywords: [
-		"viet",
-		"nam",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇻🇳",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var wallis_futuna = {
-	keywords: [
-		"wallis",
-		"futuna",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇼🇫",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var western_sahara = {
-	keywords: [
-		"western",
-		"sahara",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇪🇭",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var yemen = {
-	keywords: [
-		"ye",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇾🇪",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var zambia = {
-	keywords: [
-		"zm",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇿🇲",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var zimbabwe = {
-	keywords: [
-		"zw",
-		"flag",
-		"nation",
-		"country",
-		"banner"
-	],
-	char: "🇿🇼",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var united_nations = {
-	keywords: [
-		"un",
-		"flag",
-		"banner"
-	],
-	char: "🇺🇳",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var pirate_flag = {
-	keywords: [
-		"skull",
-		"crossbones",
-		"flag",
-		"banner"
-	],
-	char: "🏴‍☠️",
-	fitzpatrick_scale: false,
-	category: "flags"
-};
-var require$$0 = {
-	"100": {
-	keywords: [
-		"score",
-		"perfect",
-		"numbers",
-		"century",
-		"exam",
-		"quiz",
-		"test",
-		"pass",
-		"hundred"
-	],
-	char: "💯",
-	fitzpatrick_scale: false,
-	category: "symbols"
-},
-	"1234": {
-	keywords: [
-		"numbers",
-		"blue-square"
-	],
-	char: "🔢",
-	fitzpatrick_scale: false,
-	category: "symbols"
-},
-	grinning: grinning,
-	grimacing: grimacing,
-	grin: grin,
-	joy: joy,
-	rofl: rofl,
-	partying: partying,
-	smiley: smiley,
-	smile: smile,
-	sweat_smile: sweat_smile,
-	laughing: laughing,
-	innocent: innocent,
-	wink: wink,
-	blush: blush,
-	slightly_smiling_face: slightly_smiling_face,
-	upside_down_face: upside_down_face,
-	relaxed: relaxed,
-	yum: yum,
-	relieved: relieved,
-	heart_eyes: heart_eyes,
-	smiling_face_with_three_hearts: smiling_face_with_three_hearts,
-	kissing_heart: kissing_heart,
-	kissing: kissing,
-	kissing_smiling_eyes: kissing_smiling_eyes,
-	kissing_closed_eyes: kissing_closed_eyes,
-	stuck_out_tongue_winking_eye: stuck_out_tongue_winking_eye,
-	zany: zany,
-	raised_eyebrow: raised_eyebrow,
-	monocle: monocle,
-	stuck_out_tongue_closed_eyes: stuck_out_tongue_closed_eyes,
-	stuck_out_tongue: stuck_out_tongue,
-	money_mouth_face: money_mouth_face,
-	nerd_face: nerd_face,
-	sunglasses: sunglasses,
-	star_struck: star_struck,
-	clown_face: clown_face,
-	cowboy_hat_face: cowboy_hat_face,
-	hugs: hugs,
-	smirk: smirk,
-	no_mouth: no_mouth,
-	neutral_face: neutral_face,
-	expressionless: expressionless,
-	unamused: unamused,
-	roll_eyes: roll_eyes,
-	thinking: thinking,
-	lying_face: lying_face,
-	hand_over_mouth: hand_over_mouth,
-	shushing: shushing,
-	symbols_over_mouth: symbols_over_mouth,
-	exploding_head: exploding_head,
-	flushed: flushed,
-	disappointed: disappointed,
-	worried: worried,
-	angry: angry,
-	rage: rage,
-	pensive: pensive,
-	confused: confused,
-	slightly_frowning_face: slightly_frowning_face,
-	frowning_face: frowning_face,
-	persevere: persevere,
-	confounded: confounded,
-	tired_face: tired_face,
-	weary: weary,
-	pleading: pleading,
-	triumph: triumph,
-	open_mouth: open_mouth,
-	scream: scream,
-	fearful: fearful,
-	cold_sweat: cold_sweat,
-	hushed: hushed,
-	frowning: frowning,
-	anguished: anguished,
-	cry: cry,
-	disappointed_relieved: disappointed_relieved,
-	drooling_face: drooling_face,
-	sleepy: sleepy,
-	sweat: sweat,
-	hot: hot,
-	cold: cold,
-	sob: sob,
-	dizzy_face: dizzy_face,
-	astonished: astonished,
-	zipper_mouth_face: zipper_mouth_face,
-	nauseated_face: nauseated_face,
-	sneezing_face: sneezing_face,
-	vomiting: vomiting,
-	mask: mask,
-	face_with_thermometer: face_with_thermometer,
-	face_with_head_bandage: face_with_head_bandage,
-	woozy: woozy,
-	sleeping: sleeping,
-	zzz: zzz,
-	poop: poop,
-	smiling_imp: smiling_imp,
-	imp: imp,
-	japanese_ogre: japanese_ogre,
-	japanese_goblin: japanese_goblin,
-	skull: skull,
-	ghost: ghost,
-	alien: alien,
-	robot: robot,
-	smiley_cat: smiley_cat,
-	smile_cat: smile_cat,
-	joy_cat: joy_cat,
-	heart_eyes_cat: heart_eyes_cat,
-	smirk_cat: smirk_cat,
-	kissing_cat: kissing_cat,
-	scream_cat: scream_cat,
-	crying_cat_face: crying_cat_face,
-	pouting_cat: pouting_cat,
-	palms_up: palms_up,
-	raised_hands: raised_hands,
-	clap: clap,
-	wave: wave,
-	call_me_hand: call_me_hand,
-	"+1": {
-	keywords: [
-		"thumbsup",
-		"yes",
-		"awesome",
-		"good",
-		"agree",
-		"accept",
-		"cool",
-		"hand",
-		"like"
-	],
-	char: "👍",
-	fitzpatrick_scale: true,
-	category: "people"
-},
-	"-1": {
-	keywords: [
-		"thumbsdown",
-		"no",
-		"dislike",
-		"hand"
-	],
-	char: "👎",
-	fitzpatrick_scale: true,
-	category: "people"
-},
-	facepunch: facepunch,
-	fist: fist,
-	fist_left: fist_left,
-	fist_right: fist_right,
-	v: v,
-	ok_hand: ok_hand,
-	raised_hand: raised_hand,
-	raised_back_of_hand: raised_back_of_hand,
-	open_hands: open_hands,
-	muscle: muscle,
-	pray: pray,
-	foot: foot,
-	leg: leg,
-	handshake: handshake,
-	point_up: point_up,
-	point_up_2: point_up_2,
-	point_down: point_down,
-	point_left: point_left,
-	point_right: point_right,
-	fu: fu,
-	raised_hand_with_fingers_splayed: raised_hand_with_fingers_splayed,
-	love_you: love_you,
-	metal: metal,
-	crossed_fingers: crossed_fingers,
-	vulcan_salute: vulcan_salute,
-	writing_hand: writing_hand,
-	selfie: selfie,
-	nail_care: nail_care,
-	lips: lips,
-	tooth: tooth,
-	tongue: tongue,
-	ear: ear,
-	nose: nose,
-	eye: eye,
-	eyes: eyes,
-	brain: brain,
-	bust_in_silhouette: bust_in_silhouette,
-	busts_in_silhouette: busts_in_silhouette,
-	speaking_head: speaking_head,
-	baby: baby,
-	child: child,
-	boy: boy,
-	girl: girl,
-	adult: adult,
-	man: man,
-	woman: woman,
-	blonde_woman: blonde_woman,
-	blonde_man: blonde_man,
-	bearded_person: bearded_person,
-	older_adult: older_adult,
-	older_man: older_man,
-	older_woman: older_woman,
-	man_with_gua_pi_mao: man_with_gua_pi_mao,
-	woman_with_headscarf: woman_with_headscarf,
-	woman_with_turban: woman_with_turban,
-	man_with_turban: man_with_turban,
-	policewoman: policewoman,
-	policeman: policeman,
-	construction_worker_woman: construction_worker_woman,
-	construction_worker_man: construction_worker_man,
-	guardswoman: guardswoman,
-	guardsman: guardsman,
-	female_detective: female_detective,
-	male_detective: male_detective,
-	woman_health_worker: woman_health_worker,
-	man_health_worker: man_health_worker,
-	woman_farmer: woman_farmer,
-	man_farmer: man_farmer,
-	woman_cook: woman_cook,
-	man_cook: man_cook,
-	woman_student: woman_student,
-	man_student: man_student,
-	woman_singer: woman_singer,
-	man_singer: man_singer,
-	woman_teacher: woman_teacher,
-	man_teacher: man_teacher,
-	woman_factory_worker: woman_factory_worker,
-	man_factory_worker: man_factory_worker,
-	woman_technologist: woman_technologist,
-	man_technologist: man_technologist,
-	woman_office_worker: woman_office_worker,
-	man_office_worker: man_office_worker,
-	woman_mechanic: woman_mechanic,
-	man_mechanic: man_mechanic,
-	woman_scientist: woman_scientist,
-	man_scientist: man_scientist,
-	woman_artist: woman_artist,
-	man_artist: man_artist,
-	woman_firefighter: woman_firefighter,
-	man_firefighter: man_firefighter,
-	woman_pilot: woman_pilot,
-	man_pilot: man_pilot,
-	woman_astronaut: woman_astronaut,
-	man_astronaut: man_astronaut,
-	woman_judge: woman_judge,
-	man_judge: man_judge,
-	woman_superhero: woman_superhero,
-	man_superhero: man_superhero,
-	woman_supervillain: woman_supervillain,
-	man_supervillain: man_supervillain,
-	mrs_claus: mrs_claus,
-	santa: santa,
-	sorceress: sorceress,
-	wizard: wizard,
-	woman_elf: woman_elf,
-	man_elf: man_elf,
-	woman_vampire: woman_vampire,
-	man_vampire: man_vampire,
-	woman_zombie: woman_zombie,
-	man_zombie: man_zombie,
-	woman_genie: woman_genie,
-	man_genie: man_genie,
-	mermaid: mermaid,
-	merman: merman,
-	woman_fairy: woman_fairy,
-	man_fairy: man_fairy,
-	angel: angel,
-	pregnant_woman: pregnant_woman,
-	breastfeeding: breastfeeding,
-	princess: princess,
-	prince: prince,
-	bride_with_veil: bride_with_veil,
-	man_in_tuxedo: man_in_tuxedo,
-	running_woman: running_woman,
-	running_man: running_man,
-	walking_woman: walking_woman,
-	walking_man: walking_man,
-	dancer: dancer,
-	man_dancing: man_dancing,
-	dancing_women: dancing_women,
-	dancing_men: dancing_men,
-	couple: couple,
-	two_men_holding_hands: two_men_holding_hands,
-	two_women_holding_hands: two_women_holding_hands,
-	bowing_woman: bowing_woman,
-	bowing_man: bowing_man,
-	man_facepalming: man_facepalming,
-	woman_facepalming: woman_facepalming,
-	woman_shrugging: woman_shrugging,
-	man_shrugging: man_shrugging,
-	tipping_hand_woman: tipping_hand_woman,
-	tipping_hand_man: tipping_hand_man,
-	no_good_woman: no_good_woman,
-	no_good_man: no_good_man,
-	ok_woman: ok_woman,
-	ok_man: ok_man,
-	raising_hand_woman: raising_hand_woman,
-	raising_hand_man: raising_hand_man,
-	pouting_woman: pouting_woman,
-	pouting_man: pouting_man,
-	frowning_woman: frowning_woman,
-	frowning_man: frowning_man,
-	haircut_woman: haircut_woman,
-	haircut_man: haircut_man,
-	massage_woman: massage_woman,
-	massage_man: massage_man,
-	woman_in_steamy_room: woman_in_steamy_room,
-	man_in_steamy_room: man_in_steamy_room,
-	couple_with_heart_woman_man: couple_with_heart_woman_man,
-	couple_with_heart_woman_woman: couple_with_heart_woman_woman,
-	couple_with_heart_man_man: couple_with_heart_man_man,
-	couplekiss_man_woman: couplekiss_man_woman,
-	couplekiss_woman_woman: couplekiss_woman_woman,
-	couplekiss_man_man: couplekiss_man_man,
-	family_man_woman_boy: family_man_woman_boy,
-	family_man_woman_girl: family_man_woman_girl,
-	family_man_woman_girl_boy: family_man_woman_girl_boy,
-	family_man_woman_boy_boy: family_man_woman_boy_boy,
-	family_man_woman_girl_girl: family_man_woman_girl_girl,
-	family_woman_woman_boy: family_woman_woman_boy,
-	family_woman_woman_girl: family_woman_woman_girl,
-	family_woman_woman_girl_boy: family_woman_woman_girl_boy,
-	family_woman_woman_boy_boy: family_woman_woman_boy_boy,
-	family_woman_woman_girl_girl: family_woman_woman_girl_girl,
-	family_man_man_boy: family_man_man_boy,
-	family_man_man_girl: family_man_man_girl,
-	family_man_man_girl_boy: family_man_man_girl_boy,
-	family_man_man_boy_boy: family_man_man_boy_boy,
-	family_man_man_girl_girl: family_man_man_girl_girl,
-	family_woman_boy: family_woman_boy,
-	family_woman_girl: family_woman_girl,
-	family_woman_girl_boy: family_woman_girl_boy,
-	family_woman_boy_boy: family_woman_boy_boy,
-	family_woman_girl_girl: family_woman_girl_girl,
-	family_man_boy: family_man_boy,
-	family_man_girl: family_man_girl,
-	family_man_girl_boy: family_man_girl_boy,
-	family_man_boy_boy: family_man_boy_boy,
-	family_man_girl_girl: family_man_girl_girl,
-	yarn: yarn,
-	thread: thread,
-	coat: coat,
-	labcoat: labcoat,
-	womans_clothes: womans_clothes,
-	tshirt: tshirt,
-	jeans: jeans,
-	necktie: necktie,
-	dress: dress,
-	bikini: bikini,
-	kimono: kimono,
-	lipstick: lipstick,
-	kiss: kiss,
-	footprints: footprints,
-	flat_shoe: flat_shoe,
-	high_heel: high_heel,
-	sandal: sandal,
-	boot: boot,
-	mans_shoe: mans_shoe,
-	athletic_shoe: athletic_shoe,
-	hiking_boot: hiking_boot,
-	socks: socks,
-	gloves: gloves,
-	scarf: scarf,
-	womans_hat: womans_hat,
-	tophat: tophat,
-	billed_hat: billed_hat,
-	rescue_worker_helmet: rescue_worker_helmet,
-	mortar_board: mortar_board,
-	crown: crown,
-	school_satchel: school_satchel,
-	luggage: luggage,
-	pouch: pouch,
-	purse: purse,
-	handbag: handbag,
-	briefcase: briefcase,
-	eyeglasses: eyeglasses,
-	dark_sunglasses: dark_sunglasses,
-	goggles: goggles,
-	ring: ring,
-	closed_umbrella: closed_umbrella,
-	dog: dog,
-	cat: cat,
-	mouse: mouse,
-	hamster: hamster,
-	rabbit: rabbit,
-	fox_face: fox_face,
-	bear: bear,
-	panda_face: panda_face,
-	koala: koala,
-	tiger: tiger,
-	lion: lion,
-	cow: cow,
-	pig: pig,
-	pig_nose: pig_nose,
-	frog: frog,
-	squid: squid,
-	octopus: octopus,
-	shrimp: shrimp,
-	monkey_face: monkey_face,
-	gorilla: gorilla,
-	see_no_evil: see_no_evil,
-	hear_no_evil: hear_no_evil,
-	speak_no_evil: speak_no_evil,
-	monkey: monkey,
-	chicken: chicken,
-	penguin: penguin,
-	bird: bird,
-	baby_chick: baby_chick,
-	hatching_chick: hatching_chick,
-	hatched_chick: hatched_chick,
-	duck: duck,
-	eagle: eagle,
-	owl: owl,
-	bat: bat,
-	wolf: wolf,
-	boar: boar,
-	horse: horse,
-	unicorn: unicorn,
-	honeybee: honeybee,
-	bug: bug,
-	butterfly: butterfly,
-	snail: snail,
-	beetle: beetle,
-	ant: ant,
-	grasshopper: grasshopper,
-	spider: spider,
-	scorpion: scorpion,
-	crab: crab,
-	snake: snake,
-	lizard: lizard,
-	"t-rex": {
-	keywords: [
-		"animal",
-		"nature",
-		"dinosaur",
-		"tyrannosaurus",
-		"extinct"
-	],
-	char: "🦖",
-	fitzpatrick_scale: false,
-	category: "animals_and_nature"
-},
-	sauropod: sauropod,
-	turtle: turtle,
-	tropical_fish: tropical_fish,
-	fish: fish,
-	blowfish: blowfish,
-	dolphin: dolphin,
-	shark: shark,
-	whale: whale,
-	whale2: whale2,
-	crocodile: crocodile,
-	leopard: leopard,
-	zebra: zebra,
-	tiger2: tiger2,
-	water_buffalo: water_buffalo,
-	ox: ox,
-	cow2: cow2,
-	deer: deer,
-	dromedary_camel: dromedary_camel,
-	camel: camel,
-	giraffe: giraffe,
-	elephant: elephant,
-	rhinoceros: rhinoceros,
-	goat: goat,
-	ram: ram,
-	sheep: sheep,
-	racehorse: racehorse,
-	pig2: pig2,
-	rat: rat,
-	mouse2: mouse2,
-	rooster: rooster,
-	turkey: turkey,
-	dove: dove,
-	dog2: dog2,
-	poodle: poodle,
-	cat2: cat2,
-	rabbit2: rabbit2,
-	chipmunk: chipmunk,
-	hedgehog: hedgehog,
-	raccoon: raccoon,
-	llama: llama,
-	hippopotamus: hippopotamus,
-	kangaroo: kangaroo,
-	badger: badger,
-	swan: swan,
-	peacock: peacock,
-	parrot: parrot,
-	lobster: lobster,
-	mosquito: mosquito,
-	paw_prints: paw_prints,
-	dragon: dragon,
-	dragon_face: dragon_face,
-	cactus: cactus,
-	christmas_tree: christmas_tree,
-	evergreen_tree: evergreen_tree,
-	deciduous_tree: deciduous_tree,
-	palm_tree: palm_tree,
-	seedling: seedling,
-	herb: herb,
-	shamrock: shamrock,
-	four_leaf_clover: four_leaf_clover,
-	bamboo: bamboo,
-	tanabata_tree: tanabata_tree,
-	leaves: leaves,
-	fallen_leaf: fallen_leaf,
-	maple_leaf: maple_leaf,
-	ear_of_rice: ear_of_rice,
-	hibiscus: hibiscus,
-	sunflower: sunflower,
-	rose: rose,
-	wilted_flower: wilted_flower,
-	tulip: tulip,
-	blossom: blossom,
-	cherry_blossom: cherry_blossom,
-	bouquet: bouquet,
-	mushroom: mushroom,
-	chestnut: chestnut,
-	jack_o_lantern: jack_o_lantern,
-	shell: shell,
-	spider_web: spider_web,
-	earth_americas: earth_americas,
-	earth_africa: earth_africa,
-	earth_asia: earth_asia,
-	full_moon: full_moon,
-	waning_gibbous_moon: waning_gibbous_moon,
-	last_quarter_moon: last_quarter_moon,
-	waning_crescent_moon: waning_crescent_moon,
-	new_moon: new_moon,
-	waxing_crescent_moon: waxing_crescent_moon,
-	first_quarter_moon: first_quarter_moon,
-	waxing_gibbous_moon: waxing_gibbous_moon,
-	new_moon_with_face: new_moon_with_face,
-	full_moon_with_face: full_moon_with_face,
-	first_quarter_moon_with_face: first_quarter_moon_with_face,
-	last_quarter_moon_with_face: last_quarter_moon_with_face,
-	sun_with_face: sun_with_face,
-	crescent_moon: crescent_moon,
-	star: star,
-	star2: star2,
-	dizzy: dizzy,
-	sparkles: sparkles,
-	comet: comet,
-	sunny: sunny,
-	sun_behind_small_cloud: sun_behind_small_cloud,
-	partly_sunny: partly_sunny,
-	sun_behind_large_cloud: sun_behind_large_cloud,
-	sun_behind_rain_cloud: sun_behind_rain_cloud,
-	cloud: cloud,
-	cloud_with_rain: cloud_with_rain,
-	cloud_with_lightning_and_rain: cloud_with_lightning_and_rain,
-	cloud_with_lightning: cloud_with_lightning,
-	zap: zap,
-	fire: fire,
-	boom: boom,
-	snowflake: snowflake,
-	cloud_with_snow: cloud_with_snow,
-	snowman: snowman,
-	snowman_with_snow: snowman_with_snow,
-	wind_face: wind_face,
-	dash: dash,
-	tornado: tornado,
-	fog: fog,
-	open_umbrella: open_umbrella,
-	umbrella: umbrella,
-	droplet: droplet,
-	sweat_drops: sweat_drops,
-	ocean: ocean,
-	green_apple: green_apple,
-	apple: apple,
-	pear: pear,
-	tangerine: tangerine,
-	lemon: lemon,
-	banana: banana,
-	watermelon: watermelon,
-	grapes: grapes,
-	strawberry: strawberry,
-	melon: melon,
-	cherries: cherries,
-	peach: peach,
-	pineapple: pineapple,
-	coconut: coconut,
-	kiwi_fruit: kiwi_fruit,
-	mango: mango,
-	avocado: avocado,
-	broccoli: broccoli,
-	tomato: tomato,
-	eggplant: eggplant,
-	cucumber: cucumber,
-	carrot: carrot,
-	hot_pepper: hot_pepper,
-	potato: potato,
-	corn: corn,
-	leafy_greens: leafy_greens,
-	sweet_potato: sweet_potato,
-	peanuts: peanuts,
-	honey_pot: honey_pot,
-	croissant: croissant,
-	bread: bread,
-	baguette_bread: baguette_bread,
-	bagel: bagel,
-	pretzel: pretzel,
-	cheese: cheese,
-	egg: egg,
-	bacon: bacon,
-	steak: steak,
-	pancakes: pancakes,
-	poultry_leg: poultry_leg,
-	meat_on_bone: meat_on_bone,
-	bone: bone,
-	fried_shrimp: fried_shrimp,
-	fried_egg: fried_egg,
-	hamburger: hamburger,
-	fries: fries,
-	stuffed_flatbread: stuffed_flatbread,
-	hotdog: hotdog,
-	pizza: pizza,
-	sandwich: sandwich,
-	canned_food: canned_food,
-	spaghetti: spaghetti,
-	taco: taco,
-	burrito: burrito,
-	green_salad: green_salad,
-	shallow_pan_of_food: shallow_pan_of_food,
-	ramen: ramen,
-	stew: stew,
-	fish_cake: fish_cake,
-	fortune_cookie: fortune_cookie,
-	sushi: sushi,
-	bento: bento,
-	curry: curry,
-	rice_ball: rice_ball,
-	rice: rice,
-	rice_cracker: rice_cracker,
-	oden: oden,
-	dango: dango,
-	shaved_ice: shaved_ice,
-	ice_cream: ice_cream,
-	icecream: icecream,
-	pie: pie,
-	cake: cake,
-	cupcake: cupcake,
-	moon_cake: moon_cake,
-	birthday: birthday,
-	custard: custard,
-	candy: candy,
-	lollipop: lollipop,
-	chocolate_bar: chocolate_bar,
-	popcorn: popcorn,
-	dumpling: dumpling,
-	doughnut: doughnut,
-	cookie: cookie,
-	milk_glass: milk_glass,
-	beer: beer,
-	beers: beers,
-	clinking_glasses: clinking_glasses,
-	wine_glass: wine_glass,
-	tumbler_glass: tumbler_glass,
-	cocktail: cocktail,
-	tropical_drink: tropical_drink,
-	champagne: champagne,
-	sake: sake,
-	tea: tea,
-	cup_with_straw: cup_with_straw,
-	coffee: coffee,
-	baby_bottle: baby_bottle,
-	salt: salt,
-	spoon: spoon,
-	fork_and_knife: fork_and_knife,
-	plate_with_cutlery: plate_with_cutlery,
-	bowl_with_spoon: bowl_with_spoon,
-	takeout_box: takeout_box,
-	chopsticks: chopsticks,
-	soccer: soccer,
-	basketball: basketball,
-	football: football,
-	baseball: baseball,
-	softball: softball,
-	tennis: tennis,
-	volleyball: volleyball,
-	rugby_football: rugby_football,
-	flying_disc: flying_disc,
-	"8ball": {
-	keywords: [
-		"pool",
-		"hobby",
-		"game",
-		"luck",
-		"magic"
-	],
-	char: "🎱",
-	fitzpatrick_scale: false,
-	category: "activity"
-},
-	golf: golf,
-	golfing_woman: golfing_woman,
-	golfing_man: golfing_man,
-	ping_pong: ping_pong,
-	badminton: badminton,
-	goal_net: goal_net,
-	ice_hockey: ice_hockey,
-	field_hockey: field_hockey,
-	lacrosse: lacrosse,
-	cricket: cricket,
-	ski: ski,
-	skier: skier,
-	snowboarder: snowboarder,
-	person_fencing: person_fencing,
-	women_wrestling: women_wrestling,
-	men_wrestling: men_wrestling,
-	woman_cartwheeling: woman_cartwheeling,
-	man_cartwheeling: man_cartwheeling,
-	woman_playing_handball: woman_playing_handball,
-	man_playing_handball: man_playing_handball,
-	ice_skate: ice_skate,
-	curling_stone: curling_stone,
-	skateboard: skateboard,
-	sled: sled,
-	bow_and_arrow: bow_and_arrow,
-	fishing_pole_and_fish: fishing_pole_and_fish,
-	boxing_glove: boxing_glove,
-	martial_arts_uniform: martial_arts_uniform,
-	rowing_woman: rowing_woman,
-	rowing_man: rowing_man,
-	climbing_woman: climbing_woman,
-	climbing_man: climbing_man,
-	swimming_woman: swimming_woman,
-	swimming_man: swimming_man,
-	woman_playing_water_polo: woman_playing_water_polo,
-	man_playing_water_polo: man_playing_water_polo,
-	woman_in_lotus_position: woman_in_lotus_position,
-	man_in_lotus_position: man_in_lotus_position,
-	surfing_woman: surfing_woman,
-	surfing_man: surfing_man,
-	bath: bath,
-	basketball_woman: basketball_woman,
-	basketball_man: basketball_man,
-	weight_lifting_woman: weight_lifting_woman,
-	weight_lifting_man: weight_lifting_man,
-	biking_woman: biking_woman,
-	biking_man: biking_man,
-	mountain_biking_woman: mountain_biking_woman,
-	mountain_biking_man: mountain_biking_man,
-	horse_racing: horse_racing,
-	business_suit_levitating: business_suit_levitating,
-	trophy: trophy,
-	running_shirt_with_sash: running_shirt_with_sash,
-	medal_sports: medal_sports,
-	medal_military: medal_military,
-	"1st_place_medal": {
-	keywords: [
-		"award",
-		"winning",
-		"first"
-	],
-	char: "🥇",
-	fitzpatrick_scale: false,
-	category: "activity"
-},
-	"2nd_place_medal": {
-	keywords: [
-		"award",
-		"second"
-	],
-	char: "🥈",
-	fitzpatrick_scale: false,
-	category: "activity"
-},
-	"3rd_place_medal": {
-	keywords: [
-		"award",
-		"third"
-	],
-	char: "🥉",
-	fitzpatrick_scale: false,
-	category: "activity"
-},
-	reminder_ribbon: reminder_ribbon,
-	rosette: rosette,
-	ticket: ticket,
-	tickets: tickets,
-	performing_arts: performing_arts,
-	art: art,
-	circus_tent: circus_tent,
-	woman_juggling: woman_juggling,
-	man_juggling: man_juggling,
-	microphone: microphone,
-	headphones: headphones,
-	musical_score: musical_score,
-	musical_keyboard: musical_keyboard,
-	drum: drum,
-	saxophone: saxophone,
-	trumpet: trumpet,
-	guitar: guitar,
-	violin: violin,
-	clapper: clapper,
-	video_game: video_game,
-	space_invader: space_invader,
-	dart: dart,
-	game_die: game_die,
-	chess_pawn: chess_pawn,
-	slot_machine: slot_machine,
-	jigsaw: jigsaw,
-	bowling: bowling,
-	red_car: red_car,
-	taxi: taxi,
-	blue_car: blue_car,
-	bus: bus,
-	trolleybus: trolleybus,
-	racing_car: racing_car,
-	police_car: police_car,
-	ambulance: ambulance,
-	fire_engine: fire_engine,
-	minibus: minibus,
-	truck: truck,
-	articulated_lorry: articulated_lorry,
-	tractor: tractor,
-	kick_scooter: kick_scooter,
-	motorcycle: motorcycle,
-	bike: bike,
-	motor_scooter: motor_scooter,
-	rotating_light: rotating_light,
-	oncoming_police_car: oncoming_police_car,
-	oncoming_bus: oncoming_bus,
-	oncoming_automobile: oncoming_automobile,
-	oncoming_taxi: oncoming_taxi,
-	aerial_tramway: aerial_tramway,
-	mountain_cableway: mountain_cableway,
-	suspension_railway: suspension_railway,
-	railway_car: railway_car,
-	train: train,
-	monorail: monorail,
-	bullettrain_side: bullettrain_side,
-	bullettrain_front: bullettrain_front,
-	light_rail: light_rail,
-	mountain_railway: mountain_railway,
-	steam_locomotive: steam_locomotive,
-	train2: train2,
-	metro: metro,
-	tram: tram,
-	station: station,
-	flying_saucer: flying_saucer,
-	helicopter: helicopter,
-	small_airplane: small_airplane,
-	airplane: airplane,
-	flight_departure: flight_departure,
-	flight_arrival: flight_arrival,
-	sailboat: sailboat,
-	motor_boat: motor_boat,
-	speedboat: speedboat,
-	ferry: ferry,
-	passenger_ship: passenger_ship,
-	rocket: rocket,
-	artificial_satellite: artificial_satellite,
-	seat: seat,
-	canoe: canoe,
-	anchor: anchor,
-	construction: construction,
-	fuelpump: fuelpump,
-	busstop: busstop,
-	vertical_traffic_light: vertical_traffic_light,
-	traffic_light: traffic_light,
-	checkered_flag: checkered_flag,
-	ship: ship,
-	ferris_wheel: ferris_wheel,
-	roller_coaster: roller_coaster,
-	carousel_horse: carousel_horse,
-	building_construction: building_construction,
-	foggy: foggy,
-	tokyo_tower: tokyo_tower,
-	factory: factory,
-	fountain: fountain,
-	rice_scene: rice_scene,
-	mountain: mountain,
-	mountain_snow: mountain_snow,
-	mount_fuji: mount_fuji,
-	volcano: volcano,
-	japan: japan,
-	camping: camping,
-	tent: tent,
-	national_park: national_park,
-	motorway: motorway,
-	railway_track: railway_track,
-	sunrise: sunrise,
-	sunrise_over_mountains: sunrise_over_mountains,
-	desert: desert,
-	beach_umbrella: beach_umbrella,
-	desert_island: desert_island,
-	city_sunrise: city_sunrise,
-	city_sunset: city_sunset,
-	cityscape: cityscape,
-	night_with_stars: night_with_stars,
-	bridge_at_night: bridge_at_night,
-	milky_way: milky_way,
-	stars: stars,
-	sparkler: sparkler,
-	fireworks: fireworks,
-	rainbow: rainbow,
-	houses: houses,
-	european_castle: european_castle,
-	japanese_castle: japanese_castle,
-	stadium: stadium,
-	statue_of_liberty: statue_of_liberty,
-	house: house,
-	house_with_garden: house_with_garden,
-	derelict_house: derelict_house,
-	office: office,
-	department_store: department_store,
-	post_office: post_office,
-	european_post_office: european_post_office,
-	hospital: hospital,
-	bank: bank,
-	hotel: hotel,
-	convenience_store: convenience_store,
-	school: school,
-	love_hotel: love_hotel,
-	wedding: wedding,
-	classical_building: classical_building,
-	church: church,
-	mosque: mosque,
-	synagogue: synagogue,
-	kaaba: kaaba,
-	shinto_shrine: shinto_shrine,
-	watch: watch,
-	iphone: iphone,
-	calling: calling,
-	computer: computer,
-	keyboard: keyboard,
-	desktop_computer: desktop_computer,
-	printer: printer,
-	computer_mouse: computer_mouse,
-	trackball: trackball,
-	joystick: joystick,
-	clamp: clamp,
-	minidisc: minidisc,
-	floppy_disk: floppy_disk,
-	cd: cd,
-	dvd: dvd,
-	vhs: vhs,
-	camera: camera,
-	camera_flash: camera_flash,
-	video_camera: video_camera,
-	movie_camera: movie_camera,
-	film_projector: film_projector,
-	film_strip: film_strip,
-	telephone_receiver: telephone_receiver,
-	phone: phone,
-	pager: pager,
-	fax: fax,
-	tv: tv,
-	radio: radio,
-	studio_microphone: studio_microphone,
-	level_slider: level_slider,
-	control_knobs: control_knobs,
-	compass: compass,
-	stopwatch: stopwatch,
-	timer_clock: timer_clock,
-	alarm_clock: alarm_clock,
-	mantelpiece_clock: mantelpiece_clock,
-	hourglass_flowing_sand: hourglass_flowing_sand,
-	hourglass: hourglass,
-	satellite: satellite,
-	battery: battery,
-	electric_plug: electric_plug,
-	bulb: bulb,
-	flashlight: flashlight,
-	candle: candle,
-	fire_extinguisher: fire_extinguisher,
-	wastebasket: wastebasket,
-	oil_drum: oil_drum,
-	money_with_wings: money_with_wings,
-	dollar: dollar,
-	yen: yen,
-	euro: euro,
-	pound: pound,
-	moneybag: moneybag,
-	credit_card: credit_card,
-	gem: gem,
-	balance_scale: balance_scale,
-	toolbox: toolbox,
-	wrench: wrench,
-	hammer: hammer,
-	hammer_and_pick: hammer_and_pick,
-	hammer_and_wrench: hammer_and_wrench,
-	pick: pick,
-	nut_and_bolt: nut_and_bolt,
-	gear: gear,
-	brick: brick,
-	chains: chains,
-	magnet: magnet,
-	gun: gun,
-	bomb: bomb,
-	firecracker: firecracker,
-	hocho: hocho,
-	dagger: dagger,
-	crossed_swords: crossed_swords,
-	shield: shield,
-	smoking: smoking,
-	skull_and_crossbones: skull_and_crossbones,
-	coffin: coffin,
-	funeral_urn: funeral_urn,
-	amphora: amphora,
-	crystal_ball: crystal_ball,
-	prayer_beads: prayer_beads,
-	nazar_amulet: nazar_amulet,
-	barber: barber,
-	alembic: alembic,
-	telescope: telescope,
-	microscope: microscope,
-	hole: hole,
-	pill: pill,
-	syringe: syringe,
-	dna: dna,
-	microbe: microbe,
-	petri_dish: petri_dish,
-	test_tube: test_tube,
-	thermometer: thermometer,
-	broom: broom,
-	basket: basket,
-	toilet_paper: toilet_paper,
-	label: label,
-	bookmark: bookmark,
-	toilet: toilet,
-	shower: shower,
-	bathtub: bathtub,
-	soap: soap,
-	sponge: sponge,
-	lotion_bottle: lotion_bottle,
-	key: key,
-	old_key: old_key,
-	couch_and_lamp: couch_and_lamp,
-	sleeping_bed: sleeping_bed,
-	bed: bed,
-	door: door,
-	bellhop_bell: bellhop_bell,
-	teddy_bear: teddy_bear,
-	framed_picture: framed_picture,
-	world_map: world_map,
-	parasol_on_ground: parasol_on_ground,
-	moyai: moyai,
-	shopping: shopping,
-	shopping_cart: shopping_cart,
-	balloon: balloon,
-	flags: flags,
-	ribbon: ribbon,
-	gift: gift,
-	confetti_ball: confetti_ball,
-	tada: tada,
-	dolls: dolls,
-	wind_chime: wind_chime,
-	crossed_flags: crossed_flags,
-	izakaya_lantern: izakaya_lantern,
-	red_envelope: red_envelope,
-	email: email,
-	envelope_with_arrow: envelope_with_arrow,
-	incoming_envelope: incoming_envelope,
-	"e-mail": {
-	keywords: [
-		"communication",
-		"inbox"
-	],
-	char: "📧",
-	fitzpatrick_scale: false,
-	category: "objects"
-},
-	love_letter: love_letter,
-	postbox: postbox,
-	mailbox_closed: mailbox_closed,
-	mailbox: mailbox,
-	mailbox_with_mail: mailbox_with_mail,
-	mailbox_with_no_mail: mailbox_with_no_mail,
-	"package": {
-	keywords: [
-		"mail",
-		"gift",
-		"cardboard",
-		"box",
-		"moving"
-	],
-	char: "📦",
-	fitzpatrick_scale: false,
-	category: "objects"
-},
-	postal_horn: postal_horn,
-	inbox_tray: inbox_tray,
-	outbox_tray: outbox_tray,
-	scroll: scroll,
-	page_with_curl: page_with_curl,
-	bookmark_tabs: bookmark_tabs,
-	receipt: receipt,
-	bar_chart: bar_chart,
-	chart_with_upwards_trend: chart_with_upwards_trend,
-	chart_with_downwards_trend: chart_with_downwards_trend,
-	page_facing_up: page_facing_up,
-	date: date,
-	calendar: calendar,
-	spiral_calendar: spiral_calendar,
-	card_index: card_index,
-	card_file_box: card_file_box,
-	ballot_box: ballot_box,
-	file_cabinet: file_cabinet,
-	clipboard: clipboard,
-	spiral_notepad: spiral_notepad,
-	file_folder: file_folder,
-	open_file_folder: open_file_folder,
-	card_index_dividers: card_index_dividers,
-	newspaper_roll: newspaper_roll,
-	newspaper: newspaper,
-	notebook: notebook,
-	closed_book: closed_book,
-	green_book: green_book,
-	blue_book: blue_book,
-	orange_book: orange_book,
-	notebook_with_decorative_cover: notebook_with_decorative_cover,
-	ledger: ledger,
-	books: books,
-	open_book: open_book,
-	safety_pin: safety_pin,
-	link: link,
-	paperclip: paperclip,
-	paperclips: paperclips,
-	scissors: scissors,
-	triangular_ruler: triangular_ruler,
-	straight_ruler: straight_ruler,
-	abacus: abacus,
-	pushpin: pushpin,
-	round_pushpin: round_pushpin,
-	triangular_flag_on_post: triangular_flag_on_post,
-	white_flag: white_flag,
-	black_flag: black_flag,
-	rainbow_flag: rainbow_flag,
-	closed_lock_with_key: closed_lock_with_key,
-	lock: lock,
-	unlock: unlock,
-	lock_with_ink_pen: lock_with_ink_pen,
-	pen: pen,
-	fountain_pen: fountain_pen,
-	black_nib: black_nib,
-	memo: memo,
-	pencil2: pencil2,
-	crayon: crayon,
-	paintbrush: paintbrush,
-	mag: mag,
-	mag_right: mag_right,
-	heart: heart,
-	orange_heart: orange_heart,
-	yellow_heart: yellow_heart,
-	green_heart: green_heart,
-	blue_heart: blue_heart,
-	purple_heart: purple_heart,
-	black_heart: black_heart,
-	broken_heart: broken_heart,
-	heavy_heart_exclamation: heavy_heart_exclamation,
-	two_hearts: two_hearts,
-	revolving_hearts: revolving_hearts,
-	heartbeat: heartbeat,
-	heartpulse: heartpulse,
-	sparkling_heart: sparkling_heart,
-	cupid: cupid,
-	gift_heart: gift_heart,
-	heart_decoration: heart_decoration,
-	peace_symbol: peace_symbol,
-	latin_cross: latin_cross,
-	star_and_crescent: star_and_crescent,
-	om: om,
-	wheel_of_dharma: wheel_of_dharma,
-	star_of_david: star_of_david,
-	six_pointed_star: six_pointed_star,
-	menorah: menorah,
-	yin_yang: yin_yang,
-	orthodox_cross: orthodox_cross,
-	place_of_worship: place_of_worship,
-	ophiuchus: ophiuchus,
-	aries: aries,
-	taurus: taurus,
-	gemini: gemini,
-	cancer: cancer,
-	leo: leo,
-	virgo: virgo,
-	libra: libra,
-	scorpius: scorpius,
-	sagittarius: sagittarius,
-	capricorn: capricorn,
-	aquarius: aquarius,
-	pisces: pisces,
-	id: id,
-	atom_symbol: atom_symbol,
-	u7a7a: u7a7a,
-	u5272: u5272,
-	radioactive: radioactive,
-	biohazard: biohazard,
-	mobile_phone_off: mobile_phone_off,
-	vibration_mode: vibration_mode,
-	u6709: u6709,
-	u7121: u7121,
-	u7533: u7533,
-	u55b6: u55b6,
-	u6708: u6708,
-	eight_pointed_black_star: eight_pointed_black_star,
-	vs: vs,
-	accept: accept,
-	white_flower: white_flower,
-	ideograph_advantage: ideograph_advantage,
-	secret: secret,
-	congratulations: congratulations,
-	u5408: u5408,
-	u6e80: u6e80,
-	u7981: u7981,
-	a: a,
-	b: b,
-	ab: ab,
-	cl: cl,
-	o2: o2,
-	sos: sos,
-	no_entry: no_entry,
-	name_badge: name_badge,
-	no_entry_sign: no_entry_sign,
-	x: x,
-	o: o,
-	stop_sign: stop_sign,
-	anger: anger,
-	hotsprings: hotsprings,
-	no_pedestrians: no_pedestrians,
-	do_not_litter: do_not_litter,
-	no_bicycles: no_bicycles,
-	"non-potable_water": {
-	keywords: [
-		"drink",
-		"faucet",
-		"tap",
-		"circle"
-	],
-	char: "🚱",
-	fitzpatrick_scale: false,
-	category: "symbols"
-},
-	underage: underage,
-	no_mobile_phones: no_mobile_phones,
-	exclamation: exclamation,
-	grey_exclamation: grey_exclamation,
-	question: question,
-	grey_question: grey_question,
-	bangbang: bangbang,
-	interrobang: interrobang,
-	low_brightness: low_brightness,
-	high_brightness: high_brightness,
-	trident: trident,
-	fleur_de_lis: fleur_de_lis,
-	part_alternation_mark: part_alternation_mark,
-	warning: warning,
-	children_crossing: children_crossing,
-	beginner: beginner,
-	recycle: recycle,
-	u6307: u6307,
-	chart: chart,
-	sparkle: sparkle,
-	eight_spoked_asterisk: eight_spoked_asterisk,
-	negative_squared_cross_mark: negative_squared_cross_mark,
-	white_check_mark: white_check_mark,
-	diamond_shape_with_a_dot_inside: diamond_shape_with_a_dot_inside,
-	cyclone: cyclone,
-	loop: loop,
-	globe_with_meridians: globe_with_meridians,
-	m: m,
-	atm: atm,
-	sa: sa,
-	passport_control: passport_control,
-	customs: customs,
-	baggage_claim: baggage_claim,
-	left_luggage: left_luggage,
-	wheelchair: wheelchair,
-	no_smoking: no_smoking,
-	wc: wc,
-	parking: parking,
-	potable_water: potable_water,
-	mens: mens,
-	womens: womens,
-	baby_symbol: baby_symbol,
-	restroom: restroom,
-	put_litter_in_its_place: put_litter_in_its_place,
-	cinema: cinema,
-	signal_strength: signal_strength,
-	koko: koko,
-	ng: ng,
-	ok: ok,
-	up: up,
-	cool: cool,
-	"new": {
-	keywords: [
-		"blue-square",
-		"words",
-		"start"
-	],
-	char: "🆕",
-	fitzpatrick_scale: false,
-	category: "symbols"
-},
-	free: free,
-	zero: zero,
-	one: one,
-	two: two,
-	three: three,
-	four: four,
-	five: five,
-	six: six,
-	seven: seven,
-	eight: eight,
-	nine: nine,
-	keycap_ten: keycap_ten,
-	asterisk: asterisk,
-	eject_button: eject_button,
-	arrow_forward: arrow_forward,
-	pause_button: pause_button,
-	next_track_button: next_track_button,
-	stop_button: stop_button,
-	record_button: record_button,
-	play_or_pause_button: play_or_pause_button,
-	previous_track_button: previous_track_button,
-	fast_forward: fast_forward,
-	rewind: rewind,
-	twisted_rightwards_arrows: twisted_rightwards_arrows,
-	repeat: repeat,
-	repeat_one: repeat_one,
-	arrow_backward: arrow_backward,
-	arrow_up_small: arrow_up_small,
-	arrow_down_small: arrow_down_small,
-	arrow_double_up: arrow_double_up,
-	arrow_double_down: arrow_double_down,
-	arrow_right: arrow_right,
-	arrow_left: arrow_left,
-	arrow_up: arrow_up,
-	arrow_down: arrow_down,
-	arrow_upper_right: arrow_upper_right,
-	arrow_lower_right: arrow_lower_right,
-	arrow_lower_left: arrow_lower_left,
-	arrow_upper_left: arrow_upper_left,
-	arrow_up_down: arrow_up_down,
-	left_right_arrow: left_right_arrow,
-	arrows_counterclockwise: arrows_counterclockwise,
-	arrow_right_hook: arrow_right_hook,
-	leftwards_arrow_with_hook: leftwards_arrow_with_hook,
-	arrow_heading_up: arrow_heading_up,
-	arrow_heading_down: arrow_heading_down,
-	hash: hash,
-	information_source: information_source,
-	abc: abc,
-	abcd: abcd,
-	capital_abcd: capital_abcd,
-	symbols: symbols,
-	musical_note: musical_note,
-	notes: notes,
-	wavy_dash: wavy_dash,
-	curly_loop: curly_loop,
-	heavy_check_mark: heavy_check_mark,
-	arrows_clockwise: arrows_clockwise,
-	heavy_plus_sign: heavy_plus_sign,
-	heavy_minus_sign: heavy_minus_sign,
-	heavy_division_sign: heavy_division_sign,
-	heavy_multiplication_x: heavy_multiplication_x,
-	infinity: infinity,
-	heavy_dollar_sign: heavy_dollar_sign,
-	currency_exchange: currency_exchange,
-	copyright: copyright,
-	registered: registered,
-	tm: tm,
-	end: end,
-	back: back,
-	on: on,
-	top: top,
-	soon: soon,
-	ballot_box_with_check: ballot_box_with_check,
-	radio_button: radio_button,
-	white_circle: white_circle,
-	black_circle: black_circle,
-	red_circle: red_circle,
-	large_blue_circle: large_blue_circle,
-	small_orange_diamond: small_orange_diamond,
-	small_blue_diamond: small_blue_diamond,
-	large_orange_diamond: large_orange_diamond,
-	large_blue_diamond: large_blue_diamond,
-	small_red_triangle: small_red_triangle,
-	black_small_square: black_small_square,
-	white_small_square: white_small_square,
-	black_large_square: black_large_square,
-	white_large_square: white_large_square,
-	small_red_triangle_down: small_red_triangle_down,
-	black_medium_square: black_medium_square,
-	white_medium_square: white_medium_square,
-	black_medium_small_square: black_medium_small_square,
-	white_medium_small_square: white_medium_small_square,
-	black_square_button: black_square_button,
-	white_square_button: white_square_button,
-	speaker: speaker,
-	sound: sound,
-	loud_sound: loud_sound,
-	mute: mute,
-	mega: mega,
-	loudspeaker: loudspeaker,
-	bell: bell,
-	no_bell: no_bell,
-	black_joker: black_joker,
-	mahjong: mahjong,
-	spades: spades,
-	clubs: clubs,
-	hearts: hearts,
-	diamonds: diamonds,
-	flower_playing_cards: flower_playing_cards,
-	thought_balloon: thought_balloon,
-	right_anger_bubble: right_anger_bubble,
-	speech_balloon: speech_balloon,
-	left_speech_bubble: left_speech_bubble,
-	clock1: clock1,
-	clock2: clock2,
-	clock3: clock3,
-	clock4: clock4,
-	clock5: clock5,
-	clock6: clock6,
-	clock7: clock7,
-	clock8: clock8,
-	clock9: clock9,
-	clock10: clock10,
-	clock11: clock11,
-	clock12: clock12,
-	clock130: clock130,
-	clock230: clock230,
-	clock330: clock330,
-	clock430: clock430,
-	clock530: clock530,
-	clock630: clock630,
-	clock730: clock730,
-	clock830: clock830,
-	clock930: clock930,
-	clock1030: clock1030,
-	clock1130: clock1130,
-	clock1230: clock1230,
-	afghanistan: afghanistan,
-	aland_islands: aland_islands,
-	albania: albania,
-	algeria: algeria,
-	american_samoa: american_samoa,
-	andorra: andorra,
-	angola: angola,
-	anguilla: anguilla,
-	antarctica: antarctica,
-	antigua_barbuda: antigua_barbuda,
-	argentina: argentina,
-	armenia: armenia,
-	aruba: aruba,
-	australia: australia,
-	austria: austria,
-	azerbaijan: azerbaijan,
-	bahamas: bahamas,
-	bahrain: bahrain,
-	bangladesh: bangladesh,
-	barbados: barbados,
-	belarus: belarus,
-	belgium: belgium,
-	belize: belize,
-	benin: benin,
-	bermuda: bermuda,
-	bhutan: bhutan,
-	bolivia: bolivia,
-	caribbean_netherlands: caribbean_netherlands,
-	bosnia_herzegovina: bosnia_herzegovina,
-	botswana: botswana,
-	brazil: brazil,
-	british_indian_ocean_territory: british_indian_ocean_territory,
-	british_virgin_islands: british_virgin_islands,
-	brunei: brunei,
-	bulgaria: bulgaria,
-	burkina_faso: burkina_faso,
-	burundi: burundi,
-	cape_verde: cape_verde,
-	cambodia: cambodia,
-	cameroon: cameroon,
-	canada: canada,
-	canary_islands: canary_islands,
-	cayman_islands: cayman_islands,
-	central_african_republic: central_african_republic,
-	chad: chad,
-	chile: chile,
-	cn: cn,
-	christmas_island: christmas_island,
-	cocos_islands: cocos_islands,
-	colombia: colombia,
-	comoros: comoros,
-	congo_brazzaville: congo_brazzaville,
-	congo_kinshasa: congo_kinshasa,
-	cook_islands: cook_islands,
-	costa_rica: costa_rica,
-	croatia: croatia,
-	cuba: cuba,
-	curacao: curacao,
-	cyprus: cyprus,
-	czech_republic: czech_republic,
-	denmark: denmark,
-	djibouti: djibouti,
-	dominica: dominica,
-	dominican_republic: dominican_republic,
-	ecuador: ecuador,
-	egypt: egypt,
-	el_salvador: el_salvador,
-	equatorial_guinea: equatorial_guinea,
-	eritrea: eritrea,
-	estonia: estonia,
-	ethiopia: ethiopia,
-	eu: eu,
-	falkland_islands: falkland_islands,
-	faroe_islands: faroe_islands,
-	fiji: fiji,
-	finland: finland,
-	fr: fr,
-	french_guiana: french_guiana,
-	french_polynesia: french_polynesia,
-	french_southern_territories: french_southern_territories,
-	gabon: gabon,
-	gambia: gambia,
-	georgia: georgia,
-	de: de,
-	ghana: ghana,
-	gibraltar: gibraltar,
-	greece: greece,
-	greenland: greenland,
-	grenada: grenada,
-	guadeloupe: guadeloupe,
-	guam: guam,
-	guatemala: guatemala,
-	guernsey: guernsey,
-	guinea: guinea,
-	guinea_bissau: guinea_bissau,
-	guyana: guyana,
-	haiti: haiti,
-	honduras: honduras,
-	hong_kong: hong_kong,
-	hungary: hungary,
-	iceland: iceland,
-	india: india,
-	indonesia: indonesia,
-	iran: iran,
-	iraq: iraq,
-	ireland: ireland,
-	isle_of_man: isle_of_man,
-	israel: israel,
-	it: it,
-	cote_divoire: cote_divoire,
-	jamaica: jamaica,
-	jp: jp,
-	jersey: jersey,
-	jordan: jordan,
-	kazakhstan: kazakhstan,
-	kenya: kenya,
-	kiribati: kiribati,
-	kosovo: kosovo,
-	kuwait: kuwait,
-	kyrgyzstan: kyrgyzstan,
-	laos: laos,
-	latvia: latvia,
-	lebanon: lebanon,
-	lesotho: lesotho,
-	liberia: liberia,
-	libya: libya,
-	liechtenstein: liechtenstein,
-	lithuania: lithuania,
-	luxembourg: luxembourg,
-	macau: macau,
-	macedonia: macedonia,
-	madagascar: madagascar,
-	malawi: malawi,
-	malaysia: malaysia,
-	maldives: maldives,
-	mali: mali,
-	malta: malta,
-	marshall_islands: marshall_islands,
-	martinique: martinique,
-	mauritania: mauritania,
-	mauritius: mauritius,
-	mayotte: mayotte,
-	mexico: mexico,
-	micronesia: micronesia,
-	moldova: moldova,
-	monaco: monaco,
-	mongolia: mongolia,
-	montenegro: montenegro,
-	montserrat: montserrat,
-	morocco: morocco,
-	mozambique: mozambique,
-	myanmar: myanmar,
-	namibia: namibia,
-	nauru: nauru,
-	nepal: nepal,
-	netherlands: netherlands,
-	new_caledonia: new_caledonia,
-	new_zealand: new_zealand,
-	nicaragua: nicaragua,
-	niger: niger,
-	nigeria: nigeria,
-	niue: niue,
-	norfolk_island: norfolk_island,
-	northern_mariana_islands: northern_mariana_islands,
-	north_korea: north_korea,
-	norway: norway,
-	oman: oman,
-	pakistan: pakistan,
-	palau: palau,
-	palestinian_territories: palestinian_territories,
-	panama: panama,
-	papua_new_guinea: papua_new_guinea,
-	paraguay: paraguay,
-	peru: peru,
-	philippines: philippines,
-	pitcairn_islands: pitcairn_islands,
-	poland: poland,
-	portugal: portugal,
-	puerto_rico: puerto_rico,
-	qatar: qatar,
-	reunion: reunion,
-	romania: romania,
-	ru: ru,
-	rwanda: rwanda,
-	st_barthelemy: st_barthelemy,
-	st_helena: st_helena,
-	st_kitts_nevis: st_kitts_nevis,
-	st_lucia: st_lucia,
-	st_pierre_miquelon: st_pierre_miquelon,
-	st_vincent_grenadines: st_vincent_grenadines,
-	samoa: samoa,
-	san_marino: san_marino,
-	sao_tome_principe: sao_tome_principe,
-	saudi_arabia: saudi_arabia,
-	senegal: senegal,
-	serbia: serbia,
-	seychelles: seychelles,
-	sierra_leone: sierra_leone,
-	singapore: singapore,
-	sint_maarten: sint_maarten,
-	slovakia: slovakia,
-	slovenia: slovenia,
-	solomon_islands: solomon_islands,
-	somalia: somalia,
-	south_africa: south_africa,
-	south_georgia_south_sandwich_islands: south_georgia_south_sandwich_islands,
-	kr: kr,
-	south_sudan: south_sudan,
-	es: es,
-	sri_lanka: sri_lanka,
-	sudan: sudan,
-	suriname: suriname,
-	swaziland: swaziland,
-	sweden: sweden,
-	switzerland: switzerland,
-	syria: syria,
-	taiwan: taiwan,
-	tajikistan: tajikistan,
-	tanzania: tanzania,
-	thailand: thailand,
-	timor_leste: timor_leste,
-	togo: togo,
-	tokelau: tokelau,
-	tonga: tonga,
-	trinidad_tobago: trinidad_tobago,
-	tunisia: tunisia,
-	tr: tr,
-	turkmenistan: turkmenistan,
-	turks_caicos_islands: turks_caicos_islands,
-	tuvalu: tuvalu,
-	uganda: uganda,
-	ukraine: ukraine,
-	united_arab_emirates: united_arab_emirates,
-	uk: uk,
-	england: england,
-	scotland: scotland,
-	wales: wales,
-	us: us,
-	us_virgin_islands: us_virgin_islands,
-	uruguay: uruguay,
-	uzbekistan: uzbekistan,
-	vanuatu: vanuatu,
-	vatican_city: vatican_city,
-	venezuela: venezuela,
-	vietnam: vietnam,
-	wallis_futuna: wallis_futuna,
-	western_sahara: western_sahara,
-	yemen: yemen,
-	zambia: zambia,
-	zimbabwe: zimbabwe,
-	united_nations: united_nations,
-	pirate_flag: pirate_flag
-};
-
-var require$$1 = [
-	"grinning",
-	"smiley",
-	"smile",
-	"grin",
-	"laughing",
-	"sweat_smile",
-	"joy",
-	"rofl",
-	"relaxed",
-	"blush",
-	"innocent",
-	"slightly_smiling_face",
-	"upside_down_face",
-	"wink",
-	"relieved",
-	"heart_eyes",
-	"smiling_face_with_three_hearts",
-	"kissing_heart",
-	"kissing",
-	"kissing_smiling_eyes",
-	"kissing_closed_eyes",
-	"yum",
-	"stuck_out_tongue",
-	"stuck_out_tongue_closed_eyes",
-	"stuck_out_tongue_winking_eye",
-	"zany",
-	"raised_eyebrow",
-	"monocle",
-	"nerd_face",
-	"sunglasses",
-	"star_struck",
-	"partying",
-	"smirk",
-	"unamused",
-	"disappointed",
-	"pensive",
-	"worried",
-	"confused",
-	"slightly_frowning_face",
-	"frowning_face",
-	"persevere",
-	"confounded",
-	"tired_face",
-	"weary",
-	"pleading",
-	"cry",
-	"sob",
-	"triumph",
-	"angry",
-	"rage",
-	"symbols_over_mouth",
-	"exploding_head",
-	"flushed",
-	"hot",
-	"cold",
-	"scream",
-	"fearful",
-	"cold_sweat",
-	"disappointed_relieved",
-	"sweat",
-	"hugs",
-	"thinking",
-	"hand_over_mouth",
-	"shushing",
-	"lying_face",
-	"no_mouth",
-	"neutral_face",
-	"expressionless",
-	"grimacing",
-	"roll_eyes",
-	"hushed",
-	"frowning",
-	"anguished",
-	"open_mouth",
-	"astonished",
-	"sleeping",
-	"drooling_face",
-	"sleepy",
-	"dizzy_face",
-	"zipper_mouth_face",
-	"woozy",
-	"nauseated_face",
-	"vomiting",
-	"sneezing_face",
-	"mask",
-	"face_with_thermometer",
-	"face_with_head_bandage",
-	"money_mouth_face",
-	"cowboy_hat_face",
-	"smiling_imp",
-	"imp",
-	"japanese_ogre",
-	"japanese_goblin",
-	"clown_face",
-	"poop",
-	"ghost",
-	"skull",
-	"skull_and_crossbones",
-	"alien",
-	"space_invader",
-	"robot",
-	"jack_o_lantern",
-	"smiley_cat",
-	"smile_cat",
-	"joy_cat",
-	"heart_eyes_cat",
-	"smirk_cat",
-	"kissing_cat",
-	"scream_cat",
-	"crying_cat_face",
-	"pouting_cat",
-	"palms_up",
-	"open_hands",
-	"raised_hands",
-	"clap",
-	"handshake",
-	"+1",
-	"-1",
-	"facepunch",
-	"fist",
-	"fist_left",
-	"fist_right",
-	"crossed_fingers",
-	"v",
-	"love_you",
-	"metal",
-	"ok_hand",
-	"point_left",
-	"point_right",
-	"point_up",
-	"point_down",
-	"point_up_2",
-	"raised_hand",
-	"raised_back_of_hand",
-	"raised_hand_with_fingers_splayed",
-	"vulcan_salute",
-	"wave",
-	"call_me_hand",
-	"muscle",
-	"fu",
-	"writing_hand",
-	"pray",
-	"foot",
-	"leg",
-	"ring",
-	"lipstick",
-	"kiss",
-	"lips",
-	"tooth",
-	"tongue",
-	"ear",
-	"nose",
-	"footprints",
-	"eye",
-	"eyes",
-	"brain",
-	"speaking_head",
-	"bust_in_silhouette",
-	"busts_in_silhouette",
-	"baby",
-	"girl",
-	"child",
-	"boy",
-	"woman",
-	"adult",
-	"man",
-	"blonde_woman",
-	"blonde_man",
-	"bearded_person",
-	"older_woman",
-	"older_adult",
-	"older_man",
-	"man_with_gua_pi_mao",
-	"woman_with_headscarf",
-	"woman_with_turban",
-	"man_with_turban",
-	"policewoman",
-	"policeman",
-	"construction_worker_woman",
-	"construction_worker_man",
-	"guardswoman",
-	"guardsman",
-	"female_detective",
-	"male_detective",
-	"woman_health_worker",
-	"man_health_worker",
-	"woman_farmer",
-	"man_farmer",
-	"woman_cook",
-	"man_cook",
-	"woman_student",
-	"man_student",
-	"woman_singer",
-	"man_singer",
-	"woman_teacher",
-	"man_teacher",
-	"woman_factory_worker",
-	"man_factory_worker",
-	"woman_technologist",
-	"man_technologist",
-	"woman_office_worker",
-	"man_office_worker",
-	"woman_mechanic",
-	"man_mechanic",
-	"woman_scientist",
-	"man_scientist",
-	"woman_artist",
-	"man_artist",
-	"woman_firefighter",
-	"man_firefighter",
-	"woman_pilot",
-	"man_pilot",
-	"woman_astronaut",
-	"man_astronaut",
-	"woman_judge",
-	"man_judge",
-	"bride_with_veil",
-	"man_in_tuxedo",
-	"princess",
-	"prince",
-	"woman_superhero",
-	"man_superhero",
-	"woman_supervillain",
-	"man_supervillain",
-	"mrs_claus",
-	"santa",
-	"sorceress",
-	"wizard",
-	"woman_elf",
-	"man_elf",
-	"woman_vampire",
-	"man_vampire",
-	"woman_zombie",
-	"man_zombie",
-	"woman_genie",
-	"man_genie",
-	"mermaid",
-	"merman",
-	"woman_fairy",
-	"man_fairy",
-	"angel",
-	"pregnant_woman",
-	"breastfeeding",
-	"bowing_woman",
-	"bowing_man",
-	"tipping_hand_woman",
-	"tipping_hand_man",
-	"no_good_woman",
-	"no_good_man",
-	"ok_woman",
-	"ok_man",
-	"raising_hand_woman",
-	"raising_hand_man",
-	"woman_facepalming",
-	"man_facepalming",
-	"woman_shrugging",
-	"man_shrugging",
-	"pouting_woman",
-	"pouting_man",
-	"frowning_woman",
-	"frowning_man",
-	"haircut_woman",
-	"haircut_man",
-	"massage_woman",
-	"massage_man",
-	"woman_in_steamy_room",
-	"man_in_steamy_room",
-	"nail_care",
-	"selfie",
-	"dancer",
-	"man_dancing",
-	"dancing_women",
-	"dancing_men",
-	"business_suit_levitating",
-	"walking_woman",
-	"walking_man",
-	"running_woman",
-	"running_man",
-	"couple",
-	"two_women_holding_hands",
-	"two_men_holding_hands",
-	"couple_with_heart_woman_man",
-	"couple_with_heart_woman_woman",
-	"couple_with_heart_man_man",
-	"couplekiss_man_woman",
-	"couplekiss_woman_woman",
-	"couplekiss_man_man",
-	"family_man_woman_boy",
-	"family_man_woman_girl",
-	"family_man_woman_girl_boy",
-	"family_man_woman_boy_boy",
-	"family_man_woman_girl_girl",
-	"family_woman_woman_boy",
-	"family_woman_woman_girl",
-	"family_woman_woman_girl_boy",
-	"family_woman_woman_boy_boy",
-	"family_woman_woman_girl_girl",
-	"family_man_man_boy",
-	"family_man_man_girl",
-	"family_man_man_girl_boy",
-	"family_man_man_boy_boy",
-	"family_man_man_girl_girl",
-	"family_woman_boy",
-	"family_woman_girl",
-	"family_woman_girl_boy",
-	"family_woman_boy_boy",
-	"family_woman_girl_girl",
-	"family_man_boy",
-	"family_man_girl",
-	"family_man_girl_boy",
-	"family_man_boy_boy",
-	"family_man_girl_girl",
-	"yarn",
-	"thread",
-	"coat",
-	"labcoat",
-	"womans_clothes",
-	"tshirt",
-	"jeans",
-	"necktie",
-	"dress",
-	"bikini",
-	"kimono",
-	"flat_shoe",
-	"high_heel",
-	"sandal",
-	"boot",
-	"mans_shoe",
-	"athletic_shoe",
-	"hiking_boot",
-	"socks",
-	"gloves",
-	"scarf",
-	"tophat",
-	"billed_hat",
-	"womans_hat",
-	"mortar_board",
-	"rescue_worker_helmet",
-	"crown",
-	"pouch",
-	"purse",
-	"handbag",
-	"briefcase",
-	"school_satchel",
-	"luggage",
-	"eyeglasses",
-	"dark_sunglasses",
-	"goggles",
-	"closed_umbrella",
-	"dog",
-	"cat",
-	"mouse",
-	"hamster",
-	"rabbit",
-	"fox_face",
-	"bear",
-	"panda_face",
-	"koala",
-	"tiger",
-	"lion",
-	"cow",
-	"pig",
-	"pig_nose",
-	"frog",
-	"monkey_face",
-	"see_no_evil",
-	"hear_no_evil",
-	"speak_no_evil",
-	"monkey",
-	"chicken",
-	"penguin",
-	"bird",
-	"baby_chick",
-	"hatching_chick",
-	"hatched_chick",
-	"duck",
-	"eagle",
-	"owl",
-	"bat",
-	"wolf",
-	"boar",
-	"horse",
-	"unicorn",
-	"honeybee",
-	"bug",
-	"butterfly",
-	"snail",
-	"shell",
-	"beetle",
-	"ant",
-	"mosquito",
-	"grasshopper",
-	"spider",
-	"spider_web",
-	"scorpion",
-	"turtle",
-	"snake",
-	"lizard",
-	"t-rex",
-	"sauropod",
-	"octopus",
-	"squid",
-	"shrimp",
-	"lobster",
-	"crab",
-	"blowfish",
-	"tropical_fish",
-	"fish",
-	"dolphin",
-	"whale",
-	"whale2",
-	"shark",
-	"crocodile",
-	"tiger2",
-	"leopard",
-	"zebra",
-	"gorilla",
-	"elephant",
-	"hippopotamus",
-	"rhinoceros",
-	"dromedary_camel",
-	"giraffe",
-	"kangaroo",
-	"camel",
-	"water_buffalo",
-	"ox",
-	"cow2",
-	"racehorse",
-	"pig2",
-	"ram",
-	"sheep",
-	"llama",
-	"goat",
-	"deer",
-	"dog2",
-	"poodle",
-	"cat2",
-	"rooster",
-	"turkey",
-	"peacock",
-	"parrot",
-	"swan",
-	"dove",
-	"rabbit2",
-	"raccoon",
-	"badger",
-	"rat",
-	"mouse2",
-	"chipmunk",
-	"hedgehog",
-	"paw_prints",
-	"dragon",
-	"dragon_face",
-	"cactus",
-	"christmas_tree",
-	"evergreen_tree",
-	"deciduous_tree",
-	"palm_tree",
-	"seedling",
-	"herb",
-	"shamrock",
-	"four_leaf_clover",
-	"bamboo",
-	"tanabata_tree",
-	"leaves",
-	"fallen_leaf",
-	"maple_leaf",
-	"ear_of_rice",
-	"hibiscus",
-	"sunflower",
-	"rose",
-	"wilted_flower",
-	"tulip",
-	"blossom",
-	"cherry_blossom",
-	"bouquet",
-	"mushroom",
-	"earth_americas",
-	"earth_africa",
-	"earth_asia",
-	"full_moon",
-	"waning_gibbous_moon",
-	"last_quarter_moon",
-	"waning_crescent_moon",
-	"new_moon",
-	"waxing_crescent_moon",
-	"first_quarter_moon",
-	"waxing_gibbous_moon",
-	"new_moon_with_face",
-	"full_moon_with_face",
-	"first_quarter_moon_with_face",
-	"last_quarter_moon_with_face",
-	"sun_with_face",
-	"crescent_moon",
-	"star",
-	"star2",
-	"dizzy",
-	"sparkles",
-	"comet",
-	"sunny",
-	"sun_behind_small_cloud",
-	"partly_sunny",
-	"sun_behind_large_cloud",
-	"sun_behind_rain_cloud",
-	"cloud",
-	"cloud_with_rain",
-	"cloud_with_lightning_and_rain",
-	"cloud_with_lightning",
-	"zap",
-	"fire",
-	"boom",
-	"snowflake",
-	"cloud_with_snow",
-	"snowman",
-	"snowman_with_snow",
-	"wind_face",
-	"dash",
-	"tornado",
-	"fog",
-	"open_umbrella",
-	"umbrella",
-	"droplet",
-	"sweat_drops",
-	"ocean",
-	"green_apple",
-	"apple",
-	"pear",
-	"tangerine",
-	"lemon",
-	"banana",
-	"watermelon",
-	"grapes",
-	"strawberry",
-	"melon",
-	"cherries",
-	"peach",
-	"mango",
-	"pineapple",
-	"coconut",
-	"kiwi_fruit",
-	"tomato",
-	"eggplant",
-	"avocado",
-	"broccoli",
-	"leafy_greens",
-	"cucumber",
-	"hot_pepper",
-	"corn",
-	"carrot",
-	"potato",
-	"sweet_potato",
-	"croissant",
-	"bagel",
-	"bread",
-	"baguette_bread",
-	"pretzel",
-	"cheese",
-	"egg",
-	"fried_egg",
-	"pancakes",
-	"bacon",
-	"steak",
-	"poultry_leg",
-	"meat_on_bone",
-	"bone",
-	"hotdog",
-	"hamburger",
-	"fries",
-	"pizza",
-	"sandwich",
-	"stuffed_flatbread",
-	"taco",
-	"burrito",
-	"green_salad",
-	"shallow_pan_of_food",
-	"canned_food",
-	"spaghetti",
-	"ramen",
-	"stew",
-	"curry",
-	"sushi",
-	"bento",
-	"fried_shrimp",
-	"rice_ball",
-	"rice",
-	"rice_cracker",
-	"fish_cake",
-	"fortune_cookie",
-	"moon_cake",
-	"oden",
-	"dango",
-	"shaved_ice",
-	"ice_cream",
-	"icecream",
-	"pie",
-	"cupcake",
-	"cake",
-	"birthday",
-	"custard",
-	"lollipop",
-	"candy",
-	"chocolate_bar",
-	"popcorn",
-	"doughnut",
-	"dumpling",
-	"cookie",
-	"chestnut",
-	"peanuts",
-	"honey_pot",
-	"milk_glass",
-	"baby_bottle",
-	"coffee",
-	"tea",
-	"cup_with_straw",
-	"sake",
-	"beer",
-	"beers",
-	"clinking_glasses",
-	"wine_glass",
-	"tumbler_glass",
-	"cocktail",
-	"tropical_drink",
-	"champagne",
-	"spoon",
-	"fork_and_knife",
-	"plate_with_cutlery",
-	"bowl_with_spoon",
-	"takeout_box",
-	"chopsticks",
-	"salt",
-	"soccer",
-	"basketball",
-	"football",
-	"baseball",
-	"softball",
-	"tennis",
-	"volleyball",
-	"rugby_football",
-	"flying_disc",
-	"8ball",
-	"golf",
-	"golfing_woman",
-	"golfing_man",
-	"ping_pong",
-	"badminton",
-	"goal_net",
-	"ice_hockey",
-	"field_hockey",
-	"lacrosse",
-	"cricket",
-	"ski",
-	"skier",
-	"snowboarder",
-	"person_fencing",
-	"women_wrestling",
-	"men_wrestling",
-	"woman_cartwheeling",
-	"man_cartwheeling",
-	"woman_playing_handball",
-	"man_playing_handball",
-	"ice_skate",
-	"curling_stone",
-	"skateboard",
-	"sled",
-	"bow_and_arrow",
-	"fishing_pole_and_fish",
-	"boxing_glove",
-	"martial_arts_uniform",
-	"rowing_woman",
-	"rowing_man",
-	"climbing_woman",
-	"climbing_man",
-	"swimming_woman",
-	"swimming_man",
-	"woman_playing_water_polo",
-	"man_playing_water_polo",
-	"woman_in_lotus_position",
-	"man_in_lotus_position",
-	"surfing_woman",
-	"surfing_man",
-	"basketball_woman",
-	"basketball_man",
-	"weight_lifting_woman",
-	"weight_lifting_man",
-	"biking_woman",
-	"biking_man",
-	"mountain_biking_woman",
-	"mountain_biking_man",
-	"horse_racing",
-	"trophy",
-	"running_shirt_with_sash",
-	"medal_sports",
-	"medal_military",
-	"1st_place_medal",
-	"2nd_place_medal",
-	"3rd_place_medal",
-	"reminder_ribbon",
-	"rosette",
-	"ticket",
-	"tickets",
-	"performing_arts",
-	"art",
-	"circus_tent",
-	"woman_juggling",
-	"man_juggling",
-	"microphone",
-	"headphones",
-	"musical_score",
-	"musical_keyboard",
-	"drum",
-	"saxophone",
-	"trumpet",
-	"guitar",
-	"violin",
-	"clapper",
-	"video_game",
-	"dart",
-	"game_die",
-	"chess_pawn",
-	"slot_machine",
-	"jigsaw",
-	"bowling",
-	"red_car",
-	"taxi",
-	"blue_car",
-	"bus",
-	"trolleybus",
-	"racing_car",
-	"police_car",
-	"ambulance",
-	"fire_engine",
-	"minibus",
-	"truck",
-	"articulated_lorry",
-	"tractor",
-	"kick_scooter",
-	"motorcycle",
-	"bike",
-	"motor_scooter",
-	"rotating_light",
-	"oncoming_police_car",
-	"oncoming_bus",
-	"oncoming_automobile",
-	"oncoming_taxi",
-	"aerial_tramway",
-	"mountain_cableway",
-	"suspension_railway",
-	"railway_car",
-	"train",
-	"monorail",
-	"bullettrain_side",
-	"bullettrain_front",
-	"light_rail",
-	"mountain_railway",
-	"steam_locomotive",
-	"train2",
-	"metro",
-	"tram",
-	"station",
-	"flying_saucer",
-	"helicopter",
-	"small_airplane",
-	"airplane",
-	"flight_departure",
-	"flight_arrival",
-	"sailboat",
-	"motor_boat",
-	"speedboat",
-	"ferry",
-	"passenger_ship",
-	"rocket",
-	"artificial_satellite",
-	"seat",
-	"canoe",
-	"anchor",
-	"construction",
-	"fuelpump",
-	"busstop",
-	"vertical_traffic_light",
-	"traffic_light",
-	"ship",
-	"ferris_wheel",
-	"roller_coaster",
-	"carousel_horse",
-	"building_construction",
-	"foggy",
-	"tokyo_tower",
-	"factory",
-	"fountain",
-	"rice_scene",
-	"mountain",
-	"mountain_snow",
-	"mount_fuji",
-	"volcano",
-	"japan",
-	"camping",
-	"tent",
-	"national_park",
-	"motorway",
-	"railway_track",
-	"sunrise",
-	"sunrise_over_mountains",
-	"desert",
-	"beach_umbrella",
-	"desert_island",
-	"city_sunrise",
-	"city_sunset",
-	"cityscape",
-	"night_with_stars",
-	"bridge_at_night",
-	"milky_way",
-	"stars",
-	"sparkler",
-	"fireworks",
-	"rainbow",
-	"houses",
-	"european_castle",
-	"japanese_castle",
-	"stadium",
-	"statue_of_liberty",
-	"house",
-	"house_with_garden",
-	"derelict_house",
-	"office",
-	"department_store",
-	"post_office",
-	"european_post_office",
-	"hospital",
-	"bank",
-	"hotel",
-	"convenience_store",
-	"school",
-	"love_hotel",
-	"wedding",
-	"classical_building",
-	"church",
-	"mosque",
-	"synagogue",
-	"kaaba",
-	"shinto_shrine",
-	"watch",
-	"iphone",
-	"calling",
-	"computer",
-	"keyboard",
-	"desktop_computer",
-	"printer",
-	"computer_mouse",
-	"trackball",
-	"joystick",
-	"clamp",
-	"minidisc",
-	"floppy_disk",
-	"cd",
-	"dvd",
-	"vhs",
-	"camera",
-	"camera_flash",
-	"video_camera",
-	"movie_camera",
-	"film_projector",
-	"film_strip",
-	"telephone_receiver",
-	"phone",
-	"pager",
-	"fax",
-	"tv",
-	"radio",
-	"studio_microphone",
-	"level_slider",
-	"control_knobs",
-	"compass",
-	"stopwatch",
-	"timer_clock",
-	"alarm_clock",
-	"mantelpiece_clock",
-	"hourglass_flowing_sand",
-	"hourglass",
-	"satellite",
-	"battery",
-	"electric_plug",
-	"bulb",
-	"flashlight",
-	"candle",
-	"fire_extinguisher",
-	"wastebasket",
-	"oil_drum",
-	"money_with_wings",
-	"dollar",
-	"yen",
-	"euro",
-	"pound",
-	"moneybag",
-	"credit_card",
-	"gem",
-	"balance_scale",
-	"toolbox",
-	"wrench",
-	"hammer",
-	"hammer_and_pick",
-	"hammer_and_wrench",
-	"pick",
-	"nut_and_bolt",
-	"gear",
-	"brick",
-	"chains",
-	"magnet",
-	"gun",
-	"bomb",
-	"firecracker",
-	"hocho",
-	"dagger",
-	"crossed_swords",
-	"shield",
-	"smoking",
-	"coffin",
-	"funeral_urn",
-	"amphora",
-	"crystal_ball",
-	"prayer_beads",
-	"nazar_amulet",
-	"barber",
-	"alembic",
-	"telescope",
-	"microscope",
-	"hole",
-	"pill",
-	"syringe",
-	"dna",
-	"microbe",
-	"petri_dish",
-	"test_tube",
-	"thermometer",
-	"broom",
-	"basket",
-	"toilet_paper",
-	"label",
-	"bookmark",
-	"toilet",
-	"shower",
-	"bathtub",
-	"bath",
-	"soap",
-	"sponge",
-	"lotion_bottle",
-	"key",
-	"old_key",
-	"couch_and_lamp",
-	"sleeping_bed",
-	"bed",
-	"door",
-	"bellhop_bell",
-	"teddy_bear",
-	"framed_picture",
-	"world_map",
-	"parasol_on_ground",
-	"moyai",
-	"shopping",
-	"shopping_cart",
-	"balloon",
-	"flags",
-	"ribbon",
-	"gift",
-	"confetti_ball",
-	"tada",
-	"dolls",
-	"wind_chime",
-	"crossed_flags",
-	"izakaya_lantern",
-	"red_envelope",
-	"email",
-	"envelope_with_arrow",
-	"incoming_envelope",
-	"e-mail",
-	"love_letter",
-	"postbox",
-	"mailbox_closed",
-	"mailbox",
-	"mailbox_with_mail",
-	"mailbox_with_no_mail",
-	"package",
-	"postal_horn",
-	"inbox_tray",
-	"outbox_tray",
-	"scroll",
-	"page_with_curl",
-	"bookmark_tabs",
-	"receipt",
-	"bar_chart",
-	"chart_with_upwards_trend",
-	"chart_with_downwards_trend",
-	"page_facing_up",
-	"date",
-	"calendar",
-	"spiral_calendar",
-	"card_index",
-	"card_file_box",
-	"ballot_box",
-	"file_cabinet",
-	"clipboard",
-	"spiral_notepad",
-	"file_folder",
-	"open_file_folder",
-	"card_index_dividers",
-	"newspaper_roll",
-	"newspaper",
-	"notebook",
-	"closed_book",
-	"green_book",
-	"blue_book",
-	"orange_book",
-	"notebook_with_decorative_cover",
-	"ledger",
-	"books",
-	"open_book",
-	"safety_pin",
-	"link",
-	"paperclip",
-	"paperclips",
-	"scissors",
-	"triangular_ruler",
-	"straight_ruler",
-	"abacus",
-	"pushpin",
-	"round_pushpin",
-	"closed_lock_with_key",
-	"lock",
-	"unlock",
-	"lock_with_ink_pen",
-	"pen",
-	"fountain_pen",
-	"black_nib",
-	"memo",
-	"pencil2",
-	"crayon",
-	"paintbrush",
-	"mag",
-	"mag_right",
-	"heart",
-	"orange_heart",
-	"yellow_heart",
-	"green_heart",
-	"blue_heart",
-	"purple_heart",
-	"black_heart",
-	"broken_heart",
-	"heavy_heart_exclamation",
-	"two_hearts",
-	"revolving_hearts",
-	"heartbeat",
-	"heartpulse",
-	"sparkling_heart",
-	"cupid",
-	"gift_heart",
-	"heart_decoration",
-	"peace_symbol",
-	"latin_cross",
-	"star_and_crescent",
-	"om",
-	"wheel_of_dharma",
-	"star_of_david",
-	"six_pointed_star",
-	"menorah",
-	"yin_yang",
-	"orthodox_cross",
-	"place_of_worship",
-	"ophiuchus",
-	"aries",
-	"taurus",
-	"gemini",
-	"cancer",
-	"leo",
-	"virgo",
-	"libra",
-	"scorpius",
-	"sagittarius",
-	"capricorn",
-	"aquarius",
-	"pisces",
-	"id",
-	"atom_symbol",
-	"u7a7a",
-	"u5272",
-	"radioactive",
-	"biohazard",
-	"mobile_phone_off",
-	"vibration_mode",
-	"u6709",
-	"u7121",
-	"u7533",
-	"u55b6",
-	"u6708",
-	"eight_pointed_black_star",
-	"vs",
-	"accept",
-	"white_flower",
-	"ideograph_advantage",
-	"secret",
-	"congratulations",
-	"u5408",
-	"u6e80",
-	"u7981",
-	"a",
-	"b",
-	"ab",
-	"cl",
-	"o2",
-	"sos",
-	"no_entry",
-	"name_badge",
-	"no_entry_sign",
-	"x",
-	"o",
-	"stop_sign",
-	"anger",
-	"hotsprings",
-	"no_pedestrians",
-	"do_not_litter",
-	"no_bicycles",
-	"non-potable_water",
-	"underage",
-	"no_mobile_phones",
-	"exclamation",
-	"grey_exclamation",
-	"question",
-	"grey_question",
-	"bangbang",
-	"interrobang",
-	"100",
-	"low_brightness",
-	"high_brightness",
-	"trident",
-	"fleur_de_lis",
-	"part_alternation_mark",
-	"warning",
-	"children_crossing",
-	"beginner",
-	"recycle",
-	"u6307",
-	"chart",
-	"sparkle",
-	"eight_spoked_asterisk",
-	"negative_squared_cross_mark",
-	"white_check_mark",
-	"diamond_shape_with_a_dot_inside",
-	"cyclone",
-	"loop",
-	"globe_with_meridians",
-	"m",
-	"atm",
-	"zzz",
-	"sa",
-	"passport_control",
-	"customs",
-	"baggage_claim",
-	"left_luggage",
-	"wheelchair",
-	"no_smoking",
-	"wc",
-	"parking",
-	"potable_water",
-	"mens",
-	"womens",
-	"baby_symbol",
-	"restroom",
-	"put_litter_in_its_place",
-	"cinema",
-	"signal_strength",
-	"koko",
-	"ng",
-	"ok",
-	"up",
-	"cool",
-	"new",
-	"free",
-	"zero",
-	"one",
-	"two",
-	"three",
-	"four",
-	"five",
-	"six",
-	"seven",
-	"eight",
-	"nine",
-	"keycap_ten",
-	"asterisk",
-	"1234",
-	"eject_button",
-	"arrow_forward",
-	"pause_button",
-	"next_track_button",
-	"stop_button",
-	"record_button",
-	"play_or_pause_button",
-	"previous_track_button",
-	"fast_forward",
-	"rewind",
-	"twisted_rightwards_arrows",
-	"repeat",
-	"repeat_one",
-	"arrow_backward",
-	"arrow_up_small",
-	"arrow_down_small",
-	"arrow_double_up",
-	"arrow_double_down",
-	"arrow_right",
-	"arrow_left",
-	"arrow_up",
-	"arrow_down",
-	"arrow_upper_right",
-	"arrow_lower_right",
-	"arrow_lower_left",
-	"arrow_upper_left",
-	"arrow_up_down",
-	"left_right_arrow",
-	"arrows_counterclockwise",
-	"arrow_right_hook",
-	"leftwards_arrow_with_hook",
-	"arrow_heading_up",
-	"arrow_heading_down",
-	"hash",
-	"information_source",
-	"abc",
-	"abcd",
-	"capital_abcd",
-	"symbols",
-	"musical_note",
-	"notes",
-	"wavy_dash",
-	"curly_loop",
-	"heavy_check_mark",
-	"arrows_clockwise",
-	"heavy_plus_sign",
-	"heavy_minus_sign",
-	"heavy_division_sign",
-	"heavy_multiplication_x",
-	"infinity",
-	"heavy_dollar_sign",
-	"currency_exchange",
-	"copyright",
-	"registered",
-	"tm",
-	"end",
-	"back",
-	"on",
-	"top",
-	"soon",
-	"ballot_box_with_check",
-	"radio_button",
-	"white_circle",
-	"black_circle",
-	"red_circle",
-	"large_blue_circle",
-	"small_orange_diamond",
-	"small_blue_diamond",
-	"large_orange_diamond",
-	"large_blue_diamond",
-	"small_red_triangle",
-	"black_small_square",
-	"white_small_square",
-	"black_large_square",
-	"white_large_square",
-	"small_red_triangle_down",
-	"black_medium_square",
-	"white_medium_square",
-	"black_medium_small_square",
-	"white_medium_small_square",
-	"black_square_button",
-	"white_square_button",
-	"speaker",
-	"sound",
-	"loud_sound",
-	"mute",
-	"mega",
-	"loudspeaker",
-	"bell",
-	"no_bell",
-	"black_joker",
-	"mahjong",
-	"spades",
-	"clubs",
-	"hearts",
-	"diamonds",
-	"flower_playing_cards",
-	"thought_balloon",
-	"right_anger_bubble",
-	"speech_balloon",
-	"left_speech_bubble",
-	"clock1",
-	"clock2",
-	"clock3",
-	"clock4",
-	"clock5",
-	"clock6",
-	"clock7",
-	"clock8",
-	"clock9",
-	"clock10",
-	"clock11",
-	"clock12",
-	"clock130",
-	"clock230",
-	"clock330",
-	"clock430",
-	"clock530",
-	"clock630",
-	"clock730",
-	"clock830",
-	"clock930",
-	"clock1030",
-	"clock1130",
-	"clock1230",
-	"white_flag",
-	"black_flag",
-	"pirate_flag",
-	"checkered_flag",
-	"triangular_flag_on_post",
-	"rainbow_flag",
-	"united_nations",
-	"afghanistan",
-	"aland_islands",
-	"albania",
-	"algeria",
-	"american_samoa",
-	"andorra",
-	"angola",
-	"anguilla",
-	"antarctica",
-	"antigua_barbuda",
-	"argentina",
-	"armenia",
-	"aruba",
-	"australia",
-	"austria",
-	"azerbaijan",
-	"bahamas",
-	"bahrain",
-	"bangladesh",
-	"barbados",
-	"belarus",
-	"belgium",
-	"belize",
-	"benin",
-	"bermuda",
-	"bhutan",
-	"bolivia",
-	"caribbean_netherlands",
-	"bosnia_herzegovina",
-	"botswana",
-	"brazil",
-	"british_indian_ocean_territory",
-	"british_virgin_islands",
-	"brunei",
-	"bulgaria",
-	"burkina_faso",
-	"burundi",
-	"cape_verde",
-	"cambodia",
-	"cameroon",
-	"canada",
-	"canary_islands",
-	"cayman_islands",
-	"central_african_republic",
-	"chad",
-	"chile",
-	"cn",
-	"christmas_island",
-	"cocos_islands",
-	"colombia",
-	"comoros",
-	"congo_brazzaville",
-	"congo_kinshasa",
-	"cook_islands",
-	"costa_rica",
-	"croatia",
-	"cuba",
-	"curacao",
-	"cyprus",
-	"czech_republic",
-	"denmark",
-	"djibouti",
-	"dominica",
-	"dominican_republic",
-	"ecuador",
-	"egypt",
-	"el_salvador",
-	"equatorial_guinea",
-	"eritrea",
-	"estonia",
-	"ethiopia",
-	"eu",
-	"falkland_islands",
-	"faroe_islands",
-	"fiji",
-	"finland",
-	"fr",
-	"french_guiana",
-	"french_polynesia",
-	"french_southern_territories",
-	"gabon",
-	"gambia",
-	"georgia",
-	"de",
-	"ghana",
-	"gibraltar",
-	"greece",
-	"greenland",
-	"grenada",
-	"guadeloupe",
-	"guam",
-	"guatemala",
-	"guernsey",
-	"guinea",
-	"guinea_bissau",
-	"guyana",
-	"haiti",
-	"honduras",
-	"hong_kong",
-	"hungary",
-	"iceland",
-	"india",
-	"indonesia",
-	"iran",
-	"iraq",
-	"ireland",
-	"isle_of_man",
-	"israel",
-	"it",
-	"cote_divoire",
-	"jamaica",
-	"jp",
-	"jersey",
-	"jordan",
-	"kazakhstan",
-	"kenya",
-	"kiribati",
-	"kosovo",
-	"kuwait",
-	"kyrgyzstan",
-	"laos",
-	"latvia",
-	"lebanon",
-	"lesotho",
-	"liberia",
-	"libya",
-	"liechtenstein",
-	"lithuania",
-	"luxembourg",
-	"macau",
-	"macedonia",
-	"madagascar",
-	"malawi",
-	"malaysia",
-	"maldives",
-	"mali",
-	"malta",
-	"marshall_islands",
-	"martinique",
-	"mauritania",
-	"mauritius",
-	"mayotte",
-	"mexico",
-	"micronesia",
-	"moldova",
-	"monaco",
-	"mongolia",
-	"montenegro",
-	"montserrat",
-	"morocco",
-	"mozambique",
-	"myanmar",
-	"namibia",
-	"nauru",
-	"nepal",
-	"netherlands",
-	"new_caledonia",
-	"new_zealand",
-	"nicaragua",
-	"niger",
-	"nigeria",
-	"niue",
-	"norfolk_island",
-	"northern_mariana_islands",
-	"north_korea",
-	"norway",
-	"oman",
-	"pakistan",
-	"palau",
-	"palestinian_territories",
-	"panama",
-	"papua_new_guinea",
-	"paraguay",
-	"peru",
-	"philippines",
-	"pitcairn_islands",
-	"poland",
-	"portugal",
-	"puerto_rico",
-	"qatar",
-	"reunion",
-	"romania",
-	"ru",
-	"rwanda",
-	"st_barthelemy",
-	"st_helena",
-	"st_kitts_nevis",
-	"st_lucia",
-	"st_pierre_miquelon",
-	"st_vincent_grenadines",
-	"samoa",
-	"san_marino",
-	"sao_tome_principe",
-	"saudi_arabia",
-	"senegal",
-	"serbia",
-	"seychelles",
-	"sierra_leone",
-	"singapore",
-	"sint_maarten",
-	"slovakia",
-	"slovenia",
-	"solomon_islands",
-	"somalia",
-	"south_africa",
-	"south_georgia_south_sandwich_islands",
-	"kr",
-	"south_sudan",
-	"es",
-	"sri_lanka",
-	"sudan",
-	"suriname",
-	"swaziland",
-	"sweden",
-	"switzerland",
-	"syria",
-	"taiwan",
-	"tajikistan",
-	"tanzania",
-	"thailand",
-	"timor_leste",
-	"togo",
-	"tokelau",
-	"tonga",
-	"trinidad_tobago",
-	"tunisia",
-	"tr",
-	"turkmenistan",
-	"turks_caicos_islands",
-	"tuvalu",
-	"uganda",
-	"ukraine",
-	"united_arab_emirates",
-	"uk",
-	"england",
-	"scotland",
-	"wales",
-	"us",
-	"us_virgin_islands",
-	"uruguay",
-	"uzbekistan",
-	"vanuatu",
-	"vatican_city",
-	"venezuela",
-	"vietnam",
-	"wallis_futuna",
-	"western_sahara",
-	"yemen",
-	"zambia",
-	"zimbabwe"
+var orderedEmoji = [
+	"😀",
+	"😃",
+	"😄",
+	"😁",
+	"😆",
+	"😅",
+	"🤣",
+	"😂",
+	"🙂",
+	"🙃",
+	"😉",
+	"😊",
+	"😇",
+	"🥰",
+	"😍",
+	"🤩",
+	"😘",
+	"😗",
+	"☺️",
+	"😚",
+	"😙",
+	"🥲",
+	"😋",
+	"😛",
+	"😜",
+	"🤪",
+	"😝",
+	"🤑",
+	"🤗",
+	"🤭",
+	"🤫",
+	"🤔",
+	"🤐",
+	"🤨",
+	"😐",
+	"😑",
+	"😶",
+	"😏",
+	"😒",
+	"🙄",
+	"😬",
+	"🤥",
+	"😌",
+	"😔",
+	"😪",
+	"🤤",
+	"😴",
+	"😷",
+	"🤒",
+	"🤕",
+	"🤢",
+	"🤮",
+	"🤧",
+	"🥵",
+	"🥶",
+	"🥴",
+	"😵",
+	"🤯",
+	"🤠",
+	"🥳",
+	"🥸",
+	"😎",
+	"🤓",
+	"🧐",
+	"😕",
+	"😟",
+	"🙁",
+	"☹️",
+	"😮",
+	"😯",
+	"😲",
+	"😳",
+	"🥺",
+	"😦",
+	"😧",
+	"😨",
+	"😰",
+	"😥",
+	"😢",
+	"😭",
+	"😱",
+	"😖",
+	"😣",
+	"😞",
+	"😓",
+	"😩",
+	"😫",
+	"🥱",
+	"😤",
+	"😡",
+	"😠",
+	"🤬",
+	"😈",
+	"👿",
+	"💀",
+	"☠️",
+	"💩",
+	"🤡",
+	"👹",
+	"👺",
+	"👻",
+	"👽",
+	"👾",
+	"🤖",
+	"😺",
+	"😸",
+	"😹",
+	"😻",
+	"😼",
+	"😽",
+	"🙀",
+	"😿",
+	"😾",
+	"🙈",
+	"🙉",
+	"🙊",
+	"💋",
+	"💌",
+	"💘",
+	"💝",
+	"💖",
+	"💗",
+	"💓",
+	"💞",
+	"💕",
+	"💟",
+	"❣️",
+	"💔",
+	"❤️",
+	"🧡",
+	"💛",
+	"💚",
+	"💙",
+	"💜",
+	"🤎",
+	"🖤",
+	"🤍",
+	"💯",
+	"💢",
+	"💥",
+	"💫",
+	"💦",
+	"💨",
+	"🕳️",
+	"💣",
+	"💬",
+	"👁️‍🗨️",
+	"🗨️",
+	"🗯️",
+	"💭",
+	"💤",
+	"👋",
+	"🤚",
+	"🖐️",
+	"✋",
+	"🖖",
+	"👌",
+	"🤌",
+	"🤏",
+	"✌️",
+	"🤞",
+	"🤟",
+	"🤘",
+	"🤙",
+	"👈",
+	"👉",
+	"👆",
+	"🖕",
+	"👇",
+	"☝️",
+	"👍",
+	"👎",
+	"✊",
+	"👊",
+	"🤛",
+	"🤜",
+	"👏",
+	"🙌",
+	"👐",
+	"🤲",
+	"🤝",
+	"🙏",
+	"✍️",
+	"💅",
+	"🤳",
+	"💪",
+	"🦾",
+	"🦿",
+	"🦵",
+	"🦶",
+	"👂",
+	"🦻",
+	"👃",
+	"🧠",
+	"🫀",
+	"🫁",
+	"🦷",
+	"🦴",
+	"👀",
+	"👁️",
+	"👅",
+	"👄",
+	"👶",
+	"🧒",
+	"👦",
+	"👧",
+	"🧑",
+	"👱",
+	"👨",
+	"🧔",
+	"👨‍🦰",
+	"👨‍🦱",
+	"👨‍🦳",
+	"👨‍🦲",
+	"👩",
+	"👩‍🦰",
+	"🧑‍🦰",
+	"👩‍🦱",
+	"🧑‍🦱",
+	"👩‍🦳",
+	"🧑‍🦳",
+	"👩‍🦲",
+	"🧑‍🦲",
+	"👱‍♀️",
+	"👱‍♂️",
+	"🧓",
+	"👴",
+	"👵",
+	"🙍",
+	"🙍‍♂️",
+	"🙍‍♀️",
+	"🙎",
+	"🙎‍♂️",
+	"🙎‍♀️",
+	"🙅",
+	"🙅‍♂️",
+	"🙅‍♀️",
+	"🙆",
+	"🙆‍♂️",
+	"🙆‍♀️",
+	"💁",
+	"💁‍♂️",
+	"💁‍♀️",
+	"🙋",
+	"🙋‍♂️",
+	"🙋‍♀️",
+	"🧏",
+	"🧏‍♂️",
+	"🧏‍♀️",
+	"🙇",
+	"🙇‍♂️",
+	"🙇‍♀️",
+	"🤦",
+	"🤦‍♂️",
+	"🤦‍♀️",
+	"🤷",
+	"🤷‍♂️",
+	"🤷‍♀️",
+	"🧑‍⚕️",
+	"👨‍⚕️",
+	"👩‍⚕️",
+	"🧑‍🎓",
+	"👨‍🎓",
+	"👩‍🎓",
+	"🧑‍🏫",
+	"👨‍🏫",
+	"👩‍🏫",
+	"🧑‍⚖️",
+	"👨‍⚖️",
+	"👩‍⚖️",
+	"🧑‍🌾",
+	"👨‍🌾",
+	"👩‍🌾",
+	"🧑‍🍳",
+	"👨‍🍳",
+	"👩‍🍳",
+	"🧑‍🔧",
+	"👨‍🔧",
+	"👩‍🔧",
+	"🧑‍🏭",
+	"👨‍🏭",
+	"👩‍🏭",
+	"🧑‍💼",
+	"👨‍💼",
+	"👩‍💼",
+	"🧑‍🔬",
+	"👨‍🔬",
+	"👩‍🔬",
+	"🧑‍💻",
+	"👨‍💻",
+	"👩‍💻",
+	"🧑‍🎤",
+	"👨‍🎤",
+	"👩‍🎤",
+	"🧑‍🎨",
+	"👨‍🎨",
+	"👩‍🎨",
+	"🧑‍✈️",
+	"👨‍✈️",
+	"👩‍✈️",
+	"🧑‍🚀",
+	"👨‍🚀",
+	"👩‍🚀",
+	"🧑‍🚒",
+	"👨‍🚒",
+	"👩‍🚒",
+	"👮",
+	"👮‍♂️",
+	"👮‍♀️",
+	"🕵️",
+	"🕵️‍♂️",
+	"🕵️‍♀️",
+	"💂",
+	"💂‍♂️",
+	"💂‍♀️",
+	"🥷",
+	"👷",
+	"👷‍♂️",
+	"👷‍♀️",
+	"🤴",
+	"👸",
+	"👳",
+	"👳‍♂️",
+	"👳‍♀️",
+	"👲",
+	"🧕",
+	"🤵",
+	"🤵‍♂️",
+	"🤵‍♀️",
+	"👰",
+	"👰‍♂️",
+	"👰‍♀️",
+	"🤰",
+	"🤱",
+	"👩‍🍼",
+	"👨‍🍼",
+	"🧑‍🍼",
+	"👼",
+	"🎅",
+	"🤶",
+	"🧑‍🎄",
+	"🦸",
+	"🦸‍♂️",
+	"🦸‍♀️",
+	"🦹",
+	"🦹‍♂️",
+	"🦹‍♀️",
+	"🧙",
+	"🧙‍♂️",
+	"🧙‍♀️",
+	"🧚",
+	"🧚‍♂️",
+	"🧚‍♀️",
+	"🧛",
+	"🧛‍♂️",
+	"🧛‍♀️",
+	"🧜",
+	"🧜‍♂️",
+	"🧜‍♀️",
+	"🧝",
+	"🧝‍♂️",
+	"🧝‍♀️",
+	"🧞",
+	"🧞‍♂️",
+	"🧞‍♀️",
+	"🧟",
+	"🧟‍♂️",
+	"🧟‍♀️",
+	"💆",
+	"💆‍♂️",
+	"💆‍♀️",
+	"💇",
+	"💇‍♂️",
+	"💇‍♀️",
+	"🚶",
+	"🚶‍♂️",
+	"🚶‍♀️",
+	"🧍",
+	"🧍‍♂️",
+	"🧍‍♀️",
+	"🧎",
+	"🧎‍♂️",
+	"🧎‍♀️",
+	"🧑‍🦯",
+	"👨‍🦯",
+	"👩‍🦯",
+	"🧑‍🦼",
+	"👨‍🦼",
+	"👩‍🦼",
+	"🧑‍🦽",
+	"👨‍🦽",
+	"👩‍🦽",
+	"🏃",
+	"🏃‍♂️",
+	"🏃‍♀️",
+	"💃",
+	"🕺",
+	"🕴️",
+	"👯",
+	"👯‍♂️",
+	"👯‍♀️",
+	"🧖",
+	"🧖‍♂️",
+	"🧖‍♀️",
+	"🧗",
+	"🧗‍♂️",
+	"🧗‍♀️",
+	"🤺",
+	"🏇",
+	"⛷️",
+	"🏂",
+	"🏌️",
+	"🏌️‍♂️",
+	"🏌️‍♀️",
+	"🏄",
+	"🏄‍♂️",
+	"🏄‍♀️",
+	"🚣",
+	"🚣‍♂️",
+	"🚣‍♀️",
+	"🏊",
+	"🏊‍♂️",
+	"🏊‍♀️",
+	"⛹️",
+	"⛹️‍♂️",
+	"⛹️‍♀️",
+	"🏋️",
+	"🏋️‍♂️",
+	"🏋️‍♀️",
+	"🚴",
+	"🚴‍♂️",
+	"🚴‍♀️",
+	"🚵",
+	"🚵‍♂️",
+	"🚵‍♀️",
+	"🤸",
+	"🤸‍♂️",
+	"🤸‍♀️",
+	"🤼",
+	"🤼‍♂️",
+	"🤼‍♀️",
+	"🤽",
+	"🤽‍♂️",
+	"🤽‍♀️",
+	"🤾",
+	"🤾‍♂️",
+	"🤾‍♀️",
+	"🤹",
+	"🤹‍♂️",
+	"🤹‍♀️",
+	"🧘",
+	"🧘‍♂️",
+	"🧘‍♀️",
+	"🛀",
+	"🛌",
+	"🧑‍🤝‍🧑",
+	"👭",
+	"👫",
+	"👬",
+	"💏",
+	"👩‍❤️‍💋‍👨",
+	"👨‍❤️‍💋‍👨",
+	"👩‍❤️‍💋‍👩",
+	"💑",
+	"👩‍❤️‍👨",
+	"👨‍❤️‍👨",
+	"👩‍❤️‍👩",
+	"👪",
+	"👨‍👩‍👦",
+	"👨‍👩‍👧",
+	"👨‍👩‍👧‍👦",
+	"👨‍👩‍👦‍👦",
+	"👨‍👩‍👧‍👧",
+	"👨‍👨‍👦",
+	"👨‍👨‍👧",
+	"👨‍👨‍👧‍👦",
+	"👨‍👨‍👦‍👦",
+	"👨‍👨‍👧‍👧",
+	"👩‍👩‍👦",
+	"👩‍👩‍👧",
+	"👩‍👩‍👧‍👦",
+	"👩‍👩‍👦‍👦",
+	"👩‍👩‍👧‍👧",
+	"👨‍👦",
+	"👨‍👦‍👦",
+	"👨‍👧",
+	"👨‍👧‍👦",
+	"👨‍👧‍👧",
+	"👩‍👦",
+	"👩‍👦‍👦",
+	"👩‍👧",
+	"👩‍👧‍👦",
+	"👩‍👧‍👧",
+	"🗣️",
+	"👤",
+	"👥",
+	"🫂",
+	"👣",
+	"🐵",
+	"🐒",
+	"🦍",
+	"🦧",
+	"🐶",
+	"🐕",
+	"🦮",
+	"🐕‍🦺",
+	"🐩",
+	"🐺",
+	"🦊",
+	"🦝",
+	"🐱",
+	"🐈",
+	"🐈‍⬛",
+	"🦁",
+	"🐯",
+	"🐅",
+	"🐆",
+	"🐴",
+	"🐎",
+	"🦄",
+	"🦓",
+	"🦌",
+	"🦬",
+	"🐮",
+	"🐂",
+	"🐃",
+	"🐄",
+	"🐷",
+	"🐖",
+	"🐗",
+	"🐽",
+	"🐏",
+	"🐑",
+	"🐐",
+	"🐪",
+	"🐫",
+	"🦙",
+	"🦒",
+	"🐘",
+	"🦣",
+	"🦏",
+	"🦛",
+	"🐭",
+	"🐁",
+	"🐀",
+	"🐹",
+	"🐰",
+	"🐇",
+	"🐿️",
+	"🦫",
+	"🦔",
+	"🦇",
+	"🐻",
+	"🐻‍❄️",
+	"🐨",
+	"🐼",
+	"🦥",
+	"🦦",
+	"🦨",
+	"🦘",
+	"🦡",
+	"🐾",
+	"🦃",
+	"🐔",
+	"🐓",
+	"🐣",
+	"🐤",
+	"🐥",
+	"🐦",
+	"🐧",
+	"🕊️",
+	"🦅",
+	"🦆",
+	"🦢",
+	"🦉",
+	"🦤",
+	"🪶",
+	"🦩",
+	"🦚",
+	"🦜",
+	"🐸",
+	"🐊",
+	"🐢",
+	"🦎",
+	"🐍",
+	"🐲",
+	"🐉",
+	"🦕",
+	"🦖",
+	"🐳",
+	"🐋",
+	"🐬",
+	"🦭",
+	"🐟",
+	"🐠",
+	"🐡",
+	"🦈",
+	"🐙",
+	"🐚",
+	"🐌",
+	"🦋",
+	"🐛",
+	"🐜",
+	"🐝",
+	"🪲",
+	"🐞",
+	"🦗",
+	"🪳",
+	"🕷️",
+	"🕸️",
+	"🦂",
+	"🦟",
+	"🪰",
+	"🪱",
+	"🦠",
+	"💐",
+	"🌸",
+	"💮",
+	"🏵️",
+	"🌹",
+	"🥀",
+	"🌺",
+	"🌻",
+	"🌼",
+	"🌷",
+	"🌱",
+	"🪴",
+	"🌲",
+	"🌳",
+	"🌴",
+	"🌵",
+	"🌾",
+	"🌿",
+	"☘️",
+	"🍀",
+	"🍁",
+	"🍂",
+	"🍃",
+	"🍇",
+	"🍈",
+	"🍉",
+	"🍊",
+	"🍋",
+	"🍌",
+	"🍍",
+	"🥭",
+	"🍎",
+	"🍏",
+	"🍐",
+	"🍑",
+	"🍒",
+	"🍓",
+	"🫐",
+	"🥝",
+	"🍅",
+	"🫒",
+	"🥥",
+	"🥑",
+	"🍆",
+	"🥔",
+	"🥕",
+	"🌽",
+	"🌶️",
+	"🫑",
+	"🥒",
+	"🥬",
+	"🥦",
+	"🧄",
+	"🧅",
+	"🍄",
+	"🥜",
+	"🌰",
+	"🍞",
+	"🥐",
+	"🥖",
+	"🫓",
+	"🥨",
+	"🥯",
+	"🥞",
+	"🧇",
+	"🧀",
+	"🍖",
+	"🍗",
+	"🥩",
+	"🥓",
+	"🍔",
+	"🍟",
+	"🍕",
+	"🌭",
+	"🥪",
+	"🌮",
+	"🌯",
+	"🫔",
+	"🥙",
+	"🧆",
+	"🥚",
+	"🍳",
+	"🥘",
+	"🍲",
+	"🫕",
+	"🥣",
+	"🥗",
+	"🍿",
+	"🧈",
+	"🧂",
+	"🥫",
+	"🍱",
+	"🍘",
+	"🍙",
+	"🍚",
+	"🍛",
+	"🍜",
+	"🍝",
+	"🍠",
+	"🍢",
+	"🍣",
+	"🍤",
+	"🍥",
+	"🥮",
+	"🍡",
+	"🥟",
+	"🥠",
+	"🥡",
+	"🦀",
+	"🦞",
+	"🦐",
+	"🦑",
+	"🦪",
+	"🍦",
+	"🍧",
+	"🍨",
+	"🍩",
+	"🍪",
+	"🎂",
+	"🍰",
+	"🧁",
+	"🥧",
+	"🍫",
+	"🍬",
+	"🍭",
+	"🍮",
+	"🍯",
+	"🍼",
+	"🥛",
+	"☕",
+	"🫖",
+	"🍵",
+	"🍶",
+	"🍾",
+	"🍷",
+	"🍸",
+	"🍹",
+	"🍺",
+	"🍻",
+	"🥂",
+	"🥃",
+	"🥤",
+	"🧋",
+	"🧃",
+	"🧉",
+	"🧊",
+	"🥢",
+	"🍽️",
+	"🍴",
+	"🥄",
+	"🔪",
+	"🏺",
+	"🌍",
+	"🌎",
+	"🌏",
+	"🌐",
+	"🗺️",
+	"🗾",
+	"🧭",
+	"🏔️",
+	"⛰️",
+	"🌋",
+	"🗻",
+	"🏕️",
+	"🏖️",
+	"🏜️",
+	"🏝️",
+	"🏞️",
+	"🏟️",
+	"🏛️",
+	"🏗️",
+	"🧱",
+	"🪨",
+	"🪵",
+	"🛖",
+	"🏘️",
+	"🏚️",
+	"🏠",
+	"🏡",
+	"🏢",
+	"🏣",
+	"🏤",
+	"🏥",
+	"🏦",
+	"🏨",
+	"🏩",
+	"🏪",
+	"🏫",
+	"🏬",
+	"🏭",
+	"🏯",
+	"🏰",
+	"💒",
+	"🗼",
+	"🗽",
+	"⛪",
+	"🕌",
+	"🛕",
+	"🕍",
+	"⛩️",
+	"🕋",
+	"⛲",
+	"⛺",
+	"🌁",
+	"🌃",
+	"🏙️",
+	"🌄",
+	"🌅",
+	"🌆",
+	"🌇",
+	"🌉",
+	"♨️",
+	"🎠",
+	"🎡",
+	"🎢",
+	"💈",
+	"🎪",
+	"🚂",
+	"🚃",
+	"🚄",
+	"🚅",
+	"🚆",
+	"🚇",
+	"🚈",
+	"🚉",
+	"🚊",
+	"🚝",
+	"🚞",
+	"🚋",
+	"🚌",
+	"🚍",
+	"🚎",
+	"🚐",
+	"🚑",
+	"🚒",
+	"🚓",
+	"🚔",
+	"🚕",
+	"🚖",
+	"🚗",
+	"🚘",
+	"🚙",
+	"🛻",
+	"🚚",
+	"🚛",
+	"🚜",
+	"🏎️",
+	"🏍️",
+	"🛵",
+	"🦽",
+	"🦼",
+	"🛺",
+	"🚲",
+	"🛴",
+	"🛹",
+	"🛼",
+	"🚏",
+	"🛣️",
+	"🛤️",
+	"🛢️",
+	"⛽",
+	"🚨",
+	"🚥",
+	"🚦",
+	"🛑",
+	"🚧",
+	"⚓",
+	"⛵",
+	"🛶",
+	"🚤",
+	"🛳️",
+	"⛴️",
+	"🛥️",
+	"🚢",
+	"✈️",
+	"🛩️",
+	"🛫",
+	"🛬",
+	"🪂",
+	"💺",
+	"🚁",
+	"🚟",
+	"🚠",
+	"🚡",
+	"🛰️",
+	"🚀",
+	"🛸",
+	"🛎️",
+	"🧳",
+	"⌛",
+	"⏳",
+	"⌚",
+	"⏰",
+	"⏱️",
+	"⏲️",
+	"🕰️",
+	"🕛",
+	"🕧",
+	"🕐",
+	"🕜",
+	"🕑",
+	"🕝",
+	"🕒",
+	"🕞",
+	"🕓",
+	"🕟",
+	"🕔",
+	"🕠",
+	"🕕",
+	"🕡",
+	"🕖",
+	"🕢",
+	"🕗",
+	"🕣",
+	"🕘",
+	"🕤",
+	"🕙",
+	"🕥",
+	"🕚",
+	"🕦",
+	"🌑",
+	"🌒",
+	"🌓",
+	"🌔",
+	"🌕",
+	"🌖",
+	"🌗",
+	"🌘",
+	"🌙",
+	"🌚",
+	"🌛",
+	"🌜",
+	"🌡️",
+	"☀️",
+	"🌝",
+	"🌞",
+	"🪐",
+	"⭐",
+	"🌟",
+	"🌠",
+	"🌌",
+	"☁️",
+	"⛅",
+	"⛈️",
+	"🌤️",
+	"🌥️",
+	"🌦️",
+	"🌧️",
+	"🌨️",
+	"🌩️",
+	"🌪️",
+	"🌫️",
+	"🌬️",
+	"🌀",
+	"🌈",
+	"🌂",
+	"☂️",
+	"☔",
+	"⛱️",
+	"⚡",
+	"❄️",
+	"☃️",
+	"⛄",
+	"☄️",
+	"🔥",
+	"💧",
+	"🌊",
+	"🎃",
+	"🎄",
+	"🎆",
+	"🎇",
+	"🧨",
+	"✨",
+	"🎈",
+	"🎉",
+	"🎊",
+	"🎋",
+	"🎍",
+	"🎎",
+	"🎏",
+	"🎐",
+	"🎑",
+	"🧧",
+	"🎀",
+	"🎁",
+	"🎗️",
+	"🎟️",
+	"🎫",
+	"🎖️",
+	"🏆",
+	"🏅",
+	"🥇",
+	"🥈",
+	"🥉",
+	"⚽",
+	"⚾",
+	"🥎",
+	"🏀",
+	"🏐",
+	"🏈",
+	"🏉",
+	"🎾",
+	"🥏",
+	"🎳",
+	"🏏",
+	"🏑",
+	"🏒",
+	"🥍",
+	"🏓",
+	"🏸",
+	"🥊",
+	"🥋",
+	"🥅",
+	"⛳",
+	"⛸️",
+	"🎣",
+	"🤿",
+	"🎽",
+	"🎿",
+	"🛷",
+	"🥌",
+	"🎯",
+	"🪀",
+	"🪁",
+	"🎱",
+	"🔮",
+	"🪄",
+	"🧿",
+	"🎮",
+	"🕹️",
+	"🎰",
+	"🎲",
+	"🧩",
+	"🧸",
+	"🪅",
+	"🪆",
+	"♠️",
+	"♥️",
+	"♦️",
+	"♣️",
+	"♟️",
+	"🃏",
+	"🀄",
+	"🎴",
+	"🎭",
+	"🖼️",
+	"🎨",
+	"🧵",
+	"🪡",
+	"🧶",
+	"🪢",
+	"👓",
+	"🕶️",
+	"🥽",
+	"🥼",
+	"🦺",
+	"👔",
+	"👕",
+	"👖",
+	"🧣",
+	"🧤",
+	"🧥",
+	"🧦",
+	"👗",
+	"👘",
+	"🥻",
+	"🩱",
+	"🩲",
+	"🩳",
+	"👙",
+	"👚",
+	"👛",
+	"👜",
+	"👝",
+	"🛍️",
+	"🎒",
+	"🩴",
+	"👞",
+	"👟",
+	"🥾",
+	"🥿",
+	"👠",
+	"👡",
+	"🩰",
+	"👢",
+	"👑",
+	"👒",
+	"🎩",
+	"🎓",
+	"🧢",
+	"🪖",
+	"⛑️",
+	"📿",
+	"💄",
+	"💍",
+	"💎",
+	"🔇",
+	"🔈",
+	"🔉",
+	"🔊",
+	"📢",
+	"📣",
+	"📯",
+	"🔔",
+	"🔕",
+	"🎼",
+	"🎵",
+	"🎶",
+	"🎙️",
+	"🎚️",
+	"🎛️",
+	"🎤",
+	"🎧",
+	"📻",
+	"🎷",
+	"🪗",
+	"🎸",
+	"🎹",
+	"🎺",
+	"🎻",
+	"🪕",
+	"🥁",
+	"🪘",
+	"📱",
+	"📲",
+	"☎️",
+	"📞",
+	"📟",
+	"📠",
+	"🔋",
+	"🔌",
+	"💻",
+	"🖥️",
+	"🖨️",
+	"⌨️",
+	"🖱️",
+	"🖲️",
+	"💽",
+	"💾",
+	"💿",
+	"📀",
+	"🧮",
+	"🎥",
+	"🎞️",
+	"📽️",
+	"🎬",
+	"📺",
+	"📷",
+	"📸",
+	"📹",
+	"📼",
+	"🔍",
+	"🔎",
+	"🕯️",
+	"💡",
+	"🔦",
+	"🏮",
+	"🪔",
+	"📔",
+	"📕",
+	"📖",
+	"📗",
+	"📘",
+	"📙",
+	"📚",
+	"📓",
+	"📒",
+	"📃",
+	"📜",
+	"📄",
+	"📰",
+	"🗞️",
+	"📑",
+	"🔖",
+	"🏷️",
+	"💰",
+	"🪙",
+	"💴",
+	"💵",
+	"💶",
+	"💷",
+	"💸",
+	"💳",
+	"🧾",
+	"💹",
+	"✉️",
+	"📧",
+	"📨",
+	"📩",
+	"📤",
+	"📥",
+	"📦",
+	"📫",
+	"📪",
+	"📬",
+	"📭",
+	"📮",
+	"🗳️",
+	"✏️",
+	"✒️",
+	"🖋️",
+	"🖊️",
+	"🖌️",
+	"🖍️",
+	"📝",
+	"💼",
+	"📁",
+	"📂",
+	"🗂️",
+	"📅",
+	"📆",
+	"🗒️",
+	"🗓️",
+	"📇",
+	"📈",
+	"📉",
+	"📊",
+	"📋",
+	"📌",
+	"📍",
+	"📎",
+	"🖇️",
+	"📏",
+	"📐",
+	"✂️",
+	"🗃️",
+	"🗄️",
+	"🗑️",
+	"🔒",
+	"🔓",
+	"🔏",
+	"🔐",
+	"🔑",
+	"🗝️",
+	"🔨",
+	"🪓",
+	"⛏️",
+	"⚒️",
+	"🛠️",
+	"🗡️",
+	"⚔️",
+	"🔫",
+	"🪃",
+	"🏹",
+	"🛡️",
+	"🪚",
+	"🔧",
+	"🪛",
+	"🔩",
+	"⚙️",
+	"🗜️",
+	"⚖️",
+	"🦯",
+	"🔗",
+	"⛓️",
+	"🪝",
+	"🧰",
+	"🧲",
+	"🪜",
+	"⚗️",
+	"🧪",
+	"🧫",
+	"🧬",
+	"🔬",
+	"🔭",
+	"📡",
+	"💉",
+	"🩸",
+	"💊",
+	"🩹",
+	"🩺",
+	"🚪",
+	"🛗",
+	"🪞",
+	"🪟",
+	"🛏️",
+	"🛋️",
+	"🪑",
+	"🚽",
+	"🪠",
+	"🚿",
+	"🛁",
+	"🪤",
+	"🪒",
+	"🧴",
+	"🧷",
+	"🧹",
+	"🧺",
+	"🧻",
+	"🪣",
+	"🧼",
+	"🪥",
+	"🧽",
+	"🧯",
+	"🛒",
+	"🚬",
+	"⚰️",
+	"🪦",
+	"⚱️",
+	"🗿",
+	"🪧",
+	"🏧",
+	"🚮",
+	"🚰",
+	"♿",
+	"🚹",
+	"🚺",
+	"🚻",
+	"🚼",
+	"🚾",
+	"🛂",
+	"🛃",
+	"🛄",
+	"🛅",
+	"⚠️",
+	"🚸",
+	"⛔",
+	"🚫",
+	"🚳",
+	"🚭",
+	"🚯",
+	"🚱",
+	"🚷",
+	"📵",
+	"🔞",
+	"☢️",
+	"☣️",
+	"⬆️",
+	"↗️",
+	"➡️",
+	"↘️",
+	"⬇️",
+	"↙️",
+	"⬅️",
+	"↖️",
+	"↕️",
+	"↔️",
+	"↩️",
+	"↪️",
+	"⤴️",
+	"⤵️",
+	"🔃",
+	"🔄",
+	"🔙",
+	"🔚",
+	"🔛",
+	"🔜",
+	"🔝",
+	"🛐",
+	"⚛️",
+	"🕉️",
+	"✡️",
+	"☸️",
+	"☯️",
+	"✝️",
+	"☦️",
+	"☪️",
+	"☮️",
+	"🕎",
+	"🔯",
+	"♈",
+	"♉",
+	"♊",
+	"♋",
+	"♌",
+	"♍",
+	"♎",
+	"♏",
+	"♐",
+	"♑",
+	"♒",
+	"♓",
+	"⛎",
+	"🔀",
+	"🔁",
+	"🔂",
+	"▶️",
+	"⏩",
+	"⏭️",
+	"⏯️",
+	"◀️",
+	"⏪",
+	"⏮️",
+	"🔼",
+	"⏫",
+	"🔽",
+	"⏬",
+	"⏸️",
+	"⏹️",
+	"⏺️",
+	"⏏️",
+	"🎦",
+	"🔅",
+	"🔆",
+	"📶",
+	"📳",
+	"📴",
+	"♀️",
+	"♂️",
+	"⚧️",
+	"✖️",
+	"➕",
+	"➖",
+	"➗",
+	"♾️",
+	"‼️",
+	"⁉️",
+	"❓",
+	"❔",
+	"❕",
+	"❗",
+	"〰️",
+	"💱",
+	"💲",
+	"⚕️",
+	"♻️",
+	"⚜️",
+	"🔱",
+	"📛",
+	"🔰",
+	"⭕",
+	"✅",
+	"☑️",
+	"✔️",
+	"❌",
+	"❎",
+	"➰",
+	"➿",
+	"〽️",
+	"✳️",
+	"✴️",
+	"❇️",
+	"©️",
+	"®️",
+	"™️",
+	"#️⃣",
+	"*️⃣",
+	"0️⃣",
+	"1️⃣",
+	"2️⃣",
+	"3️⃣",
+	"4️⃣",
+	"5️⃣",
+	"6️⃣",
+	"7️⃣",
+	"8️⃣",
+	"9️⃣",
+	"🔟",
+	"🔠",
+	"🔡",
+	"🔢",
+	"🔣",
+	"🔤",
+	"🅰️",
+	"🆎",
+	"🅱️",
+	"🆑",
+	"🆒",
+	"🆓",
+	"ℹ️",
+	"🆔",
+	"Ⓜ️",
+	"🆕",
+	"🆖",
+	"🅾️",
+	"🆗",
+	"🅿️",
+	"🆘",
+	"🆙",
+	"🆚",
+	"🈁",
+	"🈂️",
+	"🈷️",
+	"🈶",
+	"🈯",
+	"🉐",
+	"🈹",
+	"🈚",
+	"🈲",
+	"🉑",
+	"🈸",
+	"🈴",
+	"🈳",
+	"㊗️",
+	"㊙️",
+	"🈺",
+	"🈵",
+	"🔴",
+	"🟠",
+	"🟡",
+	"🟢",
+	"🔵",
+	"🟣",
+	"🟤",
+	"⚫",
+	"⚪",
+	"🟥",
+	"🟧",
+	"🟨",
+	"🟩",
+	"🟦",
+	"🟪",
+	"🟫",
+	"⬛",
+	"⬜",
+	"◼️",
+	"◻️",
+	"◾",
+	"◽",
+	"▪️",
+	"▫️",
+	"🔶",
+	"🔷",
+	"🔸",
+	"🔹",
+	"🔺",
+	"🔻",
+	"💠",
+	"🔘",
+	"🔳",
+	"🔲",
+	"🏁",
+	"🚩",
+	"🎌",
+	"🏴",
+	"🏳️",
+	"🏳️‍🌈",
+	"🏳️‍⚧️",
+	"🏴‍☠️",
+	"🇦🇨",
+	"🇦🇩",
+	"🇦🇪",
+	"🇦🇫",
+	"🇦🇬",
+	"🇦🇮",
+	"🇦🇱",
+	"🇦🇲",
+	"🇦🇴",
+	"🇦🇶",
+	"🇦🇷",
+	"🇦🇸",
+	"🇦🇹",
+	"🇦🇺",
+	"🇦🇼",
+	"🇦🇽",
+	"🇦🇿",
+	"🇧🇦",
+	"🇧🇧",
+	"🇧🇩",
+	"🇧🇪",
+	"🇧🇫",
+	"🇧🇬",
+	"🇧🇭",
+	"🇧🇮",
+	"🇧🇯",
+	"🇧🇱",
+	"🇧🇲",
+	"🇧🇳",
+	"🇧🇴",
+	"🇧🇶",
+	"🇧🇷",
+	"🇧🇸",
+	"🇧🇹",
+	"🇧🇻",
+	"🇧🇼",
+	"🇧🇾",
+	"🇧🇿",
+	"🇨🇦",
+	"🇨🇨",
+	"🇨🇩",
+	"🇨🇫",
+	"🇨🇬",
+	"🇨🇭",
+	"🇨🇮",
+	"🇨🇰",
+	"🇨🇱",
+	"🇨🇲",
+	"🇨🇳",
+	"🇨🇴",
+	"🇨🇵",
+	"🇨🇷",
+	"🇨🇺",
+	"🇨🇻",
+	"🇨🇼",
+	"🇨🇽",
+	"🇨🇾",
+	"🇨🇿",
+	"🇩🇪",
+	"🇩🇬",
+	"🇩🇯",
+	"🇩🇰",
+	"🇩🇲",
+	"🇩🇴",
+	"🇩🇿",
+	"🇪🇦",
+	"🇪🇨",
+	"🇪🇪",
+	"🇪🇬",
+	"🇪🇭",
+	"🇪🇷",
+	"🇪🇸",
+	"🇪🇹",
+	"🇪🇺",
+	"🇫🇮",
+	"🇫🇯",
+	"🇫🇰",
+	"🇫🇲",
+	"🇫🇴",
+	"🇫🇷",
+	"🇬🇦",
+	"🇬🇧",
+	"🇬🇩",
+	"🇬🇪",
+	"🇬🇫",
+	"🇬🇬",
+	"🇬🇭",
+	"🇬🇮",
+	"🇬🇱",
+	"🇬🇲",
+	"🇬🇳",
+	"🇬🇵",
+	"🇬🇶",
+	"🇬🇷",
+	"🇬🇸",
+	"🇬🇹",
+	"🇬🇺",
+	"🇬🇼",
+	"🇬🇾",
+	"🇭🇰",
+	"🇭🇲",
+	"🇭🇳",
+	"🇭🇷",
+	"🇭🇹",
+	"🇭🇺",
+	"🇮🇨",
+	"🇮🇩",
+	"🇮🇪",
+	"🇮🇱",
+	"🇮🇲",
+	"🇮🇳",
+	"🇮🇴",
+	"🇮🇶",
+	"🇮🇷",
+	"🇮🇸",
+	"🇮🇹",
+	"🇯🇪",
+	"🇯🇲",
+	"🇯🇴",
+	"🇯🇵",
+	"🇰🇪",
+	"🇰🇬",
+	"🇰🇭",
+	"🇰🇮",
+	"🇰🇲",
+	"🇰🇳",
+	"🇰🇵",
+	"🇰🇷",
+	"🇰🇼",
+	"🇰🇾",
+	"🇰🇿",
+	"🇱🇦",
+	"🇱🇧",
+	"🇱🇨",
+	"🇱🇮",
+	"🇱🇰",
+	"🇱🇷",
+	"🇱🇸",
+	"🇱🇹",
+	"🇱🇺",
+	"🇱🇻",
+	"🇱🇾",
+	"🇲🇦",
+	"🇲🇨",
+	"🇲🇩",
+	"🇲🇪",
+	"🇲🇫",
+	"🇲🇬",
+	"🇲🇭",
+	"🇲🇰",
+	"🇲🇱",
+	"🇲🇲",
+	"🇲🇳",
+	"🇲🇴",
+	"🇲🇵",
+	"🇲🇶",
+	"🇲🇷",
+	"🇲🇸",
+	"🇲🇹",
+	"🇲🇺",
+	"🇲🇻",
+	"🇲🇼",
+	"🇲🇽",
+	"🇲🇾",
+	"🇲🇿",
+	"🇳🇦",
+	"🇳🇨",
+	"🇳🇪",
+	"🇳🇫",
+	"🇳🇬",
+	"🇳🇮",
+	"🇳🇱",
+	"🇳🇴",
+	"🇳🇵",
+	"🇳🇷",
+	"🇳🇺",
+	"🇳🇿",
+	"🇴🇲",
+	"🇵🇦",
+	"🇵🇪",
+	"🇵🇫",
+	"🇵🇬",
+	"🇵🇭",
+	"🇵🇰",
+	"🇵🇱",
+	"🇵🇲",
+	"🇵🇳",
+	"🇵🇷",
+	"🇵🇸",
+	"🇵🇹",
+	"🇵🇼",
+	"🇵🇾",
+	"🇶🇦",
+	"🇷🇪",
+	"🇷🇴",
+	"🇷🇸",
+	"🇷🇺",
+	"🇷🇼",
+	"🇸🇦",
+	"🇸🇧",
+	"🇸🇨",
+	"🇸🇩",
+	"🇸🇪",
+	"🇸🇬",
+	"🇸🇭",
+	"🇸🇮",
+	"🇸🇯",
+	"🇸🇰",
+	"🇸🇱",
+	"🇸🇲",
+	"🇸🇳",
+	"🇸🇴",
+	"🇸🇷",
+	"🇸🇸",
+	"🇸🇹",
+	"🇸🇻",
+	"🇸🇽",
+	"🇸🇾",
+	"🇸🇿",
+	"🇹🇦",
+	"🇹🇨",
+	"🇹🇩",
+	"🇹🇫",
+	"🇹🇬",
+	"🇹🇭",
+	"🇹🇯",
+	"🇹🇰",
+	"🇹🇱",
+	"🇹🇲",
+	"🇹🇳",
+	"🇹🇴",
+	"🇹🇷",
+	"🇹🇹",
+	"🇹🇻",
+	"🇹🇼",
+	"🇹🇿",
+	"🇺🇦",
+	"🇺🇬",
+	"🇺🇲",
+	"🇺🇳",
+	"🇺🇸",
+	"🇺🇾",
+	"🇺🇿",
+	"🇻🇦",
+	"🇻🇨",
+	"🇻🇪",
+	"🇻🇬",
+	"🇻🇮",
+	"🇻🇳",
+	"🇻🇺",
+	"🇼🇫",
+	"🇼🇸",
+	"🇽🇰",
+	"🇾🇪",
+	"🇾🇹",
+	"🇿🇦",
+	"🇿🇲",
+	"🇿🇼",
+	"🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+	"🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+	"🏴󠁧󠁢󠁷󠁬󠁳󠁿"
 ];
 
-var emojilib = {
-  lib: require$$0,
-  ordered: require$$1,
-  fitzpatrick_scale_modifiers: ["🏻", "🏼", "🏽", "🏾", "🏿"]
+var emojiNames = {
+	"😀": {
+	name: "grinning face",
+	slug: "grinning_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"😃": {
+	name: "grinning face with big eyes",
+	slug: "grinning_face_with_big_eyes",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😄": {
+	name: "grinning face with smiling eyes",
+	slug: "grinning_face_with_smiling_eyes",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😁": {
+	name: "beaming face with smiling eyes",
+	slug: "beaming_face_with_smiling_eyes",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😆": {
+	name: "grinning squinting face",
+	slug: "grinning_squinting_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😅": {
+	name: "grinning face with sweat",
+	slug: "grinning_face_with_sweat",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🤣": {
+	name: "rolling on the floor laughing",
+	slug: "rolling_on_the_floor_laughing",
+	group: "Smileys & Emotion",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"😂": {
+	name: "face with tears of joy",
+	slug: "face_with_tears_of_joy",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🙂": {
+	name: "slightly smiling face",
+	slug: "slightly_smiling_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🙃": {
+	name: "upside-down face",
+	slug: "upside_down_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"😉": {
+	name: "winking face",
+	slug: "winking_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😊": {
+	name: "smiling face with smiling eyes",
+	slug: "smiling_face_with_smiling_eyes",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😇": {
+	name: "smiling face with halo",
+	slug: "smiling_face_with_halo",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🥰": {
+	name: "smiling face with hearts",
+	slug: "smiling_face_with_hearts",
+	group: "Smileys & Emotion",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"😍": {
+	name: "smiling face with heart-eyes",
+	slug: "smiling_face_with_heart_eyes",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🤩": {
+	name: "star-struck",
+	slug: "star_struck",
+	group: "Smileys & Emotion",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"😘": {
+	name: "face blowing a kiss",
+	slug: "face_blowing_a_kiss",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😗": {
+	name: "kissing face",
+	slug: "kissing_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"☺️": {
+	name: "smiling face",
+	slug: "smiling_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😚": {
+	name: "kissing face with closed eyes",
+	slug: "kissing_face_with_closed_eyes",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😙": {
+	name: "kissing face with smiling eyes",
+	slug: "kissing_face_with_smiling_eyes",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🥲": {
+	name: "smiling face with tear",
+	slug: "smiling_face_with_tear",
+	group: "Smileys & Emotion",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"😋": {
+	name: "face savoring food",
+	slug: "face_savoring_food",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😛": {
+	name: "face with tongue",
+	slug: "face_with_tongue",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"😜": {
+	name: "winking face with tongue",
+	slug: "winking_face_with_tongue",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🤪": {
+	name: "zany face",
+	slug: "zany_face",
+	group: "Smileys & Emotion",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"😝": {
+	name: "squinting face with tongue",
+	slug: "squinting_face_with_tongue",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🤑": {
+	name: "money-mouth face",
+	slug: "money_mouth_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🤗": {
+	name: "hugging face",
+	slug: "hugging_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🤭": {
+	name: "face with hand over mouth",
+	slug: "face_with_hand_over_mouth",
+	group: "Smileys & Emotion",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🤫": {
+	name: "shushing face",
+	slug: "shushing_face",
+	group: "Smileys & Emotion",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🤔": {
+	name: "thinking face",
+	slug: "thinking_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🤐": {
+	name: "zipper-mouth face",
+	slug: "zipper_mouth_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🤨": {
+	name: "face with raised eyebrow",
+	slug: "face_with_raised_eyebrow",
+	group: "Smileys & Emotion",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"😐": {
+	name: "neutral face",
+	slug: "neutral_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"😑": {
+	name: "expressionless face",
+	slug: "expressionless_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"😶": {
+	name: "face without mouth",
+	slug: "face_without_mouth",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"😏": {
+	name: "smirking face",
+	slug: "smirking_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😒": {
+	name: "unamused face",
+	slug: "unamused_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🙄": {
+	name: "face with rolling eyes",
+	slug: "face_with_rolling_eyes",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"😬": {
+	name: "grimacing face",
+	slug: "grimacing_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🤥": {
+	name: "lying face",
+	slug: "lying_face",
+	group: "Smileys & Emotion",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"😌": {
+	name: "relieved face",
+	slug: "relieved_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😔": {
+	name: "pensive face",
+	slug: "pensive_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😪": {
+	name: "sleepy face",
+	slug: "sleepy_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🤤": {
+	name: "drooling face",
+	slug: "drooling_face",
+	group: "Smileys & Emotion",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"😴": {
+	name: "sleeping face",
+	slug: "sleeping_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"😷": {
+	name: "face with medical mask",
+	slug: "face_with_medical_mask",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🤒": {
+	name: "face with thermometer",
+	slug: "face_with_thermometer",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🤕": {
+	name: "face with head-bandage",
+	slug: "face_with_head_bandage",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🤢": {
+	name: "nauseated face",
+	slug: "nauseated_face",
+	group: "Smileys & Emotion",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🤮": {
+	name: "face vomiting",
+	slug: "face_vomiting",
+	group: "Smileys & Emotion",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🤧": {
+	name: "sneezing face",
+	slug: "sneezing_face",
+	group: "Smileys & Emotion",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🥵": {
+	name: "hot face",
+	slug: "hot_face",
+	group: "Smileys & Emotion",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🥶": {
+	name: "cold face",
+	slug: "cold_face",
+	group: "Smileys & Emotion",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🥴": {
+	name: "woozy face",
+	slug: "woozy_face",
+	group: "Smileys & Emotion",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"😵": {
+	name: "knocked-out face",
+	slug: "knocked_out_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🤯": {
+	name: "exploding head",
+	slug: "exploding_head",
+	group: "Smileys & Emotion",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🤠": {
+	name: "cowboy hat face",
+	slug: "cowboy_hat_face",
+	group: "Smileys & Emotion",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🥳": {
+	name: "partying face",
+	slug: "partying_face",
+	group: "Smileys & Emotion",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🥸": {
+	name: "disguised face",
+	slug: "disguised_face",
+	group: "Smileys & Emotion",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"😎": {
+	name: "smiling face with sunglasses",
+	slug: "smiling_face_with_sunglasses",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🤓": {
+	name: "nerd face",
+	slug: "nerd_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🧐": {
+	name: "face with monocle",
+	slug: "face_with_monocle",
+	group: "Smileys & Emotion",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"😕": {
+	name: "confused face",
+	slug: "confused_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"😟": {
+	name: "worried face",
+	slug: "worried_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🙁": {
+	name: "slightly frowning face",
+	slug: "slightly_frowning_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"☹️": {
+	name: "frowning face",
+	slug: "frowning_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"😮": {
+	name: "face with open mouth",
+	slug: "face_with_open_mouth",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"😯": {
+	name: "hushed face",
+	slug: "hushed_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"😲": {
+	name: "astonished face",
+	slug: "astonished_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😳": {
+	name: "flushed face",
+	slug: "flushed_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥺": {
+	name: "pleading face",
+	slug: "pleading_face",
+	group: "Smileys & Emotion",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"😦": {
+	name: "frowning face with open mouth",
+	slug: "frowning_face_with_open_mouth",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"😧": {
+	name: "anguished face",
+	slug: "anguished_face",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"😨": {
+	name: "fearful face",
+	slug: "fearful_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😰": {
+	name: "anxious face with sweat",
+	slug: "anxious_face_with_sweat",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😥": {
+	name: "sad but relieved face",
+	slug: "sad_but_relieved_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😢": {
+	name: "crying face",
+	slug: "crying_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😭": {
+	name: "loudly crying face",
+	slug: "loudly_crying_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😱": {
+	name: "face screaming in fear",
+	slug: "face_screaming_in_fear",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😖": {
+	name: "confounded face",
+	slug: "confounded_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😣": {
+	name: "persevering face",
+	slug: "persevering_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😞": {
+	name: "disappointed face",
+	slug: "disappointed_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😓": {
+	name: "downcast face with sweat",
+	slug: "downcast_face_with_sweat",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😩": {
+	name: "weary face",
+	slug: "weary_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😫": {
+	name: "tired face",
+	slug: "tired_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥱": {
+	name: "yawning face",
+	slug: "yawning_face",
+	group: "Smileys & Emotion",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"😤": {
+	name: "face with steam from nose",
+	slug: "face_with_steam_from_nose",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😡": {
+	name: "pouting face",
+	slug: "pouting_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😠": {
+	name: "angry face",
+	slug: "angry_face",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🤬": {
+	name: "face with symbols on mouth",
+	slug: "face_with_symbols_on_mouth",
+	group: "Smileys & Emotion",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"😈": {
+	name: "smiling face with horns",
+	slug: "smiling_face_with_horns",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"👿": {
+	name: "angry face with horns",
+	slug: "angry_face_with_horns",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💀": {
+	name: "skull",
+	slug: "skull",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"☠️": {
+	name: "skull and crossbones",
+	slug: "skull_and_crossbones",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"💩": {
+	name: "pile of poo",
+	slug: "pile_of_poo",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🤡": {
+	name: "clown face",
+	slug: "clown_face",
+	group: "Smileys & Emotion",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"👹": {
+	name: "ogre",
+	slug: "ogre",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👺": {
+	name: "goblin",
+	slug: "goblin",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👻": {
+	name: "ghost",
+	slug: "ghost",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👽": {
+	name: "alien",
+	slug: "alien",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👾": {
+	name: "alien monster",
+	slug: "alien_monster",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🤖": {
+	name: "robot",
+	slug: "robot",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"😺": {
+	name: "grinning cat",
+	slug: "grinning_cat",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😸": {
+	name: "grinning cat with smiling eyes",
+	slug: "grinning_cat_with_smiling_eyes",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😹": {
+	name: "cat with tears of joy",
+	slug: "cat_with_tears_of_joy",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😻": {
+	name: "smiling cat with heart-eyes",
+	slug: "smiling_cat_with_heart_eyes",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😼": {
+	name: "cat with wry smile",
+	slug: "cat_with_wry_smile",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😽": {
+	name: "kissing cat",
+	slug: "kissing_cat",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🙀": {
+	name: "weary cat",
+	slug: "weary_cat",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😿": {
+	name: "crying cat",
+	slug: "crying_cat",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"😾": {
+	name: "pouting cat",
+	slug: "pouting_cat",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🙈": {
+	name: "see-no-evil monkey",
+	slug: "see_no_evil_monkey",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🙉": {
+	name: "hear-no-evil monkey",
+	slug: "hear_no_evil_monkey",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🙊": {
+	name: "speak-no-evil monkey",
+	slug: "speak_no_evil_monkey",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💋": {
+	name: "kiss mark",
+	slug: "kiss_mark",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💌": {
+	name: "love letter",
+	slug: "love_letter",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💘": {
+	name: "heart with arrow",
+	slug: "heart_with_arrow",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💝": {
+	name: "heart with ribbon",
+	slug: "heart_with_ribbon",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💖": {
+	name: "sparkling heart",
+	slug: "sparkling_heart",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💗": {
+	name: "growing heart",
+	slug: "growing_heart",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💓": {
+	name: "beating heart",
+	slug: "beating_heart",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💞": {
+	name: "revolving hearts",
+	slug: "revolving_hearts",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💕": {
+	name: "two hearts",
+	slug: "two_hearts",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💟": {
+	name: "heart decoration",
+	slug: "heart_decoration",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"❣️": {
+	name: "heart exclamation",
+	slug: "heart_exclamation",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"💔": {
+	name: "broken heart",
+	slug: "broken_heart",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"❤️": {
+	name: "red heart",
+	slug: "red_heart",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🧡": {
+	name: "orange heart",
+	slug: "orange_heart",
+	group: "Smileys & Emotion",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"💛": {
+	name: "yellow heart",
+	slug: "yellow_heart",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💚": {
+	name: "green heart",
+	slug: "green_heart",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💙": {
+	name: "blue heart",
+	slug: "blue_heart",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💜": {
+	name: "purple heart",
+	slug: "purple_heart",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🤎": {
+	name: "brown heart",
+	slug: "brown_heart",
+	group: "Smileys & Emotion",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🖤": {
+	name: "black heart",
+	slug: "black_heart",
+	group: "Smileys & Emotion",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🤍": {
+	name: "white heart",
+	slug: "white_heart",
+	group: "Smileys & Emotion",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"💯": {
+	name: "hundred points",
+	slug: "hundred_points",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💢": {
+	name: "anger symbol",
+	slug: "anger_symbol",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💥": {
+	name: "collision",
+	slug: "collision",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💫": {
+	name: "dizzy",
+	slug: "dizzy",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💦": {
+	name: "sweat droplets",
+	slug: "sweat_droplets",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💨": {
+	name: "dashing away",
+	slug: "dashing_away",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕳️": {
+	name: "hole",
+	slug: "hole",
+	group: "Smileys & Emotion",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"💣": {
+	name: "bomb",
+	slug: "bomb",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💬": {
+	name: "speech balloon",
+	slug: "speech_balloon",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👁️‍🗨️": {
+	name: "eye in speech bubble",
+	slug: "eye_in_speech_bubble",
+	group: "Smileys & Emotion",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🗨️": {
+	name: "left speech bubble",
+	slug: "left_speech_bubble",
+	group: "Smileys & Emotion",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🗯️": {
+	name: "right anger bubble",
+	slug: "right_anger_bubble",
+	group: "Smileys & Emotion",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"💭": {
+	name: "thought balloon",
+	slug: "thought_balloon",
+	group: "Smileys & Emotion",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"💤": {
+	name: "zzz",
+	slug: "zzz",
+	group: "Smileys & Emotion",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👋": {
+	name: "waving hand",
+	slug: "waving_hand",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🤚": {
+	name: "raised back of hand",
+	slug: "raised_back_of_hand",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"🖐️": {
+	name: "hand with fingers splayed",
+	slug: "hand_with_fingers_splayed",
+	group: "People & Body",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"✋": {
+	name: "raised hand",
+	slug: "raised_hand",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🖖": {
+	name: "vulcan salute",
+	slug: "vulcan_salute",
+	group: "People & Body",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👌": {
+	name: "OK hand",
+	slug: "ok_hand",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🤌": {
+	name: "pinched fingers",
+	slug: "pinched_fingers",
+	group: "People & Body",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "13.0"
+},
+	"🤏": {
+	name: "pinching hand",
+	slug: "pinching_hand",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"✌️": {
+	name: "victory hand",
+	slug: "victory_hand",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🤞": {
+	name: "crossed fingers",
+	slug: "crossed_fingers",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"🤟": {
+	name: "love-you gesture",
+	slug: "love_you_gesture",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🤘": {
+	name: "sign of the horns",
+	slug: "sign_of_the_horns",
+	group: "People & Body",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🤙": {
+	name: "call me hand",
+	slug: "call_me_hand",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"👈": {
+	name: "backhand index pointing left",
+	slug: "backhand_index_pointing_left",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👉": {
+	name: "backhand index pointing right",
+	slug: "backhand_index_pointing_right",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👆": {
+	name: "backhand index pointing up",
+	slug: "backhand_index_pointing_up",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🖕": {
+	name: "middle finger",
+	slug: "middle_finger",
+	group: "People & Body",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👇": {
+	name: "backhand index pointing down",
+	slug: "backhand_index_pointing_down",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"☝️": {
+	name: "index pointing up",
+	slug: "index_pointing_up",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👍": {
+	name: "thumbs up",
+	slug: "thumbs_up",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👎": {
+	name: "thumbs down",
+	slug: "thumbs_down",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"✊": {
+	name: "raised fist",
+	slug: "raised_fist",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👊": {
+	name: "oncoming fist",
+	slug: "oncoming_fist",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🤛": {
+	name: "left-facing fist",
+	slug: "left_facing_fist",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"🤜": {
+	name: "right-facing fist",
+	slug: "right_facing_fist",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"👏": {
+	name: "clapping hands",
+	slug: "clapping_hands",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🙌": {
+	name: "raising hands",
+	slug: "raising_hands",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👐": {
+	name: "open hands",
+	slug: "open_hands",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🤲": {
+	name: "palms up together",
+	slug: "palms_up_together",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🤝": {
+	name: "handshake",
+	slug: "handshake",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🙏": {
+	name: "folded hands",
+	slug: "folded_hands",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"✍️": {
+	name: "writing hand",
+	slug: "writing_hand",
+	group: "People & Body",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"💅": {
+	name: "nail polish",
+	slug: "nail_polish",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🤳": {
+	name: "selfie",
+	slug: "selfie",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"💪": {
+	name: "flexed biceps",
+	slug: "flexed_biceps",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🦾": {
+	name: "mechanical arm",
+	slug: "mechanical_arm",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🦿": {
+	name: "mechanical leg",
+	slug: "mechanical_leg",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🦵": {
+	name: "leg",
+	slug: "leg",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"🦶": {
+	name: "foot",
+	slug: "foot",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"👂": {
+	name: "ear",
+	slug: "ear",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🦻": {
+	name: "ear with hearing aid",
+	slug: "ear_with_hearing_aid",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"👃": {
+	name: "nose",
+	slug: "nose",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🧠": {
+	name: "brain",
+	slug: "brain",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🫀": {
+	name: "anatomical heart",
+	slug: "anatomical_heart",
+	group: "People & Body",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🫁": {
+	name: "lungs",
+	slug: "lungs",
+	group: "People & Body",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🦷": {
+	name: "tooth",
+	slug: "tooth",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🦴": {
+	name: "bone",
+	slug: "bone",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"👀": {
+	name: "eyes",
+	slug: "eyes",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👁️": {
+	name: "eye",
+	slug: "eye",
+	group: "People & Body",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"👅": {
+	name: "tongue",
+	slug: "tongue",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👄": {
+	name: "mouth",
+	slug: "mouth",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👶": {
+	name: "baby",
+	slug: "baby",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🧒": {
+	name: "child",
+	slug: "child",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"👦": {
+	name: "boy",
+	slug: "boy",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👧": {
+	name: "girl",
+	slug: "girl",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🧑": {
+	name: "person",
+	slug: "person",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"👱": {
+	name: "person blond hair",
+	slug: "person_blond_hair",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👨": {
+	name: "man",
+	slug: "man",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🧔": {
+	name: "person beard",
+	slug: "person_beard",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"👨‍🦰": {
+	name: "man red hair",
+	slug: "man_red_hair",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"👨‍🦱": {
+	name: "man curly hair",
+	slug: "man_curly_hair",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"👨‍🦳": {
+	name: "man white hair",
+	slug: "man_white_hair",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"👨‍🦲": {
+	name: "man bald",
+	slug: "man_bald",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"👩": {
+	name: "woman",
+	slug: "woman",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👩‍🦰": {
+	name: "woman red hair",
+	slug: "woman_red_hair",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"🧑‍🦰": {
+	name: "person red hair",
+	slug: "person_red_hair",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👩‍🦱": {
+	name: "woman curly hair",
+	slug: "woman_curly_hair",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"🧑‍🦱": {
+	name: "person curly hair",
+	slug: "person_curly_hair",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👩‍🦳": {
+	name: "woman white hair",
+	slug: "woman_white_hair",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"🧑‍🦳": {
+	name: "person white hair",
+	slug: "person_white_hair",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👩‍🦲": {
+	name: "woman bald",
+	slug: "woman_bald",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"🧑‍🦲": {
+	name: "person bald",
+	slug: "person_bald",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👱‍♀️": {
+	name: "woman blond hair",
+	slug: "woman_blond_hair",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👱‍♂️": {
+	name: "man blond hair",
+	slug: "man_blond_hair",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧓": {
+	name: "older person",
+	slug: "older_person",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"👴": {
+	name: "old man",
+	slug: "old_man",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👵": {
+	name: "old woman",
+	slug: "old_woman",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🙍": {
+	name: "person frowning",
+	slug: "person_frowning",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🙍‍♂️": {
+	name: "man frowning",
+	slug: "man_frowning",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🙍‍♀️": {
+	name: "woman frowning",
+	slug: "woman_frowning",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🙎": {
+	name: "person pouting",
+	slug: "person_pouting",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🙎‍♂️": {
+	name: "man pouting",
+	slug: "man_pouting",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🙎‍♀️": {
+	name: "woman pouting",
+	slug: "woman_pouting",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🙅": {
+	name: "person gesturing NO",
+	slug: "person_gesturing_no",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🙅‍♂️": {
+	name: "man gesturing NO",
+	slug: "man_gesturing_no",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🙅‍♀️": {
+	name: "woman gesturing NO",
+	slug: "woman_gesturing_no",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🙆": {
+	name: "person gesturing OK",
+	slug: "person_gesturing_ok",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🙆‍♂️": {
+	name: "man gesturing OK",
+	slug: "man_gesturing_ok",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🙆‍♀️": {
+	name: "woman gesturing OK",
+	slug: "woman_gesturing_ok",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"💁": {
+	name: "person tipping hand",
+	slug: "person_tipping_hand",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"💁‍♂️": {
+	name: "man tipping hand",
+	slug: "man_tipping_hand",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"💁‍♀️": {
+	name: "woman tipping hand",
+	slug: "woman_tipping_hand",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🙋": {
+	name: "person raising hand",
+	slug: "person_raising_hand",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🙋‍♂️": {
+	name: "man raising hand",
+	slug: "man_raising_hand",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🙋‍♀️": {
+	name: "woman raising hand",
+	slug: "woman_raising_hand",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧏": {
+	name: "deaf person",
+	slug: "deaf_person",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"🧏‍♂️": {
+	name: "deaf man",
+	slug: "deaf_man",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"🧏‍♀️": {
+	name: "deaf woman",
+	slug: "deaf_woman",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"🙇": {
+	name: "person bowing",
+	slug: "person_bowing",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🙇‍♂️": {
+	name: "man bowing",
+	slug: "man_bowing",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🙇‍♀️": {
+	name: "woman bowing",
+	slug: "woman_bowing",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🤦": {
+	name: "person facepalming",
+	slug: "person_facepalming",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"🤦‍♂️": {
+	name: "man facepalming",
+	slug: "man_facepalming",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🤦‍♀️": {
+	name: "woman facepalming",
+	slug: "woman_facepalming",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🤷": {
+	name: "person shrugging",
+	slug: "person_shrugging",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"🤷‍♂️": {
+	name: "man shrugging",
+	slug: "man_shrugging",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🤷‍♀️": {
+	name: "woman shrugging",
+	slug: "woman_shrugging",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍⚕️": {
+	name: "health worker",
+	slug: "health_worker",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍⚕️": {
+	name: "man health worker",
+	slug: "man_health_worker",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍⚕️": {
+	name: "woman health worker",
+	slug: "woman_health_worker",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍🎓": {
+	name: "student",
+	slug: "student",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍🎓": {
+	name: "man student",
+	slug: "man_student",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍🎓": {
+	name: "woman student",
+	slug: "woman_student",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍🏫": {
+	name: "teacher",
+	slug: "teacher",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍🏫": {
+	name: "man teacher",
+	slug: "man_teacher",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍🏫": {
+	name: "woman teacher",
+	slug: "woman_teacher",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍⚖️": {
+	name: "judge",
+	slug: "judge",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍⚖️": {
+	name: "man judge",
+	slug: "man_judge",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍⚖️": {
+	name: "woman judge",
+	slug: "woman_judge",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍🌾": {
+	name: "farmer",
+	slug: "farmer",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍🌾": {
+	name: "man farmer",
+	slug: "man_farmer",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍🌾": {
+	name: "woman farmer",
+	slug: "woman_farmer",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍🍳": {
+	name: "cook",
+	slug: "cook",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍🍳": {
+	name: "man cook",
+	slug: "man_cook",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍🍳": {
+	name: "woman cook",
+	slug: "woman_cook",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍🔧": {
+	name: "mechanic",
+	slug: "mechanic",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍🔧": {
+	name: "man mechanic",
+	slug: "man_mechanic",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍🔧": {
+	name: "woman mechanic",
+	slug: "woman_mechanic",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍🏭": {
+	name: "factory worker",
+	slug: "factory_worker",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍🏭": {
+	name: "man factory worker",
+	slug: "man_factory_worker",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍🏭": {
+	name: "woman factory worker",
+	slug: "woman_factory_worker",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍💼": {
+	name: "office worker",
+	slug: "office_worker",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍💼": {
+	name: "man office worker",
+	slug: "man_office_worker",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍💼": {
+	name: "woman office worker",
+	slug: "woman_office_worker",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍🔬": {
+	name: "scientist",
+	slug: "scientist",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍🔬": {
+	name: "man scientist",
+	slug: "man_scientist",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍🔬": {
+	name: "woman scientist",
+	slug: "woman_scientist",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍💻": {
+	name: "technologist",
+	slug: "technologist",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍💻": {
+	name: "man technologist",
+	slug: "man_technologist",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍💻": {
+	name: "woman technologist",
+	slug: "woman_technologist",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍🎤": {
+	name: "singer",
+	slug: "singer",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍🎤": {
+	name: "man singer",
+	slug: "man_singer",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍🎤": {
+	name: "woman singer",
+	slug: "woman_singer",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍🎨": {
+	name: "artist",
+	slug: "artist",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍🎨": {
+	name: "man artist",
+	slug: "man_artist",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍🎨": {
+	name: "woman artist",
+	slug: "woman_artist",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍✈️": {
+	name: "pilot",
+	slug: "pilot",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍✈️": {
+	name: "man pilot",
+	slug: "man_pilot",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍✈️": {
+	name: "woman pilot",
+	slug: "woman_pilot",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍🚀": {
+	name: "astronaut",
+	slug: "astronaut",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍🚀": {
+	name: "man astronaut",
+	slug: "man_astronaut",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍🚀": {
+	name: "woman astronaut",
+	slug: "woman_astronaut",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍🚒": {
+	name: "firefighter",
+	slug: "firefighter",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍🚒": {
+	name: "man firefighter",
+	slug: "man_firefighter",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👩‍🚒": {
+	name: "woman firefighter",
+	slug: "woman_firefighter",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👮": {
+	name: "police officer",
+	slug: "police_officer",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👮‍♂️": {
+	name: "man police officer",
+	slug: "man_police_officer",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👮‍♀️": {
+	name: "woman police officer",
+	slug: "woman_police_officer",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🕵️": {
+	name: "detective",
+	slug: "detective",
+	group: "People & Body",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "2.0"
+},
+	"🕵️‍♂️": {
+	name: "man detective",
+	slug: "man_detective",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🕵️‍♀️": {
+	name: "woman detective",
+	slug: "woman_detective",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"💂": {
+	name: "guard",
+	slug: "guard",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"💂‍♂️": {
+	name: "man guard",
+	slug: "man_guard",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"💂‍♀️": {
+	name: "woman guard",
+	slug: "woman_guard",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🥷": {
+	name: "ninja",
+	slug: "ninja",
+	group: "People & Body",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "13.0"
+},
+	"👷": {
+	name: "construction worker",
+	slug: "construction_worker",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👷‍♂️": {
+	name: "man construction worker",
+	slug: "man_construction_worker",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👷‍♀️": {
+	name: "woman construction worker",
+	slug: "woman_construction_worker",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🤴": {
+	name: "prince",
+	slug: "prince",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"👸": {
+	name: "princess",
+	slug: "princess",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👳": {
+	name: "person wearing turban",
+	slug: "person_wearing_turban",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👳‍♂️": {
+	name: "man wearing turban",
+	slug: "man_wearing_turban",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👳‍♀️": {
+	name: "woman wearing turban",
+	slug: "woman_wearing_turban",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👲": {
+	name: "person with skullcap",
+	slug: "person_with_skullcap",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🧕": {
+	name: "woman with headscarf",
+	slug: "woman_with_headscarf",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🤵": {
+	name: "person in tuxedo",
+	slug: "person_in_tuxedo",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"🤵‍♂️": {
+	name: "man in tuxedo",
+	slug: "man_in_tuxedo",
+	group: "People & Body",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "13.0"
+},
+	"🤵‍♀️": {
+	name: "woman in tuxedo",
+	slug: "woman_in_tuxedo",
+	group: "People & Body",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "13.0"
+},
+	"👰": {
+	name: "person with veil",
+	slug: "person_with_veil",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"👰‍♂️": {
+	name: "man with veil",
+	slug: "man_with_veil",
+	group: "People & Body",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "13.0"
+},
+	"👰‍♀️": {
+	name: "woman with veil",
+	slug: "woman_with_veil",
+	group: "People & Body",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "13.0"
+},
+	"🤰": {
+	name: "pregnant woman",
+	slug: "pregnant_woman",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"🤱": {
+	name: "breast-feeding",
+	slug: "breast_feeding",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"👩‍🍼": {
+	name: "woman feeding baby",
+	slug: "woman_feeding_baby",
+	group: "People & Body",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "13.0"
+},
+	"👨‍🍼": {
+	name: "man feeding baby",
+	slug: "man_feeding_baby",
+	group: "People & Body",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "13.0"
+},
+	"🧑‍🍼": {
+	name: "person feeding baby",
+	slug: "person_feeding_baby",
+	group: "People & Body",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "13.0"
+},
+	"👼": {
+	name: "baby angel",
+	slug: "baby_angel",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🎅": {
+	name: "Santa Claus",
+	slug: "santa_claus",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🤶": {
+	name: "Mrs. Claus",
+	slug: "mrs_claus",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"🧑‍🎄": {
+	name: "mx claus",
+	slug: "mx_claus",
+	group: "People & Body",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "13.0"
+},
+	"🦸": {
+	name: "superhero",
+	slug: "superhero",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"🦸‍♂️": {
+	name: "man superhero",
+	slug: "man_superhero",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"🦸‍♀️": {
+	name: "woman superhero",
+	slug: "woman_superhero",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"🦹": {
+	name: "supervillain",
+	slug: "supervillain",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"🦹‍♂️": {
+	name: "man supervillain",
+	slug: "man_supervillain",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"🦹‍♀️": {
+	name: "woman supervillain",
+	slug: "woman_supervillain",
+	group: "People & Body",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "11.0"
+},
+	"🧙": {
+	name: "mage",
+	slug: "mage",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧙‍♂️": {
+	name: "man mage",
+	slug: "man_mage",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧙‍♀️": {
+	name: "woman mage",
+	slug: "woman_mage",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧚": {
+	name: "fairy",
+	slug: "fairy",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧚‍♂️": {
+	name: "man fairy",
+	slug: "man_fairy",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧚‍♀️": {
+	name: "woman fairy",
+	slug: "woman_fairy",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧛": {
+	name: "vampire",
+	slug: "vampire",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧛‍♂️": {
+	name: "man vampire",
+	slug: "man_vampire",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧛‍♀️": {
+	name: "woman vampire",
+	slug: "woman_vampire",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧜": {
+	name: "merperson",
+	slug: "merperson",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧜‍♂️": {
+	name: "merman",
+	slug: "merman",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧜‍♀️": {
+	name: "mermaid",
+	slug: "mermaid",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧝": {
+	name: "elf",
+	slug: "elf",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧝‍♂️": {
+	name: "man elf",
+	slug: "man_elf",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧝‍♀️": {
+	name: "woman elf",
+	slug: "woman_elf",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧞": {
+	name: "genie",
+	slug: "genie",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🧞‍♂️": {
+	name: "man genie",
+	slug: "man_genie",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🧞‍♀️": {
+	name: "woman genie",
+	slug: "woman_genie",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🧟": {
+	name: "zombie",
+	slug: "zombie",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🧟‍♂️": {
+	name: "man zombie",
+	slug: "man_zombie",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🧟‍♀️": {
+	name: "woman zombie",
+	slug: "woman_zombie",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"💆": {
+	name: "person getting massage",
+	slug: "person_getting_massage",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"💆‍♂️": {
+	name: "man getting massage",
+	slug: "man_getting_massage",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"💆‍♀️": {
+	name: "woman getting massage",
+	slug: "woman_getting_massage",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"💇": {
+	name: "person getting haircut",
+	slug: "person_getting_haircut",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"💇‍♂️": {
+	name: "man getting haircut",
+	slug: "man_getting_haircut",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"💇‍♀️": {
+	name: "woman getting haircut",
+	slug: "woman_getting_haircut",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🚶": {
+	name: "person walking",
+	slug: "person_walking",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🚶‍♂️": {
+	name: "man walking",
+	slug: "man_walking",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🚶‍♀️": {
+	name: "woman walking",
+	slug: "woman_walking",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧍": {
+	name: "person standing",
+	slug: "person_standing",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"🧍‍♂️": {
+	name: "man standing",
+	slug: "man_standing",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"🧍‍♀️": {
+	name: "woman standing",
+	slug: "woman_standing",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"🧎": {
+	name: "person kneeling",
+	slug: "person_kneeling",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"🧎‍♂️": {
+	name: "man kneeling",
+	slug: "man_kneeling",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"🧎‍♀️": {
+	name: "woman kneeling",
+	slug: "woman_kneeling",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"🧑‍🦯": {
+	name: "person with white cane",
+	slug: "person_with_white_cane",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍🦯": {
+	name: "man with white cane",
+	slug: "man_with_white_cane",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"👩‍🦯": {
+	name: "woman with white cane",
+	slug: "woman_with_white_cane",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"🧑‍🦼": {
+	name: "person in motorized wheelchair",
+	slug: "person_in_motorized_wheelchair",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍🦼": {
+	name: "man in motorized wheelchair",
+	slug: "man_in_motorized_wheelchair",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"👩‍🦼": {
+	name: "woman in motorized wheelchair",
+	slug: "woman_in_motorized_wheelchair",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"🧑‍🦽": {
+	name: "person in manual wheelchair",
+	slug: "person_in_manual_wheelchair",
+	group: "People & Body",
+	emoji_version: "12.1",
+	unicode_version: "12.1",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.1"
+},
+	"👨‍🦽": {
+	name: "man in manual wheelchair",
+	slug: "man_in_manual_wheelchair",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"👩‍🦽": {
+	name: "woman in manual wheelchair",
+	slug: "woman_in_manual_wheelchair",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"🏃": {
+	name: "person running",
+	slug: "person_running",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🏃‍♂️": {
+	name: "man running",
+	slug: "man_running",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🏃‍♀️": {
+	name: "woman running",
+	slug: "woman_running",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"💃": {
+	name: "woman dancing",
+	slug: "woman_dancing",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🕺": {
+	name: "man dancing",
+	slug: "man_dancing",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"🕴️": {
+	name: "person in suit levitating",
+	slug: "person_in_suit_levitating",
+	group: "People & Body",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"👯": {
+	name: "people with bunny ears",
+	slug: "people_with_bunny_ears",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👯‍♂️": {
+	name: "men with bunny ears",
+	slug: "men_with_bunny_ears",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"👯‍♀️": {
+	name: "women with bunny ears",
+	slug: "women_with_bunny_ears",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"🧖": {
+	name: "person in steamy room",
+	slug: "person_in_steamy_room",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧖‍♂️": {
+	name: "man in steamy room",
+	slug: "man_in_steamy_room",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧖‍♀️": {
+	name: "woman in steamy room",
+	slug: "woman_in_steamy_room",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧗": {
+	name: "person climbing",
+	slug: "person_climbing",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧗‍♂️": {
+	name: "man climbing",
+	slug: "man_climbing",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧗‍♀️": {
+	name: "woman climbing",
+	slug: "woman_climbing",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🤺": {
+	name: "person fencing",
+	slug: "person_fencing",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🏇": {
+	name: "horse racing",
+	slug: "horse_racing",
+	group: "People & Body",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"⛷️": {
+	name: "skier",
+	slug: "skier",
+	group: "People & Body",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🏂": {
+	name: "snowboarder",
+	slug: "snowboarder",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🏌️": {
+	name: "person golfing",
+	slug: "person_golfing",
+	group: "People & Body",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🏌️‍♂️": {
+	name: "man golfing",
+	slug: "man_golfing",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🏌️‍♀️": {
+	name: "woman golfing",
+	slug: "woman_golfing",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🏄": {
+	name: "person surfing",
+	slug: "person_surfing",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🏄‍♂️": {
+	name: "man surfing",
+	slug: "man_surfing",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🏄‍♀️": {
+	name: "woman surfing",
+	slug: "woman_surfing",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🚣": {
+	name: "person rowing boat",
+	slug: "person_rowing_boat",
+	group: "People & Body",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🚣‍♂️": {
+	name: "man rowing boat",
+	slug: "man_rowing_boat",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🚣‍♀️": {
+	name: "woman rowing boat",
+	slug: "woman_rowing_boat",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🏊": {
+	name: "person swimming",
+	slug: "person_swimming",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🏊‍♂️": {
+	name: "man swimming",
+	slug: "man_swimming",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🏊‍♀️": {
+	name: "woman swimming",
+	slug: "woman_swimming",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"⛹️": {
+	name: "person bouncing ball",
+	slug: "person_bouncing_ball",
+	group: "People & Body",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "2.0"
+},
+	"⛹️‍♂️": {
+	name: "man bouncing ball",
+	slug: "man_bouncing_ball",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"⛹️‍♀️": {
+	name: "woman bouncing ball",
+	slug: "woman_bouncing_ball",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🏋️": {
+	name: "person lifting weights",
+	slug: "person_lifting_weights",
+	group: "People & Body",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "2.0"
+},
+	"🏋️‍♂️": {
+	name: "man lifting weights",
+	slug: "man_lifting_weights",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🏋️‍♀️": {
+	name: "woman lifting weights",
+	slug: "woman_lifting_weights",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🚴": {
+	name: "person biking",
+	slug: "person_biking",
+	group: "People & Body",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🚴‍♂️": {
+	name: "man biking",
+	slug: "man_biking",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🚴‍♀️": {
+	name: "woman biking",
+	slug: "woman_biking",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🚵": {
+	name: "person mountain biking",
+	slug: "person_mountain_biking",
+	group: "People & Body",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🚵‍♂️": {
+	name: "man mountain biking",
+	slug: "man_mountain_biking",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🚵‍♀️": {
+	name: "woman mountain biking",
+	slug: "woman_mountain_biking",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🤸": {
+	name: "person cartwheeling",
+	slug: "person_cartwheeling",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"🤸‍♂️": {
+	name: "man cartwheeling",
+	slug: "man_cartwheeling",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🤸‍♀️": {
+	name: "woman cartwheeling",
+	slug: "woman_cartwheeling",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🤼": {
+	name: "people wrestling",
+	slug: "people_wrestling",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🤼‍♂️": {
+	name: "men wrestling",
+	slug: "men_wrestling",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"🤼‍♀️": {
+	name: "women wrestling",
+	slug: "women_wrestling",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"🤽": {
+	name: "person playing water polo",
+	slug: "person_playing_water_polo",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"🤽‍♂️": {
+	name: "man playing water polo",
+	slug: "man_playing_water_polo",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🤽‍♀️": {
+	name: "woman playing water polo",
+	slug: "woman_playing_water_polo",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🤾": {
+	name: "person playing handball",
+	slug: "person_playing_handball",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"🤾‍♂️": {
+	name: "man playing handball",
+	slug: "man_playing_handball",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🤾‍♀️": {
+	name: "woman playing handball",
+	slug: "woman_playing_handball",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🤹": {
+	name: "person juggling",
+	slug: "person_juggling",
+	group: "People & Body",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "3.0"
+},
+	"🤹‍♂️": {
+	name: "man juggling",
+	slug: "man_juggling",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🤹‍♀️": {
+	name: "woman juggling",
+	slug: "woman_juggling",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧘": {
+	name: "person in lotus position",
+	slug: "person_in_lotus_position",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧘‍♂️": {
+	name: "man in lotus position",
+	slug: "man_in_lotus_position",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🧘‍♀️": {
+	name: "woman in lotus position",
+	slug: "woman_in_lotus_position",
+	group: "People & Body",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "5.0"
+},
+	"🛀": {
+	name: "person taking bath",
+	slug: "person_taking_bath",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "1.0"
+},
+	"🛌": {
+	name: "person in bed",
+	slug: "person_in_bed",
+	group: "People & Body",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "4.0"
+},
+	"🧑‍🤝‍🧑": {
+	name: "people holding hands",
+	slug: "people_holding_hands",
+	group: "People & Body",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"👭": {
+	name: "women holding hands",
+	slug: "women_holding_hands",
+	group: "People & Body",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"👫": {
+	name: "woman and man holding hands",
+	slug: "woman_and_man_holding_hands",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"👬": {
+	name: "men holding hands",
+	slug: "men_holding_hands",
+	group: "People & Body",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: true,
+	skin_tone_support_unicode_version: "12.0"
+},
+	"💏": {
+	name: "kiss",
+	slug: "kiss",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👩‍❤️‍💋‍👨": {
+	name: "kiss woman, man",
+	slug: "kiss_woman_man",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👨‍❤️‍💋‍👨": {
+	name: "kiss man, man",
+	slug: "kiss_man_man",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👩‍❤️‍💋‍👩": {
+	name: "kiss woman, woman",
+	slug: "kiss_woman_woman",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"💑": {
+	name: "couple with heart",
+	slug: "couple_with_heart",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👩‍❤️‍👨": {
+	name: "couple with heart woman, man",
+	slug: "couple_with_heart_woman_man",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👨‍❤️‍👨": {
+	name: "couple with heart man, man",
+	slug: "couple_with_heart_man_man",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👩‍❤️‍👩": {
+	name: "couple with heart woman, woman",
+	slug: "couple_with_heart_woman_woman",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👪": {
+	name: "family",
+	slug: "family",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👨‍👩‍👦": {
+	name: "family man, woman, boy",
+	slug: "family_man_woman_boy",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👨‍👩‍👧": {
+	name: "family man, woman, girl",
+	slug: "family_man_woman_girl",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👨‍👩‍👧‍👦": {
+	name: "family man, woman, girl, boy",
+	slug: "family_man_woman_girl_boy",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👨‍👩‍👦‍👦": {
+	name: "family man, woman, boy, boy",
+	slug: "family_man_woman_boy_boy",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👨‍👩‍👧‍👧": {
+	name: "family man, woman, girl, girl",
+	slug: "family_man_woman_girl_girl",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👨‍👨‍👦": {
+	name: "family man, man, boy",
+	slug: "family_man_man_boy",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👨‍👨‍👧": {
+	name: "family man, man, girl",
+	slug: "family_man_man_girl",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👨‍👨‍👧‍👦": {
+	name: "family man, man, girl, boy",
+	slug: "family_man_man_girl_boy",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👨‍👨‍👦‍👦": {
+	name: "family man, man, boy, boy",
+	slug: "family_man_man_boy_boy",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👨‍👨‍👧‍👧": {
+	name: "family man, man, girl, girl",
+	slug: "family_man_man_girl_girl",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👩‍👩‍👦": {
+	name: "family woman, woman, boy",
+	slug: "family_woman_woman_boy",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👩‍👩‍👧": {
+	name: "family woman, woman, girl",
+	slug: "family_woman_woman_girl",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👩‍👩‍👧‍👦": {
+	name: "family woman, woman, girl, boy",
+	slug: "family_woman_woman_girl_boy",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👩‍👩‍👦‍👦": {
+	name: "family woman, woman, boy, boy",
+	slug: "family_woman_woman_boy_boy",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👩‍👩‍👧‍👧": {
+	name: "family woman, woman, girl, girl",
+	slug: "family_woman_woman_girl_girl",
+	group: "People & Body",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"👨‍👦": {
+	name: "family man, boy",
+	slug: "family_man_boy",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"👨‍👦‍👦": {
+	name: "family man, boy, boy",
+	slug: "family_man_boy_boy",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"👨‍👧": {
+	name: "family man, girl",
+	slug: "family_man_girl",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"👨‍👧‍👦": {
+	name: "family man, girl, boy",
+	slug: "family_man_girl_boy",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"👨‍👧‍👧": {
+	name: "family man, girl, girl",
+	slug: "family_man_girl_girl",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"👩‍👦": {
+	name: "family woman, boy",
+	slug: "family_woman_boy",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"👩‍👦‍👦": {
+	name: "family woman, boy, boy",
+	slug: "family_woman_boy_boy",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"👩‍👧": {
+	name: "family woman, girl",
+	slug: "family_woman_girl",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"👩‍👧‍👦": {
+	name: "family woman, girl, boy",
+	slug: "family_woman_girl_boy",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"👩‍👧‍👧": {
+	name: "family woman, girl, girl",
+	slug: "family_woman_girl_girl",
+	group: "People & Body",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"🗣️": {
+	name: "speaking head",
+	slug: "speaking_head",
+	group: "People & Body",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"👤": {
+	name: "bust in silhouette",
+	slug: "bust_in_silhouette",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👥": {
+	name: "busts in silhouette",
+	slug: "busts_in_silhouette",
+	group: "People & Body",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🫂": {
+	name: "people hugging",
+	slug: "people_hugging",
+	group: "People & Body",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"👣": {
+	name: "footprints",
+	slug: "footprints",
+	group: "People & Body",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐵": {
+	name: "monkey face",
+	slug: "monkey_face",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐒": {
+	name: "monkey",
+	slug: "monkey",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🦍": {
+	name: "gorilla",
+	slug: "gorilla",
+	group: "Animals & Nature",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🦧": {
+	name: "orangutan",
+	slug: "orangutan",
+	group: "Animals & Nature",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🐶": {
+	name: "dog face",
+	slug: "dog_face",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐕": {
+	name: "dog",
+	slug: "dog",
+	group: "Animals & Nature",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🦮": {
+	name: "guide dog",
+	slug: "guide_dog",
+	group: "Animals & Nature",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🐕‍🦺": {
+	name: "service dog",
+	slug: "service_dog",
+	group: "Animals & Nature",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🐩": {
+	name: "poodle",
+	slug: "poodle",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐺": {
+	name: "wolf",
+	slug: "wolf",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🦊": {
+	name: "fox",
+	slug: "fox",
+	group: "Animals & Nature",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🦝": {
+	name: "raccoon",
+	slug: "raccoon",
+	group: "Animals & Nature",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🐱": {
+	name: "cat face",
+	slug: "cat_face",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐈": {
+	name: "cat",
+	slug: "cat",
+	group: "Animals & Nature",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🐈‍⬛": {
+	name: "black cat",
+	slug: "black_cat",
+	group: "Animals & Nature",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🦁": {
+	name: "lion",
+	slug: "lion",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐯": {
+	name: "tiger face",
+	slug: "tiger_face",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐅": {
+	name: "tiger",
+	slug: "tiger",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐆": {
+	name: "leopard",
+	slug: "leopard",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐴": {
+	name: "horse face",
+	slug: "horse_face",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐎": {
+	name: "horse",
+	slug: "horse",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🦄": {
+	name: "unicorn",
+	slug: "unicorn",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🦓": {
+	name: "zebra",
+	slug: "zebra",
+	group: "Animals & Nature",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🦌": {
+	name: "deer",
+	slug: "deer",
+	group: "Animals & Nature",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🦬": {
+	name: "bison",
+	slug: "bison",
+	group: "Animals & Nature",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🐮": {
+	name: "cow face",
+	slug: "cow_face",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐂": {
+	name: "ox",
+	slug: "ox",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐃": {
+	name: "water buffalo",
+	slug: "water_buffalo",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐄": {
+	name: "cow",
+	slug: "cow",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐷": {
+	name: "pig face",
+	slug: "pig_face",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐖": {
+	name: "pig",
+	slug: "pig",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐗": {
+	name: "boar",
+	slug: "boar",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐽": {
+	name: "pig nose",
+	slug: "pig_nose",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐏": {
+	name: "ram",
+	slug: "ram",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐑": {
+	name: "ewe",
+	slug: "ewe",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐐": {
+	name: "goat",
+	slug: "goat",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐪": {
+	name: "camel",
+	slug: "camel",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐫": {
+	name: "two-hump camel",
+	slug: "two_hump_camel",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🦙": {
+	name: "llama",
+	slug: "llama",
+	group: "Animals & Nature",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🦒": {
+	name: "giraffe",
+	slug: "giraffe",
+	group: "Animals & Nature",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🐘": {
+	name: "elephant",
+	slug: "elephant",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🦣": {
+	name: "mammoth",
+	slug: "mammoth",
+	group: "Animals & Nature",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🦏": {
+	name: "rhinoceros",
+	slug: "rhinoceros",
+	group: "Animals & Nature",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🦛": {
+	name: "hippopotamus",
+	slug: "hippopotamus",
+	group: "Animals & Nature",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🐭": {
+	name: "mouse face",
+	slug: "mouse_face",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐁": {
+	name: "mouse",
+	slug: "mouse",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐀": {
+	name: "rat",
+	slug: "rat",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐹": {
+	name: "hamster",
+	slug: "hamster",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐰": {
+	name: "rabbit face",
+	slug: "rabbit_face",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐇": {
+	name: "rabbit",
+	slug: "rabbit",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐿️": {
+	name: "chipmunk",
+	slug: "chipmunk",
+	group: "Animals & Nature",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🦫": {
+	name: "beaver",
+	slug: "beaver",
+	group: "Animals & Nature",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🦔": {
+	name: "hedgehog",
+	slug: "hedgehog",
+	group: "Animals & Nature",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🦇": {
+	name: "bat",
+	slug: "bat",
+	group: "Animals & Nature",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🐻": {
+	name: "bear",
+	slug: "bear",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐻‍❄️": {
+	name: "polar bear",
+	slug: "polar_bear",
+	group: "Animals & Nature",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🐨": {
+	name: "koala",
+	slug: "koala",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐼": {
+	name: "panda",
+	slug: "panda",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🦥": {
+	name: "sloth",
+	slug: "sloth",
+	group: "Animals & Nature",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🦦": {
+	name: "otter",
+	slug: "otter",
+	group: "Animals & Nature",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🦨": {
+	name: "skunk",
+	slug: "skunk",
+	group: "Animals & Nature",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🦘": {
+	name: "kangaroo",
+	slug: "kangaroo",
+	group: "Animals & Nature",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🦡": {
+	name: "badger",
+	slug: "badger",
+	group: "Animals & Nature",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🐾": {
+	name: "paw prints",
+	slug: "paw_prints",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🦃": {
+	name: "turkey",
+	slug: "turkey",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐔": {
+	name: "chicken",
+	slug: "chicken",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐓": {
+	name: "rooster",
+	slug: "rooster",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐣": {
+	name: "hatching chick",
+	slug: "hatching_chick",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐤": {
+	name: "baby chick",
+	slug: "baby_chick",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐥": {
+	name: "front-facing baby chick",
+	slug: "front_facing_baby_chick",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐦": {
+	name: "bird",
+	slug: "bird",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐧": {
+	name: "penguin",
+	slug: "penguin",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕊️": {
+	name: "dove",
+	slug: "dove",
+	group: "Animals & Nature",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🦅": {
+	name: "eagle",
+	slug: "eagle",
+	group: "Animals & Nature",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🦆": {
+	name: "duck",
+	slug: "duck",
+	group: "Animals & Nature",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🦢": {
+	name: "swan",
+	slug: "swan",
+	group: "Animals & Nature",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🦉": {
+	name: "owl",
+	slug: "owl",
+	group: "Animals & Nature",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🦤": {
+	name: "dodo",
+	slug: "dodo",
+	group: "Animals & Nature",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🪶": {
+	name: "feather",
+	slug: "feather",
+	group: "Animals & Nature",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🦩": {
+	name: "flamingo",
+	slug: "flamingo",
+	group: "Animals & Nature",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🦚": {
+	name: "peacock",
+	slug: "peacock",
+	group: "Animals & Nature",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🦜": {
+	name: "parrot",
+	slug: "parrot",
+	group: "Animals & Nature",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🐸": {
+	name: "frog",
+	slug: "frog",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐊": {
+	name: "crocodile",
+	slug: "crocodile",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐢": {
+	name: "turtle",
+	slug: "turtle",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🦎": {
+	name: "lizard",
+	slug: "lizard",
+	group: "Animals & Nature",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🐍": {
+	name: "snake",
+	slug: "snake",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐲": {
+	name: "dragon face",
+	slug: "dragon_face",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐉": {
+	name: "dragon",
+	slug: "dragon",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🦕": {
+	name: "sauropod",
+	slug: "sauropod",
+	group: "Animals & Nature",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🦖": {
+	name: "T-Rex",
+	slug: "t_rex",
+	group: "Animals & Nature",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🐳": {
+	name: "spouting whale",
+	slug: "spouting_whale",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐋": {
+	name: "whale",
+	slug: "whale",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🐬": {
+	name: "dolphin",
+	slug: "dolphin",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🦭": {
+	name: "seal",
+	slug: "seal",
+	group: "Animals & Nature",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🐟": {
+	name: "fish",
+	slug: "fish",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐠": {
+	name: "tropical fish",
+	slug: "tropical_fish",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐡": {
+	name: "blowfish",
+	slug: "blowfish",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🦈": {
+	name: "shark",
+	slug: "shark",
+	group: "Animals & Nature",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🐙": {
+	name: "octopus",
+	slug: "octopus",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐚": {
+	name: "spiral shell",
+	slug: "spiral_shell",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐌": {
+	name: "snail",
+	slug: "snail",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🦋": {
+	name: "butterfly",
+	slug: "butterfly",
+	group: "Animals & Nature",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🐛": {
+	name: "bug",
+	slug: "bug",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐜": {
+	name: "ant",
+	slug: "ant",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🐝": {
+	name: "honeybee",
+	slug: "honeybee",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🪲": {
+	name: "beetle",
+	slug: "beetle",
+	group: "Animals & Nature",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🐞": {
+	name: "lady beetle",
+	slug: "lady_beetle",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🦗": {
+	name: "cricket",
+	slug: "cricket",
+	group: "Animals & Nature",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🪳": {
+	name: "cockroach",
+	slug: "cockroach",
+	group: "Animals & Nature",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🕷️": {
+	name: "spider",
+	slug: "spider",
+	group: "Animals & Nature",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🕸️": {
+	name: "spider web",
+	slug: "spider_web",
+	group: "Animals & Nature",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🦂": {
+	name: "scorpion",
+	slug: "scorpion",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🦟": {
+	name: "mosquito",
+	slug: "mosquito",
+	group: "Animals & Nature",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🪰": {
+	name: "fly",
+	slug: "fly",
+	group: "Animals & Nature",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🪱": {
+	name: "worm",
+	slug: "worm",
+	group: "Animals & Nature",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🦠": {
+	name: "microbe",
+	slug: "microbe",
+	group: "Animals & Nature",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"💐": {
+	name: "bouquet",
+	slug: "bouquet",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌸": {
+	name: "cherry blossom",
+	slug: "cherry_blossom",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💮": {
+	name: "white flower",
+	slug: "white_flower",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏵️": {
+	name: "rosette",
+	slug: "rosette",
+	group: "Animals & Nature",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌹": {
+	name: "rose",
+	slug: "rose",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥀": {
+	name: "wilted flower",
+	slug: "wilted_flower",
+	group: "Animals & Nature",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🌺": {
+	name: "hibiscus",
+	slug: "hibiscus",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌻": {
+	name: "sunflower",
+	slug: "sunflower",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌼": {
+	name: "blossom",
+	slug: "blossom",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌷": {
+	name: "tulip",
+	slug: "tulip",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌱": {
+	name: "seedling",
+	slug: "seedling",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🪴": {
+	name: "potted plant",
+	slug: "potted_plant",
+	group: "Animals & Nature",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🌲": {
+	name: "evergreen tree",
+	slug: "evergreen_tree",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🌳": {
+	name: "deciduous tree",
+	slug: "deciduous_tree",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🌴": {
+	name: "palm tree",
+	slug: "palm_tree",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌵": {
+	name: "cactus",
+	slug: "cactus",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌾": {
+	name: "sheaf of rice",
+	slug: "sheaf_of_rice",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌿": {
+	name: "herb",
+	slug: "herb",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"☘️": {
+	name: "shamrock",
+	slug: "shamrock",
+	group: "Animals & Nature",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🍀": {
+	name: "four leaf clover",
+	slug: "four_leaf_clover",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍁": {
+	name: "maple leaf",
+	slug: "maple_leaf",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍂": {
+	name: "fallen leaf",
+	slug: "fallen_leaf",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍃": {
+	name: "leaf fluttering in wind",
+	slug: "leaf_fluttering_in_wind",
+	group: "Animals & Nature",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍇": {
+	name: "grapes",
+	slug: "grapes",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍈": {
+	name: "melon",
+	slug: "melon",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍉": {
+	name: "watermelon",
+	slug: "watermelon",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍊": {
+	name: "tangerine",
+	slug: "tangerine",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍋": {
+	name: "lemon",
+	slug: "lemon",
+	group: "Food & Drink",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🍌": {
+	name: "banana",
+	slug: "banana",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍍": {
+	name: "pineapple",
+	slug: "pineapple",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥭": {
+	name: "mango",
+	slug: "mango",
+	group: "Food & Drink",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🍎": {
+	name: "red apple",
+	slug: "red_apple",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍏": {
+	name: "green apple",
+	slug: "green_apple",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍐": {
+	name: "pear",
+	slug: "pear",
+	group: "Food & Drink",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🍑": {
+	name: "peach",
+	slug: "peach",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍒": {
+	name: "cherries",
+	slug: "cherries",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍓": {
+	name: "strawberry",
+	slug: "strawberry",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🫐": {
+	name: "blueberries",
+	slug: "blueberries",
+	group: "Food & Drink",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🥝": {
+	name: "kiwi fruit",
+	slug: "kiwi_fruit",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🍅": {
+	name: "tomato",
+	slug: "tomato",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🫒": {
+	name: "olive",
+	slug: "olive",
+	group: "Food & Drink",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🥥": {
+	name: "coconut",
+	slug: "coconut",
+	group: "Food & Drink",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🥑": {
+	name: "avocado",
+	slug: "avocado",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🍆": {
+	name: "eggplant",
+	slug: "eggplant",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥔": {
+	name: "potato",
+	slug: "potato",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🥕": {
+	name: "carrot",
+	slug: "carrot",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🌽": {
+	name: "ear of corn",
+	slug: "ear_of_corn",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌶️": {
+	name: "hot pepper",
+	slug: "hot_pepper",
+	group: "Food & Drink",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🫑": {
+	name: "bell pepper",
+	slug: "bell_pepper",
+	group: "Food & Drink",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🥒": {
+	name: "cucumber",
+	slug: "cucumber",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🥬": {
+	name: "leafy green",
+	slug: "leafy_green",
+	group: "Food & Drink",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🥦": {
+	name: "broccoli",
+	slug: "broccoli",
+	group: "Food & Drink",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🧄": {
+	name: "garlic",
+	slug: "garlic",
+	group: "Food & Drink",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🧅": {
+	name: "onion",
+	slug: "onion",
+	group: "Food & Drink",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🍄": {
+	name: "mushroom",
+	slug: "mushroom",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥜": {
+	name: "peanuts",
+	slug: "peanuts",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🌰": {
+	name: "chestnut",
+	slug: "chestnut",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍞": {
+	name: "bread",
+	slug: "bread",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥐": {
+	name: "croissant",
+	slug: "croissant",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🥖": {
+	name: "baguette bread",
+	slug: "baguette_bread",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🫓": {
+	name: "flatbread",
+	slug: "flatbread",
+	group: "Food & Drink",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🥨": {
+	name: "pretzel",
+	slug: "pretzel",
+	group: "Food & Drink",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🥯": {
+	name: "bagel",
+	slug: "bagel",
+	group: "Food & Drink",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🥞": {
+	name: "pancakes",
+	slug: "pancakes",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🧇": {
+	name: "waffle",
+	slug: "waffle",
+	group: "Food & Drink",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🧀": {
+	name: "cheese wedge",
+	slug: "cheese_wedge",
+	group: "Food & Drink",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🍖": {
+	name: "meat on bone",
+	slug: "meat_on_bone",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍗": {
+	name: "poultry leg",
+	slug: "poultry_leg",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥩": {
+	name: "cut of meat",
+	slug: "cut_of_meat",
+	group: "Food & Drink",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🥓": {
+	name: "bacon",
+	slug: "bacon",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🍔": {
+	name: "hamburger",
+	slug: "hamburger",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍟": {
+	name: "french fries",
+	slug: "french_fries",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍕": {
+	name: "pizza",
+	slug: "pizza",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌭": {
+	name: "hot dog",
+	slug: "hot_dog",
+	group: "Food & Drink",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🥪": {
+	name: "sandwich",
+	slug: "sandwich",
+	group: "Food & Drink",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🌮": {
+	name: "taco",
+	slug: "taco",
+	group: "Food & Drink",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🌯": {
+	name: "burrito",
+	slug: "burrito",
+	group: "Food & Drink",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🫔": {
+	name: "tamale",
+	slug: "tamale",
+	group: "Food & Drink",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🥙": {
+	name: "stuffed flatbread",
+	slug: "stuffed_flatbread",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🧆": {
+	name: "falafel",
+	slug: "falafel",
+	group: "Food & Drink",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🥚": {
+	name: "egg",
+	slug: "egg",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🍳": {
+	name: "cooking",
+	slug: "cooking",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥘": {
+	name: "shallow pan of food",
+	slug: "shallow_pan_of_food",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🍲": {
+	name: "pot of food",
+	slug: "pot_of_food",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🫕": {
+	name: "fondue",
+	slug: "fondue",
+	group: "Food & Drink",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🥣": {
+	name: "bowl with spoon",
+	slug: "bowl_with_spoon",
+	group: "Food & Drink",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🥗": {
+	name: "green salad",
+	slug: "green_salad",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🍿": {
+	name: "popcorn",
+	slug: "popcorn",
+	group: "Food & Drink",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🧈": {
+	name: "butter",
+	slug: "butter",
+	group: "Food & Drink",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🧂": {
+	name: "salt",
+	slug: "salt",
+	group: "Food & Drink",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🥫": {
+	name: "canned food",
+	slug: "canned_food",
+	group: "Food & Drink",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🍱": {
+	name: "bento box",
+	slug: "bento_box",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍘": {
+	name: "rice cracker",
+	slug: "rice_cracker",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍙": {
+	name: "rice ball",
+	slug: "rice_ball",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍚": {
+	name: "cooked rice",
+	slug: "cooked_rice",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍛": {
+	name: "curry rice",
+	slug: "curry_rice",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍜": {
+	name: "steaming bowl",
+	slug: "steaming_bowl",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍝": {
+	name: "spaghetti",
+	slug: "spaghetti",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍠": {
+	name: "roasted sweet potato",
+	slug: "roasted_sweet_potato",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍢": {
+	name: "oden",
+	slug: "oden",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍣": {
+	name: "sushi",
+	slug: "sushi",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍤": {
+	name: "fried shrimp",
+	slug: "fried_shrimp",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍥": {
+	name: "fish cake with swirl",
+	slug: "fish_cake_with_swirl",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥮": {
+	name: "moon cake",
+	slug: "moon_cake",
+	group: "Food & Drink",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🍡": {
+	name: "dango",
+	slug: "dango",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥟": {
+	name: "dumpling",
+	slug: "dumpling",
+	group: "Food & Drink",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🥠": {
+	name: "fortune cookie",
+	slug: "fortune_cookie",
+	group: "Food & Drink",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🥡": {
+	name: "takeout box",
+	slug: "takeout_box",
+	group: "Food & Drink",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🦀": {
+	name: "crab",
+	slug: "crab",
+	group: "Food & Drink",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🦞": {
+	name: "lobster",
+	slug: "lobster",
+	group: "Food & Drink",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🦐": {
+	name: "shrimp",
+	slug: "shrimp",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🦑": {
+	name: "squid",
+	slug: "squid",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🦪": {
+	name: "oyster",
+	slug: "oyster",
+	group: "Food & Drink",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🍦": {
+	name: "soft ice cream",
+	slug: "soft_ice_cream",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍧": {
+	name: "shaved ice",
+	slug: "shaved_ice",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍨": {
+	name: "ice cream",
+	slug: "ice_cream",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍩": {
+	name: "doughnut",
+	slug: "doughnut",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍪": {
+	name: "cookie",
+	slug: "cookie",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎂": {
+	name: "birthday cake",
+	slug: "birthday_cake",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍰": {
+	name: "shortcake",
+	slug: "shortcake",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🧁": {
+	name: "cupcake",
+	slug: "cupcake",
+	group: "Food & Drink",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🥧": {
+	name: "pie",
+	slug: "pie",
+	group: "Food & Drink",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🍫": {
+	name: "chocolate bar",
+	slug: "chocolate_bar",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍬": {
+	name: "candy",
+	slug: "candy",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍭": {
+	name: "lollipop",
+	slug: "lollipop",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍮": {
+	name: "custard",
+	slug: "custard",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍯": {
+	name: "honey pot",
+	slug: "honey_pot",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍼": {
+	name: "baby bottle",
+	slug: "baby_bottle",
+	group: "Food & Drink",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🥛": {
+	name: "glass of milk",
+	slug: "glass_of_milk",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"☕": {
+	name: "hot beverage",
+	slug: "hot_beverage",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🫖": {
+	name: "teapot",
+	slug: "teapot",
+	group: "Food & Drink",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🍵": {
+	name: "teacup without handle",
+	slug: "teacup_without_handle",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍶": {
+	name: "sake",
+	slug: "sake",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍾": {
+	name: "bottle with popping cork",
+	slug: "bottle_with_popping_cork",
+	group: "Food & Drink",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🍷": {
+	name: "wine glass",
+	slug: "wine_glass",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍸": {
+	name: "cocktail glass",
+	slug: "cocktail_glass",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍹": {
+	name: "tropical drink",
+	slug: "tropical_drink",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍺": {
+	name: "beer mug",
+	slug: "beer_mug",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🍻": {
+	name: "clinking beer mugs",
+	slug: "clinking_beer_mugs",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥂": {
+	name: "clinking glasses",
+	slug: "clinking_glasses",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🥃": {
+	name: "tumbler glass",
+	slug: "tumbler_glass",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🥤": {
+	name: "cup with straw",
+	slug: "cup_with_straw",
+	group: "Food & Drink",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🧋": {
+	name: "bubble tea",
+	slug: "bubble_tea",
+	group: "Food & Drink",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🧃": {
+	name: "beverage box",
+	slug: "beverage_box",
+	group: "Food & Drink",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🧉": {
+	name: "mate",
+	slug: "mate",
+	group: "Food & Drink",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🧊": {
+	name: "ice",
+	slug: "ice",
+	group: "Food & Drink",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🥢": {
+	name: "chopsticks",
+	slug: "chopsticks",
+	group: "Food & Drink",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🍽️": {
+	name: "fork and knife with plate",
+	slug: "fork_and_knife_with_plate",
+	group: "Food & Drink",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🍴": {
+	name: "fork and knife",
+	slug: "fork_and_knife",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥄": {
+	name: "spoon",
+	slug: "spoon",
+	group: "Food & Drink",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🔪": {
+	name: "kitchen knife",
+	slug: "kitchen_knife",
+	group: "Food & Drink",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏺": {
+	name: "amphora",
+	slug: "amphora",
+	group: "Food & Drink",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🌍": {
+	name: "globe showing Europe-Africa",
+	slug: "globe_showing_europe_africa",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌎": {
+	name: "globe showing Americas",
+	slug: "globe_showing_americas",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌏": {
+	name: "globe showing Asia-Australia",
+	slug: "globe_showing_asia_australia",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌐": {
+	name: "globe with meridians",
+	slug: "globe_with_meridians",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🗺️": {
+	name: "world map",
+	slug: "world_map",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🗾": {
+	name: "map of Japan",
+	slug: "map_of_japan",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🧭": {
+	name: "compass",
+	slug: "compass",
+	group: "Travel & Places",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🏔️": {
+	name: "snow-capped mountain",
+	slug: "snow_capped_mountain",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"⛰️": {
+	name: "mountain",
+	slug: "mountain",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌋": {
+	name: "volcano",
+	slug: "volcano",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🗻": {
+	name: "mount fuji",
+	slug: "mount_fuji",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏕️": {
+	name: "camping",
+	slug: "camping",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🏖️": {
+	name: "beach with umbrella",
+	slug: "beach_with_umbrella",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🏜️": {
+	name: "desert",
+	slug: "desert",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🏝️": {
+	name: "desert island",
+	slug: "desert_island",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🏞️": {
+	name: "national park",
+	slug: "national_park",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🏟️": {
+	name: "stadium",
+	slug: "stadium",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🏛️": {
+	name: "classical building",
+	slug: "classical_building",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🏗️": {
+	name: "building construction",
+	slug: "building_construction",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🧱": {
+	name: "brick",
+	slug: "brick",
+	group: "Travel & Places",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🪨": {
+	name: "rock",
+	slug: "rock",
+	group: "Travel & Places",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🪵": {
+	name: "wood",
+	slug: "wood",
+	group: "Travel & Places",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🛖": {
+	name: "hut",
+	slug: "hut",
+	group: "Travel & Places",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🏘️": {
+	name: "houses",
+	slug: "houses",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🏚️": {
+	name: "derelict house",
+	slug: "derelict_house",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🏠": {
+	name: "house",
+	slug: "house",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏡": {
+	name: "house with garden",
+	slug: "house_with_garden",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏢": {
+	name: "office building",
+	slug: "office_building",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏣": {
+	name: "Japanese post office",
+	slug: "japanese_post_office",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏤": {
+	name: "post office",
+	slug: "post_office",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🏥": {
+	name: "hospital",
+	slug: "hospital",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏦": {
+	name: "bank",
+	slug: "bank",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏨": {
+	name: "hotel",
+	slug: "hotel",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏩": {
+	name: "love hotel",
+	slug: "love_hotel",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏪": {
+	name: "convenience store",
+	slug: "convenience_store",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏫": {
+	name: "school",
+	slug: "school",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏬": {
+	name: "department store",
+	slug: "department_store",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏭": {
+	name: "factory",
+	slug: "factory",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏯": {
+	name: "Japanese castle",
+	slug: "japanese_castle",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏰": {
+	name: "castle",
+	slug: "castle",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💒": {
+	name: "wedding",
+	slug: "wedding",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🗼": {
+	name: "Tokyo tower",
+	slug: "tokyo_tower",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🗽": {
+	name: "Statue of Liberty",
+	slug: "statue_of_liberty",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⛪": {
+	name: "church",
+	slug: "church",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕌": {
+	name: "mosque",
+	slug: "mosque",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🛕": {
+	name: "hindu temple",
+	slug: "hindu_temple",
+	group: "Travel & Places",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🕍": {
+	name: "synagogue",
+	slug: "synagogue",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"⛩️": {
+	name: "shinto shrine",
+	slug: "shinto_shrine",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🕋": {
+	name: "kaaba",
+	slug: "kaaba",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"⛲": {
+	name: "fountain",
+	slug: "fountain",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⛺": {
+	name: "tent",
+	slug: "tent",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌁": {
+	name: "foggy",
+	slug: "foggy",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌃": {
+	name: "night with stars",
+	slug: "night_with_stars",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏙️": {
+	name: "cityscape",
+	slug: "cityscape",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌄": {
+	name: "sunrise over mountains",
+	slug: "sunrise_over_mountains",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌅": {
+	name: "sunrise",
+	slug: "sunrise",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌆": {
+	name: "cityscape at dusk",
+	slug: "cityscape_at_dusk",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌇": {
+	name: "sunset",
+	slug: "sunset",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌉": {
+	name: "bridge at night",
+	slug: "bridge_at_night",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♨️": {
+	name: "hot springs",
+	slug: "hot_springs",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎠": {
+	name: "carousel horse",
+	slug: "carousel_horse",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎡": {
+	name: "ferris wheel",
+	slug: "ferris_wheel",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎢": {
+	name: "roller coaster",
+	slug: "roller_coaster",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💈": {
+	name: "barber pole",
+	slug: "barber_pole",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎪": {
+	name: "circus tent",
+	slug: "circus_tent",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚂": {
+	name: "locomotive",
+	slug: "locomotive",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚃": {
+	name: "railway car",
+	slug: "railway_car",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚄": {
+	name: "high-speed train",
+	slug: "high_speed_train",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚅": {
+	name: "bullet train",
+	slug: "bullet_train",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚆": {
+	name: "train",
+	slug: "train",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚇": {
+	name: "metro",
+	slug: "metro",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚈": {
+	name: "light rail",
+	slug: "light_rail",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚉": {
+	name: "station",
+	slug: "station",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚊": {
+	name: "tram",
+	slug: "tram",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚝": {
+	name: "monorail",
+	slug: "monorail",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚞": {
+	name: "mountain railway",
+	slug: "mountain_railway",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚋": {
+	name: "tram car",
+	slug: "tram_car",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚌": {
+	name: "bus",
+	slug: "bus",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚍": {
+	name: "oncoming bus",
+	slug: "oncoming_bus",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🚎": {
+	name: "trolleybus",
+	slug: "trolleybus",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚐": {
+	name: "minibus",
+	slug: "minibus",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚑": {
+	name: "ambulance",
+	slug: "ambulance",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚒": {
+	name: "fire engine",
+	slug: "fire_engine",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚓": {
+	name: "police car",
+	slug: "police_car",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚔": {
+	name: "oncoming police car",
+	slug: "oncoming_police_car",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🚕": {
+	name: "taxi",
+	slug: "taxi",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚖": {
+	name: "oncoming taxi",
+	slug: "oncoming_taxi",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚗": {
+	name: "automobile",
+	slug: "automobile",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚘": {
+	name: "oncoming automobile",
+	slug: "oncoming_automobile",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🚙": {
+	name: "sport utility vehicle",
+	slug: "sport_utility_vehicle",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🛻": {
+	name: "pickup truck",
+	slug: "pickup_truck",
+	group: "Travel & Places",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🚚": {
+	name: "delivery truck",
+	slug: "delivery_truck",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚛": {
+	name: "articulated lorry",
+	slug: "articulated_lorry",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚜": {
+	name: "tractor",
+	slug: "tractor",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🏎️": {
+	name: "racing car",
+	slug: "racing_car",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🏍️": {
+	name: "motorcycle",
+	slug: "motorcycle",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🛵": {
+	name: "motor scooter",
+	slug: "motor_scooter",
+	group: "Travel & Places",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🦽": {
+	name: "manual wheelchair",
+	slug: "manual_wheelchair",
+	group: "Travel & Places",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🦼": {
+	name: "motorized wheelchair",
+	slug: "motorized_wheelchair",
+	group: "Travel & Places",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🛺": {
+	name: "auto rickshaw",
+	slug: "auto_rickshaw",
+	group: "Travel & Places",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🚲": {
+	name: "bicycle",
+	slug: "bicycle",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🛴": {
+	name: "kick scooter",
+	slug: "kick_scooter",
+	group: "Travel & Places",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🛹": {
+	name: "skateboard",
+	slug: "skateboard",
+	group: "Travel & Places",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🛼": {
+	name: "roller skate",
+	slug: "roller_skate",
+	group: "Travel & Places",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🚏": {
+	name: "bus stop",
+	slug: "bus_stop",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🛣️": {
+	name: "motorway",
+	slug: "motorway",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🛤️": {
+	name: "railway track",
+	slug: "railway_track",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🛢️": {
+	name: "oil drum",
+	slug: "oil_drum",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"⛽": {
+	name: "fuel pump",
+	slug: "fuel_pump",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚨": {
+	name: "police car light",
+	slug: "police_car_light",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚥": {
+	name: "horizontal traffic light",
+	slug: "horizontal_traffic_light",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚦": {
+	name: "vertical traffic light",
+	slug: "vertical_traffic_light",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🛑": {
+	name: "stop sign",
+	slug: "stop_sign",
+	group: "Travel & Places",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🚧": {
+	name: "construction",
+	slug: "construction",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⚓": {
+	name: "anchor",
+	slug: "anchor",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⛵": {
+	name: "sailboat",
+	slug: "sailboat",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🛶": {
+	name: "canoe",
+	slug: "canoe",
+	group: "Travel & Places",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🚤": {
+	name: "speedboat",
+	slug: "speedboat",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🛳️": {
+	name: "passenger ship",
+	slug: "passenger_ship",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"⛴️": {
+	name: "ferry",
+	slug: "ferry",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🛥️": {
+	name: "motor boat",
+	slug: "motor_boat",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🚢": {
+	name: "ship",
+	slug: "ship",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"✈️": {
+	name: "airplane",
+	slug: "airplane",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🛩️": {
+	name: "small airplane",
+	slug: "small_airplane",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🛫": {
+	name: "airplane departure",
+	slug: "airplane_departure",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🛬": {
+	name: "airplane arrival",
+	slug: "airplane_arrival",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🪂": {
+	name: "parachute",
+	slug: "parachute",
+	group: "Travel & Places",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"💺": {
+	name: "seat",
+	slug: "seat",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚁": {
+	name: "helicopter",
+	slug: "helicopter",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚟": {
+	name: "suspension railway",
+	slug: "suspension_railway",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚠": {
+	name: "mountain cableway",
+	slug: "mountain_cableway",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚡": {
+	name: "aerial tramway",
+	slug: "aerial_tramway",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🛰️": {
+	name: "satellite",
+	slug: "satellite",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🚀": {
+	name: "rocket",
+	slug: "rocket",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🛸": {
+	name: "flying saucer",
+	slug: "flying_saucer",
+	group: "Travel & Places",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🛎️": {
+	name: "bellhop bell",
+	slug: "bellhop_bell",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🧳": {
+	name: "luggage",
+	slug: "luggage",
+	group: "Travel & Places",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"⌛": {
+	name: "hourglass done",
+	slug: "hourglass_done",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⏳": {
+	name: "hourglass not done",
+	slug: "hourglass_not_done",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⌚": {
+	name: "watch",
+	slug: "watch",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⏰": {
+	name: "alarm clock",
+	slug: "alarm_clock",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⏱️": {
+	name: "stopwatch",
+	slug: "stopwatch",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"⏲️": {
+	name: "timer clock",
+	slug: "timer_clock",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🕰️": {
+	name: "mantelpiece clock",
+	slug: "mantelpiece_clock",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🕛": {
+	name: "twelve o’clock",
+	slug: "twelve_o_clock",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕧": {
+	name: "twelve-thirty",
+	slug: "twelve_thirty",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🕐": {
+	name: "one o’clock",
+	slug: "one_o_clock",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕜": {
+	name: "one-thirty",
+	slug: "one_thirty",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🕑": {
+	name: "two o’clock",
+	slug: "two_o_clock",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕝": {
+	name: "two-thirty",
+	slug: "two_thirty",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🕒": {
+	name: "three o’clock",
+	slug: "three_o_clock",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕞": {
+	name: "three-thirty",
+	slug: "three_thirty",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🕓": {
+	name: "four o’clock",
+	slug: "four_o_clock",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕟": {
+	name: "four-thirty",
+	slug: "four_thirty",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🕔": {
+	name: "five o’clock",
+	slug: "five_o_clock",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕠": {
+	name: "five-thirty",
+	slug: "five_thirty",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🕕": {
+	name: "six o’clock",
+	slug: "six_o_clock",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕡": {
+	name: "six-thirty",
+	slug: "six_thirty",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🕖": {
+	name: "seven o’clock",
+	slug: "seven_o_clock",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕢": {
+	name: "seven-thirty",
+	slug: "seven_thirty",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🕗": {
+	name: "eight o’clock",
+	slug: "eight_o_clock",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕣": {
+	name: "eight-thirty",
+	slug: "eight_thirty",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🕘": {
+	name: "nine o’clock",
+	slug: "nine_o_clock",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕤": {
+	name: "nine-thirty",
+	slug: "nine_thirty",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🕙": {
+	name: "ten o’clock",
+	slug: "ten_o_clock",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕥": {
+	name: "ten-thirty",
+	slug: "ten_thirty",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🕚": {
+	name: "eleven o’clock",
+	slug: "eleven_o_clock",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕦": {
+	name: "eleven-thirty",
+	slug: "eleven_thirty",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌑": {
+	name: "new moon",
+	slug: "new_moon",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌒": {
+	name: "waxing crescent moon",
+	slug: "waxing_crescent_moon",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🌓": {
+	name: "first quarter moon",
+	slug: "first_quarter_moon",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌔": {
+	name: "waxing gibbous moon",
+	slug: "waxing_gibbous_moon",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌕": {
+	name: "full moon",
+	slug: "full_moon",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌖": {
+	name: "waning gibbous moon",
+	slug: "waning_gibbous_moon",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🌗": {
+	name: "last quarter moon",
+	slug: "last_quarter_moon",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🌘": {
+	name: "waning crescent moon",
+	slug: "waning_crescent_moon",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🌙": {
+	name: "crescent moon",
+	slug: "crescent_moon",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌚": {
+	name: "new moon face",
+	slug: "new_moon_face",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🌛": {
+	name: "first quarter moon face",
+	slug: "first_quarter_moon_face",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌜": {
+	name: "last quarter moon face",
+	slug: "last_quarter_moon_face",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌡️": {
+	name: "thermometer",
+	slug: "thermometer",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"☀️": {
+	name: "sun",
+	slug: "sun",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌝": {
+	name: "full moon face",
+	slug: "full_moon_face",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🌞": {
+	name: "sun with face",
+	slug: "sun_with_face",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🪐": {
+	name: "ringed planet",
+	slug: "ringed_planet",
+	group: "Travel & Places",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"⭐": {
+	name: "star",
+	slug: "star",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌟": {
+	name: "glowing star",
+	slug: "glowing_star",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌠": {
+	name: "shooting star",
+	slug: "shooting_star",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌌": {
+	name: "milky way",
+	slug: "milky_way",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"☁️": {
+	name: "cloud",
+	slug: "cloud",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⛅": {
+	name: "sun behind cloud",
+	slug: "sun_behind_cloud",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⛈️": {
+	name: "cloud with lightning and rain",
+	slug: "cloud_with_lightning_and_rain",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌤️": {
+	name: "sun behind small cloud",
+	slug: "sun_behind_small_cloud",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌥️": {
+	name: "sun behind large cloud",
+	slug: "sun_behind_large_cloud",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌦️": {
+	name: "sun behind rain cloud",
+	slug: "sun_behind_rain_cloud",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌧️": {
+	name: "cloud with rain",
+	slug: "cloud_with_rain",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌨️": {
+	name: "cloud with snow",
+	slug: "cloud_with_snow",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌩️": {
+	name: "cloud with lightning",
+	slug: "cloud_with_lightning",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌪️": {
+	name: "tornado",
+	slug: "tornado",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌫️": {
+	name: "fog",
+	slug: "fog",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌬️": {
+	name: "wind face",
+	slug: "wind_face",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🌀": {
+	name: "cyclone",
+	slug: "cyclone",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌈": {
+	name: "rainbow",
+	slug: "rainbow",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌂": {
+	name: "closed umbrella",
+	slug: "closed_umbrella",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"☂️": {
+	name: "umbrella",
+	slug: "umbrella",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"☔": {
+	name: "umbrella with rain drops",
+	slug: "umbrella_with_rain_drops",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⛱️": {
+	name: "umbrella on ground",
+	slug: "umbrella_on_ground",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"⚡": {
+	name: "high voltage",
+	slug: "high_voltage",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"❄️": {
+	name: "snowflake",
+	slug: "snowflake",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"☃️": {
+	name: "snowman",
+	slug: "snowman",
+	group: "Travel & Places",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"⛄": {
+	name: "snowman without snow",
+	slug: "snowman_without_snow",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"☄️": {
+	name: "comet",
+	slug: "comet",
+	group: "Travel & Places",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🔥": {
+	name: "fire",
+	slug: "fire",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💧": {
+	name: "droplet",
+	slug: "droplet",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🌊": {
+	name: "water wave",
+	slug: "water_wave",
+	group: "Travel & Places",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎃": {
+	name: "jack-o-lantern",
+	slug: "jack_o_lantern",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎄": {
+	name: "Christmas tree",
+	slug: "christmas_tree",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎆": {
+	name: "fireworks",
+	slug: "fireworks",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎇": {
+	name: "sparkler",
+	slug: "sparkler",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🧨": {
+	name: "firecracker",
+	slug: "firecracker",
+	group: "Activities",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"✨": {
+	name: "sparkles",
+	slug: "sparkles",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎈": {
+	name: "balloon",
+	slug: "balloon",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎉": {
+	name: "party popper",
+	slug: "party_popper",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎊": {
+	name: "confetti ball",
+	slug: "confetti_ball",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎋": {
+	name: "tanabata tree",
+	slug: "tanabata_tree",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎍": {
+	name: "pine decoration",
+	slug: "pine_decoration",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎎": {
+	name: "Japanese dolls",
+	slug: "japanese_dolls",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎏": {
+	name: "carp streamer",
+	slug: "carp_streamer",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎐": {
+	name: "wind chime",
+	slug: "wind_chime",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎑": {
+	name: "moon viewing ceremony",
+	slug: "moon_viewing_ceremony",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🧧": {
+	name: "red envelope",
+	slug: "red_envelope",
+	group: "Activities",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🎀": {
+	name: "ribbon",
+	slug: "ribbon",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎁": {
+	name: "wrapped gift",
+	slug: "wrapped_gift",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎗️": {
+	name: "reminder ribbon",
+	slug: "reminder_ribbon",
+	group: "Activities",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🎟️": {
+	name: "admission tickets",
+	slug: "admission_tickets",
+	group: "Activities",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🎫": {
+	name: "ticket",
+	slug: "ticket",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎖️": {
+	name: "military medal",
+	slug: "military_medal",
+	group: "Activities",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🏆": {
+	name: "trophy",
+	slug: "trophy",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏅": {
+	name: "sports medal",
+	slug: "sports_medal",
+	group: "Activities",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🥇": {
+	name: "1st place medal",
+	slug: "1st_place_medal",
+	group: "Activities",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🥈": {
+	name: "2nd place medal",
+	slug: "2nd_place_medal",
+	group: "Activities",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🥉": {
+	name: "3rd place medal",
+	slug: "3rd_place_medal",
+	group: "Activities",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"⚽": {
+	name: "soccer ball",
+	slug: "soccer_ball",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⚾": {
+	name: "baseball",
+	slug: "baseball",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥎": {
+	name: "softball",
+	slug: "softball",
+	group: "Activities",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🏀": {
+	name: "basketball",
+	slug: "basketball",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏐": {
+	name: "volleyball",
+	slug: "volleyball",
+	group: "Activities",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🏈": {
+	name: "american football",
+	slug: "american_football",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏉": {
+	name: "rugby football",
+	slug: "rugby_football",
+	group: "Activities",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🎾": {
+	name: "tennis",
+	slug: "tennis",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥏": {
+	name: "flying disc",
+	slug: "flying_disc",
+	group: "Activities",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🎳": {
+	name: "bowling",
+	slug: "bowling",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏏": {
+	name: "cricket game",
+	slug: "cricket_game",
+	group: "Activities",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🏑": {
+	name: "field hockey",
+	slug: "field_hockey",
+	group: "Activities",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🏒": {
+	name: "ice hockey",
+	slug: "ice_hockey",
+	group: "Activities",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🥍": {
+	name: "lacrosse",
+	slug: "lacrosse",
+	group: "Activities",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🏓": {
+	name: "ping pong",
+	slug: "ping_pong",
+	group: "Activities",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🏸": {
+	name: "badminton",
+	slug: "badminton",
+	group: "Activities",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🥊": {
+	name: "boxing glove",
+	slug: "boxing_glove",
+	group: "Activities",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🥋": {
+	name: "martial arts uniform",
+	slug: "martial_arts_uniform",
+	group: "Activities",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🥅": {
+	name: "goal net",
+	slug: "goal_net",
+	group: "Activities",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"⛳": {
+	name: "flag in hole",
+	slug: "flag_in_hole",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⛸️": {
+	name: "ice skate",
+	slug: "ice_skate",
+	group: "Activities",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🎣": {
+	name: "fishing pole",
+	slug: "fishing_pole",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🤿": {
+	name: "diving mask",
+	slug: "diving_mask",
+	group: "Activities",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🎽": {
+	name: "running shirt",
+	slug: "running_shirt",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎿": {
+	name: "skis",
+	slug: "skis",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🛷": {
+	name: "sled",
+	slug: "sled",
+	group: "Activities",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🥌": {
+	name: "curling stone",
+	slug: "curling_stone",
+	group: "Activities",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🎯": {
+	name: "direct hit",
+	slug: "direct_hit",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🪀": {
+	name: "yo-yo",
+	slug: "yo_yo",
+	group: "Activities",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🪁": {
+	name: "kite",
+	slug: "kite",
+	group: "Activities",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🎱": {
+	name: "pool 8 ball",
+	slug: "pool_8_ball",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔮": {
+	name: "crystal ball",
+	slug: "crystal_ball",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🪄": {
+	name: "magic wand",
+	slug: "magic_wand",
+	group: "Activities",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🧿": {
+	name: "nazar amulet",
+	slug: "nazar_amulet",
+	group: "Activities",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🎮": {
+	name: "video game",
+	slug: "video_game",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕹️": {
+	name: "joystick",
+	slug: "joystick",
+	group: "Activities",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🎰": {
+	name: "slot machine",
+	slug: "slot_machine",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎲": {
+	name: "game die",
+	slug: "game_die",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🧩": {
+	name: "puzzle piece",
+	slug: "puzzle_piece",
+	group: "Activities",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🧸": {
+	name: "teddy bear",
+	slug: "teddy_bear",
+	group: "Activities",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🪅": {
+	name: "piñata",
+	slug: "pinata",
+	group: "Activities",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🪆": {
+	name: "nesting dolls",
+	slug: "nesting_dolls",
+	group: "Activities",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"♠️": {
+	name: "spade suit",
+	slug: "spade_suit",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♥️": {
+	name: "heart suit",
+	slug: "heart_suit",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♦️": {
+	name: "diamond suit",
+	slug: "diamond_suit",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♣️": {
+	name: "club suit",
+	slug: "club_suit",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♟️": {
+	name: "chess pawn",
+	slug: "chess_pawn",
+	group: "Activities",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🃏": {
+	name: "joker",
+	slug: "joker",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🀄": {
+	name: "mahjong red dragon",
+	slug: "mahjong_red_dragon",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎴": {
+	name: "flower playing cards",
+	slug: "flower_playing_cards",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎭": {
+	name: "performing arts",
+	slug: "performing_arts",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🖼️": {
+	name: "framed picture",
+	slug: "framed_picture",
+	group: "Activities",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🎨": {
+	name: "artist palette",
+	slug: "artist_palette",
+	group: "Activities",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🧵": {
+	name: "thread",
+	slug: "thread",
+	group: "Activities",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🪡": {
+	name: "sewing needle",
+	slug: "sewing_needle",
+	group: "Activities",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🧶": {
+	name: "yarn",
+	slug: "yarn",
+	group: "Activities",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🪢": {
+	name: "knot",
+	slug: "knot",
+	group: "Activities",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"👓": {
+	name: "glasses",
+	slug: "glasses",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕶️": {
+	name: "sunglasses",
+	slug: "sunglasses",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🥽": {
+	name: "goggles",
+	slug: "goggles",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🥼": {
+	name: "lab coat",
+	slug: "lab_coat",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🦺": {
+	name: "safety vest",
+	slug: "safety_vest",
+	group: "Objects",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"👔": {
+	name: "necktie",
+	slug: "necktie",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👕": {
+	name: "t-shirt",
+	slug: "t_shirt",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👖": {
+	name: "jeans",
+	slug: "jeans",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🧣": {
+	name: "scarf",
+	slug: "scarf",
+	group: "Objects",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🧤": {
+	name: "gloves",
+	slug: "gloves",
+	group: "Objects",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🧥": {
+	name: "coat",
+	slug: "coat",
+	group: "Objects",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🧦": {
+	name: "socks",
+	slug: "socks",
+	group: "Objects",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"👗": {
+	name: "dress",
+	slug: "dress",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👘": {
+	name: "kimono",
+	slug: "kimono",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥻": {
+	name: "sari",
+	slug: "sari",
+	group: "Objects",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🩱": {
+	name: "one-piece swimsuit",
+	slug: "one_piece_swimsuit",
+	group: "Objects",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🩲": {
+	name: "briefs",
+	slug: "briefs",
+	group: "Objects",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🩳": {
+	name: "shorts",
+	slug: "shorts",
+	group: "Objects",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"👙": {
+	name: "bikini",
+	slug: "bikini",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👚": {
+	name: "woman’s clothes",
+	slug: "woman_s_clothes",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👛": {
+	name: "purse",
+	slug: "purse",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👜": {
+	name: "handbag",
+	slug: "handbag",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👝": {
+	name: "clutch bag",
+	slug: "clutch_bag",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🛍️": {
+	name: "shopping bags",
+	slug: "shopping_bags",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🎒": {
+	name: "backpack",
+	slug: "backpack",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🩴": {
+	name: "thong sandal",
+	slug: "thong_sandal",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"👞": {
+	name: "man’s shoe",
+	slug: "man_s_shoe",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👟": {
+	name: "running shoe",
+	slug: "running_shoe",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🥾": {
+	name: "hiking boot",
+	slug: "hiking_boot",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🥿": {
+	name: "flat shoe",
+	slug: "flat_shoe",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"👠": {
+	name: "high-heeled shoe",
+	slug: "high_heeled_shoe",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👡": {
+	name: "woman’s sandal",
+	slug: "woman_s_sandal",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🩰": {
+	name: "ballet shoes",
+	slug: "ballet_shoes",
+	group: "Objects",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"👢": {
+	name: "woman’s boot",
+	slug: "woman_s_boot",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👑": {
+	name: "crown",
+	slug: "crown",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"👒": {
+	name: "woman’s hat",
+	slug: "woman_s_hat",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎩": {
+	name: "top hat",
+	slug: "top_hat",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎓": {
+	name: "graduation cap",
+	slug: "graduation_cap",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🧢": {
+	name: "billed cap",
+	slug: "billed_cap",
+	group: "Objects",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🪖": {
+	name: "military helmet",
+	slug: "military_helmet",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"⛑️": {
+	name: "rescue worker’s helmet",
+	slug: "rescue_worker_s_helmet",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"📿": {
+	name: "prayer beads",
+	slug: "prayer_beads",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"💄": {
+	name: "lipstick",
+	slug: "lipstick",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💍": {
+	name: "ring",
+	slug: "ring",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💎": {
+	name: "gem stone",
+	slug: "gem_stone",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔇": {
+	name: "muted speaker",
+	slug: "muted_speaker",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🔈": {
+	name: "speaker low volume",
+	slug: "speaker_low_volume",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🔉": {
+	name: "speaker medium volume",
+	slug: "speaker_medium_volume",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🔊": {
+	name: "speaker high volume",
+	slug: "speaker_high_volume",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📢": {
+	name: "loudspeaker",
+	slug: "loudspeaker",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📣": {
+	name: "megaphone",
+	slug: "megaphone",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📯": {
+	name: "postal horn",
+	slug: "postal_horn",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🔔": {
+	name: "bell",
+	slug: "bell",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔕": {
+	name: "bell with slash",
+	slug: "bell_with_slash",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🎼": {
+	name: "musical score",
+	slug: "musical_score",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎵": {
+	name: "musical note",
+	slug: "musical_note",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎶": {
+	name: "musical notes",
+	slug: "musical_notes",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎙️": {
+	name: "studio microphone",
+	slug: "studio_microphone",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🎚️": {
+	name: "level slider",
+	slug: "level_slider",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🎛️": {
+	name: "control knobs",
+	slug: "control_knobs",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🎤": {
+	name: "microphone",
+	slug: "microphone",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎧": {
+	name: "headphone",
+	slug: "headphone",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📻": {
+	name: "radio",
+	slug: "radio",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎷": {
+	name: "saxophone",
+	slug: "saxophone",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🪗": {
+	name: "accordion",
+	slug: "accordion",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🎸": {
+	name: "guitar",
+	slug: "guitar",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎹": {
+	name: "musical keyboard",
+	slug: "musical_keyboard",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎺": {
+	name: "trumpet",
+	slug: "trumpet",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎻": {
+	name: "violin",
+	slug: "violin",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🪕": {
+	name: "banjo",
+	slug: "banjo",
+	group: "Objects",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🥁": {
+	name: "drum",
+	slug: "drum",
+	group: "Objects",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🪘": {
+	name: "long drum",
+	slug: "long_drum",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"📱": {
+	name: "mobile phone",
+	slug: "mobile_phone",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📲": {
+	name: "mobile phone with arrow",
+	slug: "mobile_phone_with_arrow",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"☎️": {
+	name: "telephone",
+	slug: "telephone",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📞": {
+	name: "telephone receiver",
+	slug: "telephone_receiver",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📟": {
+	name: "pager",
+	slug: "pager",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📠": {
+	name: "fax machine",
+	slug: "fax_machine",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔋": {
+	name: "battery",
+	slug: "battery",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔌": {
+	name: "electric plug",
+	slug: "electric_plug",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💻": {
+	name: "laptop",
+	slug: "laptop",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🖥️": {
+	name: "desktop computer",
+	slug: "desktop_computer",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🖨️": {
+	name: "printer",
+	slug: "printer",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"⌨️": {
+	name: "keyboard",
+	slug: "keyboard",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🖱️": {
+	name: "computer mouse",
+	slug: "computer_mouse",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🖲️": {
+	name: "trackball",
+	slug: "trackball",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"💽": {
+	name: "computer disk",
+	slug: "computer_disk",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💾": {
+	name: "floppy disk",
+	slug: "floppy_disk",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💿": {
+	name: "optical disk",
+	slug: "optical_disk",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📀": {
+	name: "dvd",
+	slug: "dvd",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🧮": {
+	name: "abacus",
+	slug: "abacus",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🎥": {
+	name: "movie camera",
+	slug: "movie_camera",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎞️": {
+	name: "film frames",
+	slug: "film_frames",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"📽️": {
+	name: "film projector",
+	slug: "film_projector",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🎬": {
+	name: "clapper board",
+	slug: "clapper_board",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📺": {
+	name: "television",
+	slug: "television",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📷": {
+	name: "camera",
+	slug: "camera",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📸": {
+	name: "camera with flash",
+	slug: "camera_with_flash",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"📹": {
+	name: "video camera",
+	slug: "video_camera",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📼": {
+	name: "videocassette",
+	slug: "videocassette",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔍": {
+	name: "magnifying glass tilted left",
+	slug: "magnifying_glass_tilted_left",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔎": {
+	name: "magnifying glass tilted right",
+	slug: "magnifying_glass_tilted_right",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🕯️": {
+	name: "candle",
+	slug: "candle",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"💡": {
+	name: "light bulb",
+	slug: "light_bulb",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔦": {
+	name: "flashlight",
+	slug: "flashlight",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏮": {
+	name: "red paper lantern",
+	slug: "red_paper_lantern",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🪔": {
+	name: "diya lamp",
+	slug: "diya_lamp",
+	group: "Objects",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"📔": {
+	name: "notebook with decorative cover",
+	slug: "notebook_with_decorative_cover",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📕": {
+	name: "closed book",
+	slug: "closed_book",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📖": {
+	name: "open book",
+	slug: "open_book",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📗": {
+	name: "green book",
+	slug: "green_book",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📘": {
+	name: "blue book",
+	slug: "blue_book",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📙": {
+	name: "orange book",
+	slug: "orange_book",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📚": {
+	name: "books",
+	slug: "books",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📓": {
+	name: "notebook",
+	slug: "notebook",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📒": {
+	name: "ledger",
+	slug: "ledger",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📃": {
+	name: "page with curl",
+	slug: "page_with_curl",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📜": {
+	name: "scroll",
+	slug: "scroll",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📄": {
+	name: "page facing up",
+	slug: "page_facing_up",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📰": {
+	name: "newspaper",
+	slug: "newspaper",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🗞️": {
+	name: "rolled-up newspaper",
+	slug: "rolled_up_newspaper",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"📑": {
+	name: "bookmark tabs",
+	slug: "bookmark_tabs",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔖": {
+	name: "bookmark",
+	slug: "bookmark",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏷️": {
+	name: "label",
+	slug: "label",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"💰": {
+	name: "money bag",
+	slug: "money_bag",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🪙": {
+	name: "coin",
+	slug: "coin",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"💴": {
+	name: "yen banknote",
+	slug: "yen_banknote",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💵": {
+	name: "dollar banknote",
+	slug: "dollar_banknote",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💶": {
+	name: "euro banknote",
+	slug: "euro_banknote",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"💷": {
+	name: "pound banknote",
+	slug: "pound_banknote",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"💸": {
+	name: "money with wings",
+	slug: "money_with_wings",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💳": {
+	name: "credit card",
+	slug: "credit_card",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🧾": {
+	name: "receipt",
+	slug: "receipt",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"💹": {
+	name: "chart increasing with yen",
+	slug: "chart_increasing_with_yen",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"✉️": {
+	name: "envelope",
+	slug: "envelope",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📧": {
+	name: "e-mail",
+	slug: "e_mail",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📨": {
+	name: "incoming envelope",
+	slug: "incoming_envelope",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📩": {
+	name: "envelope with arrow",
+	slug: "envelope_with_arrow",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📤": {
+	name: "outbox tray",
+	slug: "outbox_tray",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📥": {
+	name: "inbox tray",
+	slug: "inbox_tray",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📦": {
+	name: "package",
+	slug: "package",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📫": {
+	name: "closed mailbox with raised flag",
+	slug: "closed_mailbox_with_raised_flag",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📪": {
+	name: "closed mailbox with lowered flag",
+	slug: "closed_mailbox_with_lowered_flag",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📬": {
+	name: "open mailbox with raised flag",
+	slug: "open_mailbox_with_raised_flag",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"📭": {
+	name: "open mailbox with lowered flag",
+	slug: "open_mailbox_with_lowered_flag",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"📮": {
+	name: "postbox",
+	slug: "postbox",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🗳️": {
+	name: "ballot box with ballot",
+	slug: "ballot_box_with_ballot",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"✏️": {
+	name: "pencil",
+	slug: "pencil",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"✒️": {
+	name: "black nib",
+	slug: "black_nib",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🖋️": {
+	name: "fountain pen",
+	slug: "fountain_pen",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🖊️": {
+	name: "pen",
+	slug: "pen",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🖌️": {
+	name: "paintbrush",
+	slug: "paintbrush",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🖍️": {
+	name: "crayon",
+	slug: "crayon",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"📝": {
+	name: "memo",
+	slug: "memo",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💼": {
+	name: "briefcase",
+	slug: "briefcase",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📁": {
+	name: "file folder",
+	slug: "file_folder",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📂": {
+	name: "open file folder",
+	slug: "open_file_folder",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🗂️": {
+	name: "card index dividers",
+	slug: "card_index_dividers",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"📅": {
+	name: "calendar",
+	slug: "calendar",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📆": {
+	name: "tear-off calendar",
+	slug: "tear_off_calendar",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🗒️": {
+	name: "spiral notepad",
+	slug: "spiral_notepad",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🗓️": {
+	name: "spiral calendar",
+	slug: "spiral_calendar",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"📇": {
+	name: "card index",
+	slug: "card_index",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📈": {
+	name: "chart increasing",
+	slug: "chart_increasing",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📉": {
+	name: "chart decreasing",
+	slug: "chart_decreasing",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📊": {
+	name: "bar chart",
+	slug: "bar_chart",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📋": {
+	name: "clipboard",
+	slug: "clipboard",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📌": {
+	name: "pushpin",
+	slug: "pushpin",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📍": {
+	name: "round pushpin",
+	slug: "round_pushpin",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📎": {
+	name: "paperclip",
+	slug: "paperclip",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🖇️": {
+	name: "linked paperclips",
+	slug: "linked_paperclips",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"📏": {
+	name: "straight ruler",
+	slug: "straight_ruler",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📐": {
+	name: "triangular ruler",
+	slug: "triangular_ruler",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"✂️": {
+	name: "scissors",
+	slug: "scissors",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🗃️": {
+	name: "card file box",
+	slug: "card_file_box",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🗄️": {
+	name: "file cabinet",
+	slug: "file_cabinet",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🗑️": {
+	name: "wastebasket",
+	slug: "wastebasket",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🔒": {
+	name: "locked",
+	slug: "locked",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔓": {
+	name: "unlocked",
+	slug: "unlocked",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔏": {
+	name: "locked with pen",
+	slug: "locked_with_pen",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔐": {
+	name: "locked with key",
+	slug: "locked_with_key",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔑": {
+	name: "key",
+	slug: "key",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🗝️": {
+	name: "old key",
+	slug: "old_key",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🔨": {
+	name: "hammer",
+	slug: "hammer",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🪓": {
+	name: "axe",
+	slug: "axe",
+	group: "Objects",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"⛏️": {
+	name: "pick",
+	slug: "pick",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"⚒️": {
+	name: "hammer and pick",
+	slug: "hammer_and_pick",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🛠️": {
+	name: "hammer and wrench",
+	slug: "hammer_and_wrench",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🗡️": {
+	name: "dagger",
+	slug: "dagger",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"⚔️": {
+	name: "crossed swords",
+	slug: "crossed_swords",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🔫": {
+	name: "water pistol",
+	slug: "water_pistol",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🪃": {
+	name: "boomerang",
+	slug: "boomerang",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🏹": {
+	name: "bow and arrow",
+	slug: "bow_and_arrow",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🛡️": {
+	name: "shield",
+	slug: "shield",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🪚": {
+	name: "carpentry saw",
+	slug: "carpentry_saw",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🔧": {
+	name: "wrench",
+	slug: "wrench",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🪛": {
+	name: "screwdriver",
+	slug: "screwdriver",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🔩": {
+	name: "nut and bolt",
+	slug: "nut_and_bolt",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⚙️": {
+	name: "gear",
+	slug: "gear",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🗜️": {
+	name: "clamp",
+	slug: "clamp",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"⚖️": {
+	name: "balance scale",
+	slug: "balance_scale",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🦯": {
+	name: "white cane",
+	slug: "white_cane",
+	group: "Objects",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🔗": {
+	name: "link",
+	slug: "link",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⛓️": {
+	name: "chains",
+	slug: "chains",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🪝": {
+	name: "hook",
+	slug: "hook",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🧰": {
+	name: "toolbox",
+	slug: "toolbox",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🧲": {
+	name: "magnet",
+	slug: "magnet",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🪜": {
+	name: "ladder",
+	slug: "ladder",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"⚗️": {
+	name: "alembic",
+	slug: "alembic",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🧪": {
+	name: "test tube",
+	slug: "test_tube",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🧫": {
+	name: "petri dish",
+	slug: "petri_dish",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🧬": {
+	name: "dna",
+	slug: "dna",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🔬": {
+	name: "microscope",
+	slug: "microscope",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🔭": {
+	name: "telescope",
+	slug: "telescope",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"📡": {
+	name: "satellite antenna",
+	slug: "satellite_antenna",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💉": {
+	name: "syringe",
+	slug: "syringe",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🩸": {
+	name: "drop of blood",
+	slug: "drop_of_blood",
+	group: "Objects",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"💊": {
+	name: "pill",
+	slug: "pill",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🩹": {
+	name: "adhesive bandage",
+	slug: "adhesive_bandage",
+	group: "Objects",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🩺": {
+	name: "stethoscope",
+	slug: "stethoscope",
+	group: "Objects",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🚪": {
+	name: "door",
+	slug: "door",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🛗": {
+	name: "elevator",
+	slug: "elevator",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🪞": {
+	name: "mirror",
+	slug: "mirror",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🪟": {
+	name: "window",
+	slug: "window",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🛏️": {
+	name: "bed",
+	slug: "bed",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🛋️": {
+	name: "couch and lamp",
+	slug: "couch_and_lamp",
+	group: "Objects",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🪑": {
+	name: "chair",
+	slug: "chair",
+	group: "Objects",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🚽": {
+	name: "toilet",
+	slug: "toilet",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🪠": {
+	name: "plunger",
+	slug: "plunger",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🚿": {
+	name: "shower",
+	slug: "shower",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🛁": {
+	name: "bathtub",
+	slug: "bathtub",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🪤": {
+	name: "mouse trap",
+	slug: "mouse_trap",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🪒": {
+	name: "razor",
+	slug: "razor",
+	group: "Objects",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🧴": {
+	name: "lotion bottle",
+	slug: "lotion_bottle",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🧷": {
+	name: "safety pin",
+	slug: "safety_pin",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🧹": {
+	name: "broom",
+	slug: "broom",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🧺": {
+	name: "basket",
+	slug: "basket",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🧻": {
+	name: "roll of paper",
+	slug: "roll_of_paper",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🪣": {
+	name: "bucket",
+	slug: "bucket",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🧼": {
+	name: "soap",
+	slug: "soap",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🪥": {
+	name: "toothbrush",
+	slug: "toothbrush",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🧽": {
+	name: "sponge",
+	slug: "sponge",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🧯": {
+	name: "fire extinguisher",
+	slug: "fire_extinguisher",
+	group: "Objects",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🛒": {
+	name: "shopping cart",
+	slug: "shopping_cart",
+	group: "Objects",
+	emoji_version: "3.0",
+	unicode_version: "3.0",
+	skin_tone_support: false
+},
+	"🚬": {
+	name: "cigarette",
+	slug: "cigarette",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⚰️": {
+	name: "coffin",
+	slug: "coffin",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🪦": {
+	name: "headstone",
+	slug: "headstone",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"⚱️": {
+	name: "funeral urn",
+	slug: "funeral_urn",
+	group: "Objects",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🗿": {
+	name: "moai",
+	slug: "moai",
+	group: "Objects",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🪧": {
+	name: "placard",
+	slug: "placard",
+	group: "Objects",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🏧": {
+	name: "ATM sign",
+	slug: "atm_sign",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚮": {
+	name: "litter in bin sign",
+	slug: "litter_in_bin_sign",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚰": {
+	name: "potable water",
+	slug: "potable_water",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"♿": {
+	name: "wheelchair symbol",
+	slug: "wheelchair_symbol",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚹": {
+	name: "men’s room",
+	slug: "men_s_room",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚺": {
+	name: "women’s room",
+	slug: "women_s_room",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚻": {
+	name: "restroom",
+	slug: "restroom",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚼": {
+	name: "baby symbol",
+	slug: "baby_symbol",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚾": {
+	name: "water closet",
+	slug: "water_closet",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🛂": {
+	name: "passport control",
+	slug: "passport_control",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🛃": {
+	name: "customs",
+	slug: "customs",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🛄": {
+	name: "baggage claim",
+	slug: "baggage_claim",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🛅": {
+	name: "left luggage",
+	slug: "left_luggage",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"⚠️": {
+	name: "warning",
+	slug: "warning",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚸": {
+	name: "children crossing",
+	slug: "children_crossing",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"⛔": {
+	name: "no entry",
+	slug: "no_entry",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚫": {
+	name: "prohibited",
+	slug: "prohibited",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚳": {
+	name: "no bicycles",
+	slug: "no_bicycles",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚭": {
+	name: "no smoking",
+	slug: "no_smoking",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚯": {
+	name: "no littering",
+	slug: "no_littering",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚱": {
+	name: "non-potable water",
+	slug: "non_potable_water",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🚷": {
+	name: "no pedestrians",
+	slug: "no_pedestrians",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"📵": {
+	name: "no mobile phones",
+	slug: "no_mobile_phones",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🔞": {
+	name: "no one under eighteen",
+	slug: "no_one_under_eighteen",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"☢️": {
+	name: "radioactive",
+	slug: "radioactive",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"☣️": {
+	name: "biohazard",
+	slug: "biohazard",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"⬆️": {
+	name: "up arrow",
+	slug: "up_arrow",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"↗️": {
+	name: "up-right arrow",
+	slug: "up_right_arrow",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"➡️": {
+	name: "right arrow",
+	slug: "right_arrow",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"↘️": {
+	name: "down-right arrow",
+	slug: "down_right_arrow",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⬇️": {
+	name: "down arrow",
+	slug: "down_arrow",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"↙️": {
+	name: "down-left arrow",
+	slug: "down_left_arrow",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⬅️": {
+	name: "left arrow",
+	slug: "left_arrow",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"↖️": {
+	name: "up-left arrow",
+	slug: "up_left_arrow",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"↕️": {
+	name: "up-down arrow",
+	slug: "up_down_arrow",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"↔️": {
+	name: "left-right arrow",
+	slug: "left_right_arrow",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"↩️": {
+	name: "right arrow curving left",
+	slug: "right_arrow_curving_left",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"↪️": {
+	name: "left arrow curving right",
+	slug: "left_arrow_curving_right",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⤴️": {
+	name: "right arrow curving up",
+	slug: "right_arrow_curving_up",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⤵️": {
+	name: "right arrow curving down",
+	slug: "right_arrow_curving_down",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔃": {
+	name: "clockwise vertical arrows",
+	slug: "clockwise_vertical_arrows",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔄": {
+	name: "counterclockwise arrows button",
+	slug: "counterclockwise_arrows_button",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🔙": {
+	name: "BACK arrow",
+	slug: "back_arrow",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔚": {
+	name: "END arrow",
+	slug: "end_arrow",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔛": {
+	name: "ON! arrow",
+	slug: "on_arrow",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔜": {
+	name: "SOON arrow",
+	slug: "soon_arrow",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔝": {
+	name: "TOP arrow",
+	slug: "top_arrow",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🛐": {
+	name: "place of worship",
+	slug: "place_of_worship",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"⚛️": {
+	name: "atom symbol",
+	slug: "atom_symbol",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🕉️": {
+	name: "om",
+	slug: "om",
+	group: "Symbols",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"✡️": {
+	name: "star of David",
+	slug: "star_of_david",
+	group: "Symbols",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"☸️": {
+	name: "wheel of dharma",
+	slug: "wheel_of_dharma",
+	group: "Symbols",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"☯️": {
+	name: "yin yang",
+	slug: "yin_yang",
+	group: "Symbols",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"✝️": {
+	name: "latin cross",
+	slug: "latin_cross",
+	group: "Symbols",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"☦️": {
+	name: "orthodox cross",
+	slug: "orthodox_cross",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"☪️": {
+	name: "star and crescent",
+	slug: "star_and_crescent",
+	group: "Symbols",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"☮️": {
+	name: "peace symbol",
+	slug: "peace_symbol",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🕎": {
+	name: "menorah",
+	slug: "menorah",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🔯": {
+	name: "dotted six-pointed star",
+	slug: "dotted_six_pointed_star",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♈": {
+	name: "Aries",
+	slug: "aries",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♉": {
+	name: "Taurus",
+	slug: "taurus",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♊": {
+	name: "Gemini",
+	slug: "gemini",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♋": {
+	name: "Cancer",
+	slug: "cancer",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♌": {
+	name: "Leo",
+	slug: "leo",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♍": {
+	name: "Virgo",
+	slug: "virgo",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♎": {
+	name: "Libra",
+	slug: "libra",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♏": {
+	name: "Scorpio",
+	slug: "scorpio",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♐": {
+	name: "Sagittarius",
+	slug: "sagittarius",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♑": {
+	name: "Capricorn",
+	slug: "capricorn",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♒": {
+	name: "Aquarius",
+	slug: "aquarius",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♓": {
+	name: "Pisces",
+	slug: "pisces",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⛎": {
+	name: "Ophiuchus",
+	slug: "ophiuchus",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔀": {
+	name: "shuffle tracks button",
+	slug: "shuffle_tracks_button",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🔁": {
+	name: "repeat button",
+	slug: "repeat_button",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🔂": {
+	name: "repeat single button",
+	slug: "repeat_single_button",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"▶️": {
+	name: "play button",
+	slug: "play_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⏩": {
+	name: "fast-forward button",
+	slug: "fast_forward_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⏭️": {
+	name: "next track button",
+	slug: "next_track_button",
+	group: "Symbols",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"⏯️": {
+	name: "play or pause button",
+	slug: "play_or_pause_button",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"◀️": {
+	name: "reverse button",
+	slug: "reverse_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⏪": {
+	name: "fast reverse button",
+	slug: "fast_reverse_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⏮️": {
+	name: "last track button",
+	slug: "last_track_button",
+	group: "Symbols",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🔼": {
+	name: "upwards button",
+	slug: "upwards_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⏫": {
+	name: "fast up button",
+	slug: "fast_up_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔽": {
+	name: "downwards button",
+	slug: "downwards_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⏬": {
+	name: "fast down button",
+	slug: "fast_down_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⏸️": {
+	name: "pause button",
+	slug: "pause_button",
+	group: "Symbols",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"⏹️": {
+	name: "stop button",
+	slug: "stop_button",
+	group: "Symbols",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"⏺️": {
+	name: "record button",
+	slug: "record_button",
+	group: "Symbols",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"⏏️": {
+	name: "eject button",
+	slug: "eject_button",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🎦": {
+	name: "cinema",
+	slug: "cinema",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔅": {
+	name: "dim button",
+	slug: "dim_button",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🔆": {
+	name: "bright button",
+	slug: "bright_button",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"📶": {
+	name: "antenna bars",
+	slug: "antenna_bars",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📳": {
+	name: "vibration mode",
+	slug: "vibration_mode",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📴": {
+	name: "mobile phone off",
+	slug: "mobile_phone_off",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♀️": {
+	name: "female sign",
+	slug: "female_sign",
+	group: "Symbols",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"♂️": {
+	name: "male sign",
+	slug: "male_sign",
+	group: "Symbols",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"⚧️": {
+	name: "transgender symbol",
+	slug: "transgender_symbol",
+	group: "Symbols",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"✖️": {
+	name: "multiply",
+	slug: "multiply",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"➕": {
+	name: "plus",
+	slug: "plus",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"➖": {
+	name: "minus",
+	slug: "minus",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"➗": {
+	name: "divide",
+	slug: "divide",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"♾️": {
+	name: "infinity",
+	slug: "infinity",
+	group: "Symbols",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"‼️": {
+	name: "double exclamation mark",
+	slug: "double_exclamation_mark",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⁉️": {
+	name: "exclamation question mark",
+	slug: "exclamation_question_mark",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"❓": {
+	name: "red question mark",
+	slug: "red_question_mark",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"❔": {
+	name: "white question mark",
+	slug: "white_question_mark",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"❕": {
+	name: "white exclamation mark",
+	slug: "white_exclamation_mark",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"❗": {
+	name: "red exclamation mark",
+	slug: "red_exclamation_mark",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"〰️": {
+	name: "wavy dash",
+	slug: "wavy_dash",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💱": {
+	name: "currency exchange",
+	slug: "currency_exchange",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💲": {
+	name: "heavy dollar sign",
+	slug: "heavy_dollar_sign",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⚕️": {
+	name: "medical symbol",
+	slug: "medical_symbol",
+	group: "Symbols",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"♻️": {
+	name: "recycling symbol",
+	slug: "recycling_symbol",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⚜️": {
+	name: "fleur-de-lis",
+	slug: "fleur_de_lis",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🔱": {
+	name: "trident emblem",
+	slug: "trident_emblem",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"📛": {
+	name: "name badge",
+	slug: "name_badge",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔰": {
+	name: "Japanese symbol for beginner",
+	slug: "japanese_symbol_for_beginner",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⭕": {
+	name: "hollow red circle",
+	slug: "hollow_red_circle",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"✅": {
+	name: "check mark button",
+	slug: "check_mark_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"☑️": {
+	name: "check box with check",
+	slug: "check_box_with_check",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"✔️": {
+	name: "check mark",
+	slug: "check_mark",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"❌": {
+	name: "cross mark",
+	slug: "cross_mark",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"❎": {
+	name: "cross mark button",
+	slug: "cross_mark_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"➰": {
+	name: "curly loop",
+	slug: "curly_loop",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"➿": {
+	name: "double curly loop",
+	slug: "double_curly_loop",
+	group: "Symbols",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"〽️": {
+	name: "part alternation mark",
+	slug: "part_alternation_mark",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"✳️": {
+	name: "eight-spoked asterisk",
+	slug: "eight_spoked_asterisk",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"✴️": {
+	name: "eight-pointed star",
+	slug: "eight_pointed_star",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"❇️": {
+	name: "sparkle",
+	slug: "sparkle",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"©️": {
+	name: "copyright",
+	slug: "copyright",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"®️": {
+	name: "registered",
+	slug: "registered",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"™️": {
+	name: "trade mark",
+	slug: "trade_mark",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"#️⃣": {
+	name: "keycap #",
+	slug: "keycap_",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"*️⃣": {
+	name: "keycap *",
+	slug: "keycap_",
+	group: "Symbols",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"0️⃣": {
+	name: "keycap 0",
+	slug: "keycap_0",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"1️⃣": {
+	name: "keycap 1",
+	slug: "keycap_1",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"2️⃣": {
+	name: "keycap 2",
+	slug: "keycap_2",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"3️⃣": {
+	name: "keycap 3",
+	slug: "keycap_3",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"4️⃣": {
+	name: "keycap 4",
+	slug: "keycap_4",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"5️⃣": {
+	name: "keycap 5",
+	slug: "keycap_5",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"6️⃣": {
+	name: "keycap 6",
+	slug: "keycap_6",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"7️⃣": {
+	name: "keycap 7",
+	slug: "keycap_7",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"8️⃣": {
+	name: "keycap 8",
+	slug: "keycap_8",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"9️⃣": {
+	name: "keycap 9",
+	slug: "keycap_9",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔟": {
+	name: "keycap 10",
+	slug: "keycap_10",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔠": {
+	name: "input latin uppercase",
+	slug: "input_latin_uppercase",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔡": {
+	name: "input latin lowercase",
+	slug: "input_latin_lowercase",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔢": {
+	name: "input numbers",
+	slug: "input_numbers",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔣": {
+	name: "input symbols",
+	slug: "input_symbols",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔤": {
+	name: "input latin letters",
+	slug: "input_latin_letters",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🅰️": {
+	name: "A button (blood type)",
+	slug: "a_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🆎": {
+	name: "AB button (blood type)",
+	slug: "ab_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🅱️": {
+	name: "B button (blood type)",
+	slug: "b_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🆑": {
+	name: "CL button",
+	slug: "cl_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🆒": {
+	name: "COOL button",
+	slug: "cool_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🆓": {
+	name: "FREE button",
+	slug: "free_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"ℹ️": {
+	name: "information",
+	slug: "information",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🆔": {
+	name: "ID button",
+	slug: "id_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"Ⓜ️": {
+	name: "circled M",
+	slug: "circled_m",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🆕": {
+	name: "NEW button",
+	slug: "new_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🆖": {
+	name: "NG button",
+	slug: "ng_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🅾️": {
+	name: "O button (blood type)",
+	slug: "o_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🆗": {
+	name: "OK button",
+	slug: "ok_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🅿️": {
+	name: "P button",
+	slug: "p_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🆘": {
+	name: "SOS button",
+	slug: "sos_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🆙": {
+	name: "UP! button",
+	slug: "up_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🆚": {
+	name: "VS button",
+	slug: "vs_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🈁": {
+	name: "Japanese “here” button",
+	slug: "japanese_here_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🈂️": {
+	name: "Japanese “service charge” button",
+	slug: "japanese_service_charge_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🈷️": {
+	name: "Japanese “monthly amount” button",
+	slug: "japanese_monthly_amount_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🈶": {
+	name: "Japanese “not free of charge” button",
+	slug: "japanese_not_free_of_charge_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🈯": {
+	name: "Japanese “reserved” button",
+	slug: "japanese_reserved_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🉐": {
+	name: "Japanese “bargain” button",
+	slug: "japanese_bargain_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🈹": {
+	name: "Japanese “discount” button",
+	slug: "japanese_discount_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🈚": {
+	name: "Japanese “free of charge” button",
+	slug: "japanese_free_of_charge_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🈲": {
+	name: "Japanese “prohibited” button",
+	slug: "japanese_prohibited_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🉑": {
+	name: "Japanese “acceptable” button",
+	slug: "japanese_acceptable_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🈸": {
+	name: "Japanese “application” button",
+	slug: "japanese_application_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🈴": {
+	name: "Japanese “passing grade” button",
+	slug: "japanese_passing_grade_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🈳": {
+	name: "Japanese “vacancy” button",
+	slug: "japanese_vacancy_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"㊗️": {
+	name: "Japanese “congratulations” button",
+	slug: "japanese_congratulations_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"㊙️": {
+	name: "Japanese “secret” button",
+	slug: "japanese_secret_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🈺": {
+	name: "Japanese “open for business” button",
+	slug: "japanese_open_for_business_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🈵": {
+	name: "Japanese “no vacancy” button",
+	slug: "japanese_no_vacancy_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔴": {
+	name: "red circle",
+	slug: "red_circle",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🟠": {
+	name: "orange circle",
+	slug: "orange_circle",
+	group: "Symbols",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🟡": {
+	name: "yellow circle",
+	slug: "yellow_circle",
+	group: "Symbols",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🟢": {
+	name: "green circle",
+	slug: "green_circle",
+	group: "Symbols",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🔵": {
+	name: "blue circle",
+	slug: "blue_circle",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🟣": {
+	name: "purple circle",
+	slug: "purple_circle",
+	group: "Symbols",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🟤": {
+	name: "brown circle",
+	slug: "brown_circle",
+	group: "Symbols",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"⚫": {
+	name: "black circle",
+	slug: "black_circle",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⚪": {
+	name: "white circle",
+	slug: "white_circle",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🟥": {
+	name: "red square",
+	slug: "red_square",
+	group: "Symbols",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🟧": {
+	name: "orange square",
+	slug: "orange_square",
+	group: "Symbols",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🟨": {
+	name: "yellow square",
+	slug: "yellow_square",
+	group: "Symbols",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🟩": {
+	name: "green square",
+	slug: "green_square",
+	group: "Symbols",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🟦": {
+	name: "blue square",
+	slug: "blue_square",
+	group: "Symbols",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🟪": {
+	name: "purple square",
+	slug: "purple_square",
+	group: "Symbols",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"🟫": {
+	name: "brown square",
+	slug: "brown_square",
+	group: "Symbols",
+	emoji_version: "12.0",
+	unicode_version: "12.0",
+	skin_tone_support: false
+},
+	"⬛": {
+	name: "black large square",
+	slug: "black_large_square",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"⬜": {
+	name: "white large square",
+	slug: "white_large_square",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"◼️": {
+	name: "black medium square",
+	slug: "black_medium_square",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"◻️": {
+	name: "white medium square",
+	slug: "white_medium_square",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"◾": {
+	name: "black medium-small square",
+	slug: "black_medium_small_square",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"◽": {
+	name: "white medium-small square",
+	slug: "white_medium_small_square",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"▪️": {
+	name: "black small square",
+	slug: "black_small_square",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"▫️": {
+	name: "white small square",
+	slug: "white_small_square",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔶": {
+	name: "large orange diamond",
+	slug: "large_orange_diamond",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔷": {
+	name: "large blue diamond",
+	slug: "large_blue_diamond",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔸": {
+	name: "small orange diamond",
+	slug: "small_orange_diamond",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔹": {
+	name: "small blue diamond",
+	slug: "small_blue_diamond",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔺": {
+	name: "red triangle pointed up",
+	slug: "red_triangle_pointed_up",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔻": {
+	name: "red triangle pointed down",
+	slug: "red_triangle_pointed_down",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"💠": {
+	name: "diamond with a dot",
+	slug: "diamond_with_a_dot",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔘": {
+	name: "radio button",
+	slug: "radio_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔳": {
+	name: "white square button",
+	slug: "white_square_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🔲": {
+	name: "black square button",
+	slug: "black_square_button",
+	group: "Symbols",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏁": {
+	name: "chequered flag",
+	slug: "chequered_flag",
+	group: "Flags",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🚩": {
+	name: "triangular flag",
+	slug: "triangular_flag",
+	group: "Flags",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🎌": {
+	name: "crossed flags",
+	slug: "crossed_flags",
+	group: "Flags",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🏴": {
+	name: "black flag",
+	slug: "black_flag",
+	group: "Flags",
+	emoji_version: "1.0",
+	unicode_version: "1.0",
+	skin_tone_support: false
+},
+	"🏳️": {
+	name: "white flag",
+	slug: "white_flag",
+	group: "Flags",
+	emoji_version: "0.7",
+	unicode_version: "0.7",
+	skin_tone_support: false
+},
+	"🏳️‍🌈": {
+	name: "rainbow flag",
+	slug: "rainbow_flag",
+	group: "Flags",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"🏳️‍⚧️": {
+	name: "transgender flag",
+	slug: "transgender_flag",
+	group: "Flags",
+	emoji_version: "13.0",
+	unicode_version: "13.0",
+	skin_tone_support: false
+},
+	"🏴‍☠️": {
+	name: "pirate flag",
+	slug: "pirate_flag",
+	group: "Flags",
+	emoji_version: "11.0",
+	unicode_version: "11.0",
+	skin_tone_support: false
+},
+	"🇦🇨": {
+	name: "flag Ascension Island",
+	slug: "flag_ascension_island",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇩": {
+	name: "flag Andorra",
+	slug: "flag_andorra",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇪": {
+	name: "flag United Arab Emirates",
+	slug: "flag_united_arab_emirates",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇫": {
+	name: "flag Afghanistan",
+	slug: "flag_afghanistan",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇬": {
+	name: "flag Antigua & Barbuda",
+	slug: "flag_antigua_barbuda",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇮": {
+	name: "flag Anguilla",
+	slug: "flag_anguilla",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇱": {
+	name: "flag Albania",
+	slug: "flag_albania",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇲": {
+	name: "flag Armenia",
+	slug: "flag_armenia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇴": {
+	name: "flag Angola",
+	slug: "flag_angola",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇶": {
+	name: "flag Antarctica",
+	slug: "flag_antarctica",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇷": {
+	name: "flag Argentina",
+	slug: "flag_argentina",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇸": {
+	name: "flag American Samoa",
+	slug: "flag_american_samoa",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇹": {
+	name: "flag Austria",
+	slug: "flag_austria",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇺": {
+	name: "flag Australia",
+	slug: "flag_australia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇼": {
+	name: "flag Aruba",
+	slug: "flag_aruba",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇽": {
+	name: "flag Åland Islands",
+	slug: "flag_aland_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇦🇿": {
+	name: "flag Azerbaijan",
+	slug: "flag_azerbaijan",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇦": {
+	name: "flag Bosnia & Herzegovina",
+	slug: "flag_bosnia_herzegovina",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇧": {
+	name: "flag Barbados",
+	slug: "flag_barbados",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇩": {
+	name: "flag Bangladesh",
+	slug: "flag_bangladesh",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇪": {
+	name: "flag Belgium",
+	slug: "flag_belgium",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇫": {
+	name: "flag Burkina Faso",
+	slug: "flag_burkina_faso",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇬": {
+	name: "flag Bulgaria",
+	slug: "flag_bulgaria",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇭": {
+	name: "flag Bahrain",
+	slug: "flag_bahrain",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇮": {
+	name: "flag Burundi",
+	slug: "flag_burundi",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇯": {
+	name: "flag Benin",
+	slug: "flag_benin",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇱": {
+	name: "flag St. Barthélemy",
+	slug: "flag_st_barthelemy",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇲": {
+	name: "flag Bermuda",
+	slug: "flag_bermuda",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇳": {
+	name: "flag Brunei",
+	slug: "flag_brunei",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇴": {
+	name: "flag Bolivia",
+	slug: "flag_bolivia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇶": {
+	name: "flag Caribbean Netherlands",
+	slug: "flag_caribbean_netherlands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇷": {
+	name: "flag Brazil",
+	slug: "flag_brazil",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇸": {
+	name: "flag Bahamas",
+	slug: "flag_bahamas",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇹": {
+	name: "flag Bhutan",
+	slug: "flag_bhutan",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇻": {
+	name: "flag Bouvet Island",
+	slug: "flag_bouvet_island",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇼": {
+	name: "flag Botswana",
+	slug: "flag_botswana",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇾": {
+	name: "flag Belarus",
+	slug: "flag_belarus",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇧🇿": {
+	name: "flag Belize",
+	slug: "flag_belize",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇦": {
+	name: "flag Canada",
+	slug: "flag_canada",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇨": {
+	name: "flag Cocos (Keeling) Islands",
+	slug: "flag_cocos_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇩": {
+	name: "flag Congo - Kinshasa",
+	slug: "flag_congo_kinshasa",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇫": {
+	name: "flag Central African Republic",
+	slug: "flag_central_african_republic",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇬": {
+	name: "flag Congo - Brazzaville",
+	slug: "flag_congo_brazzaville",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇭": {
+	name: "flag Switzerland",
+	slug: "flag_switzerland",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇮": {
+	name: "flag Côte d’Ivoire",
+	slug: "flag_cote_d_ivoire",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇰": {
+	name: "flag Cook Islands",
+	slug: "flag_cook_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇱": {
+	name: "flag Chile",
+	slug: "flag_chile",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇲": {
+	name: "flag Cameroon",
+	slug: "flag_cameroon",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇳": {
+	name: "flag China",
+	slug: "flag_china",
+	group: "Flags",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🇨🇴": {
+	name: "flag Colombia",
+	slug: "flag_colombia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇵": {
+	name: "flag Clipperton Island",
+	slug: "flag_clipperton_island",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇷": {
+	name: "flag Costa Rica",
+	slug: "flag_costa_rica",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇺": {
+	name: "flag Cuba",
+	slug: "flag_cuba",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇻": {
+	name: "flag Cape Verde",
+	slug: "flag_cape_verde",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇼": {
+	name: "flag Curaçao",
+	slug: "flag_curacao",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇽": {
+	name: "flag Christmas Island",
+	slug: "flag_christmas_island",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇾": {
+	name: "flag Cyprus",
+	slug: "flag_cyprus",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇨🇿": {
+	name: "flag Czechia",
+	slug: "flag_czechia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇩🇪": {
+	name: "flag Germany",
+	slug: "flag_germany",
+	group: "Flags",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🇩🇬": {
+	name: "flag Diego Garcia",
+	slug: "flag_diego_garcia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇩🇯": {
+	name: "flag Djibouti",
+	slug: "flag_djibouti",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇩🇰": {
+	name: "flag Denmark",
+	slug: "flag_denmark",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇩🇲": {
+	name: "flag Dominica",
+	slug: "flag_dominica",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇩🇴": {
+	name: "flag Dominican Republic",
+	slug: "flag_dominican_republic",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇩🇿": {
+	name: "flag Algeria",
+	slug: "flag_algeria",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇪🇦": {
+	name: "flag Ceuta & Melilla",
+	slug: "flag_ceuta_melilla",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇪🇨": {
+	name: "flag Ecuador",
+	slug: "flag_ecuador",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇪🇪": {
+	name: "flag Estonia",
+	slug: "flag_estonia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇪🇬": {
+	name: "flag Egypt",
+	slug: "flag_egypt",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇪🇭": {
+	name: "flag Western Sahara",
+	slug: "flag_western_sahara",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇪🇷": {
+	name: "flag Eritrea",
+	slug: "flag_eritrea",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇪🇸": {
+	name: "flag Spain",
+	slug: "flag_spain",
+	group: "Flags",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🇪🇹": {
+	name: "flag Ethiopia",
+	slug: "flag_ethiopia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇪🇺": {
+	name: "flag European Union",
+	slug: "flag_european_union",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇫🇮": {
+	name: "flag Finland",
+	slug: "flag_finland",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇫🇯": {
+	name: "flag Fiji",
+	slug: "flag_fiji",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇫🇰": {
+	name: "flag Falkland Islands",
+	slug: "flag_falkland_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇫🇲": {
+	name: "flag Micronesia",
+	slug: "flag_micronesia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇫🇴": {
+	name: "flag Faroe Islands",
+	slug: "flag_faroe_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇫🇷": {
+	name: "flag France",
+	slug: "flag_france",
+	group: "Flags",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🇬🇦": {
+	name: "flag Gabon",
+	slug: "flag_gabon",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇧": {
+	name: "flag United Kingdom",
+	slug: "flag_united_kingdom",
+	group: "Flags",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🇬🇩": {
+	name: "flag Grenada",
+	slug: "flag_grenada",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇪": {
+	name: "flag Georgia",
+	slug: "flag_georgia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇫": {
+	name: "flag French Guiana",
+	slug: "flag_french_guiana",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇬": {
+	name: "flag Guernsey",
+	slug: "flag_guernsey",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇭": {
+	name: "flag Ghana",
+	slug: "flag_ghana",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇮": {
+	name: "flag Gibraltar",
+	slug: "flag_gibraltar",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇱": {
+	name: "flag Greenland",
+	slug: "flag_greenland",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇲": {
+	name: "flag Gambia",
+	slug: "flag_gambia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇳": {
+	name: "flag Guinea",
+	slug: "flag_guinea",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇵": {
+	name: "flag Guadeloupe",
+	slug: "flag_guadeloupe",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇶": {
+	name: "flag Equatorial Guinea",
+	slug: "flag_equatorial_guinea",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇷": {
+	name: "flag Greece",
+	slug: "flag_greece",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇸": {
+	name: "flag South Georgia & South Sandwich Islands",
+	slug: "flag_south_georgia_south_sandwich_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇹": {
+	name: "flag Guatemala",
+	slug: "flag_guatemala",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇺": {
+	name: "flag Guam",
+	slug: "flag_guam",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇼": {
+	name: "flag Guinea-Bissau",
+	slug: "flag_guinea_bissau",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇬🇾": {
+	name: "flag Guyana",
+	slug: "flag_guyana",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇭🇰": {
+	name: "flag Hong Kong SAR China",
+	slug: "flag_hong_kong_sar_china",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇭🇲": {
+	name: "flag Heard & McDonald Islands",
+	slug: "flag_heard_mcdonald_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇭🇳": {
+	name: "flag Honduras",
+	slug: "flag_honduras",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇭🇷": {
+	name: "flag Croatia",
+	slug: "flag_croatia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇭🇹": {
+	name: "flag Haiti",
+	slug: "flag_haiti",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇭🇺": {
+	name: "flag Hungary",
+	slug: "flag_hungary",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇮🇨": {
+	name: "flag Canary Islands",
+	slug: "flag_canary_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇮🇩": {
+	name: "flag Indonesia",
+	slug: "flag_indonesia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇮🇪": {
+	name: "flag Ireland",
+	slug: "flag_ireland",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇮🇱": {
+	name: "flag Israel",
+	slug: "flag_israel",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇮🇲": {
+	name: "flag Isle of Man",
+	slug: "flag_isle_of_man",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇮🇳": {
+	name: "flag India",
+	slug: "flag_india",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇮🇴": {
+	name: "flag British Indian Ocean Territory",
+	slug: "flag_british_indian_ocean_territory",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇮🇶": {
+	name: "flag Iraq",
+	slug: "flag_iraq",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇮🇷": {
+	name: "flag Iran",
+	slug: "flag_iran",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇮🇸": {
+	name: "flag Iceland",
+	slug: "flag_iceland",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇮🇹": {
+	name: "flag Italy",
+	slug: "flag_italy",
+	group: "Flags",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🇯🇪": {
+	name: "flag Jersey",
+	slug: "flag_jersey",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇯🇲": {
+	name: "flag Jamaica",
+	slug: "flag_jamaica",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇯🇴": {
+	name: "flag Jordan",
+	slug: "flag_jordan",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇯🇵": {
+	name: "flag Japan",
+	slug: "flag_japan",
+	group: "Flags",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🇰🇪": {
+	name: "flag Kenya",
+	slug: "flag_kenya",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇰🇬": {
+	name: "flag Kyrgyzstan",
+	slug: "flag_kyrgyzstan",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇰🇭": {
+	name: "flag Cambodia",
+	slug: "flag_cambodia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇰🇮": {
+	name: "flag Kiribati",
+	slug: "flag_kiribati",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇰🇲": {
+	name: "flag Comoros",
+	slug: "flag_comoros",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇰🇳": {
+	name: "flag St. Kitts & Nevis",
+	slug: "flag_st_kitts_nevis",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇰🇵": {
+	name: "flag North Korea",
+	slug: "flag_north_korea",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇰🇷": {
+	name: "flag South Korea",
+	slug: "flag_south_korea",
+	group: "Flags",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🇰🇼": {
+	name: "flag Kuwait",
+	slug: "flag_kuwait",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇰🇾": {
+	name: "flag Cayman Islands",
+	slug: "flag_cayman_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇰🇿": {
+	name: "flag Kazakhstan",
+	slug: "flag_kazakhstan",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇱🇦": {
+	name: "flag Laos",
+	slug: "flag_laos",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇱🇧": {
+	name: "flag Lebanon",
+	slug: "flag_lebanon",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇱🇨": {
+	name: "flag St. Lucia",
+	slug: "flag_st_lucia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇱🇮": {
+	name: "flag Liechtenstein",
+	slug: "flag_liechtenstein",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇱🇰": {
+	name: "flag Sri Lanka",
+	slug: "flag_sri_lanka",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇱🇷": {
+	name: "flag Liberia",
+	slug: "flag_liberia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇱🇸": {
+	name: "flag Lesotho",
+	slug: "flag_lesotho",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇱🇹": {
+	name: "flag Lithuania",
+	slug: "flag_lithuania",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇱🇺": {
+	name: "flag Luxembourg",
+	slug: "flag_luxembourg",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇱🇻": {
+	name: "flag Latvia",
+	slug: "flag_latvia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇱🇾": {
+	name: "flag Libya",
+	slug: "flag_libya",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇦": {
+	name: "flag Morocco",
+	slug: "flag_morocco",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇨": {
+	name: "flag Monaco",
+	slug: "flag_monaco",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇩": {
+	name: "flag Moldova",
+	slug: "flag_moldova",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇪": {
+	name: "flag Montenegro",
+	slug: "flag_montenegro",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇫": {
+	name: "flag St. Martin",
+	slug: "flag_st_martin",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇬": {
+	name: "flag Madagascar",
+	slug: "flag_madagascar",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇭": {
+	name: "flag Marshall Islands",
+	slug: "flag_marshall_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇰": {
+	name: "flag North Macedonia",
+	slug: "flag_north_macedonia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇱": {
+	name: "flag Mali",
+	slug: "flag_mali",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇲": {
+	name: "flag Myanmar (Burma)",
+	slug: "flag_myanmar",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇳": {
+	name: "flag Mongolia",
+	slug: "flag_mongolia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇴": {
+	name: "flag Macao SAR China",
+	slug: "flag_macao_sar_china",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇵": {
+	name: "flag Northern Mariana Islands",
+	slug: "flag_northern_mariana_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇶": {
+	name: "flag Martinique",
+	slug: "flag_martinique",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇷": {
+	name: "flag Mauritania",
+	slug: "flag_mauritania",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇸": {
+	name: "flag Montserrat",
+	slug: "flag_montserrat",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇹": {
+	name: "flag Malta",
+	slug: "flag_malta",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇺": {
+	name: "flag Mauritius",
+	slug: "flag_mauritius",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇻": {
+	name: "flag Maldives",
+	slug: "flag_maldives",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇼": {
+	name: "flag Malawi",
+	slug: "flag_malawi",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇽": {
+	name: "flag Mexico",
+	slug: "flag_mexico",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇾": {
+	name: "flag Malaysia",
+	slug: "flag_malaysia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇲🇿": {
+	name: "flag Mozambique",
+	slug: "flag_mozambique",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇳🇦": {
+	name: "flag Namibia",
+	slug: "flag_namibia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇳🇨": {
+	name: "flag New Caledonia",
+	slug: "flag_new_caledonia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇳🇪": {
+	name: "flag Niger",
+	slug: "flag_niger",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇳🇫": {
+	name: "flag Norfolk Island",
+	slug: "flag_norfolk_island",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇳🇬": {
+	name: "flag Nigeria",
+	slug: "flag_nigeria",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇳🇮": {
+	name: "flag Nicaragua",
+	slug: "flag_nicaragua",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇳🇱": {
+	name: "flag Netherlands",
+	slug: "flag_netherlands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇳🇴": {
+	name: "flag Norway",
+	slug: "flag_norway",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇳🇵": {
+	name: "flag Nepal",
+	slug: "flag_nepal",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇳🇷": {
+	name: "flag Nauru",
+	slug: "flag_nauru",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇳🇺": {
+	name: "flag Niue",
+	slug: "flag_niue",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇳🇿": {
+	name: "flag New Zealand",
+	slug: "flag_new_zealand",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇴🇲": {
+	name: "flag Oman",
+	slug: "flag_oman",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇵🇦": {
+	name: "flag Panama",
+	slug: "flag_panama",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇵🇪": {
+	name: "flag Peru",
+	slug: "flag_peru",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇵🇫": {
+	name: "flag French Polynesia",
+	slug: "flag_french_polynesia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇵🇬": {
+	name: "flag Papua New Guinea",
+	slug: "flag_papua_new_guinea",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇵🇭": {
+	name: "flag Philippines",
+	slug: "flag_philippines",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇵🇰": {
+	name: "flag Pakistan",
+	slug: "flag_pakistan",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇵🇱": {
+	name: "flag Poland",
+	slug: "flag_poland",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇵🇲": {
+	name: "flag St. Pierre & Miquelon",
+	slug: "flag_st_pierre_miquelon",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇵🇳": {
+	name: "flag Pitcairn Islands",
+	slug: "flag_pitcairn_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇵🇷": {
+	name: "flag Puerto Rico",
+	slug: "flag_puerto_rico",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇵🇸": {
+	name: "flag Palestinian Territories",
+	slug: "flag_palestinian_territories",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇵🇹": {
+	name: "flag Portugal",
+	slug: "flag_portugal",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇵🇼": {
+	name: "flag Palau",
+	slug: "flag_palau",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇵🇾": {
+	name: "flag Paraguay",
+	slug: "flag_paraguay",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇶🇦": {
+	name: "flag Qatar",
+	slug: "flag_qatar",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇷🇪": {
+	name: "flag Réunion",
+	slug: "flag_reunion",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇷🇴": {
+	name: "flag Romania",
+	slug: "flag_romania",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇷🇸": {
+	name: "flag Serbia",
+	slug: "flag_serbia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇷🇺": {
+	name: "flag Russia",
+	slug: "flag_russia",
+	group: "Flags",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🇷🇼": {
+	name: "flag Rwanda",
+	slug: "flag_rwanda",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇦": {
+	name: "flag Saudi Arabia",
+	slug: "flag_saudi_arabia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇧": {
+	name: "flag Solomon Islands",
+	slug: "flag_solomon_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇨": {
+	name: "flag Seychelles",
+	slug: "flag_seychelles",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇩": {
+	name: "flag Sudan",
+	slug: "flag_sudan",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇪": {
+	name: "flag Sweden",
+	slug: "flag_sweden",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇬": {
+	name: "flag Singapore",
+	slug: "flag_singapore",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇭": {
+	name: "flag St. Helena",
+	slug: "flag_st_helena",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇮": {
+	name: "flag Slovenia",
+	slug: "flag_slovenia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇯": {
+	name: "flag Svalbard & Jan Mayen",
+	slug: "flag_svalbard_jan_mayen",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇰": {
+	name: "flag Slovakia",
+	slug: "flag_slovakia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇱": {
+	name: "flag Sierra Leone",
+	slug: "flag_sierra_leone",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇲": {
+	name: "flag San Marino",
+	slug: "flag_san_marino",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇳": {
+	name: "flag Senegal",
+	slug: "flag_senegal",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇴": {
+	name: "flag Somalia",
+	slug: "flag_somalia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇷": {
+	name: "flag Suriname",
+	slug: "flag_suriname",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇸": {
+	name: "flag South Sudan",
+	slug: "flag_south_sudan",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇹": {
+	name: "flag São Tomé & Príncipe",
+	slug: "flag_sao_tome_principe",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇻": {
+	name: "flag El Salvador",
+	slug: "flag_el_salvador",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇽": {
+	name: "flag Sint Maarten",
+	slug: "flag_sint_maarten",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇾": {
+	name: "flag Syria",
+	slug: "flag_syria",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇸🇿": {
+	name: "flag Eswatini",
+	slug: "flag_eswatini",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇦": {
+	name: "flag Tristan da Cunha",
+	slug: "flag_tristan_da_cunha",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇨": {
+	name: "flag Turks & Caicos Islands",
+	slug: "flag_turks_caicos_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇩": {
+	name: "flag Chad",
+	slug: "flag_chad",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇫": {
+	name: "flag French Southern Territories",
+	slug: "flag_french_southern_territories",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇬": {
+	name: "flag Togo",
+	slug: "flag_togo",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇭": {
+	name: "flag Thailand",
+	slug: "flag_thailand",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇯": {
+	name: "flag Tajikistan",
+	slug: "flag_tajikistan",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇰": {
+	name: "flag Tokelau",
+	slug: "flag_tokelau",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇱": {
+	name: "flag Timor-Leste",
+	slug: "flag_timor_leste",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇲": {
+	name: "flag Turkmenistan",
+	slug: "flag_turkmenistan",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇳": {
+	name: "flag Tunisia",
+	slug: "flag_tunisia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇴": {
+	name: "flag Tonga",
+	slug: "flag_tonga",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇷": {
+	name: "flag Turkey",
+	slug: "flag_turkey",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇹": {
+	name: "flag Trinidad & Tobago",
+	slug: "flag_trinidad_tobago",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇻": {
+	name: "flag Tuvalu",
+	slug: "flag_tuvalu",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇼": {
+	name: "flag Taiwan",
+	slug: "flag_taiwan",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇹🇿": {
+	name: "flag Tanzania",
+	slug: "flag_tanzania",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇺🇦": {
+	name: "flag Ukraine",
+	slug: "flag_ukraine",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇺🇬": {
+	name: "flag Uganda",
+	slug: "flag_uganda",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇺🇲": {
+	name: "flag U.S. Outlying Islands",
+	slug: "flag_u_s_outlying_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇺🇳": {
+	name: "flag United Nations",
+	slug: "flag_united_nations",
+	group: "Flags",
+	emoji_version: "4.0",
+	unicode_version: "4.0",
+	skin_tone_support: false
+},
+	"🇺🇸": {
+	name: "flag United States",
+	slug: "flag_united_states",
+	group: "Flags",
+	emoji_version: "0.6",
+	unicode_version: "0.6",
+	skin_tone_support: false
+},
+	"🇺🇾": {
+	name: "flag Uruguay",
+	slug: "flag_uruguay",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇺🇿": {
+	name: "flag Uzbekistan",
+	slug: "flag_uzbekistan",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇻🇦": {
+	name: "flag Vatican City",
+	slug: "flag_vatican_city",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇻🇨": {
+	name: "flag St. Vincent & Grenadines",
+	slug: "flag_st_vincent_grenadines",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇻🇪": {
+	name: "flag Venezuela",
+	slug: "flag_venezuela",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇻🇬": {
+	name: "flag British Virgin Islands",
+	slug: "flag_british_virgin_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇻🇮": {
+	name: "flag U.S. Virgin Islands",
+	slug: "flag_u_s_virgin_islands",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇻🇳": {
+	name: "flag Vietnam",
+	slug: "flag_vietnam",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇻🇺": {
+	name: "flag Vanuatu",
+	slug: "flag_vanuatu",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇼🇫": {
+	name: "flag Wallis & Futuna",
+	slug: "flag_wallis_futuna",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇼🇸": {
+	name: "flag Samoa",
+	slug: "flag_samoa",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇽🇰": {
+	name: "flag Kosovo",
+	slug: "flag_kosovo",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇾🇪": {
+	name: "flag Yemen",
+	slug: "flag_yemen",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇾🇹": {
+	name: "flag Mayotte",
+	slug: "flag_mayotte",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇿🇦": {
+	name: "flag South Africa",
+	slug: "flag_south_africa",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇿🇲": {
+	name: "flag Zambia",
+	slug: "flag_zambia",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🇿🇼": {
+	name: "flag Zimbabwe",
+	slug: "flag_zimbabwe",
+	group: "Flags",
+	emoji_version: "2.0",
+	unicode_version: "2.0",
+	skin_tone_support: false
+},
+	"🏴󠁧󠁢󠁥󠁮󠁧󠁿": {
+	name: "flag England",
+	slug: "flag_england",
+	group: "Flags",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🏴󠁧󠁢󠁳󠁣󠁴󠁿": {
+	name: "flag Scotland",
+	slug: "flag_scotland",
+	group: "Flags",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+},
+	"🏴󠁧󠁢󠁷󠁬󠁳󠁿": {
+	name: "flag Wales",
+	slug: "flag_wales",
+	group: "Flags",
+	emoji_version: "5.0",
+	unicode_version: "5.0",
+	skin_tone_support: false
+}
 };
 
+var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
+
+var location = commonjsGlobal.location || {};
+/*jslint indent: 2, browser: true, bitwise: true, plusplus: true */
+var twemoji = (function (
+  /*! Copyright Twitter Inc. and other contributors. Licensed under MIT *//*
+    https://github.com/twitter/twemoji/blob/gh-pages/LICENSE
+  */
+
+  // WARNING:   this file is generated automatically via
+  //            `node scripts/build.js`
+  //            please update its `createTwemoji` function
+  //            at the bottom of the same file instead.
+
+) {
+
+  /*jshint maxparams:4 */
+
+  var
+    // the exported module object
+    twemoji = {
+
+
+    /////////////////////////
+    //      properties     //
+    /////////////////////////
+
+      // default assets url, by default will be Twitter Inc. CDN
+      base: 'https://twemoji.maxcdn.com/v/13.0.1/',
+
+      // default assets file extensions, by default '.png'
+      ext: '.png',
+
+      // default assets/folder size, by default "72x72"
+      // available via Twitter CDN: 72
+      size: '72x72',
+
+      // default class name, by default 'emoji'
+      className: 'emoji',
+
+      // basic utilities / helpers to convert code points
+      // to JavaScript surrogates and vice versa
+      convert: {
+
+        /**
+         * Given an HEX codepoint, returns UTF16 surrogate pairs.
+         *
+         * @param   string  generic codepoint, i.e. '1F4A9'
+         * @return  string  codepoint transformed into utf16 surrogates pair,
+         *          i.e. \uD83D\uDCA9
+         *
+         * @example
+         *  twemoji.convert.fromCodePoint('1f1e8');
+         *  // "\ud83c\udde8"
+         *
+         *  '1f1e8-1f1f3'.split('-').map(twemoji.convert.fromCodePoint).join('')
+         *  // "\ud83c\udde8\ud83c\uddf3"
+         */
+        fromCodePoint: fromCodePoint,
+
+        /**
+         * Given UTF16 surrogate pairs, returns the equivalent HEX codepoint.
+         *
+         * @param   string  generic utf16 surrogates pair, i.e. \uD83D\uDCA9
+         * @param   string  optional separator for double code points, default='-'
+         * @return  string  utf16 transformed into codepoint, i.e. '1F4A9'
+         *
+         * @example
+         *  twemoji.convert.toCodePoint('\ud83c\udde8\ud83c\uddf3');
+         *  // "1f1e8-1f1f3"
+         *
+         *  twemoji.convert.toCodePoint('\ud83c\udde8\ud83c\uddf3', '~');
+         *  // "1f1e8~1f1f3"
+         */
+        toCodePoint: toCodePoint
+      },
+
+
+    /////////////////////////
+    //       methods       //
+    /////////////////////////
+
+      /**
+       * User first: used to remove missing images
+       * preserving the original text intent when
+       * a fallback for network problems is desired.
+       * Automatically added to Image nodes via DOM
+       * It could be recycled for string operations via:
+       *  $('img.emoji').on('error', twemoji.onerror)
+       */
+      onerror: function onerror() {
+        if (this.parentNode) {
+          this.parentNode.replaceChild(createText(this.alt, false), this);
+        }
+      },
+
+      /**
+       * Main method/logic to generate either <img> tags or HTMLImage nodes.
+       *  "emojify" a generic text or DOM Element.
+       *
+       * @overloads
+       *
+       * String replacement for `innerHTML` or server side operations
+       *  twemoji.parse(string);
+       *  twemoji.parse(string, Function);
+       *  twemoji.parse(string, Object);
+       *
+       * HTMLElement tree parsing for safer operations over existing DOM
+       *  twemoji.parse(HTMLElement);
+       *  twemoji.parse(HTMLElement, Function);
+       *  twemoji.parse(HTMLElement, Object);
+       *
+       * @param   string|HTMLElement  the source to parse and enrich with emoji.
+       *
+       *          string              replace emoji matches with <img> tags.
+       *                              Mainly used to inject emoji via `innerHTML`
+       *                              It does **not** parse the string or validate it,
+       *                              it simply replaces found emoji with a tag.
+       *                              NOTE: be sure this won't affect security.
+       *
+       *          HTMLElement         walk through the DOM tree and find emoji
+       *                              that are inside **text node only** (nodeType === 3)
+       *                              Mainly used to put emoji in already generated DOM
+       *                              without compromising surrounding nodes and
+       *                              **avoiding** the usage of `innerHTML`.
+       *                              NOTE: Using DOM elements instead of strings should
+       *                              improve security without compromising too much
+       *                              performance compared with a less safe `innerHTML`.
+       *
+       * @param   Function|Object  [optional]
+       *                              either the callback that will be invoked or an object
+       *                              with all properties to use per each found emoji.
+       *
+       *          Function            if specified, this will be invoked per each emoji
+       *                              that has been found through the RegExp except
+       *                              those follwed by the invariant \uFE0E ("as text").
+       *                              Once invoked, parameters will be:
+       *
+       *                                iconId:string     the lower case HEX code point
+       *                                                  i.e. "1f4a9"
+       *
+       *                                options:Object    all info for this parsing operation
+       *
+       *                                variant:char      the optional \uFE0F ("as image")
+       *                                                  variant, in case this info
+       *                                                  is anyhow meaningful.
+       *                                                  By default this is ignored.
+       *
+       *                              If such callback will return a falsy value instead
+       *                              of a valid `src` to use for the image, nothing will
+       *                              actually change for that specific emoji.
+       *
+       *
+       *          Object              if specified, an object containing the following properties
+       *
+       *            callback   Function  the callback to invoke per each found emoji.
+       *            base       string    the base url, by default twemoji.base
+       *            ext        string    the image extension, by default twemoji.ext
+       *            size       string    the assets size, by default twemoji.size
+       *
+       * @example
+       *
+       *  twemoji.parse("I \u2764\uFE0F emoji!");
+       *  // I <img class="emoji" draggable="false" alt="❤️" src="/assets/2764.gif"/> emoji!
+       *
+       *
+       *  twemoji.parse("I \u2764\uFE0F emoji!", function(iconId, options) {
+       *    return '/assets/' + iconId + '.gif';
+       *  });
+       *  // I <img class="emoji" draggable="false" alt="❤️" src="/assets/2764.gif"/> emoji!
+       *
+       *
+       * twemoji.parse("I \u2764\uFE0F emoji!", {
+       *   size: 72,
+       *   callback: function(iconId, options) {
+       *     return '/assets/' + options.size + '/' + iconId + options.ext;
+       *   }
+       * });
+       *  // I <img class="emoji" draggable="false" alt="❤️" src="/assets/72x72/2764.png"/> emoji!
+       *
+       */
+      parse: parse,
+
+      /**
+       * Given a string, invokes the callback argument
+       *  per each emoji found in such string.
+       * This is the most raw version used by
+       *  the .parse(string) method itself.
+       *
+       * @param   string    generic string to parse
+       * @param   Function  a generic callback that will be
+       *                    invoked to replace the content.
+       *                    This calback wil receive standard
+       *                    String.prototype.replace(str, callback)
+       *                    arguments such:
+       *  callback(
+       *    rawText,  // the emoji match
+       *  );
+       *
+       *                    and others commonly received via replace.
+       */
+      replace: replace,
+
+      /**
+       * Simplify string tests against emoji.
+       *
+       * @param   string  some text that might contain emoji
+       * @return  boolean true if any emoji was found, false otherwise.
+       *
+       * @example
+       *
+       *  if (twemoji.test(someContent)) {
+       *    console.log("emoji All The Things!");
+       *  }
+       */
+      test: test
+    },
+
+    // used to escape HTML special chars in attributes
+    escaper = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      "'": '&#39;',
+      '"': '&quot;'
+    },
+
+    // RegExp based on emoji's official Unicode standards
+    // http://www.unicode.org/Public/UNIDATA/EmojiSources.txt
+    re = /(?:\ud83d\udc68\ud83c\udffb\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffc-\udfff]|\ud83d\udc68\ud83c\udffc\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb\udffd-\udfff]|\ud83d\udc68\ud83c\udffd\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb\udffc\udffe\udfff]|\ud83d\udc68\ud83c\udffe\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb-\udffd\udfff]|\ud83d\udc68\ud83c\udfff\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb-\udffe]|\ud83d\udc69\ud83c\udffb\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffc-\udfff]|\ud83d\udc69\ud83c\udffb\u200d\ud83e\udd1d\u200d\ud83d\udc69\ud83c[\udffc-\udfff]|\ud83d\udc69\ud83c\udffc\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb\udffd-\udfff]|\ud83d\udc69\ud83c\udffc\u200d\ud83e\udd1d\u200d\ud83d\udc69\ud83c[\udffb\udffd-\udfff]|\ud83d\udc69\ud83c\udffd\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb\udffc\udffe\udfff]|\ud83d\udc69\ud83c\udffd\u200d\ud83e\udd1d\u200d\ud83d\udc69\ud83c[\udffb\udffc\udffe\udfff]|\ud83d\udc69\ud83c\udffe\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb-\udffd\udfff]|\ud83d\udc69\ud83c\udffe\u200d\ud83e\udd1d\u200d\ud83d\udc69\ud83c[\udffb-\udffd\udfff]|\ud83d\udc69\ud83c\udfff\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb-\udffe]|\ud83d\udc69\ud83c\udfff\u200d\ud83e\udd1d\u200d\ud83d\udc69\ud83c[\udffb-\udffe]|\ud83e\uddd1\ud83c\udffb\u200d\ud83e\udd1d\u200d\ud83e\uddd1\ud83c[\udffb-\udfff]|\ud83e\uddd1\ud83c\udffc\u200d\ud83e\udd1d\u200d\ud83e\uddd1\ud83c[\udffb-\udfff]|\ud83e\uddd1\ud83c\udffd\u200d\ud83e\udd1d\u200d\ud83e\uddd1\ud83c[\udffb-\udfff]|\ud83e\uddd1\ud83c\udffe\u200d\ud83e\udd1d\u200d\ud83e\uddd1\ud83c[\udffb-\udfff]|\ud83e\uddd1\ud83c\udfff\u200d\ud83e\udd1d\u200d\ud83e\uddd1\ud83c[\udffb-\udfff]|\ud83e\uddd1\u200d\ud83e\udd1d\u200d\ud83e\uddd1|\ud83d\udc6b\ud83c[\udffb-\udfff]|\ud83d\udc6c\ud83c[\udffb-\udfff]|\ud83d\udc6d\ud83c[\udffb-\udfff]|\ud83d[\udc6b-\udc6d])|(?:\ud83d[\udc68\udc69]|\ud83e\uddd1)(?:\ud83c[\udffb-\udfff])?\u200d(?:\u2695\ufe0f|\u2696\ufe0f|\u2708\ufe0f|\ud83c[\udf3e\udf73\udf7c\udf84\udf93\udfa4\udfa8\udfeb\udfed]|\ud83d[\udcbb\udcbc\udd27\udd2c\ude80\ude92]|\ud83e[\uddaf-\uddb3\uddbc\uddbd])|(?:\ud83c[\udfcb\udfcc]|\ud83d[\udd74\udd75]|\u26f9)((?:\ud83c[\udffb-\udfff]|\ufe0f)\u200d[\u2640\u2642]\ufe0f)|(?:\ud83c[\udfc3\udfc4\udfca]|\ud83d[\udc6e\udc70\udc71\udc73\udc77\udc81\udc82\udc86\udc87\ude45-\ude47\ude4b\ude4d\ude4e\udea3\udeb4-\udeb6]|\ud83e[\udd26\udd35\udd37-\udd39\udd3d\udd3e\uddb8\uddb9\uddcd-\uddcf\uddd6-\udddd])(?:\ud83c[\udffb-\udfff])?\u200d[\u2640\u2642]\ufe0f|(?:\ud83d\udc68\u200d\u2764\ufe0f\u200d\ud83d\udc8b\u200d\ud83d\udc68|\ud83d\udc68\u200d\ud83d\udc68\u200d\ud83d\udc66\u200d\ud83d\udc66|\ud83d\udc68\u200d\ud83d\udc68\u200d\ud83d\udc67\u200d\ud83d[\udc66\udc67]|\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc66\u200d\ud83d\udc66|\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d[\udc66\udc67]|\ud83d\udc69\u200d\u2764\ufe0f\u200d\ud83d\udc8b\u200d\ud83d[\udc68\udc69]|\ud83d\udc69\u200d\ud83d\udc69\u200d\ud83d\udc66\u200d\ud83d\udc66|\ud83d\udc69\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d[\udc66\udc67]|\ud83d\udc68\u200d\u2764\ufe0f\u200d\ud83d\udc68|\ud83d\udc68\u200d\ud83d\udc66\u200d\ud83d\udc66|\ud83d\udc68\u200d\ud83d\udc67\u200d\ud83d[\udc66\udc67]|\ud83d\udc68\u200d\ud83d\udc68\u200d\ud83d[\udc66\udc67]|\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d[\udc66\udc67]|\ud83d\udc69\u200d\u2764\ufe0f\u200d\ud83d[\udc68\udc69]|\ud83d\udc69\u200d\ud83d\udc66\u200d\ud83d\udc66|\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d[\udc66\udc67]|\ud83d\udc69\u200d\ud83d\udc69\u200d\ud83d[\udc66\udc67]|\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f|\ud83c\udff3\ufe0f\u200d\ud83c\udf08|\ud83c\udff4\u200d\u2620\ufe0f|\ud83d\udc15\u200d\ud83e\uddba|\ud83d\udc3b\u200d\u2744\ufe0f|\ud83d\udc41\u200d\ud83d\udde8|\ud83d\udc68\u200d\ud83d[\udc66\udc67]|\ud83d\udc69\u200d\ud83d[\udc66\udc67]|\ud83d\udc6f\u200d\u2640\ufe0f|\ud83d\udc6f\u200d\u2642\ufe0f|\ud83e\udd3c\u200d\u2640\ufe0f|\ud83e\udd3c\u200d\u2642\ufe0f|\ud83e\uddde\u200d\u2640\ufe0f|\ud83e\uddde\u200d\u2642\ufe0f|\ud83e\udddf\u200d\u2640\ufe0f|\ud83e\udddf\u200d\u2642\ufe0f|\ud83d\udc08\u200d\u2b1b)|[#*0-9]\ufe0f?\u20e3|(?:[©®\u2122\u265f]\ufe0f)|(?:\ud83c[\udc04\udd70\udd71\udd7e\udd7f\ude02\ude1a\ude2f\ude37\udf21\udf24-\udf2c\udf36\udf7d\udf96\udf97\udf99-\udf9b\udf9e\udf9f\udfcd\udfce\udfd4-\udfdf\udff3\udff5\udff7]|\ud83d[\udc3f\udc41\udcfd\udd49\udd4a\udd6f\udd70\udd73\udd76-\udd79\udd87\udd8a-\udd8d\udda5\udda8\uddb1\uddb2\uddbc\uddc2-\uddc4\uddd1-\uddd3\udddc-\uddde\udde1\udde3\udde8\uddef\uddf3\uddfa\udecb\udecd-\udecf\udee0-\udee5\udee9\udef0\udef3]|[\u203c\u2049\u2139\u2194-\u2199\u21a9\u21aa\u231a\u231b\u2328\u23cf\u23ed-\u23ef\u23f1\u23f2\u23f8-\u23fa\u24c2\u25aa\u25ab\u25b6\u25c0\u25fb-\u25fe\u2600-\u2604\u260e\u2611\u2614\u2615\u2618\u2620\u2622\u2623\u2626\u262a\u262e\u262f\u2638-\u263a\u2640\u2642\u2648-\u2653\u2660\u2663\u2665\u2666\u2668\u267b\u267f\u2692-\u2697\u2699\u269b\u269c\u26a0\u26a1\u26a7\u26aa\u26ab\u26b0\u26b1\u26bd\u26be\u26c4\u26c5\u26c8\u26cf\u26d1\u26d3\u26d4\u26e9\u26ea\u26f0-\u26f5\u26f8\u26fa\u26fd\u2702\u2708\u2709\u270f\u2712\u2714\u2716\u271d\u2721\u2733\u2734\u2744\u2747\u2757\u2763\u2764\u27a1\u2934\u2935\u2b05-\u2b07\u2b1b\u2b1c\u2b50\u2b55\u3030\u303d\u3297\u3299])(?:\ufe0f|(?!\ufe0e))|(?:(?:\ud83c[\udfcb\udfcc]|\ud83d[\udd74\udd75\udd90]|[\u261d\u26f7\u26f9\u270c\u270d])(?:\ufe0f|(?!\ufe0e))|(?:\ud83c[\udf85\udfc2-\udfc4\udfc7\udfca]|\ud83d[\udc42\udc43\udc46-\udc50\udc66-\udc69\udc6e\udc70-\udc78\udc7c\udc81-\udc83\udc85-\udc87\udcaa\udd7a\udd95\udd96\ude45-\ude47\ude4b-\ude4f\udea3\udeb4-\udeb6\udec0\udecc]|\ud83e[\udd0c\udd0f\udd18-\udd1c\udd1e\udd1f\udd26\udd30-\udd39\udd3d\udd3e\udd77\uddb5\uddb6\uddb8\uddb9\uddbb\uddcd-\uddcf\uddd1-\udddd]|[\u270a\u270b]))(?:\ud83c[\udffb-\udfff])?|(?:\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f|\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc73\udb40\udc63\udb40\udc74\udb40\udc7f|\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f|\ud83c\udde6\ud83c[\udde8-\uddec\uddee\uddf1\uddf2\uddf4\uddf6-\uddfa\uddfc\uddfd\uddff]|\ud83c\udde7\ud83c[\udde6\udde7\udde9-\uddef\uddf1-\uddf4\uddf6-\uddf9\uddfb\uddfc\uddfe\uddff]|\ud83c\udde8\ud83c[\udde6\udde8\udde9\uddeb-\uddee\uddf0-\uddf5\uddf7\uddfa-\uddff]|\ud83c\udde9\ud83c[\uddea\uddec\uddef\uddf0\uddf2\uddf4\uddff]|\ud83c\uddea\ud83c[\udde6\udde8\uddea\uddec\udded\uddf7-\uddfa]|\ud83c\uddeb\ud83c[\uddee-\uddf0\uddf2\uddf4\uddf7]|\ud83c\uddec\ud83c[\udde6\udde7\udde9-\uddee\uddf1-\uddf3\uddf5-\uddfa\uddfc\uddfe]|\ud83c\udded\ud83c[\uddf0\uddf2\uddf3\uddf7\uddf9\uddfa]|\ud83c\uddee\ud83c[\udde8-\uddea\uddf1-\uddf4\uddf6-\uddf9]|\ud83c\uddef\ud83c[\uddea\uddf2\uddf4\uddf5]|\ud83c\uddf0\ud83c[\uddea\uddec-\uddee\uddf2\uddf3\uddf5\uddf7\uddfc\uddfe\uddff]|\ud83c\uddf1\ud83c[\udde6-\udde8\uddee\uddf0\uddf7-\uddfb\uddfe]|\ud83c\uddf2\ud83c[\udde6\udde8-\udded\uddf0-\uddff]|\ud83c\uddf3\ud83c[\udde6\udde8\uddea-\uddec\uddee\uddf1\uddf4\uddf5\uddf7\uddfa\uddff]|\ud83c\uddf4\ud83c\uddf2|\ud83c\uddf5\ud83c[\udde6\uddea-\udded\uddf0-\uddf3\uddf7-\uddf9\uddfc\uddfe]|\ud83c\uddf6\ud83c\udde6|\ud83c\uddf7\ud83c[\uddea\uddf4\uddf8\uddfa\uddfc]|\ud83c\uddf8\ud83c[\udde6-\uddea\uddec-\uddf4\uddf7-\uddf9\uddfb\uddfd-\uddff]|\ud83c\uddf9\ud83c[\udde6\udde8\udde9\uddeb-\udded\uddef-\uddf4\uddf7\uddf9\uddfb\uddfc\uddff]|\ud83c\uddfa\ud83c[\udde6\uddec\uddf2\uddf3\uddf8\uddfe\uddff]|\ud83c\uddfb\ud83c[\udde6\udde8\uddea\uddec\uddee\uddf3\uddfa]|\ud83c\uddfc\ud83c[\uddeb\uddf8]|\ud83c\uddfd\ud83c\uddf0|\ud83c\uddfe\ud83c[\uddea\uddf9]|\ud83c\uddff\ud83c[\udde6\uddf2\uddfc]|\ud83c[\udccf\udd8e\udd91-\udd9a\udde6-\uddff\ude01\ude32-\ude36\ude38-\ude3a\ude50\ude51\udf00-\udf20\udf2d-\udf35\udf37-\udf7c\udf7e-\udf84\udf86-\udf93\udfa0-\udfc1\udfc5\udfc6\udfc8\udfc9\udfcf-\udfd3\udfe0-\udff0\udff4\udff8-\udfff]|\ud83d[\udc00-\udc3e\udc40\udc44\udc45\udc51-\udc65\udc6a\udc6f\udc79-\udc7b\udc7d-\udc80\udc84\udc88-\udca9\udcab-\udcfc\udcff-\udd3d\udd4b-\udd4e\udd50-\udd67\udda4\uddfb-\ude44\ude48-\ude4a\ude80-\udea2\udea4-\udeb3\udeb7-\udebf\udec1-\udec5\uded0-\uded2\uded5-\uded7\udeeb\udeec\udef4-\udefc\udfe0-\udfeb]|\ud83e[\udd0d\udd0e\udd10-\udd17\udd1d\udd20-\udd25\udd27-\udd2f\udd3a\udd3c\udd3f-\udd45\udd47-\udd76\udd78\udd7a-\uddb4\uddb7\uddba\uddbc-\uddcb\uddd0\uddde-\uddff\ude70-\ude74\ude78-\ude7a\ude80-\ude86\ude90-\udea8\udeb0-\udeb6\udec0-\udec2\uded0-\uded6]|[\u23e9-\u23ec\u23f0\u23f3\u267e\u26ce\u2705\u2728\u274c\u274e\u2753-\u2755\u2795-\u2797\u27b0\u27bf\ue50a])|\ufe0f/g,
+
+    // avoid runtime RegExp creation for not so smart,
+    // not JIT based, and old browsers / engines
+    UFE0Fg = /\uFE0F/g,
+
+    // avoid using a string literal like '\u200D' here because minifiers expand it inline
+    U200D = String.fromCharCode(0x200D),
+
+    // used to find HTML special chars in attributes
+    rescaper = /[&<>'"]/g,
+
+    // nodes with type 1 which should **not** be parsed
+    shouldntBeParsed = /^(?:iframe|noframes|noscript|script|select|style|textarea)$/,
+
+    // just a private shortcut
+    fromCharCode = String.fromCharCode;
+
+  return twemoji;
+
+
+  /////////////////////////
+  //  private functions  //
+  //     declaration     //
+  /////////////////////////
+
+  /**
+   * Shortcut to create text nodes
+   * @param   string  text used to create DOM text node
+   * @return  Node  a DOM node with that text
+   */
+  function createText(text, clean) {
+    return document.createTextNode(clean ? text.replace(UFE0Fg, '') : text);
+  }
+
+  /**
+   * Utility function to escape html attribute text
+   * @param   string  text use in HTML attribute
+   * @return  string  text encoded to use in HTML attribute
+   */
+  function escapeHTML(s) {
+    return s.replace(rescaper, replacer);
+  }
+
+  /**
+   * Default callback used to generate emoji src
+   *  based on Twitter CDN
+   * @param   string    the emoji codepoint string
+   * @param   string    the default size to use, i.e. "36x36"
+   * @return  string    the image source to use
+   */
+  function defaultImageSrcGenerator(icon, options) {
+    return ''.concat(options.base, options.size, '/', icon, options.ext);
+  }
+
+  /**
+   * Given a generic DOM nodeType 1, walk through all children
+   * and store every nodeType 3 (#text) found in the tree.
+   * @param   Element a DOM Element with probably some text in it
+   * @param   Array the list of previously discovered text nodes
+   * @return  Array same list with new discovered nodes, if any
+   */
+  function grabAllTextNodes(node, allText) {
+    var
+      childNodes = node.childNodes,
+      length = childNodes.length,
+      subnode,
+      nodeType;
+    while (length--) {
+      subnode = childNodes[length];
+      nodeType = subnode.nodeType;
+      // parse emoji only in text nodes
+      if (nodeType === 3) {
+        // collect them to process emoji later
+        allText.push(subnode);
+      }
+      // ignore all nodes that are not type 1, that are svg, or that
+      // should not be parsed as script, style, and others
+      else if (nodeType === 1 && !('ownerSVGElement' in subnode) &&
+          !shouldntBeParsed.test(subnode.nodeName.toLowerCase())) {
+        grabAllTextNodes(subnode, allText);
+      }
+    }
+    return allText;
+  }
+
+  /**
+   * Used to both remove the possible variant
+   *  and to convert utf16 into code points.
+   *  If there is a zero-width-joiner (U+200D), leave the variants in.
+   * @param   string    the raw text of the emoji match
+   * @return  string    the code point
+   */
+  function grabTheRightIcon(rawText) {
+    // if variant is present as \uFE0F
+    return toCodePoint(rawText.indexOf(U200D) < 0 ?
+      rawText.replace(UFE0Fg, '') :
+      rawText
+    );
+  }
+
+  /**
+   * DOM version of the same logic / parser:
+   *  emojify all found sub-text nodes placing images node instead.
+   * @param   Element   generic DOM node with some text in some child node
+   * @param   Object    options  containing info about how to parse
+    *
+    *            .callback   Function  the callback to invoke per each found emoji.
+    *            .base       string    the base url, by default twemoji.base
+    *            .ext        string    the image extension, by default twemoji.ext
+    *            .size       string    the assets size, by default twemoji.size
+    *
+   * @return  Element same generic node with emoji in place, if any.
+   */
+  function parseNode(node, options) {
+    var
+      allText = grabAllTextNodes(node, []),
+      length = allText.length,
+      attrib,
+      attrname,
+      modified,
+      fragment,
+      subnode,
+      text,
+      match,
+      i,
+      index,
+      img,
+      rawText,
+      iconId,
+      src;
+    while (length--) {
+      modified = false;
+      fragment = document.createDocumentFragment();
+      subnode = allText[length];
+      text = subnode.nodeValue;
+      i = 0;
+      while ((match = re.exec(text))) {
+        index = match.index;
+        if (index !== i) {
+          fragment.appendChild(
+            createText(text.slice(i, index), true)
+          );
+        }
+        rawText = match[0];
+        iconId = grabTheRightIcon(rawText);
+        i = index + rawText.length;
+        src = options.callback(iconId, options);
+        if (iconId && src) {
+          img = new Image();
+          img.onerror = options.onerror;
+          img.setAttribute('draggable', 'false');
+          attrib = options.attributes(rawText, iconId);
+          for (attrname in attrib) {
+            if (
+              attrib.hasOwnProperty(attrname) &&
+              // don't allow any handlers to be set + don't allow overrides
+              attrname.indexOf('on') !== 0 &&
+              !img.hasAttribute(attrname)
+            ) {
+              img.setAttribute(attrname, attrib[attrname]);
+            }
+          }
+          img.className = options.className;
+          img.alt = rawText;
+          img.src = src;
+          modified = true;
+          fragment.appendChild(img);
+        }
+        if (!img) fragment.appendChild(createText(rawText, false));
+        img = null;
+      }
+      // is there actually anything to replace in here ?
+      if (modified) {
+        // any text left to be added ?
+        if (i < text.length) {
+          fragment.appendChild(
+            createText(text.slice(i), true)
+          );
+        }
+        // replace the text node only, leave intact
+        // anything else surrounding such text
+        subnode.parentNode.replaceChild(fragment, subnode);
+      }
+    }
+    return node;
+  }
+
+  /**
+   * String/HTML version of the same logic / parser:
+   *  emojify a generic text placing images tags instead of surrogates pair.
+   * @param   string    generic string with possibly some emoji in it
+   * @param   Object    options  containing info about how to parse
+   *
+   *            .callback   Function  the callback to invoke per each found emoji.
+   *            .base       string    the base url, by default twemoji.base
+   *            .ext        string    the image extension, by default twemoji.ext
+   *            .size       string    the assets size, by default twemoji.size
+   *
+   * @return  the string with <img tags> replacing all found and parsed emoji
+   */
+  function parseString(str, options) {
+    return replace(str, function (rawText) {
+      var
+        ret = rawText,
+        iconId = grabTheRightIcon(rawText),
+        src = options.callback(iconId, options),
+        attrib,
+        attrname;
+      if (iconId && src) {
+        // recycle the match string replacing the emoji
+        // with its image counter part
+        ret = '<img '.concat(
+          'class="', options.className, '" ',
+          'draggable="false" ',
+          // needs to preserve user original intent
+          // when variants should be copied and pasted too
+          'alt="',
+          rawText,
+          '"',
+          ' src="',
+          src,
+          '"'
+        );
+        attrib = options.attributes(rawText, iconId);
+        for (attrname in attrib) {
+          if (
+            attrib.hasOwnProperty(attrname) &&
+            // don't allow any handlers to be set + don't allow overrides
+            attrname.indexOf('on') !== 0 &&
+            ret.indexOf(' ' + attrname + '=') === -1
+          ) {
+            ret = ret.concat(' ', attrname, '="', escapeHTML(attrib[attrname]), '"');
+          }
+        }
+        ret = ret.concat('/>');
+      }
+      return ret;
+    });
+  }
+
+  /**
+   * Function used to actually replace HTML special chars
+   * @param   string  HTML special char
+   * @return  string  encoded HTML special char
+   */
+  function replacer(m) {
+    return escaper[m];
+  }
+
+  /**
+   * Default options.attribute callback
+   * @return  null
+   */
+  function returnNull() {
+    return null;
+  }
+
+  /**
+   * Given a generic value, creates its squared counterpart if it's a number.
+   *  As example, number 36 will return '36x36'.
+   * @param   any     a generic value.
+   * @return  any     a string representing asset size, i.e. "36x36"
+   *                  only in case the value was a number.
+   *                  Returns initial value otherwise.
+   */
+  function toSizeSquaredAsset(value) {
+    return typeof value === 'number' ?
+      value + 'x' + value :
+      value;
+  }
+
+
+  /////////////////////////
+  //  exported functions //
+  //     declaration     //
+  /////////////////////////
+
+  function fromCodePoint(codepoint) {
+    var code = typeof codepoint === 'string' ?
+          parseInt(codepoint, 16) : codepoint;
+    if (code < 0x10000) {
+      return fromCharCode(code);
+    }
+    code -= 0x10000;
+    return fromCharCode(
+      0xD800 + (code >> 10),
+      0xDC00 + (code & 0x3FF)
+    );
+  }
+
+  function parse(what, how) {
+    if (!how || typeof how === 'function') {
+      how = {callback: how};
+    }
+    // if first argument is string, inject html <img> tags
+    // otherwise use the DOM tree and parse text nodes only
+    return (typeof what === 'string' ? parseString : parseNode)(what, {
+      callback:   how.callback || defaultImageSrcGenerator,
+      attributes: typeof how.attributes === 'function' ? how.attributes : returnNull,
+      base:       typeof how.base === 'string' ? how.base : twemoji.base,
+      ext:        how.ext || twemoji.ext,
+      size:       how.folder || toSizeSquaredAsset(how.size || twemoji.size),
+      className:  how.className || twemoji.className,
+      onerror:    how.onerror || twemoji.onerror
+    });
+  }
+
+  function replace(text, callback) {
+    return String(text).replace(re, callback);
+  }
+
+  function test(text) {
+    // IE6 needs a reset before too
+    re.lastIndex = 0;
+    var result = re.test(text);
+    re.lastIndex = 0;
+    return result;
+  }
+
+  function toCodePoint(unicodeSurrogates, sep) {
+    var
+      r = [],
+      c = 0,
+      p = 0,
+      i = 0;
+    while (i < unicodeSurrogates.length) {
+      c = unicodeSurrogates.charCodeAt(i++);
+      if (p) {
+        r.push((0x10000 + ((p - 0xD800) << 10) + (c - 0xDC00)).toString(16));
+        p = 0;
+      } else if (0xD800 <= c && c <= 0xDBFF) {
+        p = c;
+      } else {
+        r.push(c.toString(16));
+      }
+    }
+    return r.join(sep || '-');
+  }
+
+}());
+if (!location.protocol) {
+  twemoji.base = twemoji.base.replace(/^http:/, "");
+}
+var twemoji_npm = twemoji;
+
 var indicatorStyle = 'color: var(--text-accent); width: 2.5em; text-align: center; float:left; font-weight:800;';
+var DEFAULT_SETTINGS = {
+    twemojiActive: true
+};
 var MyPlugin = /** @class */ (function (_super) {
     __extends(MyPlugin, _super);
     function MyPlugin() {
@@ -20815,43 +17194,92 @@ var MyPlugin = /** @class */ (function (_super) {
             }
             return sentence.join(' ');
         }
-        var items = emojilib.ordered.map(function (name) {
+        var items = orderedEmoji.map(function (name) {
             return {
-                name: titleCase(name),
-                char: emojilib.lib[name].char,
+                name: titleCase(emojiNames[name]["name"]),
+                char: name,
+                imgHtml: twemoji_npm.parse(name)
             };
         });
         return items;
     };
     MyPlugin.prototype.onload = function () {
-        var _this = this;
-        this.emojis = this.loadEmojis();
-        this.addCommand({
-            id: 'emoji-picker:open-picker',
-            name: 'Open emoji picker',
-            hotkeys: [],
-            checkCallback: function (checking) {
-                var leaf = _this.app.workspace.activeLeaf;
-                if (leaf) {
-                    if (!checking) {
-                        new EmojiFuzzySuggestModal(_this.app, _this.emojis).open();
-                    }
-                    return true;
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        this.emojis = this.loadEmojis();
+                        return [4 /*yield*/, this.loadSettings()];
+                    case 1:
+                        _a.sent();
+                        this.addSettingTab(new SettingsTab(this.app, this));
+                        if (this.settings.twemojiActive) {
+                            obsidian.MarkdownPreviewRenderer.registerPostProcessor(MyPlugin.postprocessor);
+                        }
+                        this.addCommand({
+                            id: 'emoji-picker:open-picker',
+                            name: 'Open emoji picker',
+                            hotkeys: [],
+                            checkCallback: function (checking) {
+                                var leaf = _this.app.workspace.activeLeaf;
+                                if (leaf) {
+                                    if (!checking) {
+                                        new EmojiFuzzySuggestModal(_this.app, _this.emojis, _this.settings).open();
+                                    }
+                                    return true;
+                                }
+                                return false;
+                            }
+                        });
+                        return [2 /*return*/];
                 }
-                return false;
-            }
+            });
         });
     };
     MyPlugin.prototype.onunload = function () {
+    };
+    MyPlugin.prototype.loadSettings = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var _a, _b, _c, _d;
+            return __generator(this, function (_e) {
+                switch (_e.label) {
+                    case 0:
+                        _a = this;
+                        _c = (_b = Object).assign;
+                        _d = [{}, DEFAULT_SETTINGS];
+                        return [4 /*yield*/, this.loadData()];
+                    case 1:
+                        _a.settings = _c.apply(_b, _d.concat([_e.sent()]));
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    MyPlugin.prototype.saveSettings = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.saveData(this.settings)];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    MyPlugin.postprocessor = function (el, ctx) {
+        twemoji_npm.parse(el);
     };
     return MyPlugin;
 }(obsidian.Plugin));
 var EmojiFuzzySuggestModal = /** @class */ (function (_super) {
     __extends(EmojiFuzzySuggestModal, _super);
-    function EmojiFuzzySuggestModal(app, emojis) {
+    function EmojiFuzzySuggestModal(app, emojis, settings) {
         var _this = _super.call(this, app) || this;
         _this.app = app;
         _this.emojis = emojis;
+        _this.settings = settings;
         return _this;
     }
     EmojiFuzzySuggestModal.prototype.getItems = function () {
@@ -20866,9 +17294,14 @@ var EmojiFuzzySuggestModal = /** @class */ (function (_super) {
     };
     EmojiFuzzySuggestModal.prototype.updateSuggestionElForMode = function (item, el) {
         var indicatorEl = createEl('div', {
-            text: item.item.char,
             attr: { style: indicatorStyle },
         });
+        if (this.settings.twemojiActive) {
+            indicatorEl.innerHTML = item.item.imgHtml;
+        }
+        else {
+            indicatorEl.textContent = item.item.char;
+        }
         el.insertAdjacentElement('afterbegin', indicatorEl);
     };
     EmojiFuzzySuggestModal.prototype.insertTextAtCursor = function (view, text) {
@@ -20888,6 +17321,46 @@ var EmojiFuzzySuggestModal = /** @class */ (function (_super) {
     };
     return EmojiFuzzySuggestModal;
 }(obsidian.FuzzySuggestModal));
+var SettingsTab = /** @class */ (function (_super) {
+    __extends(SettingsTab, _super);
+    function SettingsTab(app, plugin) {
+        var _this = _super.call(this, app, plugin) || this;
+        _this.plugin = plugin;
+        return _this;
+    }
+    SettingsTab.prototype.display = function () {
+        var _this = this;
+        var containerEl = this.containerEl;
+        containerEl.empty();
+        containerEl.createEl('h1', { text: 'Emoji Toolbar' });
+        containerEl.createEl('a', { text: 'Created by oliveryh', href: 'https://github.com/oliveryh/' });
+        containerEl.createEl('h2', { text: 'Settings' });
+        new obsidian.Setting(containerEl)
+            .setName('Twitter Emoji')
+            .setDesc('Improved emoji support. Note: this applies to emoji search and preview only.')
+            .addToggle(function (toggle) { return toggle
+            .setValue(_this.plugin.settings.twemojiActive)
+            .onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        this.plugin.settings.twemojiActive = value;
+                        return [4 /*yield*/, this.plugin.saveSettings()];
+                    case 1:
+                        _a.sent();
+                        if (value) {
+                            obsidian.MarkdownPreviewRenderer.registerPostProcessor(MyPlugin.postprocessor);
+                        }
+                        else {
+                            obsidian.MarkdownPreviewRenderer.unregisterPostProcessor(MyPlugin.postprocessor);
+                        }
+                        return [2 /*return*/];
+                }
+            });
+        }); }); });
+    };
+    return SettingsTab;
+}(obsidian.PluginSettingTab));
 
 module.exports = MyPlugin;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZXMiOlsibm9kZV9tb2R1bGVzL3RzbGliL3RzbGliLmVzNi5qcyIsIm5vZGVfbW9kdWxlcy9lbW9qaWxpYi9pbmRleC5qcyIsIm1haW4udHMiXSwic291cmNlc0NvbnRlbnQiOlsiLyohICoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqXHJcbkNvcHlyaWdodCAoYykgTWljcm9zb2Z0IENvcnBvcmF0aW9uLlxyXG5cclxuUGVybWlzc2lvbiB0byB1c2UsIGNvcHksIG1vZGlmeSwgYW5kL29yIGRpc3RyaWJ1dGUgdGhpcyBzb2Z0d2FyZSBmb3IgYW55XHJcbnB1cnBvc2Ugd2l0aCBvciB3aXRob3V0IGZlZSBpcyBoZXJlYnkgZ3JhbnRlZC5cclxuXHJcblRIRSBTT0ZUV0FSRSBJUyBQUk9WSURFRCBcIkFTIElTXCIgQU5EIFRIRSBBVVRIT1IgRElTQ0xBSU1TIEFMTCBXQVJSQU5USUVTIFdJVEhcclxuUkVHQVJEIFRPIFRISVMgU09GVFdBUkUgSU5DTFVESU5HIEFMTCBJTVBMSUVEIFdBUlJBTlRJRVMgT0YgTUVSQ0hBTlRBQklMSVRZXHJcbkFORCBGSVRORVNTLiBJTiBOTyBFVkVOVCBTSEFMTCBUSEUgQVVUSE9SIEJFIExJQUJMRSBGT1IgQU5ZIFNQRUNJQUwsIERJUkVDVCxcclxuSU5ESVJFQ1QsIE9SIENPTlNFUVVFTlRJQUwgREFNQUdFUyBPUiBBTlkgREFNQUdFUyBXSEFUU09FVkVSIFJFU1VMVElORyBGUk9NXHJcbkxPU1MgT0YgVVNFLCBEQVRBIE9SIFBST0ZJVFMsIFdIRVRIRVIgSU4gQU4gQUNUSU9OIE9GIENPTlRSQUNULCBORUdMSUdFTkNFIE9SXHJcbk9USEVSIFRPUlRJT1VTIEFDVElPTiwgQVJJU0lORyBPVVQgT0YgT1IgSU4gQ09OTkVDVElPTiBXSVRIIFRIRSBVU0UgT1JcclxuUEVSRk9STUFOQ0UgT0YgVEhJUyBTT0ZUV0FSRS5cclxuKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiogKi9cclxuLyogZ2xvYmFsIFJlZmxlY3QsIFByb21pc2UgKi9cclxuXHJcbnZhciBleHRlbmRTdGF0aWNzID0gZnVuY3Rpb24oZCwgYikge1xyXG4gICAgZXh0ZW5kU3RhdGljcyA9IE9iamVjdC5zZXRQcm90b3R5cGVPZiB8fFxyXG4gICAgICAgICh7IF9fcHJvdG9fXzogW10gfSBpbnN0YW5jZW9mIEFycmF5ICYmIGZ1bmN0aW9uIChkLCBiKSB7IGQuX19wcm90b19fID0gYjsgfSkgfHxcclxuICAgICAgICBmdW5jdGlvbiAoZCwgYikgeyBmb3IgKHZhciBwIGluIGIpIGlmIChPYmplY3QucHJvdG90eXBlLmhhc093blByb3BlcnR5LmNhbGwoYiwgcCkpIGRbcF0gPSBiW3BdOyB9O1xyXG4gICAgcmV0dXJuIGV4dGVuZFN0YXRpY3MoZCwgYik7XHJcbn07XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19leHRlbmRzKGQsIGIpIHtcclxuICAgIGV4dGVuZFN0YXRpY3MoZCwgYik7XHJcbiAgICBmdW5jdGlvbiBfXygpIHsgdGhpcy5jb25zdHJ1Y3RvciA9IGQ7IH1cclxuICAgIGQucHJvdG90eXBlID0gYiA9PT0gbnVsbCA/IE9iamVjdC5jcmVhdGUoYikgOiAoX18ucHJvdG90eXBlID0gYi5wcm90b3R5cGUsIG5ldyBfXygpKTtcclxufVxyXG5cclxuZXhwb3J0IHZhciBfX2Fzc2lnbiA9IGZ1bmN0aW9uKCkge1xyXG4gICAgX19hc3NpZ24gPSBPYmplY3QuYXNzaWduIHx8IGZ1bmN0aW9uIF9fYXNzaWduKHQpIHtcclxuICAgICAgICBmb3IgKHZhciBzLCBpID0gMSwgbiA9IGFyZ3VtZW50cy5sZW5ndGg7IGkgPCBuOyBpKyspIHtcclxuICAgICAgICAgICAgcyA9IGFyZ3VtZW50c1tpXTtcclxuICAgICAgICAgICAgZm9yICh2YXIgcCBpbiBzKSBpZiAoT2JqZWN0LnByb3RvdHlwZS5oYXNPd25Qcm9wZXJ0eS5jYWxsKHMsIHApKSB0W3BdID0gc1twXTtcclxuICAgICAgICB9XHJcbiAgICAgICAgcmV0dXJuIHQ7XHJcbiAgICB9XHJcbiAgICByZXR1cm4gX19hc3NpZ24uYXBwbHkodGhpcywgYXJndW1lbnRzKTtcclxufVxyXG5cclxuZXhwb3J0IGZ1bmN0aW9uIF9fcmVzdChzLCBlKSB7XHJcbiAgICB2YXIgdCA9IHt9O1xyXG4gICAgZm9yICh2YXIgcCBpbiBzKSBpZiAoT2JqZWN0LnByb3RvdHlwZS5oYXNPd25Qcm9wZXJ0eS5jYWxsKHMsIHApICYmIGUuaW5kZXhPZihwKSA8IDApXHJcbiAgICAgICAgdFtwXSA9IHNbcF07XHJcbiAgICBpZiAocyAhPSBudWxsICYmIHR5cGVvZiBPYmplY3QuZ2V0T3duUHJvcGVydHlTeW1ib2xzID09PSBcImZ1bmN0aW9uXCIpXHJcbiAgICAgICAgZm9yICh2YXIgaSA9IDAsIHAgPSBPYmplY3QuZ2V0T3duUHJvcGVydHlTeW1ib2xzKHMpOyBpIDwgcC5sZW5ndGg7IGkrKykge1xyXG4gICAgICAgICAgICBpZiAoZS5pbmRleE9mKHBbaV0pIDwgMCAmJiBPYmplY3QucHJvdG90eXBlLnByb3BlcnR5SXNFbnVtZXJhYmxlLmNhbGwocywgcFtpXSkpXHJcbiAgICAgICAgICAgICAgICB0W3BbaV1dID0gc1twW2ldXTtcclxuICAgICAgICB9XHJcbiAgICByZXR1cm4gdDtcclxufVxyXG5cclxuZXhwb3J0IGZ1bmN0aW9uIF9fZGVjb3JhdGUoZGVjb3JhdG9ycywgdGFyZ2V0LCBrZXksIGRlc2MpIHtcclxuICAgIHZhciBjID0gYXJndW1lbnRzLmxlbmd0aCwgciA9IGMgPCAzID8gdGFyZ2V0IDogZGVzYyA9PT0gbnVsbCA/IGRlc2MgPSBPYmplY3QuZ2V0T3duUHJvcGVydHlEZXNjcmlwdG9yKHRhcmdldCwga2V5KSA6IGRlc2MsIGQ7XHJcbiAgICBpZiAodHlwZW9mIFJlZmxlY3QgPT09IFwib2JqZWN0XCIgJiYgdHlwZW9mIFJlZmxlY3QuZGVjb3JhdGUgPT09IFwiZnVuY3Rpb25cIikgciA9IFJlZmxlY3QuZGVjb3JhdGUoZGVjb3JhdG9ycywgdGFyZ2V0LCBrZXksIGRlc2MpO1xyXG4gICAgZWxzZSBmb3IgKHZhciBpID0gZGVjb3JhdG9ycy5sZW5ndGggLSAxOyBpID49IDA7IGktLSkgaWYgKGQgPSBkZWNvcmF0b3JzW2ldKSByID0gKGMgPCAzID8gZChyKSA6IGMgPiAzID8gZCh0YXJnZXQsIGtleSwgcikgOiBkKHRhcmdldCwga2V5KSkgfHwgcjtcclxuICAgIHJldHVybiBjID4gMyAmJiByICYmIE9iamVjdC5kZWZpbmVQcm9wZXJ0eSh0YXJnZXQsIGtleSwgciksIHI7XHJcbn1cclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBfX3BhcmFtKHBhcmFtSW5kZXgsIGRlY29yYXRvcikge1xyXG4gICAgcmV0dXJuIGZ1bmN0aW9uICh0YXJnZXQsIGtleSkgeyBkZWNvcmF0b3IodGFyZ2V0LCBrZXksIHBhcmFtSW5kZXgpOyB9XHJcbn1cclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBfX21ldGFkYXRhKG1ldGFkYXRhS2V5LCBtZXRhZGF0YVZhbHVlKSB7XHJcbiAgICBpZiAodHlwZW9mIFJlZmxlY3QgPT09IFwib2JqZWN0XCIgJiYgdHlwZW9mIFJlZmxlY3QubWV0YWRhdGEgPT09IFwiZnVuY3Rpb25cIikgcmV0dXJuIFJlZmxlY3QubWV0YWRhdGEobWV0YWRhdGFLZXksIG1ldGFkYXRhVmFsdWUpO1xyXG59XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19hd2FpdGVyKHRoaXNBcmcsIF9hcmd1bWVudHMsIFAsIGdlbmVyYXRvcikge1xyXG4gICAgZnVuY3Rpb24gYWRvcHQodmFsdWUpIHsgcmV0dXJuIHZhbHVlIGluc3RhbmNlb2YgUCA/IHZhbHVlIDogbmV3IFAoZnVuY3Rpb24gKHJlc29sdmUpIHsgcmVzb2x2ZSh2YWx1ZSk7IH0pOyB9XHJcbiAgICByZXR1cm4gbmV3IChQIHx8IChQID0gUHJvbWlzZSkpKGZ1bmN0aW9uIChyZXNvbHZlLCByZWplY3QpIHtcclxuICAgICAgICBmdW5jdGlvbiBmdWxmaWxsZWQodmFsdWUpIHsgdHJ5IHsgc3RlcChnZW5lcmF0b3IubmV4dCh2YWx1ZSkpOyB9IGNhdGNoIChlKSB7IHJlamVjdChlKTsgfSB9XHJcbiAgICAgICAgZnVuY3Rpb24gcmVqZWN0ZWQodmFsdWUpIHsgdHJ5IHsgc3RlcChnZW5lcmF0b3JbXCJ0aHJvd1wiXSh2YWx1ZSkpOyB9IGNhdGNoIChlKSB7IHJlamVjdChlKTsgfSB9XHJcbiAgICAgICAgZnVuY3Rpb24gc3RlcChyZXN1bHQpIHsgcmVzdWx0LmRvbmUgPyByZXNvbHZlKHJlc3VsdC52YWx1ZSkgOiBhZG9wdChyZXN1bHQudmFsdWUpLnRoZW4oZnVsZmlsbGVkLCByZWplY3RlZCk7IH1cclxuICAgICAgICBzdGVwKChnZW5lcmF0b3IgPSBnZW5lcmF0b3IuYXBwbHkodGhpc0FyZywgX2FyZ3VtZW50cyB8fCBbXSkpLm5leHQoKSk7XHJcbiAgICB9KTtcclxufVxyXG5cclxuZXhwb3J0IGZ1bmN0aW9uIF9fZ2VuZXJhdG9yKHRoaXNBcmcsIGJvZHkpIHtcclxuICAgIHZhciBfID0geyBsYWJlbDogMCwgc2VudDogZnVuY3Rpb24oKSB7IGlmICh0WzBdICYgMSkgdGhyb3cgdFsxXTsgcmV0dXJuIHRbMV07IH0sIHRyeXM6IFtdLCBvcHM6IFtdIH0sIGYsIHksIHQsIGc7XHJcbiAgICByZXR1cm4gZyA9IHsgbmV4dDogdmVyYigwKSwgXCJ0aHJvd1wiOiB2ZXJiKDEpLCBcInJldHVyblwiOiB2ZXJiKDIpIH0sIHR5cGVvZiBTeW1ib2wgPT09IFwiZnVuY3Rpb25cIiAmJiAoZ1tTeW1ib2wuaXRlcmF0b3JdID0gZnVuY3Rpb24oKSB7IHJldHVybiB0aGlzOyB9KSwgZztcclxuICAgIGZ1bmN0aW9uIHZlcmIobikgeyByZXR1cm4gZnVuY3Rpb24gKHYpIHsgcmV0dXJuIHN0ZXAoW24sIHZdKTsgfTsgfVxyXG4gICAgZnVuY3Rpb24gc3RlcChvcCkge1xyXG4gICAgICAgIGlmIChmKSB0aHJvdyBuZXcgVHlwZUVycm9yKFwiR2VuZXJhdG9yIGlzIGFscmVhZHkgZXhlY3V0aW5nLlwiKTtcclxuICAgICAgICB3aGlsZSAoXykgdHJ5IHtcclxuICAgICAgICAgICAgaWYgKGYgPSAxLCB5ICYmICh0ID0gb3BbMF0gJiAyID8geVtcInJldHVyblwiXSA6IG9wWzBdID8geVtcInRocm93XCJdIHx8ICgodCA9IHlbXCJyZXR1cm5cIl0pICYmIHQuY2FsbCh5KSwgMCkgOiB5Lm5leHQpICYmICEodCA9IHQuY2FsbCh5LCBvcFsxXSkpLmRvbmUpIHJldHVybiB0O1xyXG4gICAgICAgICAgICBpZiAoeSA9IDAsIHQpIG9wID0gW29wWzBdICYgMiwgdC52YWx1ZV07XHJcbiAgICAgICAgICAgIHN3aXRjaCAob3BbMF0pIHtcclxuICAgICAgICAgICAgICAgIGNhc2UgMDogY2FzZSAxOiB0ID0gb3A7IGJyZWFrO1xyXG4gICAgICAgICAgICAgICAgY2FzZSA0OiBfLmxhYmVsKys7IHJldHVybiB7IHZhbHVlOiBvcFsxXSwgZG9uZTogZmFsc2UgfTtcclxuICAgICAgICAgICAgICAgIGNhc2UgNTogXy5sYWJlbCsrOyB5ID0gb3BbMV07IG9wID0gWzBdOyBjb250aW51ZTtcclxuICAgICAgICAgICAgICAgIGNhc2UgNzogb3AgPSBfLm9wcy5wb3AoKTsgXy50cnlzLnBvcCgpOyBjb250aW51ZTtcclxuICAgICAgICAgICAgICAgIGRlZmF1bHQ6XHJcbiAgICAgICAgICAgICAgICAgICAgaWYgKCEodCA9IF8udHJ5cywgdCA9IHQubGVuZ3RoID4gMCAmJiB0W3QubGVuZ3RoIC0gMV0pICYmIChvcFswXSA9PT0gNiB8fCBvcFswXSA9PT0gMikpIHsgXyA9IDA7IGNvbnRpbnVlOyB9XHJcbiAgICAgICAgICAgICAgICAgICAgaWYgKG9wWzBdID09PSAzICYmICghdCB8fCAob3BbMV0gPiB0WzBdICYmIG9wWzFdIDwgdFszXSkpKSB7IF8ubGFiZWwgPSBvcFsxXTsgYnJlYWs7IH1cclxuICAgICAgICAgICAgICAgICAgICBpZiAob3BbMF0gPT09IDYgJiYgXy5sYWJlbCA8IHRbMV0pIHsgXy5sYWJlbCA9IHRbMV07IHQgPSBvcDsgYnJlYWs7IH1cclxuICAgICAgICAgICAgICAgICAgICBpZiAodCAmJiBfLmxhYmVsIDwgdFsyXSkgeyBfLmxhYmVsID0gdFsyXTsgXy5vcHMucHVzaChvcCk7IGJyZWFrOyB9XHJcbiAgICAgICAgICAgICAgICAgICAgaWYgKHRbMl0pIF8ub3BzLnBvcCgpO1xyXG4gICAgICAgICAgICAgICAgICAgIF8udHJ5cy5wb3AoKTsgY29udGludWU7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgb3AgPSBib2R5LmNhbGwodGhpc0FyZywgXyk7XHJcbiAgICAgICAgfSBjYXRjaCAoZSkgeyBvcCA9IFs2LCBlXTsgeSA9IDA7IH0gZmluYWxseSB7IGYgPSB0ID0gMDsgfVxyXG4gICAgICAgIGlmIChvcFswXSAmIDUpIHRocm93IG9wWzFdOyByZXR1cm4geyB2YWx1ZTogb3BbMF0gPyBvcFsxXSA6IHZvaWQgMCwgZG9uZTogdHJ1ZSB9O1xyXG4gICAgfVxyXG59XHJcblxyXG5leHBvcnQgdmFyIF9fY3JlYXRlQmluZGluZyA9IE9iamVjdC5jcmVhdGUgPyAoZnVuY3Rpb24obywgbSwgaywgazIpIHtcclxuICAgIGlmIChrMiA9PT0gdW5kZWZpbmVkKSBrMiA9IGs7XHJcbiAgICBPYmplY3QuZGVmaW5lUHJvcGVydHkobywgazIsIHsgZW51bWVyYWJsZTogdHJ1ZSwgZ2V0OiBmdW5jdGlvbigpIHsgcmV0dXJuIG1ba107IH0gfSk7XHJcbn0pIDogKGZ1bmN0aW9uKG8sIG0sIGssIGsyKSB7XHJcbiAgICBpZiAoazIgPT09IHVuZGVmaW5lZCkgazIgPSBrO1xyXG4gICAgb1trMl0gPSBtW2tdO1xyXG59KTtcclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBfX2V4cG9ydFN0YXIobSwgbykge1xyXG4gICAgZm9yICh2YXIgcCBpbiBtKSBpZiAocCAhPT0gXCJkZWZhdWx0XCIgJiYgIU9iamVjdC5wcm90b3R5cGUuaGFzT3duUHJvcGVydHkuY2FsbChvLCBwKSkgX19jcmVhdGVCaW5kaW5nKG8sIG0sIHApO1xyXG59XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX192YWx1ZXMobykge1xyXG4gICAgdmFyIHMgPSB0eXBlb2YgU3ltYm9sID09PSBcImZ1bmN0aW9uXCIgJiYgU3ltYm9sLml0ZXJhdG9yLCBtID0gcyAmJiBvW3NdLCBpID0gMDtcclxuICAgIGlmIChtKSByZXR1cm4gbS5jYWxsKG8pO1xyXG4gICAgaWYgKG8gJiYgdHlwZW9mIG8ubGVuZ3RoID09PSBcIm51bWJlclwiKSByZXR1cm4ge1xyXG4gICAgICAgIG5leHQ6IGZ1bmN0aW9uICgpIHtcclxuICAgICAgICAgICAgaWYgKG8gJiYgaSA+PSBvLmxlbmd0aCkgbyA9IHZvaWQgMDtcclxuICAgICAgICAgICAgcmV0dXJuIHsgdmFsdWU6IG8gJiYgb1tpKytdLCBkb25lOiAhbyB9O1xyXG4gICAgICAgIH1cclxuICAgIH07XHJcbiAgICB0aHJvdyBuZXcgVHlwZUVycm9yKHMgPyBcIk9iamVjdCBpcyBub3QgaXRlcmFibGUuXCIgOiBcIlN5bWJvbC5pdGVyYXRvciBpcyBub3QgZGVmaW5lZC5cIik7XHJcbn1cclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBfX3JlYWQobywgbikge1xyXG4gICAgdmFyIG0gPSB0eXBlb2YgU3ltYm9sID09PSBcImZ1bmN0aW9uXCIgJiYgb1tTeW1ib2wuaXRlcmF0b3JdO1xyXG4gICAgaWYgKCFtKSByZXR1cm4gbztcclxuICAgIHZhciBpID0gbS5jYWxsKG8pLCByLCBhciA9IFtdLCBlO1xyXG4gICAgdHJ5IHtcclxuICAgICAgICB3aGlsZSAoKG4gPT09IHZvaWQgMCB8fCBuLS0gPiAwKSAmJiAhKHIgPSBpLm5leHQoKSkuZG9uZSkgYXIucHVzaChyLnZhbHVlKTtcclxuICAgIH1cclxuICAgIGNhdGNoIChlcnJvcikgeyBlID0geyBlcnJvcjogZXJyb3IgfTsgfVxyXG4gICAgZmluYWxseSB7XHJcbiAgICAgICAgdHJ5IHtcclxuICAgICAgICAgICAgaWYgKHIgJiYgIXIuZG9uZSAmJiAobSA9IGlbXCJyZXR1cm5cIl0pKSBtLmNhbGwoaSk7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIGZpbmFsbHkgeyBpZiAoZSkgdGhyb3cgZS5lcnJvcjsgfVxyXG4gICAgfVxyXG4gICAgcmV0dXJuIGFyO1xyXG59XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19zcHJlYWQoKSB7XHJcbiAgICBmb3IgKHZhciBhciA9IFtdLCBpID0gMDsgaSA8IGFyZ3VtZW50cy5sZW5ndGg7IGkrKylcclxuICAgICAgICBhciA9IGFyLmNvbmNhdChfX3JlYWQoYXJndW1lbnRzW2ldKSk7XHJcbiAgICByZXR1cm4gYXI7XHJcbn1cclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBfX3NwcmVhZEFycmF5cygpIHtcclxuICAgIGZvciAodmFyIHMgPSAwLCBpID0gMCwgaWwgPSBhcmd1bWVudHMubGVuZ3RoOyBpIDwgaWw7IGkrKykgcyArPSBhcmd1bWVudHNbaV0ubGVuZ3RoO1xyXG4gICAgZm9yICh2YXIgciA9IEFycmF5KHMpLCBrID0gMCwgaSA9IDA7IGkgPCBpbDsgaSsrKVxyXG4gICAgICAgIGZvciAodmFyIGEgPSBhcmd1bWVudHNbaV0sIGogPSAwLCBqbCA9IGEubGVuZ3RoOyBqIDwgamw7IGorKywgaysrKVxyXG4gICAgICAgICAgICByW2tdID0gYVtqXTtcclxuICAgIHJldHVybiByO1xyXG59O1xyXG5cclxuZXhwb3J0IGZ1bmN0aW9uIF9fYXdhaXQodikge1xyXG4gICAgcmV0dXJuIHRoaXMgaW5zdGFuY2VvZiBfX2F3YWl0ID8gKHRoaXMudiA9IHYsIHRoaXMpIDogbmV3IF9fYXdhaXQodik7XHJcbn1cclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBfX2FzeW5jR2VuZXJhdG9yKHRoaXNBcmcsIF9hcmd1bWVudHMsIGdlbmVyYXRvcikge1xyXG4gICAgaWYgKCFTeW1ib2wuYXN5bmNJdGVyYXRvcikgdGhyb3cgbmV3IFR5cGVFcnJvcihcIlN5bWJvbC5hc3luY0l0ZXJhdG9yIGlzIG5vdCBkZWZpbmVkLlwiKTtcclxuICAgIHZhciBnID0gZ2VuZXJhdG9yLmFwcGx5KHRoaXNBcmcsIF9hcmd1bWVudHMgfHwgW10pLCBpLCBxID0gW107XHJcbiAgICByZXR1cm4gaSA9IHt9LCB2ZXJiKFwibmV4dFwiKSwgdmVyYihcInRocm93XCIpLCB2ZXJiKFwicmV0dXJuXCIpLCBpW1N5bWJvbC5hc3luY0l0ZXJhdG9yXSA9IGZ1bmN0aW9uICgpIHsgcmV0dXJuIHRoaXM7IH0sIGk7XHJcbiAgICBmdW5jdGlvbiB2ZXJiKG4pIHsgaWYgKGdbbl0pIGlbbl0gPSBmdW5jdGlvbiAodikgeyByZXR1cm4gbmV3IFByb21pc2UoZnVuY3Rpb24gKGEsIGIpIHsgcS5wdXNoKFtuLCB2LCBhLCBiXSkgPiAxIHx8IHJlc3VtZShuLCB2KTsgfSk7IH07IH1cclxuICAgIGZ1bmN0aW9uIHJlc3VtZShuLCB2KSB7IHRyeSB7IHN0ZXAoZ1tuXSh2KSk7IH0gY2F0Y2ggKGUpIHsgc2V0dGxlKHFbMF1bM10sIGUpOyB9IH1cclxuICAgIGZ1bmN0aW9uIHN0ZXAocikgeyByLnZhbHVlIGluc3RhbmNlb2YgX19hd2FpdCA/IFByb21pc2UucmVzb2x2ZShyLnZhbHVlLnYpLnRoZW4oZnVsZmlsbCwgcmVqZWN0KSA6IHNldHRsZShxWzBdWzJdLCByKTsgfVxyXG4gICAgZnVuY3Rpb24gZnVsZmlsbCh2YWx1ZSkgeyByZXN1bWUoXCJuZXh0XCIsIHZhbHVlKTsgfVxyXG4gICAgZnVuY3Rpb24gcmVqZWN0KHZhbHVlKSB7IHJlc3VtZShcInRocm93XCIsIHZhbHVlKTsgfVxyXG4gICAgZnVuY3Rpb24gc2V0dGxlKGYsIHYpIHsgaWYgKGYodiksIHEuc2hpZnQoKSwgcS5sZW5ndGgpIHJlc3VtZShxWzBdWzBdLCBxWzBdWzFdKTsgfVxyXG59XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19hc3luY0RlbGVnYXRvcihvKSB7XHJcbiAgICB2YXIgaSwgcDtcclxuICAgIHJldHVybiBpID0ge30sIHZlcmIoXCJuZXh0XCIpLCB2ZXJiKFwidGhyb3dcIiwgZnVuY3Rpb24gKGUpIHsgdGhyb3cgZTsgfSksIHZlcmIoXCJyZXR1cm5cIiksIGlbU3ltYm9sLml0ZXJhdG9yXSA9IGZ1bmN0aW9uICgpIHsgcmV0dXJuIHRoaXM7IH0sIGk7XHJcbiAgICBmdW5jdGlvbiB2ZXJiKG4sIGYpIHsgaVtuXSA9IG9bbl0gPyBmdW5jdGlvbiAodikgeyByZXR1cm4gKHAgPSAhcCkgPyB7IHZhbHVlOiBfX2F3YWl0KG9bbl0odikpLCBkb25lOiBuID09PSBcInJldHVyblwiIH0gOiBmID8gZih2KSA6IHY7IH0gOiBmOyB9XHJcbn1cclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBfX2FzeW5jVmFsdWVzKG8pIHtcclxuICAgIGlmICghU3ltYm9sLmFzeW5jSXRlcmF0b3IpIHRocm93IG5ldyBUeXBlRXJyb3IoXCJTeW1ib2wuYXN5bmNJdGVyYXRvciBpcyBub3QgZGVmaW5lZC5cIik7XHJcbiAgICB2YXIgbSA9IG9bU3ltYm9sLmFzeW5jSXRlcmF0b3JdLCBpO1xyXG4gICAgcmV0dXJuIG0gPyBtLmNhbGwobykgOiAobyA9IHR5cGVvZiBfX3ZhbHVlcyA9PT0gXCJmdW5jdGlvblwiID8gX192YWx1ZXMobykgOiBvW1N5bWJvbC5pdGVyYXRvcl0oKSwgaSA9IHt9LCB2ZXJiKFwibmV4dFwiKSwgdmVyYihcInRocm93XCIpLCB2ZXJiKFwicmV0dXJuXCIpLCBpW1N5bWJvbC5hc3luY0l0ZXJhdG9yXSA9IGZ1bmN0aW9uICgpIHsgcmV0dXJuIHRoaXM7IH0sIGkpO1xyXG4gICAgZnVuY3Rpb24gdmVyYihuKSB7IGlbbl0gPSBvW25dICYmIGZ1bmN0aW9uICh2KSB7IHJldHVybiBuZXcgUHJvbWlzZShmdW5jdGlvbiAocmVzb2x2ZSwgcmVqZWN0KSB7IHYgPSBvW25dKHYpLCBzZXR0bGUocmVzb2x2ZSwgcmVqZWN0LCB2LmRvbmUsIHYudmFsdWUpOyB9KTsgfTsgfVxyXG4gICAgZnVuY3Rpb24gc2V0dGxlKHJlc29sdmUsIHJlamVjdCwgZCwgdikgeyBQcm9taXNlLnJlc29sdmUodikudGhlbihmdW5jdGlvbih2KSB7IHJlc29sdmUoeyB2YWx1ZTogdiwgZG9uZTogZCB9KTsgfSwgcmVqZWN0KTsgfVxyXG59XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19tYWtlVGVtcGxhdGVPYmplY3QoY29va2VkLCByYXcpIHtcclxuICAgIGlmIChPYmplY3QuZGVmaW5lUHJvcGVydHkpIHsgT2JqZWN0LmRlZmluZVByb3BlcnR5KGNvb2tlZCwgXCJyYXdcIiwgeyB2YWx1ZTogcmF3IH0pOyB9IGVsc2UgeyBjb29rZWQucmF3ID0gcmF3OyB9XHJcbiAgICByZXR1cm4gY29va2VkO1xyXG59O1xyXG5cclxudmFyIF9fc2V0TW9kdWxlRGVmYXVsdCA9IE9iamVjdC5jcmVhdGUgPyAoZnVuY3Rpb24obywgdikge1xyXG4gICAgT2JqZWN0LmRlZmluZVByb3BlcnR5KG8sIFwiZGVmYXVsdFwiLCB7IGVudW1lcmFibGU6IHRydWUsIHZhbHVlOiB2IH0pO1xyXG59KSA6IGZ1bmN0aW9uKG8sIHYpIHtcclxuICAgIG9bXCJkZWZhdWx0XCJdID0gdjtcclxufTtcclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBfX2ltcG9ydFN0YXIobW9kKSB7XHJcbiAgICBpZiAobW9kICYmIG1vZC5fX2VzTW9kdWxlKSByZXR1cm4gbW9kO1xyXG4gICAgdmFyIHJlc3VsdCA9IHt9O1xyXG4gICAgaWYgKG1vZCAhPSBudWxsKSBmb3IgKHZhciBrIGluIG1vZCkgaWYgKGsgIT09IFwiZGVmYXVsdFwiICYmIE9iamVjdC5wcm90b3R5cGUuaGFzT3duUHJvcGVydHkuY2FsbChtb2QsIGspKSBfX2NyZWF0ZUJpbmRpbmcocmVzdWx0LCBtb2QsIGspO1xyXG4gICAgX19zZXRNb2R1bGVEZWZhdWx0KHJlc3VsdCwgbW9kKTtcclxuICAgIHJldHVybiByZXN1bHQ7XHJcbn1cclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBfX2ltcG9ydERlZmF1bHQobW9kKSB7XHJcbiAgICByZXR1cm4gKG1vZCAmJiBtb2QuX19lc01vZHVsZSkgPyBtb2QgOiB7IGRlZmF1bHQ6IG1vZCB9O1xyXG59XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19jbGFzc1ByaXZhdGVGaWVsZEdldChyZWNlaXZlciwgcHJpdmF0ZU1hcCkge1xyXG4gICAgaWYgKCFwcml2YXRlTWFwLmhhcyhyZWNlaXZlcikpIHtcclxuICAgICAgICB0aHJvdyBuZXcgVHlwZUVycm9yKFwiYXR0ZW1wdGVkIHRvIGdldCBwcml2YXRlIGZpZWxkIG9uIG5vbi1pbnN0YW5jZVwiKTtcclxuICAgIH1cclxuICAgIHJldHVybiBwcml2YXRlTWFwLmdldChyZWNlaXZlcik7XHJcbn1cclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBfX2NsYXNzUHJpdmF0ZUZpZWxkU2V0KHJlY2VpdmVyLCBwcml2YXRlTWFwLCB2YWx1ZSkge1xyXG4gICAgaWYgKCFwcml2YXRlTWFwLmhhcyhyZWNlaXZlcikpIHtcclxuICAgICAgICB0aHJvdyBuZXcgVHlwZUVycm9yKFwiYXR0ZW1wdGVkIHRvIHNldCBwcml2YXRlIGZpZWxkIG9uIG5vbi1pbnN0YW5jZVwiKTtcclxuICAgIH1cclxuICAgIHByaXZhdGVNYXAuc2V0KHJlY2VpdmVyLCB2YWx1ZSk7XHJcbiAgICByZXR1cm4gdmFsdWU7XHJcbn1cclxuIiwibW9kdWxlLmV4cG9ydHMgPSB7XG4gIGxpYjogcmVxdWlyZSgnLi9lbW9qaXMnKSxcbiAgb3JkZXJlZDogcmVxdWlyZSgnLi9vcmRlcmVkJyksXG4gIGZpdHpwYXRyaWNrX3NjYWxlX21vZGlmaWVyczogW1wi8J+Pu1wiLCBcIvCfj7xcIiwgXCLwn4+9XCIsIFwi8J+PvlwiLCBcIvCfj79cIl1cbn1cbiIsImltcG9ydCB7IEFwcCwgRnV6enlTdWdnZXN0TW9kYWwsIFBsdWdpbiwgRnV6enlNYXRjaCwgTm90aWNlLCBNYXJrZG93blZpZXcgfSBmcm9tICdvYnNpZGlhbic7XG5pbXBvcnQgZW1vamkgZnJvbSAnZW1vamlsaWInO1xuXG5cbmNvbnN0IGluZGljYXRvclN0eWxlOiBzdHJpbmcgPVxuICAnY29sb3I6IHZhcigtLXRleHQtYWNjZW50KTsgd2lkdGg6IDIuNWVtOyB0ZXh0LWFsaWduOiBjZW50ZXI7IGZsb2F0OmxlZnQ7IGZvbnQtd2VpZ2h0OjgwMDsnO1xuXG5leHBvcnQgZGVmYXVsdCBjbGFzcyBNeVBsdWdpbiBleHRlbmRzIFBsdWdpbiB7XG4gIGVtb2ppczogRW1vamlJdGVtW11cblxuICBsb2FkRW1vamlzKCk6IEVtb2ppSXRlbVtdIHtcbiAgICBmdW5jdGlvbiB0aXRsZUNhc2Uoc3RyaW5nOiBzdHJpbmcpIHtcbiAgICAgIGxldCBzZW50ZW5jZSA9IHN0cmluZy50b0xvd2VyQ2FzZSgpLnNwbGl0KCdfJyk7XG4gICAgICBmb3IgKGxldCBpID0gMDsgaSA8IHNlbnRlbmNlLmxlbmd0aDsgaSsrKSB7XG4gICAgICAgIHNlbnRlbmNlW2ldID0gc2VudGVuY2VbaV1bMF0udG9VcHBlckNhc2UoKSArIHNlbnRlbmNlW2ldLnNsaWNlKDEpO1xuICAgICAgfVxuICBcbiAgICAgIHJldHVybiBzZW50ZW5jZS5qb2luKCcgJyk7XG4gICAgfVxuICBcbiAgICBsZXQgaXRlbXMgPSBlbW9qaS5vcmRlcmVkLm1hcCgobmFtZSkgPT4ge1xuICAgICAgcmV0dXJuIHtcbiAgICAgICAgbmFtZTogdGl0bGVDYXNlKG5hbWUpLFxuICAgICAgICBjaGFyOiBlbW9qaS5saWJbbmFtZV0uY2hhcixcbiAgICAgIH07XG4gICAgfSk7XG4gIFxuICAgIHJldHVybiBpdGVtcztcbiAgfVxuXG5cdG9ubG9hZCgpIHtcblxuICAgIHRoaXMuZW1vamlzID0gdGhpcy5sb2FkRW1vamlzKCk7XG5cblx0XHR0aGlzLmFkZENvbW1hbmQoe1xuXHRcdFx0aWQ6ICdlbW9qaS1waWNrZXI6b3Blbi1waWNrZXInLFxuICAgICAgbmFtZTogJ09wZW4gZW1vamkgcGlja2VyJyxcbiAgICAgIGhvdGtleXM6IFtdLFxuXHRcdFx0Y2hlY2tDYWxsYmFjazogKGNoZWNraW5nOiBib29sZWFuKSA9PiB7XG5cdFx0XHRcdGxldCBsZWFmID0gdGhpcy5hcHAud29ya3NwYWNlLmFjdGl2ZUxlYWY7XG5cdFx0XHRcdGlmIChsZWFmKSB7XG5cdFx0XHRcdFx0aWYgKCFjaGVja2luZykge1xuXHRcdFx0XHRcdFx0bmV3IEVtb2ppRnV6enlTdWdnZXN0TW9kYWwodGhpcy5hcHAsIHRoaXMuZW1vamlzKS5vcGVuKCk7XG5cdFx0XHRcdFx0fVxuXHRcdFx0XHRcdHJldHVybiB0cnVlO1xuXHRcdFx0XHR9XG5cdFx0XHRcdHJldHVybiBmYWxzZTtcblx0XHRcdH1cblx0XHR9KTtcblxuXHR9XG5cblx0b251bmxvYWQoKSB7XG5cdH1cbn1cblxuaW50ZXJmYWNlIEVtb2ppSXRlbSB7XG4gIG5hbWU6IHN0cmluZztcbiAgY2hhcjogc3RyaW5nO1xufVxuXG5cbmNsYXNzIEVtb2ppRnV6enlTdWdnZXN0TW9kYWwgZXh0ZW5kcyBGdXp6eVN1Z2dlc3RNb2RhbDxFbW9qaUl0ZW0+IHtcbiAgYXBwOiBBcHA7XG4gIGVtb2ppczogRW1vamlJdGVtW107XG5cbiAgY29uc3RydWN0b3IoYXBwOiBBcHAsIGVtb2ppczogRW1vamlJdGVtW10pIHtcbiAgICAgIHN1cGVyKGFwcCk7XG4gICAgICB0aGlzLmFwcCA9IGFwcDtcbiAgICAgIHRoaXMuZW1vamlzID0gZW1vamlzO1xuICB9XG5cbiAgZ2V0SXRlbXMoKTogRW1vamlJdGVtW10ge1xuICAgICAgcmV0dXJuIHRoaXMuZW1vamlzO1xuICB9XG5cbiAgZ2V0SXRlbVRleHQoaXRlbTogRW1vamlJdGVtKTogc3RyaW5nIHtcbiAgICAgIHJldHVybiBpdGVtLm5hbWU7XG4gIH1cblxuICByZW5kZXJTdWdnZXN0aW9uKGl0ZW06IEZ1enp5TWF0Y2g8RW1vamlJdGVtPiwgZWw6IEhUTUxFbGVtZW50KSB7XG4gICAgc3VwZXIucmVuZGVyU3VnZ2VzdGlvbihpdGVtLCBlbCk7XG4gICAgdGhpcy51cGRhdGVTdWdnZXN0aW9uRWxGb3JNb2RlKGl0ZW0sIGVsKTtcbiAgfVxuXG4gIHVwZGF0ZVN1Z2dlc3Rpb25FbEZvck1vZGUoaXRlbTogRnV6enlNYXRjaDxFbW9qaUl0ZW0+LCBlbDogSFRNTEVsZW1lbnQpIHtcblxuICAgIGNvbnN0IGluZGljYXRvckVsID0gY3JlYXRlRWwoJ2RpdicsIHtcbiAgICAgIHRleHQ6IGl0ZW0uaXRlbS5jaGFyLFxuICAgICAgYXR0cjogeyBzdHlsZTogaW5kaWNhdG9yU3R5bGUgfSxcbiAgICB9KTtcbiAgICBlbC5pbnNlcnRBZGphY2VudEVsZW1lbnQoJ2FmdGVyYmVnaW4nLCBpbmRpY2F0b3JFbCk7XG4gIH1cblxuICBpbnNlcnRUZXh0QXRDdXJzb3IodmlldzogTWFya2Rvd25WaWV3LCB0ZXh0OnN0cmluZyk6IHZvaWQge1xuICAgIGxldCBlZGl0b3IgPSB2aWV3LnNvdXJjZU1vZGUuY21FZGl0b3JcbiAgICBsZXQgZG9jID0gZWRpdG9yLmdldERvYygpO1xuICAgIGxldCBjdXJzb3IgPSBkb2MuZ2V0Q3Vyc29yKCk7XG4gICAgZG9jLnJlcGxhY2VSYW5nZSh0ZXh0LCBjdXJzb3IpO1xuICB9XG5cbiAgb25DaG9vc2VJdGVtKGl0ZW06IEVtb2ppSXRlbSwgZXZ0OiBNb3VzZUV2ZW50IHwgS2V5Ym9hcmRFdmVudCk6IHZvaWQge1xuICAgIGxldCBhY3RpdmVFZGl0b3IgPSB0aGlzLmFwcC53b3Jrc3BhY2UuZ2V0QWN0aXZlVmlld09mVHlwZShNYXJrZG93blZpZXcpXG4gICAgaWYgKGFjdGl2ZUVkaXRvcikge1xuICAgICAgdGhpcy5pbnNlcnRUZXh0QXRDdXJzb3IoYWN0aXZlRWRpdG9yLCBpdGVtLmNoYXIpXG4gICAgfSBlbHNlIHtcbiAgICAgIG5ldyBOb3RpY2UoXCJZb3UnbGwgbmVlZCB0byBvcGVuIGEgbWFya2Rvd24gZWRpdG9yIHRvIGluc2VydCBhbiBlbW9qaVwiKTtcbiAgICB9XG4gIH1cbn0iXSwibmFtZXMiOlsiZW1vamkiLCJQbHVnaW4iLCJNYXJrZG93blZpZXciLCJOb3RpY2UiLCJG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QUMsRUFBRTtBQUNoSCxJQUFJLE9BQU8sS0FBSyxDQUFDLEtBQUssQ0FBQyxHQUFHLE9BQU8sQ0FBQyxFQUFFLFVBQVUsT0FBTyxFQUFFLE1BQU0sRUFBRTtBQUMvRCxRQUFRLFNBQVMsU0FBUyxDQUFDLEtBQUssRUFBRSxFQUFFLElBQUksRUFBRSxJQUFJLENBQUMsU0FBUyxDQUFDLElBQUksQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLEVBQUUsQ0FBQyxPQUFPLENBQUMsRUFBRSxFQUFFLE1BQU0sQ0FBQyxDQUFDLENBQUMsQ0FBQyxFQUFFLEVBQUU7QUFDbkcsUUFBUSxTQUFTLFFBQVEsQ0FBQyxLQUFLLEVBQUUsRUFBRSxJQUFJLEVBQUUsSUFBSSxDQUFDLFNBQVMsQ0FBQyxPQUFPLENBQUMsQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLEVBQUUsQ0FBQyxPQUFPLENBQUMsRUFBRSxFQUFFLE1BQU0sQ0FBQyxDQUFDLENBQUMsQ0FBQyxFQUFFLEVBQUU7QUFDdEcsUUFBUSxTQUFTLElBQUksQ0FBQyxNQUFNLEVBQUUsRUFBRSxNQUFNLENBQUMsSUFBSSxHQUFHLE9BQU8sQ0FBQyxNQUFNLENBQUMsS0FBSyxDQUFDLEdBQUcsS0FBSyxDQUFDLE1BQU0sQ0FBQyxLQUFLLENBQUMsQ0FBQyxJQUFJLENBQUMsU0FBUyxFQUFFLFFBQVEsQ0FBQyxDQUFDLEVBQUU7QUFDdEgsUUFBUSxJQUFJLENBQUMsQ0FBQyxTQUFTLEdBQUcsU0FBUyxDQUFDLEtBQUssQ0FBQyxPQUFPLEVBQUUsVUFBVSxJQUFJLEVBQUUsQ0FBQyxFQUFFLElBQUksRUFBRSxDQUFDLENBQUM7QUFDOUUsS0FBSyxDQUFDLENBQUM7QUFDUCxDQUFDO0FBQ0Q7QUFDTyxTQUFTLFdBQVcsQ0FBQyxPQUFPLEVBQUUsSUFBSSxFQUFFO0FBQzNDLElBQUksSUFBSSxDQUFDLEdBQUcsRUFBRSxLQUFLLEVBQUUsQ0FBQyxFQUFFLElBQUksRUFBRSxXQUFXLEVBQUUsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxFQUFFLE1BQU0sQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsT0FBTyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsRUFBRSxFQUFFLElBQUksRUFBRSxFQUFFLEVBQUUsR0FBRyxFQUFFLEVBQUUsRUFBRSxFQUFFLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxFQUFFLENBQUMsQ0FBQztBQUNySCxJQUFJLE9BQU8sQ0FBQyxHQUFHLEVBQUUsSUFBSSxFQUFFLElBQUksQ0FBQyxDQUFDLENBQUMsRUFBRSxPQUFPLEVBQUUsSUFBSSxDQUFDLENBQUMsQ0FBQyxFQUFFLFFBQVEsRUFBRSxJQUFJLENBQUMsQ0FBQyxDQUFDLEVBQUUsRUFBRSxPQUFPLE1BQU0sS0FBSyxVQUFVLEtBQUssQ0FBQyxDQUFDLE1BQU0sQ0FBQyxRQUFRLENBQUMsR0FBRyxXQUFXLEVBQUUsT0FBTyxJQUFJLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxDQUFDO0FBQzdKLElBQUksU0FBUyxJQUFJLENBQUMsQ0FBQyxFQUFFLEVBQUUsT0FBTyxVQUFVLENBQUMsRUFBRSxFQUFFLE9BQU8sSUFBSSxDQUFDLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDLENBQUMsRUFBRSxDQUFDLEVBQUU7QUFDdEUsSUFBSSxTQUFTLElBQUksQ0FBQyxFQUFFLEVBQUU7QUFDdEIsUUFBUSxJQUFJLENBQUMsRUFBRSxNQUFNLElBQUksU0FBUyxDQUFDLGlDQUFpQyxDQUFDLENBQUM7QUFDdEUsUUFBUSxPQUFPLENBQUMsRUFBRSxJQUFJO0FBQ3RCLFlBQVksSUFBSSxDQUFDLEdBQUcsQ0FBQyxFQUFFLENBQUMsS0FBSyxDQUFDLEdBQUcsRUFBRSxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLENBQUMsUUFBUSxDQUFDLEdBQUcsRUFBRSxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQyxPQUFPLENBQUMsS0FBSyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQUMsUUFBUSxDQUFDLEtBQUssQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLENB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UyxnQkFBZ0IsQ0FBQyxPQUFPLEVBQUUsVUFBVSxFQUFFLFNBQVMsRUFBRTtBQUNqRSxJQUFJLElBQUksQ0FBQyxNQUFNLENBQUMsYUFBYSxFQUFFLE1BQU0sSUFBSSxTQUFTLENBQUMsc0NBQXNDLENBQUMsQ0FBQztBQUMzRixJQUFJLElBQUksQ0FBQyxHQUFHLFNBQVMsQ0FBQyxLQUFLLENBQUMsT0FBTyxFQUFFLFVBQVUsSUFBSSxFQUFFLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxHQUFHLEVBQUUsQ0FBQztBQUNsRSxJQUFJLE9BQU8sQ0FBQyxHQUFHLEVBQUUsRUFBRSxJQUFJLENBQUMsTUFBTSxDQUFDLEVBQUUsSUFBSSxDQUFDLE9BQU8sQ0FBQyxFQUFFLElBQUksQ0FBQyxRQUFRLENBQUMsRUFBRSxDQUFDLENBQUMsTUFBTSxDQUFDLGFBQWEsQ0FBQyxHQUFHLFlBQVksRUFBRSxPQUFPLElBQUksQ0FBQyxFQUFFLEVBQUUsQ0FBQyxDQUFDO0FBQzFILElBQUksU0FBUyxJQUFJLENBQUMsQ0FBQyxFQUFFLEVBQUUsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDLEVBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLFVBQVUsQ0FBQyxFQUFFLEVBQUUsT0FBTyxJQUFJLE9BQU8sQ0FBQyxVQUFVLENBQUMsRUFBRSxDQUFDLEVBQUUsRUFBRSxDQUFDLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FBQyxFQUFFLENBQUMsRUFBRSxDQUFDLEVBQUUsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLElBQUksTUFBTSxDQUFDLENBQUMsRUFBRSxDQUFDLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxFQUFFLENBQUMsRUFBRTtBQUM5SSxJQUFJLFNBQVMsTUFBTSxDQUFDLENBQUMsRUFBRSxDQUFDLEVBQUUsRUFBRSxJQUFJLEVBQUUsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEVBQUUsQ0FBQyxPQUFPLENBQUMsRUFBRSxFQUFFLE1BQU0sQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEVBQUUsQ0FBQyxDQUFDLENBQUMsRUFBRSxFQUFFO0FBQ3RGLElBQUksU0FBUyxJQUFJLENBQUMsQ0FBQyxFQUFFLEVBQUUsQ0FBQyxDQUFDLEtBQUssWUFBWSxPQUFPLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUMsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxPQUFPLEVBQUUsTUFBTSxDQUFDLEdBQUcsTUFBTSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsRUFBRSxDQUFDLENBQUMsQ0FBQyxFQUFFO0FBQzVILElBQUksU0FBUyxPQUFPLENBQUMsS0FBSyxFQUFFLEVBQUUsTUFBTSxDQUFDLE1BQU0sRUFBRSxLQUFLLENBQUMsQ0FBQyxFQUFFO0FBQ3RELElBQUksU0FBUyxNQUFNLENBQUMsS0FBSyxFQUFFLEVBQUUsTUFBTSxDQUFDLE9BQU8sRUFBRSxLQUFLLENBQUMsQ0FBQyxFQUFFO0FBQ3RELElBQUksU0FBUyxNQUFNLENBQUMsQ0FBQyxFQUFFLENBQUMsRUFBRSxFQUFFLElBQUksQ0FBQyxDQUFDLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxLQUFLLEVBQUUsRUFBRSxDQUFDLENBQUMsTUFBTSxFQUFFLE1BQU0sQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEVBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsRUFBRTtBQUN0RixDQUFDO0FBQ0Q7QUFDTyxTQUFTLGdCQUFnQixDQUFDLENBQUMsRUFBRTtBQUNwQyxJQUFJLElBQUksQ0FBQyxFQUFFLENBQUMsQ0FBQztBQUNiLElBQUksT0FBTyxDQUFDLEdBQUcsRUFBRSxFQUFFLElBQUksQ0FBQyxNQUFNLENBQUMsRUFBRSxJQUFJLENBQUMsT0FBTyxFQUFFLFVBQVUsQ0FBQyxFQUFFLEVBQUUsTUFBTSxDQUFDLENBQUMsRUFBRSxDQUFDLEVBQUUsSUFBSSxD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Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7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
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZXMiOlsibm9kZV9tb2R1bGVzL3RzbGliL3RzbGliLmVzNi5qcyIsIm5vZGVfbW9kdWxlcy90d2Vtb2ppL2Rpc3QvdHdlbW9qaS5ucG0uanMiLCJtYWluLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIi8qISAqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKlxyXG5Db3B5cmlnaHQgKGMpIE1pY3Jvc29mdCBDb3Jwb3JhdGlvbi5cclxuXHJcblBlcm1pc3Npb24gdG8gdXNlLCBjb3B5LCBtb2RpZnksIGFuZC9vciBkaXN0cmlidXRlIHRoaXMgc29mdHdhcmUgZm9yIGFueVxyXG5wdXJwb3NlIHdpdGggb3Igd2l0aG91dCBmZWUgaXMgaGVyZWJ5IGdyYW50ZWQuXHJcblxyXG5USEUgU09GVFdBUkUgSVMgUFJPVklERUQgXCJBUyBJU1wiIEFORCBUSEUgQVVUSE9SIERJU0NMQUlNUyBBTEwgV0FSUkFOVElFUyBXSVRIXHJcblJFR0FSRCBUTyBUSElTIFNPRlRXQVJFIElOQ0xVRElORyBBTEwgSU1QTElFRCBXQVJSQU5USUVTIE9GIE1FUkNIQU5UQUJJTElUWVxyXG5BTkQgRklUTkVTUy4gSU4gTk8gRVZFTlQgU0hBTEwgVEhFIEFVVEhPUiBCRSBMSUFCTEUgRk9SIEFOWSBTUEVDSUFMLCBESVJFQ1QsXHJcbklORElSRUNULCBPUiBDT05TRVFVRU5USUFMIERBTUFHRVMgT1IgQU5ZIERBTUFHRVMgV0hBVFNPRVZFUiBSRVNVTFRJTkcgRlJPTVxyXG5MT1NTIE9GIFVTRSwgREFUQSBPUiBQUk9GSVRTLCBXSEVUSEVSIElOIEFOIEFDVElPTiBPRiBDT05UUkFDVCwgTkVHTElHRU5DRSBPUlxyXG5PVEhFUiBUT1JUSU9VUyBBQ1RJT04sIEFSSVNJTkcgT1VUIE9GIE9SIElOIENPTk5FQ1RJT04gV0lUSCBUSEUgVVNFIE9SXHJcblBFUkZPUk1BTkNFIE9GIFRISVMgU09GVFdBUkUuXHJcbioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqICovXHJcbi8qIGdsb2JhbCBSZWZsZWN0LCBQcm9taXNlICovXHJcblxyXG52YXIgZXh0ZW5kU3RhdGljcyA9IGZ1bmN0aW9uKGQsIGIpIHtcclxuICAgIGV4dGVuZFN0YXRpY3MgPSBPYmplY3Quc2V0UHJvdG90eXBlT2YgfHxcclxuICAgICAgICAoeyBfX3Byb3RvX186IFtdIH0gaW5zdGFuY2VvZiBBcnJheSAmJiBmdW5jdGlvbiAoZCwgYikgeyBkLl9fcHJvdG9fXyA9IGI7IH0pIHx8XHJcbiAgICAgICAgZnVuY3Rpb24gKGQsIGIpIHsgZm9yICh2YXIgcCBpbiBiKSBpZiAoT2JqZWN0LnByb3RvdHlwZS5oYXNPd25Qcm9wZXJ0eS5jYWxsKGIsIHApKSBkW3BdID0gYltwXTsgfTtcclxuICAgIHJldHVybiBleHRlbmRTdGF0aWNzKGQsIGIpO1xyXG59O1xyXG5cclxuZXhwb3J0IGZ1bmN0aW9uIF9fZXh0ZW5kcyhkLCBiKSB7XHJcbiAgICBleHRlbmRTdGF0aWNzKGQsIGIpO1xyXG4gICAgZnVuY3Rpb24gX18oKSB7IHRoaXMuY29uc3RydWN0b3IgPSBkOyB9XHJcbiAgICBkLnByb3RvdHlwZSA9IGIgPT09IG51bGwgPyBPYmplY3QuY3JlYXRlKGIpIDogKF9fLnByb3RvdHlwZSA9IGIucHJvdG90eXBlLCBuZXcgX18oKSk7XHJcbn1cclxuXHJcbmV4cG9ydCB2YXIgX19hc3NpZ24gPSBmdW5jdGlvbigpIHtcclxuICAgIF9fYXNzaWduID0gT2JqZWN0LmFzc2lnbiB8fCBmdW5jdGlvbiBfX2Fzc2lnbih0KSB7XHJcbiAgICAgICAgZm9yICh2YXIgcywgaSA9IDEsIG4gPSBhcmd1bWVudHMubGVuZ3RoOyBpIDwgbjsgaSsrKSB7XHJcbiAgICAgICAgICAgIHMgPSBhcmd1bWVudHNbaV07XHJcbiAgICAgICAgICAgIGZvciAodmFyIHAgaW4gcykgaWYgKE9iamVjdC5wcm90b3R5cGUuaGFzT3duUHJvcGVydHkuY2FsbChzLCBwKSkgdFtwXSA9IHNbcF07XHJcbiAgICAgICAgfVxyXG4gICAgICAgIHJldHVybiB0O1xyXG4gICAgfVxyXG4gICAgcmV0dXJuIF9fYXNzaWduLmFwcGx5KHRoaXMsIGFyZ3VtZW50cyk7XHJcbn1cclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBfX3Jlc3QocywgZSkge1xyXG4gICAgdmFyIHQgPSB7fTtcclxuICAgIGZvciAodmFyIHAgaW4gcykgaWYgKE9iamVjdC5wcm90b3R5cGUuaGFzT3duUHJvcGVydHkuY2FsbChzLCBwKSAmJiBlLmluZGV4T2YocCkgPCAwKVxyXG4gICAgICAgIHRbcF0gPSBzW3BdO1xyXG4gICAgaWYgKHMgIT0gbnVsbCAmJiB0eXBlb2YgT2JqZWN0LmdldE93blByb3BlcnR5U3ltYm9scyA9PT0gXCJmdW5jdGlvblwiKVxyXG4gICAgICAgIGZvciAodmFyIGkgPSAwLCBwID0gT2JqZWN0LmdldE93blByb3BlcnR5U3ltYm9scyhzKTsgaSA8IHAubGVuZ3RoOyBpKyspIHtcclxuICAgICAgICAgICAgaWYgKGUuaW5kZXhPZihwW2ldKSA8IDAgJiYgT2JqZWN0LnByb3RvdHlwZS5wcm9wZXJ0eUlzRW51bWVyYWJsZS5jYWxsKHMsIHBbaV0pKVxyXG4gICAgICAgICAgICAgICAgdFtwW2ldXSA9IHNbcFtpXV07XHJcbiAgICAgICAgfVxyXG4gICAgcmV0dXJuIHQ7XHJcbn1cclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBfX2RlY29yYXRlKGRlY29yYXRvcnMsIHRhcmdldCwga2V5LCBkZXNjKSB7XHJcbiAgICB2YXIgYyA9IGFyZ3VtZW50cy5sZW5ndGgsIHIgPSBjIDwgMyA/IHRhcmdldCA6IGRlc2MgPT09IG51bGwgPyBkZXNjID0gT2JqZWN0LmdldE93blByb3BlcnR5RGVzY3JpcHRvcih0YXJnZXQsIGtleSkgOiBkZXNjLCBkO1xyXG4gICAgaWYgKHR5cGVvZiBSZWZsZWN0ID09PSBcIm9iamVjdFwiICYmIHR5cGVvZiBSZWZsZWN0LmRlY29yYXRlID09PSBcImZ1bmN0aW9uXCIpIHIgPSBSZWZsZWN0LmRlY29yYXRlKGRlY29yYXRvcnMsIHRhcmdldCwga2V5LCBkZXNjKTtcclxuICAgIGVsc2UgZm9yICh2YXIgaSA9IGRlY29yYXRvcnMubGVuZ3RoIC0gMTsgaSA+PSAwOyBpLS0pIGlmIChkID0gZGVjb3JhdG9yc1tpXSkgciA9IChjIDwgMyA/IGQocikgOiBjID4gMyA/IGQodGFyZ2V0LCBrZXksIHIpIDogZCh0YXJnZXQsIGtleSkpIHx8IHI7XHJcbiAgICByZXR1cm4gYyA+IDMgJiYgciAmJiBPYmplY3QuZGVmaW5lUHJvcGVydHkodGFyZ2V0LCBrZXksIHIpLCByO1xyXG59XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19wYXJhbShwYXJhbUluZGV4LCBkZWNvcmF0b3IpIHtcclxuICAgIHJldHVybiBmdW5jdGlvbiAodGFyZ2V0LCBrZXkpIHsgZGVjb3JhdG9yKHRhcmdldCwga2V5LCBwYXJhbUluZGV4KTsgfVxyXG59XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19tZXRhZGF0YShtZXRhZGF0YUtleSwgbWV0YWRhdGFWYWx1ZSkge1xyXG4gICAgaWYgKHR5cGVvZiBSZWZsZWN0ID09PSBcIm9iamVjdFwiICYmIHR5cGVvZiBSZWZsZWN0Lm1ldGFkYXRhID09PSBcImZ1bmN0aW9uXCIpIHJldHVybiBSZWZsZWN0Lm1ldGFkYXRhKG1ldGFkYXRhS2V5LCBtZXRhZGF0YVZhbHVlKTtcclxufVxyXG5cclxuZXhwb3J0IGZ1bmN0aW9uIF9fYXdhaXRlcih0aGlzQXJnLCBfYXJndW1lbnRzLCBQLCBnZW5lcmF0b3IpIHtcclxuICAgIGZ1bmN0aW9uIGFkb3B0KHZhbHVlKSB7IHJldHVybiB2YWx1ZSBpbnN0YW5jZW9mIFAgPyB2YWx1ZSA6IG5ldyBQKGZ1bmN0aW9uIChyZXNvbHZlKSB7IHJlc29sdmUodmFsdWUpOyB9KTsgfVxyXG4gICAgcmV0dXJuIG5ldyAoUCB8fCAoUCA9IFByb21pc2UpKShmdW5jdGlvbiAocmVzb2x2ZSwgcmVqZWN0KSB7XHJcbiAgICAgICAgZnVuY3Rpb24gZnVsZmlsbGVkKHZhbHVlKSB7IHRyeSB7IHN0ZXAoZ2VuZXJhdG9yLm5leHQodmFsdWUpKTsgfSBjYXRjaCAoZSkgeyByZWplY3QoZSk7IH0gfVxyXG4gICAgICAgIGZ1bmN0aW9uIHJlamVjdGVkKHZhbHVlKSB7IHRyeSB7IHN0ZXAoZ2VuZXJhdG9yW1widGhyb3dcIl0odmFsdWUpKTsgfSBjYXRjaCAoZSkgeyByZWplY3QoZSk7IH0gfVxyXG4gICAgICAgIGZ1bmN0aW9uIHN0ZXAocmVzdWx0KSB7IHJlc3VsdC5kb25lID8gcmVzb2x2ZShyZXN1bHQudmFsdWUpIDogYWRvcHQocmVzdWx0LnZhbHVlKS50aGVuKGZ1bGZpbGxlZCwgcmVqZWN0ZWQpOyB9XHJcbiAgICAgICAgc3RlcCgoZ2VuZXJhdG9yID0gZ2VuZXJhdG9yLmFwcGx5KHRoaXNBcmcsIF9hcmd1bWVudHMgfHwgW10pKS5uZXh0KCkpO1xyXG4gICAgfSk7XHJcbn1cclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBfX2dlbmVyYXRvcih0aGlzQXJnLCBib2R5KSB7XHJcbiAgICB2YXIgXyA9IHsgbGFiZWw6IDAsIHNlbnQ6IGZ1bmN0aW9uKCkgeyBpZiAodFswXSAmIDEpIHRocm93IHRbMV07IHJldHVybiB0WzFdOyB9LCB0cnlzOiBbXSwgb3BzOiBbXSB9LCBmLCB5LCB0LCBnO1xyXG4gICAgcmV0dXJuIGcgPSB7IG5leHQ6IHZlcmIoMCksIFwidGhyb3dcIjogdmVyYigxKSwgXCJyZXR1cm5cIjogdmVyYigyKSB9LCB0eXBlb2YgU3ltYm9sID09PSBcImZ1bmN0aW9uXCIgJiYgKGdbU3ltYm9sLml0ZXJhdG9yXSA9IGZ1bmN0aW9uKCkgeyByZXR1cm4gdGhpczsgfSksIGc7XHJcbiAgICBmdW5jdGlvbiB2ZXJiKG4pIHsgcmV0dXJuIGZ1bmN0aW9uICh2KSB7IHJldHVybiBzdGVwKFtuLCB2XSk7IH07IH1cclxuICAgIGZ1bmN0aW9uIHN0ZXAob3ApIHtcclxuICAgICAgICBpZiAoZikgdGhyb3cgbmV3IFR5cGVFcnJvcihcIkdlbmVyYXRvciBpcyBhbHJlYWR5IGV4ZWN1dGluZy5cIik7XHJcbiAgICAgICAgd2hpbGUgKF8pIHRyeSB7XHJcbiAgICAgICAgICAgIGlmIChmID0gMSwgeSAmJiAodCA9IG9wWzBdICYgMiA/IHlbXCJyZXR1cm5cIl0gOiBvcFswXSA/IHlbXCJ0aHJvd1wiXSB8fCAoKHQgPSB5W1wicmV0dXJuXCJdKSAmJiB0LmNhbGwoeSksIDApIDogeS5uZXh0KSAmJiAhKHQgPSB0LmNhbGwoeSwgb3BbMV0pKS5kb25lKSByZXR1cm4gdDtcclxuICAgICAgICAgICAgaWYgKHkgPSAwLCB0KSBvcCA9IFtvcFswXSAmIDIsIHQudmFsdWVdO1xyXG4gICAgICAgICAgICBzd2l0Y2ggKG9wWzBdKSB7XHJcbiAgICAgICAgICAgICAgICBjYXNlIDA6IGNhc2UgMTogdCA9IG9wOyBicmVhaztcclxuICAgICAgICAgICAgICAgIGNhc2UgNDogXy5sYWJlbCsrOyByZXR1cm4geyB2YWx1ZTogb3BbMV0sIGRvbmU6IGZhbHNlIH07XHJcbiAgICAgICAgICAgICAgICBjYXNlIDU6IF8ubGFiZWwrKzsgeSA9IG9wWzFdOyBvcCA9IFswXTsgY29udGludWU7XHJcbiAgICAgICAgICAgICAgICBjYXNlIDc6IG9wID0gXy5vcHMucG9wKCk7IF8udHJ5cy5wb3AoKTsgY29udGludWU7XHJcbiAgICAgICAgICAgICAgICBkZWZhdWx0OlxyXG4gICAgICAgICAgICAgICAgICAgIGlmICghKHQgPSBfLnRyeXMsIHQgPSB0Lmxlbmd0aCA+IDAgJiYgdFt0Lmxlbmd0aCAtIDFdKSAmJiAob3BbMF0gPT09IDYgfHwgb3BbMF0gPT09IDIpKSB7IF8gPSAwOyBjb250aW51ZTsgfVxyXG4gICAgICAgICAgICAgICAgICAgIGlmIChvcFswXSA9PT0gMyAmJiAoIXQgfHwgKG9wWzFdID4gdFswXSAmJiBvcFsxXSA8IHRbM10pKSkgeyBfLmxhYmVsID0gb3BbMV07IGJyZWFrOyB9XHJcbiAgICAgICAgICAgICAgICAgICAgaWYgKG9wWzBdID09PSA2ICYmIF8ubGFiZWwgPCB0WzFdKSB7IF8ubGFiZWwgPSB0WzFdOyB0ID0gb3A7IGJyZWFrOyB9XHJcbiAgICAgICAgICAgICAgICAgICAgaWYgKHQgJiYgXy5sYWJlbCA8IHRbMl0pIHsgXy5sYWJlbCA9IHRbMl07IF8ub3BzLnB1c2gob3ApOyBicmVhazsgfVxyXG4gICAgICAgICAgICAgICAgICAgIGlmICh0WzJdKSBfLm9wcy5wb3AoKTtcclxuICAgICAgICAgICAgICAgICAgICBfLnRyeXMucG9wKCk7IGNvbnRpbnVlO1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIG9wID0gYm9keS5jYWxsKHRoaXNBcmcsIF8pO1xyXG4gICAgICAgIH0gY2F0Y2ggKGUpIHsgb3AgPSBbNiwgZV07IHkgPSAwOyB9IGZpbmFsbHkgeyBmID0gdCA9IDA7IH1cclxuICAgICAgICBpZiAob3BbMF0gJiA1KSB0aHJvdyBvcFsxXTsgcmV0dXJuIHsgdmFsdWU6IG9wWzBdID8gb3BbMV0gOiB2b2lkIDAsIGRvbmU6IHRydWUgfTtcclxuICAgIH1cclxufVxyXG5cclxuZXhwb3J0IHZhciBfX2NyZWF0ZUJpbmRpbmcgPSBPYmplY3QuY3JlYXRlID8gKGZ1bmN0aW9uKG8sIG0sIGssIGsyKSB7XHJcbiAgICBpZiAoazIgPT09IHVuZGVmaW5lZCkgazIgPSBrO1xyXG4gICAgT2JqZWN0LmRlZmluZVByb3BlcnR5KG8sIGsyLCB7IGVudW1lcmFibGU6IHRydWUsIGdldDogZnVuY3Rpb24oKSB7IHJldHVybiBtW2tdOyB9IH0pO1xyXG59KSA6IChmdW5jdGlvbihvLCBtLCBrLCBrMikge1xyXG4gICAgaWYgKGsyID09PSB1bmRlZmluZWQpIGsyID0gaztcclxuICAgIG9bazJdID0gbVtrXTtcclxufSk7XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19leHBvcnRTdGFyKG0sIG8pIHtcclxuICAgIGZvciAodmFyIHAgaW4gbSkgaWYgKHAgIT09IFwiZGVmYXVsdFwiICYmICFPYmplY3QucHJvdG90eXBlLmhhc093blByb3BlcnR5LmNhbGwobywgcCkpIF9fY3JlYXRlQmluZGluZyhvLCBtLCBwKTtcclxufVxyXG5cclxuZXhwb3J0IGZ1bmN0aW9uIF9fdmFsdWVzKG8pIHtcclxuICAgIHZhciBzID0gdHlwZW9mIFN5bWJvbCA9PT0gXCJmdW5jdGlvblwiICYmIFN5bWJvbC5pdGVyYXRvciwgbSA9IHMgJiYgb1tzXSwgaSA9IDA7XHJcbiAgICBpZiAobSkgcmV0dXJuIG0uY2FsbChvKTtcclxuICAgIGlmIChvICYmIHR5cGVvZiBvLmxlbmd0aCA9PT0gXCJudW1iZXJcIikgcmV0dXJuIHtcclxuICAgICAgICBuZXh0OiBmdW5jdGlvbiAoKSB7XHJcbiAgICAgICAgICAgIGlmIChvICYmIGkgPj0gby5sZW5ndGgpIG8gPSB2b2lkIDA7XHJcbiAgICAgICAgICAgIHJldHVybiB7IHZhbHVlOiBvICYmIG9baSsrXSwgZG9uZTogIW8gfTtcclxuICAgICAgICB9XHJcbiAgICB9O1xyXG4gICAgdGhyb3cgbmV3IFR5cGVFcnJvcihzID8gXCJPYmplY3QgaXMgbm90IGl0ZXJhYmxlLlwiIDogXCJTeW1ib2wuaXRlcmF0b3IgaXMgbm90IGRlZmluZWQuXCIpO1xyXG59XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19yZWFkKG8sIG4pIHtcclxuICAgIHZhciBtID0gdHlwZW9mIFN5bWJvbCA9PT0gXCJmdW5jdGlvblwiICYmIG9bU3ltYm9sLml0ZXJhdG9yXTtcclxuICAgIGlmICghbSkgcmV0dXJuIG87XHJcbiAgICB2YXIgaSA9IG0uY2FsbChvKSwgciwgYXIgPSBbXSwgZTtcclxuICAgIHRyeSB7XHJcbiAgICAgICAgd2hpbGUgKChuID09PSB2b2lkIDAgfHwgbi0tID4gMCkgJiYgIShyID0gaS5uZXh0KCkpLmRvbmUpIGFyLnB1c2goci52YWx1ZSk7XHJcbiAgICB9XHJcbiAgICBjYXRjaCAoZXJyb3IpIHsgZSA9IHsgZXJyb3I6IGVycm9yIH07IH1cclxuICAgIGZpbmFsbHkge1xyXG4gICAgICAgIHRyeSB7XHJcbiAgICAgICAgICAgIGlmIChyICYmICFyLmRvbmUgJiYgKG0gPSBpW1wicmV0dXJuXCJdKSkgbS5jYWxsKGkpO1xyXG4gICAgICAgIH1cclxuICAgICAgICBmaW5hbGx5IHsgaWYgKGUpIHRocm93IGUuZXJyb3I7IH1cclxuICAgIH1cclxuICAgIHJldHVybiBhcjtcclxufVxyXG5cclxuZXhwb3J0IGZ1bmN0aW9uIF9fc3ByZWFkKCkge1xyXG4gICAgZm9yICh2YXIgYXIgPSBbXSwgaSA9IDA7IGkgPCBhcmd1bWVudHMubGVuZ3RoOyBpKyspXHJcbiAgICAgICAgYXIgPSBhci5jb25jYXQoX19yZWFkKGFyZ3VtZW50c1tpXSkpO1xyXG4gICAgcmV0dXJuIGFyO1xyXG59XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19zcHJlYWRBcnJheXMoKSB7XHJcbiAgICBmb3IgKHZhciBzID0gMCwgaSA9IDAsIGlsID0gYXJndW1lbnRzLmxlbmd0aDsgaSA8IGlsOyBpKyspIHMgKz0gYXJndW1lbnRzW2ldLmxlbmd0aDtcclxuICAgIGZvciAodmFyIHIgPSBBcnJheShzKSwgayA9IDAsIGkgPSAwOyBpIDwgaWw7IGkrKylcclxuICAgICAgICBmb3IgKHZhciBhID0gYXJndW1lbnRzW2ldLCBqID0gMCwgamwgPSBhLmxlbmd0aDsgaiA8IGpsOyBqKyssIGsrKylcclxuICAgICAgICAgICAgcltrXSA9IGFbal07XHJcbiAgICByZXR1cm4gcjtcclxufTtcclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBfX2F3YWl0KHYpIHtcclxuICAgIHJldHVybiB0aGlzIGluc3RhbmNlb2YgX19hd2FpdCA/ICh0aGlzLnYgPSB2LCB0aGlzKSA6IG5ldyBfX2F3YWl0KHYpO1xyXG59XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19hc3luY0dlbmVyYXRvcih0aGlzQXJnLCBfYXJndW1lbnRzLCBnZW5lcmF0b3IpIHtcclxuICAgIGlmICghU3ltYm9sLmFzeW5jSXRlcmF0b3IpIHRocm93IG5ldyBUeXBlRXJyb3IoXCJTeW1ib2wuYXN5bmNJdGVyYXRvciBpcyBub3QgZGVmaW5lZC5cIik7XHJcbiAgICB2YXIgZyA9IGdlbmVyYXRvci5hcHBseSh0aGlzQXJnLCBfYXJndW1lbnRzIHx8IFtdKSwgaSwgcSA9IFtdO1xyXG4gICAgcmV0dXJuIGkgPSB7fSwgdmVyYihcIm5leHRcIiksIHZlcmIoXCJ0aHJvd1wiKSwgdmVyYihcInJldHVyblwiKSwgaVtTeW1ib2wuYXN5bmNJdGVyYXRvcl0gPSBmdW5jdGlvbiAoKSB7IHJldHVybiB0aGlzOyB9LCBpO1xyXG4gICAgZnVuY3Rpb24gdmVyYihuKSB7IGlmIChnW25dKSBpW25dID0gZnVuY3Rpb24gKHYpIHsgcmV0dXJuIG5ldyBQcm9taXNlKGZ1bmN0aW9uIChhLCBiKSB7IHEucHVzaChbbiwgdiwgYSwgYl0pID4gMSB8fCByZXN1bWUobiwgdik7IH0pOyB9OyB9XHJcbiAgICBmdW5jdGlvbiByZXN1bWUobiwgdikgeyB0cnkgeyBzdGVwKGdbbl0odikpOyB9IGNhdGNoIChlKSB7IHNldHRsZShxWzBdWzNdLCBlKTsgfSB9XHJcbiAgICBmdW5jdGlvbiBzdGVwKHIpIHsgci52YWx1ZSBpbnN0YW5jZW9mIF9fYXdhaXQgPyBQcm9taXNlLnJlc29sdmUoci52YWx1ZS52KS50aGVuKGZ1bGZpbGwsIHJlamVjdCkgOiBzZXR0bGUocVswXVsyXSwgcik7IH1cclxuICAgIGZ1bmN0aW9uIGZ1bGZpbGwodmFsdWUpIHsgcmVzdW1lKFwibmV4dFwiLCB2YWx1ZSk7IH1cclxuICAgIGZ1bmN0aW9uIHJlamVjdCh2YWx1ZSkgeyByZXN1bWUoXCJ0aHJvd1wiLCB2YWx1ZSk7IH1cclxuICAgIGZ1bmN0aW9uIHNldHRsZShmLCB2KSB7IGlmIChmKHYpLCBxLnNoaWZ0KCksIHEubGVuZ3RoKSByZXN1bWUocVswXVswXSwgcVswXVsxXSk7IH1cclxufVxyXG5cclxuZXhwb3J0IGZ1bmN0aW9uIF9fYXN5bmNEZWxlZ2F0b3Iobykge1xyXG4gICAgdmFyIGksIHA7XHJcbiAgICByZXR1cm4gaSA9IHt9LCB2ZXJiKFwibmV4dFwiKSwgdmVyYihcInRocm93XCIsIGZ1bmN0aW9uIChlKSB7IHRocm93IGU7IH0pLCB2ZXJiKFwicmV0dXJuXCIpLCBpW1N5bWJvbC5pdGVyYXRvcl0gPSBmdW5jdGlvbiAoKSB7IHJldHVybiB0aGlzOyB9LCBpO1xyXG4gICAgZnVuY3Rpb24gdmVyYihuLCBmKSB7IGlbbl0gPSBvW25dID8gZnVuY3Rpb24gKHYpIHsgcmV0dXJuIChwID0gIXApID8geyB2YWx1ZTogX19hd2FpdChvW25dKHYpKSwgZG9uZTogbiA9PT0gXCJyZXR1cm5cIiB9IDogZiA/IGYodikgOiB2OyB9IDogZjsgfVxyXG59XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19hc3luY1ZhbHVlcyhvKSB7XHJcbiAgICBpZiAoIVN5bWJvbC5hc3luY0l0ZXJhdG9yKSB0aHJvdyBuZXcgVHlwZUVycm9yKFwiU3ltYm9sLmFzeW5jSXRlcmF0b3IgaXMgbm90IGRlZmluZWQuXCIpO1xyXG4gICAgdmFyIG0gPSBvW1N5bWJvbC5hc3luY0l0ZXJhdG9yXSwgaTtcclxuICAgIHJldHVybiBtID8gbS5jYWxsKG8pIDogKG8gPSB0eXBlb2YgX192YWx1ZXMgPT09IFwiZnVuY3Rpb25cIiA/IF9fdmFsdWVzKG8pIDogb1tTeW1ib2wuaXRlcmF0b3JdKCksIGkgPSB7fSwgdmVyYihcIm5leHRcIiksIHZlcmIoXCJ0aHJvd1wiKSwgdmVyYihcInJldHVyblwiKSwgaVtTeW1ib2wuYXN5bmNJdGVyYXRvcl0gPSBmdW5jdGlvbiAoKSB7IHJldHVybiB0aGlzOyB9LCBpKTtcclxuICAgIGZ1bmN0aW9uIHZlcmIobikgeyBpW25dID0gb1tuXSAmJiBmdW5jdGlvbiAodikgeyByZXR1cm4gbmV3IFByb21pc2UoZnVuY3Rpb24gKHJlc29sdmUsIHJlamVjdCkgeyB2ID0gb1tuXSh2KSwgc2V0dGxlKHJlc29sdmUsIHJlamVjdCwgdi5kb25lLCB2LnZhbHVlKTsgfSk7IH07IH1cclxuICAgIGZ1bmN0aW9uIHNldHRsZShyZXNvbHZlLCByZWplY3QsIGQsIHYpIHsgUHJvbWlzZS5yZXNvbHZlKHYpLnRoZW4oZnVuY3Rpb24odikgeyByZXNvbHZlKHsgdmFsdWU6IHYsIGRvbmU6IGQgfSk7IH0sIHJlamVjdCk7IH1cclxufVxyXG5cclxuZXhwb3J0IGZ1bmN0aW9uIF9fbWFrZVRlbXBsYXRlT2JqZWN0KGNvb2tlZCwgcmF3KSB7XHJcbiAgICBpZiAoT2JqZWN0LmRlZmluZVByb3BlcnR5KSB7IE9iamVjdC5kZWZpbmVQcm9wZXJ0eShjb29rZWQsIFwicmF3XCIsIHsgdmFsdWU6IHJhdyB9KTsgfSBlbHNlIHsgY29va2VkLnJhdyA9IHJhdzsgfVxyXG4gICAgcmV0dXJuIGNvb2tlZDtcclxufTtcclxuXHJcbnZhciBfX3NldE1vZHVsZURlZmF1bHQgPSBPYmplY3QuY3JlYXRlID8gKGZ1bmN0aW9uKG8sIHYpIHtcclxuICAgIE9iamVjdC5kZWZpbmVQcm9wZXJ0eShvLCBcImRlZmF1bHRcIiwgeyBlbnVtZXJhYmxlOiB0cnVlLCB2YWx1ZTogdiB9KTtcclxufSkgOiBmdW5jdGlvbihvLCB2KSB7XHJcbiAgICBvW1wiZGVmYXVsdFwiXSA9IHY7XHJcbn07XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19pbXBvcnRTdGFyKG1vZCkge1xyXG4gICAgaWYgKG1vZCAmJiBtb2QuX19lc01vZHVsZSkgcmV0dXJuIG1vZDtcclxuICAgIHZhciByZXN1bHQgPSB7fTtcclxuICAgIGlmIChtb2QgIT0gbnVsbCkgZm9yICh2YXIgayBpbiBtb2QpIGlmIChrICE9PSBcImRlZmF1bHRcIiAmJiBPYmplY3QucHJvdG90eXBlLmhhc093blByb3BlcnR5LmNhbGwobW9kLCBrKSkgX19jcmVhdGVCaW5kaW5nKHJlc3VsdCwgbW9kLCBrKTtcclxuICAgIF9fc2V0TW9kdWxlRGVmYXVsdChyZXN1bHQsIG1vZCk7XHJcbiAgICByZXR1cm4gcmVzdWx0O1xyXG59XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19pbXBvcnREZWZhdWx0KG1vZCkge1xyXG4gICAgcmV0dXJuIChtb2QgJiYgbW9kLl9fZXNNb2R1bGUpID8gbW9kIDogeyBkZWZhdWx0OiBtb2QgfTtcclxufVxyXG5cclxuZXhwb3J0IGZ1bmN0aW9uIF9fY2xhc3NQcml2YXRlRmllbGRHZXQocmVjZWl2ZXIsIHByaXZhdGVNYXApIHtcclxuICAgIGlmICghcHJpdmF0ZU1hcC5oYXMocmVjZWl2ZXIpKSB7XHJcbiAgICAgICAgdGhyb3cgbmV3IFR5cGVFcnJvcihcImF0dGVtcHRlZCB0byBnZXQgcHJpdmF0ZSBmaWVsZCBvbiBub24taW5zdGFuY2VcIik7XHJcbiAgICB9XHJcbiAgICByZXR1cm4gcHJpdmF0ZU1hcC5nZXQocmVjZWl2ZXIpO1xyXG59XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gX19jbGFzc1ByaXZhdGVGaWVsZFNldChyZWNlaXZlciwgcHJpdmF0ZU1hcCwgdmFsdWUpIHtcclxuICAgIGlmICghcHJpdmF0ZU1hcC5oYXMocmVjZWl2ZXIpKSB7XHJcbiAgICAgICAgdGhyb3cgbmV3IFR5cGVFcnJvcihcImF0dGVtcHRlZCB0byBzZXQgcHJpdmF0ZSBmaWVsZCBvbiBub24taW5zdGFuY2VcIik7XHJcbiAgICB9XHJcbiAgICBwcml2YXRlTWFwLnNldChyZWNlaXZlciwgdmFsdWUpO1xyXG4gICAgcmV0dXJuIHZhbHVlO1xyXG59XHJcbiIsInZhciBsb2NhdGlvbiA9IGdsb2JhbC5sb2NhdGlvbiB8fCB7fTtcbi8qanNsaW50IGluZGVudDogMiwgYnJvd3NlcjogdHJ1ZSwgYml0d2lzZTogdHJ1ZSwgcGx1c3BsdXM6IHRydWUgKi9cbnZhciB0d2Vtb2ppID0gKGZ1bmN0aW9uIChcbiAgLyohIENvcHlyaWdodCBUd2l0dGVyIEluYy4gYW5kIG90aGVyIGNvbnRyaWJ1dG9ycy4gTGljZW5zZWQgdW5kZXIgTUlUICovLypcbiAgICBodHRwczovL2dpdGh1Yi5jb20vdHdpdHRlci90d2Vtb2ppL2Jsb2IvZ2gtcGFnZXMvTElDRU5TRVxuICAqL1xuXG4gIC8vIFdBUk5JTkc6ICAgdGhpcyBmaWxlIGlzIGdlbmVyYXRlZCBhdXRvbWF0aWNhbGx5IHZpYVxuICAvLyAgICAgICAgICAgIGBub2RlIHNjcmlwdHMvYnVpbGQuanNgXG4gIC8vICAgICAgICAgICAgcGxlYXNlIHVwZGF0ZSBpdHMgYGNyZWF0ZVR3ZW1vamlgIGZ1bmN0aW9uXG4gIC8vICAgICAgICAgICAgYXQgdGhlIGJvdHRvbSBvZiB0aGUgc2FtZSBmaWxlIGluc3RlYWQuXG5cbikge1xuICAndXNlIHN0cmljdCc7XG5cbiAgLypqc2hpbnQgbWF4cGFyYW1zOjQgKi9cblxuICB2YXJcbiAgICAvLyB0aGUgZXhwb3J0ZWQgbW9kdWxlIG9iamVjdFxuICAgIHR3ZW1vamkgPSB7XG5cblxuICAgIC8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy9cbiAgICAvLyAgICAgIHByb3BlcnRpZXMgICAgIC8vXG4gICAgLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL1xuXG4gICAgICAvLyBkZWZhdWx0IGFzc2V0cyB1cmwsIGJ5IGRlZmF1bHQgd2lsbCBiZSBUd2l0dGVyIEluYy4gQ0ROXG4gICAgICBiYXNlOiAnaHR0cHM6Ly90d2Vtb2ppLm1heGNkbi5jb20vdi8xMy4wLjEvJyxcblxuICAgICAgLy8gZGVmYXVsdCBhc3NldHMgZmlsZSBleHRlbnNpb25zLCBieSBkZWZhdWx0ICcucG5nJ1xuICAgICAgZXh0OiAnLnBuZycsXG5cbiAgICAgIC8vIGRlZmF1bHQgYXNzZXRzL2ZvbGRlciBzaXplLCBieSBkZWZhdWx0IFwiNzJ4NzJcIlxuICAgICAgLy8gYXZhaWxhYmxlIHZpYSBUd2l0dGVyIENETjogNzJcbiAgICAgIHNpemU6ICc3Mng3MicsXG5cbiAgICAgIC8vIGRlZmF1bHQgY2xhc3MgbmFtZSwgYnkgZGVmYXVsdCAnZW1vamknXG4gICAgICBjbGFzc05hbWU6ICdlbW9qaScsXG5cbiAgICAgIC8vIGJhc2ljIHV0aWxpdGllcyAvIGhlbHBlcnMgdG8gY29udmVydCBjb2RlIHBvaW50c1xuICAgICAgLy8gdG8gSmF2YVNjcmlwdCBzdXJyb2dhdGVzIGFuZCB2aWNlIHZlcnNhXG4gICAgICBjb252ZXJ0OiB7XG5cbiAgICAgICAgLyoqXG4gICAgICAgICAqIEdpdmVuIGFuIEhFWCBjb2RlcG9pbnQsIHJldHVybnMgVVRGMTYgc3Vycm9nYXRlIHBhaXJzLlxuICAgICAgICAgKlxuICAgICAgICAgKiBAcGFyYW0gICBzdHJpbmcgIGdlbmVyaWMgY29kZXBvaW50LCBpLmUuICcxRjRBOSdcbiAgICAgICAgICogQHJldHVybiAgc3RyaW5nICBjb2RlcG9pbnQgdHJhbnNmb3JtZWQgaW50byB1dGYxNiBzdXJyb2dhdGVzIHBhaXIsXG4gICAgICAgICAqICAgICAgICAgIGkuZS4gXFx1RDgzRFxcdURDQTlcbiAgICAgICAgICpcbiAgICAgICAgICogQGV4YW1wbGVcbiAgICAgICAgICogIHR3ZW1vamkuY29udmVydC5mcm9tQ29kZVBvaW50KCcxZjFlOCcpO1xuICAgICAgICAgKiAgLy8gXCJcXHVkODNjXFx1ZGRlOFwiXG4gICAgICAgICAqXG4gICAgICAgICAqICAnMWYxZTgtMWYxZjMnLnNwbGl0KCctJykubWFwKHR3ZW1vamkuY29udmVydC5mcm9tQ29kZVBvaW50KS5qb2luKCcnKVxuICAgICAgICAgKiAgLy8gXCJcXHVkODNjXFx1ZGRlOFxcdWQ4M2NcXHVkZGYzXCJcbiAgICAgICAgICovXG4gICAgICAgIGZyb21Db2RlUG9pbnQ6IGZyb21Db2RlUG9pbnQsXG5cbiAgICAgICAgLyoqXG4gICAgICAgICAqIEdpdmVuIFVURjE2IHN1cnJvZ2F0ZSBwYWlycywgcmV0dXJucyB0aGUgZXF1aXZhbGVudCBIRVggY29kZXBvaW50LlxuICAgICAgICAgKlxuICAgICAgICAgKiBAcGFyYW0gICBzdHJpbmcgIGdlbmVyaWMgdXRmMTYgc3Vycm9nYXRlcyBwYWlyLCBpLmUuIFxcdUQ4M0RcXHVEQ0E5XG4gICAgICAgICAqIEBwYXJhbSAgIHN0cmluZyAgb3B0aW9uYWwgc2VwYXJhdG9yIGZvciBkb3VibGUgY29kZSBwb2ludHMsIGRlZmF1bHQ9Jy0nXG4gICAgICAgICAqIEByZXR1cm4gIHN0cmluZyAgdXRmMTYgdHJhbnNmb3JtZWQgaW50byBjb2RlcG9pbnQsIGkuZS4gJzFGNEE5J1xuICAgICAgICAgKlxuICAgICAgICAgKiBAZXhhbXBsZVxuICAgICAgICAgKiAgdHdlbW9qaS5jb252ZXJ0LnRvQ29kZVBvaW50KCdcXHVkODNjXFx1ZGRlOFxcdWQ4M2NcXHVkZGYzJyk7XG4gICAgICAgICAqICAvLyBcIjFmMWU4LTFmMWYzXCJcbiAgICAgICAgICpcbiAgICAgICAgICogIHR3ZW1vamkuY29udmVydC50b0NvZGVQb2ludCgnXFx1ZDgzY1xcdWRkZThcXHVkODNjXFx1ZGRmMycsICd+Jyk7XG4gICAgICAgICAqICAvLyBcIjFmMWU4fjFmMWYzXCJcbiAgICAgICAgICovXG4gICAgICAgIHRvQ29kZVBvaW50OiB0b0NvZGVQb2ludFxuICAgICAgfSxcblxuXG4gICAgLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL1xuICAgIC8vICAgICAgIG1ldGhvZHMgICAgICAgLy9cbiAgICAvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vXG5cbiAgICAgIC8qKlxuICAgICAgICogVXNlciBmaXJzdDogdXNlZCB0byByZW1vdmUgbWlzc2luZyBpbWFnZXNcbiAgICAgICAqIHByZXNlcnZpbmcgdGhlIG9yaWdpbmFsIHRleHQgaW50ZW50IHdoZW5cbiAgICAgICAqIGEgZmFsbGJhY2sgZm9yIG5ldHdvcmsgcHJvYmxlbXMgaXMgZGVzaXJlZC5cbiAgICAgICAqIEF1dG9tYXRpY2FsbHkgYWRkZWQgdG8gSW1hZ2Ugbm9kZXMgdmlhIERPTVxuICAgICAgICogSXQgY291bGQgYmUgcmVjeWNsZWQgZm9yIHN0cmluZyBvcGVyYXRpb25zIHZpYTpcbiAgICAgICAqICAkKCdpbWcuZW1vamknKS5vbignZXJyb3InLCB0d2Vtb2ppLm9uZXJyb3IpXG4gICAgICAgKi9cbiAgICAgIG9uZXJyb3I6IGZ1bmN0aW9uIG9uZXJyb3IoKSB7XG4gICAgICAgIGlmICh0aGlzLnBhcmVudE5vZGUpIHtcbiAgICAgICAgICB0aGlzLnBhcmVudE5vZGUucmVwbGFjZUNoaWxkKGNyZWF0ZVRleHQodGhpcy5hbHQsIGZhbHNlKSwgdGhpcyk7XG4gICAgICAgIH1cbiAgICAgIH0sXG5cbiAgICAgIC8qKlxuICAgICAgICogTWFpbiBtZXRob2QvbG9naWMgdG8gZ2VuZXJhdGUgZWl0aGVyIDxpbWc+IHRhZ3Mgb3IgSFRNTEltYWdlIG5vZGVzLlxuICAgICAgICogIFwiZW1vamlmeVwiIGEgZ2VuZXJpYyB0ZXh0IG9yIERPTSBFbGVtZW50LlxuICAgICAgICpcbiAgICAgICAqIEBvdmVybG9hZHNcbiAgICAgICAqXG4gICAgICAgKiBTdHJpbmcgcmVwbGFjZW1lbnQgZm9yIGBpbm5lckhUTUxgIG9yIHNlcnZlciBzaWRlIG9wZXJhdGlvbnNcbiAgICAgICAqICB0d2Vtb2ppLnBhcnNlKHN0cmluZyk7XG4gICAgICAgKiAgdHdlbW9qaS5wYXJzZShzdHJpbmcsIEZ1bmN0aW9uKTtcbiAgICAgICAqICB0d2Vtb2ppLnBhcnNlKHN0cmluZywgT2JqZWN0KTtcbiAgICAgICAqXG4gICAgICAgKiBIVE1MRWxlbWVudCB0cmVlIHBhcnNpbmcgZm9yIHNhZmVyIG9wZXJhdGlvbnMgb3ZlciBleGlzdGluZyBET01cbiAgICAgICAqICB0d2Vtb2ppLnBhcnNlKEhUTUxFbGVtZW50KTtcbiAgICAgICAqICB0d2Vtb2ppLnBhcnNlKEhUTUxFbGVtZW50LCBGdW5jdGlvbik7XG4gICAgICAgKiAgdHdlbW9qaS5wYXJzZShIVE1MRWxlbWVudCwgT2JqZWN0KTtcbiAgICAgICAqXG4gICAgICAgKiBAcGFyYW0gICBzdHJpbmd8SFRNTEVsZW1lbnQgIHRoZSBzb3VyY2UgdG8gcGFyc2UgYW5kIGVucmljaCB3aXRoIGVtb2ppLlxuICAgICAgICpcbiAgICAgICAqICAgICAgICAgIHN0cmluZyAgICAgICAgICAgICAgcmVwbGFjZSBlbW9qaSBtYXRjaGVzIHdpdGggPGltZz4gdGFncy5cbiAgICAgICAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTWFpbmx5IHVzZWQgdG8gaW5qZWN0IGVtb2ppIHZpYSBgaW5uZXJIVE1MYFxuICAgICAgICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBJdCBkb2VzICoqbm90KiogcGFyc2UgdGhlIHN0cmluZyBvciB2YWxpZGF0ZSBpdCxcbiAgICAgICAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaXQgc2ltcGx5IHJlcGxhY2VzIGZvdW5kIGVtb2ppIHdpdGggYSB0YWcuXG4gICAgICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5PVEU6IGJlIHN1cmUgdGhpcyB3b24ndCBhZmZlY3Qgc2VjdXJpdHkuXG4gICAgICAgKlxuICAgICAgICogICAgICAgICAgSFRNTEVsZW1lbnQgICAgICAgICB3YWxrIHRocm91Z2ggdGhlIERPTSB0cmVlIGFuZCBmaW5kIGVtb2ppXG4gICAgICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRoYXQgYXJlIGluc2lkZSAqKnRleHQgbm9kZSBvbmx5KiogKG5vZGVUeXBlID09PSAzKVxuICAgICAgICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBNYWlubHkgdXNlZCB0byBwdXQgZW1vamkgaW4gYWxyZWFkeSBnZW5lcmF0ZWQgRE9NXG4gICAgICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHdpdGhvdXQgY29tcHJvbWlzaW5nIHN1cnJvdW5kaW5nIG5vZGVzIGFuZFxuICAgICAgICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAqKmF2b2lkaW5nKiogdGhlIHVzYWdlIG9mIGBpbm5lckhUTUxgLlxuICAgICAgICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOT1RFOiBVc2luZyBET00gZWxlbWVudHMgaW5zdGVhZCBvZiBzdHJpbmdzIHNob3VsZFxuICAgICAgICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpbXByb3ZlIHNlY3VyaXR5IHdpdGhvdXQgY29tcHJvbWlzaW5nIHRvbyBtdWNoXG4gICAgICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHBlcmZvcm1hbmNlIGNvbXBhcmVkIHdpdGggYSBsZXNzIHNhZmUgYGlubmVySFRNTGAuXG4gICAgICAgKlxuICAgICAgICogQHBhcmFtICAgRnVuY3Rpb258T2JqZWN0ICBbb3B0aW9uYWxdXG4gICAgICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVpdGhlciB0aGUgY2FsbGJhY2sgdGhhdCB3aWxsIGJlIGludm9rZWQgb3IgYW4gb2JqZWN0XG4gICAgICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHdpdGggYWxsIHByb3BlcnRpZXMgdG8gdXNlIHBlciBlYWNoIGZvdW5kIGVtb2ppLlxuICAgICAgICpcbiAgICAgICAqICAgICAgICAgIEZ1bmN0aW9uICAgICAgICAgICAgaWYgc3BlY2lmaWVkLCB0aGlzIHdpbGwgYmUgaW52b2tlZCBwZXIgZWFjaCBlbW9qaVxuICAgICAgICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0aGF0IGhhcyBiZWVuIGZvdW5kIHRocm91Z2ggdGhlIFJlZ0V4cCBleGNlcHRcbiAgICAgICAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGhvc2UgZm9sbHdlZCBieSB0aGUgaW52YXJpYW50IFxcdUZFMEUgKFwiYXMgdGV4dFwiKS5cbiAgICAgICAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgT25jZSBpbnZva2VkLCBwYXJhbWV0ZXJzIHdpbGwgYmU6XG4gICAgICAgKlxuICAgICAgICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGljb25JZDpzdHJpbmcgICAgIHRoZSBsb3dlciBjYXNlIEhFWCBjb2RlIHBvaW50XG4gICAgICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaS5lLiBcIjFmNGE5XCJcbiAgICAgICAqXG4gICAgICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgb3B0aW9uczpPYmplY3QgICAgYWxsIGluZm8gZm9yIHRoaXMgcGFyc2luZyBvcGVyYXRpb25cbiAgICAgICAqXG4gICAgICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFyaWFudDpjaGFyICAgICAgdGhlIG9wdGlvbmFsIFxcdUZFMEYgKFwiYXMgaW1hZ2VcIilcbiAgICAgICAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YXJpYW50LCBpbiBjYXNlIHRoaXMgaW5mb1xuICAgICAgICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlzIGFueWhvdyBtZWFuaW5nZnVsLlxuICAgICAgICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEJ5IGRlZmF1bHQgdGhpcyBpcyBpZ25vcmVkLlxuICAgICAgICpcbiAgICAgICAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgSWYgc3VjaCBjYWxsYmFjayB3aWxsIHJldHVybiBhIGZhbHN5IHZhbHVlIGluc3RlYWRcbiAgICAgICAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgb2YgYSB2YWxpZCBgc3JjYCB0byB1c2UgZm9yIHRoZSBpbWFnZSwgbm90aGluZyB3aWxsXG4gICAgICAgKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGFjdHVhbGx5IGNoYW5nZSBmb3IgdGhhdCBzcGVjaWZpYyBlbW9qaS5cbiAgICAgICAqXG4gICAgICAgKlxuICAgICAgICogICAgICAgICAgT2JqZWN0ICAgICAgICAgICAgICBpZiBzcGVjaWZpZWQsIGFuIG9iamVjdCBjb250YWluaW5nIHRoZSBmb2xsb3dpbmcgcHJvcGVydGllc1xuICAgICAgICpcbiAgICAgICAqICAgICAgICAgICAgY2FsbGJhY2sgICBGdW5jdGlvbiAgdGhlIGNhbGxiYWNrIHRvIGludm9rZSBwZXIgZWFjaCBmb3VuZCBlbW9qaS5cbiAgICAgICAqICAgICAgICAgICAgYmFzZSAgICAgICBzdHJpbmcgICAgdGhlIGJhc2UgdXJsLCBieSBkZWZhdWx0IHR3ZW1vamkuYmFzZVxuICAgICAgICogICAgICAgICAgICBleHQgICAgICAgIHN0cmluZyAgICB0aGUgaW1hZ2UgZXh0ZW5zaW9uLCBieSBkZWZhdWx0IHR3ZW1vamkuZXh0XG4gICAgICAgKiAgICAgICAgICAgIHNpemUgICAgICAgc3RyaW5nICAgIHRoZSBhc3NldHMgc2l6ZSwgYnkgZGVmYXVsdCB0d2Vtb2ppLnNpemVcbiAgICAgICAqXG4gICAgICAgKiBAZXhhbXBsZVxuICAgICAgICpcbiAgICAgICAqICB0d2Vtb2ppLnBhcnNlKFwiSSBcXHUyNzY0XFx1RkUwRiBlbW9qaSFcIik7XG4gICAgICAgKiAgLy8gSSA8aW1nIGNsYXNzPVwiZW1vamlcIiBkcmFnZ2FibGU9XCJmYWxzZVwiIGFsdD1cIuKdpO+4j1wiIHNyYz1cIi9hc3NldHMvMjc2NC5naWZcIi8+IGVtb2ppIVxuICAgICAgICpcbiAgICAgICAqXG4gICAgICAgKiAgdHdlbW9qaS5wYXJzZShcIkkgXFx1Mjc2NFxcdUZFMEYgZW1vamkhXCIsIGZ1bmN0aW9uKGljb25JZCwgb3B0aW9ucykge1xuICAgICAgICogICAgcmV0dXJuICcvYXNzZXRzLycgKyBpY29uSWQgKyAnLmdpZic7XG4gICAgICAgKiAgfSk7XG4gICAgICAgKiAgLy8gSSA8aW1nIGNsYXNzPVwiZW1vamlcIiBkcmFnZ2FibGU9XCJmYWxzZVwiIGFsdD1cIuKdpO+4j1wiIHNyYz1cIi9hc3NldHMvMjc2NC5naWZcIi8+IGVtb2ppIVxuICAgICAgICpcbiAgICAgICAqXG4gICAgICAgKiB0d2Vtb2ppLnBhcnNlKFwiSSBcXHUyNzY0XFx1RkUwRiBlbW9qaSFcIiwge1xuICAgICAgICogICBzaXplOiA3MixcbiAgICAgICAqICAgY2FsbGJhY2s6IGZ1bmN0aW9uKGljb25JZCwgb3B0aW9ucykge1xuICAgICAgICogICAgIHJldHVybiAnL2Fzc2V0cy8nICsgb3B0aW9ucy5zaXplICsgJy8nICsgaWNvbklkICsgb3B0aW9ucy5leHQ7XG4gICAgICAgKiAgIH1cbiAgICAgICAqIH0pO1xuICAgICAgICogIC8vIEkgPGltZyBjbGFzcz1cImVtb2ppXCIgZHJhZ2dhYmxlPVwiZmFsc2VcIiBhbHQ9XCLinaTvuI9cIiBzcmM9XCIvYXNzZXRzLzcyeDcyLzI3NjQucG5nXCIvPiBlbW9qaSFcbiAgICAgICAqXG4gICAgICAgKi9cbiAgICAgIHBhcnNlOiBwYXJzZSxcblxuICAgICAgLyoqXG4gICAgICAgKiBHaXZlbiBhIHN0cmluZywgaW52b2tlcyB0aGUgY2FsbGJhY2sgYXJndW1lbnRcbiAgICAgICAqICBwZXIgZWFjaCBlbW9qaSBmb3VuZCBpbiBzdWNoIHN0cmluZy5cbiAgICAgICAqIFRoaXMgaXMgdGhlIG1vc3QgcmF3IHZlcnNpb24gdXNlZCBieVxuICAgICAgICogIHRoZSAucGFyc2Uoc3RyaW5nKSBtZXRob2QgaXRzZWxmLlxuICAgICAgICpcbiAgICAgICAqIEBwYXJhbSAgIHN0cmluZyAgICBnZW5lcmljIHN0cmluZyB0byBwYXJzZVxuICAgICAgICogQHBhcmFtICAgRnVuY3Rpb24gIGEgZ2VuZXJpYyBjYWxsYmFjayB0aGF0IHdpbGwgYmVcbiAgICAgICAqICAgICAgICAgICAgICAgICAgICBpbnZva2VkIHRvIHJlcGxhY2UgdGhlIGNvbnRlbnQuXG4gICAgICAgKiAgICAgICAgICAgICAgICAgICAgVGhpcyBjYWxiYWNrIHdpbCByZWNlaXZlIHN0YW5kYXJkXG4gICAgICAgKiAgICAgICAgICAgICAgICAgICAgU3RyaW5nLnByb3RvdHlwZS5yZXBsYWNlKHN0ciwgY2FsbGJhY2spXG4gICAgICAgKiAgICAgICAgICAgICAgICAgICAgYXJndW1lbnRzIHN1Y2g6XG4gICAgICAgKiAgY2FsbGJhY2soXG4gICAgICAgKiAgICByYXdUZXh0LCAgLy8gdGhlIGVtb2ppIG1hdGNoXG4gICAgICAgKiAgKTtcbiAgICAgICAqXG4gICAgICAgKiAgICAgICAgICAgICAgICAgICAgYW5kIG90aGVycyBjb21tb25seSByZWNlaXZlZCB2aWEgcmVwbGFjZS5cbiAgICAgICAqL1xuICAgICAgcmVwbGFjZTogcmVwbGFjZSxcblxuICAgICAgLyoqXG4gICAgICAgKiBTaW1wbGlmeSBzdHJpbmcgdGVzdHMgYWdhaW5zdCBlbW9qaS5cbiAgICAgICAqXG4gICAgICAgKiBAcGFyYW0gICBzdHJpbmcgIHNvbWUgdGV4dCB0aGF0IG1pZ2h0IGNvbnRhaW4gZW1vamlcbiAgICAgICAqIEByZXR1cm4gIGJvb2xlYW4gdHJ1ZSBpZiBhbnkgZW1vamkgd2FzIGZvdW5kLCBmYWxzZSBvdGhlcndpc2UuXG4gICAgICAgKlxuICAgICAgICogQGV4YW1wbGVcbiAgICAgICAqXG4gICAgICAgKiAgaWYgKHR3ZW1vamkudGVzdChzb21lQ29udGVudCkpIHtcbiAgICAgICAqICAgIGNvbnNvbGUubG9nKFwiZW1vamkgQWxsIFRoZSBUaGluZ3MhXCIpO1xuICAgICAgICogIH1cbiAgICAgICAqL1xuICAgICAgdGVzdDogdGVzdFxuICAgIH0sXG5cbiAgICAvLyB1c2VkIHRvIGVzY2FwZSBIVE1MIHNwZWNpYWwgY2hhcnMgaW4gYXR0cmlidXRlc1xuICAgIGVzY2FwZXIgPSB7XG4gICAgICAnJic6ICcmYW1wOycsXG4gICAgICAnPCc6ICcmbHQ7JyxcbiAgICAgICc+JzogJyZndDsnLFxuICAgICAgXCInXCI6ICcmIzM5OycsXG4gICAgICAnXCInOiAnJnF1b3Q7J1xuICAgIH0sXG5cbiAgICAvLyBSZWdFeHAgYmFzZWQgb24gZW1vamkncyBvZmZpY2lhbCBVbmljb2RlIHN0YW5kYXJkc1xuICAgIC8vIGh0dHA6Ly93d3cudW5pY29kZS5vcmcvUHVibGljL1VOSURBVEEvRW1vamlTb3VyY2VzLnR4dFxuICAgIHJlID0gLyg/OlxcdWQ4M2RcXHVkYzY4XFx1ZDgzY1xcdWRmZmJcXHUyMDBkXFx1ZDgzZVxcdWRkMWRcXHUyMDBkXFx1ZDgzZFxcdWRjNjhcXHVkODNjW1xcdWRmZmMtXFx1ZGZmZl18XFx1ZDgzZFxcdWRjNjhcXHVkODNjXFx1ZGZmY1xcdTIwMGRcXHVkODNlXFx1ZGQxZFxcdTIwMGRcXHVkODNkXFx1ZGM2OFxcdWQ4M2NbXFx1ZGZmYlxcdWRmZmQtXFx1ZGZmZl18XFx1ZDgzZFxcdWRjNjhcXHVkODNjXFx1ZGZmZFxcdTIwMGRcXHVkODNlXFx1ZGQxZFxcdTIwMGRcXHVkODNkXFx1ZGM2OFxcdWQ4M2NbXFx1ZGZmYlxcdWRmZmNcXHVkZmZlXFx1ZGZmZl18XFx1ZDgzZFxcdWRjNjhcXHVkODNjXFx1ZGZmZVxcdTIwMGRcXHVkODNlXFx1ZGQxZFxcdTIwMGRcXHVkODNkXFx1ZGM2OFxcdWQ4M2NbXFx1ZGZmYi1cXHVkZmZkXFx1ZGZmZl18XFx1ZDgzZFxcdWRjNjhcXHVkODNjXFx1ZGZmZlxcdTIwMGRcXHVkODNlXFx1ZGQxZFxcdTIwMGRcXHVkODNkXFx1ZGM2OFxcdWQ4M2NbXFx1ZGZmYi1cXHVkZmZlXXxcXHVkODNkXFx1ZGM2OVxcdWQ4M2NcXHVkZmZiXFx1MjAwZFxcdWQ4M2VcXHVkZDFkXFx1MjAwZFxcdWQ4M2RcXHVkYzY4XFx1ZDgzY1tcXHVkZmZjLVxcdWRmZmZdfFxcdWQ4M2RcXHVkYzY5XFx1ZDgzY1xcdWRmZmJcXHUyMDBkXFx1ZDgzZVxcdWRkMWRcXHUyMDBkXFx1ZDgzZFxcdWRjNjlcXHVkODNjW1xcdWRmZmMtXFx1ZGZmZl18XFx1ZDgzZFxcdWRjNjlcXHVkODNjXFx1ZGZmY1xcdTIwMGRcXHVkODNlXFx1ZGQxZFxcdTIwMGRcXHVkODNkXFx1ZGM2OFxcdWQ4M2NbXFx1ZGZmYlxcdWRmZmQtXFx1ZGZmZl18XFx1ZDgzZFxcdWRjNjlcXHVkODNjXFx1ZGZmY1xcdTIwMGRcXHVkODNlXFx1ZGQxZFxcdTIwMGRcXHVkODNkXFx1ZGM2OVxcdWQ4M2NbXFx1ZGZmYlxcdWRmZmQtXFx1ZGZmZl18XFx1ZDgzZFxcdWRjNjlcXHVkODNjXFx1ZGZmZFxcdTIwMGRcXHVkODNlXFx1ZGQxZFxcdTIwMGRcXHVkODNkXFx1ZGM2OFxcdWQ4M2NbXFx1ZGZmYlxcdWRmZmNcXHVkZmZlXFx1ZGZmZl18XFx1ZDgzZFxcdWRjNjlcXHVkODNjXFx1ZGZmZFxcdTIwMGRcXHVkODNlXFx1ZGQxZFxcdTIwMGRcXHVkODNkXFx1ZGM2OVxcdWQ4M2NbXFx1ZGZmYlxcdWRmZmNcXHVkZmZlXFx1ZGZmZl18XFx1ZDgzZFxcdWRjNjlcXHVkODNjXFx1ZGZmZVxcdTIwMGRcXHVkODNlXFx1ZGQxZFxcdTIwMGRcXHVkODNkXFx1ZGM2OFxcdWQ4M2NbXFx1ZGZmYi1cXHVkZmZkXFx1ZGZmZl18XFx1ZDgzZFxcdWRjNjlcXHVkODNjXFx1ZGZmZVxcdTIwMGRcXHVkODNlXFx1ZGQxZFxcdTIwMGRcXHVkODNkXFx1ZGM2OVxcdWQ4M2NbXFx1ZGZmYi1cXHVkZmZkXFx1ZGZmZl18XFx1ZDgzZFxcdWRjNjlcXHVkODNjXFx1ZGZmZlxcdTIwMGRcXHVkODNlXFx1ZGQxZFxcdTIwMGRcXHVkODNkXFx1ZGM2OFxcdWQ4M2NbXFx1ZGZmYi1cXHVkZmZlXXxcXHVkODNkXFx1ZGM2OVxcdWQ4M2NcXHVkZmZmXFx1MjAwZFxcdWQ4M2VcXHVkZDFkXFx1MjAwZFxcdWQ4M2RcXHVkYzY5XFx1ZDgzY1tcXHVkZmZiLVxcdWRmZmVdfFxcdWQ4M2VcXHVkZGQxXFx1ZDgzY1xcdWRmZmJcXHUyMDBkXFx1ZDgzZVxcdWRkMWRcXHUyMDBkXFx1ZDgzZVxcdWRkZDFcXHVkODNjW1xcdWRmZmItXFx1ZGZmZl18XFx1ZDgzZVxcdWRkZDFcXHVkODNjXFx1ZGZmY1xcdTIwMGRcXHVkODNlXFx1ZGQxZFxcdTIwMGRcXHVkODNlXFx1ZGRkMVxcdWQ4M2NbXFx1ZGZmYi1cXHVkZmZmXXxcXHVkODNlXFx1ZGRkMVxcdWQ4M2NcXHVkZmZkXFx1MjAwZFxcdWQ4M2VcXHVkZDFkXFx1MjAwZFxcdWQ4M2VcXHVkZGQxXFx1ZDgzY1tcXHVkZmZiLVxcdWRmZmZdfFxcdWQ4M2VcXHVkZGQxXFx1ZDgzY1xcdWRmZmVcXHUyMDBkXFx1ZDgzZVxcdWRkMWRcXHUyMDBkXFx1ZDgzZVxcdWRkZDFcXHVkODNjW1xcdWRmZmItXFx1ZGZmZl18XFx1ZDgzZVxcdWRkZDFcXHVkODNjXFx1ZGZmZlxcdTIwMGRcXHVkODNlXFx1ZGQxZFxcdTIwMGRcXHVkODNlXFx1ZGRkMVxcdWQ4M2NbXFx1ZGZmYi1cXHVkZmZmXXxcXHVkODNlXFx1ZGRkMVxcdTIwMGRcXHVkODNlXFx1ZGQxZFxcdTIwMGRcXHVkODNlXFx1ZGRkMXxcXHVkODNkXFx1ZGM2YlxcdWQ4M2NbXFx1ZGZmYi1cXHVkZmZmXXxcXHVkODNkXFx1ZGM2Y1xcdWQ4M2NbXFx1ZGZmYi1cXHVkZmZmXXxcXHVkODNkXFx1ZGM2ZFxcdWQ4M2NbXFx1ZGZmYi1cXHVkZmZmXXxcXHVkODNkW1xcdWRjNmItXFx1ZGM2ZF0pfCg/OlxcdWQ4M2RbXFx1ZGM2OFxcdWRjNjldfFxcdWQ4M2VcXHVkZGQxKSg/OlxcdWQ4M2NbXFx1ZGZmYi1cXHVkZmZmXSk/XFx1MjAwZCg/OlxcdTI2OTVcXHVmZTBmfFxcdTI2OTZcXHVmZTBmfFxcdTI3MDhcXHVmZTBmfFxcdWQ4M2NbXFx1ZGYzZVxcdWRmNzNcXHVkZjdjXFx1ZGY4NFxcdWRmOTNcXHVkZmE0XFx1ZGZhOFxcdWRmZWJcXHVkZmVkXXxcXHVkODNkW1xcdWRjYmJcXHVkY2JjXFx1ZGQyN1xcdWRkMmNcXHVkZTgwXFx1ZGU5Ml18XFx1ZDgzZVtcXHVkZGFmLVxcdWRkYjNcXHVkZGJjXFx1ZGRiZF0pfCg/OlxcdWQ4M2NbXFx1ZGZjYlxcdWRmY2NdfFxcdWQ4M2RbXFx1ZGQ3NFxcdWRkNzVdfFxcdTI2ZjkpKCg/OlxcdWQ4M2NbXFx1ZGZmYi1cXHVkZmZmXXxcXHVmZTBmKVxcdTIwMGRbXFx1MjY0MFxcdTI2NDJdXFx1ZmUwZil8KD86XFx1ZDgzY1tcXHVkZmMzXFx1ZGZjNFxcdWRmY2FdfFxcdWQ4M2RbXFx1ZGM2ZVxcdWRjNzBcXHVkYzcxXFx1ZGM3M1xcdWRjNzdcXHVkYzgxXFx1ZGM4MlxcdWRjODZcXHVkYzg3XFx1ZGU0NS1cXHVkZTQ3XFx1ZGU0YlxcdWRlNGRcXHVkZTRlXFx1ZGVhM1xcdWRlYjQtXFx1ZGViNl18XFx1ZDgzZVtcXHVkZDI2XFx1ZGQzNVxcdWRkMzctXFx1ZGQzOVxcdWRkM2RcXHVkZDNlXFx1ZGRiOFxcdWRkYjlcXHVkZGNkLVxcdWRkY2ZcXHVkZGQ2LVxcdWRkZGRdKSg/OlxcdWQ4M2NbXFx1ZGZmYi1cXHVkZmZmXSk/XFx1MjAwZFtcXHUyNjQwXFx1MjY0Ml1cXHVmZTBmfCg/OlxcdWQ4M2RcXHVkYzY4XFx1MjAwZFxcdTI3NjRcXHVmZTBmXFx1MjAwZFxcdWQ4M2RcXHVkYzhiXFx1MjAwZFxcdWQ4M2RcXHVkYzY4fFxcdWQ4M2RcXHVkYzY4XFx1MjAwZFxcdWQ4M2RcXHVkYzY4XFx1MjAwZFxcdWQ4M2RcXHVkYzY2XFx1MjAwZFxcdWQ4M2RcXHVkYzY2fFxcdWQ4M2RcXHVkYzY4XFx1MjAwZFxcdWQ4M2RcXHVkYzY4XFx1MjAwZFxcdWQ4M2RcXHVkYzY3XFx1MjAwZFxcdWQ4M2RbXFx1ZGM2NlxcdWRjNjddfFxcdWQ4M2RcXHVkYzY4XFx1MjAwZFxcdWQ4M2RcXHVkYzY5XFx1MjAwZFxcdWQ4M2RcXHVkYzY2XFx1MjAwZFxcdWQ4M2RcXHVkYzY2fFxcdWQ4M2RcXHVkYzY4XFx1MjAwZFxcdWQ4M2RcXHVkYzY5XFx1MjAwZFxcdWQ4M2RcXHVkYzY3XFx1MjAwZFxcdWQ4M2RbXFx1ZGM2NlxcdWRjNjddfFxcdWQ4M2RcXHVkYzY5XFx1MjAwZFxcdTI3NjRcXHVmZTBmXFx1MjAwZFxcdWQ4M2RcXHVkYzhiXFx1MjAwZFxcdWQ4M2RbXFx1ZGM2OFxcdWRjNjldfFxcdWQ4M2RcXHVkYzY5XFx1MjAwZFxcdWQ4M2RcXHVkYzY5XFx1MjAwZFxcdWQ4M2RcXHVkYzY2XFx1MjAwZFxcdWQ4M2RcXHVkYzY2fFxcdWQ4M2RcXHVkYzY5XFx1MjAwZFxcdWQ4M2RcXHVkYzY5XFx1MjAwZFxcdWQ4M2RcXHVkYzY3XFx1MjAwZFxcdWQ4M2RbXFx1ZGM2NlxcdWRjNjddfFxcdWQ4M2RcXHVkYzY4XFx1MjAwZFxcdTI3NjRcXHVmZTBmXFx1MjAwZFxcdWQ4M2RcXHVkYzY4fFxcdWQ4M2RcXHVkYzY4XFx1MjAwZFxcdWQ4M2RcXHVkYzY2XFx1MjAwZFxcdWQ4M2RcXHVkYzY2fFxcdWQ4M2RcXHVkYzY4XFx1MjAwZFxcdWQ4M2RcXHVkYzY3XFx1MjAwZFxcdWQ4M2RbXFx1ZGM2NlxcdWRjNjddfFxcdWQ4M2RcXHVkYzY4XFx1MjAwZFxcdWQ4M2RcXHVkYzY4XFx1MjAwZFxcdWQ4M2RbXFx1ZGM2NlxcdWRjNjddfFxcdWQ4M2RcXHVkYzY4XFx1MjAwZFxcdWQ4M2RcXHVkYzY5XFx1MjAwZFxcdWQ4M2RbXFx1ZGM2NlxcdWRjNjddfFxcdWQ4M2RcXHVkYzY5XFx1MjAwZFxcdTI3NjRcXHVmZTBmXFx1MjAwZFxcdWQ4M2RbXFx1ZGM2OFxcdWRjNjldfFxcdWQ4M2RcXHVkYzY5XFx1MjAwZFxcdWQ4M2RcXHVkYzY2XFx1MjAwZFxcdWQ4M2RcXHVkYzY2fFxcdWQ4M2RcXHVkYzY5XFx1MjAwZFxcdWQ4M2RcXHVkYzY3XFx1MjAwZFxcdWQ4M2RbXFx1ZGM2NlxcdWRjNjddfFxcdWQ4M2RcXHVkYzY5XFx1MjAwZFxcdWQ4M2RcXHVkYzY5XFx1MjAwZFxcdWQ4M2RbXFx1ZGM2NlxcdWRjNjddfFxcdWQ4M2NcXHVkZmYzXFx1ZmUwZlxcdTIwMGRcXHUyNmE3XFx1ZmUwZnxcXHVkODNjXFx1ZGZmM1xcdWZlMGZcXHUyMDBkXFx1ZDgzY1xcdWRmMDh8XFx1ZDgzY1xcdWRmZjRcXHUyMDBkXFx1MjYyMFxcdWZlMGZ8XFx1ZDgzZFxcdWRjMTVcXHUyMDBkXFx1ZDgzZVxcdWRkYmF8XFx1ZDgzZFxcdWRjM2JcXHUyMDBkXFx1Mjc0NFxcdWZlMGZ8XFx1ZDgzZFxcdWRjNDFcXHUyMDBkXFx1ZDgzZFxcdWRkZTh8XFx1ZDgzZFxcdWRjNjhcXHUyMDBkXFx1ZDgzZFtcXHVkYzY2XFx1ZGM2N118XFx1ZDgzZFxcdWRjNjlcXHUyMDBkXFx1ZDgzZFtcXHVkYzY2XFx1ZGM2N118XFx1ZDgzZFxcdWRjNmZcXHUyMDBkXFx1MjY0MFxcdWZlMGZ8XFx1ZDgzZFxcdWRjNmZcXHUyMDBkXFx1MjY0MlxcdWZlMGZ8XFx1ZDgzZVxcdWRkM2NcXHUyMDBkXFx1MjY0MFxcdWZlMGZ8XFx1ZDgzZVxcdWRkM2NcXHUyMDBkXFx1MjY0MlxcdWZlMGZ8XFx1ZDgzZVxcdWRkZGVcXHUyMDBkXFx1MjY0MFxcdWZlMGZ8XFx1ZDgzZVxcdWRkZGVcXHUyMDBkXFx1MjY0MlxcdWZlMGZ8XFx1ZDgzZVxcdWRkZGZcXHUyMDBkXFx1MjY0MFxcdWZlMGZ8XFx1ZDgzZVxcdWRkZGZcXHUyMDBkXFx1MjY0MlxcdWZlMGZ8XFx1ZDgzZFxcdWRjMDhcXHUyMDBkXFx1MmIxYil8WyMqMC05XVxcdWZlMGY/XFx1MjBlM3woPzpbwqnCrlxcdTIxMjJcXHUyNjVmXVxcdWZlMGYpfCg/OlxcdWQ4M2NbXFx1ZGMwNFxcdWRkNzBcXHVkZDcxXFx1ZGQ3ZVxcdWRkN2ZcXHVkZTAyXFx1ZGUxYVxcdWRlMmZcXHVkZTM3XFx1ZGYyMVxcdWRmMjQtXFx1ZGYyY1xcdWRmMzZcXHVkZjdkXFx1ZGY5NlxcdWRmOTdcXHVkZjk5LVxcdWRmOWJcXHVkZjllXFx1ZGY5ZlxcdWRmY2RcXHVkZmNlXFx1ZGZkNC1cXHVkZmRmXFx1ZGZmM1xcdWRmZjVcXHVkZmY3XXxcXHVkODNkW1xcdWRjM2ZcXHVkYzQxXFx1ZGNmZFxcdWRkNDlcXHVkZDRhXFx1ZGQ2ZlxcdWRkNzBcXHVkZDczXFx1ZGQ3Ni1cXHVkZDc5XFx1ZGQ4N1xcdWRkOGEtXFx1ZGQ4ZFxcdWRkYTVcXHVkZGE4XFx1ZGRiMVxcdWRkYjJcXHVkZGJjXFx1ZGRjMi1cXHVkZGM0XFx1ZGRkMS1cXHVkZGQzXFx1ZGRkYy1cXHVkZGRlXFx1ZGRlMVxcdWRkZTNcXHVkZGU4XFx1ZGRlZlxcdWRkZjNcXHVkZGZhXFx1ZGVjYlxcdWRlY2QtXFx1ZGVjZlxcdWRlZTAtXFx1ZGVlNVxcdWRlZTlcXHVkZWYwXFx1ZGVmM118W1xcdTIwM2NcXHUyMDQ5XFx1MjEzOVxcdTIxOTQtXFx1MjE5OVxcdTIxYTlcXHUyMWFhXFx1MjMxYVxcdTIzMWJcXHUyMzI4XFx1MjNjZlxcdTIzZWQtXFx1MjNlZlxcdTIzZjFcXHUyM2YyXFx1MjNmOC1cXHUyM2ZhXFx1MjRjMlxcdTI1YWFcXHUyNWFiXFx1MjViNlxcdTI1YzBcXHUyNWZiLVxcdTI1ZmVcXHUyNjAwLVxcdTI2MDRcXHUyNjBlXFx1MjYxMVxcdTI2MTRcXHUyNjE1XFx1MjYxOFxcdTI2MjBcXHUyNjIyXFx1MjYyM1xcdTI2MjZcXHUyNjJhXFx1MjYyZVxcdTI2MmZcXHUyNjM4LVxcdTI2M2FcXHUyNjQwXFx1MjY0MlxcdTI2NDgtXFx1MjY1M1xcdTI2NjBcXHUyNjYzXFx1MjY2NVxcdTI2NjZcXHUyNjY4XFx1MjY3YlxcdTI2N2ZcXHUyNjkyLVxcdTI2OTdcXHUyNjk5XFx1MjY5YlxcdTI2OWNcXHUyNmEwXFx1MjZhMVxcdTI2YTdcXHUyNmFhXFx1MjZhYlxcdTI2YjBcXHUyNmIxXFx1MjZiZFxcdTI2YmVcXHUyNmM0XFx1MjZjNVxcdTI2YzhcXHUyNmNmXFx1MjZkMVxcdTI2ZDNcXHUyNmQ0XFx1MjZlOVxcdTI2ZWFcXHUyNmYwLVxcdTI2ZjVcXHUyNmY4XFx1MjZmYVxcdTI2ZmRcXHUyNzAyXFx1MjcwOFxcdTI3MDlcXHUyNzBmXFx1MjcxMlxcdTI3MTRcXHUyNzE2XFx1MjcxZFxcdTI3MjFcXHUyNzMzXFx1MjczNFxcdTI3NDRcXHUyNzQ3XFx1Mjc1N1xcdTI3NjNcXHUyNzY0XFx1MjdhMVxcdTI5MzRcXHUyOTM1XFx1MmIwNS1cXHUyYjA3XFx1MmIxYlxcdTJiMWNcXHUyYjUwXFx1MmI1NVxcdTMwMzBcXHUzMDNkXFx1MzI5N1xcdTMyOTldKSg/OlxcdWZlMGZ8KD8hXFx1ZmUwZSkpfCg/Oig/OlxcdWQ4M2NbXFx1ZGZjYlxcdWRmY2NdfFxcdWQ4M2RbXFx1ZGQ3NFxcdWRkNzVcXHVkZDkwXXxbXFx1MjYxZFxcdTI2ZjdcXHUyNmY5XFx1MjcwY1xcdTI3MGRdKSg/OlxcdWZlMGZ8KD8hXFx1ZmUwZSkpfCg/OlxcdWQ4M2NbXFx1ZGY4NVxcdWRmYzItXFx1ZGZjNFxcdWRmYzdcXHVkZmNhXXxcXHVkODNkW1xcdWRjNDJcXHVkYzQzXFx1ZGM0Ni1cXHVkYzUwXFx1ZGM2Ni1cXHVkYzY5XFx1ZGM2ZVxcdWRjNzAtXFx1ZGM3OFxcdWRjN2NcXHVkYzgxLVxcdWRjODNcXHVkYzg1LVxcdWRjODdcXHVkY2FhXFx1ZGQ3YVxcdWRkOTVcXHVkZDk2XFx1ZGU0NS1cXHVkZTQ3XFx1ZGU0Yi1cXHVkZTRmXFx1ZGVhM1xcdWRlYjQtXFx1ZGViNlxcdWRlYzBcXHVkZWNjXXxcXHVkODNlW1xcdWRkMGNcXHVkZDBmXFx1ZGQxOC1cXHVkZDFjXFx1ZGQxZVxcdWRkMWZcXHVkZDI2XFx1ZGQzMC1cXHVkZDM5XFx1ZGQzZFxcdWRkM2VcXHVkZDc3XFx1ZGRiNVxcdWRkYjZcXHVkZGI4XFx1ZGRiOVxcdWRkYmJcXHVkZGNkLVxcdWRkY2ZcXHVkZGQxLVxcdWRkZGRdfFtcXHUyNzBhXFx1MjcwYl0pKSg/OlxcdWQ4M2NbXFx1ZGZmYi1cXHVkZmZmXSk/fCg/OlxcdWQ4M2NcXHVkZmY0XFx1ZGI0MFxcdWRjNjdcXHVkYjQwXFx1ZGM2MlxcdWRiNDBcXHVkYzY1XFx1ZGI0MFxcdWRjNmVcXHVkYjQwXFx1ZGM2N1xcdWRiNDBcXHVkYzdmfFxcdWQ4M2NcXHVkZmY0XFx1ZGI0MFxcdWRjNjdcXHVkYjQwXFx1ZGM2MlxcdWRiNDBcXHVkYzczXFx1ZGI0MFxcdWRjNjNcXHVkYjQwXFx1ZGM3NFxcdWRiNDBcXHVkYzdmfFxcdWQ4M2NcXHVkZmY0XFx1ZGI0MFxcdWRjNjdcXHVkYjQwXFx1ZGM2MlxcdWRiNDBcXHVkYzc3XFx1ZGI0MFxcdWRjNmNcXHVkYjQwXFx1ZGM3M1xcdWRiNDBcXHVkYzdmfFxcdWQ4M2NcXHVkZGU2XFx1ZDgzY1tcXHVkZGU4LVxcdWRkZWNcXHVkZGVlXFx1ZGRmMVxcdWRkZjJcXHVkZGY0XFx1ZGRmNi1cXHVkZGZhXFx1ZGRmY1xcdWRkZmRcXHVkZGZmXXxcXHVkODNjXFx1ZGRlN1xcdWQ4M2NbXFx1ZGRlNlxcdWRkZTdcXHVkZGU5LVxcdWRkZWZcXHVkZGYxLVxcdWRkZjRcXHVkZGY2LVxcdWRkZjlcXHVkZGZiXFx1ZGRmY1xcdWRkZmVcXHVkZGZmXXxcXHVkODNjXFx1ZGRlOFxcdWQ4M2NbXFx1ZGRlNlxcdWRkZThcXHVkZGU5XFx1ZGRlYi1cXHVkZGVlXFx1ZGRmMC1cXHVkZGY1XFx1ZGRmN1xcdWRkZmEtXFx1ZGRmZl18XFx1ZDgzY1xcdWRkZTlcXHVkODNjW1xcdWRkZWFcXHVkZGVjXFx1ZGRlZlxcdWRkZjBcXHVkZGYyXFx1ZGRmNFxcdWRkZmZdfFxcdWQ4M2NcXHVkZGVhXFx1ZDgzY1tcXHVkZGU2XFx1ZGRlOFxcdWRkZWFcXHVkZGVjXFx1ZGRlZFxcdWRkZjctXFx1ZGRmYV18XFx1ZDgzY1xcdWRkZWJcXHVkODNjW1xcdWRkZWUtXFx1ZGRmMFxcdWRkZjJcXHVkZGY0XFx1ZGRmN118XFx1ZDgzY1xcdWRkZWNcXHVkODNjW1xcdWRkZTZcXHVkZGU3XFx1ZGRlOS1cXHVkZGVlXFx1ZGRmMS1cXHVkZGYzXFx1ZGRmNS1cXHVkZGZhXFx1ZGRmY1xcdWRkZmVdfFxcdWQ4M2NcXHVkZGVkXFx1ZDgzY1tcXHVkZGYwXFx1ZGRmMlxcdWRkZjNcXHVkZGY3XFx1ZGRmOVxcdWRkZmFdfFxcdWQ4M2NcXHVkZGVlXFx1ZDgzY1tcXHVkZGU4LVxcdWRkZWFcXHVkZGYxLVxcdWRkZjRcXHVkZGY2LVxcdWRkZjldfFxcdWQ4M2NcXHVkZGVmXFx1ZDgzY1tcXHVkZGVhXFx1ZGRmMlxcdWRkZjRcXHVkZGY1XXxcXHVkODNjXFx1ZGRmMFxcdWQ4M2NbXFx1ZGRlYVxcdWRkZWMtXFx1ZGRlZVxcdWRkZjJcXHVkZGYzXFx1ZGRmNVxcdWRkZjdcXHVkZGZjXFx1ZGRmZVxcdWRkZmZdfFxcdWQ4M2NcXHVkZGYxXFx1ZDgzY1tcXHVkZGU2LVxcdWRkZThcXHVkZGVlXFx1ZGRmMFxcdWRkZjctXFx1ZGRmYlxcdWRkZmVdfFxcdWQ4M2NcXHVkZGYyXFx1ZDgzY1tcXHVkZGU2XFx1ZGRlOC1cXHVkZGVkXFx1ZGRmMC1cXHVkZGZmXXxcXHVkODNjXFx1ZGRmM1xcdWQ4M2NbXFx1ZGRlNlxcdWRkZThcXHVkZGVhLVxcdWRkZWNcXHVkZGVlXFx1ZGRmMVxcdWRkZjRcXHVkZGY1XFx1ZGRmN1xcdWRkZmFcXHVkZGZmXXxcXHVkODNjXFx1ZGRmNFxcdWQ4M2NcXHVkZGYyfFxcdWQ4M2NcXHVkZGY1XFx1ZDgzY1tcXHVkZGU2XFx1ZGRlYS1cXHVkZGVkXFx1ZGRmMC1cXHVkZGYzXFx1ZGRmNy1cXHVkZGY5XFx1ZGRmY1xcdWRkZmVdfFxcdWQ4M2NcXHVkZGY2XFx1ZDgzY1xcdWRkZTZ8XFx1ZDgzY1xcdWRkZjdcXHVkODNjW1xcdWRkZWFcXHVkZGY0XFx1ZGRmOFxcdWRkZmFcXHVkZGZjXXxcXHVkODNjXFx1ZGRmOFxcdWQ4M2NbXFx1ZGRlNi1cXHVkZGVhXFx1ZGRlYy1cXHVkZGY0XFx1ZGRmNy1cXHVkZGY5XFx1ZGRmYlxcdWRkZmQtXFx1ZGRmZl18XFx1ZDgzY1xcdWRkZjlcXHVkODNjW1xcdWRkZTZcXHVkZGU4XFx1ZGRlOVxcdWRkZWItXFx1ZGRlZFxcdWRkZWYtXFx1ZGRmNFxcdWRkZjdcXHVkZGY5XFx1ZGRmYlxcdWRkZmNcXHVkZGZmXXxcXHVkODNjXFx1ZGRmYVxcdWQ4M2NbXFx1ZGRlNlxcdWRkZWNcXHVkZGYyXFx1ZGRmM1xcdWRkZjhcXHVkZGZlXFx1ZGRmZl18XFx1ZDgzY1xcdWRkZmJcXHVkODNjW1xcdWRkZTZcXHVkZGU4XFx1ZGRlYVxcdWRkZWNcXHVkZGVlXFx1ZGRmM1xcdWRkZmFdfFxcdWQ4M2NcXHVkZGZjXFx1ZDgzY1tcXHVkZGViXFx1ZGRmOF18XFx1ZDgzY1xcdWRkZmRcXHVkODNjXFx1ZGRmMHxcXHVkODNjXFx1ZGRmZVxcdWQ4M2NbXFx1ZGRlYVxcdWRkZjldfFxcdWQ4M2NcXHVkZGZmXFx1ZDgzY1tcXHVkZGU2XFx1ZGRmMlxcdWRkZmNdfFxcdWQ4M2NbXFx1ZGNjZlxcdWRkOGVcXHVkZDkxLVxcdWRkOWFcXHVkZGU2LVxcdWRkZmZcXHVkZTAxXFx1ZGUzMi1cXHVkZTM2XFx1ZGUzOC1cXHVkZTNhXFx1ZGU1MFxcdWRlNTFcXHVkZjAwLVxcdWRmMjBcXHVkZjJkLVxcdWRmMzVcXHVkZjM3LVxcdWRmN2NcXHVkZjdlLVxcdWRmODRcXHVkZjg2LVxcdWRmOTNcXHVkZmEwLVxcdWRmYzFcXHVkZmM1XFx1ZGZjNlxcdWRmYzhcXHVkZmM5XFx1ZGZjZi1cXHVkZmQzXFx1ZGZlMC1cXHVkZmYwXFx1ZGZmNFxcdWRmZjgtXFx1ZGZmZl18XFx1ZDgzZFtcXHVkYzAwLVxcdWRjM2VcXHVkYzQwXFx1ZGM0NFxcdWRjNDVcXHVkYzUxLVxcdWRjNjVcXHVkYzZhXFx1ZGM2ZlxcdWRjNzktXFx1ZGM3YlxcdWRjN2QtXFx1ZGM4MFxcdWRjODRcXHVkYzg4LVxcdWRjYTlcXHVkY2FiLVxcdWRjZmNcXHVkY2ZmLVxcdWRkM2RcXHVkZDRiLVxcdWRkNGVcXHVkZDUwLVxcdWRkNjdcXHVkZGE0XFx1ZGRmYi1cXHVkZTQ0XFx1ZGU0OC1cXHVkZTRhXFx1ZGU4MC1cXHVkZWEyXFx1ZGVhNC1cXHVkZWIzXFx1ZGViNy1cXHVkZWJmXFx1ZGVjMS1cXHVkZWM1XFx1ZGVkMC1cXHVkZWQyXFx1ZGVkNS1cXHVkZWQ3XFx1ZGVlYlxcdWRlZWNcXHVkZWY0LVxcdWRlZmNcXHVkZmUwLVxcdWRmZWJdfFxcdWQ4M2VbXFx1ZGQwZFxcdWRkMGVcXHVkZDEwLVxcdWRkMTdcXHVkZDFkXFx1ZGQyMC1cXHVkZDI1XFx1ZGQyNy1cXHVkZDJmXFx1ZGQzYVxcdWRkM2NcXHVkZDNmLVxcdWRkNDVcXHVkZDQ3LVxcdWRkNzZcXHVkZDc4XFx1ZGQ3YS1cXHVkZGI0XFx1ZGRiN1xcdWRkYmFcXHVkZGJjLVxcdWRkY2JcXHVkZGQwXFx1ZGRkZS1cXHVkZGZmXFx1ZGU3MC1cXHVkZTc0XFx1ZGU3OC1cXHVkZTdhXFx1ZGU4MC1cXHVkZTg2XFx1ZGU5MC1cXHVkZWE4XFx1ZGViMC1cXHVkZWI2XFx1ZGVjMC1cXHVkZWMyXFx1ZGVkMC1cXHVkZWQ2XXxbXFx1MjNlOS1cXHUyM2VjXFx1MjNmMFxcdTIzZjNcXHUyNjdlXFx1MjZjZVxcdTI3MDVcXHUyNzI4XFx1Mjc0Y1xcdTI3NGVcXHUyNzUzLVxcdTI3NTVcXHUyNzk1LVxcdTI3OTdcXHUyN2IwXFx1MjdiZlxcdWU1MGFdKXxcXHVmZTBmL2csXG5cbiAgICAvLyBhdm9pZCBydW50aW1lIFJlZ0V4cCBjcmVhdGlvbiBmb3Igbm90IHNvIHNtYXJ0LFxuICAgIC8vIG5vdCBKSVQgYmFzZWQsIGFuZCBvbGQgYnJvd3NlcnMgLyBlbmdpbmVzXG4gICAgVUZFMEZnID0gL1xcdUZFMEYvZyxcblxuICAgIC8vIGF2b2lkIHVzaW5nIGEgc3RyaW5nIGxpdGVyYWwgbGlrZSAnXFx1MjAwRCcgaGVyZSBiZWNhdXNlIG1pbmlmaWVycyBleHBhbmQgaXQgaW5saW5lXG4gICAgVTIwMEQgPSBTdHJpbmcuZnJvbUNoYXJDb2RlKDB4MjAwRCksXG5cbiAgICAvLyB1c2VkIHRvIGZpbmQgSFRNTCBzcGVjaWFsIGNoYXJzIGluIGF0dHJpYnV0ZXNcbiAgICByZXNjYXBlciA9IC9bJjw+J1wiXS9nLFxuXG4gICAgLy8gbm9kZXMgd2l0aCB0eXBlIDEgd2hpY2ggc2hvdWxkICoqbm90KiogYmUgcGFyc2VkXG4gICAgc2hvdWxkbnRCZVBhcnNlZCA9IC9eKD86aWZyYW1lfG5vZnJhbWVzfG5vc2NyaXB0fHNjcmlwdHxzZWxlY3R8c3R5bGV8dGV4dGFyZWEpJC8sXG5cbiAgICAvLyBqdXN0IGEgcHJpdmF0ZSBzaG9ydGN1dFxuICAgIGZyb21DaGFyQ29kZSA9IFN0cmluZy5mcm9tQ2hhckNvZGU7XG5cbiAgcmV0dXJuIHR3ZW1vamk7XG5cblxuICAvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vXG4gIC8vICBwcml2YXRlIGZ1bmN0aW9ucyAgLy9cbiAgLy8gICAgIGRlY2xhcmF0aW9uICAgICAvL1xuICAvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vXG5cbiAgLyoqXG4gICAqIFNob3J0Y3V0IHRvIGNyZWF0ZSB0ZXh0IG5vZGVzXG4gICAqIEBwYXJhbSAgIHN0cmluZyAgdGV4dCB1c2VkIHRvIGNyZWF0ZSBET00gdGV4dCBub2RlXG4gICAqIEByZXR1cm4gIE5vZGUgIGEgRE9NIG5vZGUgd2l0aCB0aGF0IHRleHRcbiAgICovXG4gIGZ1bmN0aW9uIGNyZWF0ZVRleHQodGV4dCwgY2xlYW4pIHtcbiAgICByZXR1cm4gZG9jdW1lbnQuY3JlYXRlVGV4dE5vZGUoY2xlYW4gPyB0ZXh0LnJlcGxhY2UoVUZFMEZnLCAnJykgOiB0ZXh0KTtcbiAgfVxuXG4gIC8qKlxuICAgKiBVdGlsaXR5IGZ1bmN0aW9uIHRvIGVzY2FwZSBodG1sIGF0dHJpYnV0ZSB0ZXh0XG4gICAqIEBwYXJhbSAgIHN0cmluZyAgdGV4dCB1c2UgaW4gSFRNTCBhdHRyaWJ1dGVcbiAgICogQHJldHVybiAgc3RyaW5nICB0ZXh0IGVuY29kZWQgdG8gdXNlIGluIEhUTUwgYXR0cmlidXRlXG4gICAqL1xuICBmdW5jdGlvbiBlc2NhcGVIVE1MKHMpIHtcbiAgICByZXR1cm4gcy5yZXBsYWNlKHJlc2NhcGVyLCByZXBsYWNlcik7XG4gIH1cblxuICAvKipcbiAgICogRGVmYXVsdCBjYWxsYmFjayB1c2VkIHRvIGdlbmVyYXRlIGVtb2ppIHNyY1xuICAgKiAgYmFzZWQgb24gVHdpdHRlciBDRE5cbiAgICogQHBhcmFtICAgc3RyaW5nICAgIHRoZSBlbW9qaSBjb2RlcG9pbnQgc3RyaW5nXG4gICAqIEBwYXJhbSAgIHN0cmluZyAgICB0aGUgZGVmYXVsdCBzaXplIHRvIHVzZSwgaS5lLiBcIjM2eDM2XCJcbiAgICogQHJldHVybiAgc3RyaW5nICAgIHRoZSBpbWFnZSBzb3VyY2UgdG8gdXNlXG4gICAqL1xuICBmdW5jdGlvbiBkZWZhdWx0SW1hZ2VTcmNHZW5lcmF0b3IoaWNvbiwgb3B0aW9ucykge1xuICAgIHJldHVybiAnJy5jb25jYXQob3B0aW9ucy5iYXNlLCBvcHRpb25zLnNpemUsICcvJywgaWNvbiwgb3B0aW9ucy5leHQpO1xuICB9XG5cbiAgLyoqXG4gICAqIEdpdmVuIGEgZ2VuZXJpYyBET00gbm9kZVR5cGUgMSwgd2FsayB0aHJvdWdoIGFsbCBjaGlsZHJlblxuICAgKiBhbmQgc3RvcmUgZXZlcnkgbm9kZVR5cGUgMyAoI3RleHQpIGZvdW5kIGluIHRoZSB0cmVlLlxuICAgKiBAcGFyYW0gICBFbGVtZW50IGEgRE9NIEVsZW1lbnQgd2l0aCBwcm9iYWJseSBzb21lIHRleHQgaW4gaXRcbiAgICogQHBhcmFtICAgQXJyYXkgdGhlIGxpc3Qgb2YgcHJldmlvdXNseSBkaXNjb3ZlcmVkIHRleHQgbm9kZXNcbiAgICogQHJldHVybiAgQXJyYXkgc2FtZSBsaXN0IHdpdGggbmV3IGRpc2NvdmVyZWQgbm9kZXMsIGlmIGFueVxuICAgKi9cbiAgZnVuY3Rpb24gZ3JhYkFsbFRleHROb2Rlcyhub2RlLCBhbGxUZXh0KSB7XG4gICAgdmFyXG4gICAgICBjaGlsZE5vZGVzID0gbm9kZS5jaGlsZE5vZGVzLFxuICAgICAgbGVuZ3RoID0gY2hpbGROb2Rlcy5sZW5ndGgsXG4gICAgICBzdWJub2RlLFxuICAgICAgbm9kZVR5cGU7XG4gICAgd2hpbGUgKGxlbmd0aC0tKSB7XG4gICAgICBzdWJub2RlID0gY2hpbGROb2Rlc1tsZW5ndGhdO1xuICAgICAgbm9kZVR5cGUgPSBzdWJub2RlLm5vZGVUeXBlO1xuICAgICAgLy8gcGFyc2UgZW1vamkgb25seSBpbiB0ZXh0IG5vZGVzXG4gICAgICBpZiAobm9kZVR5cGUgPT09IDMpIHtcbiAgICAgICAgLy8gY29sbGVjdCB0aGVtIHRvIHByb2Nlc3MgZW1vamkgbGF0ZXJcbiAgICAgICAgYWxsVGV4dC5wdXNoKHN1Ym5vZGUpO1xuICAgICAgfVxuICAgICAgLy8gaWdub3JlIGFsbCBub2RlcyB0aGF0IGFyZSBub3QgdHlwZSAxLCB0aGF0IGFyZSBzdmcsIG9yIHRoYXRcbiAgICAgIC8vIHNob3VsZCBub3QgYmUgcGFyc2VkIGFzIHNjcmlwdCwgc3R5bGUsIGFuZCBvdGhlcnNcbiAgICAgIGVsc2UgaWYgKG5vZGVUeXBlID09PSAxICYmICEoJ293bmVyU1ZHRWxlbWVudCcgaW4gc3Vibm9kZSkgJiZcbiAgICAgICAgICAhc2hvdWxkbnRCZVBhcnNlZC50ZXN0KHN1Ym5vZGUubm9kZU5hbWUudG9Mb3dlckNhc2UoKSkpIHtcbiAgICAgICAgZ3JhYkFsbFRleHROb2RlcyhzdWJub2RlLCBhbGxUZXh0KTtcbiAgICAgIH1cbiAgICB9XG4gICAgcmV0dXJuIGFsbFRleHQ7XG4gIH1cblxuICAvKipcbiAgICogVXNlZCB0byBib3RoIHJlbW92ZSB0aGUgcG9zc2libGUgdmFyaWFudFxuICAgKiAgYW5kIHRvIGNvbnZlcnQgdXRmMTYgaW50byBjb2RlIHBvaW50cy5cbiAgICogIElmIHRoZXJlIGlzIGEgemVyby13aWR0aC1qb2luZXIgKFUrMjAwRCksIGxlYXZlIHRoZSB2YXJpYW50cyBpbi5cbiAgICogQHBhcmFtICAgc3RyaW5nICAgIHRoZSByYXcgdGV4dCBvZiB0aGUgZW1vamkgbWF0Y2hcbiAgICogQHJldHVybiAgc3RyaW5nICAgIHRoZSBjb2RlIHBvaW50XG4gICAqL1xuICBmdW5jdGlvbiBncmFiVGhlUmlnaHRJY29uKHJhd1RleHQpIHtcbiAgICAvLyBpZiB2YXJpYW50IGlzIHByZXNlbnQgYXMgXFx1RkUwRlxuICAgIHJldHVybiB0b0NvZGVQb2ludChyYXdUZXh0LmluZGV4T2YoVTIwMEQpIDwgMCA/XG4gICAgICByYXdUZXh0LnJlcGxhY2UoVUZFMEZnLCAnJykgOlxuICAgICAgcmF3VGV4dFxuICAgICk7XG4gIH1cblxuICAvKipcbiAgICogRE9NIHZlcnNpb24gb2YgdGhlIHNhbWUgbG9naWMgLyBwYXJzZXI6XG4gICAqICBlbW9qaWZ5IGFsbCBmb3VuZCBzdWItdGV4dCBub2RlcyBwbGFjaW5nIGltYWdlcyBub2RlIGluc3RlYWQuXG4gICAqIEBwYXJhbSAgIEVsZW1lbnQgICBnZW5lcmljIERPTSBub2RlIHdpdGggc29tZSB0ZXh0IGluIHNvbWUgY2hpbGQgbm9kZVxuICAgKiBAcGFyYW0gICBPYmplY3QgICAgb3B0aW9ucyAgY29udGFpbmluZyBpbmZvIGFib3V0IGhvdyB0byBwYXJzZVxuICAgICpcbiAgICAqICAgICAgICAgICAgLmNhbGxiYWNrICAgRnVuY3Rpb24gIHRoZSBjYWxsYmFjayB0byBpbnZva2UgcGVyIGVhY2ggZm91bmQgZW1vamkuXG4gICAgKiAgICAgICAgICAgIC5iYXNlICAgICAgIHN0cmluZyAgICB0aGUgYmFzZSB1cmwsIGJ5IGRlZmF1bHQgdHdlbW9qaS5iYXNlXG4gICAgKiAgICAgICAgICAgIC5leHQgICAgICAgIHN0cmluZyAgICB0aGUgaW1hZ2UgZXh0ZW5zaW9uLCBieSBkZWZhdWx0IHR3ZW1vamkuZXh0XG4gICAgKiAgICAgICAgICAgIC5zaXplICAgICAgIHN0cmluZyAgICB0aGUgYXNzZXRzIHNpemUsIGJ5IGRlZmF1bHQgdHdlbW9qaS5zaXplXG4gICAgKlxuICAgKiBAcmV0dXJuICBFbGVtZW50IHNhbWUgZ2VuZXJpYyBub2RlIHdpdGggZW1vamkgaW4gcGxhY2UsIGlmIGFueS5cbiAgICovXG4gIGZ1bmN0aW9uIHBhcnNlTm9kZShub2RlLCBvcHRpb25zKSB7XG4gICAgdmFyXG4gICAgICBhbGxUZXh0ID0gZ3JhYkFsbFRleHROb2Rlcyhub2RlLCBbXSksXG4gICAgICBsZW5ndGggPSBhbGxUZXh0Lmxlbmd0aCxcbiAgICAgIGF0dHJpYixcbiAgICAgIGF0dHJuYW1lLFxuICAgICAgbW9kaWZpZWQsXG4gICAgICBmcmFnbWVudCxcbiAgICAgIHN1Ym5vZGUsXG4gICAgICB0ZXh0LFxuICAgICAgbWF0Y2gsXG4gICAgICBpLFxuICAgICAgaW5kZXgsXG4gICAgICBpbWcsXG4gICAgICByYXdUZXh0LFxuICAgICAgaWNvbklkLFxuICAgICAgc3JjO1xuICAgIHdoaWxlIChsZW5ndGgtLSkge1xuICAgICAgbW9kaWZpZWQgPSBmYWxzZTtcbiAgICAgIGZyYWdtZW50ID0gZG9jdW1lbnQuY3JlYXRlRG9jdW1lbnRGcmFnbWVudCgpO1xuICAgICAgc3Vibm9kZSA9IGFsbFRleHRbbGVuZ3RoXTtcbiAgICAgIHRleHQgPSBzdWJub2RlLm5vZGVWYWx1ZTtcbiAgICAgIGkgPSAwO1xuICAgICAgd2hpbGUgKChtYXRjaCA9IHJlLmV4ZWModGV4dCkpKSB7XG4gICAgICAgIGluZGV4ID0gbWF0Y2guaW5kZXg7XG4gICAgICAgIGlmIChpbmRleCAhPT0gaSkge1xuICAgICAgICAgIGZyYWdtZW50LmFwcGVuZENoaWxkKFxuICAgICAgICAgICAgY3JlYXRlVGV4dCh0ZXh0LnNsaWNlKGksIGluZGV4KSwgdHJ1ZSlcbiAgICAgICAgICApO1xuICAgICAgICB9XG4gICAgICAgIHJhd1RleHQgPSBtYXRjaFswXTtcbiAgICAgICAgaWNvbklkID0gZ3JhYlRoZVJpZ2h0SWNvbihyYXdUZXh0KTtcbiAgICAgICAgaSA9IGluZGV4ICsgcmF3VGV4dC5sZW5ndGg7XG4gICAgICAgIHNyYyA9IG9wdGlvbnMuY2FsbGJhY2soaWNvbklkLCBvcHRpb25zKTtcbiAgICAgICAgaWYgKGljb25JZCAmJiBzcmMpIHtcbiAgICAgICAgICBpbWcgPSBuZXcgSW1hZ2UoKTtcbiAgICAgICAgICBpbWcub25lcnJvciA9IG9wdGlvbnMub25lcnJvcjtcbiAgICAgICAgICBpbWcuc2V0QXR0cmlidXRlKCdkcmFnZ2FibGUnLCAnZmFsc2UnKTtcbiAgICAgICAgICBhdHRyaWIgPSBvcHRpb25zLmF0dHJpYnV0ZXMocmF3VGV4dCwgaWNvbklkKTtcbiAgICAgICAgICBmb3IgKGF0dHJuYW1lIGluIGF0dHJpYikge1xuICAgICAgICAgICAgaWYgKFxuICAgICAgICAgICAgICBhdHRyaWIuaGFzT3duUHJvcGVydHkoYXR0cm5hbWUpICYmXG4gICAgICAgICAgICAgIC8vIGRvbid0IGFsbG93IGFueSBoYW5kbGVycyB0byBiZSBzZXQgKyBkb24ndCBhbGxvdyBvdmVycmlkZXNcbiAgICAgICAgICAgICAgYXR0cm5hbWUuaW5kZXhPZignb24nKSAhPT0gMCAmJlxuICAgICAgICAgICAgICAhaW1nLmhhc0F0dHJpYnV0ZShhdHRybmFtZSlcbiAgICAgICAgICAgICkge1xuICAgICAgICAgICAgICBpbWcuc2V0QXR0cmlidXRlKGF0dHJuYW1lLCBhdHRyaWJbYXR0cm5hbWVdKTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICB9XG4gICAgICAgICAgaW1nLmNsYXNzTmFtZSA9IG9wdGlvbnMuY2xhc3NOYW1lO1xuICAgICAgICAgIGltZy5hbHQgPSByYXdUZXh0O1xuICAgICAgICAgIGltZy5zcmMgPSBzcmM7XG4gICAgICAgICAgbW9kaWZpZWQgPSB0cnVlO1xuICAgICAgICAgIGZyYWdtZW50LmFwcGVuZENoaWxkKGltZyk7XG4gICAgICAgIH1cbiAgICAgICAgaWYgKCFpbWcpIGZyYWdtZW50LmFwcGVuZENoaWxkKGNyZWF0ZVRleHQocmF3VGV4dCwgZmFsc2UpKTtcbiAgICAgICAgaW1nID0gbnVsbDtcbiAgICAgIH1cbiAgICAgIC8vIGlzIHRoZXJlIGFjdHVhbGx5IGFueXRoaW5nIHRvIHJlcGxhY2UgaW4gaGVyZSA/XG4gICAgICBpZiAobW9kaWZpZWQpIHtcbiAgICAgICAgLy8gYW55IHRleHQgbGVmdCB0byBiZSBhZGRlZCA/XG4gICAgICAgIGlmIChpIDwgdGV4dC5sZW5ndGgpIHtcbiAgICAgICAgICBmcmFnbWVudC5hcHBlbmRDaGlsZChcbiAgICAgICAgICAgIGNyZWF0ZVRleHQodGV4dC5zbGljZShpKSwgdHJ1ZSlcbiAgICAgICAgICApO1xuICAgICAgICB9XG4gICAgICAgIC8vIHJlcGxhY2UgdGhlIHRleHQgbm9kZSBvbmx5LCBsZWF2ZSBpbnRhY3RcbiAgICAgICAgLy8gYW55dGhpbmcgZWxzZSBzdXJyb3VuZGluZyBzdWNoIHRleHRcbiAgICAgICAgc3Vibm9kZS5wYXJlbnROb2RlLnJlcGxhY2VDaGlsZChmcmFnbWVudCwgc3Vibm9kZSk7XG4gICAgICB9XG4gICAgfVxuICAgIHJldHVybiBub2RlO1xuICB9XG5cbiAgLyoqXG4gICAqIFN0cmluZy9IVE1MIHZlcnNpb24gb2YgdGhlIHNhbWUgbG9naWMgLyBwYXJzZXI6XG4gICAqICBlbW9qaWZ5IGEgZ2VuZXJpYyB0ZXh0IHBsYWNpbmcgaW1hZ2VzIHRhZ3MgaW5zdGVhZCBvZiBzdXJyb2dhdGVzIHBhaXIuXG4gICAqIEBwYXJhbSAgIHN0cmluZyAgICBnZW5lcmljIHN0cmluZyB3aXRoIHBvc3NpYmx5IHNvbWUgZW1vamkgaW4gaXRcbiAgICogQHBhcmFtICAgT2JqZWN0ICAgIG9wdGlvbnMgIGNvbnRhaW5pbmcgaW5mbyBhYm91dCBob3cgdG8gcGFyc2VcbiAgICpcbiAgICogICAgICAgICAgICAuY2FsbGJhY2sgICBGdW5jdGlvbiAgdGhlIGNhbGxiYWNrIHRvIGludm9rZSBwZXIgZWFjaCBmb3VuZCBlbW9qaS5cbiAgICogICAgICAgICAgICAuYmFzZSAgICAgICBzdHJpbmcgICAgdGhlIGJhc2UgdXJsLCBieSBkZWZhdWx0IHR3ZW1vamkuYmFzZVxuICAgKiAgICAgICAgICAgIC5leHQgICAgICAgIHN0cmluZyAgICB0aGUgaW1hZ2UgZXh0ZW5zaW9uLCBieSBkZWZhdWx0IHR3ZW1vamkuZXh0XG4gICAqICAgICAgICAgICAgLnNpemUgICAgICAgc3RyaW5nICAgIHRoZSBhc3NldHMgc2l6ZSwgYnkgZGVmYXVsdCB0d2Vtb2ppLnNpemVcbiAgICpcbiAgICogQHJldHVybiAgdGhlIHN0cmluZyB3aXRoIDxpbWcgdGFncz4gcmVwbGFjaW5nIGFsbCBmb3VuZCBhbmQgcGFyc2VkIGVtb2ppXG4gICAqL1xuICBmdW5jdGlvbiBwYXJzZVN0cmluZyhzdHIsIG9wdGlvbnMpIHtcbiAgICByZXR1cm4gcmVwbGFjZShzdHIsIGZ1bmN0aW9uIChyYXdUZXh0KSB7XG4gICAgICB2YXJcbiAgICAgICAgcmV0ID0gcmF3VGV4dCxcbiAgICAgICAgaWNvbklkID0gZ3JhYlRoZVJpZ2h0SWNvbihyYXdUZXh0KSxcbiAgICAgICAgc3JjID0gb3B0aW9ucy5jYWxsYmFjayhpY29uSWQsIG9wdGlvbnMpLFxuICAgICAgICBhdHRyaWIsXG4gICAgICAgIGF0dHJuYW1lO1xuICAgICAgaWYgKGljb25JZCAmJiBzcmMpIHtcbiAgICAgICAgLy8gcmVjeWNsZSB0aGUgbWF0Y2ggc3RyaW5nIHJlcGxhY2luZyB0aGUgZW1vamlcbiAgICAgICAgLy8gd2l0aCBpdHMgaW1hZ2UgY291bnRlciBwYXJ0XG4gICAgICAgIHJldCA9ICc8aW1nICcuY29uY2F0KFxuICAgICAgICAgICdjbGFzcz1cIicsIG9wdGlvbnMuY2xhc3NOYW1lLCAnXCIgJyxcbiAgICAgICAgICAnZHJhZ2dhYmxlPVwiZmFsc2VcIiAnLFxuICAgICAgICAgIC8vIG5lZWRzIHRvIHByZXNlcnZlIHVzZXIgb3JpZ2luYWwgaW50ZW50XG4gICAgICAgICAgLy8gd2hlbiB2YXJpYW50cyBzaG91bGQgYmUgY29waWVkIGFuZCBwYXN0ZWQgdG9vXG4gICAgICAgICAgJ2FsdD1cIicsXG4gICAgICAgICAgcmF3VGV4dCxcbiAgICAgICAgICAnXCInLFxuICAgICAgICAgICcgc3JjPVwiJyxcbiAgICAgICAgICBzcmMsXG4gICAgICAgICAgJ1wiJ1xuICAgICAgICApO1xuICAgICAgICBhdHRyaWIgPSBvcHRpb25zLmF0dHJpYnV0ZXMocmF3VGV4dCwgaWNvbklkKTtcbiAgICAgICAgZm9yIChhdHRybmFtZSBpbiBhdHRyaWIpIHtcbiAgICAgICAgICBpZiAoXG4gICAgICAgICAgICBhdHRyaWIuaGFzT3duUHJvcGVydHkoYXR0cm5hbWUpICYmXG4gICAgICAgICAgICAvLyBkb24ndCBhbGxvdyBhbnkgaGFuZGxlcnMgdG8gYmUgc2V0ICsgZG9uJ3QgYWxsb3cgb3ZlcnJpZGVzXG4gICAgICAgICAgICBhdHRybmFtZS5pbmRleE9mKCdvbicpICE9PSAwICYmXG4gICAgICAgICAgICByZXQuaW5kZXhPZignICcgKyBhdHRybmFtZSArICc9JykgPT09IC0xXG4gICAgICAgICAgKSB7XG4gICAgICAgICAgICByZXQgPSByZXQuY29uY2F0KCcgJywgYXR0cm5hbWUsICc9XCInLCBlc2NhcGVIVE1MKGF0dHJpYlthdHRybmFtZV0pLCAnXCInKTtcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgICAgcmV0ID0gcmV0LmNvbmNhdCgnLz4nKTtcbiAgICAgIH1cbiAgICAgIHJldHVybiByZXQ7XG4gICAgfSk7XG4gIH1cblxuICAvKipcbiAgICogRnVuY3Rpb24gdXNlZCB0byBhY3R1YWxseSByZXBsYWNlIEhUTUwgc3BlY2lhbCBjaGFyc1xuICAgKiBAcGFyYW0gICBzdHJpbmcgIEhUTUwgc3BlY2lhbCBjaGFyXG4gICAqIEByZXR1cm4gIHN0cmluZyAgZW5jb2RlZCBIVE1MIHNwZWNpYWwgY2hhclxuICAgKi9cbiAgZnVuY3Rpb24gcmVwbGFjZXIobSkge1xuICAgIHJldHVybiBlc2NhcGVyW21dO1xuICB9XG5cbiAgLyoqXG4gICAqIERlZmF1bHQgb3B0aW9ucy5hdHRyaWJ1dGUgY2FsbGJhY2tcbiAgICogQHJldHVybiAgbnVsbFxuICAgKi9cbiAgZnVuY3Rpb24gcmV0dXJuTnVsbCgpIHtcbiAgICByZXR1cm4gbnVsbDtcbiAgfVxuXG4gIC8qKlxuICAgKiBHaXZlbiBhIGdlbmVyaWMgdmFsdWUsIGNyZWF0ZXMgaXRzIHNxdWFyZWQgY291bnRlcnBhcnQgaWYgaXQncyBhIG51bWJlci5cbiAgICogIEFzIGV4YW1wbGUsIG51bWJlciAzNiB3aWxsIHJldHVybiAnMzZ4MzYnLlxuICAgKiBAcGFyYW0gICBhbnkgICAgIGEgZ2VuZXJpYyB2YWx1ZS5cbiAgICogQHJldHVybiAgYW55ICAgICBhIHN0cmluZyByZXByZXNlbnRpbmcgYXNzZXQgc2l6ZSwgaS5lLiBcIjM2eDM2XCJcbiAgICogICAgICAgICAgICAgICAgICBvbmx5IGluIGNhc2UgdGhlIHZhbHVlIHdhcyBhIG51bWJlci5cbiAgICogICAgICAgICAgICAgICAgICBSZXR1cm5zIGluaXRpYWwgdmFsdWUgb3RoZXJ3aXNlLlxuICAgKi9cbiAgZnVuY3Rpb24gdG9TaXplU3F1YXJlZEFzc2V0KHZhbHVlKSB7XG4gICAgcmV0dXJuIHR5cGVvZiB2YWx1ZSA9PT0gJ251bWJlcicgP1xuICAgICAgdmFsdWUgKyAneCcgKyB2YWx1ZSA6XG4gICAgICB2YWx1ZTtcbiAgfVxuXG5cbiAgLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL1xuICAvLyAgZXhwb3J0ZWQgZnVuY3Rpb25zIC8vXG4gIC8vICAgICBkZWNsYXJhdGlvbiAgICAgLy9cbiAgLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL1xuXG4gIGZ1bmN0aW9uIGZyb21Db2RlUG9pbnQoY29kZXBvaW50KSB7XG4gICAgdmFyIGNvZGUgPSB0eXBlb2YgY29kZXBvaW50ID09PSAnc3RyaW5nJyA/XG4gICAgICAgICAgcGFyc2VJbnQoY29kZXBvaW50LCAxNikgOiBjb2RlcG9pbnQ7XG4gICAgaWYgKGNvZGUgPCAweDEwMDAwKSB7XG4gICAgICByZXR1cm4gZnJvbUNoYXJDb2RlKGNvZGUpO1xuICAgIH1cbiAgICBjb2RlIC09IDB4MTAwMDA7XG4gICAgcmV0dXJuIGZyb21DaGFyQ29kZShcbiAgICAgIDB4RDgwMCArIChjb2RlID4+IDEwKSxcbiAgICAgIDB4REMwMCArIChjb2RlICYgMHgzRkYpXG4gICAgKTtcbiAgfVxuXG4gIGZ1bmN0aW9uIHBhcnNlKHdoYXQsIGhvdykge1xuICAgIGlmICghaG93IHx8IHR5cGVvZiBob3cgPT09ICdmdW5jdGlvbicpIHtcbiAgICAgIGhvdyA9IHtjYWxsYmFjazogaG93fTtcbiAgICB9XG4gICAgLy8gaWYgZmlyc3QgYXJndW1lbnQgaXMgc3RyaW5nLCBpbmplY3QgaHRtbCA8aW1nPiB0YWdzXG4gICAgLy8gb3RoZXJ3aXNlIHVzZSB0aGUgRE9NIHRyZWUgYW5kIHBhcnNlIHRleHQgbm9kZXMgb25seVxuICAgIHJldHVybiAodHlwZW9mIHdoYXQgPT09ICdzdHJpbmcnID8gcGFyc2VTdHJpbmcgOiBwYXJzZU5vZGUpKHdoYXQsIHtcbiAgICAgIGNhbGxiYWNrOiAgIGhvdy5jYWxsYmFjayB8fCBkZWZhdWx0SW1hZ2VTcmNHZW5lcmF0b3IsXG4gICAgICBhdHRyaWJ1dGVzOiB0eXBlb2YgaG93LmF0dHJpYnV0ZXMgPT09ICdmdW5jdGlvbicgPyBob3cuYXR0cmlidXRlcyA6IHJldHVybk51bGwsXG4gICAgICBiYXNlOiAgICAgICB0eXBlb2YgaG93LmJhc2UgPT09ICdzdHJpbmcnID8gaG93LmJhc2UgOiB0d2Vtb2ppLmJhc2UsXG4gICAgICBleHQ6ICAgICAgICBob3cuZXh0IHx8IHR3ZW1vamkuZXh0LFxuICAgICAgc2l6ZTogICAgICAgaG93LmZvbGRlciB8fCB0b1NpemVTcXVhcmVkQXNzZXQoaG93LnNpemUgfHwgdHdlbW9qaS5zaXplKSxcbiAgICAgIGNsYXNzTmFtZTogIGhvdy5jbGFzc05hbWUgfHwgdHdlbW9qaS5jbGFzc05hbWUsXG4gICAgICBvbmVycm9yOiAgICBob3cub25lcnJvciB8fCB0d2Vtb2ppLm9uZXJyb3JcbiAgICB9KTtcbiAgfVxuXG4gIGZ1bmN0aW9uIHJlcGxhY2UodGV4dCwgY2FsbGJhY2spIHtcbiAgICByZXR1cm4gU3RyaW5nKHRleHQpLnJlcGxhY2UocmUsIGNhbGxiYWNrKTtcbiAgfVxuXG4gIGZ1bmN0aW9uIHRlc3QodGV4dCkge1xuICAgIC8vIElFNiBuZWVkcyBhIHJlc2V0IGJlZm9yZSB0b29cbiAgICByZS5sYXN0SW5kZXggPSAwO1xuICAgIHZhciByZXN1bHQgPSByZS50ZXN0KHRleHQpO1xuICAgIHJlLmxhc3RJbmRleCA9IDA7XG4gICAgcmV0dXJuIHJlc3VsdDtcbiAgfVxuXG4gIGZ1bmN0aW9uIHRvQ29kZVBvaW50KHVuaWNvZGVTdXJyb2dhdGVzLCBzZXApIHtcbiAgICB2YXJcbiAgICAgIHIgPSBbXSxcbiAgICAgIGMgPSAwLFxuICAgICAgcCA9IDAsXG4gICAgICBpID0gMDtcbiAgICB3aGlsZSAoaSA8IHVuaWNvZGVTdXJyb2dhdGVzLmxlbmd0aCkge1xuICAgICAgYyA9IHVuaWNvZGVTdXJyb2dhdGVzLmNoYXJDb2RlQXQoaSsrKTtcbiAgICAgIGlmIChwKSB7XG4gICAgICAgIHIucHVzaCgoMHgxMDAwMCArICgocCAtIDB4RDgwMCkgPDwgMTApICsgKGMgLSAweERDMDApKS50b1N0cmluZygxNikpO1xuICAgICAgICBwID0gMDtcbiAgICAgIH0gZWxzZSBpZiAoMHhEODAwIDw9IGMgJiYgYyA8PSAweERCRkYpIHtcbiAgICAgICAgcCA9IGM7XG4gICAgICB9IGVsc2Uge1xuICAgICAgICByLnB1c2goYy50b1N0cmluZygxNikpO1xuICAgICAgfVxuICAgIH1cbiAgICByZXR1cm4gci5qb2luKHNlcCB8fCAnLScpO1xuICB9XG5cbn0oKSk7XG5pZiAoIWxvY2F0aW9uLnByb3RvY29sKSB7XG4gIHR3ZW1vamkuYmFzZSA9IHR3ZW1vamkuYmFzZS5yZXBsYWNlKC9eaHR0cDovLCBcIlwiKTtcbn1cbm1vZHVsZS5leHBvcnRzID0gdHdlbW9qaTsiLCJpbXBvcnQgeyBBcHAsIEZ1enp5U3VnZ2VzdE1vZGFsLCBQbHVnaW4sIEZ1enp5TWF0Y2gsIE5vdGljZSwgTWFya2Rvd25WaWV3LCBNYXJrZG93blBvc3RQcm9jZXNzb3IsIE1hcmtkb3duUG9zdFByb2Nlc3NvckNvbnRleHQsIE1hcmtkb3duUHJldmlld1JlbmRlcmVyLCBQbHVnaW5TZXR0aW5nVGFiLCBTZXR0aW5nIH0gZnJvbSAnb2JzaWRpYW4nO1xuaW1wb3J0IG9yZGVyZWRFbW9qaSBmcm9tICd1bmljb2RlLWVtb2ppLWpzb24vZGF0YS1vcmRlcmVkLWVtb2ppJ1xuaW1wb3J0IGVtb2ppTmFtZXMgZnJvbSAndW5pY29kZS1lbW9qaS1qc29uL2RhdGEtYnktZW1vamknXG5pbXBvcnQgdHdlbW9qaSBmcm9tICd0d2Vtb2ppJ1xuXG5jb25zdCBpbmRpY2F0b3JTdHlsZTogc3RyaW5nID1cbiAgJ2NvbG9yOiB2YXIoLS10ZXh0LWFjY2VudCk7IHdpZHRoOiAyLjVlbTsgdGV4dC1hbGlnbjogY2VudGVyOyBmbG9hdDpsZWZ0OyBmb250LXdlaWdodDo4MDA7JztcblxuaW50ZXJmYWNlIE15UGx1Z2luU2V0dGluZ3Mge1xuICB0d2Vtb2ppQWN0aXZlOiBib29sZWFuO1xufVxuXG5jb25zdCBERUZBVUxUX1NFVFRJTkdTOiBNeVBsdWdpblNldHRpbmdzID0ge1xuXHR0d2Vtb2ppQWN0aXZlOiB0cnVlXG59XG5cbmV4cG9ydCBkZWZhdWx0IGNsYXNzIE15UGx1Z2luIGV4dGVuZHMgUGx1Z2luIHtcbiAgZW1vamlzOiBFbW9qaUl0ZW1bXVxuICBzZXR0aW5nczogTXlQbHVnaW5TZXR0aW5ncztcblxuICBwdWJsaWMgc3RhdGljIHBvc3Rwcm9jZXNzb3I6IE1hcmtkb3duUG9zdFByb2Nlc3NvciA9IChcbiAgICBlbDogSFRNTEVsZW1lbnQsXG4gICAgY3R4OiBNYXJrZG93blBvc3RQcm9jZXNzb3JDb250ZXh0XG4gICkgPT4ge1xuICAgIHR3ZW1vamkucGFyc2UoZWwpXG4gIH1cblxuICBsb2FkRW1vamlzKCk6IEVtb2ppSXRlbVtdIHtcbiAgICBmdW5jdGlvbiB0aXRsZUNhc2Uoc3RyaW5nOiBzdHJpbmcpIHtcbiAgICAgIGxldCBzZW50ZW5jZSA9IHN0cmluZy50b0xvd2VyQ2FzZSgpLnNwbGl0KCdfJyk7XG4gICAgICBmb3IgKGxldCBpID0gMDsgaSA8IHNlbnRlbmNlLmxlbmd0aDsgaSsrKSB7XG4gICAgICAgIHNlbnRlbmNlW2ldID0gc2VudGVuY2VbaV1bMF0udG9VcHBlckNhc2UoKSArIHNlbnRlbmNlW2ldLnNsaWNlKDEpO1xuICAgICAgfVxuICBcbiAgICAgIHJldHVybiBzZW50ZW5jZS5qb2luKCcgJyk7XG4gICAgfVxuXG4gICAgbGV0IGl0ZW1zID0gb3JkZXJlZEVtb2ppLm1hcCgobmFtZTogc3RyaW5nKSA9PiB7XG4gICAgICByZXR1cm4ge1xuICAgICAgICBuYW1lOiB0aXRsZUNhc2UoZW1vamlOYW1lc1tuYW1lXVtcIm5hbWVcIl0pLFxuICAgICAgICBjaGFyOiBuYW1lLFxuICAgICAgICBpbWdIdG1sOiB0d2Vtb2ppLnBhcnNlKG5hbWUpXG4gICAgICB9XG4gICAgfSlcbiAgXG4gICAgcmV0dXJuIGl0ZW1zO1xuICB9XG5cblx0YXN5bmMgb25sb2FkKCkge1xuXG4gICAgdGhpcy5lbW9qaXMgPSB0aGlzLmxvYWRFbW9qaXMoKTtcblxuICAgIGF3YWl0IHRoaXMubG9hZFNldHRpbmdzKClcblxuICAgIHRoaXMuYWRkU2V0dGluZ1RhYihuZXcgU2V0dGluZ3NUYWIodGhpcy5hcHAsIHRoaXMpKTtcblxuICAgIGlmICh0aGlzLnNldHRpbmdzLnR3ZW1vamlBY3RpdmUpIHtcbiAgICAgIE1hcmtkb3duUHJldmlld1JlbmRlcmVyLnJlZ2lzdGVyUG9zdFByb2Nlc3NvcihNeVBsdWdpbi5wb3N0cHJvY2Vzc29yKVxuICAgIH1cblxuICAgIHRoaXMuYWRkQ29tbWFuZCh7XG5cdFx0XHRpZDogJ2Vtb2ppLXBpY2tlcjpvcGVuLXBpY2tlcicsXG4gICAgICBuYW1lOiAnT3BlbiBlbW9qaSBwaWNrZXInLFxuICAgICAgaG90a2V5czogW10sXG5cdFx0XHRjaGVja0NhbGxiYWNrOiAoY2hlY2tpbmc6IGJvb2xlYW4pID0+IHtcblx0XHRcdFx0bGV0IGxlYWYgPSB0aGlzLmFwcC53b3Jrc3BhY2UuYWN0aXZlTGVhZjtcblx0XHRcdFx0aWYgKGxlYWYpIHtcblx0XHRcdFx0XHRpZiAoIWNoZWNraW5nKSB7XG5cdFx0XHRcdFx0XHRuZXcgRW1vamlGdXp6eVN1Z2dlc3RNb2RhbCh0aGlzLmFwcCwgdGhpcy5lbW9qaXMsIHRoaXMuc2V0dGluZ3MpLm9wZW4oKTtcblx0XHRcdFx0XHR9XG5cdFx0XHRcdFx0cmV0dXJuIHRydWU7XG5cdFx0XHRcdH1cblx0XHRcdFx0cmV0dXJuIGZhbHNlO1xuXHRcdFx0fVxuXHRcdH0pO1xuXG5cdH1cblxuXHRvbnVubG9hZCgpIHtcbiAgfVxuICBcbiAgYXN5bmMgbG9hZFNldHRpbmdzKCkge1xuXHRcdHRoaXMuc2V0dGluZ3MgPSBPYmplY3QuYXNzaWduKHt9LCBERUZBVUxUX1NFVFRJTkdTLCBhd2FpdCB0aGlzLmxvYWREYXRhKCkpO1xuXHR9XG5cblx0YXN5bmMgc2F2ZVNldHRpbmdzKCkge1xuXHRcdGF3YWl0IHRoaXMuc2F2ZURhdGEodGhpcy5zZXR0aW5ncyk7XG5cdH1cbn1cblxuaW50ZXJmYWNlIEVtb2ppSXRlbSB7XG4gIG5hbWU6IHN0cmluZztcbiAgY2hhcjogc3RyaW5nO1xuICBpbWdIdG1sOiBzdHJpbmc7XG59XG5cblxuY2xhc3MgRW1vamlGdXp6eVN1Z2dlc3RNb2RhbCBleHRlbmRzIEZ1enp5U3VnZ2VzdE1vZGFsPEVtb2ppSXRlbT4ge1xuICBhcHA6IEFwcDtcbiAgZW1vamlzOiBFbW9qaUl0ZW1bXTtcbiAgc2V0dGluZ3M6IE15UGx1Z2luU2V0dGluZ3M7XG5cbiAgY29uc3RydWN0b3IoYXBwOiBBcHAsIGVtb2ppczogRW1vamlJdGVtW10sIHNldHRpbmdzOiBNeVBsdWdpblNldHRpbmdzKSB7XG4gICAgICBzdXBlcihhcHApO1xuICAgICAgdGhpcy5hcHAgPSBhcHA7XG4gICAgICB0aGlzLmVtb2ppcyA9IGVtb2ppcztcbiAgICAgIHRoaXMuc2V0dGluZ3MgPSBzZXR0aW5ncztcbiAgfVxuXG4gIGdldEl0ZW1zKCk6IEVtb2ppSXRlbVtdIHtcbiAgICAgIHJldHVybiB0aGlzLmVtb2ppcztcbiAgfVxuXG4gIGdldEl0ZW1UZXh0KGl0ZW06IEVtb2ppSXRlbSk6IHN0cmluZyB7XG4gICAgICByZXR1cm4gaXRlbS5uYW1lO1xuICB9XG5cbiAgcmVuZGVyU3VnZ2VzdGlvbihpdGVtOiBGdXp6eU1hdGNoPEVtb2ppSXRlbT4sIGVsOiBIVE1MRWxlbWVudCkge1xuICAgIHN1cGVyLnJlbmRlclN1Z2dlc3Rpb24oaXRlbSwgZWwpO1xuICAgIHRoaXMudXBkYXRlU3VnZ2VzdGlvbkVsRm9yTW9kZShpdGVtLCBlbCk7XG4gIH1cblxuICB1cGRhdGVTdWdnZXN0aW9uRWxGb3JNb2RlKGl0ZW06IEZ1enp5TWF0Y2g8RW1vamlJdGVtPiwgZWw6IEhUTUxFbGVtZW50KSB7XG5cbiAgICB2YXIgaW5kaWNhdG9yRWwgPSBjcmVhdGVFbCgnZGl2Jywge1xuICAgICAgYXR0cjogeyBzdHlsZTogaW5kaWNhdG9yU3R5bGUgfSxcbiAgICB9KTtcblxuICAgIGlmICh0aGlzLnNldHRpbmdzLnR3ZW1vamlBY3RpdmUpIHtcbiAgICAgIGluZGljYXRvckVsLmlubmVySFRNTCA9IGl0ZW0uaXRlbS5pbWdIdG1sXG4gICAgfSBlbHNlIHtcbiAgICAgIGluZGljYXRvckVsLnRleHRDb250ZW50ID0gaXRlbS5pdGVtLmNoYXJcbiAgICB9XG4gICAgXG4gICAgZWwuaW5zZXJ0QWRqYWNlbnRFbGVtZW50KCdhZnRlcmJlZ2luJywgaW5kaWNhdG9yRWwpO1xuICB9XG5cbiAgaW5zZXJ0VGV4dEF0Q3Vyc29yKHZpZXc6IE1hcmtkb3duVmlldywgdGV4dDpzdHJpbmcpOiB2b2lkIHtcbiAgICBsZXQgZWRpdG9yID0gdmlldy5zb3VyY2VNb2RlLmNtRWRpdG9yXG4gICAgbGV0IGRvYyA9IGVkaXRvci5nZXREb2MoKTtcbiAgICBsZXQgY3Vyc29yID0gZG9jLmdldEN1cnNvcigpO1xuICAgIGRvYy5yZXBsYWNlUmFuZ2UodGV4dCwgY3Vyc29yKTtcbiAgfVxuXG4gIG9uQ2hvb3NlSXRlbShpdGVtOiBFbW9qaUl0ZW0sIGV2dDogTW91c2VFdmVudCB8IEtleWJvYXJkRXZlbnQpOiB2b2lkIHtcbiAgICBsZXQgYWN0aXZlRWRpdG9yID0gdGhpcy5hcHAud29ya3NwYWNlLmdldEFjdGl2ZVZpZXdPZlR5cGUoTWFya2Rvd25WaWV3KVxuICAgIGlmIChhY3RpdmVFZGl0b3IpIHtcbiAgICAgIHRoaXMuaW5zZXJ0VGV4dEF0Q3Vyc29yKGFjdGl2ZUVkaXRvciwgaXRlbS5jaGFyKVxuICAgIH0gZWxzZSB7XG4gICAgICBuZXcgTm90aWNlKFwiWW91J2xsIG5lZWQgdG8gb3BlbiBhIG1hcmtkb3duIGVkaXRvciB0byBpbnNlcnQgYW4gZW1vamlcIik7XG4gICAgfVxuICB9XG59XG5cbmNsYXNzIFNldHRpbmdzVGFiIGV4dGVuZHMgUGx1Z2luU2V0dGluZ1RhYiB7XG5cdHBsdWdpbjogTXlQbHVnaW47XG5cblx0Y29uc3RydWN0b3IoYXBwOiBBcHAsIHBsdWdpbjogTXlQbHVnaW4pIHtcblx0XHRzdXBlcihhcHAsIHBsdWdpbik7XG5cdFx0dGhpcy5wbHVnaW4gPSBwbHVnaW47XG5cdH1cblxuXHRkaXNwbGF5KCk6IHZvaWQge1xuXHRcdGxldCB7Y29udGFpbmVyRWx9ID0gdGhpcztcblxuXHRcdGNvbnRhaW5lckVsLmVtcHR5KCk7XG5cbiAgICBjb250YWluZXJFbC5jcmVhdGVFbCgnaDEnLCB7dGV4dDogJ0Vtb2ppIFRvb2xiYXInfSk7XG4gICAgY29udGFpbmVyRWwuY3JlYXRlRWwoJ2EnLCB7IHRleHQ6ICdDcmVhdGVkIGJ5IG9saXZlcnloJywgaHJlZjogJ2h0dHBzOi8vZ2l0aHViLmNvbS9vbGl2ZXJ5aC8nfSkpO1xuXG4gICAgY29udGFpbmVyRWwuY3JlYXRlRWwoJ2gyJywge3RleHQ6ICdTZXR0aW5ncyd9KTtcblxuXHRcdG5ldyBTZXR0aW5nKGNvbnRhaW5lckVsKVxuXHRcdFx0LnNldE5hbWUoJ1R3aXR0ZXIgRW1vamknKVxuICAgICAgLnNldERlc2MoJ0ltcHJvdmVkIGVtb2ppIHN1cHBvcnQuIE5vdGU6IHRoaXMgYXBwbGllcyB0byBlbW9qaSBzZWFyY2ggYW5kIHByZXZpZXcgb25seS4nKVxuXHRcdFx0LmFkZFRvZ2dsZSh0b2dnbGUgPT4gdG9nZ2xlXG5cdFx0XHRcdC5zZXRWYWx1ZSh0aGlzLnBsdWdpbi5zZXR0aW5ncy50d2Vtb2ppQWN0aXZlKVxuXHRcdFx0XHQub25DaGFuZ2UoYXN5bmMgKHZhbHVlKSA9PiB7XG5cdFx0XHRcdFx0dGhpcy5wbHVnaW4uc2V0dGluZ3MudHdlbW9qaUFjdGl2ZSA9IHZhbHVlO1xuICAgICAgICAgIGF3YWl0IHRoaXMucGx1Z2luLnNhdmVTZXR0aW5ncygpO1xuICAgICAgICAgIGlmICh2YWx1ZSkge1xuICAgICAgICAgICAgTWFya2Rvd25QcmV2aWV3UmVuZGVyZXIucmVnaXN0ZXJQb3N0UHJvY2Vzc29yKE15UGx1Z2luLnBvc3Rwcm9jZXNzb3IpXG4gICAgICAgICAgfSBlbHNlIHtcbiAgICAgICAgICAgIE1hcmtkb3duUHJldmlld1JlbmRlcmVyLnVucmVnaXN0ZXJQb3N0UHJvY2Vzc29yKE15UGx1Z2luLnBvc3Rwcm9jZXNzb3IpXG4gICAgICAgICAgfVxuXHRcdFx0XHR9KSk7XG5cdH1cbn1cbiJdLCJuYW1lcyI6WyJnbG9iYWwiLCJ0d2Vtb2ppIiwiTWFya2Rvd25QcmV2aWV3UmVuZGVyZXIiLCJQbHVnaW4iLCJNYXJrZG93blZpZXciLCJOb3RpY2UiLCJGdXp6eVN1Z2dlc3RNb2RhbCIsIlNldHRpbmciLCJQbHVnaW5TZXR0aW5nVGFiIl0sIm1hcHBpbmdzIjoiOzs7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxJQUFJLGFBQWEsR0FBRyxTQUFTLENBQUMsRUFBRSxDQUFDLEVBQUU7QUFDbkMsSUFBSSxhQUFhLEdBQUcsTUFBTSxDQUFDLGNBQWM7QUFDekMsU0FBUyxFQUFFLFNBQVMsRUFBRSxFQUFFLEVBQUUsWUFBWSxLQUFLLElBQUksVUFBVSxDQUFDLEVBQUUsQ0FBQyxFQUFFLEVBQUUsQ0FBQyxDQUFDLFNBQVMsR0FBRyxDQUFDLENBQUMsRUFBRSxDQUFDO0FBQ3BGLFFBQVEsVUFBVSxDQUFDLEVBQUUsQ0FBQyxFQUFFLEVBQUUsS0FBSyxJQUFJLENBQUMsSUFBSSxDQUFDLEVBQUUsSUFBSSxNQUFNLENBQUMsU0FBUyxDQUFDLGNBQWMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsRUFBRSxDQUFDO0FBQzFHLElBQUksT0FBTyxhQUFhLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDO0FBQy9CLENBQUMsQ0FBQztBQUNGO0FBQ08sU0FBUyxTQUFTLENBQUMsQ0FBQyxFQUFFLENBQUMsRUFBRTtBQUNoQyxJQUFJLGFBQWEsQ0FBQyxDQUFDLEVBQUUsQ0FBQyxDQUFDLENBQUM7QUFDeEIsSUFBSSxTQUFTLEVBQUUsR0FBRyxFQUFFLElBQUksQ0FBQyxXQUFXLEdBQUcsQ0FBQyxDQUFDLEVBQUU7QUFDM0MsSUFBSSxDQUFDLENBQUMsU0FBUyxHQUFHLENBQUMsS0FBSyxJQUFJLEdBQUcsTUFBTSxDQUFDLE1BQU0sQ0FBQyxDQUFDLENBQUMsSUFBSSxFQUFFLENBQUMsU0FBUyxHQUFHLENBQUMsQ0FBQyxTQUFTLEVBQUUsSUFBSSxFQUFFLEVBQUUsQ0FBQyxDQUFDO0FBQ3pGLENBQUM7QUF1Q0Q7QUFDTyxTQUFTLFNBQVMsQ0FBQyxPQUFPLEVBQUUsVUFBVSxFQUFFLENBQUMsRUFBRSxTQUFTLEVBQUU7QUFDN0QsSUFBSSxTQUFTLEtBQUssQ0FBQyxLQUFLLEVBQUUsRUFBRSxPQUFPLEtBQUssWUFBWSxDQUFDLEdBQUcsS0FBSyxHQUFHLElBQUksQ0FBQyxDQUFDLFVBQVUsT0FBTyxFQUFFLEVBQUUsT0FBTyxDQUFDLEtBQUssQ0FBQyxDQUFDLEVBQUUsQ0FBQyxDQUFDLEVBQUU7QUFDaEgsSUFBSSxPQUFPLEtBQUssQ0FBQyxLQUFLLENBQUMsR0FBRyxPQUFPLENBQUMsRUFBRSxVQUFVLE9BQU8sRUFBRSxNQUFNLEVBQUU7QUFDL0QsUUFBUSxTQUFTLFNBQVMsQ0FBQyxLQUFLLEVBQUUsRUFBRSxJQUFJLEVBQUUsSUFBSSxDQUFDLFNBQVMsQ0FBQyxJQUFJLENBQUMsS0FBSyxDQUFDLENBQUMsQ0FBQyxFQUFFLENBQUMsT0FBTyxDQUFDLEVBQUUsRUFBRSxNQUFNLENBQUMsQ0FBQyxDQUFDLENBQUMsRUFBRSxFQUFFO0FBQ25HLFFBQVEsU0FBUyxRQUFRLENBQUMsS0FBSyxFQUFFLEVBQUUsSUFBSSxFQUFFLElBQUksQ0FBQyxTQUFTLENBQUMsT0FBTyxDQUFDLENBQUMsS0FBSyxDQUFDLENBQUMsQ0FBQyxFQUFFLENBQUMsT0FBTyxDQUFDLEVBQUUsRUFBRSxNQUFNLENBQUMsQ0FBQyxDQUFDLENBQUMsRUFBRSxFQUFFO0FBQ3RHLFFBQVEsU0FBUyxJQUFJLENBQUMsTUFBTSxFQUFFLEVBQUUsTUFBTSxDQUFDLElBQUksR0FBRyxPQUFPLENBQUMsTUFBTSxDQUFDLEtBQUssQ0FBQyxHQUFHLEtBQUssQ0FBQyxNQUFNLENBQUMsS0FBSyxDQUFDLENBQUMsSUFBSSxDQUFDLFNBQVMsRUFBRSxRQUFRLENBQUMsQ0FBQyxFQUFFO0FBQ3RILFFBQVEsSUFBSSxDQUFDLENBQUMsU0FBUyxHQUFHLFNBQVMsQ0FBQyxLQUFLLENBQUMsT0FBTyxFQUFFLFVBQVUsSUFBSSxFQUFFLENBQUMsRUFBRSxJQUFJLEVBQUUsQ0FBQyxDQUFDO0FBQzlFLEtBQUssQ0FBQyxDQUFDO0FBQ1AsQ0FBQztBQUNEO0FBQ08sU0FBUyxXQUFXLENBQUMsT0FBTyxFQUFFLElBQUksRUFBRTtBQUMzQyxJQUFJLElBQUksQ0FBQyxHQUFHLEVBQUUsS0FBSyxFQUFFLENBQUMsRUFBRSxJQUFJLEVBQUUsV0FBVyxFQUFFLElBQUksQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsRUFBRSxNQUFNLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEVBQUUsRUFBRSxJQUFJLEVBQUUsRUFBRSxFQUFFLEdBQUcsRUFBRSxFQUFFLEVBQUUsRUFBRSxDQUFDLEVBQUUsQ0FBQyxFQUFFLENBQUMsRUFBRSxDQUFDLENBQUM7QUFDckgsSUFBSSxPQUFPLENBQUMsR0FBRyxFQUFFLElBQUksRUFBRSxJQUFJLENBQUMsQ0FBQyxDQUFDLEVBQUUsT0FBTyxFQUFFLElBQUksQ0FBQyxDQUFDLENBQUMsRUFBRSxRQUFRLEVBQUUsSUFBSSxDQUFDLENBQUMsQ0FBQyxFQUFFLEVBQUUsT0FBTyxNQUFNLEtBQUssVUFBVSxLQUFLLENBQUMsQ0FBQyxNQUFNLENBQUMsUUFBUSxDQUFDLEdBQUcsV0FBVyxFQUFFLE9BQU8sSUFBSSxDQUFDLEVBQUUsQ0FBQyxFQUFFLENBQUMsQ0FBQztBQUM3SixJQUFJLFNBQVMsSUFBSSxDQUFDLENBQUMsRUFBRSxFQUFFLE9BQU8sVUFBVSxDQUFDLEVBQUUsRUFBRSxPQUFPLElBQUksQ0FBQyxDQUFDLENBQUMsRUFBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLEVBQUUsQ0FBQyxFQUFFO0FBQ3RFLElBQUksU0FBUyxJQUFJLENBQUMsRUFBRSxFQUFFO0FBQ3RCLFFBQVEsSUFBSSxDQUFDLEVBQUUsTUFBTSxJQUFJLFNBQVMsQ0FBQyxpQ0FBaUMsQ0FBQyxDQUFDO0FBQ3RFLFFBQVEsT0FBTyxDQUFDLEVBQUUsSUFBSTtBQUN0QixZQUFZLElBQUksQ0FBQyxHQUFHLENBQUMsRUFBRSxDQUFDLEtBQUssQ0FBQyxHQUFHLEVBQUUsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxDQUFDLFFBQVEsQ0FBQyxHQUFHLEVBQUUsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQUMsT0FBTyxDQUFDLEtBQUssQ0FBQyxDQUFDLEdBQUcsQ0FBQyxDQUFDLFFBQVEsQ0FBQyxLQUFLLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUFDLEVBQUUsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLEVBQUUsRUFBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLEVBQUUsSUFBSSxFQUFFLE9BQU8sQ0FBQyxDQUFDO0FBQ3pLLFlBQVksSUFBSSxDQUFDLEdBQUcsQ0FBQyxFQUFFLENBQUMsRUFBRSxFQUFFLEdBQUcsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxFQUFFLENBQUMsQ0FBQyxLQUFLLENBQUMsQ0FBQztBQUNwRCxZQUFZLFFBQVEsRUFBRSxDQUFDLENBQUMsQ0FBQztBQUN6QixnQkFBZ0IsS0FBSyxDQUFDLENBQUMsQ0FBQyxLQUFLLENBQUMsRUFBRSxDQUFDLEdBQUcsRUFBRSxDQUFDLENBQUMsTUFBTTtBQUM5QyxnQkFBZ0IsS0FBSyxDQUFDLEVBQUUsQ0FBQyxDQUFDLEtBQUssRUFBRSxDQUFDLENBQUMsT0FBTyxFQUFFLEtBQUssRUFBRSxFQUFFLENBQUMsQ0FBQyxDQUFDLEVBQUUsSUFBSSxFQUFFLEtBQUssRUFBRSxDQUFDO0FBQ3hFLGdCQUFnQixLQUFLLENBQUMsRUFBRSxDQUFDLENBQUMsS0FBSyxFQUFFLENBQUMsQ0FBQyxDQUFDLEdBQUcsRUFBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsRUFBRSxHQUFHLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxTQUFTO0FBQ2pFLGdCQUFnQixLQUFLLENBQUMsRUFBRSxFQUFFLEdBQUcsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxHQUFHLEVBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsR0FBRyxFQUFFLENBQUMsQ0FBQyxTQUFTO0FBQ2pFLGdCQUFnQjtBQUNoQixvQkFBb0IsSUFBSSxFQUFFLENBQUMsR0FBRyxDQUFDLENBQUMsSUFBSSxFQUFFLENBQUMsR0FBRyxDQUFDLENBQUMsTUFBTSxHQUFHLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDLE1BQU0sR0FBRyxDQUFDLENBQUMsQ0FBQyxLQUFLLEVBQUUsQ0FBQyxDQUFDLENBQUMsS0FBSyxDQUFDLElBQUksRUFBRSxDQUFDLENBQUMsQ0FBQyxLQUFLLENBQUMsQ0FBQyxFQUFFLEVBQUUsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLFNBQVMsRUFBRTtBQUNoSSxvQkFBb0IsSUFBSSxFQUFFLENBQUMsQ0FBQyxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQyxLQUFLLEVBQUUsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksRUFBRSxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEVBQUUsRUFBRSxDQUFDLENBQUMsS0FBSyxHQUFHLEVBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLE1BQU0sRUFBRTtBQUMxRyxvQkFBb0IsSUFBSSxFQUFFLENBQUMsQ0FBQyxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUMsQ0FBQyxLQUFLLEdBQUcsQ0FBQyxDQUFDLENBQUMsQ0FBQyxFQUFFLEVBQUUsQ0FBQyxDQUFDLEtBQUssR0FBRyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsRUFBRSxDQUFDLENBQUMsTUFBTSxFQUFFO0FBQ3pGLG9CQUFvQixJQUFJLENBQUMsSUFBSSxDQUFDLENBQUMsS0FBSyxHQUFHLENBQUMsQ0FBQyxDQUFDLENBQUMsRUFBRSxFQUFFLENBQUMsQ0FBQyxLQUFLLEdBQUcsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLENBQUMsQ0FBQyxNQUFNLEVBQUU7QUFDdkYsb0JBQW9CLElBQUksQ0FBQyxDQUFDLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxHQUFHLENBQUMsR0FBRyxFQUFFLENBQUM7QUFDMUMsb0JBQW9CLENBQUMsQ0FBQyxJQUFJLENBQUMsR0FBRyxFQUFFLENBQUMsQ0FBQyxTQUFTO0FBQzNDLGFBQWE7QUFDYixZQUFZLEVBQUUsR0FBRyxJQUFJLENBQUMsSUFBSSxDQUFDLE9BQU8sRUFBRSxDQUFDLENBQUMsQ0FBQztBQUN2QyxTQUFTLENBQUMsT0FBTyxDQUFDLEVBQUUsRUFBRSxFQUFFLEdBQUcsQ0FBQyxDQUFDLEVBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxDQUFDLEVBQUUsU0FBUyxFQUFFLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxDQUFDLEVBQUU7QUFDbEUsUUFBUSxJQUFJLEVBQUUsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLEVBQUUsTUFBTSxFQUFFLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxPQUFPLEVBQUUsS0FBSyxFQUFFLEVBQUUsQ0FBQyxDQUFDLENBQUMsR0FBRyxFQUFFLENBQUMsQ0FBQyxDQUFDLEdBQUcsS0FBSyxDQUFDLEVBQUUsSUFBSSxFQUFFLElBQUksRUFBRSxDQUFDO0FBQ3pGLEtBQUs7QUFDTDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7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

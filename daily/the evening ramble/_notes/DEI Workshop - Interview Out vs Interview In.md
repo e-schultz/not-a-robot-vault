@@ -1,3 +1,5 @@
+# DEI Workshop - [[daily/the evening ramble/_notes/Interview Out vs Interview In]]
+
 One of the points that Danny made was along the lines of
 
 > Interviewing I think one of the things that we found as we started to look at the interview process that we had at Dropbox overall was that Our our mindset was, we have, we're trying to interview people out, we have a bar, and we're trying to be gatekeepers and determine who can come in and out versus interviewing in.  - [[Danny Guillory]]

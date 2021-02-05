@@ -4,24 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "81fb4810fed2f798",
+        "id": "a02e2ad59d361e0f",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "daily/the evening ramble/2021-02-04 - The Evening Ramble.md",
+            "mode": "source"
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "1a3bb4163f974da7",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2021-02-02.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "985d4f4f861193fc",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/refactored/2021/02/03/2102030805 - Re-establishing my morning routines.md",
+            "file": "daily/2021-02-04.md",
             "mode": "source"
           }
         }
@@ -72,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 338.5
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -88,8 +90,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/2021-02-02.md",
-                "collapseAll": true,
+                "file": "daily/2021-02-04.md",
+                "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
                 "backlinkCollapsed": false,
@@ -114,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/2021-02-02.md"
+                "file": "daily/2021-02-04.md"
               }
             }
           },
@@ -125,23 +127,32 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "8d4c245d2fadd4e7",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 833.5
   },
   "lastOpenFiles": [
-    "daily/2021-02-02.md",
-    "daily/2021-02-03.md",
-    "daily/the morning pages/2021-02-03 - The Morning Pages.md",
-    "daily/the morning pages/switching from RoamResearch to Obsidian.md",
-    "daily/the morning pages/2021-02-02 - The Morning Pages.md",
-    "inbox/refactored/2021/02/03/2102030814 - Self Care Anchors.md",
-    "inbox/refactored/2021/02/03/2102030805 - Re-establishing my morning routines.md",
-    "inbox/refactored/2021/02/03/2102030805 - Sometimes a good mood can be a warning sign.md",
-    "daily/the morning pages/2021-02-03 - The Morning Pages].md",
-    "inbox/refactored/2021/02/03/2102030805Sometimes a good mood can be a warning sign.md"
+    "daily/2021-02-04.md",
+    "daily/the evening ramble/2021-02-04 - The Evening Ramble.md",
+    "tweet-threads/evan_just_evan/Trying to navigate to an in between so I can start to sort out this mess that is my brain.md",
+    "daily/the evening ramble/_notes/neurodiverse manager.md",
+    "daily/fragments/neurodivergent.md",
+    "daily/the evening ramble/neurodiverse manager.md",
+    "daily/the evening ramble/tweet threads.md",
+    "tweet-threads/evan_just_evan/1354415951693938694 - I Miss In Person Meetings.md",
+    "tweet-threads/evan_just_evan/1356571318020431872 - Getting in trouble and not knowing why.md",
+    "daily/the evening ramble/neurodivergent.md"
   ]
 }

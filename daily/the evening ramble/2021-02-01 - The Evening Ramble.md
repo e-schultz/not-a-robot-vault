@@ -56,7 +56,7 @@ A bit of how I've been feeling recently - is giving me some vibes back to my bur
 
 A few days ago [[@radiantbutch]] tweeted 
 
-> quote this tweet with a sign of being neurodivergent that you wish you knew about earlier. let’s spread some knowledge and make people feel less alone [^1rb] - [[@radiantbutch]]
+> quote this tweet with a sign of being [[neurodivergent]] that you wish you knew about earlier. let’s spread some knowledge and make people feel less alone [^1rb] - [[@radiantbutch]]
 
 The first thing that came to mind for me was Hyperfocus, and then a better understanding of Executive Function 
 
