@@ -4,28 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a02e2ad59d361e0f",
+        "id": "9eae548d30b9bb4d",
         "type": "leaf",
+        "active": true,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/the evening ramble/2021-02-04 - The Evening Ramble.md",
+            "file": "daily/2021-02-08.md",
             "mode": "source"
           },
           "pinned": true
-        }
-      },
-      {
-        "id": "1a3bb4163f974da7",
-        "type": "leaf",
-        "active": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "daily/2021-02-04.md",
-            "mode": "source"
-          }
         }
       }
     ],
@@ -53,7 +42,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "20201",
+                "query": "old office",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +63,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5
+    "width": 338.5,
+    "collapsed": true
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -90,10 +80,10 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/2021-02-04.md",
+                "file": "daily/2021-02-08.md",
                 "collapseAll": false,
                 "extraContext": true,
-                "sortOrder": "alphabetical",
+                "sortOrder": "byCreatedTime",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -116,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/2021-02-04.md"
+                "file": "daily/2021-02-08.md"
               }
             }
           },
@@ -141,18 +131,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 833.5
+    "width": 467.5
   },
   "lastOpenFiles": [
-    "daily/2021-02-04.md",
+    "daily/2021-02-08.md",
+    "attachments/Screen Shot 2021-02-08 at 10.41.13 AM.png",
+    "daily/2021-02-05 - The Evening Ramble.md",
+    "attachments/Screen Shot 2021-02-05 at 7.00.02 PM.png",
+    "attachments/Screen Shot 2021-02-05 at 7.04.18 PM.png",
+    "daily/the evening ramble/_notes/The Evening Ramble.md",
     "daily/the evening ramble/2021-02-04 - The Evening Ramble.md",
-    "tweet-threads/evan_just_evan/Trying to navigate to an in between so I can start to sort out this mess that is my brain.md",
-    "daily/the evening ramble/_notes/neurodiverse manager.md",
-    "daily/fragments/neurodivergent.md",
-    "daily/the evening ramble/neurodiverse manager.md",
-    "daily/the evening ramble/tweet threads.md",
-    "tweet-threads/evan_just_evan/1354415951693938694 - I Miss In Person Meetings.md",
-    "tweet-threads/evan_just_evan/1356571318020431872 - Getting in trouble and not knowing why.md",
-    "daily/the evening ramble/neurodivergent.md"
+    "attachments/Screen Shot 2021-02-05 at 6.59.57 PM.png",
+    "daily/S-How racism and microaggressions lead to worse health.md",
+    "daily/S-  Members of high-status groups are threatened by pro-diversity organizational messages.md"
   ]
 }

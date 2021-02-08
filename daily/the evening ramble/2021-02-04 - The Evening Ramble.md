@@ -209,3 +209,124 @@ Then over time - when I want to write more in-depth on a topic, like maybe one d
 I can skim these fleeting notes and tag things, start turning them into outlines, look at my smaller atomic notes or seedlings or whatever note taxonomy I decide to go with - and start pulling in information from what i've already written.
 
 A large part of the work is already done.
+
+
+# Tech Twitter
+
+## Leveling The Playing Field for Different Neurotypes
+
+via [[@MissAmyTobey]] - [tweet](https://twitter.com/MissAmyTobey/status/1357475385177378816)
+
+> high autonomy culture levels the playing field for different neurotypes. some folks can produce on a schedule. some folks (me) build stuff in fits, starts, and tsunamis. some are great at thinking on their feet, others need solitude and quiet. we need everyone [^1ma]
+
+[^1ma]: [[Tech Twitter]]- [[Neurodiverse Twitter]]
+
+
+
+## Isolation has me wondering what was anxiety vs sensory processing issues
+
+forgot I wrote this this morning, 
+
+### Neurodiverse Twitter meets Tech Twitter
+
+- [Tweet](https://twitter.com/i/status/1357297137822883841) by [@evan_just_evan](https://twitter.com/evan_just_evan) on [[2021-02-04]]
+- Isolation during the pandemic has me thinking alot about this.
+  - I'm wondering how many times what I was thinking anxiety was  me l needing a quiet dim rooms, but not able to access one easily.
+  - Now thats my quiet dim room is feet away and available all day... [twitter.com/elisekumar/sta…](https://twitter.com/elisekumar/status/1357212563356852226)
+- Old office had a quiet room, and a meditation / wellness room - but they weren't always available.
+  - Sometimes if I couldn't access one easily - I'd end up going for a walk, sometimes ending up at home  😐
+- Also at times - when I thought I was getting a headache / sick - was it light sensitivity issues?
+  - Being able to time out in a dim room for a bit helps so much with that.
+- I also get anxious about going to the grocery store - and have made use of the days they over reduced stimulation at times.
+  - Sometimes I'm fine at the grocery store, other times it's sensory hell that exhausts me.
+- But now - it's not uncommon for a couple of times a week, sometimes a day for me to go for short sensory times outs during work since I live alone and a bed and a blanket are within arms reach.
+- I've also been thinking about the differences between autistic / Hyperfocus / neurodiverse causes of burnout vs I guess work burnout.
+  - They can be related - but also very different things.
+- They can happen independently of eachother - but can also trigger / worsen eachother.
+- Like I can be feeling "work burnt out" - but still have energy for life at the end of the day.
+  - Meltdown / shutdown burnout - making the choice to go grocery shopping or to the conscience store feels like an impossible choice, let alone doing it.
+- It's hard to function - sensory sensitivity issues go onto overdrive, regulations is out the window.
+  - I can end up going kinda non-verbal for a few days, stutter gets worse.
+  - But it's like the intensity volume on reality got cranked to 11 and I need isolation
+- Trying to push through it is like masking effort X 100 - and I can start to feel sick.
+  - And it's like - "I'm a 38yr old grown ass man, basic self care shouldn't be so difficult", but here I am.
+- I've been on the stimulation burnout edge to the point where my cat meowing at me has caused fill on meltdown and ruined a day.
+  - Normally he's a cute fella and not a problem.
+  - Some days I've collapsed to the floor sobbing because it felt like it broken my brain.
+- There probably isn't a person I work with that hadn't heard Uncle Handsome meow by now.
+  - Most days not a problem,
+  - Also feeling more comfortable to walk around and see what he wants even if it's during a meeting
+- "one sec - need to deal with the cat"
+  - And get him a treat / water / sometimes he just wants attention.
+  - But earlier on I'd try to ignore it until the meeting was done, and by the end it'd feel like daggers in my ear drums.
+- It'd break attention, trying to stay focused was hard, the constant context switching hurt my head.
+  - The meow might as well as been a 5sec fog horn - and I'd quickly try to catch back upto the meeting, while feeling stressed and disoriented.
+- Have that happen multiple times a day, sometimes per meeting and...
+  - It sucks.
+- I'm getting more comfortable talking about what's going on at work - have sent links to a few of my slack threads.
+  - Now and then I still feel this self conscious insecurity of
+  - "am I just looking to make excuses for myself?"
+  - I'm not.
+- But that kind of messaging has been so drilled into my head it's hard not to blame myself
+  - Learning to be honest about it
+  - how to advocate for myself,
+  - get the accommodations that I need
+  - Is a learning process.
+- I'm not just complaining about what's being difficult, but also trying to figure out solutions.
+  - Sometimes I need to vent though to figure out what those solutions can look like.
+
+
+
+## Elise Kumar got me thinking about it.
+
+[[Neurodiverse Twitter]]does get me self reflecting a lot, but nothing wrong with that.
+
+**Elise tweeted:**
+ 
+> Wondering how much of my “anxiety” is actually sensory processing issues. Thinking about going to the butcher seems fine. Am fine right up until I get to the door and then I walk away because I can’t tell if it’s open or not because I can’t process the signage. - [@elisekumar](https://twitter.com/elisekumar/status/1357212563356852226) [^22eli]
+
+[^22eli]:: [[@elisekumar]]
+
+
+
+## Alternatives to Clean Code 
+
+Uncle Bob is problematic, and it's pretty common that his books Clean Code, and Clean Architecture get recommended. 
+
+However, [Tech Bullshit Explained: Uncle Bob](https://techexplained.substack.com/p/tech-bullshit-explained-uncle-bob)[^tbe] goes into a few of the reasons why he's a problem.
+
+
+[^tbe]: [[@melissamcewen]]  [tweeted](https://twitter.com/melissamcewen/status/1280587324863270912) a link to her article 
+
+So, it's not that uncommon that you [see people asking for alternative books](https://twitter.com/HarleenQuinzell/status/1357259882198622214) pretty often. 
+
+Awhile ago [[@dev_nikema]] [tweeted](https://twitter.com/dev_nikema/status/1350233517137907713) asking the question:
+
+> If someone wanted to get Clean Code but would like to avoid uncle B6b, what alternative would you recommend? Someone is not me. I mentioned The Pragmatic Programmer but I haven't gone through it yet. I'm not familiar with Clean Code either so I don't know if they are comparable - [dev_nikema](https://twitter.com/dev_nikema/status/1350233517137907713) 
+
+Some really good suggestions in that thread.
+
+
+
+## My Dislike of WebForms is why I learned JavaScript
+
+@davidfowl [tweeted](https://twitter.com/davidfowl/status/1357464354048921602) about what was your programming language journey, and it reminded me of mine. 
+
+- [Tweet](https://twitter.com/i/status/1357493184423731200) by [@evan_just_evan](https://twitter.com/evan_just_evan) on [[2021-01-04]]
+- I hated the UpdatePanel / partial page updates on WebForms so much, it was a big motivator to start learning JavaScript.
+  - "Why do I need to do a partial postback in an update panel on a WebForm to add two damn numbers" [twitter.com/evan_just_evan…](https://twitter.com/evan_just_evan/status/1357492684286476290)
+- and once I figured out how to expose methods as 'Page Methods' or whatever they called them, and make AJAX requests to it for things where I did need information from the server.
+  - 'making ASP WebForms not suck" was my main motivation.
+- it served me well.
+
+# Was going to write a thing
+
+.... but then I forgot, 
+
+Oh - I think it was something along the lines of, need to consider the different ways that people appreciate recognition.
+
+recognition can mean different things for different people - both in what it means to them, and how they want / recognized when it's being delivered.
+
+Also - being aware of what types of behavior gets people noticed, and the biases it may inform. 
+
+People can contribute in so many ways, but if you only reward and promote those that are very extroverted - you are excluding entire groups of people.
