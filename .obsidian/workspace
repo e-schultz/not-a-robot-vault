@@ -4,18 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "9eae548d30b9bb4d",
+        "id": "d2ce2579a0734543",
         "type": "leaf",
         "active": true,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2021-02-08.md",
+            "file": "daily/the morning pages/2021-02-09 - The Morning Pages.md",
             "mode": "source"
           },
           "pinned": true
-        }
+        },
+        "group": "6468cb9069ba9e03"
+      },
+      {
+        "id": "4634521ba4cda172",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "daily/the morning pages/2021-02-09 - The Morning Pages.md",
+            "mode": "preview"
+          },
+          "pinned": true
+        },
+        "group": "6468cb9069ba9e03"
       }
     ],
     "direction": "vertical"
@@ -63,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5,
-    "collapsed": true
+    "width": 338.5
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -80,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/2021-02-08.md",
+                "file": "daily/the morning pages/2021-02-09 - The Morning Pages.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -106,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/2021-02-08.md"
+                "file": "daily/the morning pages/2021-02-09 - The Morning Pages.md"
               }
             }
           },
@@ -134,15 +148,15 @@
     "width": 467.5
   },
   "lastOpenFiles": [
-    "daily/2021-02-08.md",
-    "attachments/Screen Shot 2021-02-08 at 10.41.13 AM.png",
-    "daily/2021-02-05 - The Evening Ramble.md",
-    "attachments/Screen Shot 2021-02-05 at 7.00.02 PM.png",
-    "attachments/Screen Shot 2021-02-05 at 7.04.18 PM.png",
-    "daily/the evening ramble/_notes/The Evening Ramble.md",
-    "daily/the evening ramble/2021-02-04 - The Evening Ramble.md",
-    "attachments/Screen Shot 2021-02-05 at 6.59.57 PM.png",
-    "daily/S-How racism and microaggressions lead to worse health.md",
-    "daily/S-  Members of high-status groups are threatened by pro-diversity organizational messages.md"
+    "daily/the morning pages/2021-02-09 - The Morning Pages.md",
+    "daily/the morning pages/Jane Elliott.md",
+    "daily/the morning pages/anti-racist.md",
+    "inbox/readwise imports/RW - Lets Talk About Systems....md",
+    "inbox/readwise imports/RW- Developer Experience at Netlify.md",
+    "daily/2021-02-09.md",
+    "inbox/Inbox.md",
+    "inbox/readwise imports/Lets Talk About Systems....md",
+    "inbox/readwise imports/Developer Experience at Netlify.md",
+    "daily/the morning pages/Readwise Review.md"
   ]
 }
