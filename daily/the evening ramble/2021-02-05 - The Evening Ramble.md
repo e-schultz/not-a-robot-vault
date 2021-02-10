@@ -304,5 +304,5 @@ Maybe they will have a career ladder, a road-map - and try to get you training o
 
 ##### Also a very neurotypical approach
 
-#tk - but I just have issues with the education system, when companies want to try and take learning and development seriously, they are trying to model a system that I hate, find ablest and discriminatory. 
+#tk - but I just have issues with the education system, when companies want to try and take [[learning and development]] seriously, they are trying to model a system that I hate, find ablest and discriminatory. 
 

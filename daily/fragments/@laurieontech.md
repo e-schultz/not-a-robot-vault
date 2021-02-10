@@ -1,4 +1,4 @@
 # Laurie On Tech
 
 - twitter: [@laurieontech](https://twitter.com/laurieontech)
-- website: [laureontech.com]
+- website: [laureontech.com](https://laureontech.com)

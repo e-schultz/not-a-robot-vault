@@ -4,33 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "d2ce2579a0734543",
+        "id": "6c531db544028bc0",
         "type": "leaf",
-        "active": true,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/the morning pages/2021-02-09 - The Morning Pages.md",
+            "file": "daily/the evening ramble/2021-02-09 - The Evening Ramble.md",
             "mode": "source"
           },
           "pinned": true
-        },
-        "group": "6468cb9069ba9e03"
+        }
       },
       {
-        "id": "4634521ba4cda172",
+        "id": "789285fb1ed14e36",
         "type": "leaf",
-        "pinned": true,
+        "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/the morning pages/2021-02-09 - The Morning Pages.md",
-            "mode": "preview"
-          },
-          "pinned": true
-        },
-        "group": "6468cb9069ba9e03"
+            "file": "daily/2021-02-10 - The Morning Pages.md",
+            "mode": "source"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -57,11 +53,11 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "old office",
+                "query": "jose",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical"
               }
             }
@@ -94,8 +90,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/the morning pages/2021-02-09 - The Morning Pages.md",
-                "collapseAll": false,
+                "file": "daily/2021-02-10 - The Morning Pages.md",
+                "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
                 "backlinkCollapsed": false,
@@ -120,16 +116,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/the morning pages/2021-02-09 - The Morning Pages.md"
+                "file": "daily/2021-02-10 - The Morning Pages.md"
               }
-            }
-          },
-          {
-            "id": "de9c60cb6040faf7",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
             }
           },
           {
@@ -139,24 +127,31 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "5d99fe12b894fc33",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 467.5
   },
   "lastOpenFiles": [
-    "daily/the morning pages/2021-02-09 - The Morning Pages.md",
-    "daily/the morning pages/Jane Elliott.md",
-    "daily/the morning pages/anti-racist.md",
-    "inbox/readwise imports/RW - Lets Talk About Systems....md",
-    "inbox/readwise imports/RW- Developer Experience at Netlify.md",
+    "daily/2021-02-10 - The Morning Pages.md",
+    "daily/2021-02-10.md",
+    "tweet-threads/@ZoieSheets/1358861111945121795 I was asked this weekend.md",
+    "tweet-threads/@ZoieSheets/Untitled.md",
+    "tweet-threads/Untitled.md",
     "daily/2021-02-09.md",
-    "inbox/Inbox.md",
-    "inbox/readwise imports/Lets Talk About Systems....md",
-    "inbox/readwise imports/Developer Experience at Netlify.md",
-    "daily/the morning pages/Readwise Review.md"
+    "daily/the evening ramble/2021-02-09 - The Evening Ramble.md",
+    "daily/the evening ramble/2012-02-09  The Transformer CLO.md",
+    "daily/the evening ramble/2021-02-09 The 3 Biggest Training Challenges Holding L&D Back.md",
+    "daily/the evening ramble/2021-02-09 - Learning Ecosystems Notes.md"
   ]
 }
