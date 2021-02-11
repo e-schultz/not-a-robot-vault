@@ -4,26 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "6c531db544028bc0",
+        "id": "d3ef34db613e360d",
         "type": "leaf",
+        "active": true,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/the evening ramble/2021-02-09 - The Evening Ramble.md",
-            "mode": "source"
+            "file": "daily/the morning pages/2021-02-11 - The Morning Pages.md",
+            "mode": "preview"
           },
           "pinned": true
         }
       },
       {
-        "id": "789285fb1ed14e36",
+        "id": "9eaebe506c6bbac6",
         "type": "leaf",
-        "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2021-02-10 - The Morning Pages.md",
+            "file": "daily/the morning pages/The Playlist.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/2021-02-10 - The Morning Pages.md",
+                "file": "daily/the morning pages/2021-02-11 - The Morning Pages.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/2021-02-10 - The Morning Pages.md"
+                "file": "daily/the morning pages/2021-02-11 - The Morning Pages.md"
               }
             }
           },
@@ -143,15 +143,15 @@
     "width": 467.5
   },
   "lastOpenFiles": [
-    "daily/2021-02-10 - The Morning Pages.md",
+    "daily/the morning pages/2021-02-11 - The Morning Pages.md",
+    "daily/the morning pages/The Playlist.md",
+    "tweet-threads/evan_just_evan/thread-inbox/Been Meaning to Watch Th....md",
+    "daily/the morning pages/Self Care.md",
+    "daily/2021-02-11 - Morning Pages.md",
+    "daily/2021-02-11.md",
     "daily/2021-02-10.md",
-    "tweet-threads/@ZoieSheets/1358861111945121795 I was asked this weekend.md",
-    "tweet-threads/@ZoieSheets/Untitled.md",
-    "tweet-threads/Untitled.md",
-    "daily/2021-02-09.md",
-    "daily/the evening ramble/2021-02-09 - The Evening Ramble.md",
-    "daily/the evening ramble/2012-02-09  The Transformer CLO.md",
-    "daily/the evening ramble/2021-02-09 The 3 Biggest Training Challenges Holding L&D Back.md",
-    "daily/the evening ramble/2021-02-09 - Learning Ecosystems Notes.md"
+    "daily/the evening ramble/2021-02-10 - The Evening Ramble.md",
+    "tweet-threads/evan_just_evan/thread-inbox/1359666634814849031 - If This Is the Only Thin....md",
+    "daily/2021-02-09.md"
   ]
 }
