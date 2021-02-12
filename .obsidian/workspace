@@ -4,26 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "d3ef34db613e360d",
+        "id": "87e745733916aa0b",
         "type": "leaf",
-        "active": true,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/the morning pages/2021-02-11 - The Morning Pages.md",
+            "file": "daily/the evening ramble/2021-02-11 - The Evening Ramble.md",
             "mode": "preview"
           },
           "pinned": true
         }
       },
       {
-        "id": "9eaebe506c6bbac6",
+        "id": "fb3647b8a53c53c4",
         "type": "leaf",
+        "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/the morning pages/The Playlist.md",
+            "file": "The Playlist.md",
             "mode": "source"
           }
         }
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "jose",
+                "query": "tag:#source",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/the morning pages/2021-02-11 - The Morning Pages.md",
+                "file": "The Playlist.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/the morning pages/2021-02-11 - The Morning Pages.md"
+                "file": "The Playlist.md"
               }
             }
           },
@@ -136,22 +136,23 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
     "width": 467.5
   },
   "lastOpenFiles": [
-    "daily/the morning pages/2021-02-11 - The Morning Pages.md",
     "daily/the morning pages/The Playlist.md",
-    "tweet-threads/evan_just_evan/thread-inbox/Been Meaning to Watch Th....md",
-    "daily/the morning pages/Self Care.md",
-    "daily/2021-02-11 - Morning Pages.md",
+    "daily/the evening ramble/2021-02-11 - The Evening Ramble.md",
     "daily/2021-02-11.md",
-    "daily/2021-02-10.md",
-    "daily/the evening ramble/2021-02-10 - The Evening Ramble.md",
-    "tweet-threads/evan_just_evan/thread-inbox/1359666634814849031 - If This Is the Only Thin....md",
-    "daily/2021-02-09.md"
+    "reading notes/@hessAppSandbox2020.md",
+    "reading notes/@chanOurRoadmapBecoming.md",
+    "reading notes/@15fiveWhitepaperPeopleLeaders2021.md",
+    "daily/202101 My Last Teaching Engagement - storydump.md",
+    "daily/2021-02-11 - The Evening Ramble.md",
+    "daily/story dump.md",
+    "daily/the evening ramble/2021-02-09 - Our Roadmap for Becoming a Strategic.md"
   ]
 }

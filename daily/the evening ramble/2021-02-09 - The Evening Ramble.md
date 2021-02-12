@@ -57,8 +57,10 @@ So, starting to work through a few things I've been meaning to read lately, ende
 
 Although, this did lead me to the article
 
-# Our Roadmap for Becoming a Strategic [[Chief Learning Officer]]
-by [[Joel Chan]], - via [360 Learning](https://360learning.com/blog/chief-learning-officer/) 
+# Our Roadmap for Becoming a Strategic [[Chief Learning Officer]] 
+by [[Joel Chan]], - via [360 Learning](https://360learning.com/blog/chief-learning-officer/) [^jco]
+
+[^jco]: [[@chanOurRoadmapBecoming]]
 
 This seems relevant to my interests. 
 

@@ -1,3 +1,5 @@
+# Notes for [[@chanOurRoadmapBecoming|Our Roadmap for Becoming a Strategic]]
+
 Ok, ended up taking long enough notes on this during the [[2021-02-09 - The Evening Ramble]], that I pulled it out to it's own page for now.
 
 
