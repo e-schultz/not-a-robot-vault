@@ -4,26 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "87e745733916aa0b",
+        "id": "fb3647b8a53c53c4",
         "type": "leaf",
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/the evening ramble/2021-02-11 - The Evening Ramble.md",
-            "mode": "preview"
+            "file": "daily/2021-02-12 - The Morning Pages.md",
+            "mode": "source"
           },
           "pinned": true
         }
       },
       {
-        "id": "fb3647b8a53c53c4",
+        "id": "7b9bfa6ac0d84afd",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "The Playlist.md",
+            "file": "daily/2021-02-12.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Playlist.md",
+                "file": "daily/2021-02-12.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Playlist.md"
+                "file": "daily/2021-02-12.md"
               }
             }
           },
@@ -136,23 +136,22 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 467.5
   },
   "lastOpenFiles": [
-    "daily/the morning pages/The Playlist.md",
-    "daily/the evening ramble/2021-02-11 - The Evening Ramble.md",
+    "daily/2021-02-12.md",
+    "daily/2021-02-12 - The Morning Pages.md",
+    "daily/KC - Community Transcription Guide.md",
+    "daily/Kim Crayton.md",
+    "daily/Kim Crayton Community Cafe.md",
     "daily/2021-02-11.md",
-    "reading notes/@hessAppSandbox2020.md",
-    "reading notes/@chanOurRoadmapBecoming.md",
-    "reading notes/@15fiveWhitepaperPeopleLeaders2021.md",
-    "daily/202101 My Last Teaching Engagement - storydump.md",
-    "daily/2021-02-11 - The Evening Ramble.md",
-    "daily/story dump.md",
-    "daily/the evening ramble/2021-02-09 - Our Roadmap for Becoming a Strategic.md"
+    "daily/fragments/Stephanie Morillo.md",
+    "daily/the evening ramble/2021-02-11 - The Evening Ramble.md",
+    "daily/the morning pages/The Playlist.md",
+    "reading notes/@hessAppSandbox2020.md"
   ]
 }
