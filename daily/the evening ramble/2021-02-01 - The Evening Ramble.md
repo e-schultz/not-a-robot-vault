@@ -20,33 +20,12 @@ I keep meaning to re-start working in my [[The Happy Book]] as well - as I do mi
 
 ## The Happy Book
 
-The bright yellow, dot-grid note-book that really did kick off alot of my approaches to self-care, building habits, checking in, reflection -  and two of my older journals are now acting as a wrist-wrest for my keyboard, so having them around as that reminder is still useful in it's own way.
-
-So much of my life has become digital-centric since COVID19 - work, social life, family communication - that once the workday is done, that spending more time at the 
-- same desk 
-- same laptop 
-- same screen 
-
-Quickly looses it's appeal - at times I'll switch laptops, maybe surf Twitter on my phone instead of my laptop, or poke a bit at my what seems to be neglected iPad - despite really enjoying drawing with Procreate. 
-
-I want/need to bring some physical back into my life - motion is important to me, either it be walking, dancing, yoga, stretching - but also writing, drawing, making music - things that engage physical touch and motion. 
+![[20210201 - The Happy Book]]
 
 ## First Therapy at Shift 
 
-I remember the first time going to therapy at Shift - and it felt like I went on a nearly two-hour info dump talking a mile a minute, everything came out all at once - and I was impressed by their ability to both keep up with me, but pick out some important patterns - and offered some actionable advice. 
+![[20210201 - First Therapy at Shift ]]
 
-He noticed how much things relating to movement/motion were for me for self care
-
-- Walking to/from work
-- Walking breaks
-- Dancing
-- Exercise
-- Writing in my journal 
-- etc 
-
-Being ADHD - it's no surprise that movement is important to me, and find that I often need to be moving to work through my thoughts, or I'll end up trapped in my head. 
-
-A bit of how I've been feeling recently - is giving me some vibes back to my burnout at Rangle, and trying to hit the breaks a bit sooner - and start focusing with a bit more intent on things.
 
 # Rambling Thoughts
 

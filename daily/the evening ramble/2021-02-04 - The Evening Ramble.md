@@ -14,7 +14,7 @@ When I was in a more regular writing routine, even if it was mostly for myself -
 
 Maybe something from twitter got me thinking, maybe a useful seminar or podcast.
 
-Then, when for example - I have a bunch of twitter threads saved to readwise - when I use readwise, it surfaces up tweets, highlights from books, things I've grabbed from the web - I tend to take notes on those if they are interesting, or discard them. 
+Then, when for example - I have a bunch of twitter threads saved to [[Readwise]] - when I use readwise, it surfaces up tweets, highlights from books, things I've grabbed from the web - I tend to take notes on those if they are interesting, or discard them. 
 
 This is how I start to build things up over time.
 
@@ -283,10 +283,10 @@ forgot I wrote this this morning,
 
 **Elise tweeted:**
  
-> Wondering how much of my “anxiety” is actually sensory processing issues. Thinking about going to the butcher seems fine. Am fine right up until I get to the door and then I walk away because I can’t tell if it’s open or not because I can’t process the signage. - [@elisekumar](https://twitter.com/elisekumar/status/1357212563356852226) [^22eli]
+> Wondering how much of my “anxiety” is actually sensory processing issues. Thinking about going to the butcher seems fine. Am fine right up until I get to the door and then I walk away because I can’t tell if it’s open or not because I can’t process the signage. - [@elisekumar](https://twitter.com/elisekumar/status/1357212563356852226) [^22eli] [^anxietyvssensory]
 
-[^22eli]:: [[@elisekumar]]
-
+[^22eli]: [[@elisekumar]]
+[^anxietyvssensory]: [[anxiety vs sensory processing issues]]
 
 
 ## Alternatives to Clean Code 

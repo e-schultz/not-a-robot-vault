@@ -149,7 +149,7 @@ Ok, looks like I'm note-taking....  [[S-Microaggressions: Good Intent Is Not Goo
 
 > Unintentional microaggressions are usually the manifestation of unconscious biases, which are learned, automatic stereotypes that have the ability to affect our behavior. Most people do not believe that they are racist, sexist, ageist, heterosexist, etc., but their words and actions can surface biases that reflect discriminatory belief systems [h.](https://hyp.is/aWxCuGgMEeuZbXP4paCU6w/www.forbes.com/sites/rebekahbastian/2019/06/10/microaggressions-good-intent-is-not-good-enough/)
 
-> -   If someone holds a bias that a given population is not articulate, they might “compliment” a person for being well spoken. [h.](https://hyp.is/mtl7BGgMEeu_b3OoDCOM_Q/www.forbes.com/sites/rebekahbastian/2019/06/10/microaggressions-good-intent-is-not-good-enough/) - [[abelism]]
+> -   If someone holds a bias that a given population is not articulate, they might “compliment” a person for being well spoken. [h.](https://hyp.is/mtl7BGgMEeu_b3OoDCOM_Q/www.forbes.com/sites/rebekahbastian/2019/06/10/microaggressions-good-intent-is-not-good-enough/) - [[Abelism]]
 
 > -   If someone holds a bias that a given population is aggressive, they might give a person feedback that they are “intimidating,” while the same behaviors are considered “assertive” in another person. - [h.](https://hyp.is/t8ZvEGgMEeuchFenbk4RSw/www.forbes.com/sites/rebekahbastian/2019/06/10/microaggressions-good-intent-is-not-good-enough/)
 

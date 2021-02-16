@@ -7,10 +7,23 @@
         "id": "d62f3942c75ad03c",
         "type": "leaf",
         "active": true,
+        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/the morning pages/2021-02-16 - The Morning Pages.md",
+            "file": "daily/the evening ramble/2021-02-16 - The Evening Ramble.md",
+            "mode": "source"
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "8a0893a212c0cd98",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/readwise imports/Articles/Combating Unconscious Gender Bias in the Workplace.md",
             "mode": "source"
           }
         }
@@ -40,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#source",
+                "query": "tag:#daily",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/the morning pages/2021-02-16 - The Morning Pages.md",
+                "file": "daily/the evening ramble/2021-02-16 - The Evening Ramble.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/the morning pages/2021-02-16 - The Morning Pages.md"
+                "file": "daily/the evening ramble/2021-02-16 - The Evening Ramble.md"
               }
             }
           },
@@ -130,15 +143,15 @@
     "width": 467.5
   },
   "lastOpenFiles": [
-    "daily/the morning pages/2021-02-16 - The Morning Pages.md",
+    "daily/the evening ramble/2021-02-16 - The Evening Ramble.md",
+    "inbox/readwise imports/Articles/Combating Unconscious Gender Bias in the Workplace.md",
+    "daily/the evening ramble/Zotero.md",
+    "reading notes/@dewarCombatingUnconsciousGender2019.md",
+    "daily/2021-02-16 - The Evening Ramble.md",
     "daily/2021-02-16.md",
-    "daily/Crescendo.md",
     "daily/the evening ramble/2021-02-12 - The Evening Ramble.md",
-    "daily/2021-02-12.md",
-    "daily/2021-02-16 - The Morning Pages.md",
-    "tweet-threads/evan_just_evan/thread-inbox/1358950373453660160 Lack of NeuroDiversity and Disability in most DEI materials.md",
-    "tweet-threads/evan_just_evan/@evan_just_evan.md",
-    "tweet-threads/evan_just_evan/1360352624307023875 - Cant focus but here I am.md",
-    "daily/fragments/202102120101 - Designing for users on the autistic spectrum.md"
+    "daily/the evening ramble/2021-02-04 - The Evening Ramble.md",
+    "daily/fragments/anxiety vs sensory processing issues.md",
+    "daily/the evening ramble/sensory processing.md"
   ]
 }
