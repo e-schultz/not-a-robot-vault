@@ -4,26 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "fb3647b8a53c53c4",
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "daily/2021-02-12 - The Morning Pages.md",
-            "mode": "source"
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "7b9bfa6ac0d84afd",
+        "id": "d62f3942c75ad03c",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2021-02-12.md",
+            "file": "daily/the morning pages/2021-02-16 - The Morning Pages.md",
             "mode": "source"
           }
         }
@@ -90,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/2021-02-12.md",
+                "file": "daily/the morning pages/2021-02-16 - The Morning Pages.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/2021-02-12.md"
+                "file": "daily/the morning pages/2021-02-16 - The Morning Pages.md"
               }
             }
           },
@@ -143,15 +130,15 @@
     "width": 467.5
   },
   "lastOpenFiles": [
+    "daily/the morning pages/2021-02-16 - The Morning Pages.md",
+    "daily/2021-02-16.md",
+    "daily/Crescendo.md",
+    "daily/the evening ramble/2021-02-12 - The Evening Ramble.md",
     "daily/2021-02-12.md",
-    "daily/2021-02-12 - The Morning Pages.md",
-    "daily/KC - Community Transcription Guide.md",
-    "daily/Kim Crayton.md",
-    "daily/Kim Crayton Community Cafe.md",
-    "daily/2021-02-11.md",
-    "daily/fragments/Stephanie Morillo.md",
-    "daily/the evening ramble/2021-02-11 - The Evening Ramble.md",
-    "daily/the morning pages/The Playlist.md",
-    "reading notes/@hessAppSandbox2020.md"
+    "daily/2021-02-16 - The Morning Pages.md",
+    "tweet-threads/evan_just_evan/thread-inbox/1358950373453660160 Lack of NeuroDiversity and Disability in most DEI materials.md",
+    "tweet-threads/evan_just_evan/@evan_just_evan.md",
+    "tweet-threads/evan_just_evan/1360352624307023875 - Cant focus but here I am.md",
+    "daily/fragments/202102120101 - Designing for users on the autistic spectrum.md"
   ]
 }
