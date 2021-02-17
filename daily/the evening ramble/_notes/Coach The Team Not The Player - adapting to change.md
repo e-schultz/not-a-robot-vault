@@ -25,6 +25,6 @@ Team Dynamics were still very important - and I would work closely with the
 
 and other members of the team to help ensure that people felt supported, had growth opportunities, etc - but, it was from a very outside perspective. 
 
-One of the differences that I have while working at PartnerStack - is that I am a manager of a team, a group of people that are reporting to me, and also responsible for the delivery and output of the team. 
+One of the differences that I have while working at [[PartnerStack]] - is that I am a manager of a team, a group of people that are reporting to me, and also responsible for the delivery and output of the team. 
 
 It's been a shift in adapting to this change - some of it comes naturally, some if is taking some effort. 

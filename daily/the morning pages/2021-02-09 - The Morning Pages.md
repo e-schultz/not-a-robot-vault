@@ -95,11 +95,11 @@ Teaching is more than just conveying information - sure, the students heard it -
 
 ### [[end-user teachers]]
 
-This is a concept I've learned from [[Greg Willson]], and his book [[Teaching Tech Together]]
+This is a concept I've learned from [[Greg Wilson]], and his book [[Teaching Tech Together]]
 
 >  teaching isn’t their primary occupation, they have little or no background in pedagogy, and they may work outside institutional classrooms. [^ttendt]
 
-[^ttendt]: [Teaching Tech Together - Who You Are](https://teachtogether.tech/en/index.html#s:intro-audience)
+[^ttendt]: [[Teaching Tech Together]] [Who You Are](https://teachtogether.tech/en/index.html#s:intro-audience)
 
 ### [[Mental Model]] and [[Formative Assessment]]
 
@@ -118,7 +118,7 @@ A flood of information to a Novice can be overwhelming, and if they don't have t
 > Tutorials frustrate competent practitioners because they move too slowly and say things that are obvious (though they are anything _but_ obvious to novices). Equally, manuals frustrate novices because they use jargon and _don’t_ explain things. 
 > This phenomenon is called the [**expertise reversal effect**](https://teachtogether.tech/en/index.html#g:expertise-reversal) \[[Kaly2003](https://teachtogether.tech/en/index.html#ref-Kaly2003)\], and is one of the reasons you have to decide early on who your lessons are for. [^ttetmodel]
 
-[^ttetmodel]: [Teaching Tech Together - Mental Models and Formative Assessment](https://teachtogether.tech/en/index.html#s:models)
+[^ttetmodel]: [[Teaching Tech Together]] : [Mental Models and Formative Assessment](https://teachtogether.tech/en/index.html#s:models)
 
 While a novice may benefit most from a tutorial, as the tutorials help build the correct mental model, for [[Competent Practitioners]] - that same tutorial may be boring, gets in the way of what they want to learn  - and a manual might suite them better, or other types of exercises.
 

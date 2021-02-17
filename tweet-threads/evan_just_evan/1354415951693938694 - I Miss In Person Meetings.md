@@ -9,7 +9,7 @@ aliases: ["@evan_just_evan - I miss in person meetings"]
 - Even with the best connection and high quality cameras - so many micro expressions get lost, and that slight lag will always be there.
   - People turning off thier cameras is getting to be more normal - I appreciate that, as the constant wall of zoom faces is exhausting to process.
 - Even with the best connection and high quality cameras - so many micro expressions get lost, and that slight lag will always be there.
-  - People turning off thier cameras is getting to be more normal - I appreciate that, as the constant wall of zoom faces is exhausting to process.
+  - People turning off their cameras is getting to be more normal - I appreciate that, as the constant wall of zoom faces is exhausting to process.
 - I miss meetings where I'd be facilitating - getting the room ready with post it notes and markers
   - Able to walk around the room - Write things down on the board.
 - Found it easier to keep track of who was being talkative, who was being quiet - able to create space for other voices to speak up.

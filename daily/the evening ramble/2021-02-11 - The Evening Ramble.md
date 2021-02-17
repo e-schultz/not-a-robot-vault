@@ -60,13 +60,15 @@ I also helped start cross-project code reviews, overseeing the process, providin
 
 ### Training for Clients
 
-I was also on client projects, had direct reports, and wore various other hats while at Rangle.
+I was also on client projects, had direct reports, and wore various other hats while at [[Rangle.io]].
 
 Rangle also offered training as a service - and I helped create and run a number of training programs for JavaScript. AngularJS, Angular, React, etc. 
 
 We'd have people hire us to teach their teams JavaScript - so we had a number of people create training material, learn how to run through it, etc.
 
-I took a few workshops by [[Greg Wilson]] on "How to run a workshop workshop", and have always found them useful, and the book [Teaching Tech Together](https://teachtogether.tech/en/index.html) is still something I reference often.
+I took a few workshops by [[Greg Wilson]] on "How to run a workshop workshop", and have always found them useful, and the book [Teaching Tech Together](https://teachtogether.tech/en/index.html) [^tt1] is still something I reference often.
+
+[^tt1]: [[Teaching Tech Together]]
 
 ### Teaching in General
 

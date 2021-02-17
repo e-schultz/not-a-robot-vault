@@ -235,7 +235,7 @@ forgot I wrote this this morning,
   - Now thats my quiet dim room is feet away and available all day... [twitter.com/elisekumar/sta…](https://twitter.com/elisekumar/status/1357212563356852226)
 - Old office had a quiet room, and a meditation / wellness room - but they weren't always available.
   - Sometimes if I couldn't access one easily - I'd end up going for a walk, sometimes ending up at home  😐
-- Also at times - when I thought I was getting a headache / sick - was it light sensitivity issues?
+- Also at times - when I thought I was getting a headache / sick - was it light sensitivity issues? ^8928e0
   - Being able to time out in a dim room for a bit helps so much with that.
 - I also get anxious about going to the grocery store - and have made use of the days they over reduced stimulation at times.
   - Sometimes I'm fine at the grocery store, other times it's sensory hell that exhausts me.

@@ -43,7 +43,7 @@ When I worked at Rangle, I had helped with the initial adoption of Notion - star
 
 We used it for tracking blog content, guild meetings, some internal projects, I had also used it quite a bit for managing my 1:1 meetings. 
 
-When I started at PartnerStack - I think only the design team was using Notion, I had setup my own personal account to try and manage my work notes in - but at the time, I was wanting something quick and fast - and was finding that Notion was causing me friction. 
+When I started at [[PartnerStack]] - I think only the design team was using Notion, I had setup my own personal account to try and manage my work notes in - but at the time, I was wanting something quick and fast - and was finding that Notion was causing me friction. 
 
 ## Personal vs Collaborative Knowledge Management 
 
@@ -72,7 +72,7 @@ Then - even after that, I got thinking about Rule 6.
 
 > 6. Don't Coach the Player, coach the Team 
 
-[[Coach The Team Not The Player - adapting to change]] - and reflecting on some of the differences I've had being a manager at Rangle, and being a manager at PartnerStack.
+[[Coach The Team Not The Player - adapting to change]] - and reflecting on some of the differences I've had being a manager at Rangle, and being a manager at [[PartnerStack]].
 
 Then there was the notes from the [[21-02-02 - Driving Change How to Create a More Equitable and Inclusive Workspace|Driving Change How to Create a More Equitable and Inclusive Workspace]]
 
@@ -256,12 +256,12 @@ The slack message could be mentioning an update on [[The Project]] - and I can q
 
 ![[42k WALKING ROUTE.jpeg]]
 
-[[When good notes made my Vue Talk really easy]]
-- I was between projects at work,  and the previous one was all Angular. There were large parts of their application that needed to generate parts of it's UI from an API response - dynamic forms, etc.
-- I was wanting to learn more about Vue at the time - I had done a few small things with it, and it looked really appealing but I hadn't built anything serious with it yet.
-- Once I learned the basics - I wanted to try and see how I would solve the problem with Vue, that was really a pain in the ass with angular at the time.
-- I took good notes along the way
-- turned that into a blog
-- turned that into a conference talk
-- the goal of the article though wasn't to be 'hey here use my library', but help people make things like that really easy.
+- [[DRAFT - When good notes made my Vue Talk easy]] ^b1ce2d
+	- I was between projects at work,  and the previous one was all Angular. There were large parts of their application that needed to generate parts of it's UI from an API response - dynamic forms, etc.
+	- I was wanting to learn more about Vue at the time - I had done a few small things with it, and it looked really appealing but I hadn't built anything serious with it yet.
+	- Once I learned the basics - I wanted to try and see how I would solve the problem with Vue, that was really a pain in the ass with angular at the time.
+	- I took good notes along the way
+	- turned that into a blog
+	- turned that into a conference talk
+	- the goal of the article though wasn't to be 'hey here use my library', but help people make things like that really easy.
 - 

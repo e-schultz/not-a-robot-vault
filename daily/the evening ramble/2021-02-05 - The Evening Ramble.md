@@ -2,7 +2,7 @@
 
 # End of the Work Week
 
-When I was having a one on one with my manager today, I think I mentioned that this is one of the weeks that I've enjoyed the most since starting at PartnerStack.
+When I was having a one on one with my manager today, I think I mentioned that this is one of the weeks that I've enjoyed the most since starting at [[PartnerStack]].
 
 Like - I've been enjoying my time here, adjusting, etc - and I've had good weeks, but this one I've really enjoyed.
 

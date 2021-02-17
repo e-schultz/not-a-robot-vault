@@ -59,7 +59,7 @@ I was to teach a few cohorts, and there was a few weeks between each one,s o I h
 
 And, I learned from this.
 
-I had taken notes from Gregs workshop earlier - and I was trying to find them, but wasn't able to - but thats when I ended up re-reading Teaching Tech Together.
+I had taken notes from Gregs workshop earlier - and I was trying to find them, but wasn't able to - but thats when I ended up re-reading [[Teaching Tech Together]].
 
 I had fallen into a bit of the [expert blind spot](https://teachtogether.tech/en/index.html#g:expert-blind-spot)[^ebs]
 [^ebs]: [[expert blind spot]]

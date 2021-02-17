@@ -1,3 +1,6 @@
+---
+tags: ["daily/morning-pages"]
+---
 # 2021-02-16 - [[The Morning Pages]]
 
 # After the long weekend

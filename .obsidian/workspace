@@ -4,27 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "d62f3942c75ad03c",
+        "id": "16d47475f32a1a75",
         "type": "leaf",
         "active": true,
-        "pinned": true,
         "state": {
-          "type": "markdown",
+          "type": "pdf",
           "state": {
-            "file": "daily/the evening ramble/2021-02-16 - The Evening Ramble.md",
-            "mode": "source"
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "8a0893a212c0cd98",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/readwise imports/Articles/Combating Unconscious Gender Bias in the Workplace.md",
-            "mode": "source"
+            "file": "attachments/Driving Change_ How to Create a More Equitable and Inclusive Workplace.pdf"
           }
         }
       }
@@ -53,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#daily",
+                "query": "tag:#daily/morning-pages",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/the evening ramble/2021-02-16 - The Evening Ramble.md",
+                "file": "attachments/Driving Change_ How to Create a More Equitable and Inclusive Workplace.pdf",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -105,7 +91,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
+                "sortOrder": "alphabetical",
                 "useHierarchy": true
               }
             }
@@ -116,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/the evening ramble/2021-02-16 - The Evening Ramble.md"
+                "file": "attachments/Driving Change_ How to Create a More Equitable and Inclusive Workplace.pdf"
               }
             }
           },
@@ -143,15 +129,15 @@
     "width": 467.5
   },
   "lastOpenFiles": [
-    "daily/the evening ramble/2021-02-16 - The Evening Ramble.md",
-    "inbox/readwise imports/Articles/Combating Unconscious Gender Bias in the Workplace.md",
-    "daily/the evening ramble/Zotero.md",
-    "reading notes/@dewarCombatingUnconsciousGender2019.md",
-    "daily/2021-02-16 - The Evening Ramble.md",
-    "daily/2021-02-16.md",
-    "daily/the evening ramble/2021-02-12 - The Evening Ramble.md",
-    "daily/the evening ramble/2021-02-04 - The Evening Ramble.md",
-    "daily/fragments/anxiety vs sensory processing issues.md",
-    "daily/the evening ramble/sensory processing.md"
+    "attachments/Driving Change_ How to Create a More Equitable and Inclusive Workplace.pdf",
+    "attachments/Screen Shot 2021-02-02 at 7.55.18 PM.png",
+    "attachments/multipotentialite - tnvora .jpeg",
+    "attachments/Screen Shot 2021-02-11 at 9.51.14 PM.png",
+    "attachments/Screen Shot 2021-02-05 at 7.01.34 PM.png",
+    "attachments/Screen Shot 2021-02-05 at 7.07.30 PM.png",
+    "attachments/Screen Shot 2021-02-05 at 7.01.34 PM 1.png",
+    "attachments/Screen Shot 2021-02-05 at 7.07.30 PM 1.png",
+    "attachments/survey monkey - most common micro-aggressions - Screen Shot 2021-02-08 at 10.41.13 AM.png",
+    "daily/2021-02-08.md"
   ]
 }
