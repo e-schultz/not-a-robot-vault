@@ -1,0 +1,7 @@
+---
+aliases: ["zettelkasten"]
+---
+
+# Zettelkasten
+- TBC
+- 

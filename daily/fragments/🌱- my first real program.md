@@ -1,5 +1,5 @@
 ---
-tags: [DRAFT,notarobot]
+tags: [DRAFT,notarobot, inbox/writing/storydump]
 ---
 
 # My First Real Program

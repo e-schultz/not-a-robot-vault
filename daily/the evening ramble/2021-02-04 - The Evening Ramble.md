@@ -182,7 +182,7 @@ One of the biggest challenges I can have when I want to write about something, i
 
 But, when writing is how you work - and not an afterthought to how you work,  a lot of the initial writing has already been done for you.
 
-## Make use of whats on the editing room floor
+## [[🌱 Make use of whats on the editing room floor]]
 
 A mistake that I've done in the past, especially if I've gotten over the fear of the blank page - is as I'm preparing to write something, I'll take all sorts of rough notes. 
 
@@ -194,7 +194,7 @@ Once we learn to keep those around, treat them as living things - tweak and edit
 
 ## Fleeting vs Permanent 
 
-In the book [[How to Take Smart Notes]] - they talk about fleeting notes, project notes, permanent notes, etc -and there is a difference between these, and the value they can have, and how they can be used.
+In the book [[📰 - How to Take Smart Notes]] - they talk about fleeting notes, project notes, permanent notes, etc -and there is a difference between these, and the value they can have, and how they can be used.
 
 If you have piles of journals, or dozens of google docs - that you never go back to, rarely refer to, and has basically been just a 'braindump to offload your memory' and never return to, and find that making your notes valuable is hard - this is the mistake of treating every note as a permanent note, even though those are more of your fleeting notes.
 

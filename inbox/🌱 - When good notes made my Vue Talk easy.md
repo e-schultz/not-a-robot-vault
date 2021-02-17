@@ -6,10 +6,11 @@ tags: [DRAFT, "inbox/writing"]
 - updates:
 	- 2021-02-16
 
+- [[🔍 - note taking]]
 
 # When good notes made my Vue Talk  easy
 
-This is a bit of an example of when I've [[make your notes work for you|made my notes work for me]]
+This is a bit of an example of when I've [[🌱 - make your notes work for you|made my notes work for me]]
 
 But, since I took notes as I was learning and figuring out, was able to repurposed the notes for a blog post, meetup talk and conference talk.
 

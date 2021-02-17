@@ -23,7 +23,7 @@ Or --> don't worry about it until I start to from 'fleeting inbox note', to some
 
 Started a quick draft of when I've leveraged 'making my notes work for me' for when I was preparing for a VueJS talk, still very much draft/rouh note
 
-read more -> [[DRAFT - When good notes made my Vue Talk easy]]
+read more -> [[🌱 - When good notes made my Vue Talk easy]]
 
 # Some Note Cleanup
 

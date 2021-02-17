@@ -176,7 +176,7 @@ Her movie Music has been nominated for a Golden Globe, but the Autistic communit
 
 # So, what is [[The Evening Ramble]] all about?
 
-This site as a whole, will be some sort of digital garden.
+This site as a whole, will be some sort of [[💡 - Digital Garden|digital garden]].
 
 The evening ramble is the train of thought space, and not going to get too hung up on the structure of things.
 
@@ -256,7 +256,7 @@ The slack message could be mentioning an update on [[The Project]] - and I can q
 
 ![[42k WALKING ROUTE.jpeg]]
 
-- [[DRAFT - When good notes made my Vue Talk easy]] ^b1ce2d
+- [[🌱 - When good notes made my Vue Talk easy]] ^b1ce2d
 	- I was between projects at work,  and the previous one was all Angular. There were large parts of their application that needed to generate parts of it's UI from an API response - dynamic forms, etc.
 	- I was wanting to learn more about Vue at the time - I had done a few small things with it, and it looked really appealing but I hadn't built anything serious with it yet.
 	- Once I learned the basics - I wanted to try and see how I would solve the problem with Vue, that was really a pain in the ass with angular at the time.

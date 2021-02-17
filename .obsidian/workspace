@@ -6,11 +6,25 @@
       {
         "id": "16d47475f32a1a75",
         "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/🔍 - note taking.md",
+            "mode": "source"
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "d3f4255ec524cbab",
+        "type": "leaf",
         "active": true,
         "state": {
-          "type": "pdf",
+          "type": "markdown",
           "state": {
-            "file": "attachments/Driving Change_ How to Create a More Equitable and Inclusive Workplace.pdf"
+            "file": "References/Apps - Tools/Otter.ai.md",
+            "mode": "source"
           }
         }
       }
@@ -39,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#daily/morning-pages",
+                "query": "tag:#inbox/writing",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -60,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5
+    "width": 516
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -76,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "attachments/Driving Change_ How to Create a More Equitable and Inclusive Workplace.pdf",
+                "file": "References/Apps - Tools/Otter.ai.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -102,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "attachments/Driving Change_ How to Create a More Equitable and Inclusive Workplace.pdf"
+                "file": "References/Apps - Tools/Otter.ai.md"
               }
             }
           },
@@ -129,15 +143,15 @@
     "width": 467.5
   },
   "lastOpenFiles": [
-    "attachments/Driving Change_ How to Create a More Equitable and Inclusive Workplace.pdf",
-    "attachments/Screen Shot 2021-02-02 at 7.55.18 PM.png",
-    "attachments/multipotentialite - tnvora .jpeg",
-    "attachments/Screen Shot 2021-02-11 at 9.51.14 PM.png",
-    "attachments/Screen Shot 2021-02-05 at 7.01.34 PM.png",
-    "attachments/Screen Shot 2021-02-05 at 7.07.30 PM.png",
-    "attachments/Screen Shot 2021-02-05 at 7.01.34 PM 1.png",
-    "attachments/Screen Shot 2021-02-05 at 7.07.30 PM 1.png",
-    "attachments/survey monkey - most common micro-aggressions - Screen Shot 2021-02-08 at 10.41.13 AM.png",
-    "daily/2021-02-08.md"
+    "References/Apps - Tools/Otter.ai.md",
+    "daily/the evening ramble/_notes/The Playbook - EP3 - Watching Notes.md",
+    "daily/the evening ramble/20210215 - Why I Like Otter.ai.md",
+    "daily/the evening ramble/2021-02-05 - The Evening Ramble.md",
+    "daily/the morning pages/2021-02-12 - The Morning Pages.md",
+    "References/Apps - Tools/🧰 Transcription Tools.md",
+    "inbox/🔍 - note taking.md",
+    "daily/the evening ramble/_notes/21-02-02 - Driving Change How to Create a More Equitable and Inclusive Workspace.md",
+    "References/Apps - Tools/Transcription Tools.md",
+    "References/Apps - Tools/oTranscribe.md"
   ]
 }

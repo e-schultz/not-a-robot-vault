@@ -20,29 +20,26 @@ It pulls in parts of some of my favorite talks by her, and puts them together in
 
 # Note-Taking vs Note-Making
 
-Was trying to empty out my Instapaper Inbox, and reading some old things I had saved to read later, and came across this great article by [[Anne-Laure Le Cunff]] - [From note-taking to note-making](https://nesslabs.com/from-note-taking-to-note-making) 
 
-I have a bunch of notes that I'll need to import later that I took while reading it.
+![[20210212 - MP - Note Taking vs Note Making#^f657e8]]
 
-A key point she mentions though when talking about the differences between note-taking and note-making.
 
-> In his 1962 [book](https://amzn.to/2JphCT1) about study methods, Edgar Wright makes the distinction between “note-taking” from “note-making.” Note-taking often happens while listening; the goal is to quickly capture content so we can refer back to it later. Note-making is more common while reading; it consists in deliberately crafting our own version so we can learn and create better. [^ntnm]
+read more -> 
+[[20210212 - MP - Note Taking vs Note Making]]
 
-Also added a new thread of threads, to my thread of threads.
 
-- My [Thread of Threads on notes and knowledge work resources](https://twitter.com/evan_just_evan/status/1360215439830380552) via - [[@evan_just_evan]]
-
-[^ntnm]: [From note-taking to note-making](https://nesslabs.com/from-note-taking-to-note-making)
 
 # [[The Playlist]] BTS Podcast 202 - no_contact
 
 Was feeling like I wanted a bit more unf in my step this morning BTS Podcast 202 - no\_contact
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/983479801&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/behind-the-stage" title="Behind The Stage" target="_blank" style="color: #cccccc; text-decoration: none;">Behind The Stage</a> · <a href="https://soundcloud.com/behind-the-stage/bts-podcast-202-no_contact" title="BTS Podcast 202 - no_contact" target="_blank" style="color: #cccccc; text-decoration: none;">BTS Podcast 202 - no_contact</a></div>
+![[BTS Podcast 202 - no_contact#^756c6e]]
+
+
 
 # Transcription Tools
 
-I've been using [[Otter|Otter.ai]] for transcribing meetings at work, which has been a real life saver, and really useful work work settings as I can record meetings as they go.
+I've been using [[Otter.ai|Otter.ai]] for transcribing meetings at work, which has been a real life saver, and really useful work work settings as I can record meetings as they go.
 
 Kim Crayton just tweeted about looking for Voulnteers to transcribe podcasts, and mentioned [[oTranscribe]] [otranscribe.com](https://otranscribe.com/), 
 

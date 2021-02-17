@@ -39,9 +39,9 @@ I was always more concerned on the curated aspect - the final note, in it's full
 
 This certainly has it's role - especially for shared notes and collaborative notes, but it completely undervalues all of the work that goes into making that final version. 
 
-Not everyone needs to see my rough work - but, once you learn how to [[make your notes work for you]], they start to save you time instead of costing you time. 
+Not everyone needs to see my rough work - but, once you learn how to [[🌱 - make your notes work for you]], they start to save you time instead of costing you time. 
 
-Concepts like [[Evergreen Notes]], [[Smart Notes]], [[Zettlekasten]], etc all startde to catch my attention - and in 2020, it was the year that "holy shit I'e been taking notes wrong all my life" [^2020notes]
+Concepts like [[💡 - Evergreen Notes]], [[💡 - Smart Notes]], [[💡 - Zettelkasten]], etc all startde to catch my attention - and in 2020, it was the year that "holy shit I'e been taking notes wrong all my life" [^2020notes]
 
 [^2020notes]: [[2020 - The Year I realized I've been taking notes wrong]]
 
@@ -117,7 +117,7 @@ The number of applications I use every day can almost seem overwhelming
 - Slack
 - Lever 
 - Jira
-- Otter
+- [[Otter.ai|Otter]]
 - Miro
 - Figma
 - Loom
@@ -125,7 +125,7 @@ The number of applications I use every day can almost seem overwhelming
 
 and I'm probably missing a few - and for some people, it's probably more. 
 
-Often in my notes - I'll create attributes for links to jira, otter, etc - so when I'm going back to that note, I can quickly access links that I need.
+Often in my notes - I'll create attributes for links to jira, [[Otter.ai|otter]], etc - so when I'm going back to that note, I can quickly access links that I need.
 
 There are lots of things that can live in notion - lots of notes, documentation, meeting note type of needs can fit well in notion, and the extra formatting/etc of Google Docs isn't needed. 
 
