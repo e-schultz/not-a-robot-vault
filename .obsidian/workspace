@@ -23,8 +23,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "References/Apps - Tools/Otter.ai.md",
-            "mode": "source"
+            "file": "daily/2021-02-17.md",
+            "mode": "preview"
           }
         }
       }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "References/Apps - Tools/Otter.ai.md",
+                "file": "daily/2021-02-17.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "References/Apps - Tools/Otter.ai.md"
+                "file": "daily/2021-02-17.md"
               }
             }
           },
@@ -136,22 +136,23 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
     "width": 467.5
   },
   "lastOpenFiles": [
-    "References/Apps - Tools/Otter.ai.md",
-    "daily/the evening ramble/_notes/The Playbook - EP3 - Watching Notes.md",
-    "daily/the evening ramble/20210215 - Why I Like Otter.ai.md",
-    "daily/the evening ramble/2021-02-05 - The Evening Ramble.md",
-    "daily/the morning pages/2021-02-12 - The Morning Pages.md",
-    "References/Apps - Tools/🧰 Transcription Tools.md",
+    "daily/2021-02-17.md",
+    "daily/Alpenglühen 56 with Adhémar & F-on.md",
+    "daily/2021-02-17 - The Morning Pages.md",
     "inbox/🔍 - note taking.md",
-    "daily/the evening ramble/_notes/21-02-02 - Driving Change How to Create a More Equitable and Inclusive Workspace.md",
-    "References/Apps - Tools/Transcription Tools.md",
-    "References/Apps - Tools/oTranscribe.md"
+    "Alpenglühen 56 w/ Adhémar & F-on.md",
+    "daily/2021-02-16.md",
+    "daily/the morning pages/2021-02-16 - The Morning Pages.md",
+    "daily/2021-02-09.md",
+    "daily/the evening ramble/20210215 - Why I Like Otter.ai.md",
+    "References/Apps - Tools/Otter.ai.md"
   ]
 }
