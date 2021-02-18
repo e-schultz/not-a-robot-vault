@@ -36,7 +36,7 @@ When I want to display a block / file inline in Obsidian - the default display o
 
 For example, if I am embedding a section from a file - I want to have a header in this file to help with the table of contents, but I don't want to see the header of the embedded file when it's embedded, as it looks like this:
 
-![[Screen Shot 2021-02-03 at 8.46.16 AM.png]]
+![[self care anchors Screen Shot 2021-02-03 at 8.46.16 AM.png]]
 
 On the upside - you can customize the CSS of Obsidian quite a bit, and there is pretty good theme support.
 

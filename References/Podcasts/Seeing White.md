@@ -1,6 +1,6 @@
 # [[Scene On Radio]] - Seeing White
 
-Seeing White is a podcast seeries on exploring the concepts of whiteness, how whiteness was built, and has played a big role in helping me better understand [[systemic racism]]
+Seeing White is a podcast series on exploring the concepts of whiteness, how whiteness was built, and has played a big role in helping me better understand [[systemic racism]], the history of racism, and anti-racism. 
 
 ## Episode List
 -  [S2 E1: Turning the Lens](http://www.sceneonradio.org/episode-31-turning-the-lens-seeing-white-part-1/)

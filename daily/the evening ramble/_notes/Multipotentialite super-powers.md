@@ -2,7 +2,7 @@
 
 ## 1. Idea Synthesis
 
-![[Screen Shot 2021-02-02 at 7.55.18 PM.png]]
+![[multipotentia - innovation - Screen Shot 2021-02-02 at 7.55.18 PM.png]]
 
 We have so many varied interests and backgrounds, that we are able to find the intersection between two or more fields, and able to apply it in new ways.
 
