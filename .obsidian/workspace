@@ -17,14 +17,38 @@
         }
       },
       {
-        "id": "c5c7799e7a7fb6c6",
+        "id": "9931e6fb8f01b800",
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "markdown",
+          "type": "localgraph",
           "state": {
-            "file": "daily/the evening ramble/202120217 Intitial note gathering on Learning Ecosystem.md",
-            "mode": "source"
+            "file": "inbox/🌱 - When good notes made my Vue Talk easy.md",
+            "options": {
+              "collapse-filter": false,
+              "search": "",
+              "localJumps": 3,
+              "localBacklinks": true,
+              "localForelinks": true,
+              "localInterlinks": true,
+              "showTags": true,
+              "showAttachments": false,
+              "hideUnresolved": true,
+              "collapse-color-groups": true,
+              "colorGroups": [],
+              "collapse-display": false,
+              "showArrow": false,
+              "textFadeMultiplier": 0,
+              "nodeSizeMultiplier": 1,
+              "lineSizeMultiplier": 1,
+              "collapse-forces": false,
+              "centerStrength": 0.417410387710315,
+              "repelStrength": 10,
+              "linkStrength": 0.498902706656913,
+              "linkDistance": 250,
+              "scale": 0.6252124604911659,
+              "close": false
+            }
           }
         }
       }
@@ -53,7 +77,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#gender-bias",
+                "query": "tag:#DRAFT",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +94,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -90,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/the evening ramble/202120217 Intitial note gathering on Learning Ecosystem.md",
+                "file": "inbox/🌱 - When good notes made my Vue Talk easy.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -116,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/the evening ramble/202120217 Intitial note gathering on Learning Ecosystem.md"
+                "file": "inbox/🌱 - When good notes made my Vue Talk easy.md"
               }
             }
           },
@@ -136,23 +161,22 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 467.5
   },
   "lastOpenFiles": [
-    "daily/the evening ramble/202120217 Intitial note gathering on Learning Ecosystem.md",
-    "daily/the evening ramble/2021-02-17 - The Evening Ramble.md",
-    "inbox/readwise imports/Articles/Learning Ecosystems Dont Just Happen Organically Here Are 3 Steps to Build One.md",
-    "daily/the evening ramble/Circles and Spheres 068 Core.md",
-    "inbox/readwise imports/Articles/Why a Career Jungle Gym Is Better Than a Career Ladder.md",
-    "inbox/readwise imports/Articles/Combating Unconscious Gender Bias in the Workplace.md",
-    "inbox/readwise imports/Articles/How Good Intent Undermines Diversity and Inclusion.md",
-    "daily/the evening ramble/The blessing and the curse of being neurodiverse.md",
-    "daily/the evening ramble/Deep Electronics Special 23 - K4MMERER.md",
-    "daily/the evening ramble/Deep Electronics.md"
+    "inbox/🌱 - When good notes made my Vue Talk easy.md",
+    "References/Companies/PartnerStack.md",
+    "daily/the evening ramble/2021-02-03 - The Evening Ramble.md",
+    "daily/the evening ramble/_notes/20210203 - Personal vs Collaborative Knowledge Management.md",
+    "References/Apps - Tools/Otter.ai.md",
+    "daily/the morning pages/I've been using Otter.ai for transcribing meetings at work, which has been a real life saver.md",
+    "daily/the evening ramble/_notes/20210215 - Why I Like Otter.ai.md",
+    "daily/the evening ramble/2021-02-05 - The Evening Ramble.md",
+    "daily/the morning pages/2021-02-12 - The Morning Pages.md",
+    "References/Apps - Tools/🧰 Transcription Tools.md"
   ]
 }

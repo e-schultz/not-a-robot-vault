@@ -261,7 +261,7 @@ I remember when we started driving there in shared cars instead of flying, becau
 
 Going to have to go back to my notes for this. 
 
-### Why I Like [[Otter.ai]] 
+### Why I Like Otter.ai
 
 read More - [[20210215 - Why I Like Otter.ai]]
 

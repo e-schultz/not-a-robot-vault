@@ -2,4 +2,4 @@
 aliases: ["Otter.ai", "Otter"]
 ---
 # Otter
-- [[🧰 Transcription Tools]]
+- TBC

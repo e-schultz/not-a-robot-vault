@@ -39,7 +39,7 @@ Was feeling like I wanted a bit more unf in my step this morning BTS Podcast 202
 
 # Transcription Tools
 
-I've been using [[Otter.ai|Otter.ai]] for transcribing meetings at work, which has been a real life saver, and really useful work work settings as I can record meetings as they go.
+[[I've been using Otter.ai for transcribing meetings at work, which has been a real life saver]], and really useful work work settings as I can record meetings as they go.
 
 Kim Crayton just tweeted about looking for Voulnteers to transcribe podcasts, and mentioned [[oTranscribe]] [otranscribe.com](https://otranscribe.com/), 
 
