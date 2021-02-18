@@ -4,26 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "d5b80a0f3bf05f4a",
+        "id": "e129ce33dfd04b0f",
         "type": "leaf",
-        "active": true,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2021-02-18 - The Morning Pages.md",
-            "mode": "source"
+            "file": "daily/the evening ramble/2021-02-18 - The Evening Ramble.md",
+            "mode": "preview"
           },
           "pinned": true
         }
       },
       {
-        "id": "e129ce33dfd04b0f",
+        "id": "44a3e9e0d3115074",
         "type": "leaf",
+        "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2021-02-18.md",
+            "file": "daily/the evening ramble/@schultzAreYourUnit2019.md",
             "mode": "source"
           }
         }
@@ -74,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 516,
-    "collapsed": true
+    "width": 516
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -91,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/2021-02-18 - The Morning Pages.md",
+                "file": "daily/the evening ramble/@schultzAreYourUnit2019.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -117,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/2021-02-18 - The Morning Pages.md"
+                "file": "daily/the evening ramble/@schultzAreYourUnit2019.md"
               }
             }
           },
@@ -138,22 +137,22 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 467.5
   },
   "lastOpenFiles": [
-    "daily/2021-02-18 - The Morning Pages.md",
-    "daily/2021-02-18.md",
-    "daily/the evening ramble/2021-02-17 - The Evening Ramble.md",
-    "daily/2021-02-17.md",
-    "inbox/readwise imports/Articles/The EngineerManager Pendulum.md",
-    "daily/Charity Majors.md",
-    "daily/the evening ramble/_notes/The Evening Ramble.md",
-    "daily/fragments/light sensitivity.md",
-    "daily/the evening ramble/_notes/202120216 - Bedroom Office.md",
-    "daily/the morning pages/2021-02-16 - The Morning Pages.md"
+    "daily/the evening ramble/@schultzAreYourUnit2019.md",
+    "inbox/202102181741 Been thinking about testing.md",
+    "daily/the evening ramble/2021-02-18 - The Evening Ramble.md",
+    "inbox/202102181741.md",
+    "References/Apps - Tools/Zotero.md",
+    "References/Apps - Tools/Readwise.md",
+    "References/Apps - Tools/Instapaper.md",
+    "References/Apps - Tools/Notion.md",
+    "reading notes/@hessAppSandbox2020.md",
+    "reading notes/@15fiveWhitepaperPeopleLeaders2021.md"
   ]
 }
