@@ -1,4 +1,8 @@
-# [[2021-02-02]] - [[The Evening Ramble]]
+---
+tags: [journal/daily/evening-ramble]
+---
+
+# 2021-02-02 - [[The Evening Ramble]]
 
 Another day wrapping up, I liked the revisit to [[2021-02-02 - The Morning Pages|the morning pages]] that I had this morning, and felt like it helped get me off to a better start of my day. 
 

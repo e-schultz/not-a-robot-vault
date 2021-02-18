@@ -1,3 +1,7 @@
+---
+tags: [journal/daily/evening-ramble]
+---
+
 # 2021-02-05 - [[The Evening Ramble]]
 
 # End of the Work Week

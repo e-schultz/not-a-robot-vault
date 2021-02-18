@@ -1,5 +1,5 @@
 ---
-tags: ["daily/morning-pages"]
+tags: ["journal/daily/morning-pages"]
 ---
 # 2021-02-16 - [[The Morning Pages]]
 

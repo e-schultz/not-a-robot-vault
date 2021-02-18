@@ -1,3 +1,7 @@
+---
+tags: [journal/daily/evening-ramble]
+---
+
 # 2021-02-04 - [[The Evening Ramble]]
 
 # Resisting the Urge to Import

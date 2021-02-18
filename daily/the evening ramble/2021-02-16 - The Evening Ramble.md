@@ -1,5 +1,5 @@
 ---
-tags: [journal/er/daily]
+tags: [journal/daily/evening-ramble]
 ---
 # 2021-02-16 - [[The Evening Ramble]]
 

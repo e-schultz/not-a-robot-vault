@@ -1,3 +1,7 @@
+---
+tags: [journal/daily/evening-ramble]
+---
+
 # 2021-02-09 - [[The Evening Ramble]]
 
 # [[Neurodiverse Tech]]

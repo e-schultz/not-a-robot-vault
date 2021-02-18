@@ -1,4 +1,8 @@
-# [[2021-02-01]] - [[The Evening Ramble]]
+---
+tags: [journal/daily/evening-ramble]
+---
+
+# 2021-02-01 - [[The Evening Ramble]]
 
 ## What direction to go?
 

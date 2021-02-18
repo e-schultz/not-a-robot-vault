@@ -1,4 +1,8 @@
-# [[2021-02-02]] - [[The Morning Pages]]
+---
+tags: ["journal/daily/morning-pages"]
+---
+
+# 2021-02-02 - [[The Morning Pages]]
 
 Woke up fairly early today, well before my alarm - at around 5:50 or so - fed the cats, made some coffee, watched a bit of YouTube before starting to scroll through my tweeter feed.
 

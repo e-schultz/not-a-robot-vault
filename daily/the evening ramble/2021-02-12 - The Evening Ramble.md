@@ -1,3 +1,7 @@
+---
+tags: [journal/daily/evening-ramble]
+---
+
 # 2021-02-12 - [[The Evening Ramble]]
 
 ![[1360352624307023875 - Cant focus but here I am#Can't focus can't relax]]

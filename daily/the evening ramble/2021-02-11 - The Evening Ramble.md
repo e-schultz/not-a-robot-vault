@@ -1,3 +1,7 @@
+---
+tags: [journal/daily/evening-ramble]
+---
+
 # 2021-02-11 - [[The Evening Ramble]]
 
 # Engineering and Writing

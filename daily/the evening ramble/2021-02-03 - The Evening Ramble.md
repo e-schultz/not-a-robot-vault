@@ -1,3 +1,7 @@
+---
+tags: [journal/daily/evening-ramble]
+---
+
 # 2021-02-03 - [[The Evening Ramble]]
 
 Today was a pretty good day actually - it feels like I'm starting to get out of a bit of the funk that I had hit after the holidays, but - there will be up's and downs, so enjoy that I enjoyed today - but don't get all grumpy if I'm grumpy tomorrow. 
