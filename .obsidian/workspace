@@ -4,17 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "e129ce33dfd04b0f",
+        "id": "19abf363bf8b9a25",
         "type": "leaf",
-        "active": true,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/the evening ramble/2021-02-18 - The Evening Ramble.md",
+            "file": "daily/2021-02-19 - The Morning Pages.md",
             "mode": "source"
           },
           "pinned": true
+        }
+      },
+      {
+        "id": "516b29783521d5c3",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "daily/2021-02-19.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -63,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 516,
-    "collapsed": true
+    "width": 516
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -80,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/the evening ramble/2021-02-18 - The Evening Ramble.md",
+                "file": "daily/2021-02-19.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -106,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/the evening ramble/2021-02-18 - The Evening Ramble.md"
+                "file": "daily/2021-02-19.md"
               }
             }
           },
@@ -126,23 +136,22 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 467.5
   },
   "lastOpenFiles": [
-    "daily/the evening ramble/2021-02-18 - The Evening Ramble.md",
-    "reading notes/@fsblogMakerVsManager2017.md",
-    "daily/the evening ramble/Plants Army Revolver live at The Magick Bar.md",
-    "daily/the evening ramble/@schultzAreYourUnit2019.md",
-    "inbox/202102181741 Been thinking about testing.md",
-    "inbox/202102181741.md",
-    "References/Apps - Tools/Zotero.md",
-    "References/Apps - Tools/Readwise.md",
-    "References/Apps - Tools/Instapaper.md",
-    "References/Apps - Tools/Notion.md"
+    "daily/2021-02-19.md",
+    "daily/2021-02-18.md",
+    "daily/2021-02-19 - The Morning Pages.md",
+    "daily/Hypnotic Black Magic - Tech Clubbers Podcast 178.md",
+    "inbox/202102190801 Summarizing the Impact Framework Equation.md",
+    "daily/the morning pages/2021-02-18 - The Morning Pages.md",
+    "daily/the morning pages/_notes/The Morning Pages.md",
+    "inbox/202102190801.md",
+    "reading notes/@kabaImpactEnvironmentSkills2021.md",
+    "daily/On The 5th Day Podcast - 126 - Claudio PRC.md"
   ]
 }

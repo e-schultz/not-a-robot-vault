@@ -54,3 +54,5 @@ For something I've read a bunch about before, it did get me reflecting a bunch o
 # Fin 
 
 Enough big-screen time for the night, time to lower the desk and get ready for bed.
+
+![[2021-02-18 - end of day brain - Pasted image 20210218222702.png]]
