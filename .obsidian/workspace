@@ -6,26 +6,15 @@
       {
         "id": "e129ce33dfd04b0f",
         "type": "leaf",
+        "active": true,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
             "file": "daily/the evening ramble/2021-02-18 - The Evening Ramble.md",
-            "mode": "preview"
+            "mode": "source"
           },
           "pinned": true
-        }
-      },
-      {
-        "id": "44a3e9e0d3115074",
-        "type": "leaf",
-        "active": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "daily/the evening ramble/@schultzAreYourUnit2019.md",
-            "mode": "source"
-          }
         }
       }
     ],
@@ -74,7 +63,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 516
+    "width": 516,
+    "collapsed": true
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -90,7 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/the evening ramble/@schultzAreYourUnit2019.md",
+                "file": "daily/the evening ramble/2021-02-18 - The Evening Ramble.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -116,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/the evening ramble/@schultzAreYourUnit2019.md"
+                "file": "daily/the evening ramble/2021-02-18 - The Evening Ramble.md"
               }
             }
           },
@@ -137,22 +127,22 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
     "width": 467.5
   },
   "lastOpenFiles": [
+    "daily/the evening ramble/2021-02-18 - The Evening Ramble.md",
+    "reading notes/@fsblogMakerVsManager2017.md",
+    "daily/the evening ramble/Plants Army Revolver live at The Magick Bar.md",
     "daily/the evening ramble/@schultzAreYourUnit2019.md",
     "inbox/202102181741 Been thinking about testing.md",
-    "daily/the evening ramble/2021-02-18 - The Evening Ramble.md",
     "inbox/202102181741.md",
     "References/Apps - Tools/Zotero.md",
     "References/Apps - Tools/Readwise.md",
     "References/Apps - Tools/Instapaper.md",
-    "References/Apps - Tools/Notion.md",
-    "reading notes/@hessAppSandbox2020.md",
-    "reading notes/@15fiveWhitepaperPeopleLeaders2021.md"
+    "References/Apps - Tools/Notion.md"
   ]
 }
