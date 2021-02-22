@@ -11,3 +11,11 @@ I spent some of this afternoon watching the last few videos of the Raw Signal tr
 # Obsidian - Web in one window App on the Other
 
 ![[202102212049 Obsidian - Web in one window App on the Other#^0fefe6]]
+
+# Hrmm ...
+
+I think I spent more time tonight going through old notes, editing them and breaking some things out instead of just rambling on in here.
+
+# [[The Playlist]] Cellar Doro - 4 - LOPAR
+
+![[Cellar Doro - 4 - LOPAR#^af9203]]

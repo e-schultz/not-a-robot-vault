@@ -4,26 +4,65 @@
     "type": "split",
     "children": [
       {
-        "id": "a01e17b8a5d280a5",
+        "id": "478c1904125c88f1",
         "type": "leaf",
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/the evening ramble/_notes/Coach The Team Not The Player - adapting to change.md",
+            "file": "inbox/202102220833 Morning Reading.md",
             "mode": "source"
           },
           "pinned": true
-        }
+        },
+        "group": "621de7275f8e1745"
       },
       {
-        "id": "6751a452d2079bb5",
+        "id": "b7701c7afd959c33",
         "type": "leaf",
         "active": true,
+        "pinned": true,
+        "state": {
+          "type": "localgraph",
+          "state": {
+            "file": "inbox/202102220833 Morning Reading.md",
+            "options": {
+              "collapse-filter": true,
+              "search": "",
+              "localJumps": 3,
+              "localBacklinks": true,
+              "localForelinks": true,
+              "localInterlinks": false,
+              "showTags": false,
+              "showAttachments": false,
+              "hideUnresolved": false,
+              "collapse-color-groups": true,
+              "colorGroups": [],
+              "collapse-display": true,
+              "showArrow": false,
+              "textFadeMultiplier": 0,
+              "nodeSizeMultiplier": 1,
+              "lineSizeMultiplier": 1,
+              "collapse-forces": true,
+              "centerStrength": 0.518713248970312,
+              "repelStrength": 10,
+              "linkStrength": 1,
+              "linkDistance": 250,
+              "scale": 1.2372227893448209,
+              "close": false
+            }
+          },
+          "pinned": true
+        },
+        "group": "621de7275f8e1745"
+      },
+      {
+        "id": "a978d56cbd765c76",
+        "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/the evening ramble/_notes/Coach The Team Not The Player - adapting to change.md",
+            "file": "tweet-threads/evan_just_evan/@evan_just_evan.md",
             "mode": "source"
           }
         }
@@ -53,7 +92,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "testing",
+                "query": "rigid con",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,12 +131,12 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/the evening ramble/_notes/Coach The Team Not The Player - adapting to change.md",
+                "file": "inbox/202102220833 Morning Reading.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               }
             }
           },
@@ -118,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/the evening ramble/_notes/Coach The Team Not The Player - adapting to change.md"
+                "file": "inbox/202102220833 Morning Reading.md"
               }
             }
           },
@@ -145,15 +184,15 @@
     "width": 467.5
   },
   "lastOpenFiles": [
-    "daily/the evening ramble/_notes/Coach The Team Not The Player - adapting to change.md",
-    "inbox/202102212237 Don't Coach the Player, coach the Team.md",
-    "daily/the evening ramble/_notes/The Playbook - EP3 - Watching Notes.md",
-    "inbox/202102212244 it was pretty common for me to have people reporting to me that were not involved on projects that I was responsible for the delivery of.md",
-    "inbox/202102212244 RS - Org Structure - Rangle.md",
-    "inbox/202102212244.md",
-    "inbox/202102212237.md",
-    "inbox/202102212223 I think I'm starting to Unmask a bit more also.md",
-    "daily/the evening ramble/2021-02-01 - The Evening Ramble.md",
-    "daily/fragments/ADHD.md"
+    "inbox/202102220833 Morning Reading.md",
+    "daily/2021-02-17.md",
+    "daily/the morning pages/2021-02-04 - The Morning Pages.md",
+    "inbox/202102220840 evan just evan on Rigid vs Flexible Consistency.md",
+    "daily/2021-02-22 - The Morning Pages.md",
+    "inbox/202102220840 evan_just_evan on Rigid vs Flexible Consistency.md",
+    "inbox/202102220840.md",
+    "reading notes/@cunffPowerFlexibleConsistency2020.md",
+    "reading notes/@majorsThingsKnowEngineering2020.md",
+    "reading notes/@cunffAmbidextrousMindsetHow2021.md"
   ]
 }
