@@ -12,6 +12,8 @@ tags: [DRAFT, "inbox/writing"]
 
 This is a bit of an example of when I've [[🌱 - make your notes work for you|made my notes work for me]]
 
+This idea of easy reproduction is also talked about in [[@yuAgeInfiniteLeverage2021]] tk
+
 But, since I took notes as I was learning and figuring out, was able to repurposed the notes for a blog post, meetup talk and conference talk.
 
 ## How to create Beautiful Data-Driven Interfaces 

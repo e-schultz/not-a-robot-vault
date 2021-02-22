@@ -1,0 +1,1 @@
+I consider weed a psychedelic, the rest - I'll leave up imagination for now.

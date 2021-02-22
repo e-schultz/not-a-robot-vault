@@ -1,0 +1,5 @@
+- Similar ideas
+	- ever green notes
+	- the linking your thinking kit that someone posted on the forums
+	- smart notes
+	- 

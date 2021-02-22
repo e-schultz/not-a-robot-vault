@@ -1,0 +1,1 @@
+"__one of the things I look for is an engagement ring, as it's a sign that they are getting married soon - and want the job just to get mat leave__"  - biased manager 

@@ -8,7 +8,7 @@ tags: [journal/daily/evening-ramble]
 - lots of back to back meetings - got a bit brain-zonked by the end of it
 - Getting inspired by how Facts & Snacks / Learning Hub / Teaching efforts are going
 - Played around with some Vue Unit testing at the end of day for a quick proof of concept on testing route guards beyond verifying that next has been called.
-	- ![[202102181741 Been thinking about testing|Been thinking about testing]]
+	- ![[202102181741 Been thinking aboaut testing|Been thinking about testing]]
 		
 # Reading Inbox Cleanup
 	
@@ -36,7 +36,7 @@ What I'm listening to as I'm doing some filing and sorting, and also putting stu
 
 ## Maker vs Manager 
 
-Got reading [Maker vs. Manager: How Your Schedule Can Make or Break You](https://fs.blog/2017/12/maker-vs-manager/) [^fsb] from the Farnam Street blog, and it jogged a few ideas for me
+Got reading [Maker vs. Manager: How Your Schedule Can Make or Break You](https://fs.blog/2017/12/maker-vs-manager/) [^fsb] from the Farnam Street blog, and it jogged a few ideas for me ^6f0e94
 
 [^fsb]: [[@fsblogMakerVsManager2017]]
 
@@ -44,10 +44,12 @@ I've read about the Maker vs Manager schedule before, and in a few different con
 
 Have a bunch of notes in Instapaper that I'll clean up later, but it got me thinking about
 
-- different types of work
-- context boundaries
-- different schedules for different types of work (maker vs manager)
-- but also considering how it impacts different neurotypes / ADHD / etc 
+> - different types of work
+> - context boundaries
+> - different schedules for different types of work (maker vs manager)
+> - but also considering how it impacts different neurotypes / ADHD / etc 
+
+^bd679a
 
 For something I've read a bunch about before, it did get me reflecting a bunch on how I work, and some ideas to start making some improvements. 
 

@@ -1,3 +1,7 @@
+---
+tags: ["journal/daily/morning-pages"]
+---
+
 # 2021-02-09 - [[The Morning Pages]]
 
 # [[Good Morning Evan, how are you doing this morning]]?

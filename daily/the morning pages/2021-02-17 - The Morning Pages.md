@@ -13,7 +13,7 @@ Doing all right - had a pretty good sleep last night, woke up a little early - a
 
 Instead of falling into doom-scroll or youtube-hole, got out of bed, put on some coffee and have some chili cooking for breakfast.
 
-Puttering around while my brain get's moving.
+Puttering around while my brain get's moving. ^384c72
 
 # [[The Playlist]] Alpenglühen 56 w/ Adhémar & F-on
 
@@ -47,18 +47,13 @@ At least that feeling of ==feel like I've already spent 90% of my energy for the
 
 Some of this is part getting my self care routine back into a better shape, but then also needing to keep an eye on burn-out.
 
-There is a similar/related problem that I've noticed recently - the 
-
-- starting the week low energy
-- building up energy leading to Friday
-- crashing on the weekend
-- weekends become an extended nap between meetings
+![[202102211820 21-02 - Recent trends in how my weeks have been going in terms of energy levels]]
 
 [^ep1]: [[2021-02-17 - The Morning Pages^but ]]
 
 ##  Six Reasons Why Diversity of Thought Is Not Enough
 
-re: [[@inklusiivSixReasonsWhy2019|Six Reasons Why Diversity Of Thought Is Not Enough]] [^6why]
+re: [[@inklusiivSixReasonsWhy20a19|Six Reasons Why Diversity Of Thought Is Not Enough]] [^6why]
 
 I had heard [[diversity of thought]] pop up a few times recently, which kind of makes my ears go up and a few red flags - as often aiming for diversity of thought, is something that can undermine a companies DEI efforts.
 

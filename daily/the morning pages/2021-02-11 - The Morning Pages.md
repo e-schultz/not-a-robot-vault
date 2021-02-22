@@ -1,3 +1,7 @@
+---
+tags: ["journal/daily/morning-pages"]
+---
+
 # 2021-02-11 - [[The Morning Pages]]
 
 - 08:30 - 09:00

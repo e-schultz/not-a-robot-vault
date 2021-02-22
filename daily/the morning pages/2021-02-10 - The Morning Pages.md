@@ -1,3 +1,7 @@
+---
+tags: ["journal/daily/morning-pages"]
+---
+
 # 2021-02-10 - [[The Morning Pages]]
 
 # Was More of a Readwise Review

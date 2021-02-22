@@ -1,0 +1,1 @@
+- [[202102211800 reminded me of one of the first times I really noticed explicit bias in the workplace, but didn't call ita out at the time]]

@@ -1,0 +1,5 @@
+>   When hiring managers believed a woman had children because “Parent-Teacher Association coordinator appeared on her resume, she was [79%](https://leanin.org/endnotes-50-ways#endnote132) less likely to be hired. If she was hired, she would be offered an average of $11,000 less in salary. [h.justEvan](https://hyp.is/puDgMnCUEeudfEclLhpD_g/www.lever.co/blog/unconscious-gender-bias/)
+
+- *note* I recall when learning how to do interviews once, the person who was helping me made a comment along the lines of: 
+	- > ![[202102211758 Gender Bias - looking for the engagement ring]] 
+		- I remember being rather shocked by that statement, and I didn't speak up about it at that time directly - although did push back against it a bit, but it's one of those memories that really stood out as 'wow, that is kind of messed up'

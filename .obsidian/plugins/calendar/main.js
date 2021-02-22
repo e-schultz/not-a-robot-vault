@@ -166,6 +166,21 @@ function getDateUID(date, granularity) {
     var ts = date.clone().startOf(granularity).format();
     return granularity + "-" + ts;
 }
+function removeEscapedCharacters(format) {
+    return format.replace(/\[[^\]]*\]/g, ""); // remove everything within brackets
+}
+/**
+ * XXX: When parsing dates that contain both week numbers and months,
+ * Moment choses to ignore the week numbers. For the week dateUID, we
+ * want the opposite behavior. Strip the MMM from the format to patch.
+ */
+function isFormatAmbiguous(format, granularity) {
+    if (granularity === "week") {
+        var cleanFormat = removeEscapedCharacters(format);
+        return /w/i.test(cleanFormat) && /M{1,4}/.test(cleanFormat);
+    }
+    return false;
+}
 function getDateFromFile(file, granularity) {
     var getSettings = {
         day: getDailyNoteSettings,
@@ -174,7 +189,20 @@ function getDateFromFile(file, granularity) {
     };
     var format = getSettings[granularity]().format.split("/").pop();
     var noteDate = window.moment(file.basename, format, true);
-    return noteDate.isValid() ? noteDate : null;
+    if (!noteDate.isValid()) {
+        return null;
+    }
+    if (isFormatAmbiguous(format, granularity)) {
+        if (granularity === "week") {
+            var cleanFormat = removeEscapedCharacters(format);
+            if (/w/i.test(cleanFormat)) {
+                return window.moment(file.basename, 
+                // If format contains week, remove month formatting
+                format.replace(/M{1,4}/g, ""), false);
+            }
+        }
+    }
+    return noteDate;
 }
 
 function ensureFolderExists(path$1) {
@@ -424,13 +452,13 @@ function getAllWeeklyNotes() {
     return weeklyNotes;
 }
 
-var MonthlyNotesFolderMissingError = /** @class */ (function (_super) {
+/** @class */ ((function (_super) {
     __extends(MonthlyNotesFolderMissingError, _super);
     function MonthlyNotesFolderMissingError() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     return MonthlyNotesFolderMissingError;
-}(Error));
+})(Error));
 
 function appHasDailyNotesPluginLoaded() {
     var _a, _b;
@@ -654,7 +682,6 @@ function make_dirty(component, i) {
 function init(component, options, instance, create_fragment, not_equal, props, dirty = [-1]) {
     const parent_component = current_component;
     set_current_component(component);
-    const prop_values = options.props || {};
     const $$ = component.$$ = {
         fragment: null,
         ctx: null,
@@ -676,7 +703,7 @@ function init(component, options, instance, create_fragment, not_equal, props, d
     };
     let ready = false;
     $$.ctx = instance
-        ? instance(component, prop_values, (i, ret, ...rest) => {
+        ? instance(component, options.props || {}, (i, ret, ...rest) => {
             const value = rest.length ? rest[0] : ret;
             if ($$.ctx && not_equal($$.ctx[i], $$.ctx[i] = value)) {
                 if (!$$.skip_bound && $$.bound[i])
@@ -1039,7 +1066,6 @@ function createDailyNotesStore() {
             catch (err) {
                 if (!hasError) {
                     // Avoid error being shown multiple times
-                    new obsidian.Notice("Failed to find your daily note folder");
                     console.log("[Calendar] Failed to find daily notes folder", err);
                 }
                 store.set({});
@@ -1059,7 +1085,6 @@ function createWeeklyNotesStore() {
             catch (err) {
                 if (!hasError) {
                     // Avoid error being shown multiple times
-                    new obsidian.Notice("Failed to find your weekly note folder");
                     console.log("[Calendar] Failed to find weekly notes folder", err);
                 }
                 store.set({});
@@ -1724,6 +1749,70 @@ class SvelteComponent$1 {
     }
 }
 
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics$1 = function(d, b) {
+    extendStatics$1 = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+    return extendStatics$1(d, b);
+};
+
+function __extends$1(d, b) {
+    extendStatics$1(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+/**
+ * dateUID is a way of weekly identifying daily/weekly/monthly notes.
+ * They are prefixed with the granularity to avoid ambiguity.
+ */
+function getDateUID$1(date, granularity) {
+    if (granularity === void 0) { granularity = "day"; }
+    var ts = date.clone().startOf(granularity).format();
+    return granularity + "-" + ts;
+}
+
+/** @class */ ((function (_super) {
+    __extends$1(DailyNotesFolderMissingError, _super);
+    function DailyNotesFolderMissingError() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return DailyNotesFolderMissingError;
+})(Error));
+
+/** @class */ ((function (_super) {
+    __extends$1(WeeklyNotesFolderMissingError, _super);
+    function WeeklyNotesFolderMissingError() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return WeeklyNotesFolderMissingError;
+})(Error));
+
+/** @class */ ((function (_super) {
+    __extends$1(MonthlyNotesFolderMissingError, _super);
+    function MonthlyNotesFolderMissingError() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return MonthlyNotesFolderMissingError;
+})(Error));
+var getDateUID_1$1 = getDateUID$1;
+
 /* src\components\Dot.svelte generated by Svelte v3.31.0 */
 
 function add_css() {
@@ -2279,7 +2368,7 @@ function create_default_slot(ctx) {
 
 			attr(div0, "class", "dot-container svelte-q3wqg9");
 			set_attributes(div1, div1_data);
-			toggle_class(div1, "active", /*selectedId*/ ctx[6] === getDateUID_1(/*date*/ ctx[0], "day"));
+			toggle_class(div1, "active", /*selectedId*/ ctx[6] === getDateUID_1$1(/*date*/ ctx[0], "day"));
 			toggle_class(div1, "adjacent-month", !/*date*/ ctx[0].isSame(/*displayedMonth*/ ctx[5], "month"));
 			toggle_class(div1, "today", /*date*/ ctx[0].isSame(/*today*/ ctx[4], "day"));
 			toggle_class(div1, "svelte-q3wqg9", true);
@@ -2348,7 +2437,7 @@ function create_default_slot(ctx) {
 				dirty & /*metadata*/ 128 && (/*metadata*/ ctx[7].dataAttributes || {})
 			]));
 
-			toggle_class(div1, "active", /*selectedId*/ ctx[6] === getDateUID_1(/*date*/ ctx[0], "day"));
+			toggle_class(div1, "active", /*selectedId*/ ctx[6] === getDateUID_1$1(/*date*/ ctx[0], "day"));
 			toggle_class(div1, "adjacent-month", !/*date*/ ctx[0].isSame(/*displayedMonth*/ ctx[5], "month"));
 			toggle_class(div1, "today", /*date*/ ctx[0].isSame(/*today*/ ctx[4], "day"));
 			toggle_class(div1, "svelte-q3wqg9", true);
@@ -2850,7 +2939,7 @@ function create_default_slot$1(ctx) {
 
 			attr(div0, "class", "dot-container svelte-egt0yd");
 			attr(div1, "class", div1_class_value = "" + (null_to_empty(`week-num ${/*metadata*/ ctx[6].classes.join(" ")}`) + " svelte-egt0yd"));
-			toggle_class(div1, "active", /*selectedId*/ ctx[5] === getDateUID_1(/*days*/ ctx[1][0], "week"));
+			toggle_class(div1, "active", /*selectedId*/ ctx[5] === getDateUID_1$1(/*days*/ ctx[1][0], "week"));
 		},
 		m(target, anchor) {
 			insert(target, div1, anchor);
@@ -2916,7 +3005,7 @@ function create_default_slot$1(ctx) {
 			}
 
 			if (dirty & /*metadata, selectedId, getDateUID, days*/ 98) {
-				toggle_class(div1, "active", /*selectedId*/ ctx[5] === getDateUID_1(/*days*/ ctx[1][0], "week"));
+				toggle_class(div1, "active", /*selectedId*/ ctx[5] === getDateUID_1$1(/*days*/ ctx[1][0], "week"));
 			}
 		},
 		i(local) {
@@ -3862,7 +3951,7 @@ function configureGlobalMomentLocale(localeOverride = "system-default", weekStar
     return currentLocale;
 }
 
-/* src/ui/Calendar.svelte generated by Svelte v3.31.0 */
+/* src/ui/Calendar.svelte generated by Svelte v3.32.3 */
 
 function create_fragment$7(ctx) {
 	let calendarbase;
@@ -3870,7 +3959,7 @@ function create_fragment$7(ctx) {
 	let current;
 
 	function calendarbase_displayedMonth_binding(value) {
-		/*calendarbase_displayedMonth_binding*/ ctx[12].call(null, value);
+		/*calendarbase_displayedMonth_binding*/ ctx[12](value);
 	}
 
 	let calendarbase_props = {
@@ -4004,7 +4093,7 @@ function instance$7($$self, $$props, $$invalidate) {
 
 	$$self.$$.update = () => {
 		if ($$self.$$.dirty & /*$settings*/ 256) {
-			 $$invalidate(9, today = getToday($settings));
+			$$invalidate(9, today = getToday($settings));
 		}
 	};
 
@@ -4442,7 +4531,12 @@ class CalendarPlugin extends obsidian.Plugin {
         this.addCommand({
             id: "open-weekly-note",
             name: "Open Weekly Note",
-            callback: () => this.view.openOrCreateWeeklyNote(window.moment(), false),
+            checkCallback: (checking) => {
+                if (checking) {
+                    return !appHasPeriodicNotesPluginLoaded();
+                }
+                this.view.openOrCreateWeeklyNote(window.moment(), false);
+            },
         });
         this.addCommand({
             id: "reveal-active-note",

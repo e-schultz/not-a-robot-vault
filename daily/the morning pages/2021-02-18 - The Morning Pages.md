@@ -7,7 +7,7 @@ tags: ["journal/daily/morning-pages"]
 
 # The Engineer Manager Pendulum
 
-Got reading [The Engineer Manager Pendulum](https://charity.wtf/2017/05/11/the-engineer-manager-pendulum/) by [[Charity Majors|@mipsytipsy]] 
+Got reading [The Engineer Manager Pendulum](https://charity.wtf/2017/05/11/the-engineer-manager-pendulum/) by [[Charity Majors|@mipsytipsy]]  ^2f2506
 
 Took some notes while reading it[^engp],  a few points that stood out to me
 

@@ -4,3 +4,8 @@
 > Join us in the [[Kim Crayton Community Cafe]], every Friday from 8am - 8pm
 > [discord](https://discord.com/invite/yPqnEuq5me)
 > via - [@KimCrayton1](https://twitter.com/KimCrayton1/status/1359647992693800964)
+
+
+[[KC-CC Learning Resources]]
+
+[[2021-02-19 - Seeing White Ep 3]]

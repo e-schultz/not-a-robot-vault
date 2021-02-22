@@ -40,7 +40,7 @@ Let's keep an eye on how this goes.
 
 ## Impact = Environment x Skills 
 
-Got reading  [Impact = Environment x Skills: How to make career decisions](https://www.reforge.com/blog/how-to-make-career-decisions) [^bk] by Bangaly Kabla 
+Got reading  [Impact = Environment x Skills: How to make career decisions](https://www.reforge.com/blog/how-to-make-career-decisions) [^bk] by Bangaly Kabla  ^b831ee
 
 [^bk]: [[@kabaImpactEnvironmentSkills2021]]
 
@@ -68,3 +68,7 @@ Well, 8:00am or so - and I'm starting to get hungry, listening to
 
 Going to go grab some food, then hop onto [[Kim Crayton Community Cafe]] before work.
 
+# Kim Crayton Community Cafe
+
+
+> The slow intensification of slavery" so much of this is showing itself now...i.e. look at the slow burn of trump and those who support his views and values -- Kim Crayton

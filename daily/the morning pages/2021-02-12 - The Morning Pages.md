@@ -1,6 +1,8 @@
+---
+tags: ["journal/daily/morning-pages"]
+---
+
 # 2021-02-12 - [[The Morning Pages]]
-- start: 8:40am
-- end: 
 
 [[Good Morning Evan, how are you doing this morning]]?
 

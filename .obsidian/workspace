@@ -4,26 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "19abf363bf8b9a25",
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "daily/2021-02-19 - The Morning Pages.md",
-            "mode": "source"
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "516b29783521d5c3",
+        "id": "bde7be3fe4c6d99d",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2021-02-19.md",
+            "file": "daily/fragments/2021-02-21.md",
             "mode": "source"
           }
         }
@@ -53,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#journal/daily/morning-pages",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 516
+    "width": 633
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -90,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/2021-02-19.md",
+                "file": "daily/fragments/2021-02-21.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/2021-02-19.md"
+                "file": "daily/fragments/2021-02-21.md"
               }
             }
           },
@@ -129,29 +116,30 @@
             }
           },
           {
-            "id": "5d99fe12b894fc33",
+            "id": "60c037757d26b053",
             "type": "leaf",
             "state": {
               "type": "calendar",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
     "width": 467.5
   },
   "lastOpenFiles": [
-    "daily/2021-02-19.md",
-    "daily/2021-02-18.md",
-    "daily/2021-02-19 - The Morning Pages.md",
-    "daily/Hypnotic Black Magic - Tech Clubbers Podcast 178.md",
-    "inbox/202102190801 Summarizing the Impact Framework Equation.md",
-    "daily/the morning pages/2021-02-18 - The Morning Pages.md",
-    "daily/the morning pages/_notes/The Morning Pages.md",
-    "inbox/202102190801.md",
-    "reading notes/@kabaImpactEnvironmentSkills2021.md",
-    "daily/On The 5th Day Podcast - 126 - Claudio PRC.md"
+    "daily/fragments/2021-02-21.md",
+    "inbox/202102211753 2020wk08 Summary.md",
+    "inbox/💡 - Evergreen Notes.md",
+    "inbox/Untitled.md",
+    "daily/fragments/that discomfort you're feeling - is something to work with, not avoid.md",
+    "inbox/202102211918 Learning to Get comfortable with being uncomfortable.md",
+    "inbox/202102211918.md",
+    "daily/fragments/the story behind my umbrella tattoo.md",
+    "daily/the morning pages/2021-02-02 - The Morning Pages.md",
+    "daily/the morning pages/2021-02-03 - The Morning Pages.md"
   ]
 }
