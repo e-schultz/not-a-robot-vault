@@ -4,13 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "bde7be3fe4c6d99d",
+        "id": "a01e17b8a5d280a5",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "daily/the evening ramble/_notes/Coach The Team Not The Player - adapting to change.md",
+            "mode": "source"
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "6751a452d2079bb5",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/fragments/2021-02-21.md",
+            "file": "daily/the evening ramble/_notes/Coach The Team Not The Player - adapting to change.md",
             "mode": "source"
           }
         }
@@ -40,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "testing",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,11 +70,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 633
+    "width": 633,
+    "collapsed": true
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -77,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/fragments/2021-02-21.md",
+                "file": "daily/the evening ramble/_notes/Coach The Team Not The Player - adapting to change.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -103,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/fragments/2021-02-21.md"
+                "file": "daily/the evening ramble/_notes/Coach The Team Not The Player - adapting to change.md"
               }
             }
           },
@@ -123,23 +138,22 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 467.5
   },
   "lastOpenFiles": [
-    "daily/fragments/2021-02-21.md",
-    "inbox/202102211753 2020wk08 Summary.md",
-    "inbox/💡 - Evergreen Notes.md",
-    "inbox/Untitled.md",
-    "daily/fragments/that discomfort you're feeling - is something to work with, not avoid.md",
-    "inbox/202102211918 Learning to Get comfortable with being uncomfortable.md",
-    "inbox/202102211918.md",
-    "daily/fragments/the story behind my umbrella tattoo.md",
-    "daily/the morning pages/2021-02-02 - The Morning Pages.md",
-    "daily/the morning pages/2021-02-03 - The Morning Pages.md"
+    "daily/the evening ramble/_notes/Coach The Team Not The Player - adapting to change.md",
+    "inbox/202102212237 Don't Coach the Player, coach the Team.md",
+    "daily/the evening ramble/_notes/The Playbook - EP3 - Watching Notes.md",
+    "inbox/202102212244 it was pretty common for me to have people reporting to me that were not involved on projects that I was responsible for the delivery of.md",
+    "inbox/202102212244 RS - Org Structure - Rangle.md",
+    "inbox/202102212244.md",
+    "inbox/202102212237.md",
+    "inbox/202102212223 I think I'm starting to Unmask a bit more also.md",
+    "daily/the evening ramble/2021-02-01 - The Evening Ramble.md",
+    "daily/fragments/ADHD.md"
   ]
 }

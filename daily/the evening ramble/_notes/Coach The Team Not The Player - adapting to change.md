@@ -1,11 +1,13 @@
 Thinking back to [[The Playbook - EP3 - Watching Notes|The Playbook - EP3]], and one of the rules that has been bouncing around my head [[2021-02-02|today]] has been
 
 
-> [[The Playbook - EP3 - Watching Notes#6 Don't Coach the Player coach the Team|Don't Coach The Player - Coach The Team]]
+> [[202102212237 Don't Coach the Player, coach the Team|Don't Coach The Player - Coach The Team]]
 
 and how that relates to me and my experience being a manager.
 
-When I was a worked at Rangle, due to the nature of the company, the structure of projects - it was pretty common for me to have people reporting to me that were not involved on projects that I was responsible for the delivery of.
+When I was a worked at Rangle, due to the nature of the company, the structure of projects - it was pretty common for me to have people reporting to me that were not involved on projects that I was responsible for the delivery of. [^1]
+
+[^1]: [[202102212244 it was pretty common for me to have people reporting to me that were not involved on projects that I was responsible for the delivery of]]
 
 It was common for people to move between projects depending on the staffing needs, the size of the project, new clients coming in, etc.
 

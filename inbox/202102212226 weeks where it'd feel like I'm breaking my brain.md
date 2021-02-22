@@ -1,0 +1,6 @@
+- [[Neurodiverse Tech]]
+- [[neurodiverse at work]]
+- learning how to adapt 
+	- tools like Otter
+- First time being open about it at work
+	- 

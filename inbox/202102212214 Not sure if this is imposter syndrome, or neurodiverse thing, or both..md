@@ -1,0 +1,37 @@
+## Not sure if this is imposter syndrome, or #neurodiverse thing, or both.
+
+- [Tweet](https://twitter.com/i/status/1357857483658829824) by [@evan_just_evan](https://twitter.com/evan_just_evan) on [[2021-02-05]]: [[@evan_just_evan]]
+- Not sure if this is imposter syndrome, or #neurodiverse thing, or both.
+  - For the longest time, I was convinced that I wasn't smart - that I was just faking it really well, and somehow would get exposed for being a complete idiot. ^8ab21f
+  - Like, I'm pretty daft.
+- In Grade 3,
+  - I had a teacher try to put me into special ed - I had a bad stutter, couldn't read out loud, she liked to yell at me - not a great mix.
+  - So I remember doing a test to see if I should goto special ed
+- Apparently not,
+  - Then shortly after - I was taking a test to see if I should be going into the gifted/enriched program.
+  - Apparently, I bombed it the first time on purpose because I didn't want to change schools.
+  - Then I did it again, did fine - but stayed at my school
+- (that part is a bit fuzzy in my memory, but it's how my mom tells it)
+  - My grades were usually a few things I did very well in, and then a bunch of stuff with low grades.
+  - It was either like B+ or with no effort, or a D's / fails - when I was putting in so much effort.
+- "You could do good if you only applied yourself"
+  - *gestures to the few good grades as proof of me applying myself*
+  - "You could do good if you only tried"
+  - "You have so much potential"
+- While being dismissive of the things that I was good at.
+  - It made me not trust in the things that I was good at.
+  - There were some subjects that just clicked with me, and I excelled at without much effort compared to other classes
+- Then there were subjects that I liked, or wanted to like - and tried really hard at.
+  - Sometimes I ended up doing well.
+  - Often they would be my worse grades.
+- So I kind of got it in my head, that being smart was
+  - doing well at hard things
+  - but have a hard time at doing well
+  - If that makes sense.
+  - Like, if something was easy for me - I didn't trust I was actually good at it, because it wasn't hard.
+- And even as an adult now, I know that there are certain types of work that I can excel in, and certain ways that I work that can really leverage how I think.
+  - But, I still find myself falling into the
+  - "If I tried just a little harder at X, then I would be better at it" trap.
+- I do enjoy hard things and new challenges - but sometimes not so great at identifying when the challenge is, is it challenging:
+  - Because my brain just doesn't work that way
+  - Because it's a hard problem - that is a good match for how I work.

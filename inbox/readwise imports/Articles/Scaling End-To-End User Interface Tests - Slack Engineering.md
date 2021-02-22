@@ -24,7 +24,7 @@
   Methods within a component should only modify the piece of UI that they’re written for. The component for the channel sidebar shouldn’t interact with the message input, for instance.
   Try to only break items into components where it makes sense rather than creating a lot of smaller components.
   The UI Abstraction is stateless. The test should maintain the state and validate against it.
-- This allows us to provide context for our selectors so they aren’t impacted by JS/CSS changes
+- This allows us to provide context for our selectors so they aren’t impacted by JS/CSS changes ^e1d6f9
     - **Note:** when tests fail for reasons that have nothing to do with the thing you are testing, confidence drops - tests should pass, or fail for expected and related reasons.
 - Try to only break items into components where it makes sense rather than creating a lot of smaller components.
     - **Note:** I've noticed a trend with components, depending on the team where they can fall onto two extremes
