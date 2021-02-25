@@ -19,9 +19,7 @@ I think there is alot of value in writing - either it be for a blog, internal do
 
 # [[The Playlist]] - MÄEM - DEEP DIVE 126 BPM
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/914725114&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/6oxx8fraqyj2" title="MÄEM" target="_blank" style="color: #cccccc; text-decoration: none;">MÄEM</a> · <a href="https://soundcloud.com/6oxx8fraqyj2/maem-deep-dive-126-bpm" title="MÄEM - DEEP DIVE 126 BPM" target="_blank" style="color: #cccccc; text-decoration: none;">MÄEM - DEEP DIVE 126 BPM</a></div>
-
-This set has been one that's been on my playlist frequently - haven't dug into their other stuff yet, but I should at some point.
+![[202102221933 Maem Deep Dive - on frequent repeat]]
 
 # [[Learning Culture vs Teaching Culture]]
 

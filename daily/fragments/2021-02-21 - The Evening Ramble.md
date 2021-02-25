@@ -1,3 +1,7 @@
+---
+tags: ["journal/daily/evening-ramble"]
+---
+
 # 2021-02-21 - [[The Evening Ramble]]
 
 # Raw Signal Training

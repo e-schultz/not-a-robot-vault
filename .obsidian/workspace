@@ -4,65 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "478c1904125c88f1",
+        "id": "a18245cdbdd7558f",
         "type": "leaf",
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/202102220833 Morning Reading.md",
-            "mode": "source"
+            "file": "inbox/202102241819 Trying to unfuck DEI.md",
+            "mode": "preview"
           },
           "pinned": true
-        },
-        "group": "621de7275f8e1745"
+        }
       },
       {
-        "id": "b7701c7afd959c33",
+        "id": "5b47fa592f433f91",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/202102241821 😶 AntiracistEcoomist Guiding Principals - @KimCrayton.md",
+            "mode": "preview"
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "477247dfcab57614",
         "type": "leaf",
         "active": true,
-        "pinned": true,
-        "state": {
-          "type": "localgraph",
-          "state": {
-            "file": "inbox/202102220833 Morning Reading.md",
-            "options": {
-              "collapse-filter": true,
-              "search": "",
-              "localJumps": 3,
-              "localBacklinks": true,
-              "localForelinks": true,
-              "localInterlinks": false,
-              "showTags": false,
-              "showAttachments": false,
-              "hideUnresolved": false,
-              "collapse-color-groups": true,
-              "colorGroups": [],
-              "collapse-display": true,
-              "showArrow": false,
-              "textFadeMultiplier": 0,
-              "nodeSizeMultiplier": 1,
-              "lineSizeMultiplier": 1,
-              "collapse-forces": true,
-              "centerStrength": 0.518713248970312,
-              "repelStrength": 10,
-              "linkStrength": 1,
-              "linkDistance": 250,
-              "scale": 1.2372227893448209,
-              "close": false
-            }
-          },
-          "pinned": true
-        },
-        "group": "621de7275f8e1745"
-      },
-      {
-        "id": "a978d56cbd765c76",
-        "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tweet-threads/evan_just_evan/@evan_just_evan.md",
+            "file": "reading notes/@craytonGuidingPrinciplesHashtagcauseascene2021.md",
             "mode": "source"
           }
         }
@@ -92,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rigid con",
+                "query": "walk",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,8 +83,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -131,12 +104,12 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/202102220833 Morning Reading.md",
+                "file": "reading notes/@craytonGuidingPrinciplesHashtagcauseascene2021.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -146,7 +119,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "frequency",
                 "useHierarchy": true
               }
             }
@@ -157,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/202102220833 Morning Reading.md"
+                "file": "reading notes/@craytonGuidingPrinciplesHashtagcauseascene2021.md"
               }
             }
           },
@@ -184,15 +157,15 @@
     "width": 467.5
   },
   "lastOpenFiles": [
-    "inbox/202102220833 Morning Reading.md",
-    "daily/2021-02-17.md",
-    "daily/the morning pages/2021-02-04 - The Morning Pages.md",
-    "inbox/202102220840 evan just evan on Rigid vs Flexible Consistency.md",
-    "daily/2021-02-22 - The Morning Pages.md",
-    "inbox/202102220840 evan_just_evan on Rigid vs Flexible Consistency.md",
-    "inbox/202102220840.md",
-    "reading notes/@cunffPowerFlexibleConsistency2020.md",
-    "reading notes/@majorsThingsKnowEngineering2020.md",
-    "reading notes/@cunffAmbidextrousMindsetHow2021.md"
+    "reading notes/@craytonGuidingPrinciplesHashtagcauseascene2021.md",
+    "inbox/202102241821 😶 AntiracistEcoomist Guiding Principals - @KimCrayton.md",
+    "inbox/202102241825 😶 Lack of Inclusion is a Risk Crisis Management Issue.md",
+    "inbox/202102241826 Prioritize the Most Vulnerable.md",
+    "inbox/202102241824 😶 Intention without Strategy is Chaos.md",
+    "inbox/202102241825 Lack of Inclusion is a Risk Crisis Management Issue.md",
+    "inbox/202102241824 Intention without Strategy is Chaos.md",
+    "inbox/202102241823 Tech is Not Neutral, Nor is it Apolitical.md",
+    "inbox/202102241819 Trying to unfuck DEI.md",
+    "inbox/202102241833 😶 Definitions.md"
   ]
 }

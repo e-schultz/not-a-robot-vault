@@ -6,11 +6,11 @@ tags: [journal/daily/evening-ramble]
 
 # Resisting the Urge to Import
 
-Every time I start a new vault, library, or using a note taking app / knowledge management system - there is a part of me that wants to do a bulk import of everything that I have written before. 
+Every time I start a new vault, library, or using a note taking app / knowledge management system - [[202102231835 Why I resist the urge to bulk import into new knowledge management systems|there is a part of me that wants to do a bulk import of everything that I have written before.]] 
 
-And considering how much stuff I have scattered around - it is, alot - especially when I have been using apps like [[Readwise]], [[Instapaper]], having things sycned with [[Goodreads]], [[Notion]], etc ---- I have an abundance of content that I could just bulk import all at once.
 
-But, I think I shall resist that urge - and let this grow a bit more organically over time, and since I do have lots of stuff written in other places - and can find it pretty easily, pull it over as it makes sense.
+![[202102231835 Why I resist the urge to bulk import into new knowledge management systems#^0010d9]]
+
 
 # Write about what you are interested in
 
@@ -249,20 +249,8 @@ moved to -> [[202102212320 Isolation has me wondering what was anxiety vs sensor
 
 ## Alternatives to Clean Code 
 
-Uncle Bob is problematic, and it's pretty common that his books Clean Code, and Clean Architecture get recommended. 
+Uncle Bob is problematic, and it's pretty common that his books Clean Code, and Clean Architecture get recommended, so it's time to [[202102231843 Stop inviting the racist uncle to your book club|stop inviting the racist uncle to your bookclub]]
 
-However, [Tech Bullshit Explained: Uncle Bob](https://techexplained.substack.com/p/tech-bullshit-explained-uncle-bob)[^tbe] goes into a few of the reasons why he's a problem.
-
-
-[^tbe]: [[@melissamcewen]]  [tweeted](https://twitter.com/melissamcewen/status/1280587324863270912) a link to her article 
-
-So, it's not that uncommon that you [see people asking for alternative books](https://twitter.com/HarleenQuinzell/status/1357259882198622214) pretty often. 
-
-Awhile ago [[@dev_nikema]] [tweeted](https://twitter.com/dev_nikema/status/1350233517137907713) asking the question:
-
-> If someone wanted to get Clean Code but would like to avoid uncle B6b, what alternative would you recommend? Someone is not me. I mentioned The Pragmatic Programmer but I haven't gone through it yet. I'm not familiar with Clean Code either so I don't know if they are comparable - [dev_nikema](https://twitter.com/dev_nikema/status/1350233517137907713) 
-
-Some really good suggestions in that thread.
 
 
 

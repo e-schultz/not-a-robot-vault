@@ -1,3 +1,6 @@
+---
+tags: ["journal/daily/evening-ramble"]
+---
 # 2021-02-10 - [[The Evening Ramble]]
 
 - 5:58pm - wrapped up the day

@@ -4,9 +4,9 @@
 
 [^1]: [[@evan_just_evan]] 
 
-- So - quick thought on [[rigid consistently]] vs [[flexible consistency]]
+- So - quick thought on [[Rigid Consistency]] vs [[flexible consistency]]
   - recently I've started to get back into writing in my journal daily in the morning and having my [[The Morning Pages]]
-  - also been enjoying the [[evening ramble]]
+  - also been enjoying the [[The Evening Ramble|evening ramble]]
 - (Can you tell I plan on copy-pasting this thread into my notes?)
   - But - this morning, haven't gotten around to writing my morning pages yet - and, I might not get around to it.
 - If I was stuck in the [[Rigid Consistency]] mindset - I might be
