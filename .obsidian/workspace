@@ -4,39 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "a18245cdbdd7558f",
+        "id": "e1ea1dd43288efcd",
         "type": "leaf",
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/202102241819 Trying to unfuck DEI.md",
-            "mode": "preview"
+            "file": "daily/2021-02-26 - The Morning Pages.md",
+            "mode": "source"
           },
           "pinned": true
         }
       },
       {
-        "id": "5b47fa592f433f91",
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/202102241821 😶 AntiracistEcoomist Guiding Principals - @KimCrayton.md",
-            "mode": "preview"
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "477247dfcab57614",
+        "id": "c7d1237c060c494f",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "reading notes/@craytonGuidingPrinciplesHashtagcauseascene2021.md",
+            "file": "reading notes/@schifferMailchimpEmployeesHave2021.md",
             "mode": "source"
           }
         }
@@ -66,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "walk",
+                "query": "iframe",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 633,
-    "collapsed": true
+    "width": 633
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -104,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "reading notes/@craytonGuidingPrinciplesHashtagcauseascene2021.md",
+                "file": "reading notes/@schifferMailchimpEmployeesHave2021.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -130,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "reading notes/@craytonGuidingPrinciplesHashtagcauseascene2021.md"
+                "file": "reading notes/@schifferMailchimpEmployeesHave2021.md"
               }
             }
           },
@@ -157,15 +143,15 @@
     "width": 467.5
   },
   "lastOpenFiles": [
-    "reading notes/@craytonGuidingPrinciplesHashtagcauseascene2021.md",
-    "inbox/202102241821 😶 AntiracistEcoomist Guiding Principals - @KimCrayton.md",
-    "inbox/202102241825 😶 Lack of Inclusion is a Risk Crisis Management Issue.md",
-    "inbox/202102241826 Prioritize the Most Vulnerable.md",
-    "inbox/202102241824 😶 Intention without Strategy is Chaos.md",
-    "inbox/202102241825 Lack of Inclusion is a Risk Crisis Management Issue.md",
-    "inbox/202102241824 Intention without Strategy is Chaos.md",
-    "inbox/202102241823 Tech is Not Neutral, Nor is it Apolitical.md",
-    "inbox/202102241819 Trying to unfuck DEI.md",
-    "inbox/202102241833 😶 Definitions.md"
+    "reading notes/@schifferMailchimpEmployeesHave2021.md",
+    "inbox/202102261558 Tech continues to cause harm by not being inclusive.md",
+    "daily/2021-02-26 - The Morning Pages.md",
+    "daily/2021-02-26.md",
+    "inbox/202102261627 Starting my re-education of racism.md",
+    "daily/fragments/anti-racist.md",
+    "inbox/202102261627.md",
+    "inbox/202102261558.md",
+    "remote/readwise-review-inbox-vault/zets/202102260822  RW-R Becoming a Manager - unprepared for team meetings.md",
+    "inbox/202102231843 Stop inviting the racist uncle to your book club.md"
   ]
 }

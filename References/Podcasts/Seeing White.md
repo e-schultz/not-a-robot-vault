@@ -5,7 +5,7 @@ Seeing White is a podcast series on exploring the concepts of whiteness, how whi
 ## Episode List
 -  [S2 E1: Turning the Lens](http://www.sceneonradio.org/episode-31-turning-the-lens-seeing-white-part-1/)
 -  [S2 E2: How Race Was Made](http://www.sceneonradio.org/episode-32-how-race-was-made-seeing-white-part-2/)
--  [[SW - S2E3 - Made in America]]^8910fe
+- [S2 E3: Made in America](http://www.sceneonradio.org/episode-33-made-in-america-seeing-white-part-3/)  ^ca1a52
 -  [S2 E4: On Crazy We Built a Nation](http://www.sceneonradio.org/episode-34-on-crazy-we-built-a-nation-seeing-white-part-4/)
 -  [S2 E5: Little War on the Prairie](http://www.sceneonradio.org/episode-35-little-war-on-the-prairie-seeing-white-part-5/)
 -  [S2 E6: That’s Not Us, So We’re Clean](http://www.sceneonradio.org/episode-36-thats-not-us-so-were-clean-seeing-white-part-6/)
