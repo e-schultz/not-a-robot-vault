@@ -4,26 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "e1ea1dd43288efcd",
+        "id": "9c1009458ad22a7d",
         "type": "leaf",
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2021-02-26 - The Morning Pages.md",
-            "mode": "source"
+            "file": "inbox/202102262117 Neurodiverse Workflows Start.md",
+            "mode": "preview"
           },
           "pinned": true
         }
       },
       {
-        "id": "c7d1237c060c494f",
+        "id": "1b3b9bf773ab1ab0",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "reading notes/@schifferMailchimpEmployeesHave2021.md",
+            "file": "inbox/refactored/2021/02/26/2102261103 - Hybrid Async and Sync Workflows.md",
             "mode": "source"
           }
         }
@@ -74,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 633
+    "width": 633,
+    "collapsed": true
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -90,12 +91,12 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "reading notes/@schifferMailchimpEmployeesHave2021.md",
+                "file": "inbox/refactored/2021/02/26/2102261103 - Hybrid Async and Sync Workflows.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               }
             }
           },
@@ -116,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "reading notes/@schifferMailchimpEmployeesHave2021.md"
+                "file": "inbox/refactored/2021/02/26/2102261103 - Hybrid Async and Sync Workflows.md"
               }
             }
           },
@@ -136,22 +137,23 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
     "width": 467.5
   },
   "lastOpenFiles": [
-    "reading notes/@schifferMailchimpEmployeesHave2021.md",
-    "inbox/202102261558 Tech continues to cause harm by not being inclusive.md",
-    "daily/2021-02-26 - The Morning Pages.md",
-    "daily/2021-02-26.md",
-    "inbox/202102261627 Starting my re-education of racism.md",
-    "daily/fragments/anti-racist.md",
-    "inbox/202102261627.md",
-    "inbox/202102261558.md",
-    "remote/readwise-review-inbox-vault/zets/202102260822  RW-R Becoming a Manager - unprepared for team meetings.md",
-    "inbox/202102231843 Stop inviting the racist uncle to your book club.md"
+    "inbox/refactored/2021/02/26/2102261103 - Hybrid Async and Sync Workflows.md",
+    "inbox/202102262117 Neurodiverse Workflows Start.md",
+    "inbox/readwise imports/Tweets/Just Tried Something For....md",
+    "inbox/refactored/2021/02/26/2102261103 - .md",
+    "inbox/2102261023 -.md",
+    "inbox/refactored/2021/02/26/2102261023 - What tools do I use, and why.md",
+    "inbox/202102262257 The Wait I Actually Want To Read Inbox.md",
+    "inbox/202102262257.md",
+    "inbox/refactored/2021/02/26/Untitled.md",
+    "inbox/refactored/2021/02/26/2102261023 - .md"
   ]
 }

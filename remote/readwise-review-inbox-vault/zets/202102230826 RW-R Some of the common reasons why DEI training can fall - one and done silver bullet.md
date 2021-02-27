@@ -3,10 +3,12 @@ tags: ["inbox/readwise-review/bookreview/b6276233/hl"]
 ---
 %%
 - meta
+	- UID: 202102230826
 	- created: 2021-02-23
-	- last updated: 2021-02-23
+	- last updated: 2021-02-26
 	- citation key: @kimHowNotSuck2020
 	- readwise: https://readwise.io/bookreview/6276233?highlight=109757374
+	- obsidian url:  [202102230826](obsidian://open?vault=readwise-review-inbox&file=inbox%2Fzets%2F202102230826%20RW-R%20Some%20of%20the%20common%20reasons%20why%20DEI%20training%20can%20fall%20-%20one%20and%20done%20silver%20bullet)
 %%
 
 > **Silver Bullet Band-aid**

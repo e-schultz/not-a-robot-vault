@@ -11,7 +11,7 @@ Something I've noticed in the past - especially if I am starting to enter a bit 
 
 This can be a bit of a trauma response for me - warning signs are going off that something isn't "quite right" - and I'm trying to gather as much information, connect the dots between things and figure out what's going on.
 
-The good mood is being propelled by this very intense energy, and being in that state - often other aspects of my self-care routine might start falling apart. 
+The good mood is being propelled by this very intense energy, and being in that state - often other aspects of my self-care routine might start falling apart.  ^dcd6d3
 
 The good mood, is also part me trying to convince myself that everything is fine - but also trying to project to others that everything is fine.
 

@@ -1,0 +1,172 @@
+# Impact = Environment X Skills: How to Make Career Decisions — Reforge
+
+- Author: reforge.com
+- Full Title: Impact = Environment X Skills: How to Make Career Decisions — Reforge
+- Category: #articles #readwiseimport
+- URL: https://www.reforge.com/blog/how-to-make-career-decisions
+- Cover: ![](https://readwise-assets.s3.amazonaws.com/static/images/article2.74d541386bbf.png)
+
+### Highlights first exported February 26, 2021 at 9:21 PM
+
+- Impact = Environment x Skills: How to make career decisions
+- Bangaly Kaba is a Reforge Partner. He previously served as Instagram's Head of Growth and helped the social network surpass one billion monthly active users, making it the world's fastest-growing app. Bangaly also led Growth at Instacart and served as a Senior PM at Facebook. Bangaly has made significant contributions to the Reforge Growth Series and Retention + Engagement Deep Dive. Learn more from Bangaly by becoming a Reforge member. This post also contains contributions by Joanna Lord (ex-CMO at Skyscanner, ClassPass), Behzod Sirjani (ex-Slack, FB), and Adam Grenier (ex-Lambda School, Uber).
+    - **Note:** - who is Bengaly Kaba
+- During my time at Facebook, I was fortunate to manage a lot of Rotational Product Managers (RPMs). RPMs would do multiple 6-month stints in different parts of the org, then at the end of the rotation, they would choose a full-time placement.
+    - **Note:** Haven't heard the term Rotational Project Manager (RPMs) before - but I have talked about having people rotate between teams, and also having that process be smoother - can this apply to more than RPMs?
+- At the end of their rotation, I would always initiate the same conversation:"How are you going to choose your next rotation?""How are you thinking about full-time placement after you finish your rotations?"After a number of these conversations, I realized that many struggled with the decision. But it is a key one to understand how to make. We all face this type of decision multiple times throughout our careers.
+    - **Note:** Figuring out what you want to do next in your career can always be tricky - even if it's not within the context of an RPM cycle. 
+      Everyone faces similar choices multiple times.
+- "Should I leave my current role?""How do I compare or choose between two or more opportunities?""What is preventing me from moving forward?"
+    - **Tags:** #career-decisions, #career-growth
+    - **Note:** - do we switch projects?
+      - teams?
+      - career paths?
+      - what projects do we take on, vs not, and why?
+- In this post, I'll go through:How impact is the fuel of career progression.The common traps of career decisions.Impact = Environment x Skills (my personal framework for evaluating these decisions).Step by step on how to use the Impact = Environment x Skills framework.Keys to using the framework for your own decisions.
+- Impact Powers Career Progression
+    - **Note:** 🔍 Impact Powers Career Progression
+- When thinking through these situations, people often solve for the wrong things. Most often, people think about career advancement as increases in compensation. Compensation and career advancement are correlated, but not the same.
+    - **Note:** compensation is not the main motivator, they are related but not the same. You can progress without it being directly tied to a promotion or raise - even though they are closely related.
+- Compensation is the output, impact is the input.
+    - **Note:** 🔍 Compensation is the output, impact is the input
+- Evaluating impact isn't easy. It is complicated by a few factors:Impact is the result of multiple other variables.Those variables are interrelated and have confounding factors.Impact can be subjective to the individual.A lot of times you aren't even aware of what is holding you back, or what to evaluate on.
+    - **Tags:** #career-decisions
+    - **Note:** If impact is the input that powers career progression, what are the complicating factors and why?
+- The Common Traps Of Career Decisions
+    - **Note:** 🔍 The Common Traps Of Career Decisions
+- Complicated career decisions have many traps that are easy to fall into. There are 6 common ones that I have seen:
+    - **Note:** what are the six common traps, and how do they impact things?
+- Choosing To Work On The Shiny Object
+- People assume that the cool shiny thing will get them visibility, have the resources it needs, or be reputable to put on the resume. But none of that matters if your manager doesn't give you the space to work well, or your team isn't the right team to solve that problem. You still have to evaluate all the components rather than take them as givens otherwise you overestimate the value of working on something shiny vs. what you actually need in order to grow your career.
+    - **Note:** - Trap: Choosing To Work on Shiny Object
+      - Assumption: The cool new thing will be high visibility, and that will translate to high impact
+      - Impact: If you are not the right match for it, or the team, or the team isn't the right one to solve that problem. You need to evaluate all of the parts, and there could be the opportunity to make a bigger impact on something that isn't shiny and new.
+- “When I shifted from running all of central marketing for Uber to "Innovation" I was so excited to work on Autonomous Cars and Uber Elevate (flying cars). While those projects gave me unique insight, it was actually my work on Uber Freight and Driver Education that was both more satisfying and rewarding. As a growth person, having actionable customer needs vs. prospective customer needs meant my skills were more applicable to the problems both were facing at that moment. So my impact was significantly more measurable and tangible to both myself and the teams I worked with.” - Adam Grenier (Reforge Parnter, ex-Uber, HotelTonight)
+- "I Just Need To Work On Myself More"
+- A second trap is thinking that you just need to work on yourself in order to grow your career. For example, "To progress, I just need to get better at [insert skill.]" But you are only one part of the equation.There is a whole other part of the equation, which is your environment. Your environment either limits or amplifies your own ability to get better at a skill.
+    - **Tags:** #career-decisions, #career-growth
+    - **Note:** - Trap: "I just need to work on myself more"
+      - Assumption: You need to focus on improving X
+      - Impact: You need to consider the environment. if you don't, you could end up in a place that limits your ability to work on that skill instead of amplify it.
+- Leaving this out of the equation when making career decisions leads to navigating yourself to very frustrating situations where you feel like you are getting better but that isn't translating to impact and career progression. Remember, the variables of your environment are just as important as the variables of you.
+    - **Note:** > Remember, the variables of your environment are just as important as the variables of you.
+- “After a few years of working on the Ads & Pages team at Facebook, I had the opportunity to interview with other teams as I looked for a new role. The best advice I received was to think about the kind of environment I wanted to work in - who I wanted to work with, what I wanted to work on, and what I wanted to learn from that experience. It helped me realize that the skills I wanted to learn would be a lot harder to cultivate in that environment because the teams were so large that I needed to play a specific role, one that only accounted for a fraction of what I wanted to learn. Ultimately, it helped me realize that the best thing for me was to leave Facebook and join a company that had a better environment for what I was looking for at the time.” - Behzod Sirjani (Reforge Partner, ex-Slack, FB)
+    - **Note:** consider - what does the best environment look like for you? can you describe it? - can you communicate it?
+- Short-Term Thinking
+- Excellent operators can easily fall into the trap of short-term thinking — always being focused on the next project, the next hurdle, or the next milestone. But this can end up leading to three things:Hitting a local maximum very quickly.Not realizing you are at a local maximum.Not having a view of how to get out of the local maximum.
+    - **Note:** - how do identify if your at your at a local maximum
+      - how do you break out of a local maximum?
+- You need to pick your head up and evaluate what the current ceiling is for you and understand if your environment has truly set you up for success to reach that ceiling.“This is probably one of the hardest challenges I see my teams struggle with. There is both a strong sense of just “keeping my head down and incrementally getting better day by day” and also a strong sense of loyalty that comes up when picking your next move or role - either loyalty to your current company, your current manager, or current project. However, often the right move is to really shake it up and try something entirely new and that takes a longer-term view on your options.” - Joanna Lord (Reforge Partner, ex-CMO at Skyscanner, ClassPass)
+- Solving For Brand
+- working for a top brand company does help you progress in your career. It helps create a signal, which provides you with more opportunities and leverage down the line. Top brands also tend to give you access to good learning environments, world-class managers, and top compensation.But, and this is a big but, there are tons of "good" brands that don't have these things. Bad managers, roles, lack of scope, and other important factors can still exist. There is a difference between solving for brand, and considering it in the overall equation. Going to a brand just because of the brand is a bad idea. You need to evaluate it thoughtfully vs. using it as a shortcut to the decision.
+- The Seductive Cesspool of Mediocrity
+- Every year I sit down and ask myself a series of questions. More on those questions later, but what I'm trying to do is avoid what I call the seductive cesspool of mediocrity. It's easy to work yourself into a situation where you are good at something and it's comfortable. But if you let that sit for too long, it translates into hitting a ceiling on learning, which can lead to overall unhappiness.
+    - **Note:** - "seductive cesspool of mediocrity" - getting lulled into easy work because it's comfortable, but can hit the ceiling on learning, stop growing, and then get uninterested.
+- At the end of the day, you are responsible for pushing yourself. Having a systematic way to recognize where you are, what's changed, and where you need to go helps make affirmative decisions of what you need to do in your career to move forward.
+    - **Note:** - self reflection can help you identify where you need to push, being mindful in how you approach things and what you say yes or no to
+- Mixing Perception and Truth
+- I received a lot of feedback from really smart people that it was a bad move. At the time, there was an outside perception that the Instagram team didn't care about growth. So those outsiders were giving me feedback based on that perception.This is a common scenario. You have an important career decision to make, therefore you seek outside advice and opinion. The problem is mixing that opinion with actual truth. Outside advice is going to be given based on whatever outside perception there is on the situation. But perception does not equal truth.
+- You have to go through the interview process, do your own investigation, and put in the work to understand what is truly happening.
+    - **Note:** don't rely on 'rumour level knowledge' of how a team or opportunity is, do some digging and investigation to understand what is perception vs reality
+- “The best advice I got from an old mentor was “to do the work to form my own opinion” when considering a new role or a move within a company. It’s always good to get inputs from others but it will always come from their experiences and biases and those don’t necessarily transfer to you. It’s important to do your own evaluation.” - Joanna Lord (Reforge Partner, ex-CMO at Skyscanner, ClassPass)
+    - **Note:** I remember when someone who started to report to me was going onto a project that had burnt me out. I had heard alot about how it had improved since then, even if I was still licking my wounds from it.
+      I didn't want my experience to sway them too much, and had been hearing from people I trusted that it had improved. They ended up loving being on that project.
+      They had also talked to other people first as well.
+      - expand on the lessons learned from the project and period of my life that burnt me out
+- Impact = Environment x Skills
+- Career decisions, like which role should I take next, are some of the most impactful decisions you can make. Most of the time we are optimizing for career progression. Impact is the thing that powers career progression. But solving for impact can be difficult because:Impact is the result of multiple other variables.Those variables are interrelated and have confounding factors.Impact can be subjective to the individual.A lot of times you aren't even aware of what is holding you back, or what to evaluate on.
+- mpact = Environment x Skills
+- The framework I’ve used is Impact = Environment x Skills. What this means is: We need to solve for is Impact. Impact is the product of our Environment and our Skills. If our skills are great, but the environment is wrong (or vice versa), then we aren't set up for success.
+    - **Tags:** #impact-framework
+    - **Note:** ![impact framework equation](https://images.squarespace-cdn.com/content/v1/56f152a22fe131e76648aba3/1613492434373-3MH795MEXRG9Q2TQLEKA/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p52bY8kZn6Mpkp9xtPUVLhvLurswpbKwwoDWqBh58NLxQZMhB36LmtxTXHHtLwR3w/Impact+Environment+Skills.png?format=1500w)
+- It's Not About A Spreadsheet of InputsThe goal of the framework is not to try and boil a decision like this down to a set of spreadsheet inputs that spits out a "right" answer. Instead, the goal of the framework is to:Be able to name the individual variables that are inputs into the decision.Evaluate each individual variable in a structured way.Understand the relationship between each variable.Narrow the decision down to the true problem (or most important variable) so that you can focus your energy on grappling with that piece.
+    - **Note:** Don't confuse this with a checklist, it's an analysis
+- What I'd like to do for the rest of this post is break down the following:The variables in the frameworkWhy the variables are importantStep-by-step on how to evaluate each variableCommon scenarios and situations
+    - **Note:** what are the variables in the framework? expand on each
+      - The variables in the framework
+      - Why the variables are important
+      - Step-by-step on how to evaluate each variable
+      - Common scenarios and situations
+- Environment
+- Your Environment is everything that enables you to do great work that is outside of your direct control.
+- Manager - Your manager isn't just someone you report to. It is the person responsible for growing your career and shaping your output. This person should be invested in helping you do your best work. This variable can only be evaluated by talking to the people they currently and formerly managed.
+    - **Note:** Your manager is responsible for growing your career, and helping shape your output - talk to other people managed by them, what do they say?
+      - question: How am I effectively growing peoples careers, shaping their output - what could I be doing better or differently?
+- Resources - Resources are more than people and capital. Resources are the things you need to do the job well. For some roles you may need process, admin support, and a budget. In others you need no red tape, the space to be creative and take risks, or the ability to take long term bets.
+- Scope - Your scope is the runway you have to do your best work. You need to evaluate how your scope aligns to what the company needs and what you are capable of handling. You want scope that is a little bigger than what you are currently capable of, but not so big that you have a hard time executing. You want to look for situations where the immediate scope is clear, with more on the horizon.
+    - **Note:** scope - increase it a bit, but not so much that you can't handle it.
+- Team - There are three components to team. Do you have the number of people you need? Is the team you have capable? Is the team functioning well? A lot of times you are missing one of these three things. Ideally you have a capable, high functioning team. If you do, then it is typically easy to make a case to get more people. But when you have a team that isn't capable or high functioning, it is hard to make a case for more.
+- Compensation - Your compensation is a reflection of the work you are doing. If you are killing it in the role, but don't feel fairly compensated, it will be a drag on your motivation. Most importantly, the company compensation philosophy needs to enable hiring the people you need to execute well. If your product is around machine learning, but the company isn't able to or willing to pay the rates for machine learning engineers, then you won't be able to go very far.
+- Company Culture - The culture of the company needs to align with your beliefs and working style. Things like work-life balance are included in culture. The more misaligned the working culture is, the less motivated or enthusiastic you will be about the work.
+    - **Note:** each team within a company can have it's own subculture - how does that fit in?
+- Skills
+- Skills are the things that are within your direct control that enable your success.
+    - **Note:** things that are in your control: skills
+- The exact skills will vary from function to function and role to role. But there tend to be four common areas of skills:
+    - **Note:** - question: What are the four areas of skills
+      - question: Why do they matter?
+      - question: How can you improve them?
+      - question: Where am I at with them?
+- Communication - In any function, a key part of progression is your ability to get better at what you convey, how you convey it, and whom you convey it to.
+    - **Note:** communication is a very broad skill - question: what are the sub skills that make this up?
+- Influence/Leadership - As an IC, you are responsible for influencing your peers on your direct team. As you become a manager, you need to influence the people you directly manage, but also indirectly influence people you don't manage. Then as you move up in management, you do less direct downward influencing and more indirect influencing across the company. Influence is the hardest skill, because it depends on the characters around you. You can be great at it, but perhaps the people around you aren't.
+    - **Note:** reminds me a bit of managing up / managing across. 
+      I also remember before I became a manager, I was in a spot where it felt like I had 'lots of influence, but little authority' - which was an interesting but useful spot to be in. expand on tk
+- Strategic Thinking - Strategic thinking is your ability to see the forest through the trees. As an IC you learn to do the work. As you grow in your career, you need to learn how you anticipate the work. You need to understand the bigger system, the needs of the system, and where you and your team align with that system.
+    - **Note:** challenge I can find at times - is shifting between strategic thinking and execution. 
+      Being able to understand the bigger picture is important, and as a manager - being able to convey that to the team, and to the individual is important as well.
+- Execution - Your execution skills are the nuts and bolts of your specific role. As a few of the other Reforge EIRs and I noted in Crossing the Canyon: Product Manager to Product Leader and Marketer to Marketing Leader, you initially get judged on your own execution early in your career. It is a pre-requisite for becoming a manager, even though it isn't correlated with management skills. Once you become a manager, you are judged on the execution of your team, not yourself, which means you have to rely more on the other skills mentioned.
+- Step by Step On How To Use The FrameworkLets walk through a step-by-step of how to use the framework. We'll go through 6 steps:Spell Out Your VariablesGive Each Variable A ScoreIdentify What Matters MostEvaluate Your Ability To Change The VariableUnderstand The Time Horizon Of ChangeMap Your Variables to Decisions and Areas of Development
+    - **Note:** - what are the steps in the framework
+      - explain in your own words
+- 1. Spell Out Your Variables
+- The first step is simple. Lay out the variables in your impact equation. Being able to name the atomic units of what creates impact already puts you ahead of the rest. Doing this creates the ability to think about each one independently and deeply. It will be easier to ask important questions like:
+- What is happening with this variable?Which ones are in flux?Where are there weaknesses?Which ones are most important?
+    - **Note:** Step 1 - spell out your variables,
+- 2. Give Each Variable A ScoreThe exact score of each of these variables is subjective. Whether something is a 1 vs. a 1.1 doesn't matter. The point of the score is to use it as a forcing function to think through each variable in a more concrete way. At its core, for each variable I'm trying to gauge three questions:What is helping?What is hurting?To what extent?To answer these questions, I like to rank each variable on a scale of 0 to 2, where 1 is neutral, less than 1 means the variable is hurting me, and greater than 1 means it is helping me. To help make this a little easier:0 to .25 = Major Bottleneck.5 = Hurting Me A Lot.75 = Slightly Hurting Me1 = Neutral1.25 = Slightly Helping Me1.5 = Helping Me A Lot1.5 to 2 = Major Amplifier
+  <img src="https://images.squarespace-cdn.com/content/v1/56f152a22fe131e76648aba3/1613492585489-866SOUR44KRD0J66IDL2/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p52bY8kZn6Mpkp9xtPUVLhvLurswpbKwwoDWqBh58NLxQZMhB36LmtxTXHHtLwR3w/Score+Spectrum.png" alt="Score Spectrum.png" />
+    - **Note:** ![scoring each variable](https://images.squarespace-cdn.com/content/v1/56f152a22fe131e76648aba3/1613492585489-866SOUR44KRD0J66IDL2/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p52bY8kZn6Mpkp9xtPUVLhvLurswpbKwwoDWqBh58NLxQZMhB36LmtxTXHHtLwR3w/Score+Spectrum.png?format=1500w)
+- Example VariablesLet's go through a few example variables and how they might fall on this scale.Evaluating The Manager Variable
+- Evaluating The Manager Variable
+    - **Note:** ![evaluating the manager](https://images.squarespace-cdn.com/content/v1/56f152a22fe131e76648aba3/1613492637547-D21LLPYMZQ9NCYD7S4VN/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p52bY8kZn6Mpkp9xtPUVLhvLurswpbKwwoDWqBh58NLxQZMhB36LmtxTXHHtLwR3w/Evaluating+Manager.png?format=1500w)
+- Major Bottleneck = Your manager isn't sharing the proper context you need to do your best work. They also aren't recognizing tradeoffs, and just keep piling work on. Not helping to unblock constraints. No useful feedback or conditions of satisfaction. You don't feel like they believe in you or are actively investing in your success.
+    - **Note:** - examples of how a manager can be a bottleneck
+- Hurting A Lot = ****Your manager might be doing one of the thing (context, feedback, tradeoffs, unblocking constraints) but none of the others.
+    - **Note:** manager is doing one or two, but missing many of the others
+- Slightly Hurting = Your manager is creating some light friction to getting your work done. They may be sharing context, light feedback, but not helping unblock constraints.
+    - **Note:** role of a manager - helping unblock can be a big part of things
+      - who / what needs help unblocking?
+      - what support do I need in helping get things unblocked?
+- Neutral = You are not actively learning from your manager, but they also aren't getting in your way.
+- Slightly Helping = Your manager is helping with resourcing and removing some areas that are blocking your work. But you might not be getting the feedback you need to be making large learning gains.
+- Major Amplifier = A manager that is a major amplifier is a sponsor for you. They have a fundamental belief in you and are actively investing in getting you to the next level. They seek out opportunities for you internally and externally,
+    - **Note:** a good manager is a major amplifier of effort, not a friction and reduction
+- Evaluating Resources
+    - **Note:** ![evaluating resources](https://images.squarespace-cdn.com/content/v1/56f152a22fe131e76648aba3/1613492692989-MTRFH1CR2HS51XTS5H9J/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p52bY8kZn6Mpkp9xtPUVLhvLurswpbKwwoDWqBh58NLxQZMhB36LmtxTXHHtLwR3w/Evaluating+Resources.png?format=1500w)
+- ere is an example of what each of these values might look like for resources.Major Bottleneck = You are missing one or more key people where the work is dependent on having them. In addition, there is no head count, recruiting, or path to making real progress.Hurting A Lot = Your team is missing a key person/skillset where the work is dependent on that role. The team is unable to make real progress, but there is an active plan to fill the role.Slightly Hurting = Your team is fully staffed, but 2 out of the 5 people are junior so need a lot of extra guidance which means a slower path to expected outcomes.Neutral = Your team is staffed, no major holes, but might have a couple of B players or hiring is reactive. It's not hurting, but it's not a tailwind either.Slightly Helping = You have most of what you need, but there isn't flexibility to move budget or head count around when needed.Helping A Lot = You have A players with enough budget but are still lacking some clarity around strategic direction. Good teams can usually find ways to create value regardless.Major Amplifier = The team around you is aligned on a clear vision and strategic plan. They are proactively hiring against that plan, hiring A players, including the team in the hiring process, and getting close to the budget you need.
+- 3. Identify The Variables That Matter The Most
+- When you evaluate each variable, you may first look at them as separate and distinct. But in reality, they tend to influence each other
+- You have to consider these intersections to identify the root cause and therefore the most important variable to consider.
+- These variables work in concert with each other so you need to dig to the root cause.
+    - **Note:** don't look at them as discrete independent things, they are impacted by other things - get curious and dig into the why and the root cause
+- 4. Evaluate Your Ability To Change Each Variable
+- Making a decision isn't just about where the variable is today, but what you are able to do about it. Your ability to change each variable is not evenly distributed. Some are harder to change than others.Your Ability To Change Environment Variables
+    - **Note:** - some things you can control, some you can't, some youc an influence - be aware of your sphere of control / influence
+- Your ability to change your Environment variables is dependent on where you sit in the org. If you are a manager, you have a higher ability to change things like resources and team culture.But if you are an individual contributor, you have less ability to change these things. Your manager is typically the one in control. That is why when all else is equal, you should always choose a situation with the best manager.
+    - **Note:** as an IC - learning to manage up, advocate for yourself - and a manager that can then control and work in your favour is something to consider
+- Your Ability To Change Skill VariablesWithin Skill variables, you have the ability to change your execution the most, and then communication and strategic thinking. Influence is a tricky one. It is harder to change because it depends on the characters around you, not just yourself.
+- 5. Evaluate The Time Horizon On Each Variable
+- Knowing where each variable is at today and your ability to change them isn't enough. You need to understand the time horizon to change that variable. You could be in control of a variable, but it could still be 9 months of a heavy lift.
+    - **Note:** being realistic about this, and setting out a timeline - ADHD me at times wants it now, need to improve on that.
+- Keys To Using Impact = Environment X Skills
+- It's The Product, Not The SumI mentioned this before, but it is worth repeating. It is the product of these variables, not the sum. At the highest level, if your skills are great but your environment is wrong, then you aren't set up for success. Or if your environment is great, but you don't have the skills to create impact, that you are also not set up for success.This is also true for all the sub-variables. If your strategy is terrible, it doesn't matter how well you are at communicating, executing, and the other variables. No amount of working hard is going to get you out of that hole. Looking at these variables as a sum misrepresents your true ability to create impact and drive outcomes.
+- The Most Important Variable In The Entire Equation Is Your Manager
+- My personal belief is that the most important multiplier in the entire equation is your manager. A great manager can heavily influence your scope, advocate for more resources, help you develop your skills, guide you to better execution, and more. So even in situations where the other variables are ranked low, if your manager is a major amplifier (1.5 to 2) I recommend giving them the confidence time to figure it out.
+    - **Note:** this has been repeated in a few books / etc as well - the role of a manager being a multiplier, or team amplifier
+- Communication Is The Most Important Skill Variable
+- One of the most important pieces of advice I ever received was from Madhu Muthukumar, ex-Dir Product at Facebook and now Head of Product at Robinhood. He said, "Invest as much time in storytelling as you do in execution." Great execution with poor communication limits your impact over time.
+- You could be doing great work, but without great communication then it won't receive the attention that it deserves. Many get frustrated by this because they see great communicators who are poor at execution get more credit and attention than they do. You need to embrace that communication is more influential than the other skill variables.
+    - **Note:** without good communication, good work can be done despite it, but not because of it.
+      good communication also broadcasts to others to get achievements known
+- The Unnamed Is The Most ChallengingIt is hard to solve a problem when you don't know what the problem is. That's why a major goal of a framework like this is to just build awareness of the problem by going through the variables in a structured way. Through this process, you'll surface or clarify problems that weren't concrete before.
+- Your Variable Scores Change Over TimeIt is important to remember that the scores for each of these variables change over time. Your team changes, your environment changes, you get better at things, etc. Don't wait for a new job offer, frustration to peak, or something else to force this evaluation. Take control of it yourself and have a time to re-evaluate these variables on a consistent basis. For me that's once a year, but for others it might be different.“When I was leaving Facebook, I considered starting my own consulting practice. However, I didn't have the confidence in my own abilities and I felt like I'd only seen one way of doing things, even though Facebook grew 7X in the time I was there. During my time at Slack, that seed of an idea continued to grow, and as I got exposure to more companies and invited to consult with other teams, I realized that the missing part of the equation was my own execution. Once my execution got to where I wanted it, I was ready to make that leap. What would have been a bad decision in 2017 ended up being the best decision in 2020.” - Behzod Sirjani (Reforge Partner, ex-Slack, FB)

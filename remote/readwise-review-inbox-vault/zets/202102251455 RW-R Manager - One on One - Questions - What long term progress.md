@@ -3,10 +3,12 @@ tags: ["inbox/readwise-review/bookreview/b4327823/hl"]
 ---
 %%
 - meta
+	- UID: 202102251455
 	- created: 2021-02-25
-	- last updated: 2021-02-25
+	- last updated: 2021-02-26
 	- citation key:  @uptickOneOnOneMeetingTemplates2019
 	- readwise highlight: https://readwise.io/bookreview/4327823?highlight=82661536
+	- obsidian url: [202102251455](obsidian://open?vault=readwise-review-inbox&file=inbox%2Fzets%2F202102251455%20RW-R%20Manager%20-%20One%20on%20One%20-%20Questions%20-%20What%20long%20term%20progress)
 %%
 
 ###### What progress are you making on your goals for the next month/six months?

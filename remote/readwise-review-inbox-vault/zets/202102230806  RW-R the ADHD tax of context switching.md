@@ -4,12 +4,15 @@ tags: ["inbox/readwise-review/bookreview/b7825891/hl"]
 
 %%
 - meta
+	- UID: 202102230806
 	- created: 2021-02-23
-	- last updated: 2021-02-24
+	- last updated: 2021-02-26
 	- updates:
 		- 2021-02-24 - updated nested tags
+		- 2021-02-26 - added UID and obsidian url
 	- citation key: @daviesHowScrumMasters2020
 	- readwise highlight: https://readwise.io/bookreview/7825891?highlight=147539342
+	- obsidian url: [202102230806](obsidian://open?vault=readwise-review-inbox&file=inbox%2Fzets%2F202102230806%20%20RW-R%20the%20ADHD%20tax%20of%20context%20switching)
 	- index page: [[202102241234 RW-R-I How Scrum Masters Can Solve Remote Work Challenges|📑:How Scrum Masters Can Solve Remote Work Challenges]]
 %%
 

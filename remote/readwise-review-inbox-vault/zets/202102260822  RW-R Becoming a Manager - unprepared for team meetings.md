@@ -6,9 +6,10 @@ tags: ["inbox/readwise-review/bookreview/b7644332/hl"]
 	- UID: 202102260822
 	- title: [202102260822 Becoming a Manager - unprepared for team meetings]
 	- created: 2021-02-26 08:22
-	- last updated: 
+	- last updated: 2021-02-26
 	- citation key:  uptickOnlyManagersThink2020
 	- readwise highlight: https://readwise.io/bookreview/7644332?highlight=143595479
+	- obsidian url: [202102260822](obsidian://open?vault=readwise-review-inbox&file=inbox%2Fzets%2F202102260822%20%20RW-R%20Becoming%20a%20Manager%20-%20unprepared%20for%20team%20meetings)
 %%
 
 

@@ -6,9 +6,10 @@ tags: ["inbox/readwise-review/bookreview/b7976586/hl"]
 	- UID: 202102260758
 	- title: [202102260754 The complexity of high Cardinality and debugging]
 	- created: 2021-02-26 07:58
-	- last updated: 
+	- last updated: 2021-02-26
 	- citation key:  @majorsObservability3YearRetrospective2019
 	- readwise highlight: https://readwise.io/bookreview/7976586?highlight=150132866
+	- obsidian url: [202102260758](obsidian://open?vault=readwise-review-inbox&file=inbox%2Fzets%2F202102260754%20RW-R%20%20The%20complexity%20of%20high%20Cardinality%20and%20debugging)
 %%
 
 ### Reading Notes 

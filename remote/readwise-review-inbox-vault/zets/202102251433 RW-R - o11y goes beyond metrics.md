@@ -3,10 +3,12 @@ tags: ["inbox/readwise-review/bookreview/b7976586/hl"]
 ---
 %%
 - meta
+	- UID: 202102251433
 	- created: 2021-02-25
-	- last updated: 2021-02-25
+	- last updated: 2021-02-26
 	- citation key: @majorsObservability3YearRetrospective2019
 	- readwise highlight: https://readwise.io/bookreview/7976586?highlight=150132861
+	- obsidian url: [202102251433](obsidian://open?vault=readwise-review-inbox&file=inbox%2Fzets%2F202102251433%20RW-R%20-%20o11y%20goes%20beyond%20metrics)
 %%
 
 > Metrics do not equal observability.

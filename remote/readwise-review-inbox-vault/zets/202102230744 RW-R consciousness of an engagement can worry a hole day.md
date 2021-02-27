@@ -4,10 +4,12 @@ tags: ["inbox/readwise-review/bookreview/b4370510/hl"]
 ---
 %%
 - meta
+	- UID: 202102230744
 	- created: 2021-02-23
-	- last updated: 2021-02-23
+	- last updated: 2021-02-26
 	- citation key: @grahamMakerScheduleManager2009
 	- readwise highlight: https://readwise.io/bookreview/4370510?highlight=83274944
+	- obsidian url: [202102230744](obsidian://open?vault=readwise-review-inbox&file=inbox%2Fzets%2F202102230744%20RW-R%20consciousness%20of%20an%20engagement%20can%20worry%20a%20hole%20day)
 %%
 
 > "...the mere consciousness of an engagement will sometimes worry a whole day." – Charles Dickens

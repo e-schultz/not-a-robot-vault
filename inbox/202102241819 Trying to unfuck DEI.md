@@ -65,3 +65,7 @@ Work in progress, but important definitions and terms when talking about DEI, Ra
 
 ## ND At work
 - https://twitter.com/e_p82/status/1331930193863331841
+
+# Rough Bits
+
+[[202102252105|🚧 Draft misc collection of trans resources]]

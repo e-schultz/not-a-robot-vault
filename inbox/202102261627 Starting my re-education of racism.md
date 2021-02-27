@@ -1,4 +1,6 @@
-
+---
+tags: ['unfuckdei']
+---
 
 %%
 I think this was the first time that I tweeted about #racism - wasn't that long ago - Sept 11, 2019. 
