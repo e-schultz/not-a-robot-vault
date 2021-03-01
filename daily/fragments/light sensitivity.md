@@ -1,5 +1,5 @@
 ---
-tags: [journal/daily/evening-ramble/fragment]
+tags: [a/nd/input]
 ---
 
 # light sensitivity 

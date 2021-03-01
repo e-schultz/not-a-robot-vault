@@ -8,7 +8,7 @@
 
 ### Highlights first exported February 26, 2021 at 9:21 PM
 
-- I've ranted about zoom being a special kind of #neurodiverse hell before.
+- I've ranted about zoom being a special kind of #neurodiverse hell before. %% [[neurodiverse hell]] %%
   Every point they make I think I might have a thread about.
   It's exhausting for everyone, but I think it impacts neurodiverse people more. https://t.co/H9zYIDlykf ([View Highlight](https://twitter.com/evan_just_evan/status/1365163664337166341))
 - I've had sensory meltdowns, motion is important for self regulation - thats much more limited.

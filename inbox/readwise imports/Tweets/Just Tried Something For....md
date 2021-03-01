@@ -12,7 +12,7 @@
   Used @obsdmd 
   - made use of the panes to have my per-day daily log above my weekly working notes
   - an end of week summary note at the top that was me writing bullet form
-  - pane below that anything I clicked on opened into ([View Highlight](https://twitter.com/evan_just_evan/status/1362926012699443204))
+  - pane below that anything I clicked on opened into ([View Highlight](https://twitter.com/evan_just_evan/status/1362926012699443204)) ^dc08fve
     - **Note:** obsidian work workflow
 - - Also used https://t.co/tnNqc5u4SH - I was talking out loud while reviewing all of my notes
   - My notes in Obsidian also link into Notion / Google Docs / Slack / etc - so they also act as an entry point into other apps / context / information. ([View Highlight](https://twitter.com/evan_just_evan/status/1362926013546721286))

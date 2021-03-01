@@ -4,27 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "9c1009458ad22a7d",
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/202102262117 Neurodiverse Workflows Start.md",
-            "mode": "preview"
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "1b3b9bf773ab1ab0",
+        "id": "c8637198592bfb09",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/refactored/2021/02/26/2102261103 - Hybrid Async and Sync Workflows.md",
-            "mode": "source"
+            "file": "daily/2021-03-01.md",
+            "mode": "preview"
           }
         }
       }
@@ -53,10 +40,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "iframe",
+                "query": "birdsovparadise",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical"
               }
@@ -70,12 +57,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 633,
-    "collapsed": true
+    "width": 633
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -91,12 +78,12 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/refactored/2021/02/26/2102261103 - Hybrid Async and Sync Workflows.md",
+                "file": "daily/2021-03-01.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -117,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/refactored/2021/02/26/2102261103 - Hybrid Async and Sync Workflows.md"
+                "file": "daily/2021-03-01.md"
               }
             }
           },
@@ -138,22 +125,22 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
     "width": 467.5
   },
   "lastOpenFiles": [
-    "inbox/refactored/2021/02/26/2102261103 - Hybrid Async and Sync Workflows.md",
-    "inbox/202102262117 Neurodiverse Workflows Start.md",
-    "inbox/readwise imports/Tweets/Just Tried Something For....md",
-    "inbox/refactored/2021/02/26/2102261103 - .md",
-    "inbox/2102261023 -.md",
-    "inbox/refactored/2021/02/26/2102261023 - What tools do I use, and why.md",
-    "inbox/202102262257 The Wait I Actually Want To Read Inbox.md",
-    "inbox/202102262257.md",
-    "inbox/refactored/2021/02/26/Untitled.md",
-    "inbox/refactored/2021/02/26/2102261023 - .md"
+    "daily/2021-03-01.md",
+    "inbox/202103011613 Hypno Series 006 - RYOGO YAMAMORI.md",
+    "inbox/Hypno Series 006 - RYOGO YAMAMORI.md",
+    "inbox/202103011613.md",
+    "daily/fragments/music/Birds ov Paradise.md",
+    "inbox/Inveins Podcast - 050 - Birds ov Paradisde.md",
+    "daily/2021-02-27.md",
+    "daily/2021-02-26.md",
+    "inbox/202103011242  The Playlist - Inveins Podcast - 050 - Birds Of Paradise.md",
+    "inbox/The Playlist - Inveins Podcast - 050 - Birds Of Paradise.md"
   ]
 }

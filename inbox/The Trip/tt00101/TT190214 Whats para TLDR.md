@@ -1,3 +1,6 @@
+---
+tags: ["p/ndw/inbox"]
+---
 I have skimmed over a few articles about the PARA system before, and it's an organization system that Tiago Forte has done.
 
 He's also done the Second Brain - which is a course I might want to take actually, as a lot of what I'm doing [[TT190207 feels like I am building a second brain|feels like I am building a second brain]] at times.

@@ -1,3 +1,6 @@
+---
+tags: ["p/ndw/inbox"]
+---
 
 # Why I Like [[Otter.ai]]
 - [Tweet](https://twitter.com/i/status/1357863073923682309) by [@evan_just_evan](https://twitter.com/evan_just_evan) on [[2021-02-05]]:

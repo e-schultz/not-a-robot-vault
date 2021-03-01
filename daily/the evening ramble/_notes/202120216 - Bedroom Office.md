@@ -1,5 +1,5 @@
 ---
-tags: [journal/daily/evening-ramble/fragment]
+tags: ['p/ndw/inbox']
 ---
 
 # Bedroom Office
