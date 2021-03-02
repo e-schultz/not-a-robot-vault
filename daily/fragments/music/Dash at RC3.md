@@ -1,3 +1,7 @@
+---
+tags: ["soundgarden/inbox"]
+---
+
 # Dash at RC3
 
 # Soundcloud

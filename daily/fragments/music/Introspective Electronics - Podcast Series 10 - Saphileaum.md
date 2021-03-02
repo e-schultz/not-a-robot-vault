@@ -1,3 +1,7 @@
+---
+tags: ["soundgarden/inbox"]
+---
+
 # Introspective Electronics - Podcast Series 10 - Saphileaum
 
 ## Description

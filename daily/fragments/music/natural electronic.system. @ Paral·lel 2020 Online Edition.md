@@ -1,3 +1,6 @@
+---
+tags: ["soundgarden/inbox"]
+---
 # natural/electronic.system. @ Paral·lel 2020 Online Edition
 
 # Soundcloud

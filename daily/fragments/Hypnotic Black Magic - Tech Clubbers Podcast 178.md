@@ -1,3 +1,7 @@
+---
+tags: ["soundgarden/inbox"]
+---
+
 # Hypnotic Black Magic - Tech Clubbers Podcast \#178
 
 # Soundcloud

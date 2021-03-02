@@ -1,4 +1,5 @@
 ---
+tags: ["soundgarden/inbox"]
 aliases: ["Alpenglühen#56 w/ Adhémar & F-on"]
 ---
 

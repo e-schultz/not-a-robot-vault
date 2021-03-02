@@ -1,3 +1,7 @@
+---
+tags: ["soundgarden/inbox"]
+---
+
 # Deep Electronics
 - soundcloud: [@deep_electronic](https://soundcloud.com/deep_electronic)
 > Deep Diversity Label en podcast

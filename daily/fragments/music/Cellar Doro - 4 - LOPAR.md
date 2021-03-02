@@ -1,3 +1,6 @@
+---
+tags: ["soundgarden/inbox"]
+---
 # Cellar Doro - 4 - LOPAR
 
 ## Soundcloud

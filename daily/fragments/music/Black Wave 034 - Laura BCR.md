@@ -1,3 +1,7 @@
+---
+tags: ["soundgarden/inbox"]
+---
+
 # Black Wave 034 - Laura BCR
 
 ## Soundcloud

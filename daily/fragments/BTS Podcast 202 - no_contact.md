@@ -1,3 +1,6 @@
+---
+tags: ["soundgarden/inbox"]
+---
 # BTS Podcast 202 - no contact
 
 ## Soundcloud

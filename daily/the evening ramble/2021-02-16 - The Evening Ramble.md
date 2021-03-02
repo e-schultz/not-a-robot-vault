@@ -36,7 +36,7 @@ read more -> [[🌱 - When good notes made my Vue Talk easy]]
 
 # [[The Playlist]] [[Birds ov Paradise]]: Live UtD festival
 
-[Birds ov Paradise: Live UtD festival](https://soundcloud.com/birdsovparadise/bop-live-utd-festival)
+[Birds ov Paradise: Live UtD festival](https://soundcloud.com/birdsovparadise/bop-live-utd-festival)![[2103010642 - ]]
 
 ![[Birdsa ov Paradise - Live UtD festival#^ea2a9b]]
 
@@ -44,7 +44,9 @@ read more -> [[🌱 - When good notes made my Vue Talk easy]]
 
 see -> [[202120216 - Bedroom Office]]
 
-# [[The Playlist]] - Dash at RC3
+# The Playlist - Dash at RC3
+
+^1ca212
 
 https://soundcloud.com/oslated/dash-at-rc3
 

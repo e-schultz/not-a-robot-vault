@@ -4,14 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "c8637198592bfb09",
+        "id": "44ab1a2cb58bbb1e",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "daily/2021-03-02 - The Morning Pages.md",
+            "mode": "preview"
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "2abcf7c1052a0387",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2021-03-01.md",
-            "mode": "preview"
+            "file": "inbox/202103020920 - Hello RSD My Old Friend - evan_just_evan.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "birdsovparadise",
+                "query": "tag:#a/nd/inbox",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -78,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/2021-03-01.md",
+                "file": "inbox/202103020920 - Hello RSD My Old Friend - evan_just_evan.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -104,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/2021-03-01.md"
+                "file": "inbox/202103020920 - Hello RSD My Old Friend - evan_just_evan.md"
               }
             }
           },
@@ -125,22 +138,23 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 467.5
+    "width": 467.5,
+    "collapsed": true
   },
   "lastOpenFiles": [
-    "daily/2021-03-01.md",
-    "inbox/202103011613 Hypno Series 006 - RYOGO YAMAMORI.md",
-    "inbox/Hypno Series 006 - RYOGO YAMAMORI.md",
-    "inbox/202103011613.md",
-    "daily/fragments/music/Birds ov Paradise.md",
-    "inbox/Inveins Podcast - 050 - Birds ov Paradisde.md",
-    "daily/2021-02-27.md",
-    "daily/2021-02-26.md",
-    "inbox/202103011242  The Playlist - Inveins Podcast - 050 - Birds Of Paradise.md",
-    "inbox/The Playlist - Inveins Podcast - 050 - Birds Of Paradise.md"
+    "inbox/202103020920 - Hello RSD My Old Friend - evan_just_evan.md",
+    "daily/2021-03-02 - The Morning Pages.md",
+    "daily/202103020920 - Hello RSD My Old Friend - evan/_just/_evan.md",
+    "inbox/202103020920.md",
+    "daily/2021-03-02.md",
+    "inbox/202103020832 21-02-02 - Good Morning.md",
+    "tweet-threads/Tech Twitter.md",
+    "daily/the evening ramble/2021-03-01 - The Evening Ramble.md",
+    "inbox/refactored/2021/03/01/202103011847 - Woe's of the twitter tech grifter.md",
+    "inbox/readwise imports/Tweets/I Reached Out to the Som....md"
   ]
 }

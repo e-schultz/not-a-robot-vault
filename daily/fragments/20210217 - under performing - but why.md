@@ -1,3 +1,6 @@
+---
+tags:["a/leadership/inbox/writing"]
+---
 - from this tweet thread:  [@evan_just_evan](https://twitter.com/evan_just_evan/status/1362177878679580674)
 
 As a manager - there's other ways to address that, while being supportive and giving actionable advice. As a manager - that thinks alot about feedback, and the intersection of neurodiversity. "you need to pull your weight more" is low quality, unhelpful feedback. ^1929cf

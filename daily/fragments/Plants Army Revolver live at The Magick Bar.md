@@ -1,3 +1,7 @@
+---
+tags: ["soundgarden/inbox"]
+---
+
 # Plants Army Revolver live at The Magick Bar
 
 # Soundcloud

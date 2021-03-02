@@ -1,3 +1,6 @@
+---
+tags: ["storytime/inbox"]
+---
 exposing blind spots
 poke me in the eye and collect the tears
 so we can learn for a better tomorrow.

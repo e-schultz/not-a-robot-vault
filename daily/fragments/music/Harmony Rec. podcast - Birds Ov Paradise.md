@@ -1,3 +1,6 @@
+---
+tags: ["soundgarden/inbox"]
+---
 # Harmony Rec. podcast - [[Birds ov Paradise]]
 
 

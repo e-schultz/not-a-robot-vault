@@ -1,3 +1,7 @@
+---
+tags: ["soundgarden/inbox"]
+---
+
 # Overdosed dUbcast 43 Jupiter Jazz by Masternark 2
 
 # Soundcloud

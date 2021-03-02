@@ -1,3 +1,7 @@
+---
+tags: ["soundgarden/inbox"]
+---
+
 # \[C&SPL068\] CØRE
 
 # Soundcloud
