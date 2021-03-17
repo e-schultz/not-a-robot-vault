@@ -20,7 +20,7 @@ tags: ["a/nd/input"]
 notes moved to -> [[202103091850 - Article Notes - Autistic Burnout and Regression]]
 
 
-## [[Autistic Burnout]]: The Cost of Masking and Passing 
+## [[autistic burnout]]: The Cost of Masking and Passing 
 - [Autistic Burnout: The Cost of Masking and Passing](https://boren.blog/2017/01/26/autistic-burnout-the-cost-of-coping-and-passing/) [^borenAutisticBurnoutCost2017]
 
 ![[202103091722 -  Researching Autistic Burnout#^596a1f]]

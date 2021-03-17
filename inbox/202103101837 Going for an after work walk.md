@@ -7,7 +7,7 @@
 	- obsidian url:  [202103101837](obsidian-url-tbd)
 %%
 
-##### self care - I just need to move a little
+##### [[self care]] - I just need to move a little
 
 It's nice out, +9 - the sun has just set, so shouldn't be as busy outside.
 

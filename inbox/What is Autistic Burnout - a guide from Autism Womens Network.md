@@ -12,7 +12,7 @@ tags: ["a/nd/input"]
 
 
 
-# What is [[Autistic Burnout]]
+# What is [[autistic burnout]]
 
 ![[what is autisitc burnout - guide from autisim womens network.jpeg]]
 

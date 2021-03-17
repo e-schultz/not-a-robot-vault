@@ -29,7 +29,7 @@ I need to do groceries, like I have some stuff here - but not much, but the idea
 
 Even with some projects I'd like to do, or other hobbies I'd like to get back to - finding it hard to get into those, or have those hold my attention. 
 
-Sensory burnout kicking in? --- been a few times I've come close to yelling at the cats when they meow during a meeting, and I know that is usually a sign that I'm starting to circle around burnout.
+[[autistic burnout|Sensory burnout]] kicking in? --- been a few times I've come close to yelling at the cats when they meow during a meeting, and I know that is usually a sign that I'm starting to circle around burnout.
 
 - am I working towards my goals?
 	- what are my goals?

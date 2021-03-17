@@ -1,5 +1,5 @@
 ---
-tags: ['unfuckdei/stub']
+tags: ['unfuckdei/stub','a/dei']
 aliases: ['🚧 Draft misc collection of trans resources']
 ---
 %%

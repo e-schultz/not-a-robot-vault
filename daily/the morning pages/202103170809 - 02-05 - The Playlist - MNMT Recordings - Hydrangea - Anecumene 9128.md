@@ -1,0 +1,16 @@
+---
+tags: ["soundgarden/input"]
+---
+%%
+- meta
+	- UID: 202103170809
+	- title: [MNMT Recordings : Hydrangea - Anecumene\@9128.live]
+	- created: 2021-03-17 08:09
+	- last updated: 
+	- obsidian url:  [202103170809](obsidian-url-tbd)
+	- source: [2021-03-17 - The Morning Pages]
+%%
+
+##### [[2021-02-05]]
+
+![[MNMT Recordings - Hydrangea - Anecumene 9128.live#^11a198]] ^fdec40

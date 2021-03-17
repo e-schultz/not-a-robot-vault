@@ -51,7 +51,7 @@ via [[@MissAmyTobey]] - [tweet](https://twitter.com/MissAmyTobey/status/13574753
 
 
 
-## Isolation has me wondering what was anxiety vs sensory processing issues
+## Isolation has me wondering what was anxiety vs [[sensory processing]] issues
 
 forgot I wrote this this morning, 
 

@@ -10,6 +10,7 @@ tags: ["journal/daily/morning-pages/fragment"]
 	- obsidian url:  [202102271340](obsidian://open?vault=not-a-robot&file=inbox%2F202102271340%20-%20MP%20-%20self%20care%20warning%20signs)
 %%
 
+%%[[self care]]  [[warning signs]] [[self care warning signs]] %%
 # Self Care Warning Signs - the garage bins 
 
 My energy levels have been a bit all over the place the past week, and have seen some self-care warning signs pop up, another one that tends to happen

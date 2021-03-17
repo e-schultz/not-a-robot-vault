@@ -177,7 +177,7 @@ During the meeting if I am there, I will usually have otter running for auto tra
 
 At times I'll add links / screenshots / etc to it as it goes along.
 
-But also - if I'm having bad brain day, being able to read along with the transcript, go back to it later if needed.
+But also - if I'm having [[202103162118  computer says no mode|bad brain day]], being able to read along with the transcript, go back to it later if needed.
 
 I can be like fly on the wall doing my own thing but half paying attention
 

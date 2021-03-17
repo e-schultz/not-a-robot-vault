@@ -68,4 +68,4 @@ Work in progress, but important definitions and terms when talking about DEI, Ra
 
 # Rough Bits
 
-[[202102252105|🚧 Draft misc collection of trans resources]]
+[[202102252105 Trans Resources|🚧 Draft misc collection of trans resources]]

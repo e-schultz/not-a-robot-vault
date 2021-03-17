@@ -2,7 +2,7 @@
 
 Today is the first day in awhile where I haven't felt completely drained after work, although I did notice a few 'fading fast' moments during the day, but made time to sit down / get outside to try and offset it.
 
-How I've been feeling lately is what has gotten me started on the page 
+How I've been feeling lately is what has gotten me started on the page  ^99aaad
 
 [[202103091722 -  Researching Autistic Burnout]]
 
@@ -14,7 +14,7 @@ and then I get pondering... do I need to recalibrate my fucks, [[202103101818 Ap
 
 ![[202103101823 - I want to say yes to things#^2cf6db]]
 
-Basically, I'm tired - and I do think that there is a distinction between general work burnout, and Autistic Burnout / Regression / Sensory Burnout / whatever.
+Basically, I'm tired - and I do think that there is a distinction between general work burnout, and Autistic Burnout / Regression / [[autistic burnout|Sensory Burnout]] / whatever.
 
 # But, le'muzack 
 

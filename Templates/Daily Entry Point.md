@@ -10,6 +10,4 @@ tags: ["journal/daily"]
 	- obsidian url:  [{{tp_date:f=YYYYMMDDHHmm}}](obsidian-url-tbd)
 %%
 
-- [[{{tp_date:f=YYYY-MM-DD}} - The Morning Pages]]
-- [[{{tp_date:f=YYYY-MM-DD}} - The Evening Ramble]]
 - Next Entry: [TBD]

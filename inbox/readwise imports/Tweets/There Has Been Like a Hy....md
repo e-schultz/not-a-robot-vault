@@ -54,7 +54,7 @@
 - I can do this even if I'm not able to work that day, I can still quickly catch up.
   During the meeting if I am there, I will usually have otter running for auto transcription, but also taking my own point form notes. ([View Highlight](https://twitter.com/evan_just_evan/status/1365478594508644354))
 - At times I'll add links / screenshots / etc to it as it goes along.
-  But also - if I'm having bad brain day, being able to read along with the transcript, go back to it later if needed.
+  But also - if I'm having [[202103162118  computer says no mode|bad brain day]], being able to read along with the transcript, go back to it later if needed.
   I can be like fly on the wall doing my own thing but half paying attention ([View Highlight](https://twitter.com/evan_just_evan/status/1365478595397828609))
 - And can still contribute, and / or go back to it later.
   Sometimes I'll put alot of time into cleaning up the transcript - adding line breaks, screen shots, links, fixing spelling.

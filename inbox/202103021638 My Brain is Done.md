@@ -13,7 +13,7 @@ tags: ["journal/daily/fragment"]
 
 # My Brain is Done
 
-It feels like mush, my eyes have hit the fuck-you portion of the day.
+It feels like mush, my eyes have hit the fuck-you portion of the day. [^1]
 
 I'm exhausted in ways I can't fully describe.
 
@@ -21,3 +21,4 @@ But, the sun's out
 and I got /some/ groceries, at least enough to not need to order in Breakfast for a day or two.
 
 
+[^1]: [[sensory processing issues]]

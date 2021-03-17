@@ -1,3 +1,8 @@
+---
+tags: ['a/nd','p/ndw']
+---
+##### [[PARA/Resource/Neurodiversity/ND]]
+
 In short - it's a form of [[personal knowledge management]], but thinking in terms of how this fits in with ADHD / neurodiversity.
 
 There was a long time where I had reinforced in my head that "I just need to try harder at remembering better"
