@@ -4,27 +4,36 @@
     "type": "split",
     "children": [
       {
-        "id": "44ab1a2cb58bbb1e",
+        "id": "1bcb31bc2f58d226",
         "type": "leaf",
-        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2021-03-02 - The Morning Pages.md",
-            "mode": "preview"
-          },
-          "pinned": true
+            "file": "inbox/202103161721 Feeling like my 🧠 can 🧠 again - for the first time in awhile.md",
+            "mode": "source"
+          }
         }
       },
       {
-        "id": "2abcf7c1052a0387",
+        "id": "9f93731cd0016f46",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "daily/the evening ramble/2021-02-04 - The Evening Ramble.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "f3cd15a6428077fa",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/202103020920 - Hello RSD My Old Friend - evan_just_evan.md",
-            "mode": "source"
+            "file": "inbox/refactored/2021/03/16/2103160847 - It's probably mean alot to the people working for you..md",
+            "mode": "preview"
           }
         }
       }
@@ -53,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#a/nd/inbox",
+                "query": "tag:#a/nd/input",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -70,12 +79,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 633
+    "width": 633,
+    "collapsed": true
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -91,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/202103020920 - Hello RSD My Old Friend - evan_just_evan.md",
+                "file": "inbox/refactored/2021/03/16/2103160847 - It's probably mean alot to the people working for you..md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -117,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/202103020920 - Hello RSD My Old Friend - evan_just_evan.md"
+                "file": "inbox/refactored/2021/03/16/2103160847 - It's probably mean alot to the people working for you..md"
               }
             }
           },
@@ -137,24 +146,22 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 467.5,
-    "collapsed": true
+    "width": 467.5
   },
   "lastOpenFiles": [
-    "inbox/202103020920 - Hello RSD My Old Friend - evan_just_evan.md",
-    "daily/2021-03-02 - The Morning Pages.md",
-    "daily/202103020920 - Hello RSD My Old Friend - evan/_just/_evan.md",
-    "inbox/202103020920.md",
-    "daily/2021-03-02.md",
-    "inbox/202103020832 21-02-02 - Good Morning.md",
-    "tweet-threads/Tech Twitter.md",
-    "daily/the evening ramble/2021-03-01 - The Evening Ramble.md",
-    "inbox/refactored/2021/03/01/202103011847 - Woe's of the twitter tech grifter.md",
-    "inbox/readwise imports/Tweets/I Reached Out to the Som....md"
+    "inbox/refactored/2021/03/16/2103160847 - It's probably mean alot to the people working for you..md",
+    "daily/the evening ramble/2021-02-04 - The Evening Ramble.md",
+    "daily/the evening ramble/_notes/The Evening Ramble.md",
+    "daily/the evening ramble/2021-02-26 - The Evening Ramble.md",
+    "daily/2021-03-10.md",
+    "daily/2021-03-10 - The Evening Ramble.md",
+    "inbox/readwise imports/Tweets/ This Got Me Thinking A....md",
+    "inbox/202103162039 The Playlist - MixCult pres. Bjika on Ibiza Global Radio.md",
+    "inbox/202103161721 Feeling like my 🧠 can 🧠 again - for the first time in awhile.md",
+    "inbox/MixCult pres. Bjika on Ibiza Global Radio14.03.2021.md"
   ]
 }

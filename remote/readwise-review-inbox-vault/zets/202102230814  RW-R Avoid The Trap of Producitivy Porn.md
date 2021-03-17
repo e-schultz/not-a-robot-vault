@@ -22,4 +22,4 @@ Instead - it's personal, it grows and evolves over time - you shape it to your n
 
 You can be influenced by other [[note-making systems]], try them out - see what works and what doesn't, and then make it your own.
 
-[^1]: [@cunffNotetakingNotemaking2021]
+[^1]: [[@cunffNotetakingNotemaking2021]]

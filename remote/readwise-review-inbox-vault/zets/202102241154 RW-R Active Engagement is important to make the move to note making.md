@@ -18,4 +18,4 @@ tags: ["inbox/readwise-review/bookreview/b7689861/hl"]
 
 This is why I can be critical of how some tech companies approach [[learning and development]], it places learning in the passive and as something to be consumed.
 
-[^1]: @cunffNotetakingNotemaking2021
+[^1]: [[@cunffNotetakingNotemaking2021]]
