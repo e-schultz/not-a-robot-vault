@@ -15,6 +15,8 @@ When I was resting, it was like - no sound, not watching anything, just my brain
 - One of the reasons I moved my desk into my bedroom - was sensory issues. 
 	- [[202120216 - Bedroom Office]]
 - noticing patterns -> [[202103101818 Approaching Burnout - Cant Talk Wont Stop]]
+
+[[evan_just_evan tiktok on winter sun sensory issues]]
 ---
 
 Link to original note: [[202103161721 Feeling like my 🧠 can 🧠 again - for the first time in awhile]]

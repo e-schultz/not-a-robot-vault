@@ -10,7 +10,7 @@ tags: ["journal/daily/morning-pages"]
 	- obsidian url:  [202103020824](obsidian://open?vault=not-a-robot&file=daily%2F2021-03-02%20-%20The%20Morning%20Pages)
 %%
 
-# 2021-03-02 - [[The Morning Pages]]
+# [[2021-03-02]] - [[The Morning Pages]]
 
 # Good Morning Evan, how are you doing this morning?
 

@@ -7,7 +7,6 @@ tags: ["journal/daily/evening-ramble/fragment"]
 	- title: [more stressed than I think I am being honest with myself about.]
 	- created: 2021-03-01 19:10
 	- last updated: 
-	- obsidian url:  [202103011910](obsidian-url-tbd)
 	- source: [2021-03-01 - The Evening Ramble]
 %%
 

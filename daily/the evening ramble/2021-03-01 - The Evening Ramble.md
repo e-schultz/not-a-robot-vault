@@ -10,7 +10,7 @@ tags: ["journal/daily/evening-ramble"]
 	- obsidian url:  [202103011845](obsidian://open?vault=not-a-robot&file=daily%2F2021-03-01%20-%20The%20Evening%20Ramble)
 %%
 
-# 2021-03-01 - [[The Evening Ramble]]
+# [[2021-03-01]] - [[The Evening Ramble]]
 
 # Woe's of the twitter tech grifter
 

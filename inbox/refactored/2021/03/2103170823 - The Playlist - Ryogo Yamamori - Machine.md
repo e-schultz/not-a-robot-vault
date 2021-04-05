@@ -4,7 +4,6 @@
 	- title: [2103170823 - The Playlist - Ryogo Yamamori - Machine]
 	- created: 2021-03-17 08:23
 	- last updated: 
-	- obsidian url:  [202103170823](obsidian-url-tbd)
 %%
 
 # [[The Playlist]] - Ryogo Yamamori - Machine

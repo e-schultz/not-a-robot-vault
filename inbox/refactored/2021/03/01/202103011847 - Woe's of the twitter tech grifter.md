@@ -7,7 +7,6 @@ tags: ["journal/daily/evening-ramble/fragment"]
 	- title: [202103011847 - ]
 	- created: 2021-03-01 18:47
 	- last updated: 
-	- obsidian url:  [202103011847](obsidian-url-tbd)
 	- source: [2021-03-01 - The Evening Ramble]
 %%
 

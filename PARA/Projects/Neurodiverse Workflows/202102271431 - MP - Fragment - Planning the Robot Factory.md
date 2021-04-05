@@ -7,7 +7,6 @@ tags: ["journal/daily/morning-pages/fragment", "p/ndw/inbox"]
 	- title: [202102271431 - MP - Fragment - Planning the Robot Factory]
 	- created: 2021-02-27 14:32
 	- last updated: 
-	- obsidian url:  [202102271432](obsidian-url-tbd)
 	- source: [2021-02-27 - The Morning Pages]
 %%
 

@@ -7,7 +7,6 @@ tags: ["journal/daily/morning-pages/fragment", "p/ndw/inbox"]
 	- title: [Tweaking Readwise -- Obsidian Workflow]
 	- created: 2021-02-27 22:20
 	- last updated: 
-	- obsidian url:  [202102272220](obsidian-url-tbd)
 	- source: [2021-02-27 - The Morning Pages]
 %%
 

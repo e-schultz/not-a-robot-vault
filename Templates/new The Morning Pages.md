@@ -7,7 +7,6 @@ tags: ["journal/daily/morning-pages"]
 	- title: [{{tp_title}}]
 	- created: {{tp_date:f=YYYY-MM-DD HH:mm}}
 	- last updated: 
-	- obsidian url:  [{{tp_date:f=YYYYMMDDHHmm}}](obsidian-url-tbd)
 %%
 
 # {{tp_date:f=YYYY-MM-DD}} - [[The Morning Pages]]

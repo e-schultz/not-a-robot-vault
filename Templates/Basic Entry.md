@@ -1,5 +1,5 @@
 ---
-tags: ["journal/daily/evening-ramble"]
+tags: ["journal/daily"]
 ---
 %%
 - meta
@@ -9,5 +9,4 @@ tags: ["journal/daily/evening-ramble"]
 	- last updated: 
 %%
 
-# {{tp_date:f=YYYY-MM-DD}} - [[The Evening Ramble]]
-
+##### [[{{tp_date:f=YYYY-MM-DD}}]]

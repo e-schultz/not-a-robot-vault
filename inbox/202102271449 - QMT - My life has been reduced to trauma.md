@@ -7,7 +7,6 @@ tags: ["journal/daily/morning-pages/fragment"]
 	- title: [202102271449 - QMT - My life has been reduced to trauma]
 	- created: 2021-02-27 14:50
 	- last updated: 
-	- obsidian url:  [202102271450](obsidian-url-tbd)
 	- source: [2021-02-27 - The Morning Pages]
 %%
 

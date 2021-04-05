@@ -7,8 +7,8 @@ tags: ["journal/daily/evening-ramble/fragment", "a/nd/input"]
 	- title: [Hello RSD My Old Friend - evan\_just\_evan]
 	- created: 2021-03-02 09:20
 	- last updated: 
-	- obsidian url:  [202103020920](obsidian-url-tbd)
 	- source: [2021-03-02 - The Evening Ramble]
+	- [[ADHD]], [[Rejection Sensitive Dysphoria]]
 %%
 
 

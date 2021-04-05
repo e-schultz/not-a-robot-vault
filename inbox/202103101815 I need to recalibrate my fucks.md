@@ -1,5 +1,5 @@
 ---
-tags: ["journal/daily/evening-ramble/fragment"]
+tags: ["journal/daily/evening-ramble/fragment", 'a/nd']
 ---
 %%
 - meta
@@ -7,7 +7,7 @@ tags: ["journal/daily/evening-ramble/fragment"]
 	- title: [I need to recalibrate my fucks]
 	- created: 2021-03-10 18:15
 	- last updated: 
-	- obsidian url:  [202103101815](obsidian-url-tbd)
+
 	- source: [2021-03-10 - The Evening Ramble]
 %%
 

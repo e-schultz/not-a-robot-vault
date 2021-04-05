@@ -7,7 +7,7 @@ tags: ["journal/daily/fragment"]
 	- title: [202103021638 My Brain is Done]
 	- created: 2021-03-02 16:38
 	- last updated: 
-	- obsidian url:  [202103021638](obsidian-url-tbd)
+	- [[autistic burnout]] [[my burnout]]
 	- source: [[2021-03-02]]
 %%
 

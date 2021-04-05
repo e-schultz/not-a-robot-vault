@@ -4,7 +4,6 @@
 	- title: [202103101836 Going for an after work walk]
 	- created: 2021-03-10 18:37
 	- last updated: 
-	- obsidian url:  [202103101837](obsidian-url-tbd)
 %%
 
 ##### [[self care]] - I just need to move a little

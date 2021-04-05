@@ -4,7 +4,7 @@
 - Not sure if this is imposter syndrome, or #neurodiverse thing, or both.
   - For the longest time, I was convinced that I wasn't smart - that I was just faking it really well, and somehow would get exposed for being a complete idiot. ^8ab21f
   - Like, I'm pretty daft.
-- In Grade 3,
+- In Grade 3, ^0c90bc
   - I had a teacher try to put me into special ed - I had a bad stutter, couldn't read out loud, she liked to yell at me - not a great mix.
   - So I remember doing a test to see if I should goto special ed
 - Apparently not,

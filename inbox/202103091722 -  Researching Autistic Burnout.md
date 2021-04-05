@@ -74,7 +74,9 @@ Other sources
 	- health bar in a video game - never enough recharge to get back to 100%
 	- I've used a similar example recently, 'battery at 5%'
 
-
+# Related Notes
+- [[2103170749 - Light Sensitivity Issues from Awhile ago]]
+- https://www.tiktok.com/@evan.just.ev4n/video/6917783380457229574?is_copy_url=1&is_from_webapp=v2
 # Resources
 - video: [What Is Autistic Burnout? with Neurodivergent Rebel](https://www.youtube.com/watch?v=l1UHExD8eJ4) [^notanautismmomWhatAutisticBurnout2021]
 - [Burnout and Expectations](http://www.autisticscholar.com/burnout-and-expectations/) [^dwyerBurnoutExpectations2019]

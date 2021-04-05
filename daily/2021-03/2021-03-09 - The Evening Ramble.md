@@ -7,10 +7,10 @@ tags: ["journal/daily/evening-ramble"]
 	- title: [2021-03-09 - The Evening Ramble]
 	- created: 2021-03-09 17:03
 	- last updated: 
-	- obsidian url:  [202103091703](obsidian-url-tbd)
+	- obsidian url:  [202103091703](obsidian://open?vault=not-a-robot&file=daily%2F2021-03%2F2021-03-09%20-%20The%20Evening%20Ramble
 %%
 
-# 2021-03-09 - [[The Evening Ramble]]
+# [[2021-03-09]] - [[The Evening Ramble]]
 
 [[202103091705 03-09 It's been awhile|It's been awhile since I've written in here, life has felt weird the last couple of days and my mood has swung all over, and including days where I seem to disassociate in bed and wait for the day to end.]]
 

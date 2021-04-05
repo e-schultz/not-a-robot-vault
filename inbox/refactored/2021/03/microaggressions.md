@@ -1,0 +1,4 @@
+---
+aliases: ['microaggression']
+---
+# microaggressions

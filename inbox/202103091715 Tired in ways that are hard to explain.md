@@ -7,7 +7,6 @@ tags: ["journal/daily/evening-ramble/fragment", "a/nd/inbox"]
 	- title: [Tired in ways that are hard to explain]
 	- created: 2021-03-09 17:15
 	- last updated: 
-	- obsidian url:  [202103091715](obsidian-url-tbd)
 	- source: [2021-03-09 - The Evening Ramble]
 %%
 
