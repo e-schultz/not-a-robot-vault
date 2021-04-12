@@ -4,53 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "d2e66af19af134a9",
+        "id": "b3bae4d801f4b367",
         "type": "leaf",
-        "active": true,
+        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/refactored/2021/03/2103170711 - Learning Maturity Matters Reading Notes.md",
-            "mode": "preview"
-          }
-        },
-        "group": "cb434aee6baf58d6"
+            "file": "inbox/202104121314 2021-04-12.md",
+            "mode": "source"
+          },
+          "pinned": true
+        }
       },
       {
-        "id": "a5b53ba23a2d04b7",
+        "id": "52a160d484a36a05",
         "type": "leaf",
         "state": {
-          "type": "localgraph",
-          "state": {
-            "file": "inbox/refactored/2021/03/2103170711 - Learning Maturity Matters Reading Notes.md",
-            "options": {
-              "collapse-filter": true,
-              "search": "",
-              "localJumps": 3,
-              "localBacklinks": true,
-              "localForelinks": false,
-              "localInterlinks": true,
-              "showTags": false,
-              "showAttachments": false,
-              "hideUnresolved": false,
-              "collapse-color-groups": true,
-              "colorGroups": [],
-              "collapse-display": true,
-              "showArrow": false,
-              "textFadeMultiplier": 0,
-              "nodeSizeMultiplier": 1,
-              "lineSizeMultiplier": 1,
-              "collapse-forces": true,
-              "centerStrength": 0.518713248970312,
-              "repelStrength": 10,
-              "linkStrength": 1,
-              "linkDistance": 250,
-              "scale": 4,
-              "close": false
-            }
-          }
-        },
-        "group": "cb434aee6baf58d6"
+          "type": "graph",
+          "state": {}
+        }
       }
     ],
     "direction": "vertical"
@@ -94,8 +66,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -116,7 +87,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/refactored/2021/03/2103170711 - Learning Maturity Matters Reading Notes.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -143,35 +113,36 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "inbox/refactored/2021/03/2103170711 - Learning Maturity Matters Reading Notes.md"
-              }
+              "state": {}
             }
           },
           {
-            "id": "329d0f49d13dae47",
+            "id": "bff070461a2dc4f7",
             "type": "leaf",
             "state": {
               "type": "calendar",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 467.5
+    "width": 364,
+    "collapsed": true
   },
+  "active": "52a160d484a36a05",
   "lastOpenFiles": [
-    "inbox/refactored/2021/03/2103170711 - Learning Maturity Matters Reading Notes.md",
-    "daily/2021-03/202103171823 03-17 After Work.md",
-    "daily/2021-03/2021-03-17.md",
-    "daily/2021-03/2021-03-16.md",
-    "daily/2021-03/2021-03-10.md",
-    "daily/2021-03/2021-03-09.md",
-    "daily/2021-03/2021-03-03.md",
-    "daily/2021-03/2021-03-01.md",
-    "daily/the evening ramble/2021-03-01 - The Evening Ramble.md",
-    "inbox/refactored/2021/03/01/202103011847 - Woe's of the twitter tech grifter.md"
+    "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md",
+    "inbox/202104121314 2021-04-12.md",
+    "inbox/202104121325 Rebuilding the Self Care Routine.md",
+    "inbox/202104121325.md",
+    "tweet-threads/kefimochi/@kefimochi.md",
+    "inbox/202103091935 that time I burned out at Rangle.md",
+    "PARA/Area/Building Not a Robot/Employee Education Assumptions MOC.md",
+    "inbox/202104121314.md",
+    "daily/2021-04-12.md",
+    "PARA/Area/LAD - I - Writing - Blogging.md"
   ]
 }
