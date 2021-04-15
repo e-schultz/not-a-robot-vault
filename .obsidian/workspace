@@ -4,25 +4,68 @@
     "type": "split",
     "children": [
       {
-        "id": "b3bae4d801f4b367",
+        "id": "1dfa607ba1f658e0",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md",
+            "mode": "preview"
+          }
+        },
+        "group": "3332263aaa4e3c79"
+      },
+      {
+        "id": "eea40437e285620a",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "localgraph",
+          "state": {
+            "file": "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md",
+            "options": {
+              "collapse-filter": true,
+              "search": "",
+              "localJumps": 1,
+              "localBacklinks": true,
+              "localForelinks": true,
+              "localInterlinks": false,
+              "showTags": false,
+              "showAttachments": false,
+              "hideUnresolved": false,
+              "collapse-color-groups": true,
+              "colorGroups": [],
+              "collapse-display": true,
+              "showArrow": false,
+              "textFadeMultiplier": 0,
+              "nodeSizeMultiplier": 1,
+              "lineSizeMultiplier": 1,
+              "collapse-forces": true,
+              "centerStrength": 0.518713248970312,
+              "repelStrength": 10,
+              "linkStrength": 1,
+              "linkDistance": 250,
+              "scale": 1.8558341840172317,
+              "close": false
+            }
+          },
+          "pinned": true
+        },
+        "group": "3332263aaa4e3c79"
+      },
+      {
+        "id": "fdda2f9233e39922",
         "type": "leaf",
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/202104121314 2021-04-12.md",
-            "mode": "source"
+            "file": "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md",
+            "mode": "preview"
           },
           "pinned": true
-        }
-      },
-      {
-        "id": "52a160d484a36a05",
-        "type": "leaf",
-        "state": {
-          "type": "graph",
-          "state": {}
-        }
+        },
+        "group": "3332263aaa4e3c79"
       }
     ],
     "direction": "vertical"
@@ -49,7 +92,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "stutter",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -70,8 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 633,
-    "collapsed": true
+    "width": 369
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -87,10 +129,11 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
@@ -113,36 +156,46 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md"
+              }
             }
           },
           {
-            "id": "bff070461a2dc4f7",
+            "id": "3efc8d225d9adaac",
             "type": "leaf",
             "state": {
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "ecdbdb11ce997855",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
     "width": 364,
     "collapsed": true
   },
-  "active": "52a160d484a36a05",
+  "active": "1dfa607ba1f658e0",
   "lastOpenFiles": [
     "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md",
-    "inbox/202104121314 2021-04-12.md",
-    "inbox/202104121325 Rebuilding the Self Care Routine.md",
-    "inbox/202104121325.md",
-    "tweet-threads/kefimochi/@kefimochi.md",
-    "inbox/202103091935 that time I burned out at Rangle.md",
-    "PARA/Area/Building Not a Robot/Employee Education Assumptions MOC.md",
-    "inbox/202104121314.md",
-    "daily/2021-04-12.md",
-    "PARA/Area/LAD - I - Writing - Blogging.md"
+    "PARA/Area/Building Not a Robot/L&D Careers MOC.md",
+    "PARA/Area/Building Not a Robot/Learning Facilitator Roles.md",
+    "PARA/Area/Building Not a Robot/Chief Learning Officer.md",
+    "PARA/Area/Building Not a Robot/HBR Transformer CLO Summary.md",
+    "PARA/Area/Building Not a Robot/L&D and DEI MOC.md",
+    "PARA/Area/Building Not a Robot/How will hybrid and remote work impact L&D.md",
+    "inbox/202104141004 Webinar - Every organization needs a CLO.md",
+    "inbox/attachments/CLO - align with business goals Screen Shot 2021-04-14 at 10.44.07 AM 1.png",
+    "PARA/Area/Building Not a Robot/Training and Development Software MOC.md"
   ]
 }

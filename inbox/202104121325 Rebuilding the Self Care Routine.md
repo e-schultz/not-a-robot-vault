@@ -18,4 +18,4 @@ I keep alternating between wanting to run really fast, and tackle things right n
 
 ---
 
-Link to original note: [[202104121314 2021-04-12]]
+Link to original note: [[2021-04-12]]

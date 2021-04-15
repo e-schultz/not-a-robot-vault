@@ -68,7 +68,7 @@ by [[Joel Chan]], - via [360 Learning](https://360learning.com/blog/chief-learni
 
 This seems relevant to my interests. 
 
-Yup - wrote down alot while reading it ->[[2021-02-09 - Our Roadmap for Becoming a Strategic]]
+Yup - wrote down alot while reading it ->[[2021-02-09 - Our Roadmap for Becoming a Strategic CLO]]
 
 
 #  Learning Ecosystems Don’t Just Happen Organically, Here are 3 Steps to Build one

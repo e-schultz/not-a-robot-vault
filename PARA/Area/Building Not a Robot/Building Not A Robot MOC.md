@@ -11,31 +11,38 @@ So, there has been an idea that I have been thinking about for awhile, and how w
 
 This came after my experience
 
-## Working at Rangle
+
+### Related MOC
+- [[L&D Careers MOC]]
+- [[L&D and DEI MOC]]
+- [[Training and Development Software MOC]]
+- [[Learning Ecosystem MOC]]
+#### Working at Rangle
 - [[What I Actually Did At Rangle MOC]]
 
 
-## Assumptions 
+#### Assumptions 
 - [[Employee Education Assumptions MOC]]
 
- ## Ideas to Explore / Expand on more
- 
- - [[Chief Learning Officer]]
- - [[Learning Ecosystems]]
- - [[Learning Organizations]]
- - [[Instructional Design vs Learning Expierence Design]]
- - [[How DEI and Employee Development are related]]
- - [[Content Aggergation vs Curation]]
- - [[Learning Facilitator Roles]]
- - [[How has COVID19 Impacted L&D Needs]]
- - [[How will hybrid and remote work impact L&D]]
- - [[What role does L&D have in creating a sense of belonging]]
- - [[What are the current top LMS systems]]
- - [[What are the current top LXP systems]]
- - [[Compare LMS to LXP]]
- - 
+
+### Ideas to Explore / Expand on more
+- [[Instructional Design vs Learning Expierence Design]]
+- [[Learning Organizations]]
+- [[How has COVID19 Impacted L&D Needs]]
+- [[Content Aggergation vs Curation]]
+- [[Training Needs Analysis]]
 
 
+### Inbox/Related Notes to Organize
 
+- [[20210217 - under performing - but why]]
+- Bunch of misc notes in -> [[202102211753 2020wk08 Summary]]
+- [[Management is not a promotion]]
+- [[We would do better teaching our engineers how to teach better, instead of teaching them more tech]]
+- [[Learning Culture vs Teaching Culture]]
+- [[Learning How To Teach Better]]
+- [[202101 My Last Teaching Engagement - storydump]]
 
+## Presentation Notes
 
+- [[202104141004 Webinar - Every organization needs a CLO]]

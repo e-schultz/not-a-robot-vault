@@ -1429,7 +1429,7 @@ const convertToExplicit = (query) => ({
 
 // When `auto` is `true`, the parse function will infer and initialize and add
 // the appropriate `Searcher` instance
-function parse(query, options, { auto = true } = {}) {
+function parse$2(query, options, { auto = true } = {}) {
   const next = (query) => {
     let keys = Object.keys(query);
 
@@ -1696,7 +1696,7 @@ class Fuse {
 
   _searchLogical(query) {
 
-    const expression = parse(query, this.options);
+    const expression = parse$2(query, this.options);
 
     const evaluate = (node, item, idx) => {
       if (!node.children) {
@@ -1856,7 +1856,7 @@ Fuse.parseIndex = parseIndex;
 Fuse.config = Config;
 
 {
-  Fuse.parseQuery = parse;
+  Fuse.parseQuery = parse$2;
 }
 
 {
@@ -1868,19 +1868,22 @@ Fuse.config = Config;
 // the current instance
 var FuseSearchIndex = /** @class */ (function () {
     function FuseSearchIndex() {
+        this.state = 'starting';
     }
     // Provide a set of markdown files to build a index
     // with for example this.app.vault.getMarkdownFiles()
     FuseSearchIndex.prototype.buildIndex = function (files) {
         // Log the amount of files in debug
         console.debug("[OQL] Indexing " + files.length + " files..");
-        var index = Fuse.createIndex(['title', 'path', 'content', 'created', 'modified', 'tags'], files);
+        var indexKeys = ['title', 'path', 'content', 'created', 'modified', 'tags'];
+        var index = Fuse.createIndex(indexKeys, files);
         // Store the search index within this singleton
         this.searchIndex = new Fuse(files, {
-            keys: ['title', 'path', 'content', 'created', 'modified', 'tags'],
+            keys: indexKeys,
             useExtendedSearch: true,
             includeScore: true,
         }, index);
+        this.state = 'ready';
     };
     // Search method, accepts only strings, but support 
     // different searching methods as described in the Fuse 
@@ -1901,11 +1904,16 @@ var FuseSearchIndex = /** @class */ (function () {
             });
         });
     };
-    FuseSearchIndex.prototype.removeFile = function (file) {
+    FuseSearchIndex.prototype.removeFile = function (path) {
         // We can only remove files if the index is available
-        return this.searchIndex.remove(function (doc) {
-            return doc.created === file.created;
-        });
+        try {
+            return this.searchIndex.remove(function (doc) {
+                return doc.path === path;
+            });
+        }
+        catch (error) {
+            console.error(error);
+        }
     };
     FuseSearchIndex.prototype.addFile = function (file) {
         return this.searchIndex.add(file);
@@ -2517,7 +2525,7 @@ var Range = /*#__PURE__*/function () {
 
 /** Root class of all nodes */
 
-var Node = /*#__PURE__*/function () {
+var Node$1 = /*#__PURE__*/function () {
   _createClass(Node, null, [{
     key: "addStringTerminator",
     value: function addStringTerminator(src, offset, str) {
@@ -2906,7 +2914,7 @@ var YAMLError = /*#__PURE__*/function (_Error) {
 
     _classCallCheck(this, YAMLError);
 
-    if (!message || !(source instanceof Node)) throw new Error("Invalid arguments for new ".concat(name));
+    if (!message || !(source instanceof Node$1)) throw new Error("Invalid arguments for new ".concat(name));
     _this = _super.call(this);
     _this.name = name;
     _this.message = message;
@@ -3032,8 +3040,8 @@ var PlainValue = /*#__PURE__*/function (_Node) {
       var valueEnd = start;
 
       for (var ch = src[offset]; ch === '\n'; ch = src[offset]) {
-        if (Node.atDocumentBoundary(src, offset + 1)) break;
-        var end = Node.endOfBlockIndent(src, indent, offset + 1);
+        if (Node$1.atDocumentBoundary(src, offset + 1)) break;
+        var end = Node$1.endOfBlockIndent(src, indent, offset + 1);
         if (end === null || src[end] === '#') break;
 
         if (src[end] === '\n') {
@@ -3088,7 +3096,7 @@ var PlainValue = /*#__PURE__*/function (_Node) {
       }
 
       this.valueRange = new Range(start, offset);
-      offset = Node.endOfWhiteSpace(src, offset);
+      offset = Node$1.endOfWhiteSpace(src, offset);
       offset = this.parseComment(offset);
 
       if (!this.hasComment || this.valueRange.isEmpty()) {
@@ -3117,7 +3125,7 @@ var PlainValue = /*#__PURE__*/function (_Node) {
         var _ch = src[i];
 
         if (_ch === '\n') {
-          var _Node$foldNewline = Node.foldNewline(src, i, -1),
+          var _Node$foldNewline = Node$1.foldNewline(src, i, -1),
               fold = _Node$foldNewline.fold,
               offset = _Node$foldNewline.offset;
 
@@ -3188,7 +3196,7 @@ var PlainValue = /*#__PURE__*/function (_Node) {
   }]);
 
   return PlainValue;
-}(Node);
+}(Node$1);
 
 var BlankLine = /*#__PURE__*/function (_Node) {
   _inherits(BlankLine, _Node);
@@ -3228,7 +3236,7 @@ var BlankLine = /*#__PURE__*/function (_Node) {
   }]);
 
   return BlankLine;
-}(Node);
+}(Node$1);
 
 var CollectionItem = /*#__PURE__*/function (_Node) {
   _inherits(CollectionItem, _Node);
@@ -3261,7 +3269,7 @@ var CollectionItem = /*#__PURE__*/function (_Node) {
           lineStart = context.lineStart;
       if (!atLineStart && this.type === Type.SEQ_ITEM) this.error = new YAMLSemanticError(this, 'Sequence items must not have preceding content on the same line');
       var indent = atLineStart ? start - lineStart : context.indent;
-      var offset = Node.endOfWhiteSpace(src, start + 1);
+      var offset = Node$1.endOfWhiteSpace(src, start + 1);
       var ch = src[offset];
       var inlineComment = ch === '#';
       var comments = [];
@@ -3269,14 +3277,14 @@ var CollectionItem = /*#__PURE__*/function (_Node) {
 
       while (ch === '\n' || ch === '#') {
         if (ch === '#') {
-          var _end = Node.endOfLine(src, offset + 1);
+          var _end = Node$1.endOfLine(src, offset + 1);
 
           comments.push(new Range(offset, _end));
           offset = _end;
         } else {
           atLineStart = true;
           lineStart = offset + 1;
-          var wsEnd = Node.endOfWhiteSpace(src, lineStart);
+          var wsEnd = Node$1.endOfWhiteSpace(src, lineStart);
 
           if (src[wsEnd] === '\n' && comments.length === 0) {
             blankLine = new BlankLine();
@@ -3285,13 +3293,13 @@ var CollectionItem = /*#__PURE__*/function (_Node) {
             }, lineStart);
           }
 
-          offset = Node.endOfIndent(src, lineStart);
+          offset = Node$1.endOfIndent(src, lineStart);
         }
 
         ch = src[offset];
       }
 
-      if (Node.nextNodeIsIndented(ch, offset - (lineStart + indent), this.type !== Type.SEQ_ITEM)) {
+      if (Node$1.nextNodeIsIndented(ch, offset - (lineStart + indent), this.type !== Type.SEQ_ITEM)) {
         this.node = parseNode({
           atLineStart: atLineStart,
           inCollection: false,
@@ -3320,7 +3328,7 @@ var CollectionItem = /*#__PURE__*/function (_Node) {
           this.props.push(c);
           offset = c.end;
         } else {
-          offset = Node.endOfLine(src, start + 1);
+          offset = Node$1.endOfLine(src, start + 1);
         }
       }
 
@@ -3343,7 +3351,7 @@ var CollectionItem = /*#__PURE__*/function (_Node) {
           value = this.value;
       if (value != null) return value;
       var str = node ? src.slice(range.start, node.range.start) + String(node) : src.slice(range.start, range.end);
-      return Node.addStringTerminator(src, range.end, str);
+      return Node$1.addStringTerminator(src, range.end, str);
     }
   }, {
     key: "includesTrailingLines",
@@ -3353,7 +3361,7 @@ var CollectionItem = /*#__PURE__*/function (_Node) {
   }]);
 
   return CollectionItem;
-}(Node);
+}(Node$1);
 
 var Comment = /*#__PURE__*/function (_Node) {
   _inherits(Comment, _Node);
@@ -3385,7 +3393,7 @@ var Comment = /*#__PURE__*/function (_Node) {
   }]);
 
   return Comment;
-}(Node);
+}(Node$1);
 
 function grabCollectionEndComments(node) {
   var cnode = node;
@@ -3394,7 +3402,7 @@ function grabCollectionEndComments(node) {
     cnode = cnode.node;
   }
 
-  if (!(cnode instanceof Collection)) return null;
+  if (!(cnode instanceof Collection$1)) return null;
   var len = cnode.items.length;
   var ci = -1;
 
@@ -3424,7 +3432,7 @@ function grabCollectionEndComments(node) {
 
   return ca;
 }
-var Collection = /*#__PURE__*/function (_Node) {
+var Collection$1 = /*#__PURE__*/function (_Node) {
   _inherits(Collection, _Node);
 
   var _super = _createSuper(Collection);
@@ -3432,8 +3440,8 @@ var Collection = /*#__PURE__*/function (_Node) {
   _createClass(Collection, null, [{
     key: "nextContentHasIndent",
     value: function nextContentHasIndent(src, offset, indent) {
-      var lineStart = Node.endOfLine(src, offset) + 1;
-      offset = Node.endOfWhiteSpace(src, lineStart);
+      var lineStart = Node$1.endOfLine(src, offset) + 1;
+      offset = Node$1.endOfWhiteSpace(src, lineStart);
       var ch = src[offset];
       if (!ch) return false;
       if (offset >= lineStart + indent) return true;
@@ -3480,7 +3488,7 @@ var Collection = /*#__PURE__*/function (_Node) {
           src = context.src; // It's easier to recalculate lineStart here rather than tracking down the
       // last context from which to read it -- eemeli/yaml#2
 
-      var lineStart = Node.startOfLine(src, start);
+      var lineStart = Node$1.startOfLine(src, start);
       var firstItem = this.items[0]; // First-item context needs to be correct for later comment handling
       // -- eemeli/yaml#17
 
@@ -3488,9 +3496,9 @@ var Collection = /*#__PURE__*/function (_Node) {
       this.valueRange = Range.copy(firstItem.valueRange);
       var indent = firstItem.range.start - firstItem.context.lineStart;
       var offset = start;
-      offset = Node.normalizeOffset(src, offset);
+      offset = Node$1.normalizeOffset(src, offset);
       var ch = src[offset];
-      var atLineStart = Node.endOfWhiteSpace(src, lineStart) === offset;
+      var atLineStart = Node$1.endOfWhiteSpace(src, lineStart) === offset;
       var prevIncludesTrailingLines = false;
 
       while (ch) {
@@ -3530,10 +3538,10 @@ var Collection = /*#__PURE__*/function (_Node) {
           }
 
           lineStart = offset + 1;
-          offset = Node.endOfIndent(src, lineStart);
+          offset = Node$1.endOfIndent(src, lineStart);
 
-          if (Node.atBlank(src, offset)) {
-            var wsEnd = Node.endOfWhiteSpace(src, offset);
+          if (Node$1.atBlank(src, offset)) {
+            var wsEnd = Node$1.endOfWhiteSpace(src, offset);
             var next = src[wsEnd];
 
             if (!next || next === '\n' || next === '#') {
@@ -3585,7 +3593,7 @@ var Collection = /*#__PURE__*/function (_Node) {
 
         this.items.push(node);
         this.valueRange.end = node.valueRange.end;
-        offset = Node.normalizeOffset(src, node.range.end);
+        offset = Node$1.normalizeOffset(src, node.range.end);
         ch = src[offset];
         atLineStart = false;
         prevIncludesTrailingLines = node.includesTrailingLines; // Need to reset lineStart and atLineStart here if preceding node's range
@@ -3642,7 +3650,7 @@ var Collection = /*#__PURE__*/function (_Node) {
         str += String(item);
       }
 
-      return Node.addStringTerminator(src, range.end, str);
+      return Node$1.addStringTerminator(src, range.end, str);
     }
   }, {
     key: "includesTrailingLines",
@@ -3652,7 +3660,7 @@ var Collection = /*#__PURE__*/function (_Node) {
   }]);
 
   return Collection;
-}(Node);
+}(Node$1);
 
 var Directive = /*#__PURE__*/function (_Node) {
   _inherits(Directive, _Node);
@@ -3716,9 +3724,9 @@ var Directive = /*#__PURE__*/function (_Node) {
   }]);
 
   return Directive;
-}(Node);
+}(Node$1);
 
-var Document = /*#__PURE__*/function (_Node) {
+var Document$2 = /*#__PURE__*/function (_Node) {
   _inherits(Document, _Node);
 
   var _super = _createSuper(Document);
@@ -3726,7 +3734,7 @@ var Document = /*#__PURE__*/function (_Node) {
   _createClass(Document, null, [{
     key: "startCommentOrEndBlankLine",
     value: function startCommentOrEndBlankLine(src, start) {
-      var offset = Node.endOfWhiteSpace(src, start);
+      var offset = Node$1.endOfWhiteSpace(src, start);
       var ch = src[offset];
       return ch === '#' || ch === '\n' ? offset : start;
     }
@@ -3754,7 +3762,7 @@ var Document = /*#__PURE__*/function (_Node) {
       var hasDirectives = false;
       var offset = start;
 
-      while (!Node.atDocumentBoundary(src, offset, Char.DIRECTIVES_END)) {
+      while (!Node$1.atDocumentBoundary(src, offset, Char.DIRECTIVES_END)) {
         offset = Document.startCommentOrEndBlankLine(src, offset);
 
         switch (src[offset]) {
@@ -3838,11 +3846,11 @@ var Document = /*#__PURE__*/function (_Node) {
         lineStart -= 1;
       }
 
-      var offset = Node.endOfWhiteSpace(src, start);
+      var offset = Node$1.endOfWhiteSpace(src, start);
       var atLineStart = lineStart === start;
       this.valueRange = new Range(offset);
 
-      while (!Node.atDocumentBoundary(src, offset, Char.DOCUMENT_END)) {
+      while (!Node$1.atDocumentBoundary(src, offset, Char.DOCUMENT_END)) {
         switch (src[offset]) {
           case '\n':
             if (atLineStart) {
@@ -3875,7 +3883,7 @@ var Document = /*#__PURE__*/function (_Node) {
 
           default:
             {
-              var iEnd = Node.endOfIndent(src, offset);
+              var iEnd = Node$1.endOfIndent(src, offset);
               var context = {
                 atLineStart: atLineStart,
                 indent: -1,
@@ -3905,7 +3913,7 @@ var Document = /*#__PURE__*/function (_Node) {
         offset += 3;
 
         if (src[offset]) {
-          offset = Node.endOfWhiteSpace(src, offset);
+          offset = Node$1.endOfWhiteSpace(src, offset);
 
           if (src[offset] === '#') {
             var _comment = new Comment();
@@ -3984,9 +3992,9 @@ var Document = /*#__PURE__*/function (_Node) {
   }]);
 
   return Document;
-}(Node);
+}(Node$1);
 
-var Alias = /*#__PURE__*/function (_Node) {
+var Alias$1 = /*#__PURE__*/function (_Node) {
   _inherits(Alias, _Node);
 
   var _super = _createSuper(Alias);
@@ -4010,16 +4018,16 @@ var Alias = /*#__PURE__*/function (_Node) {
     value: function parse(context, start) {
       this.context = context;
       var src = context.src;
-      var offset = Node.endOfIdentifier(src, start + 1);
+      var offset = Node$1.endOfIdentifier(src, start + 1);
       this.valueRange = new Range(start + 1, offset);
-      offset = Node.endOfWhiteSpace(src, offset);
+      offset = Node$1.endOfWhiteSpace(src, offset);
       offset = this.parseComment(offset);
       return offset;
     }
   }]);
 
   return Alias;
-}(Node);
+}(Node$1);
 
 var Chomp = {
   CLIP: 'CLIP',
@@ -4097,8 +4105,8 @@ var BlockValue = /*#__PURE__*/function (_Node) {
 
       for (var ch = src[offset]; ch === '\n'; ch = src[offset]) {
         offset += 1;
-        if (Node.atDocumentBoundary(src, offset)) break;
-        var end = Node.endOfBlockIndent(src, indent, offset); // should not include tab?
+        if (Node$1.atDocumentBoundary(src, offset)) break;
+        var end = Node$1.endOfBlockIndent(src, indent, offset); // should not include tab?
 
         if (end === null) break;
         var _ch = src[end];
@@ -4133,7 +4141,7 @@ var BlockValue = /*#__PURE__*/function (_Node) {
         if (src[end] === '\n') {
           offset = end;
         } else {
-          offset = valueEnd = Node.endOfLine(src, end);
+          offset = valueEnd = Node$1.endOfLine(src, end);
         }
       }
 
@@ -4171,7 +4179,7 @@ var BlockValue = /*#__PURE__*/function (_Node) {
       this.context = context;
       var src = context.src;
       var offset = this.parseBlockHeader(start);
-      offset = Node.endOfWhiteSpace(src, offset);
+      offset = Node$1.endOfWhiteSpace(src, offset);
       offset = this.parseComment(offset);
       offset = this.parseBlockValue(offset);
       return offset;
@@ -4241,7 +4249,7 @@ var BlockValue = /*#__PURE__*/function (_Node) {
         if (_ch2 === '\n') {
           if (sep === '\n') str += '\n';else sep = '\n';
         } else {
-          var lineEnd = Node.endOfLine(src, i);
+          var lineEnd = Node$1.endOfLine(src, i);
           var line = src.slice(i, lineEnd);
           i = lineEnd;
 
@@ -4266,7 +4274,7 @@ var BlockValue = /*#__PURE__*/function (_Node) {
   }]);
 
   return BlockValue;
-}(Node);
+}(Node$1);
 
 var FlowCollection = /*#__PURE__*/function (_Node) {
   _inherits(FlowCollection, _Node);
@@ -4310,7 +4318,7 @@ var FlowCollection = /*#__PURE__*/function (_Node) {
         char: char,
         offset: start
       }];
-      var offset = Node.endOfWhiteSpace(src, start + 1);
+      var offset = Node$1.endOfWhiteSpace(src, start + 1);
       char = src[offset];
 
       while (char && char !== ']' && char !== '}') {
@@ -4318,7 +4326,7 @@ var FlowCollection = /*#__PURE__*/function (_Node) {
           case '\n':
             {
               lineStart = offset + 1;
-              var wsEnd = Node.endOfWhiteSpace(src, lineStart);
+              var wsEnd = Node$1.endOfWhiteSpace(src, lineStart);
 
               if (src[wsEnd] === '\n') {
                 var blankLine = new BlankLine();
@@ -4328,7 +4336,7 @@ var FlowCollection = /*#__PURE__*/function (_Node) {
                 this.items.push(blankLine);
               }
 
-              offset = Node.endOfIndent(src, lineStart);
+              offset = Node$1.endOfIndent(src, lineStart);
 
               if (offset <= lineStart + indent) {
                 char = src[offset];
@@ -4396,11 +4404,11 @@ var FlowCollection = /*#__PURE__*/function (_Node) {
               }
 
               this.items.push(node);
-              offset = Node.normalizeOffset(src, node.range.end);
+              offset = Node$1.normalizeOffset(src, node.range.end);
             }
         }
 
-        offset = Node.endOfWhiteSpace(src, offset);
+        offset = Node$1.endOfWhiteSpace(src, offset);
         char = src[offset];
       }
 
@@ -4411,7 +4419,7 @@ var FlowCollection = /*#__PURE__*/function (_Node) {
           char: char,
           offset: offset
         });
-        offset = Node.endOfWhiteSpace(src, offset + 1);
+        offset = Node$1.endOfWhiteSpace(src, offset + 1);
         offset = this.parseComment(offset);
       }
 
@@ -4422,7 +4430,7 @@ var FlowCollection = /*#__PURE__*/function (_Node) {
     value: function setOrigRanges(cr, offset) {
       offset = _get(_getPrototypeOf(FlowCollection.prototype), "setOrigRanges", this).call(this, cr, offset);
       this.items.forEach(function (node) {
-        if (node instanceof Node) {
+        if (node instanceof Node$1) {
           offset = node.setOrigRanges(cr, offset);
         } else if (cr.length === 0) {
           node.origOffset = node.offset;
@@ -4448,7 +4456,7 @@ var FlowCollection = /*#__PURE__*/function (_Node) {
           value = this.value;
       if (value != null) return value;
       var nodes = items.filter(function (item) {
-        return item instanceof Node;
+        return item instanceof Node$1;
       });
       var str = '';
       var prevEnd = range.start;
@@ -4465,12 +4473,12 @@ var FlowCollection = /*#__PURE__*/function (_Node) {
         }
       });
       str += src.slice(prevEnd, range.end);
-      return Node.addStringTerminator(src, range.end, str);
+      return Node$1.addStringTerminator(src, range.end, str);
     }
   }]);
 
   return FlowCollection;
-}(Node);
+}(Node$1);
 
 var QuoteDouble = /*#__PURE__*/function (_Node) {
   _inherits(QuoteDouble, _Node);
@@ -4513,7 +4521,7 @@ var QuoteDouble = /*#__PURE__*/function (_Node) {
       var src = context.src;
       var offset = QuoteDouble.endOfQuote(src, start + 1);
       this.valueRange = new Range(start, offset);
-      offset = Node.endOfWhiteSpace(src, offset);
+      offset = Node$1.endOfWhiteSpace(src, offset);
       offset = this.parseComment(offset);
       return offset;
     }
@@ -4541,9 +4549,9 @@ var QuoteDouble = /*#__PURE__*/function (_Node) {
         var ch = src[i];
 
         if (ch === '\n') {
-          if (Node.atDocumentBoundary(src, i + 1)) errors.push(new YAMLSemanticError(this, 'Document boundary indicators are not allowed within string values'));
+          if (Node$1.atDocumentBoundary(src, i + 1)) errors.push(new YAMLSemanticError(this, 'Document boundary indicators are not allowed within string values'));
 
-          var _Node$foldNewline = Node.foldNewline(src, i, indent),
+          var _Node$foldNewline = Node$1.foldNewline(src, i, indent),
               fold = _Node$foldNewline.fold,
               offset = _Node$foldNewline.offset,
               error = _Node$foldNewline.error;
@@ -4703,7 +4711,7 @@ var QuoteDouble = /*#__PURE__*/function (_Node) {
   }]);
 
   return QuoteDouble;
-}(Node);
+}(Node$1);
 
 var QuoteSingle = /*#__PURE__*/function (_Node) {
   _inherits(QuoteSingle, _Node);
@@ -4731,7 +4739,7 @@ var QuoteSingle = /*#__PURE__*/function (_Node) {
       var src = context.src;
       var offset = QuoteSingle.endOfQuote(src, start + 1);
       this.valueRange = new Range(start, offset);
-      offset = Node.endOfWhiteSpace(src, offset);
+      offset = Node$1.endOfWhiteSpace(src, offset);
       offset = this.parseComment(offset);
       return offset;
     }
@@ -4757,9 +4765,9 @@ var QuoteSingle = /*#__PURE__*/function (_Node) {
         var ch = src[i];
 
         if (ch === '\n') {
-          if (Node.atDocumentBoundary(src, i + 1)) errors.push(new YAMLSemanticError(this, 'Document boundary indicators are not allowed within string values'));
+          if (Node$1.atDocumentBoundary(src, i + 1)) errors.push(new YAMLSemanticError(this, 'Document boundary indicators are not allowed within string values'));
 
-          var _Node$foldNewline = Node.foldNewline(src, i, indent),
+          var _Node$foldNewline = Node$1.foldNewline(src, i, indent),
               fold = _Node$foldNewline.fold,
               offset = _Node$foldNewline.offset,
               error = _Node$foldNewline.error;
@@ -4811,12 +4819,12 @@ var QuoteSingle = /*#__PURE__*/function (_Node) {
   }]);
 
   return QuoteSingle;
-}(Node);
+}(Node$1);
 
 function createNewNode(type, props) {
   switch (type) {
     case Type.ALIAS:
-      return new Alias(type, props);
+      return new Alias$1(type, props);
 
     case Type.BLOCK_FOLDED:
     case Type.BLOCK_LITERAL:
@@ -4880,13 +4888,13 @@ var ParseContext = /*#__PURE__*/function () {
           return Type.FLOW_SEQ;
 
         case '?':
-          return !inFlow && Node.atBlank(src, offset + 1, true) ? Type.MAP_KEY : Type.PLAIN;
+          return !inFlow && Node$1.atBlank(src, offset + 1, true) ? Type.MAP_KEY : Type.PLAIN;
 
         case ':':
-          return !inFlow && Node.atBlank(src, offset + 1, true) ? Type.MAP_VALUE : Type.PLAIN;
+          return !inFlow && Node$1.atBlank(src, offset + 1, true) ? Type.MAP_VALUE : Type.PLAIN;
 
         case '-':
-          return !inFlow && Node.atBlank(src, offset + 1, true) ? Type.SEQ_ITEM : Type.PLAIN;
+          return !inFlow && Node$1.atBlank(src, offset + 1, true) ? Type.SEQ_ITEM : Type.PLAIN;
 
         case '"':
           return Type.QUOTE_DOUBLE;
@@ -4916,7 +4924,7 @@ var ParseContext = /*#__PURE__*/function () {
     _classCallCheck(this, ParseContext);
 
     _defineProperty(this, "parseNode", function (overlay, start) {
-      if (Node.atDocumentBoundary(_this.src, start)) return null;
+      if (Node$1.atDocumentBoundary(_this.src, start)) return null;
       var context = new ParseContext(_this, overlay);
 
       var _context$parseProps = context.parseProps(start),
@@ -4943,7 +4951,7 @@ var ParseContext = /*#__PURE__*/function () {
           node.error = new YAMLSyntaxError(node, 'Block collection must not have preceding content here (e.g. directives-end indicator)');
         }
 
-        var collection = new Collection(node);
+        var collection = new Collection$1(node);
         offset = collection.parse(new ParseContext(context), offset);
         collection.range = new Range(start, offset);
         return collection;
@@ -4973,7 +4981,7 @@ var ParseContext = /*#__PURE__*/function () {
 
       var offset = node.range.end;
       if (src[offset] === '\n' || src[offset - 1] === '\n') return false;
-      offset = Node.endOfWhiteSpace(src, offset);
+      offset = Node$1.endOfWhiteSpace(src, offset);
       return src[offset] === ':';
     } // Anchor and tag are before type, which determines the node implementation
     // class; hence this intermediate step.
@@ -4986,45 +4994,45 @@ var ParseContext = /*#__PURE__*/function () {
           src = this.src;
       var props = [];
       var lineHasProps = false;
-      offset = this.atLineStart ? Node.endOfIndent(src, offset) : Node.endOfWhiteSpace(src, offset);
+      offset = this.atLineStart ? Node$1.endOfIndent(src, offset) : Node$1.endOfWhiteSpace(src, offset);
       var ch = src[offset];
 
       while (ch === Char.ANCHOR || ch === Char.COMMENT || ch === Char.TAG || ch === '\n') {
         if (ch === '\n') {
           var lineStart = offset + 1;
-          var inEnd = Node.endOfIndent(src, lineStart);
+          var inEnd = Node$1.endOfIndent(src, lineStart);
           var indentDiff = inEnd - (lineStart + this.indent);
           var noIndicatorAsIndent = parent.type === Type.SEQ_ITEM && parent.context.atLineStart;
-          if (!Node.nextNodeIsIndented(src[inEnd], indentDiff, !noIndicatorAsIndent)) break;
+          if (!Node$1.nextNodeIsIndented(src[inEnd], indentDiff, !noIndicatorAsIndent)) break;
           this.atLineStart = true;
           this.lineStart = lineStart;
           lineHasProps = false;
           offset = inEnd;
         } else if (ch === Char.COMMENT) {
-          var end = Node.endOfLine(src, offset + 1);
+          var end = Node$1.endOfLine(src, offset + 1);
           props.push(new Range(offset, end));
           offset = end;
         } else {
-          var _end = Node.endOfIdentifier(src, offset + 1);
+          var _end = Node$1.endOfIdentifier(src, offset + 1);
 
           if (ch === Char.TAG && src[_end] === ',' && /^[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+,\d\d\d\d(-\d\d){0,2}\/\S/.test(src.slice(offset + 1, _end + 13))) {
             // Let's presume we're dealing with a YAML 1.0 domain tag here, rather
             // than an empty but 'foo.bar' private-tagged node in a flow collection
             // followed without whitespace by a plain string starting with a year
             // or date divided by something.
-            _end = Node.endOfIdentifier(src, _end + 5);
+            _end = Node$1.endOfIdentifier(src, _end + 5);
           }
 
           props.push(new Range(offset, _end));
           lineHasProps = true;
-          offset = Node.endOfWhiteSpace(src, _end);
+          offset = Node$1.endOfWhiteSpace(src, _end);
         }
 
         ch = src[offset];
       } // '- &a : b' has an anchor on an empty node
 
 
-      if (lineHasProps && ch === ':' && Node.atBlank(src, offset + 1, true)) offset -= 1;
+      if (lineHasProps && ch === ':' && Node$1.atBlank(src, offset + 1, true)) offset -= 1;
       var type = ParseContext.parseType(src, offset, inFlow);
       return {
         props: props,
@@ -5059,7 +5067,7 @@ function parse$1(src) {
   var offset = 0;
 
   do {
-    var doc = new Document();
+    var doc = new Document$2();
     var context = new ParseContext({
       src: src
     });
@@ -5100,7 +5108,7 @@ function addComment(str, indent, comment) {
   return !comment ? str : comment.indexOf('\n') === -1 ? "".concat(str, " #").concat(comment) : "".concat(str, "\n") + comment.replace(/^/gm, "".concat(indent || '', "#"));
 }
 
-var Node$1 = function Node() {
+var Node = function Node() {
   _classCallCheck(this, Node);
 };
 
@@ -5152,7 +5160,7 @@ var Scalar = /*#__PURE__*/function (_Node) {
   }]);
 
   return Scalar;
-}(Node$1);
+}(Node);
 
 function collectionFromPath(schema, path, value) {
   var v = value;
@@ -5171,7 +5179,7 @@ function collectionFromPath(schema, path, value) {
 var isEmptyPath = function isEmptyPath(path) {
   return path == null || _typeof(path) === 'object' && path[Symbol.iterator]().next().done;
 };
-var Collection$1 = /*#__PURE__*/function (_Node) {
+var Collection = /*#__PURE__*/function (_Node) {
   _inherits(Collection, _Node);
 
   var _super = _createSuper(Collection);
@@ -5386,9 +5394,9 @@ var Collection$1 = /*#__PURE__*/function (_Node) {
   }]);
 
   return Collection;
-}(Node$1);
+}(Node);
 
-_defineProperty(Collection$1, "maxFlowStringSingleLineLength", 60);
+_defineProperty(Collection, "maxFlowStringSingleLineLength", 60);
 
 function asItemIndex(key) {
   var idx = key instanceof Scalar ? key.value : key;
@@ -5483,12 +5491,12 @@ var YAMLSeq = /*#__PURE__*/function (_Collection) {
   }]);
 
   return YAMLSeq;
-}(Collection$1);
+}(Collection);
 
 var stringifyKey = function stringifyKey(key, jsKey, ctx) {
   if (jsKey === null) return '';
   if (_typeof(jsKey) !== 'object') return String(jsKey);
-  if (key instanceof Node$1 && ctx && ctx.doc) return key.toString({
+  if (key instanceof Node && ctx && ctx.doc) return key.toString({
     anchors: {},
     doc: ctx.doc,
     indent: '',
@@ -5552,20 +5560,20 @@ var Pair = /*#__PURE__*/function (_Node) {
           simpleKeys = _ctx$doc$options.simpleKeys;
       var key = this.key,
           value = this.value;
-      var keyComment = key instanceof Node$1 && key.comment;
+      var keyComment = key instanceof Node && key.comment;
 
       if (simpleKeys) {
         if (keyComment) {
           throw new Error('With simple keys, key nodes cannot have comments');
         }
 
-        if (key instanceof Collection$1) {
+        if (key instanceof Collection) {
           var msg = 'With simple keys, collection cannot be used as a key value';
           throw new Error(msg);
         }
       }
 
-      var explicitKey = !simpleKeys && (!key || keyComment || key instanceof Collection$1 || key.type === Type.BLOCK_FOLDED || key.type === Type.BLOCK_LITERAL);
+      var explicitKey = !simpleKeys && (!key || keyComment || key instanceof Collection || key.type === Type.BLOCK_FOLDED || key.type === Type.BLOCK_LITERAL);
       var _ctx = ctx,
           doc = _ctx.doc,
           indent = _ctx.indent,
@@ -5603,7 +5611,7 @@ var Pair = /*#__PURE__*/function (_Node) {
       var vcb = '';
       var valueComment = null;
 
-      if (value instanceof Node$1) {
+      if (value instanceof Node) {
         if (value.spaceBefore) vcb = '\n';
 
         if (value.commentBefore) {
@@ -5634,7 +5642,7 @@ var Pair = /*#__PURE__*/function (_Node) {
 
       if (vcb || this.comment) {
         ws = "".concat(vcb, "\n").concat(ctx.indent);
-      } else if (!explicitKey && value instanceof Collection$1) {
+      } else if (!explicitKey && value instanceof Collection) {
         var flow = valueStr[0] === '[' || valueStr[0] === '{';
         if (!flow || valueStr.includes('\n')) ws = "\n".concat(ctx.indent);
       }
@@ -5645,11 +5653,11 @@ var Pair = /*#__PURE__*/function (_Node) {
   }, {
     key: "commentBefore",
     get: function get() {
-      return this.key instanceof Node$1 ? this.key.commentBefore : undefined;
+      return this.key instanceof Node ? this.key.commentBefore : undefined;
     },
     set: function set(cb) {
       if (this.key == null) this.key = new Scalar(null);
-      if (this.key instanceof Node$1) this.key.commentBefore = cb;else {
+      if (this.key instanceof Node) this.key.commentBefore = cb;else {
         var msg = 'Pair.commentBefore is an alias for Pair.key.commentBefore. To set it, the key must be a Node.';
         throw new Error(msg);
       }
@@ -5657,7 +5665,7 @@ var Pair = /*#__PURE__*/function (_Node) {
   }]);
 
   return Pair;
-}(Node$1);
+}(Node);
 
 _defineProperty(Pair, "Type", {
   PAIR: 'PAIR',
@@ -5665,10 +5673,10 @@ _defineProperty(Pair, "Type", {
 });
 
 var getAliasCount = function getAliasCount(node, anchors) {
-  if (node instanceof Alias$1) {
+  if (node instanceof Alias) {
     var anchor = anchors.get(node.source);
     return anchor.count * anchor.aliasCount;
-  } else if (node instanceof Collection$1) {
+  } else if (node instanceof Collection) {
     var count = 0;
 
     var _iterator = _createForOfIteratorHelper(node.items),
@@ -5696,7 +5704,7 @@ var getAliasCount = function getAliasCount(node, anchors) {
   return 1;
 };
 
-var Alias$1 = /*#__PURE__*/function (_Node) {
+var Alias = /*#__PURE__*/function (_Node) {
   _inherits(Alias, _Node);
 
   var _super = _createSuper(Alias);
@@ -5772,9 +5780,9 @@ var Alias$1 = /*#__PURE__*/function (_Node) {
   }]);
 
   return Alias;
-}(Node$1);
+}(Node);
 
-_defineProperty(Alias$1, "default", true);
+_defineProperty(Alias, "default", true);
 
 function findPair(items, key) {
   var k = key instanceof Scalar ? key.value : key;
@@ -5916,7 +5924,7 @@ var YAMLMap = /*#__PURE__*/function (_Collection) {
   }]);
 
   return YAMLMap;
-}(Collection$1);
+}(Collection);
 
 var MERGE_KEY = '<<';
 var Merge = /*#__PURE__*/function (_Pair) {
@@ -6749,7 +6757,7 @@ function resolveByTagName(doc, node, tagName) {
       if (tag.tag === tagName) {
         if (tag.test) matchWithTest.push(tag);else {
           var res = tag.resolve(doc, node);
-          return res instanceof Collection$1 ? res : new Scalar(res);
+          return res instanceof Collection ? res : new Scalar(res);
         }
       }
     }
@@ -6902,7 +6910,7 @@ function resolveNodeValue(doc, node) {
     } // Lazy resolution for circular references
 
 
-    var res = new Alias$1(src);
+    var res = new Alias(src);
 
     anchors._cstAliases.push(res);
 
@@ -6994,14 +7002,14 @@ function resolveMap(doc, cst) {
 
   for (var i = 0; i < items.length; ++i) {
     var iKey = items[i].key;
-    if (iKey instanceof Collection$1) hasCollectionKey = true;
+    if (iKey instanceof Collection) hasCollectionKey = true;
 
     if (doc.schema.merge && iKey && iKey.value === MERGE_KEY) {
       items[i] = new Merge(items[i]);
       var sources = items[i].value.items;
       var error = null;
       sources.some(function (node) {
-        if (node instanceof Alias$1) {
+        if (node instanceof Alias) {
           // During parsing, alias sources are CST nodes; to account for
           // circular references their resolved values can't be used here.
           var type = node.source.type;
@@ -7300,7 +7308,7 @@ function resolveSeq(doc, cst) {
   resolveComments(seq, comments);
 
   if (!doc.options.mapAsMap && items.some(function (it) {
-    return it instanceof Pair && it.key instanceof Collection$1;
+    return it instanceof Pair && it.key instanceof Collection;
   })) {
     var warn = 'Keys with collection values will be stringified as YAML due to JS Object restrictions. Use mapAsMap: true to avoid this.';
     doc.warnings.push(new YAMLWarning(cst, warn));
@@ -8477,8 +8485,8 @@ function findTagObject(value, tagName, tags) {
   });
 }
 
-function createNode(value, tagName, ctx) {
-  if (value instanceof Node$1) return value;
+function createNode$1(value, tagName, ctx) {
+  if (value instanceof Node) return value;
   var defaultPrefix = ctx.defaultPrefix,
       onTagObj = ctx.onTagObj,
       prevObjects = ctx.prevObjects,
@@ -8506,7 +8514,7 @@ function createNode(value, tagName, ctx) {
     var prev = prevObjects.get(value);
 
     if (prev) {
-      var alias = new Alias$1(prev); // leaves source dirty; must be cleaned by caller
+      var alias = new Alias(prev); // leaves source dirty; must be cleaned by caller
 
       ctx.aliasNodes.push(alias); // defined along with prevObjects
 
@@ -8518,7 +8526,7 @@ function createNode(value, tagName, ctx) {
   }
 
   obj.node = tagObj.createNode ? tagObj.createNode(ctx.schema, value, ctx) : wrapScalars ? new Scalar(value) : value;
-  if (tagName && obj.node instanceof Node$1) obj.node.tag = tagName;
+  if (tagName && obj.node instanceof Node) obj.node.tag = tagName;
   return obj.node;
 }
 
@@ -8596,14 +8604,14 @@ var Schema = /*#__PURE__*/function () {
 
   _createClass(Schema, [{
     key: "createNode",
-    value: function createNode$1(value, wrapScalars, tagName, ctx) {
+    value: function createNode$1$1(value, wrapScalars, tagName, ctx) {
       var baseCtx = {
         defaultPrefix: Schema.defaultPrefix,
         schema: this,
         wrapScalars: wrapScalars
       };
       var createCtx = ctx ? Object.assign(ctx, baseCtx) : baseCtx;
-      return createNode(value, tagName, createCtx);
+      return createNode$1(value, tagName, createCtx);
     }
   }, {
     key: "createPair",
@@ -8751,7 +8759,7 @@ function stringifyTag(doc, tag) {
 }
 
 function getTagObject(tags, item) {
-  if (item instanceof Alias$1) return Alias$1;
+  if (item instanceof Alias) return Alias;
 
   if (item.tag) {
     var match = tags.filter(function (t) {
@@ -8818,7 +8826,7 @@ function stringify(item, ctx, onComment, onChompKeep) {
       schema = _ctx$doc.schema;
   var tagObj;
 
-  if (!(item instanceof Node$1)) {
+  if (!(item instanceof Node)) {
     var createCtx = {
       aliasNodes: [],
       onTagObj: function onTagObj(o) {
@@ -8878,7 +8886,7 @@ var Anchors = /*#__PURE__*/function () {
     key: "createAlias",
     value: function createAlias(node, name) {
       this.setAnchor(node, name);
-      return new Alias$1(node);
+      return new Alias(node);
     }
   }, {
     key: "createMergePair",
@@ -8892,7 +8900,7 @@ var Anchors = /*#__PURE__*/function () {
       }
 
       merge.value.items = sources.map(function (s) {
-        if (s instanceof Alias$1) {
+        if (s instanceof Alias) {
           if (s.source instanceof YAMLMap) return s;
         } else if (s instanceof YAMLMap) {
           return _this.createAlias(s);
@@ -8990,7 +8998,7 @@ var visit = function visit(node, tags) {
   if (node && _typeof(node) === 'object') {
     var tag = node.tag;
 
-    if (node instanceof Collection$1) {
+    if (node instanceof Collection) {
       if (tag) tags[tag] = true;
       node.items.forEach(function (n) {
         return visit(n, tags);
@@ -9067,7 +9075,7 @@ function parseContents(doc, contents) {
     var cb = comments.before.join('\n');
 
     if (cb) {
-      var cbNode = body instanceof Collection$1 && body.items[0] ? body.items[0] : body;
+      var cbNode = body instanceof Collection && body.items[0] ? body.items[0] : body;
       cbNode.commentBefore = cbNode.commentBefore ? "".concat(cb, "\n").concat(cbNode.commentBefore) : cb;
     }
 
@@ -9197,11 +9205,11 @@ function parseDirectives(doc, directives, prevDoc) {
 }
 
 function assertCollection(contents) {
-  if (contents instanceof Collection$1) return true;
+  if (contents instanceof Collection) return true;
   throw new Error('Expected a YAML collection as document contents');
 }
 
-var Document$1 = /*#__PURE__*/function () {
+var Document = /*#__PURE__*/function () {
   function Document(options) {
     _classCallCheck(this, Document);
 
@@ -9256,24 +9264,24 @@ var Document$1 = /*#__PURE__*/function () {
   }, {
     key: "get",
     value: function get(key, keepScalar) {
-      return this.contents instanceof Collection$1 ? this.contents.get(key, keepScalar) : undefined;
+      return this.contents instanceof Collection ? this.contents.get(key, keepScalar) : undefined;
     }
   }, {
     key: "getIn",
     value: function getIn(path, keepScalar) {
       if (isEmptyPath(path)) return !keepScalar && this.contents instanceof Scalar ? this.contents.value : this.contents;
-      return this.contents instanceof Collection$1 ? this.contents.getIn(path, keepScalar) : undefined;
+      return this.contents instanceof Collection ? this.contents.getIn(path, keepScalar) : undefined;
     }
   }, {
     key: "has",
     value: function has(key) {
-      return this.contents instanceof Collection$1 ? this.contents.has(key) : false;
+      return this.contents instanceof Collection ? this.contents.has(key) : false;
     }
   }, {
     key: "hasIn",
     value: function hasIn(path) {
       if (isEmptyPath(path)) return this.contents !== undefined;
-      return this.contents instanceof Collection$1 ? this.contents.hasIn(path) : false;
+      return this.contents instanceof Collection ? this.contents.hasIn(path) : false;
     }
   }, {
     key: "set",
@@ -9497,7 +9505,7 @@ var Document$1 = /*#__PURE__*/function () {
       var contentComment = null;
 
       if (this.contents) {
-        if (this.contents instanceof Node$1) {
+        if (this.contents instanceof Node) {
           if (this.contents.spaceBefore && (hasDirectives || this.directivesEndMarker)) lines.push('');
           if (this.contents.commentBefore) lines.push(this.contents.commentBefore.replace(/^/gm, '#')); // top-level block scalars need to be indented if followed by a comment
 
@@ -9528,9 +9536,9 @@ var Document$1 = /*#__PURE__*/function () {
   return Document;
 }();
 
-_defineProperty(Document$1, "defaults", documentOptions);
+_defineProperty(Document, "defaults", documentOptions);
 
-function createNode$1(value) {
+function createNode(value) {
   var wrapScalars = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
   var tag = arguments.length > 2 ? arguments[2] : undefined;
 
@@ -9539,12 +9547,12 @@ function createNode$1(value) {
     wrapScalars = true;
   }
 
-  var options = Object.assign({}, Document$1.defaults[defaultOptions.version], defaultOptions);
+  var options = Object.assign({}, Document.defaults[defaultOptions.version], defaultOptions);
   var schema = new Schema(options);
   return schema.createNode(value, wrapScalars, tag);
 }
 
-var Document$1$1 = /*#__PURE__*/function (_YAMLDocument) {
+var Document$1 = /*#__PURE__*/function (_YAMLDocument) {
   _inherits(Document, _YAMLDocument);
 
   var _super = _createSuper(Document);
@@ -9556,7 +9564,7 @@ var Document$1$1 = /*#__PURE__*/function (_YAMLDocument) {
   }
 
   return Document;
-}(Document$1);
+}(Document);
 
 function parseAllDocuments(src, options) {
   var stream = [];
@@ -9568,7 +9576,7 @@ function parseAllDocuments(src, options) {
   try {
     for (_iterator.s(); !(_step = _iterator.n()).done;) {
       var cstDoc = _step.value;
-      var doc = new Document$1$1(options);
+      var doc = new Document$1(options);
       doc.parse(cstDoc, prev);
       stream.push(doc);
       prev = doc;
@@ -9584,7 +9592,7 @@ function parseAllDocuments(src, options) {
 
 function parseDocument(src, options) {
   var cst = parse$1(src);
-  var doc = new Document$1$1(options).parse(cst[0]);
+  var doc = new Document$1(options).parse(cst[0]);
 
   if (cst.length > 1) {
     var errMsg = 'Source contains multiple documents; please use YAML.parseAllDocuments()';
@@ -9594,7 +9602,7 @@ function parseDocument(src, options) {
   return doc;
 }
 
-function parse$2(src, options) {
+function parse(src, options) {
   var doc = parseDocument(src, options);
   doc.warnings.forEach(function (warning) {
     return warn(warning);
@@ -9604,16 +9612,16 @@ function parse$2(src, options) {
 }
 
 function stringify$1(value, options) {
-  var doc = new Document$1$1(options);
+  var doc = new Document$1(options);
   doc.contents = value;
   return String(doc);
 }
 
 var YAML = {
-  createNode: createNode$1,
+  createNode: createNode,
   defaultOptions: defaultOptions,
-  Document: Document$1$1,
-  parse: parse$2,
+  Document: Document$1,
+  parse: parse,
   parseAllDocuments: parseAllDocuments,
   parseCST: parse$1,
   parseDocument: parseDocument,
@@ -9668,14 +9676,15 @@ var lodash = createCommonjsModule(function (module, exports) {
   var undefined$1;
 
   /** Used as the semantic version number. */
-  var VERSION = '4.17.20';
+  var VERSION = '4.17.21';
 
   /** Used as the size to enable large array optimizations. */
   var LARGE_ARRAY_SIZE = 200;
 
   /** Error message constants. */
   var CORE_ERROR_TEXT = 'Unsupported core-js use. Try https://npms.io/search?q=ponyfill.',
-      FUNC_ERROR_TEXT = 'Expected a function';
+      FUNC_ERROR_TEXT = 'Expected a function',
+      INVALID_TEMPL_VAR_ERROR_TEXT = 'Invalid `variable` option passed into `_.template`';
 
   /** Used to stand-in for `undefined` hash values. */
   var HASH_UNDEFINED = '__lodash_hash_undefined__';
@@ -9808,10 +9817,11 @@ var lodash = createCommonjsModule(function (module, exports) {
   var reRegExpChar = /[\\^$.*+?()[\]{}|]/g,
       reHasRegExpChar = RegExp(reRegExpChar.source);
 
-  /** Used to match leading and trailing whitespace. */
-  var reTrim = /^\s+|\s+$/g,
-      reTrimStart = /^\s+/,
-      reTrimEnd = /\s+$/;
+  /** Used to match leading whitespace. */
+  var reTrimStart = /^\s+/;
+
+  /** Used to match a single whitespace character. */
+  var reWhitespace = /\s/;
 
   /** Used to match wrap detail comments. */
   var reWrapComment = /\{(?:\n\/\* \[wrapped with .+\] \*\/)?\n?/,
@@ -9820,6 +9830,18 @@ var lodash = createCommonjsModule(function (module, exports) {
 
   /** Used to match words composed of alphanumeric characters. */
   var reAsciiWord = /[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g;
+
+  /**
+   * Used to validate the `validate` option in `_.template` variable.
+   *
+   * Forbids characters which could potentially change the meaning of the function argument definition:
+   * - "()," (modification of function parameters)
+   * - "=" (default value)
+   * - "[]{}" (destructuring of function parameters)
+   * - "/" (beginning of a comment)
+   * - whitespace
+   */
+  var reForbiddenIdentifierChars = /[()=,{}\[\]\/\s]/;
 
   /** Used to match backslashes in property paths. */
   var reEscapeChar = /\\(\\)?/g;
@@ -10650,6 +10672,19 @@ var lodash = createCommonjsModule(function (module, exports) {
   }
 
   /**
+   * The base implementation of `_.trim`.
+   *
+   * @private
+   * @param {string} string The string to trim.
+   * @returns {string} Returns the trimmed string.
+   */
+  function baseTrim(string) {
+    return string
+      ? string.slice(0, trimmedEndIndex(string) + 1).replace(reTrimStart, '')
+      : string;
+  }
+
+  /**
    * The base implementation of `_.unary` without support for storing metadata.
    *
    * @private
@@ -10980,6 +11015,21 @@ var lodash = createCommonjsModule(function (module, exports) {
     return hasUnicode(string)
       ? unicodeToArray(string)
       : asciiToArray(string);
+  }
+
+  /**
+   * Used by `_.trim` and `_.trimEnd` to get the index of the last non-whitespace
+   * character of `string`.
+   *
+   * @private
+   * @param {string} string The string to inspect.
+   * @returns {number} Returns the index of the last non-whitespace character.
+   */
+  function trimmedEndIndex(string) {
+    var index = string.length;
+
+    while (index-- && reWhitespace.test(string.charAt(index))) {}
+    return index;
   }
 
   /**
@@ -22150,7 +22200,7 @@ var lodash = createCommonjsModule(function (module, exports) {
       if (typeof value != 'string') {
         return value === 0 ? value : +value;
       }
-      value = value.replace(reTrim, '');
+      value = baseTrim(value);
       var isBinary = reIsBinary.test(value);
       return (isBinary || reIsOctal.test(value))
         ? freeParseInt(value.slice(2), isBinary ? 2 : 8)
@@ -24522,6 +24572,12 @@ var lodash = createCommonjsModule(function (module, exports) {
       if (!variable) {
         source = 'with (obj) {\n' + source + '\n}\n';
       }
+      // Throw an error if a forbidden character was found in `variable`, to prevent
+      // potential command injection attacks.
+      else if (reForbiddenIdentifierChars.test(variable)) {
+        throw new Error(INVALID_TEMPL_VAR_ERROR_TEXT);
+      }
+
       // Cleanup code by stripping empty strings.
       source = (isEvaluating ? source.replace(reEmptyStringLeading, '') : source)
         .replace(reEmptyStringMiddle, '$1')
@@ -24635,7 +24691,7 @@ var lodash = createCommonjsModule(function (module, exports) {
     function trim(string, chars, guard) {
       string = toString(string);
       if (string && (guard || chars === undefined$1)) {
-        return string.replace(reTrim, '');
+        return baseTrim(string);
       }
       if (!string || !(chars = baseToString(chars))) {
         return string;
@@ -24670,7 +24726,7 @@ var lodash = createCommonjsModule(function (module, exports) {
     function trimEnd(string, chars, guard) {
       string = toString(string);
       if (string && (guard || chars === undefined$1)) {
-        return string.replace(reTrimEnd, '');
+        return string.slice(0, trimmedEndIndex(string) + 1);
       }
       if (!string || !(chars = baseToString(chars))) {
         return string;
@@ -26803,23 +26859,218 @@ var lodash = createCommonjsModule(function (module, exports) {
 }.call(commonjsGlobal));
 });
 
-var DebugRenderer = /** @class */ (function () {
-    function DebugRenderer() {
+function renderError(errorMessage) {
+    var errorElement = document.createElement('div');
+    errorElement.addClass('oql-error');
+    errorElement.innerText = errorMessage;
+    return errorElement;
+}
+
+function renderDebug(searchResults, oqlConfig) {
+    if (oqlConfig.debug === true) {
+        var debugWindow = document.createElement('pre');
+        debugWindow.addClass("oql-debug");
+        debugWindow.addClass("language-js");
+        var debugText = "// Debugging OQL, total results: " + searchResults.length + "\n// Query: \n";
+        var debugQuery = JSON.stringify(oqlConfig.query, null, 2) + "\n// Results: \n\n";
+        var noteTitles = searchResults.map(function (r) { return "" + r.title; }).join("\n");
+        debugWindow.innerText = debugText + debugQuery + noteTitles;
+        return debugWindow;
     }
-    DebugRenderer.render = function (searchResults, nodeConfig) {
-        if (nodeConfig.debug === true) {
-            var debugWindow = document.createElement('pre');
-            debugWindow.addClass("oql-debug");
-            debugWindow.addClass("language-js");
-            var debugText = "// Debugging OQL, total results: " + searchResults.length + "\n// Query: \n";
-            var debugQuery = JSON.stringify(nodeConfig.query, null, 2) + "\n// Results: \n\n";
-            var noteTitles = searchResults.map(function (r) { return "" + r.title; }).join("\n");
-            debugWindow.innerText = debugText + debugQuery + noteTitles;
-            return debugWindow;
+}
+
+function renderWarning(warningMessage) {
+    var warningElement = document.createElement('div');
+    warningElement.addClass('oql-warning');
+    warningElement.innerText = warningMessage;
+    return warningElement;
+}
+
+function renderTag(tag) {
+    // Example link  <a href="#friesland" class="tag" target="_blank" rel="noopener">#friesland</a>
+    var tagItemLink = document.createElement('a');
+    tagItemLink.addClass('tag');
+    tagItemLink.setAttribute('href', tag);
+    tagItemLink.setAttribute('target', '_blank');
+    tagItemLink.setAttribute('rel', 'noopener');
+    tagItemLink.innerText = tag;
+    return tagItemLink;
+}
+
+function renderLink(searchResult) {
+    // Example link <a data-href="2021-01-09" href="2021-01-09" class="internal-link" target="_blank" rel="noopener">&lt; Yesterday</a>
+    var listItemLink = document.createElement('a');
+    listItemLink.addClass('internal-link');
+    listItemLink.setAttribute('a', searchResult.title);
+    listItemLink.setAttribute('target', '_blank');
+    listItemLink.setAttribute('rel', 'noopener');
+    listItemLink.setAttribute('data-href', searchResult.title);
+    listItemLink.innerText = searchResult.title;
+    return listItemLink;
+}
+
+function renderListItem(searchResult, oqlConfig, index) {
+    var listItem = document.createElement('li');
+    oqlConfig.fields.forEach(function (field) {
+        var listItemField = document.createElement('span');
+        if (field === 'title') {
+            listItemField.appendChild(renderLink(searchResult));
         }
-    };
-    return DebugRenderer;
-}());
+        else if (field === 'index') {
+            listItemField.innerText = (index + 1).toString();
+        }
+        else if (field === 'format') {
+            if (!('format' in oqlConfig)) {
+                throw Error("No 'format' key specified in OQL.");
+            }
+            var output = oqlConfig.format;
+            // Replace placeholders according to the format
+            output = output.replace("{title}", searchResult.title);
+            output = output.replace("{path}", searchResult.path);
+            output = output.replace("{modified}", new Date(searchResult.modified).toISOString());
+            output = output.replace("{created}", new Date(searchResult.modified).toISOString());
+            output = output.replace("{index}", (index + 1).toString());
+            listItemField.innerText = output;
+        }
+        else if (field === 'created' || field === 'modified') {
+            listItemField.innerText = new Date(searchResult[field]).toISOString();
+        }
+        else if (field === 'tags') {
+            try {
+                searchResult[field].map(function (tag) {
+                    listItemField.appendChild(renderTag(tag));
+                    var spacing = document.createElement('span');
+                    spacing.innerText = ' ';
+                    listItemField.appendChild(spacing);
+                });
+            }
+            catch (e) {
+                console.error("Error rendering in list item: ", searchResult);
+            }
+        }
+        else {
+            listItem.innerText = searchResult[field];
+        }
+        // Render a space between each field
+        var spacing = document.createElement('span');
+        spacing.innerText = ' ';
+        listItemField.appendChild(spacing);
+        listItem.appendChild(listItemField);
+    });
+    return listItem;
+}
+function renderList(searchResults, oqlConfig) {
+    console.debug("[OQL] Rendering list, with " + searchResults.length + " results");
+    oqlConfig.template;
+    var result = document.createElement('ul');
+    if (oqlConfig.limit) {
+        searchResults = searchResults.slice(0, oqlConfig.limit);
+    }
+    // if fields are provided in the config, use those, otherwise default to title
+    oqlConfig.fields = oqlConfig.fields || ['title'];
+    searchResults.forEach(function (searchResult, index) {
+        result.appendChild(renderListItem(searchResult, oqlConfig, index));
+    });
+    return result;
+}
+
+function renderRow(searchResult, oqlConfig, index) {
+    var tableRow = document.createElement('tr');
+    oqlConfig.fields.forEach(function (field) {
+        var tableData = document.createElement('td');
+        if (field === 'title') {
+            tableData.appendChild(renderLink(searchResult));
+        }
+        else if (field === 'index') {
+            tableData.innerText = (index + 1).toString();
+        }
+        else if (field === 'format') {
+            if (!('format' in oqlConfig)) {
+                throw Error("No 'format' key specified in OQL.");
+            }
+            var output = oqlConfig.format;
+            // Replace placeholders according to the format
+            output = output.replace("{title}", searchResult.title);
+            output = output.replace("{path}", searchResult.path);
+            output = output.replace("{modified}", new Date(searchResult.modified).toISOString());
+            output = output.replace("{created}", new Date(searchResult.modified).toISOString());
+            output = output.replace("{index}", (index + 1).toString());
+            tableData.innerText = output;
+        }
+        else if (field === 'created' || field === 'modified') {
+            tableData.innerText = new Date(searchResult[field]).toISOString();
+        }
+        else if (field === 'tags') {
+            try {
+                searchResult[field].map(function (tag) {
+                    tableData.appendChild(renderTag(tag));
+                    var spacing = document.createElement('span');
+                    spacing.innerText = ' ';
+                    tableData.appendChild(spacing);
+                });
+            }
+            catch (e) {
+                console.error("Error rendering in row: ", searchResult);
+            }
+        }
+        else {
+            tableData.innerText = searchResult[field];
+        }
+        tableRow.appendChild(tableData);
+    });
+    return tableRow;
+}
+function renderTable(searchResults, oqlConfig) {
+    console.debug("[OQL] Rendering table, with " + searchResults.length + " results");
+    var result = document.createElement('table');
+    if (oqlConfig.limit) {
+        searchResults = searchResults.slice(0, oqlConfig.limit);
+    }
+    // if fields are provided in the config, use those, otherwise default to date & date created
+    var fields = oqlConfig.fields || ['title', 'created'];
+    // Create a header in the table
+    var tableHeader = document.createElement('tr');
+    fields.forEach(function (field) {
+        var tableData = document.createElement('th');
+        // Capitalize the field
+        tableData.innerText = field.charAt(0).toUpperCase() + field.slice(1);
+        tableHeader.appendChild(tableData);
+    });
+    result.appendChild(tableHeader);
+    // Finally, render the table contents
+    searchResults.forEach(function (searchResult, index) {
+        result.appendChild(renderRow(searchResult, oqlConfig, index));
+    });
+    return result;
+}
+
+function renderString(searchResults, oqlConfig) {
+    console.debug("[OQL] Rendering string, with " + searchResults.length + " results");
+    // If there's no 'format: ""' 
+    if (!('format' in oqlConfig)) {
+        throw Error("No 'format' key specified in OQL.");
+    }
+    var output = oqlConfig.format;
+    // Replace placeholders for the 'name' in the ouput
+    if (oqlConfig.name) {
+        output = output.replace("{name}", oqlConfig.name);
+    }
+    // Replace placeholders for the 'count' in the ouput
+    if (searchResults) {
+        output = output.replace("{count}", searchResults.length.toString());
+    }
+    // Create the wrapper element (or use a span by default) 
+    // and put the result of the query inside
+    var result = document.createElement(oqlConfig.wrapper || 'span');
+    result.innerHTML = output;
+    return result;
+}
+
+var renderers = {
+    'list': renderList,
+    'table': renderTable,
+    'string': renderString,
+};
 
 var QueryResultRenderer = /** @class */ (function () {
     function QueryResultRenderer() {
@@ -26837,7 +27088,8 @@ var QueryResultRenderer = /** @class */ (function () {
                         searchResults = [];
                         _a.label = 1;
                     case 1:
-                        _a.trys.push([1, 3, , 4]);
+                        _a.trys.push([1, 5, , 6]);
+                        if (!(SearchIndex.state === 'ready')) return [3 /*break*/, 3];
                         return [4 /*yield*/, SearchIndex.search(oqlConfig.query)
                             // Filter out the currentNote based on path of the current note
                         ];
@@ -26852,32 +27104,25 @@ var QueryResultRenderer = /** @class */ (function () {
                         if (oqlConfig.sort) {
                             searchResults = QueryResultRenderer.sortSearchResults(searchResults, oqlConfig);
                         }
-                        // Render the template with the type:
-                        if (!oqlConfig.template) {
-                            result = QueryResultRenderer.renderError("No template defined in the OQL block");
-                        }
-                        else if (oqlConfig.template === 'list') {
-                            result = QueryResultRenderer.renderList(searchResults, oqlConfig);
-                        }
-                        else if (oqlConfig.template === 'table') {
-                            result = QueryResultRenderer.renderTable(searchResults, oqlConfig);
-                        }
-                        else if (typeof oqlConfig.template === 'string') {
-                            result = QueryResultRenderer.renderString(searchResults, oqlConfig);
-                        }
+                        // Render the output
+                        result = renderers[oqlConfig.template](searchResults, oqlConfig);
                         return [3 /*break*/, 4];
                     case 3:
+                        result = renderWarning('Index not build yet... (check back after opening another note!)');
+                        _a.label = 4;
+                    case 4: return [3 /*break*/, 6];
+                    case 5:
                         error_1 = _a.sent();
-                        result = QueryResultRenderer.renderError(error_1);
-                        return [3 /*break*/, 4];
-                    case 4:
+                        result = renderError(error_1);
+                        return [3 /*break*/, 6];
+                    case 6:
                         if (result) { // If we have a result
                             if (oqlConfig.badge)
                                 result.addClass('oql-badge'); // Render the badge (or not)
                             el.replaceChild(result, node.parentElement); // Finally replace node with the result
                             // And render the debug if toggled
                             if (oqlConfig.debug)
-                                el.appendChild(DebugRenderer.render(searchResults, oqlConfig));
+                                el.appendChild(renderDebug(searchResults, oqlConfig));
                         }
                         return [2 /*return*/];
                 }
@@ -26896,153 +27141,6 @@ var QueryResultRenderer = /** @class */ (function () {
             sortedSearchResults = lodash.orderBy(searchResults, [oqlConfig.sort], ['desc']);
         }
         return sortedSearchResults;
-    };
-    QueryResultRenderer.renderError = function (errorMessage) {
-        var errorElement = document.createElement('div');
-        errorElement.addClass('oql-error');
-        errorElement.innerText = errorMessage;
-        return errorElement;
-    };
-    QueryResultRenderer.renderLink = function (searchResult) {
-        // Example link <a data-href="2021-01-09" href="2021-01-09" class="internal-link" target="_blank" rel="noopener">&lt; Yesterday</a>
-        var listItemLink = document.createElement('a');
-        listItemLink.addClass('internal-link');
-        listItemLink.setAttribute('a', searchResult.title);
-        listItemLink.setAttribute('target', '_blank');
-        listItemLink.setAttribute('rel', 'noopener');
-        listItemLink.setAttribute('data-href', searchResult.title);
-        listItemLink.innerText = searchResult.title;
-        return listItemLink;
-    };
-    QueryResultRenderer.renderTag = function (tag) {
-        // Example link  <a href="#friesland" class="tag" target="_blank" rel="noopener">#friesland</a>
-        var tagItemLink = document.createElement('a');
-        tagItemLink.addClass('tag');
-        tagItemLink.setAttribute('href', tag);
-        tagItemLink.setAttribute('target', '_blank');
-        tagItemLink.setAttribute('rel', 'noopener');
-        tagItemLink.innerText = tag;
-        return tagItemLink;
-    };
-    QueryResultRenderer.renderRow = function (searchResult, fields) {
-        var _this = this;
-        var tableRow = document.createElement('tr');
-        fields.forEach(function (field) {
-            var tableData = document.createElement('td');
-            if (field === 'title') {
-                tableData.appendChild(QueryResultRenderer.renderLink(searchResult));
-            }
-            else if (field === 'created' || field === 'modified') {
-                tableData.innerText = new Date(searchResult[field]).toISOString();
-            }
-            else if (field === 'tags') {
-                try {
-                    searchResult[field].map(function (tag) {
-                        tableData.appendChild(_this.renderTag(tag));
-                        var spacing = document.createElement('span');
-                        spacing.innerText = ' ';
-                        tableData.appendChild(spacing);
-                    });
-                }
-                catch (e) {
-                    console.error("Error rendering in row: ", searchResult);
-                }
-            }
-            else {
-                tableData.innerText = searchResult[field];
-            }
-            tableRow.appendChild(tableData);
-        });
-        return tableRow;
-    };
-    QueryResultRenderer.renderListItem = function (searchResult, fields) {
-        var _this = this;
-        var listItem = document.createElement('li');
-        fields.forEach(function (field) {
-            var listItemField = document.createElement('span');
-            if (field === 'title') {
-                listItemField.appendChild(QueryResultRenderer.renderLink(searchResult));
-            }
-            else if (field === 'created' || field === 'modified') {
-                listItemField.innerText = new Date(searchResult[field]).toISOString();
-            }
-            else if (field === 'tags') {
-                try {
-                    searchResult[field].map(function (tag) {
-                        listItemField.appendChild(_this.renderTag(tag));
-                        var spacing = document.createElement('span');
-                        spacing.innerText = ' ';
-                        listItemField.appendChild(spacing);
-                    });
-                }
-                catch (e) {
-                    console.error("Error rendering in list item: ", searchResult);
-                }
-            }
-            else {
-                listItem.innerText = searchResult[field];
-            }
-            // Render a space between each field
-            var spacing = document.createElement('span');
-            spacing.innerText = ' ';
-            listItemField.appendChild(spacing);
-            listItem.appendChild(listItemField);
-        });
-        return listItem;
-    };
-    QueryResultRenderer.renderString = function (searchResults, oqlConfig) {
-        console.debug("[OQL] Rendering string, with " + searchResults.length + " results");
-        var output = oqlConfig.template;
-        // Replace placeholders for the 'name' in the ouput
-        if (oqlConfig.name) {
-            output = output.replace("{name}", oqlConfig.name);
-        }
-        // Replace placeholders for the 'count' in the ouput
-        if (searchResults) {
-            output = output.replace("{count}", searchResults.length.toString());
-        }
-        // Create the wrapper element (or use a span by default) 
-        // and put the result of the query inside
-        var result = document.createElement(oqlConfig.wrapper || 'span');
-        result.innerHTML = output;
-        return result;
-    };
-    QueryResultRenderer.renderList = function (searchResults, oqlConfig) {
-        console.debug("[OQL] Rendering list, with " + searchResults.length + " results");
-        oqlConfig.template;
-        var result = document.createElement('ul');
-        if (oqlConfig.limit) {
-            searchResults = searchResults.slice(0, oqlConfig.limit);
-        }
-        // if fields are provided in the config, use those, otherwise default to title
-        var fields = oqlConfig.fields || ['title'];
-        searchResults.forEach(function (searchResult) {
-            result.appendChild(QueryResultRenderer.renderListItem(searchResult, fields));
-        });
-        return result;
-    };
-    QueryResultRenderer.renderTable = function (searchResults, oqlConfig) {
-        console.debug("[OQL] Rendering table, with " + searchResults.length + " results");
-        var result = document.createElement('table');
-        if (oqlConfig.limit) {
-            searchResults = searchResults.slice(0, oqlConfig.limit);
-        }
-        // if fields are provided in the config, use those, otherwise default to date & date created
-        var fields = oqlConfig.fields || ['title', 'created'];
-        // Create a header in the table
-        var tableHeader = document.createElement('tr');
-        fields.forEach(function (field) {
-            var tableData = document.createElement('th');
-            // Capitalize the field
-            tableData.innerText = field.charAt(0).toUpperCase() + field.slice(1);
-            tableHeader.appendChild(tableData);
-        });
-        result.appendChild(tableHeader);
-        // Finally, render the table contents
-        searchResults.forEach(function (searchResult) {
-            result.appendChild(QueryResultRenderer.renderRow(searchResult, fields));
-        });
-        return result;
     };
     return QueryResultRenderer;
 }());
@@ -27076,7 +27174,7 @@ var ObsidianQueryLanguagePlugin = /** @class */ (function (_super) {
                 }));
                 // Refresh the single file in the index when renaming
                 this.registerEvent(this.app.vault.on("rename", function (file, oldPath) {
-                    _this.refreshFile(file);
+                    _this.refreshFile(file, oldPath);
                 }));
                 // Register the renderer as postprocessor
                 obsidian.MarkdownPreviewRenderer.registerPostProcessor(QueryResultRenderer.postprocessor);
@@ -27084,50 +27182,115 @@ var ObsidianQueryLanguagePlugin = /** @class */ (function (_super) {
             });
         });
     };
-    // Remove the postprocessor for OQL
+    // Remove the postprocessor on unload
     ObsidianQueryLanguagePlugin.prototype.onunload = function () {
         obsidian.MarkdownPreviewRenderer.unregisterPostProcessor(QueryResultRenderer.postprocessor);
     };
     // Rebuild the search index 
     ObsidianQueryLanguagePlugin.prototype.buildIndex = function () {
-        var _this = this;
-        console.debug('[OQL] Initial building of search index..');
-        SearchIndex.buildIndex(this.app.vault.getMarkdownFiles().map(function (f) { return _this.parseFile(f); }));
+        return __awaiter(this, void 0, void 0, function () {
+            var _a, _b;
+            var _this = this;
+            return __generator(this, function (_c) {
+                switch (_c.label) {
+                    case 0:
+                        console.debug('[OQL] Initial building of search index..');
+                        _b = (_a = SearchIndex).buildIndex;
+                        return [4 /*yield*/, Promise.all(this.app.vault.getMarkdownFiles().map(function (f) { return _this.parseFile(f); }))];
+                    case 1:
+                        _b.apply(_a, [_c.sent()]);
+                        return [2 /*return*/];
+                }
+            });
+        });
     };
-    // WIP, rebuilding the entire index is costly, refreshing the single edited file is more useful
-    ObsidianQueryLanguagePlugin.prototype.refreshFile = function (file) {
-        if (file instanceof obsidian.TFile) {
-            // Remove the old document from the index (matching on path, is this the correct way? What if it changes?)
-            SearchIndex.removeFile(this.parseFile(file));
-            // Add the file to the index
-            SearchIndex.addFile(this.parseFile(file));
-        }
+    // Rebuilding the entire index is costly, refreshing the single edited file is more useful
+    ObsidianQueryLanguagePlugin.prototype.refreshFile = function (file, oldPath) {
+        return __awaiter(this, void 0, void 0, function () {
+            var parsedFile, parsedFile;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        if (!(oldPath && file instanceof obsidian.TFile)) return [3 /*break*/, 2];
+                        return [4 /*yield*/, this.parseFile(file)];
+                    case 1:
+                        parsedFile = _a.sent();
+                        SearchIndex.removeFile(oldPath);
+                        SearchIndex.addFile(parsedFile);
+                        return [3 /*break*/, 4];
+                    case 2:
+                        if (!(file instanceof obsidian.TFile)) return [3 /*break*/, 4];
+                        return [4 /*yield*/, this.parseFile(file)];
+                    case 3:
+                        parsedFile = _a.sent();
+                        SearchIndex.removeFile(parsedFile.path);
+                        SearchIndex.addFile(parsedFile);
+                        _a.label = 4;
+                    case 4: return [2 /*return*/];
+                }
+            });
+        });
     };
-    // Go from a TFile object to a TFuseFile, adding more metadata
+    // Go from a TFile object to a TFuseFile, useful for indexing
     ObsidianQueryLanguagePlugin.prototype.parseFile = function (file) {
+        return __awaiter(this, void 0, void 0, function () {
+            var metadata, tags, content;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        metadata = this.app.metadataCache.getFileCache(file);
+                        return [4 /*yield*/, this.parseTags(metadata)];
+                    case 1:
+                        tags = _a.sent();
+                        return [4 /*yield*/, this.app.vault.read(file)
+                            // Return a better formatted file for indexing
+                        ];
+                    case 2:
+                        content = _a.sent();
+                        // Return a better formatted file for indexing
+                        return [2 /*return*/, {
+                                title: file.basename,
+                                path: file.path,
+                                content: content,
+                                created: file.stat.ctime,
+                                modified: file.stat.mtime,
+                                tags: tags,
+                            }];
+                }
+            });
+        });
+    };
+    ObsidianQueryLanguagePlugin.prototype.parseTags = function (metadata) {
         var _a;
-        // Parse the metadata of the file
-        var metadata = this.app.metadataCache.getFileCache(file);
-        var tags = [];
-        if (metadata) {
-            // Get the tags from the frontmatter
-            if ((_a = metadata === null || metadata === void 0 ? void 0 : metadata.frontmatter) === null || _a === void 0 ? void 0 : _a.tags) {
-                tags = obsidian.parseFrontMatterTags(metadata.frontmatter);
-            }
-            // Also add the tags from the metadata object (these are present in document itself)
-            if (metadata === null || metadata === void 0 ? void 0 : metadata.tags) {
-                tags = tags.concat(metadata.tags.map(function (tag) { return tag.tag; }));
-            }
-        }
-        // Return a better formatted file for indexing
-        return {
-            title: file.basename,
-            path: file.path,
-            content: file.cachedData,
-            created: file.stat.ctime,
-            modified: file.stat.mtime,
-            tags: tags,
-        };
+        return __awaiter(this, void 0, void 0, function () {
+            var tags;
+            return __generator(this, function (_b) {
+                tags = [];
+                if (metadata) {
+                    // Get the tags from the frontmatter
+                    if ((_a = metadata === null || metadata === void 0 ? void 0 : metadata.frontmatter) === null || _a === void 0 ? void 0 : _a.tags) {
+                        tags = obsidian.parseFrontMatterTags(metadata.frontmatter);
+                    }
+                    // Also add the tags from the metadata object (these are present in document itself)
+                    if (metadata === null || metadata === void 0 ? void 0 : metadata.tags) {
+                        tags = tags.concat(metadata.tags.map(function (tag) { return tag.tag; }));
+                    }
+                }
+                return [2 /*return*/, tags];
+            });
+        });
+    };
+    ObsidianQueryLanguagePlugin.prototype.search = function (query) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                if (SearchIndex.state === 'ready') {
+                    return [2 /*return*/, SearchIndex.search(query)];
+                }
+                else {
+                    throw Error("OQL SearchIndex is not ready yet...");
+                }
+            });
+        });
     };
     return ObsidianQueryLanguagePlugin;
 }(obsidian.Plugin));

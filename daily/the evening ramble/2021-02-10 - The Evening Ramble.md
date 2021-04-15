@@ -5,7 +5,7 @@ tags: ["journal/daily/evening-ramble"]
 
 - 5:58pm - wrapped up the day
 
-It was a pretty good day today, was busy - got to geek about some learning and development stuff, shared the article I read last night on [[2021-02-09 - Our Roadmap for Becoming a Strategic]], and got to demo the Learning Hub I've been building out at work recently using [[Notion]]
+It was a pretty good day today, was busy - got to geek about some learning and development stuff, shared the article I read last night on [[2021-02-09 - Our Roadmap for Becoming a Strategic CLO]], and got to demo the Learning Hub I've been building out at work recently using [[Notion]]
 
 Right now need a bit of not-screen-time, but - it was nice to have something that feels like has been an
 
