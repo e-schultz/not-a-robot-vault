@@ -1,5 +1,5 @@
 ---
-tags: ["soundgarden/inbox"]
+tags: ["r/soundgarden/inbox"]
 ---
 
 # [[Black Wave]] 034 - [[Laura BCR]]

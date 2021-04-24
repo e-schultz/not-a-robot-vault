@@ -1,5 +1,5 @@
 ---
-tags: ["inbox/readwise-review/bookreview/b8011693/ref","a/neurodiverse-tech/input", "p/ndw/inbox"]
+tags: ["inbox/readwise-review/bookreview/b8011693/ref","a/neurodiverse-tech/inbox", "p/ndw/inbox"]
 ---
 %%
 - meta

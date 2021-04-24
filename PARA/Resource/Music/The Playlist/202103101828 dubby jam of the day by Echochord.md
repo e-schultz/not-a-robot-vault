@@ -1,5 +1,5 @@
 ---
-tags: ['soundgarden/input']
+tags: ['r/soundgarden/inbox']
 ---
 
 [[The Playlist]] - Silent Wanderer - Echochord

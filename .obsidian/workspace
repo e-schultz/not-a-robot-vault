@@ -4,68 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "1dfa607ba1f658e0",
+        "id": "f0a84537731049de",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md",
+            "file": "daily/2021-04-24.md",
             "mode": "preview"
           }
-        },
-        "group": "3332263aaa4e3c79"
+        }
       },
       {
-        "id": "eea40437e285620a",
+        "id": "a72a6ff14e73925a",
         "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "localgraph",
-          "state": {
-            "file": "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md",
-            "options": {
-              "collapse-filter": true,
-              "search": "",
-              "localJumps": 1,
-              "localBacklinks": true,
-              "localForelinks": true,
-              "localInterlinks": false,
-              "showTags": false,
-              "showAttachments": false,
-              "hideUnresolved": false,
-              "collapse-color-groups": true,
-              "colorGroups": [],
-              "collapse-display": true,
-              "showArrow": false,
-              "textFadeMultiplier": 0,
-              "nodeSizeMultiplier": 1,
-              "lineSizeMultiplier": 1,
-              "collapse-forces": true,
-              "centerStrength": 0.518713248970312,
-              "repelStrength": 10,
-              "linkStrength": 1,
-              "linkDistance": 250,
-              "scale": 1.8558341840172317,
-              "close": false
-            }
-          },
-          "pinned": true
-        },
-        "group": "3332263aaa4e3c79"
-      },
-      {
-        "id": "fdda2f9233e39922",
-        "type": "leaf",
-        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md",
+            "file": "inbox/refactored/2104241157 - The Black Swan by Nassim Nicholas Taleb.md",
             "mode": "preview"
-          },
-          "pinned": true
-        },
-        "group": "3332263aaa4e3c79"
+          }
+        }
+      },
+      {
+        "id": "b50904cbf65d9a43",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/refactored/2104241147 - RWR - How to create a learning organization - keezerHowCreateLearning2021.md",
+            "mode": "source"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -92,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#journal/daily/morning-pages",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -113,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 369
+    "width": 583,
+    "collapsed": true
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -129,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md",
+                "file": "daily/2021-04-24.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -146,7 +116,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
+                "sortOrder": "alphabetical",
                 "useHierarchy": true
               }
             }
@@ -157,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md"
+                "file": "daily/2021-04-24.md"
               }
             }
           },
@@ -177,25 +147,23 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 364,
-    "collapsed": true
+    "width": 366
   },
-  "active": "1dfa607ba1f658e0",
+  "active": "f0a84537731049de",
   "lastOpenFiles": [
-    "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md",
-    "PARA/Area/Building Not a Robot/L&D Careers MOC.md",
-    "PARA/Area/Building Not a Robot/Learning Facilitator Roles.md",
-    "PARA/Area/Building Not a Robot/Chief Learning Officer.md",
-    "PARA/Area/Building Not a Robot/HBR Transformer CLO Summary.md",
-    "PARA/Area/Building Not a Robot/L&D and DEI MOC.md",
-    "PARA/Area/Building Not a Robot/How will hybrid and remote work impact L&D.md",
-    "inbox/202104141004 Webinar - Every organization needs a CLO.md",
-    "inbox/attachments/CLO - align with business goals Screen Shot 2021-04-14 at 10.44.07 AM 1.png",
-    "PARA/Area/Building Not a Robot/Training and Development Software MOC.md"
+    "daily/2021-04-24.md",
+    "inbox/202104241055 2021-01-14 Readwise Review.md",
+    "inbox/refactored/2104241157 - The Black Swan by Nassim Nicholas Taleb.md",
+    "inbox/refactored/2104241116 - RWR Impact = Environment x.md",
+    "inbox/refactored/2104241147 - RWR - How to create a learning organization - keezerHowCreateLearning2021.md",
+    "inbox/refactored/learning culture.md",
+    "inbox/refactored/2104241138 - RWR - Teaching Tech Together.md",
+    "reading notes/@keezerHowCreateLearning2021.md",
+    "inbox/refactored/2104241117 - RWR - 5 Steps to Creating A Successful Learning Culture for Enterprise in 2021.md",
+    "inbox/refactored/cognitive load.md"
   ]
 }

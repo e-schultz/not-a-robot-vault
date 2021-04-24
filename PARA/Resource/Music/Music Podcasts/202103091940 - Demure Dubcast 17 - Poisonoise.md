@@ -1,5 +1,5 @@
 ---
-tags: ['soundgarden/inbox']
+tags: ['r/soundgarden/inbox']
 ---
 %%
 - played: [[2021-03-09]]

@@ -1,5 +1,5 @@
 ---
-tags: ["soundgarden/inbox"]
+tags: ["r/soundgarden/inbox"]
 ---
 
 # Rise France - Toma Kami invite Mad Miran - 26 Février 202

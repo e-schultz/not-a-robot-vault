@@ -1,5 +1,5 @@
 ---
-tags: ['soundgarden/inbox']
+tags: ['r/soundgarden/inbox']
 ---
 ##### [[2021-03-16]]
 # [[The Playlist]] MixCult pres. Bjika on Ibiza Global Radio

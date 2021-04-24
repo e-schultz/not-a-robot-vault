@@ -1,5 +1,5 @@
 ---
-tags: ["journal/daily/evening-ramble/fragment", "a/nd/input"]
+tags: ["journal/daily/evening-ramble/fragment", "a/nd/inbox"]
 ---
 %%
 - meta

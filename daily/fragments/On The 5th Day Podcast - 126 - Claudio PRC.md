@@ -1,5 +1,5 @@
 ---
-tags: ["soundgarden/inbox"]
+tags: ["r/soundgarden/inbox"]
 ---
 
 # On The 5th Day Podcast - 126 - Claudio PRC

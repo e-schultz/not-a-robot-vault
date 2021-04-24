@@ -1,5 +1,5 @@
 ---
-tags: ["journal/daily/evening-ramble/fragment", 'p/rawsignal/inbox']
+tags: ["journal/daily/evening-ramble/fragment", 'p/rawsignal/workingnotes']
 ---
 %%
 - meta

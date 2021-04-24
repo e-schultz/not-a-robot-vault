@@ -1,5 +1,5 @@
 ---
-tags: ["soundgarden/inbox"]
+tags: ["r/soundgarden/inbox"]
 aliases: ["Deep Electronics Special # 23 - K4MMERER"]
 ---
 

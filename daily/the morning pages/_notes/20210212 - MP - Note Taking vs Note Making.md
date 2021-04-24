@@ -1,3 +1,5 @@
+##### Related 
+- [[🔍 - note taking|note-taking]] vs [[🔍 - note taking|note-making]]
 # Note-taking vs Note-making 
 
 Was trying to empty out my Instapaper Inbox, and reading some old things I had saved to read later, and came across this great article by [[Anne-Laure Le Cunff]] - [From note-taking to note-making](https://nesslabs.com/from-note-taking-to-note-making)  ^f657e8

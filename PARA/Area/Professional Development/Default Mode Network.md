@@ -1,0 +1,5 @@
+# Default Mode Network
+
+> In [neuroscience](https://en.wikipedia.org/wiki/Neuroscience "Neuroscience"), the **default mode network** (**DMN**), also **default network**, or **default state network**, is a [large-scale brain network](https://en.wikipedia.org/wiki/Large-scale_brain_network "Large-scale brain network") primarily composed of the [medial prefrontal cortex](https://en.wikipedia.org/wiki/Medial_prefrontal_cortex "Medial prefrontal cortex"), [posterior cingulate cortex](https://en.wikipedia.org/wiki/Posterior_cingulate_cortex "Posterior cingulate cortex")/[precuneus](https://en.wikipedia.org/wiki/Precuneus "Precuneus") and [angular gyrus](https://en.wikipedia.org/wiki/Angular_gyrus "Angular gyrus"). [^1]
+
+[^1]:  Default mode network - [wikipedia](https://en.wikipedia.org/wiki/Default_mode_network#:~:text=In%20neuroscience%2C%20the%20default%20mode,cortex%2Fprecuneus%20and%20angular%20gyrus.)

@@ -1,5 +1,5 @@
 ---
-tags: ["soundgarden/inbox"]
+tags: ["r/soundgarden/inbox"]
 ---
 
 # Overdosed dUbcast 43 Jupiter Jazz by Masternark 2

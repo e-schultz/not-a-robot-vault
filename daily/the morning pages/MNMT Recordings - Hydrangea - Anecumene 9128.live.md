@@ -1,5 +1,5 @@
 ---
-tags: ['soundgarden/input']
+tags: ['r/soundgarden/inbox']
 ---
 
 # [[MNMT Recordings]] - [[Hydrangea]] - Anecumene 9128.live

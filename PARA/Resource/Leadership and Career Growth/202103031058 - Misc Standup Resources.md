@@ -1,5 +1,5 @@
 ---
-tags: ["manager-toolbox/input/standups"]
+tags: ["a/management/manager-toolbox/inbox/standups"]
 ---
 
 - created: [[2021-03-03]]

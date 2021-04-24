@@ -33,8 +33,9 @@ This came after my experience
 - [[Training Needs Analysis]]
 
 
-### Inbox/Related Notes to Organize
+### Inbox
 
+#### To Organize 
 - [[20210217 - under performing - but why]]
 - Bunch of misc notes in -> [[202102211753 2020wk08 Summary]]
 - [[Management is not a promotion]]
@@ -43,6 +44,12 @@ This came after my experience
 - [[Learning How To Teach Better]]
 - [[202101 My Last Teaching Engagement - storydump]]
 
+#### Reading 
+- [[reading notes - udemy - The 2021 Workplace Learning Trends Report]]
+
+#### Read 
+- [[📔 Workplace Learning Culture Evaluation Workbook]]
 ## Presentation Notes
 
 - [[202104141004 Webinar - Every organization needs a CLO]]
+- [[202104221155 L&D - The New Support System for Humans]]

@@ -1,5 +1,5 @@
 ---
-tags: ["a/nd/input"]
+tags: ["a/nd/inbox"]
 ---
 
 %%

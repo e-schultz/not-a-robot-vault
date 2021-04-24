@@ -47,7 +47,7 @@ It's all open source, and still available online.
 
 ... Ok, this ended up getting kind of long - and something I actually want to work on later, so shoved it off to it's own page. -> [[202101 My Last Teaching Engagement - storydump|My Last Teaching Engagement - storydump]]
 
-# Whats a [[Story Dump]]?
+# Whats a [[story dump]]?
 
 I guess it's kind of like an info-dump, just the stream of conscious get it out and down. 
 

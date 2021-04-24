@@ -1,5 +1,5 @@
 ---
-tags: ['soundgarden/input']
+tags: ['r/soundgarden/inbox']
 ---
 
 %% [[2021-03-17]] %%

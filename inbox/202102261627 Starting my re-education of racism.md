@@ -1,5 +1,5 @@
 ---
-tags: ['unfuckdei']
+tags: ['unfuckdei','a/dei/unfuckdei']
 ---
 
 %%

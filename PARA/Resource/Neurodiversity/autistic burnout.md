@@ -1,6 +1,6 @@
 
 ---
-tags: ["a/nd/input"]
+tags: ["a/nd/inbox"]
 aliases: ["autism burnout", "autisitc burnout", "sensory burnout"]
 ---
 

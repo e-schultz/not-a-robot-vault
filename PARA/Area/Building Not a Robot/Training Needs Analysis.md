@@ -1,5 +1,5 @@
 ---
-tags: ['training & learning']
+tags: ['training-learning']
 ---
 +[[Building Not A Robot MOC]]
 

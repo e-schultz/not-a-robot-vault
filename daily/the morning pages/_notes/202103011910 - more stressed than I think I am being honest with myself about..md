@@ -30,14 +30,5 @@ Even with some projects I'd like to do, or other hobbies I'd like to get back to
 
 [[autistic burnout|Sensory burnout]] kicking in? --- been a few times I've come close to yelling at the cats when they meow during a meeting, and I know that is usually a sign that I'm starting to circle around burnout.
 
-- am I working towards my goals?
-	- what are my goals?
-- am I spending energy in the right places?
-- am I working with my brain, or against my brain?
-- am I actually ok, or trying to convince myself that I'm ok?
 
-Before the unfuck dei seed got planted, felt like I was starting to do pretty good, but I know at times the "energetic" version of myself, can be a bit of a warning flag, but not sure if it was in this case. 
-
-But, maybe.
-
-Was the crash inevitable? or was it just accelerated?
+![[2104190706 - am I working towards my goals]]
