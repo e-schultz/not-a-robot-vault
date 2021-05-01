@@ -25,6 +25,6 @@ Rituals involve the act of doing the thing, and not just the thing itself.
 
 So even if the ritual fails, you get something out of it. Rituals, and the rhythm of them can also encode more meaning than simply the steps to the ritual itself. Routines - do x, do y, do z, but why?
 
-> Same applies to principles based practices. Version control, build systems, and CI for principles. Git, rollup, and circle as practices. Principles last longer than practices - [@mhartington[https://twitter.com/mhartington/status/1382508169956626432]
+> Same applies to principles based practices. Version control, build systems, and CI for principles. Git, rollup, and circle as practices. Principles last longer than practices - [@mhartington](https://twitter.com/mhartington/status/1382508169956626432)
 
 I was thinking about how people try and then compose routines into procedure and workflows/practices. Principles last longer than practices - I like that.

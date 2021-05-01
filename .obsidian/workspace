@@ -4,34 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "f0a84537731049de",
+        "id": "f787145b3bc499f4",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/2021-04-24.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "a72a6ff14e73925a",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/refactored/2104241157 - The Black Swan by Nassim Nicholas Taleb.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "b50904cbf65d9a43",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/refactored/2104241147 - RWR - How to create a learning organization - keezerHowCreateLearning2021.md",
+            "file": "daily/📖 The Upskilling Imparative.md",
             "mode": "source"
           }
         }
@@ -61,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#journal/daily/morning-pages",
+                "query": "redux",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -78,7 +56,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -99,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/2021-04-24.md",
+                "file": "daily/📖 The Upskilling Imparative.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -127,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/2021-04-24.md"
+                "file": "daily/📖 The Upskilling Imparative.md"
               }
             }
           },
@@ -153,17 +132,17 @@
     "direction": "horizontal",
     "width": 366
   },
-  "active": "f0a84537731049de",
+  "active": "f787145b3bc499f4",
   "lastOpenFiles": [
-    "daily/2021-04-24.md",
-    "inbox/202104241055 2021-01-14 Readwise Review.md",
-    "inbox/refactored/2104241157 - The Black Swan by Nassim Nicholas Taleb.md",
-    "inbox/refactored/2104241116 - RWR Impact = Environment x.md",
-    "inbox/refactored/2104241147 - RWR - How to create a learning organization - keezerHowCreateLearning2021.md",
-    "inbox/refactored/learning culture.md",
-    "inbox/refactored/2104241138 - RWR - Teaching Tech Together.md",
-    "reading notes/@keezerHowCreateLearning2021.md",
-    "inbox/refactored/2104241117 - RWR - 5 Steps to Creating A Successful Learning Culture for Enterprise in 2021.md",
-    "inbox/refactored/cognitive load.md"
+    "daily/📖 The Upskilling Imparative.md",
+    "reading notes/@chouOctalysisCompleteGamification2020.md",
+    "daily/differentiated instruction.md",
+    "daily/Why do many of us have negative associations about training.md",
+    "PARA/Area/Building Not a Robot/learning in the flow of work.md",
+    "daily/TUI - Table 1.2 - Accountability for Learning by Job Title.md",
+    "daily/TUI - Table 1.1 Old vs New Trraining Modes.md",
+    "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md",
+    "daily/The Upskilling Imparative.md",
+    "daily/2021-05-01.md"
   ]
 }

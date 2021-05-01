@@ -57,7 +57,7 @@ aliases: ['360Learning','360 Learning','360learning.com']
 	- https://360learning.com/blog/benefits-of-collaborative-learning/
 - How We Use Peer Learning to Keep Our Company’s Competitive Edge
 	- https://360learning.com/blog/peer-learning/
-- The Right Way to do a Training Needs Analysis
+- The Right Way to do a [[Training Needs Analysis]]
 	- https://360learning.com/blog/training-needs-analysis/
 - Your Manager Training Wasn’t Working Before—Now It’s Really in Trouble
 	- https://360learning.com/blog/manager-training/

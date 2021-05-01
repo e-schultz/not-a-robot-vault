@@ -1,5 +1,6 @@
 ---
 tags: ['training-learning']
+aliases: ["learning needs","skills assessment", "gap assessment"]
 ---
 +[[Building Not A Robot MOC]]
 

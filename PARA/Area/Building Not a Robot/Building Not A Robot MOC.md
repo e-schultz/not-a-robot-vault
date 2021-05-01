@@ -46,6 +46,7 @@ This came after my experience
 
 #### Reading 
 - [[reading notes - udemy - The 2021 Workplace Learning Trends Report]]
+- [[📖 The Upskilling Imparative]]
 
 #### Read 
 - [[📔 Workplace Learning Culture Evaluation Workbook]]

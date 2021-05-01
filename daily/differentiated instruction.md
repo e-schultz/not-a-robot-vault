@@ -1,0 +1,1 @@
+> _Differentiation_ means tailoring _instruction_ to meet individual needs. Whether teachers _differentiate_ content, process, products, or the _learning_ environment, the use of ongoing assessment and flexible grouping makes this a successful approach to _instruction_.

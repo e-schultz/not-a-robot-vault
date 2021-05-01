@@ -2,12 +2,12 @@
 
 # Lack of Support for Peer Learning
 - see also 
-	- Collaborative learning
-	- Mentoring
-	- Coaching
-	- Guilds
-	- Community of Practice
-	- Teaching Culture vs Learning Culture
+	- [[Collaborative Learning]]
+	- [[Mentoring]]
+	- [[Coaching]]
+	- [[Guilds]]
+	- [[Community of Practice]]
+	- [[Learning Culture vs Teaching Culture]]
 
 I think one of the challenges with scaling a learning culture, is because for smaller teams and early stage start-ups, there is a lot of peer-to-peer and collaborative learning going on naturally.
 

@@ -5,7 +5,7 @@
 
 ## Assumptions
 
-- [[LAD - Top Down Heavy|Top Down| Heavy]]
+- [[LAD - Top Down Heavy|Top Down Heavy]]
 - [[LAD - Learning Becomes Optional|Learning Becomes Optional]]
 - [[LAD - Leadership Becomes a Bottleneck|Leadership Becomes a Bottle Neck]]
 - [[LAD - Lack of Support for Peer Learning|Lack of Support for Peer Learning]]

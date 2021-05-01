@@ -1,0 +1,12 @@
+- mandatory
+	- especially for HR / compliance training 
+- It's boring, passive and outdated
+	- active vs passive, 'netflix of learning', L&D teams being bottle necks, not levering SME's
+- It's punitive
+	- PIP plans, trying to "fix weaknesses", possibly ones identified in performance reviews 
+- Training dolled out as a reward
+	- "only the good employees can go"
+		- who is left out?
+		- who is included?
+		- how does this relate to DEI?
+- Outcomes are not always clear

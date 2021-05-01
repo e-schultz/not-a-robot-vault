@@ -9,6 +9,6 @@ But, it seemed like lots of companies end up taking a very top-down approach wit
 - For Self Directed 
 	- Budget 
 	- Can use that for courses, conferences, etc
-	- "Netflix of Learning"
+	- "[[Netflix of learning]]"
 
 and that learning/training and development is considered a cost and not an investment.
