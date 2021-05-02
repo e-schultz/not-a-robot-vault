@@ -1,7 +1,7 @@
 ---
 aliases: ["notes - Webinar: L&D: The New Support System for Humans"]
 ---
-+[[Building Not A Robot MOC]]
++[[Building Not A Robot MoC]]
 
 ##### details
 - type: webinar

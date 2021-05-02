@@ -21,9 +21,9 @@ tags: ["inbox/writing/teaching-culture"]
 
 ![[Learning Ecosystems Dont Just Happen Organically Here Are 3 Steps to Build One#^b61e38]]
 
-- How can we leverage peer driven learning
-	- what are the benefits of peer driven learning?
-	- what are the challenges?
+- How can we leverage employee driven learning / [[peer to peer teaching]]
+	- What are the benefits of employee driven learning?
+	- What are the challenges?
 		- how do we capture without becoming a roadblock?
 		- avoid information overload 
 		- need to build teaching skills as well 

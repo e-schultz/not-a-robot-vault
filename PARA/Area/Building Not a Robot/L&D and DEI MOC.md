@@ -1,4 +1,9 @@
-+[[Building Not A Robot MOC]]
+[[+Home]]
+%% - metadata
+	- tags:  #MOC %%
+	
++[[Building Not A Robot MoC]]
+
 
 - [[How DEI and Employee Development are related]]
 - [[How will hybrid and remote work impact L&D]]

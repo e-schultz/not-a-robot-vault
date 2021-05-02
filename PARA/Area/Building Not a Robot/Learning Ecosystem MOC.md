@@ -1,4 +1,8 @@
-+[[Building Not A Robot MOC]]
+---
+aliases: ['Learning Ecosystem']
+---
++[[Building Not A Robot MoC]]
+
 # Learning Ecosystem MOC
 %% - metadata
 	- tags:  #MOC %%

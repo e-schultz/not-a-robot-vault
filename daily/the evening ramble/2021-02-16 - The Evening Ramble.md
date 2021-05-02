@@ -21,13 +21,13 @@ Or --> don't worry about it until I start to from 'fleeting inbox note', to some
 
 # Making your writing work for you - my Vue Talk
 
-Started a quick draft of when I've leveraged 'making my notes work for me' for when I was preparing for a VueJS talk, still very much draft/rouh note
+Started a quick draft of when I've leveraged 'making my notes work for me' for when I was preparing for a [[VueJS]] talk, still very much draft/rouh note
 
 read more -> [[🌱 - When good notes made my Vue Talk easy]]
 
 # Some Note Cleanup
 
--  [[Self Care]]
+-  [[Self Care MoC]]
 	-  had a few notes linking to this page. When working in the Obsidian editor - backlinks / etc show up fine, but have noticed when in publish mode - unless you have some content in the file, the page is blank - and can't discover things that are linking back to it.
 -  [[Rangle.io]]
 	-  When writing about work/etc, been mentioning Rangle - so created a little stub page to start being able to surface things to expand on later

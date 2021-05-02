@@ -1,4 +1,4 @@
-+[[Building Not A Robot MOC]]
++[[Building Not A Robot MoC]]
 
 ##### summary
 - webinar on [[2021-04-28]]

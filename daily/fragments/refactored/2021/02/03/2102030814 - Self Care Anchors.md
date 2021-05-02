@@ -1,4 +1,4 @@
-# [[Self Care]] Anchors
+# [[Self Care MoC]] Anchors
 
 For example, I might look at patterns like
 

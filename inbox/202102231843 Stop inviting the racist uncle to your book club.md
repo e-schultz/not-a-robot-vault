@@ -4,6 +4,8 @@
 	- source:  2021-02-04 - The Evening Ramble
 %%
 
++ [[alternaties to uncle box]]
+
 Uncle Bob is problematic, and it's pretty common that his books Clean Code, and Clean Architecture get recommended. 
 
 However, [Tech Bullshit Explained: Uncle Bob](https://techexplained.substack.com/p/tech-bullshit-explained-uncle-bob)[^tbe] goes into a few of the reasons why he's a problem.

@@ -6,7 +6,7 @@
 	- last updated: 
 %%
 
-##### [[self care]] - I just need to move a little
+##### [[Self Care MoC]] - I just need to move a little
 
 It's nice out, +9 - the sun has just set, so shouldn't be as busy outside.
 

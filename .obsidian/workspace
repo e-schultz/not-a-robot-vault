@@ -4,62 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "f787145b3bc499f4",
+        "id": "7218ead9587c9fc8",
         "type": "leaf",
-        "dimension": 29.88165680473373,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/TUI - Table 1.2 - Accountability for Learning by Job Title.md",
+            "file": "PARA/Area/Building Not a Robot/What role does L&D have in creating a sense of belonging.md",
             "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "c9bb1742c5659a04",
-        "type": "leaf",
-        "dimension": 35.05917159763314,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "PARA/Area/Building Not a Robot/L&D Business ROI - examples.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "038df58cd9ed58aa",
-        "type": "leaf",
-        "dimension": 17.52958579881657,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "PARA/Area/Building Not a Robot/My JavaScript + React Training Course.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "af708dc9f74e345c",
-        "type": "leaf",
-        "dimension": 8.764792899408285,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "PARA/Area/Building Not a Robot/My JavaScript + React Training Course.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "3c009089f07fe8de",
-        "type": "leaf",
-        "dimension": 8.764792899408285,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "daily/Think Like a Marketer to Drive Learning and Development.md",
-            "mode": "source"
           }
         }
       }
@@ -88,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "redux",
+                "query": "tag:#HIV",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -105,12 +56,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 583
+    "width": 583,
+    "collapsed": true
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -126,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PARA/Area/Building Not a Robot/My JavaScript + React Training Course.md",
+                "file": "PARA/Area/Building Not a Robot/What role does L&D have in creating a sense of belonging.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -154,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PARA/Area/Building Not a Robot/My JavaScript + React Training Course.md"
+                "file": "PARA/Area/Building Not a Robot/What role does L&D have in creating a sense of belonging.md"
               }
             }
           },
@@ -180,17 +131,17 @@
     "direction": "horizontal",
     "width": 366
   },
-  "active": "af708dc9f74e345c",
+  "active": "7218ead9587c9fc8",
   "lastOpenFiles": [
-    "PARA/Area/Building Not a Robot/My JavaScript + React Training Course.md",
-    "PARA/Area/Building Not a Robot/Evan Schultz.md",
-    "daily/TUI - Table 1.2 - Accountability for Learning by Job Title.md",
-    "PARA/Area/Building Not a Robot/Reactive Architexture in Angular with Redux.md",
-    "PARA/Area/Building Not a Robot/What I Actually Did At Rangle MOC.md",
-    "PARA/Area/Building Not a Robot/When We Accidentally Wrote an Angular Book.md",
-    "PARA/Area/Building Not a Robot/Training Needs Analysis.md",
+    "PARA/Area/Building Not a Robot/What role does L&D have in creating a sense of belonging.md",
+    "PARA/Area/Building Not a Robot/L&D and DEI MOC.md",
+    "+Home.md",
+    "PARA/Resource/JavaScript/JavaScript Frameworks MoC.md",
     "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md",
-    "inbox/R Studio - Instructor Training.md",
-    "inbox/teaching people how to teach.md"
+    "inbox/202102261740 When you run out of spoons.md",
+    "inbox/alternaties to uncle box.md",
+    "inbox/202102231843 Stop inviting the racist uncle to your book club.md",
+    "daily/fragments/Self Care.md",
+    "inbox/202104121325 Rebuilding the Self Care Routine.md"
   ]
 }

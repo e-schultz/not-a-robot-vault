@@ -28,7 +28,7 @@ UUID: 2104241116
 
 - Working on the shiny new thing doesn't always give the visibility you expect
 - Working on them doesn't matter if you don't have support from your manager 
-	- connect to 🔌 - [[Building Not A Robot MOC]] - the role of manager / leadership support to enable growth and learning opportunities. 
+	- connect to 🔌 - [[Building Not A Robot MoC]] - the role of manager / leadership support to enable growth and learning opportunities. 
 - What are the consequences/impact of working on the shiny thing, but it doesn't have value?
 	- Can over estimate how useful working on that is, vs what you need to grow. 
 		- How can managers help?

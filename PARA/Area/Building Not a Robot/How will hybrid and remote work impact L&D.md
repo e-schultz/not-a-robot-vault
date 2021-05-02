@@ -1,1 +1,1 @@
-+[[L&D and DEI MOC]]
++[[L&D and DEI MoC]]
