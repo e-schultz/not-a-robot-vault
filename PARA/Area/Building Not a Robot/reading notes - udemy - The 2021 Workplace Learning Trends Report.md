@@ -21,7 +21,7 @@ In this report, you'll learn:
 -   Why data science isn't just for data scientists anymore
 -   What skills will reshape software engineering and IT roles
 
-### L&D Goals in 2020
+### [[L&D Goals]] in 2020
 
 ![](https://business.udemy.com/wp-content/themes/businessudemy-theme/images/learning-trends-report-2021/desktop/Upskill_2@2x.jpg)
 
@@ -91,7 +91,7 @@ In this report, you'll learn:
 >
 > Skills consumption related to this trend varies across industries. ==Listening skills were a particular focus for the Software & Technology industry, where consumption on Udemy for Business grew 3,201%==. The Retail industry made an effort to hone its business etiquette skills by increasing consumption 2,042% compared to the previous year.
 
-##### Promote Learning - some suggestions
+##### [[Promote Learning]] - some suggestions
 
 > - **Ask leaders to share lessons from their past experiences:** Leadership signals are the most powerful and impactful mechanisms for spreading a culture of learning. Encourage leaders to be vulnerable and admit their mistakes, too. There's a lot of wisdom to be gained from failure.
 

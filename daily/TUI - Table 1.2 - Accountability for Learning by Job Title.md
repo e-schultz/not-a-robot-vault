@@ -7,7 +7,7 @@ tags: ["status/processing"]
 - Commit to developing a growth mindset; don't be afraid to make a mistake
 - Bring the culture of learning to your work
 - Share your experiences with others - peer to peer learning / peer to peer teaching
-- Advocate for your own learning needs
+- Advocate for your own learning needs ^9fb0da
 - Don't fall for myths, eg - you can only succeed with one "learning style"
 
 ###### Managers and Teams

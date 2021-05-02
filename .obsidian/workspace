@@ -6,10 +6,59 @@
       {
         "id": "f787145b3bc499f4",
         "type": "leaf",
+        "dimension": 29.88165680473373,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/📖 The Upskilling Imparative.md",
+            "file": "daily/TUI - Table 1.2 - Accountability for Learning by Job Title.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "c9bb1742c5659a04",
+        "type": "leaf",
+        "dimension": 35.05917159763314,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "PARA/Area/Building Not a Robot/L&D Business ROI - examples.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "038df58cd9ed58aa",
+        "type": "leaf",
+        "dimension": 17.52958579881657,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "PARA/Area/Building Not a Robot/My JavaScript + React Training Course.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "af708dc9f74e345c",
+        "type": "leaf",
+        "dimension": 8.764792899408285,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "PARA/Area/Building Not a Robot/My JavaScript + React Training Course.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "3c009089f07fe8de",
+        "type": "leaf",
+        "dimension": 8.764792899408285,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "daily/Think Like a Marketer to Drive Learning and Development.md",
             "mode": "source"
           }
         }
@@ -61,8 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 583,
-    "collapsed": true
+    "width": 583
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -78,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/📖 The Upskilling Imparative.md",
+                "file": "PARA/Area/Building Not a Robot/My JavaScript + React Training Course.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -106,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/📖 The Upskilling Imparative.md"
+                "file": "PARA/Area/Building Not a Robot/My JavaScript + React Training Course.md"
               }
             }
           },
@@ -132,17 +180,17 @@
     "direction": "horizontal",
     "width": 366
   },
-  "active": "f787145b3bc499f4",
+  "active": "af708dc9f74e345c",
   "lastOpenFiles": [
-    "daily/📖 The Upskilling Imparative.md",
-    "reading notes/@chouOctalysisCompleteGamification2020.md",
-    "daily/differentiated instruction.md",
-    "daily/Why do many of us have negative associations about training.md",
-    "PARA/Area/Building Not a Robot/learning in the flow of work.md",
+    "PARA/Area/Building Not a Robot/My JavaScript + React Training Course.md",
+    "PARA/Area/Building Not a Robot/Evan Schultz.md",
     "daily/TUI - Table 1.2 - Accountability for Learning by Job Title.md",
-    "daily/TUI - Table 1.1 Old vs New Trraining Modes.md",
+    "PARA/Area/Building Not a Robot/Reactive Architexture in Angular with Redux.md",
+    "PARA/Area/Building Not a Robot/What I Actually Did At Rangle MOC.md",
+    "PARA/Area/Building Not a Robot/When We Accidentally Wrote an Angular Book.md",
+    "PARA/Area/Building Not a Robot/Training Needs Analysis.md",
     "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md",
-    "daily/The Upskilling Imparative.md",
-    "daily/2021-05-01.md"
+    "inbox/R Studio - Instructor Training.md",
+    "inbox/teaching people how to teach.md"
   ]
 }

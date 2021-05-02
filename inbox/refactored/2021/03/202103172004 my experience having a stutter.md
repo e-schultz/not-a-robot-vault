@@ -32,7 +32,7 @@ Initial ideas
 		- when I gave a speech on stuttering, the teacher thought I was wanting an easier grade
 			- video: https://www.tiktok.com/@evan.just.ev4n/video/6918579434077359365?is_copy_url=1&is_from_webapp=v2
 - career
-	- how I got into public speaking and enjoying it
+	- [[how I got into public speaking and enjoying it]]
 - still challenges
 	- [[neurodiverse microaggressions]] - "Had to think about that for a minute?" - when I stutter on my own name
 	- the comment "You didn't stutter" when people make a clear point - is an abelist comment 

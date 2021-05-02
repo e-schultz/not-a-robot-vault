@@ -1,6 +1,11 @@
 
+---
+tags: ['output/public-speaking']
+author: ['Evan Schultz']
+---
+- author: [[Evan Schultz]] 
 
-# My JavaScript + React Training Course
+# JavaScript + React Training Course
 
 ##### TL;DR
 

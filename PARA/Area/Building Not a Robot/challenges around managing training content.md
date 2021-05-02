@@ -1,0 +1,10 @@
+- training content management can be a pain
+	- keeping things up to date
+	- in sync with code examples
+	- exercises / examples / sample apps 
+	- keeping up with framework / library changes and breaking changes
+		- the speed of breaking changes seems to have slowed down a bit recently 
+	- content authoring tool chain
+- environment to follow along
+	- issues with peoples environments / etc - e.g) people not able to npm install - and time spent debugging that
+	-  things like [[CodeSandbox]], [[StackBlitz]], [[Repl.it]], etc can help with this
