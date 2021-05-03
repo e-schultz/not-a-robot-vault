@@ -1,6 +1,7 @@
 [[+Home]]
 %% - metadata
-	- tags:  #MOC %%
+	- tags:  #MOC #a/bnar
+	%%
 	
 # Building Not a Robot MOC
 

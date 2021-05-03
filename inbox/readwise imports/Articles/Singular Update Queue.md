@@ -11,7 +11,7 @@
 - Consider the example of the Write-Ahead Log pattern. We need entries to be processed one at a time, even if several concurrent clients are trying to write. Generally locks are used to protect against concurrent modifications. But if the tasks being performed are time consuming, like writing to a file, blocking all the other calling threads until the task is completed can have severe impact on overall system throughput and latency ([View Highlight](https://instapaper.com/read/1354883734/15540971))
 - Solution
   Implement a workqueue and a single thread working off the queue. Multiple concurrent clients can submit state changes to the queue. But a single thread works on state changes. This can be naturally implemented with goroutines and channels in languages like golang. ([View Highlight](https://instapaper.com/read/1354883734/15540976))
-    - **Note:** This reminds me about of redux - actions could be async, but calling updates on the reducers was synchronous
+    - **Note:** This reminds me about of [[redux]] - actions could be [[async]], but calling updates on the reducers was synchronous
 - Figure 1: Single Thread Backed By A Work Queue ([View Highlight](https://instapaper.com/read/1354883734/15540977))
 - Backpressure ([View Highlight](https://instapaper.com/read/1354883734/15540983))
 - Backpressure can be an important concern when a work queue is used to communicate between threads. In case the consumer is slow and the producer is fast, the queue might fill up fast ([View Highlight](https://instapaper.com/read/1354883734/15540997))

@@ -79,5 +79,5 @@
 
 > Transformer CLOs pay attention to this. When new learning activities spring up, they investigate what’s happening and why. If the new effort has merit, they figure out how to support and amplify it.
 
-- **note** I really like the idea of amplifying what's going on - how redux got adopted at rangle, tooling across the company, but it was boosting what other people were doing, and creating the space for it to happen.
+- **note** I really like the idea of amplifying what's going on - [[how redux got adopted at rangle]], tooling across the company, but it was boosting what other people were doing, and creating the space for it to happen.
 

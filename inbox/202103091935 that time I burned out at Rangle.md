@@ -1,5 +1,5 @@
 ---
-tags: ["inbox/writing","writing/inbox", "a/nd/inbox"]
+tags: ["inbox/writing", "a/nd/inbox"]
 ---
 %%
 - meta

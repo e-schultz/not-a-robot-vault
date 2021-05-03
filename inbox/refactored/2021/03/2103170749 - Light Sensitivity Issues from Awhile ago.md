@@ -7,7 +7,7 @@
 %%
 
 
-# [[Light Sensitivity]] Issues from Awhile ago
+# [[light sensitivity]] Issues from Awhile ago
 
 These are back from around  [[2020-10-30|October 2020]]
 

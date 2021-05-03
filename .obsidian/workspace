@@ -4,25 +4,64 @@
     "type": "split",
     "children": [
       {
-        "id": "6d13302ce9def88e",
+        "id": "57d1a8de9a45795c",
         "type": "leaf",
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/the evening ramble/2021-05-02 - The Evening Ramble.md",
-            "mode": "source"
+            "file": "PARA/Resource - topic - themes/meta-pages/+meta-pages.md",
+            "mode": "preview"
           },
           "pinned": true
-        }
+        },
+        "group": "8929c588a8a05378"
       },
       {
-        "id": "9da259a1be06ff68",
+        "id": "147e4d8029cbb000",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "localgraph",
+          "state": {
+            "file": "PARA/Resource - topic - themes/meta-pages/+meta-pages.md",
+            "options": {
+              "collapse-filter": true,
+              "search": "",
+              "localJumps": 3,
+              "localBacklinks": true,
+              "localForelinks": true,
+              "localInterlinks": true,
+              "showTags": false,
+              "showAttachments": false,
+              "hideUnresolved": false,
+              "collapse-color-groups": true,
+              "colorGroups": [],
+              "collapse-display": true,
+              "showArrow": false,
+              "textFadeMultiplier": 0,
+              "nodeSizeMultiplier": 1,
+              "lineSizeMultiplier": 1,
+              "collapse-forces": true,
+              "centerStrength": 0.518713248970312,
+              "repelStrength": 10,
+              "linkStrength": 1,
+              "linkDistance": 250,
+              "scale": 2.5239168410420136,
+              "close": false
+            }
+          },
+          "pinned": true
+        },
+        "group": "8929c588a8a05378"
+      },
+      {
+        "id": "49cef258692d55b3",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/readwise imports/Articles/articles - Udemy-Upskill-Learning-Culture-Evaluation.pdf.md",
+            "file": "daily/the evening ramble/2021-02-03 - The Evening Ramble.md",
             "mode": "preview"
           }
         }
@@ -52,7 +91,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#collaborative-learning",
+                "query": "line:question",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -69,8 +108,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -91,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/readwise imports/Articles/articles - Udemy-Upskill-Learning-Culture-Evaluation.pdf.md",
+                "file": "daily/the evening ramble/2021-02-03 - The Evening Ramble.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -119,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/readwise imports/Articles/articles - Udemy-Upskill-Learning-Culture-Evaluation.pdf.md"
+                "file": "daily/the evening ramble/2021-02-03 - The Evening Ramble.md"
               }
             }
           },
@@ -145,17 +183,17 @@
     "direction": "horizontal",
     "width": 366
   },
-  "active": "9da259a1be06ff68",
+  "active": "49cef258692d55b3",
   "lastOpenFiles": [
-    "inbox/readwise imports/Articles/articles - Udemy-Upskill-Learning-Culture-Evaluation.pdf.md",
-    "inbox/readwise imports/Articles/articles - How to Create an Effective Collaborative Learning Environment.md",
-    "inbox/readwise imports/Articles/articles - The 2021 Workplace Learning Trends Report  Udemy for Business.md",
-    "daily/the evening ramble/2021-05-02 - The Evening Ramble.md",
-    "inbox/readwise imports/Articles/articles - Youre Not Just a Manager Youre Also a Boss  LeadDev.md",
-    "inbox/readwise imports/Articles/20210501124601.md",
-    "inbox/readwise imports/Books/books - The Upskilling Imperative.md",
+    "daily/the evening ramble/2021-02-03 - The Evening Ramble.md",
+    "PARA/Resource - topic - themes/meta-pages/+meta-pages.md",
+    "PARA/Area/Professional Development/webinars/📹 Deliver Faster By Design how your tools make (or break) a culture of shipping.md",
+    "PARA/Area/Professional Development/Professional Development MOC.md",
+    "PARA/Area/Professional Development/coursera - Learning How To Learn.md",
+    "PARA/Resource - topic - themes/meta-pages/connect to.md",
+    "PARA/Resource - topic - themes/meta-pages/I like the idea.md",
+    "PARA/Resource - topic - themes/meta-pages/⁉️.md",
     "inbox/readwise imports/Books/books - Lichtenbergianism.md",
-    "inbox/202105022139.md",
-    "inbox/202105022137 My job is to architect the greenhouse..md"
+    "PARA/Resource - topic - themes/meta-pages/phrase.md"
   ]
 }

@@ -3,7 +3,7 @@ aliases: ["Obsidian workflow", "Obsidian at work"]
 tags: ['p/ndw/inbox']
 ---
 #### Workflow TL;DR
-Been using Obsidian for work also recently, and still figuring out the workflow I want for it.
+Been using [[Obsidian]] for work also recently, and still figuring out the workflow I want for it.
 
 Was doing a weekly review - and got into a good flow that I actually enjoyed.
 
