@@ -1,5 +1,5 @@
 ---
-aliases: ['😶 Trying to not fuck up DEI Efforts']
+aliases: ['😶 Trying to not fuck up DEI Efforts','😶 unfuckdei']
 tags: ['unfuckdei']
 ---
 

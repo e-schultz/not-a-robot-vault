@@ -1,0 +1,380 @@
+# books - Lichtenbergianism
+
+- Author: Dale Lyles
+- Full Title: Lichtenbergianism
+- Category: #books #readwiseimport
+
+- Cover: ![](https://m.media-amazon.com/images/I/710LqcYWFGL._SY160.jpg)
+
+### Highlights first exported May 2, 2021 at 9:43 PM
+
+- Foreword ([Location 33](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=33))
+    - **Tags:** #blue
+- Our merry misfit band has experienced a transformation since that fateful initial email now so many years ago. We have published, written, composed, acted, led, and transformed careers. Don’t get me wrong. This book does not unlock the dark secrets of creation and success. These things are still hard work, and this road is still only one of many. This is not THE way. But it is A way. ([Location 43](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=43))
+    - **Tags:** #blue
+- guy that wrote software and, later, led other engineers, I found my work schedule left me with less and less time for my passion for acting and the occasional drawing. Had I worked my way out of the club? Had I become an interloper? A poseur? Had the time come to recuse myself? ([Location 52](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=52))
+    - **Tags:** #blue
+- I found with increasing frequency that I was recounting to software engineers insights developed in conversations around the fire with my ash-bound brothers. Sometimes resonance was revealed while providing coaching to those struggling with the switch from a monolithic or big-bang software development approach to an iterative one. The Lichtenbergian notion of ABORTIVE ATTEMPTS is not so different from minimal valuable product and incremental delivery of customer value. Both emphasize getting something on the canvas and both recognize that learnings generated from the imperfect make the eventual product better. ([Location 56](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=56))
+    - **Tags:** #blue
+- Despite my best efforts at Task Avoidance and Abandonment, it appears that I have written a book. ([Location 71](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=71))
+    - **Tags:** #blue
+- Introduction Before ([Location 90](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=90))
+    - **Tags:** #blue
+- created a theme camp for a regional Burning Man-style event, and ended up designing the site for said event twice ([Location 111](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=111))
+    - **Tags:** #blue
+- Who’s telling you you can’t? Let me give you a piece of advice right up front. I call it the Lyles Eternal Truth About Actors, and I give this advice to any uncooperative or fearful actor: “There’s no such thing as an actor who can’t, only an actor who won’t.” ([Location 119](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=119))
+    - **Tags:** #blue
+- No one can stop you from blogging or taking photographs or painting or landscaping or whatever it is you would love to do but have been too afraid to start. And the good news is you don’t have to do it today. Or even tomorrow. Procrastination is your friend. ([Location 124](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=124))
+    - **Tags:** #blue
+- Airport Version ([Location 141](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=141))
+    - **Tags:** #blue
+- Introduction to Lichtenbergianism ([Location 146](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=146))
+    - **Tags:** #blue
+- Framework All human beings are creative: all humans are born to Make the Thing That Is Not. That means you, too. ([Location 151](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=151))
+    - **Tags:** #blue
+- 1. Task Avoidance ([Location 156](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=156))
+    - **Tags:** #blue
+- Cras melior est: Tomorrow is better. You can be more productive through procrastination by avoiding one project while working on another. ([Location 156](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=156))
+    - **Tags:** #blue
+- 2. Waste Books ([Location 160](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=160))
+    - **Tags:** #blue
+- 3. Abortive Attempts Don’t wait until you can do something perfectly before you begin. ([Location 164](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=164))
+    - **Tags:** #blue
+- 4. Gestalt Gestalt means “shape” in German. Once you’ve started your Abortive Attempt, step back and see what shape it’s in. What’s missing? ([Location 170](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=170))
+    - **Tags:** #blue
+- 5. Successive Approximation Once you’ve assessed your project’s Gestalt, tweak the project. Move it ([Location 176](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=176))
+    - **Tags:** #blue
+- 6. Ritual Have a way to get your brain/soul/ear/eye/hand into working mode. Create your time and space to create, then protect it. ([Location 180](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=180))
+    - **Tags:** #blue
+- 7. Steal from the Best Use the past. Reverse engineer the artists you admire. ([Location 184](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=184))
+    - **Tags:** #blue
+- 8. Audience You have two Audiences: ([Location 187](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=187))
+    - **Tags:** #blue
+- Those people out there Those people right here (And 3. Yourself) ([Location 189](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=189))
+    - **Tags:** #blue
+- 9. Abandonment Three kinds: You can come back to it later. It’s ready for an audience. ([Location 192](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=192))
+    - **Tags:** #blue
+- Failure is always an option. ([Location 195](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=195))
+    - **Tags:** #blue
+- Lichtenbergianism procrastination as a creative strategy ([Location 196](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=196))
+    - **Tags:** #blue
+- Introduction to Lichtenbergianism ([Location 198](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=198))
+    - **Tags:** #blue
+- Lichtenberg was prone to procrastination. He failed to launch the first ever hydrogen balloon, and although he always dreamed of writing a novel à la Fielding's Tom Jones, he never finished more than a few pages. He died at the age of 56, after a short illness.[13] “He never finished more than a few pages.” Here, surely, was our patron saint. I teasingly assigned everyone the task of writing the first chapter in a “Tom Jones-like novel,” and we were off. Within a week, The Lichtenbergian Society had a charter, officers, and an agenda for the inaugural meeting. Our motto: Cras melior est. Tomorrow is better. ([Location 236](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=236))
+    - **Tags:** #blue
+- For a Lichtenbergian, there is nothing more shameful than getting right to work and doing All The Things. ([Location 270](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=270))
+    - **Tags:** #blue
+- Framework The most perfect ape cannot draw an ape; only man can do that; but, likewise, only man regards the ability to do this as a sign of superiority.             GCL, J.115 ([Location 284](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=284))
+    - **Tags:** #blue
+- critical to the way Lichtenbergianism works. We are all creative. Creativity is not genius. Beware the impostor syndrome. Make the thing that is not. ([Location 287](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=287))
+    - **Tags:** #blue
+- It’s all out there — except it’s not, of course. It’s out there in the universe, somewhere, but not until we find it and drag it — often kicking and screaming — into our version of reality. ([Location 309](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=309))
+    - **Tags:** #blue
+- Nine Precepts of Lichtenbergianism. 1. Task Avoidance 2. Waste Books 3. Abortive Attempts 4. Gestalt 5. Successive Approximation 6. Ritual 7. Steal From The Best 8. Audience 9. Abandonment ([Location 348](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=348))
+    - **Tags:** #blue
+- Each Precept is a loose collection of ideas and principles about the creative process, often overlapping into the others. Lichtenbergianism is incoherent, in the sense that there’s no rigor in its conception or application — you can pick and choose and ignore and embrace each part as it suits your needs. ([Location 351](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=351))
+    - **Tags:** #blue
+- The sure conviction that we could if we wanted to is the reason so many good minds are idle. — GCL, K.27 ([Location 360](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=360))
+    - **Tags:** #blue
+- The core value of Lichtenbergianism is procrastination, not doing All The Things.[27] ([Location 365](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=365))
+    - **Tags:** #blue
+- “Never put off till tomorrow what you can do today” is the sturdy, Puritanical maxim. ([Location 368](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=368))
+    - **Tags:** #blue
+    - **Note:** How much has puritans cultures influenced how we view neurodivervity
+- But why is Task Avoidance considered to be a critical Precept of Lichtenbergianism? ([Location 375](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=375))
+    - **Tags:** #blue
+    - **Note:** - expand on - answer this myself later
+- It’s one thing to crank out the Abortive Attempts; it’s quite another to assemble them and release them as your band’s CD. Or book of poetry. Or Southern gothic novel.[29] ([Location 378](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=378))
+    - **Tags:** #blue
+- We call it the “Better as a T-Shirt Rule,” ([Location 381](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=381))
+    - **Tags:** #blue
+    - **Note:** - iyow - explain the better t-shirt rule
+- nevertheless competent composers that dotted the musical landscape of the Age of Enlightenment, as Professor Peter Schickele called them — without them, Mozart wouldn’t have had a market for his perfection.[30] ([Location 389](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=389))
+    - **Tags:** #blue
+- But, I hear you ask, how do we transition from “create a lot of bad dreck, but don’t publish it for the love of humankind” to “create successful dreck by putting off publishing it”? ([Location 398](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=398))
+    - **Tags:** #blue
+- Here is the secret to successful Task Avoidance: because you are an artist, you have more than one Task to Avoid, each one nagging for your attention. The trick is to play them off against each other, avoiding one by working on another. ([Location 400](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=400))
+    - **Tags:** #blue
+- In fact, often the Lichtenbergians find that while we were ([Location 409](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=409))
+    - **Tags:** #blue
+- avoiding our actual creative goals in any given year, we end up achieving something else of value. ([Location 409](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=409))
+    - **Tags:** #blue
+- This is what John Perry calls “structured procrastination” in his charming and perfect The Art of Procrastination. ([Location 411](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=411))
+    - **Tags:** #blue
+- Perry himself quotes a 1930 Robert Benchley column as defining the concept even earlier: “Anyone can do any amount of work, provided it isn’t the work he is supposed to be doing at that moment.” ([Location 413](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=413))
+    - **Tags:** #blue
+- The other secret of Task Avoidance is that gestation is a necessary part of the creative process in any model worth the study — and a smart artist uses Task Avoidance to let ideas form fully. ([Location 426](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=426))
+    - **Tags:** #blue
+- It is a mistake to think that “creativity” is somehow limited to the actual actions involved in finishing a work. Planning — working out the kinks — developing a framework — sketching, doodling, warming up — daydreaming about possibilities[34] — these are as responsible for the quality of the finished product as are the actual acts of painting or sculpting or composing or writing. ([Location 431](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=431))
+    - **Tags:** #blue
+- Another important benefit of Task Avoidance is slack. Slack is that extra bit of rope that allows you to make adjustments in whatever it is you’re doing with that rope — in Lichtenbergianism, slack is extra time, and it is critical to any adaptive system like creativity. ([Location 448](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=448))
+    - **Tags:** #blue
+- Just remember that filling every moment with work is not actually being efficient. ([Location 462](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=462))
+    - **Tags:** #blue
+- However, my favorite way of making sure that my Task Avoidance is productive (and not just laziness) is the Japanese system known as kanban. ([Location 469](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=469))
+    - **Tags:** #blue
+- The first key concept is called “visualizing your workflow,” ([Location 477](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=477))
+    - **Tags:** #blue
+- you’re going to procrastinate on most of this. You’re just getting organized about it. ([Location 479](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=479))
+    - **Tags:** #blue
+- Note that kanban is not a to-do list. I still have my to-do’s on my phone: mow the lawn, do the laundry, prep the labyrinth. My kanban is for Making the Thing That Is Not and keeping my Task Avoidance on track. ([Location 504](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=504))
+    - **Tags:** #blue
+    - **Note:** - I think that this is an important distinction to make, that your todo list is not your Kanban board. I think I’ve made that mistake before, and maybe why I haven’t had as much success with a personal Kanban, .... consider it again
+- A brilliant contemporary example of successful structured procrastination is the German artist Anselm Kiefer. Kiefer is known for his often gargantuan paintings ([Location 517](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=517))
+    - **Tags:** #blue
+    - **Note:** Look into this guy more, his stuff sounds neat.
+- links & overlaps ([Location 527](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=527))
+- How does Task Avoidance link to the other Precepts? You can put off a project only so long before you’re no longer in Task Avoidance: you’ve moved into Abandonment. Whether the Abandonment is permanent… well, that becomes a future decision. (You should ask Da Vinci about the difference.) ([Location 528](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=528))
+    - **Tags:** #blue
+- Task Avoidance is also linked to Gestalt through Gestation — a good reason to not work on a project is because you’re stepping back to see if you can tell what’s missing. ([Location 539](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=539))
+    - **Tags:** #blue
+    - **Note:** - iyow - explain the connection here
+- Finally, any strategy you use to manage your Task Avoidance (bullet journals, kanban, scattered piles) should have one major goal in mind: they should leave you with no artistic choice for any given project but to realize that it’s time — that project that has hung about, perhaps for years, is now at the top of your list. It’s time to move it from the Some Day column to the Doing column. It’s time for your first Abortive Attempt. ([Location 545](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=545))
+    - **Tags:** #blue
+    - **Note:** Is this what I’ve been doing with Not A Robot - my learning discovery idea - taking teaching and teaching to teach seriously - trying my own thing - my first abortive attempt?
+- Practice “structured procrastination” by alternating your projects — avoid working on one project by tinkering with another. Kanban your projects — know what you’re putting off and why. Don’t be afraid to let projects simmer. Learn the difference between Task Avoidance and Abandonment. ([Location 550](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=550))
+- It’s a great idea, one that every creative person needs to consider seriously. Write it all down and come back to it later. Stand-up comics especially use Waste Books, as do poets and other writers, but there’s no reason visual artists or scientists (like Lichtenberg) or code monkeys shouldn’t do so as well. ([Location 583](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=583))
+    - **Tags:** #blue
+    - **Note:** I really like this idea of waste books, and also fits in a bit of my ‘make room of what’s left on the editing room floor’ - capture everything, come back to it - edit, but still keep track of the originals, much of that stuff has the potential to be eventually useful,
+- Waste Books are wild patches of garden where you throw all the seeds of ideas without any concern about which ones ever “bloom.” ([Location 631](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=631))
+    - **Tags:** #blue
+    - **Note:** Waste books are the breeding ground of digital gardens. - what are my waste books? - are my happy books the waste books? I have so many ideas down in those - and ones I mean to revisit, and I know I’ve written down about what I’m working on now in those pages before. What was that line from Russian Doll that I told Ron about - about the sprout growing or some such?
+- Sounds like a Waste Book. As much as I would love to be able to sell you the Official Lichtenbergian Brand Waste Book™ — world domination is my goal, after all — it really doesn’t matter what kind of notebook you use. The point is to have something in which you can scribble your ideas without thinking too much about them. Just get it all written into the Waste Book, then later, after the hurly-burly of your day, move those ideas your creative space. ([Location 641](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=641))
+    - **Tags:** #blue
+- For the Burning Man notebooks, in which I hashed out the philosophical underpinnings to my theme camp (3 Old Men),[46] I used a pencil and wrote everything in all caps. For A Christmas Carol, I planned ([Location 664](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=664))
+    - **Tags:** #blue
+- The first time I added a note to a Burning Man page written on its side — or spiraling around the outside edge — or boxed as an aside — was freeing in all kinds of ways. I didn’t have to think or plan linearly[47] ([Location 679](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=679))
+    - **Tags:** #blue
+- If after a while a theme called out to him, he would copy it into a larger, second notebook, where he would play with it, trying out variations, harmonizations, improvisations, until he had an idea of how it would work itself out in a piece. And there he would leave it for a while. **Finally he would open a third notebook and use all his Abortive Attempts and Successive Approximations to create the new work before copying it all out to manuscript paper**. ([Location 742](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=742))
+    - **Tags:** #blue
+    - **Note:** - expand on / connect to - “making use of what’s on the editing room floor”, note taking vs note making. By keeping track of the work as we go, even if I not used right away - eventually, when needed, can be used as source material for the final version
+- you’ve created a Ritual space. The flow of ideas becomes freer; you know you have a safe space for them, and you know they will be there when you need them. ([Location 757](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=757))
+    - **Tags:** #blue
+- As silly as all those little bits of dialogue or quirky signs or random musings seem in the moment, if something is funny or moving or profound to you in a moment, it will be again. Keeping those little repositories of life experience is a necessity as an artist, and will serve as a great tool for you. ([Location 806](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=806))
+    - **Tags:** #blue
+    - **Note:** I like to keep track of odd things, from what I photograph on walks - to the memories I associate with them, at times it might be a word that catches my eye at that moment. Looking back through my journals, photos, things - things pop out, and the context might have a new lense.
+- Precept 3: Abortive Attempts ([Location 809](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=809))
+    - **Tags:** #blue
+- I finally had to make myself start — literally with these words in this Waste Book, this paragraph. Now I can finish it. ([Location 816](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=816))
+    - **Tags:** #blue
+- The whole point of writing abortive attempts or Bach’s J.J. or Willard’s wasted efforts at the top of your page is to give yourself permission to fail.[57] You disarm the Critic in your head by telling him ahead of time — “this piece, this drawing, this poem, is going to be crap. I am deliberately going to put down whatever comes into my head or my fingers and there’s nothing you can do to stop me.” ([Location 836](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=836))
+    - **Tags:** #blue
+    - **Note:** I find that with certain note taking apps - my head goes into ‘final state sooner’, outliners, obsidian, roam let that very free flowing thought start, then its the pulling it together and curation. Or in my note books - writing to get it out, and permission to throw it away, the explicit first draft, the project named ‘xyz PoC’ —- it is kind of weird how well it works
+- So don’t try to make it “good.” Just keep moving forward, adding new pieces, loops, backtracks. Scratch stuff out. Paint stuff over. Take stuff apart. You’ll know when it’s time to make it “good,” and it’s better if you don’t try to force the issue until that time, because if you do, you’ll simply find yourself at another dead end. ([Location 845](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=845))
+    - **Tags:** #blue
+    - **Note:** Like writing code - get the idea out - then clean up and refactor - kind of like editing an essay is like editing code is like editing an essay
+- The creative process is nothing but dead ends. ([Location 856](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=856))
+    - **Tags:** #orange
+- “[I] just keep squirting out little turds of creativity — eventually it should be a pile of shit so big that it has to have a pony in there somewhere, right?”[58] — From a letter to Mike Funt, 2/16/2015 ([Location 858](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=858))
+    - **Tags:** #blue
+- Here’s a pro tip, all those false starts and dead ends are not trash. Don’t throw them away; they’re still perfectly good. I myself have on occasion suddenly discovered a use for a 30-year-old melody that I’ve just kept floating around. ([Location 913](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=913))
+    - **Tags:** #blue
+- Here’s another pro tip: One of the biggest mistakes an artist makes is what we call the King of Hearts[62] Fallacy: “Begin at the beginning, and go on until you come to the end: then stop.” We have this image that an artist sits down to write her novel or compose his sonata or write their poem — and she just launches right into it and works straight through until she’s through. Then she writes The End and we all live happily ever after. ([Location 925](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=925))
+    - **Tags:** #blue
+    - **Note:** Kind of sounds like my “have big stupid ideas, then what’s the first small step” - aka, the hot tub time machine
+- Tolkien started The Lord of the Rings as a sequel to The Hobbit, i.e., another children’s book. Bilbo was named Bingo; Strider was a Hobbit ranger; Sauron was nowhere in the picture. As Tolkien says in his Foreword to the Second Edition to The Lord of the Rings,[63] “The tale grew in the telling.” ([Location 935](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=935))
+    - **Tags:** #orange
+- Start with the part you know. ([Location 948](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=948))
+    - **Tags:** #orange
+    - **Note:** [[Start with the part you know]]
+- That’s okay, too, but be very wary of that map becoming a roadblock. Treat everything as an Abortive Attempt, even your most meticulously planned project. ([Location 951](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=951))
+    - **Tags:** #blue
+    - **Note:** - this applies in so many areas, even thinking of “how does this apply at work?” - when does the roadmap work, become the roadblock - kinda often
+- I couldn’t wait for success, so I went ahead without it. — Jonathan Winters ([Location 958](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=958))
+    - **Tags:** #orange
+- Abortive Attempts, of course, are only the beginning. It is almost always a mistake to believe that the first thing out of your brain is ready for an Audience. ([Location 960](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=960))
+    - **Tags:** #blue
+- Give yourself permission to fail by labeling each page with Abortive Attempts. Deliberately set out to create crap — lots of crap. Plan if you must, but be aware that art has ideas of its own. You don’t have to begin at the beginning. You can always go back and fix it. [Successive Approximation] ([Location 967](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=967))
+- Precept 4: Gestalt ([Location 1001](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1001))
+- good method of discovery is to imagine certain members of a system removed and then see how what is left would behave: for example, where would we be if iron were absent from the world: this is an old example. — GCL, J.258 ([Location 1002](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1002))
+    - **Tags:** #blue
+- But it’s not — it never is[69] — so what you’re doing by looking at your work as if it were complete is trying to see the Gestalt of the thing — the shape — of what it should look like, would look like if it were complete. ([Location 1024](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1024))
+    - **Tags:** #blue
+- Gestalt can be viewed, then, as a strategy for optimizing your choices as you Make the Thing That Is Not. When you pick Option A as your best option, then all those choices that sprang from Option B or C can (probably) be disregarded. ([Location 1046](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1046))
+    - **Tags:** #blue
+    - **Note:** I’m collecting lots of ideas, notes, resources, my own writings as I shape my idea - but, as I shape the idea and make decisions - can that help ‘filter the inbox’, and eject things that are taking up space.
+- One concept embedded in Gestalt is that of boundaries: knowing where the fences are — and then going beyond them. ([Location 1089](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1089))
+    - **Tags:** #blue
+- Wabi-Sabi is a Japanese aesthetic term that enshrines imperfection as a requisite for beauty — “imperfect, impermanent, and incomplete.”[74] ([Location 1102](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1102))
+    - **Tags:** #orange
+- “Naw!” roared Andy. “We can fix this. It’s going to be OK. We can fix this.” She looked doubtful but allowed herself to be led back down to the ceramics studio where she would begin, literally, to pick up the pieces. I caught up with her a day later. She was sitting before her “ruined” torso, its breasts just ragged circles where the clay had self-destructed. She was happily daubing an oxide glaze onto it, chatting about how once Andy had gotten her to look at the piece as it was and not as it was supposed to be, she began to see the beauty in its imperfections and was now disposed to see the catastrophe as an improvement. ([Location 1113](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1113))
+    - **Tags:** #blue
+    - **Note:** This is why keeping track, and keeping around ‘failed attempts’ is good - they may turn into something else, and that is ok. Kind of think of the iterative process of my video loops, how I’ve approached some of the training material I’ve created, how I keep looping back around to learning ecosystems - they keep falling apart, but there is beauty in the pieces. Part of a larger whole, kind of like the fractal meditation in todays daily calm [[2021-04-14]]
+- Every step of your process opens up new choices, and if a choice results in unexpected outcomes, you may be tempted to chuck it all and sit in the ashes and all alone beweep your outcast state. It may be that your work is ruined and you need to toss it in the trash, but mostly that is not the case. The point is, accidents happen, and they may not be the disaster ([Location 1131](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1131))
+    - **Tags:** #blue
+- links & overlaps Gestalt goes hand in hand with Successive Approximation — it is what allows us to see what needs to be changed from one incarnation of our work to the next. Certainly it is the key to Successful Approximation. ([Location 1166](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1166))
+    - **Tags:** #blue
+- Gestalt is also linked to Steal from the Best via its boundaries aspect: if you’re writing a sonnet or a sonata, then that model/structure from the past becomes the guide to your Gestalt. Is the meter of the poetry correct? Have you modulated to the traditional key for the second theme? Or is your Gestalt going to lead you to break past those boundaries and create something new? ([Location 1177](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1177))
+    - **Tags:** #blue
+- Have some pro tips: Can you take it apart? Can you destroy it? Can you whittle it down? Reframe it and work on a fraction of it? Can you summarize the problem? ([Location 1185](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1185))
+    - **Tags:** #orange
+- Keep looking at the project to see what’s not there — or what is there that doesn’t need to be. The “shape” of the project will change — and that’s OK. ([Location 1196](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1196))
+    - **Tags:** #orange
+- Precept 5: Successive Approximation ([Location 1202](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1202))
+    - **Tags:** #orange
+- The thought still has too much elbow-room in the expression; I have pointed with the end of a stick when I should have pointed with the point of a needle. — GCL, D.18 ([Location 1203](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1203))
+    - **Tags:** #orange
+- With many a work of a celebrated man I would rather read what he has crossed out than what he has let stand. — GCL, F.131 ([Location 1205](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1205))
+    - **Tags:** #orange
+- start it, then fix it. And pay attention to what we’ve done at each step of the way. All of which is to say — again — that an artist almost never produces a finished work; he produces something that is not quite right and then he proceeds to rework it. ([Location 1214](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1214))
+    - **Tags:** #orange
+    - **Note:** [[the first draft is not the final draft]] - I’ve been caught up by this before, and also see it common with others when stuck on problems at work - is thinking their first attempt, needs to be the final attempt. Rework, learn, rework, learn - bring things into focus.
+- It’s also the point of the Abortive Attempt, isn’t it? Just get the thing started: Only begin. Successive Approximation is then the middle ground between Abortive Attempts and Abandonment, passing through Gestalt as it goes. ([Location 1223](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1223))
+    - **Tags:** #orange
+    - **Note:** Abortive attempts is to get things going, this stage goes through the gestalt to help bring shape to it - and then decide to avoid, or abandon - or something, I’m bad at this summary
+- all are Successive Approximation. So are scientific experiments, code debugging, focus groups, double-blind drug trials, and if we’re being honest about it, the “practice” of medicine.[80] ([Location 1229](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1229))
+    - **Tags:** #orange
+- One of the key points about Successive Approximation is made by the fable related in Art & Fear[82] of the ceramics teacher who divided his class, telling one half that their final grade will depend only on the quantity of their work, i.e., 50 pounds of pots will get them an A; and the other half that their grade will depend on the quality of one single pot they produce. At the end of the semester, of course, it was the students who made more pots who ended up with the better work. Every mistake they made along the way was useful, either as a correction or as a new path. ([Location 1238](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1238))
+    - **Tags:** #blue
+- Successive Approximation: much of what you make is not going to be a final product. Rather, it’s an evolutionary dead end — paint over it, strike through it, use it for firewood. Then do it again. Right-er. ([Location 1254](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1254))
+    - **Tags:** #orange
+- Over the years in my various roles as media specialist, artistic director, and educational administrator, I always had to deal with getting things done in an orderly and timely fashion. I had to adhere to (and often develop) processes for these jobs, and in the process[84] I realized a certain truth: “It takes three cycles to get any new process right.” In other words, you have to start and end a process at least twice before you can say you have a grip on it. The corollary to the Lyles Theorem of Process Development is, “…if you don’t change the process, that is.” ([Location 1257](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1257))
+    - **Tags:** #blue
+    - **Note:** The point about not changing process mid process - expand on - I’ve seen / done this before - tried something, and then start tweaking mid-way - even on the first run. Need to let things run the course a few times, although - when approaching how I start to join new teams, there is the period of “watching how things work” before starting to make changes.
+- The lesson I learned was that inadequate writing was mostly a matter of Task Avoidance: a simple reading out loud of the paragraph would have shown the writer where he went wrong. Successive Approximation. Bring it into focus.[88] ([Location 1369](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1369))
+    - **Tags:** #blue
+    - **Note:** I’ve done this before with blog posts / talks / etc —- and then reading it out loud makes some things so clear
+- links & overlaps Successive Approximation does not function as a standalone tool, no more than the other Precepts do. Every time you make a change to your piece, you’re going to step back and assess whether the change worked or not. That’s Gestalt: looking at the whole shape of the piece to determine if anything needs to be added or subtracted. ([Location 1395](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1395))
+    - **Tags:** #blue
+    - **Note:** Shape as a part of / pattern of the whole - like a fractal
+- When I have beginning and an ending, but not a middle, I’ll put in an XXX for the missing section. (This book had a lot of XXX’s in its evolution!) ([Location 1411](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1411))
+    - **Tags:** #blue
+- If you can’t figure out what comes next, summarize what comes next. “I need to connect section A to section B.” “The melodic line needs to climb to G and prep the modulation to D minor.” “The combination of barrel-aged gin, yellow Chartreuse, and Averna Amaro is nice, but it needs a little more spice.”[91] ([Location 1414](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1414))
+    - **Tags:** #blue
+- Write yourself questions that you don’t have answers to. “What emotion should this section attempt to express most clearly?” “What next step will leave me with several options to move ([Location 1417](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1417))
+    - **Tags:** #blue
+- forward?” “Is there a way to embed Theme B in the music at this point?” “Should this section go in the chapter on Gestalt?” ([Location 1419](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1419))
+    - **Tags:** #blue
+- The first iteration is not the finished product. Do it over, repeat with variations and improvements. Make it right-er. [Gestalt] Make it possible to update/upgrade the project. Don’t wait until you can do it perfectly — dive in. [Abortive Attempts] ([Location 1421](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1421))
+    - **Tags:** #blue
+- Precept 6: Ritual ([Location 1445](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1445))
+    - **Tags:** #orange
+- Perhaps the roof-tiler fortifies himself to meet the perils of the day through a morning prayer, and if so he is among the fortunate; perhaps, however, he does it with a portion of baked cat's brains. Oh if only we sometimes knew what gives people courage! — GCL, J.114 ([Location 1446](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1446))
+    - **Tags:** #orange
+- enter the liminal state, ([Location 1453](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1453))
+    - **Tags:** #orange
+    - **Note:** - expand on - what music brings me to a liminial state? - what is a liminial state? How would albums like DE9 Transitions fit into this for me? And now I am thinking of ryerson, sensory burrito, undiagnosed ADHD, probably autistic, spaced repetition and interleaving
+- Ritual is a kind of structure, one that takes you from where you are to a new place, crossing over a line in some way to get there. Its purpose is to provoke change in yourself and/or the ([Location 1462](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1462))
+    - **Tags:** #orange
+    - **Note:** - expand on - the power of ritual - what does ritual mean to me? What are my rituals? The transference of power, magic is real.
+- Once you understand the way Ritual works, you can use it to make your creative work more meaningful and actually easier to get at. Take a look at this outline: Invocation Drawing the circle Taking the path Numen/Connection Breaking the circle Benediction Looks awfully religious, or at the very least pretty hippie-woo, doesn't it? There are those who would say that creation — the act of Making the Thing That Is Not ([Location 1466](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1466))
+    - **Tags:** #orange
+    - **Note:** Ness labs - the hermanic circle
+- Invocation ([Location 1481](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1481))
+    - **Tags:** #orange
+- We must decide to Make the Thing That Is Not, and that requires that we need some kind of call to our own brains to get to work and to stop worrying about getting the herb garden planted or what to pack for the weekend. Recognizing that we have to enter into the circle to do our work is the first step to overcoming our fear of failure.[94] You might very well create your own actual Invocation that you use to get started, but all that's really necessary is developing a sense that you have a switch that you need to flip from OFF to ON. ([Location 1489](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1489))
+    - **Tags:** #blue
+- Drawing the Circle ([Location 1514](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1514))
+    - **Tags:** #orange
+- Drawing the Circle is the next step. Once you've invoked your muse or turned on your lights, it's time to set your space. For most of us, that means closing the door in some way: protecting your time and concentration so that you're not interrupted by spouses or children or pets or Facebook (!). ([Location 1514](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1514))
+    - **Tags:** #blue
+- What you're doing is entering what students of Ritual call the liminal space: you cross a boundary from the "real world" into a space where change is not only possible but practically ([Location 1519](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1519))
+    - **Tags:** #blue
+- Drawing the Circle can also mean setting aside a specific time for your work. Nowadays I blog first thing in the morning, after checking email and social media, followed by work on the book or on music, followed by lunch, and then in the afternoon I can run errands, or garden, or exercise, or write letters, or read, or volunteer, or other stuff. (Yes, I am retired; why do you ask?) ([Location 1523](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1523))
+    - **Tags:** #blue
+- Draw the Circle to create your liminal space and then — deliberately, willingly — enter into it to Make the Thing That Is Not. ([Location 1538](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1538))
+    - **Tags:** #blue
+- Taking the Path ([Location 1540](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1540))
+    - **Tags:** #blue
+- For many of us, the fear of that risk is what keeps us from beginning the journey at all. That's where the Precept of Abortive Attempts is so incredibly useful: it helps us ignore or at least minimize that fear by saying, essentially, “This first step on my journey doesn't count.” ([Location 1550](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1550))
+    - **Tags:** #blue
+    - **Note:** - the first step doesn’t count - leave it on the editing room floor - stupid ideas - first steps - rework - iterate - it can be a small step
+- Numen/Connection ([Location 1567](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1567))
+    - **Tags:** #orange
+- First of all, what is Numen? It's a Latin word meaning “divine power,” and we're going to use it to mean that indefinable quality of our creative process that we don't always understand — it seems to come from beyond us, from the universe at large. ([Location 1571](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1571))
+    - **Tags:** #blue
+- Some call this inspiration, and that's an interesting word too because it comes from the Latin meaning “to breathe into,” ([Location 1574](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1574))
+    - **Tags:** #blue
+- Listen to what the universe is suggesting. That's Numen. ([Location 1595](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1595))
+    - **Tags:** #blue
+    - **Note:** What is the universe suggesting for me today?
+- The other channel we must be open to encountering is Connection, and a good synonym for that is our very own Precept of Audience. As you work, connect to your Audience. Include them in your work. ([Location 1618](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1618))
+    - **Tags:** #blue
+- Breaking the Circle ([Location 1634](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1634))
+    - **Tags:** #orange
+- It is entirely possible just to lay down your pen/brush/cocktail shaker and walk away. Who's going to stop you? It's probably a better idea, however, to break the circle, i.e., to formally acknowledge that you're done. ([Location 1637](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1637))
+    - **Tags:** #orange
+    - **Note:** - expand on - how I’ve made use of the concept of break the circle - this was kind of what I was doing with my daily boot up / daily shutdown at work, but a way to signal that I was done ‘x’ for the day. How do I break the circle? How do I set myself up for success? Do I need to?
+- Clean your brushes. Save your files. Tidy your desk. (It could happen.) Organize All The Things.  Take a step back. Take a deep breath. Stretch. Now go empty the dishwasher. ([Location 1651](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1651))
+    - **Tags:** #blue
+- Benediction And ([Location 1653](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1653))
+    - **Tags:** #orange
+- Just as Invocation is as simple as making sure to flip the light switch on, Benediction is simply acknowledging you're done. ([Location 1655](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1655))
+    - **Tags:** #blue
+- We use Ritual to move from Where We Don’t Work into the circle, into the liminal state, Where We Work. That’s it. ([Location 1662](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1662))
+    - **Tags:** #blue
+- Another name for the liminal state is flow, named and popularized by Mihaly Csikszentmihalyi in his book of the same name. He ([Location 1664](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1664))
+    - **Tags:** #blue
+- Ritual can be pretty damned impressive. Every year, on or before the winter solstice, the Lichtenbergians have their Annual Meeting, which you will encounter in full in the chapter on Audience. Short version: we meet around the fire on or before the winter solstice. There is a set Agenda, which among other things requires us to state our Proposed Efforts for the coming year and to confess whether or not we were successful in avoiding the completion of the previous year’s Efforts. (Cras melior est.)[99] ([Location 1673](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1673))
+    - **Tags:** #blue
+    - **Note:** - burning man has rituals - what are my rituals? - my trippy-walk after exams was a form of ritual and audience I guess, although who was the audience? - there was the preparing for exams, the spaced repetition, the day of the exam - the sensory burrito, the music - DE9 Transitions - the exam, the post-exam ritual of the trip - clean the apartment, do laundry, prepare snacks - touch base with family, get things sorted - then eat a stamp. Even the trip itself - the initial journey into the don valley, usually near Riverdale first, or The Brickworks, returning home, the isolation bath to ambient music - reflecting on the past, going forward, what’s next - then the second journey out, usually towards high park - these walking paths have become a part of me - how does this relate to stubborn walks - memory palace - encoding memory - my happy walks - the happy walk - what is my happy network, how do I reinforce the happy network, and how does this relate to ritual?
+- Invocation, Drawing the Circle — you trigger your brain/soul to enter that liminal space where the words or notes or ideas come from.  It doesn't guarantee success, of course; sometimes you eat the Minotaur, sometimes the Minotaur eats you. But unless you open the door and enter the labyrinth — Take the Path — you will never encounter Numen, you will never make the Connection. You will have a very hard time indeed Making the Thing That Is Not, and it's hard enough as it is. Make it easier: draw that circle, take that path. ([Location 1683](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1683))
+    - **Tags:** #blue
+- Check out Mason Currey’s Daily Rituals for a look at how scores of writers, musicians, and painters structured their approach to their work. Some work(ed) at the same time every day, like regular office hours — and even then some worked first thing in the morning while others worked at night. Others waited until the “pain of not writing exceeded the pain of writing.”[100] Examine how others have done it. Steal From the Best if one ritual approach strikes your fancy ([Location 1695](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1695))
+    - **Tags:** #blue
+- My personal Ritual for getting into the circle is mostly where, not when. I work best in my usual spots. I am a creature of habit — and that habit is Ritual. ([Location 1702](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1702))
+    - **Tags:** #blue
+- However, not all three places are equivalent. The living room chair and the fire pit are usually my Abortive Attempt locations: jotting down ideas, scribbling first drafts, mapping out plans. Or I’ll retreat to them for editing, for Successive Approximation. The study is where I get most of the “real work” done, fleshing out the drafts, pounding out the musical ideas, etc. Again, through my work habits, they have become Ritual spaces. When I need to plan, I go to the living room or the fire pit depending on the weather, and my brain enters that liminal state. When I’m past the Abortive Attempts stage, I close my Waste Book and exit the circle. ([Location 1709](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1709))
+    - **Tags:** #blue
+    - **Note:** The idea of the where in the ritual I like - expand on - I’ve noticed that different things do come to me in different places, the waking up on my phone in bed / laptop in bed - vs on the couch vs standing at my desk vs walking and talking and transcribing, each seem to fit different needs and stages of working on an idea. I think one of the challenges I had with work-work, was everything was in the same space, and then burnout kept me limited to that space, I had no spoons to leave it, the ritual was my coffin - I need more where’s, I like more where’s.
+- One of the functions of Ritual is communitas, the creation of a group bond: ([Location 1720](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1720))
+    - **Tags:** #blue
+- Linkage & overlap The Precept of Ritual undergirds pretty much the entire Lichtenbergian structure.[102] ([Location 1731](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1731))
+    - **Tags:** #blue
+- The practice of Task Avoidance/structured procrastination is a Ritual: ([Location 1733](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1733))
+    - **Tags:** #blue
+- Waste Books are themselves a Ritual: a structure for turning ideas from the vaporware in your head to something a little more concrete in this world. ([Location 1736](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1736))
+    - **Tags:** #blue
+- Recognizing the cycle of Abortive Attempts/Gestalt/Successive Approximation and approaching it deliberately is a Ritual: it’s a shape that you use to Make the Thing That Is Not. and so… Find the time and space that suits your working habits and needs, then protect them. Find a pattern that leads into (and out of) your liminal space. ([Location 1738](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1738))
+    - **Tags:** #pink
+- Here are mine: Start every venture with the words “Abortive Attempts” at the top of the page. Face up to the fact that quantity is better than quality — and more likely in the first place. Make your distractions as productive as your work. Defend your time. ([Location 1747](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1747))
+    - **Tags:** #blue
+- Learn to look/listen for what is missing.[103] It was interesting that some variant of “Defend your time” appeared on everyone’s list. What are your Five Rules? ([Location 1754](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1754))
+    - **Tags:** #blue
+- Precept 7: Steal From the Best ([Location 1757](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1757))
+    - **Tags:** #blue
+- In its various incarnations, the message is simple: we take from those who have come before and use their gift to us to create our own Thing That Is Not. Merely borrowing what came before, however, is not enough; the new Thing may be good, but it cannot be great unless we have taken it completely as our own and left nothing behind. ([Location 1782](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1782))
+    - **Tags:** #blue
+- It’s there for the taking. Steal from your culture. ([Location 1824](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1824))
+    - **Tags:** #blue
+- Reverse engineer their work — figure out how they did it. Use the same strategies they used, but to create your work. Even today you will find art students in museums, doing their best to copy the great masters, or musicians learning the great guitar riffs from classic songs, or bartenders following classic recipes. They’re learning the possibilities of their craft. ([Location 1827](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1827))
+    - **Tags:** #blue
+    - **Note:** - story idea - maybe - a lot of how I learned to code, was from reading the source code of others, digging through unit tests - figuring out other peoples process
+- “The great thing about dead or remote masters is that they can’t refuse you as an apprentice… They left their lesson plans in their work.”[108] ([Location 1843](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1843))
+    - **Tags:** #blue
+- Reader’s Digest Can be invoked when a speaker is being complex or obtuse and confusing people. When invoked, the speaker must give a simple summary of what he/she just said. ([Location 1895](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1895))
+    - **Tags:** #blue
+- links & overlaps Use your Waste Books to Steal from the Best: by scribbling and jotting, you can get down exactly what you want to steal and why. ([Location 1950](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1950))
+    - **Tags:** #blue
+- Precept 8: Audience It is almost impossible to write anything good without imagining someone, or a certain group of people, whom one is addressing. In 999 cases out of a thousand it at any rate greatly facilitates the execution. — GCL, L.76 “To possess is [necessarily] to give.”[115] ([Location 1974](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=1974))
+    - **Tags:** #blue
+- Austin Kleon, author of Steal Like an Artist, said in a tweet one day (and I’m paraphrasing from memory): Imagine yourself appearing before an adoring crowd of hundreds, even thousands of fans. Do you imagine that every single one of them really, truly cares about your work? No, of course not. Maybe half a dozen do. Those people are your Audience.[117] I would add: The rest of them are The Crowd. Don’t create for The Crowd. The Crowd has no taste. ([Location 2002](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=2002))
+    - **Tags:** #blue
+    - **Note:** - like the phrasing - create for the audience, not the crowd - the crowd has no taste
+- Take Kleon’s advice to heart: who are those half dozen souls in the screaming throng who truly grok your work? Create for them. ([Location 2026](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=2026))
+    - **Tags:** #blue
+- Brian Eno, when he was an art student, began to look askance at the way artistic giants like Picasso and Michelangelo were being presented as solitary men of genius, towering alone over their time and place. He, too, saw that they were part of the cool kids club, and he devised a term for that: scenius. He defined scenius as “the intelligence and the intuition of a whole cultural scene. It is the communal form of the concept of the genius.”[118] It is Those People Right Here. As blogger Kevin Kelley puts it, a scenius gives its members “mutual appreciation, rapid exchange of tools and techniques, network effects of success, and local tolerance for the novelties.” When you’re surrounded by people inspired by the same things as you, you all benefit from the flow. ([Location 2035](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=2035))
+    - **Tags:** #blue
+- Ask yourself questions or define what it is you’re trying to do. That will help freeze-frame all those fuzzy ideas swarming your brain like so many gnats. (See Gestalt.) ([Location 2105](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=2105))
+    - **Tags:** #blue
+    - **Note:** - when stuck and not sure how to proceed, asking yourself questions can help bring shape to what is next
+- MOMA is not your audience. Find or create your scenius. Be your own audience: journal your efforts in some way. Solve problems/roadblocks by describing what the problems/roadblocks are and why they are what they are. Announce your projects, even if it’s only to yourself. Keep a record. ([Location 2216](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=2216))
+    - **Tags:** #blue
+- Precept 9: Abandonment Never before had a mind come to a more majestic halt. ([Location 2237](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=2237))
+    - **Tags:** #blue
+- The architect Frank Gehry builds models of the buildings he’s designing, over and over and over, each iteration improving/fixing the one before. If he feels stuck at any point, he tells his team, “Let’s let it sit there and annoy us for a while.”[133] Abandonment in the service of Gestalt. ([Location 2328](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=2328))
+    - **Tags:** #blue
+- links & overlaps Abandonment links to Task Avoidance: many a project gets set aside for whatever reason and may take a long time to bubble back to the top of your kanban pile. It may never come back into play, but Task Avoidance is, in the main, at least temporary Abandonment. Finally, on a positive note, Abandonment also applies to success. ([Location 2356](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=2356))
+    - **Tags:** #blue
+- Give yourself permission to stop — it’s OK to stop gnawing at it. Let it go — walk away from it and come back later to look at it. [Gestalt] Failure is a perfectly acceptable option. Be interested in your failures. Make them interesting. It’s also perfectly acceptable to succeed. ([Location 2366](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=2366))
+    - **Tags:** #blue
+- The great festival Burning Man operates on what its participants call the Ten Principles. They are: Radical Inclusion Gifting Decommodification Radical Self-reliance Radical Self-expression Communal Effort Civic Responsibility Leaving No Trace Participation Immediacy ([Location 2377](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=2377))
+    - **Tags:** #blue
+- If you could read only five books from the bibliography, these would be my suggestions: Art & fear, Bayles & Orland The art of creative thinking, Judkins The creative habit, Tharp Little bets, Sims Steal like an artist, Kleon (plus his two other books) The next five: The art of procrastination, Perry Creative confidence, Kelly & Kelley Daily Rituals, Currey The dance of the possible, Berkun ([Location 2483](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=2483))
+    - **Tags:** #blue
+- Personal kanban, Benson & Barry ([Location 2496](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=2496))
+    - **Tags:** #blue
+- Finally, here are my favorite books from the deep end of the pool: Beginnings in ritual studies, Grimes  The gift: how the creative spirit transforms the world, Hyde Homo aestheticus: where art comes from and why, Dissanayake Trickster makes this world: mischief, myth, and art, Hyde The unfolding self: varieties of transformative experience, Metzner ([Location 2497](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=2497))
+    - **Tags:** #blue
+- The hero’s journey[137] Ritual — properly structure — is analogous to Joseph Campbell’s Hero’s Journey,[138] also known as the Monomyth. ([Location 2626](https://readwise.io/to_kindle?action=open&asin=B0846139FT&location=2626))
+    - **Tags:** #blue

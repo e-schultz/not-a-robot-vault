@@ -4,12 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "7218ead9587c9fc8",
+        "id": "6d13302ce9def88e",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "daily/the evening ramble/2021-05-02 - The Evening Ramble.md",
+            "mode": "source"
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "9da259a1be06ff68",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PARA/Area/Building Not a Robot/What role does L&D have in creating a sense of belonging.md",
+            "file": "inbox/readwise imports/Articles/articles - Udemy-Upskill-Learning-Culture-Evaluation.pdf.md",
             "mode": "preview"
           }
         }
@@ -39,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#HIV",
+                "query": "tag:#collaborative-learning",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -56,7 +69,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -77,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PARA/Area/Building Not a Robot/What role does L&D have in creating a sense of belonging.md",
+                "file": "inbox/readwise imports/Articles/articles - Udemy-Upskill-Learning-Culture-Evaluation.pdf.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -105,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PARA/Area/Building Not a Robot/What role does L&D have in creating a sense of belonging.md"
+                "file": "inbox/readwise imports/Articles/articles - Udemy-Upskill-Learning-Culture-Evaluation.pdf.md"
               }
             }
           },
@@ -131,17 +145,17 @@
     "direction": "horizontal",
     "width": 366
   },
-  "active": "7218ead9587c9fc8",
+  "active": "9da259a1be06ff68",
   "lastOpenFiles": [
-    "PARA/Area/Building Not a Robot/What role does L&D have in creating a sense of belonging.md",
-    "PARA/Area/Building Not a Robot/L&D and DEI MOC.md",
-    "+Home.md",
-    "PARA/Resource/JavaScript/JavaScript Frameworks MoC.md",
-    "PARA/Area/Building Not a Robot/Building Not A Robot MOC.md",
-    "inbox/202102261740 When you run out of spoons.md",
-    "inbox/alternaties to uncle box.md",
-    "inbox/202102231843 Stop inviting the racist uncle to your book club.md",
-    "daily/fragments/Self Care.md",
-    "inbox/202104121325 Rebuilding the Self Care Routine.md"
+    "inbox/readwise imports/Articles/articles - Udemy-Upskill-Learning-Culture-Evaluation.pdf.md",
+    "inbox/readwise imports/Articles/articles - How to Create an Effective Collaborative Learning Environment.md",
+    "inbox/readwise imports/Articles/articles - The 2021 Workplace Learning Trends Report  Udemy for Business.md",
+    "daily/the evening ramble/2021-05-02 - The Evening Ramble.md",
+    "inbox/readwise imports/Articles/articles - Youre Not Just a Manager Youre Also a Boss  LeadDev.md",
+    "inbox/readwise imports/Articles/20210501124601.md",
+    "inbox/readwise imports/Books/books - The Upskilling Imperative.md",
+    "inbox/readwise imports/Books/books - Lichtenbergianism.md",
+    "inbox/202105022139.md",
+    "inbox/202105022137 My job is to architect the greenhouse..md"
   ]
 }

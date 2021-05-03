@@ -10,7 +10,7 @@
 
 - I reached out to the someone senior at a prior tech job, and I shared my ADHD diagnosis with them. I left that job after a lot of things went wrong for me. I felt like I needed to clear the air, and also that someone else might fall into the pit I did.
   1/17
-    - **Note:** Save [[neurodiverse twitter]] [[neurodiverse tech]] [[ADHD at work]]
+    - **Note:** Save [[neurodiverse twitter]] [[Neurodiverse Tech]] [[ADHD at work]]
 - We did some cool stuff, but there were structural problems there for me, that really made everything just worse than it normally was. In part because I was the only remote employee and they didn't understand how much structure I needed. 
   I didn't understand.
   2/17

@@ -8,6 +8,8 @@ tags: [source]
 - authors: Amir Vera, By Amir Vera CNN
 - year: 2019
 - URL: https://www.cnn.com/2019/11/08/us/gender-reveal-plane-crash-trnd/index.html
+- [zotero](zotero://select/items/@veraGenderRevealStunt2019)
+- CNN
 
 ## Abstract
-A man&#x27;s plane &quot;got too low&quot; and immediately stalled.
+A man's plane "got too low" and immediately stalled.

@@ -34,7 +34,7 @@ Traditional top-down instructor / HR lead learning initiatives do not scale to m
 
 ###### 2. Feedback is Fuel for Learning Cultures
 
-###### 3. Think Like a Marketer to Drive Learning and Development
+###### 3. [[Think Like a Marketer to Drive Learning and Development]]
 
 ###### 4. [[learning in the flow of work|Put Learning into the Flow of Work]]
 

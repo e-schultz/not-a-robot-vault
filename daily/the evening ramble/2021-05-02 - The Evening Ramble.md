@@ -18,3 +18,20 @@ Talked a bit about what I was thinking on, including the TL;DR of [[Building Not
 			- pair programming
 			- the quick L&L's around usually RxJS topics that were bite sized
 			- [[Leveraging code reviews as L&D opportunities]]
+
+
+## Reading
+
+- [2 Types of Knowledge & What They Mean for Knowledge Management](https://cmoe.com/blog/different-types-of-knowledge/)[^cmoeTypesKnowledgeWhat2019]
+	- [hyp.is](https://hyp.is/go?url=https%3A%2F%2Fcmoe.com%2Fblog%2Fdifferent-types-of-knowledge%2F&group=__world__)
+	- Was cleaning up some notes and wondering how I should organize the Knowledge Management section here. 
+		- This did get me thinking about how is knowledge management related to Learning & Development
+- [Ungrading FAQ](https://www.jessestommel.com/ungrading-an-faq/)  [^stommelUngradingFAQ2020]
+	- [hyp.is](https://hyp.is/go?url=https%3A%2F%2Fwww.jessestommel.com%2Fungrading-an-faq%2F&group=__world__)
+- [UI Design Best Practices for Better Scannability](https://www.toptal.com/designers/web/ui-design-best-practices) [^banjaninUIDesignBest]
+	- [[202105022126 - RW-R - Scanability patterns and ADHD]]
+
+
+[^cmoeTypesKnowledgeWhat2019]:[[@cmoeTypesKnowledgeWhat2019|2 Types of Knowledge & What They Mean for Knowledge Management]]
+[^stommelUngradingFAQ2020]: @stommelUngradingFAQ2020
+[^banjaninUIDesignBest]: [[@banjaninUIDesignBest]]

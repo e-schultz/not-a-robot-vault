@@ -1,0 +1,152 @@
+# books - The Upskilling Imperative
+
+- Author: Shelley Osborne
+- Full Title: The Upskilling Imperative
+- Category: #books #readwiseimport
+
+- Cover: ![](https://m.media-amazon.com/images/I/815-jq6RgOL._SY160.jpg)
+
+### Highlights first exported May 2, 2021 at 9:43 PM
+
+- To thrive, we need to get back to the most fundamental of all human skills: the ability to learn. Small problem: Many of us have been habituated—through our organizations, those around us, and society—to believe that learning officially ends with formal education. ([Location 107](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=107))
+    - **Tags:** #learning, #blue
+    - **Note:** .learning is an ongoing process, and not a transactional one - we often separate learning from work, and not as something that can be done in the flow of work. People do continuously learn, however I have a theory that people often do not have the time to recognize when they have learned something - as there is no time for reflection, knowledge transfer, it’s moving onto the next task without a moment to breath.
+- learning must be continuous and prioritized. ([Location 111](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=111))
+    - **Tags:** #blue
+- “rebel talent”—rule breakers who change the nature of their work, their organizations, and their industry, sometimes with spectacular results and sometimes less so. One key attribute shared by successful rule breakers is the willingness to courageously and continuously learn. You can’t just rebel; you need to draw on skills to devise solutions and keep pushing until you succeed. ([Location 113](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=113))
+    - **Tags:** #blue
+- INTRODUCING THE ERA OF CONTINUOUS LEARNING ([Location 142](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=142))
+    - **Tags:** #pink
+- Why Are We Talking About Learning at Work? ([Location 150](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=150))
+    - **Tags:** #pink
+- Meanwhile, employees find themselves in unfamiliar territory. They don’t know which skills they should be learning, how to demonstrate their competencies to supervisors and hiring managers, or how to ensure they’re really retaining 6and applying newly gained knowledge. These working professionals may be years out of school and no longer consider themselves “in learning mode.” ([Location 156](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=156))
+    - **Tags:** #blue
+- learn to learn. This is what we’re talking about when we refer to the upskilling imperative. ([Location 160](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=160))
+    - **Note:** How does learning how to learn, relate to learning how to teach - and having a teaching culture?
+- Smart companies respond to this trend by doing more to help employees navigate winding career paths and gain the skills that will keep them moving forward. Not simply a “nice” thing to do, supporting employee learning and development is a proven business driver.3 ([Location 165](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=165))
+    - **Tags:** #blue
+- But even more than modernizing the L&D experience, companies need to transform at every level into learning-driven organizations, where working and learning are inextricably linked. ([Location 172](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=172))
+    - **Note:** - [[learning-driven organizations]] - learning becomes an intrinsic part of work
+- A True Learning Culture Is Democratized ([Location 174](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=174))
+    - **Tags:** #pink
+- Learning can’t be reserved for only those employees of a certain rank or tenure. Consider the message that sends: only some people’s growth and development are worth investing in. That’s a surefire way to kill enthusiasm and impede results. ([Location 174](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=174))
+    - **Note:** I’ve noticed that there is investment in leadership / management training - although often after someone has been a manager for awhile, but support for all levels can be lacking. With a teaching environment - SME’s can exist at any level of seniority, and help provide opportunities for them as well
+- Accountability for Learning, by Job Title ([Location 179](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=179))
+    - **Tags:** #blue
+- A High-Level View of a True Learning Culture ([Location 181](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=181))
+    - **Tags:** #pink
+- Learning is not something that can happen outside of work anymore. Things are moving too fast, and employee needs and wants vary too much, especially with five generations soon to be in the workforce at once.4 One recent survey commissioned by my company, Udemy, found that 51 percent of employees said they would quit a job where they weren’t offered necessary training,5 while millennials in particular cited learning and development opportunities as the second-most important benefit, after salary, they expect from an employer.6 ([Location 181](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=181))
+    - **Note:** This is why it’s important to have learning in the flow of work. If work is always done after-hours, it limits the ability for people to learn, and also who can learn - being able to invest that time after hours tends to favour people with less responsibilities, eg) single people with no kids. If you have partners, children, dependants, long commute times, etc - all of this can eat into the ability to learn outside of work time.
+- While the L&D team should serve as facilitators, individuals, managers, and organizations share responsibility for building, upholding, and participating in the learning culture. ([Location 187](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=187))
+    - **Tags:** #expandon
+    - **Note:** .expandOn the role of facilitation in L&D departments
+- 1. Develop and Foster Agile Learners ([Location 190](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=190))
+    - **Tags:** #pink
+- To create agile employees, organizations should empower individuals to access learning resources in their moment of need, even as those needs change and evolve, and then allow people to engage with learning when, where, and how they prefer. ([Location 192](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=192))
+    - **Tags:** #blue
+- 2. Feedback Is Fuel for Learning Cultures ([Location 197](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=197))
+    - **Tags:** #pink
+- To be clear, this is decidedly not the same as going through performance reviews. For starters, learning, feedback, and reflection coexist and should be happening all the time, not according to a company-mandated schedule. ([Location 202](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=202))
+    - **Tags:** #nar
+    - **Note:** .nar feedback should be ongoing - even if there is a learning culture or not, however having a continual feedback cycle is fuel for a learning culture, and does not need to be limited to the performance and review cycle of an organization. In my own experience - review cycles have been hard to stick with, and employees are often wanting to hear how they are doing more often than the performance review cycles happen
+- They need to provide training that helps people understand how to give and receive feedback and make room for people to reflect during their day. ([Location 205](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=205))
+    - **Tags:** #nar
+    - **Note:** .nar not having room to reflect during the day / week I think is one of the reasons why people don’t always recognize when they have learned something new, especially for software developers
+- 3. Think Like a Marketer to Drive Learning and Development ([Location 208](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=208))
+    - **Tags:** #pink
+- The best way to retain learners is to understand their needs and wants, get creative about how you engage them in ([Location 212](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=212))
+    - **Tags:** #blue
+- learning experiences, and market to them before, during, and after learning or training to keep them interested. ([Location 213](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=213))
+    - **Tags:** #blue
+- 4. Put Learning into the Flow of Work ([Location 214](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=214))
+    - **Tags:** #pink
+- One of the most important tenets of the learning culture must be that access to professional development opportunities is democratized throughout the organization. No one should need to have a certain job title or tenure to take full advantage of available opportunities. All employees should know they have the freedom and opportunity to learn whenever they need or want. They should also be empowered to decide what they should be learning and how. ([Location 218](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=218))
+    - **Tags:** #blue
+- 5. Signal the Value of Learning ([Location 224](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=224))
+    - **Tags:** #pink
+- What Have We Learned About Learning? ([Location 242](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=242))
+    - **Tags:** #pink
+- So, why do so many of us have negative associations when we hear about employee training? ([Location 247](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=247))
+    - **Tags:** #pink
+- It’s mandatory. Of course, certain compliance trainings really are mandated by law, regulation, or policy. They’re the soggy, overcooked vegetables no one likes but everyone has to choke down. However, some companies go further and make other types of training compulsory. Any learning experience that’s rolled out uniformly to everyone is ultimately going to be useful to only a few. You can’t take shortcuts if you want engaged, motivated learners; so, no, you can’t create one-size-fits-all content. ([Location 248](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=248))
+    - **Note:** The mandatory learning often leans into compliance oriented things, and then professional growth stuff tends to become optiona
+- It’s boring, static, passive, and outdated. ([Location 253](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=253))
+    - **Tags:** #blue
+- It’s punitive. ([Location 258](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=258))
+    - **Tags:** #blue
+- ■ Training is doled out as a reward. In this case, only the “good” employees get to go. This is a broken narrative. Learning has to be seen as a must-have for all. Every employee, every level. ([Location 261](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=261))
+    - **Tags:** #nar, #unfuckdei
+    - **Note:** .unfuckdei .nar when learning opportunities are treated as a reward, it can also reinforce systemic problems within an organization - who gets those rewards and why, who is overlooked?
+- Outcomes of training are not always clear. ([Location 264](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=264))
+    - **Tags:** #blue
+- Taking Learning and Development to the Strategic Level ([Location 266](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=266))
+    - **Tags:** #pink
+- A Brief Foray into the Science Behind Learning ([Location 277](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=277))
+    - **Tags:** #pink
+- Lesson 1: Necessity Is the Mother of Learning ([Location 300](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=300))
+    - **Tags:** #pink
+- Completion cannot be taken as a proxy for learning. In fact, checking boxes was never an accurate reflection of effectiveness. Training programs must have a clearly defined goal, measurable outcome, practical application, and ongoing value and relevance. Employees should never walk away from a course or workshop thinking they’re “done.” ([Location 300](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=300))
+- But he also discovered people could retain more if they repeated the new information at regular intervals—that is, “spaced repetition.”1 FIGURE 2.2 Hermann Ebbinghaus’s forgetting curve ([Location 307](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=307))
+    - **Note:** I’ve been curious on how spaced repetition can be leveraged in an organizational setting / work environment, how it connects to the forgetting curve, and being able to apply it —- when learning is relevant to what’s going on now, it’s easier to apply.
+- When people recognize their need to learn and continue using a new skill, they’ll see the benefit of repeated exposure and practice (Figure 2.3). Learning and development can establish the structures that empower an employee to engage in learning and repetition, but the student has to identify and prioritize what’s driving his or her need in the first place. ([Location 313](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=313))
+    - **Tags:** #blue
+- FIGURE 2.3 Learning and forgetting with spacing on the job ([Location 316](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=316))
+    - **Tags:** #pink
+- He suggests that repetitions of learning points can include:     1. Verbatim repetitions     2. Paraphrased repetitions (changing the wording slightly)     3. Stories, examples, demonstrations, illustrations, metaphors, and other ways of providing context and example     4. Testing, practice, exercises, simulations, case studies, role plays, and other forms of retrieval practice     5. Discussions, debate, argumentation, dialogue, collaboration, and other forms of collective learning ([Location 320](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=320))
+    - **Note:** Using spaced repetition at work for learning does not need to mean ‘repeat the same course’, or consume all of the material - but it can be key points, stories, re-stating parts, etc. Sort of how. Readwise can surface things up to refresh me, or connect to other ideas. When thinking of this - how can we use these to help fit learning into the flow of work
+- Lesson 2: Pedagogy (or Andragogy) Must Be Prioritized over Novelty ([Location 328](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=328))
+    - **Tags:** #pink
+- Here’s the point for corporate trainers and instructional designers to keep in mind: You must start with a crisply 27defined learning goal. Then, choose the best delivery method for achieving that goal. That might be a slick tech interface, but it could just as easily be a social learning program that consists of employees simply discussing a topic and learning together. ([Location 346](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=346))
+    - **Tags:** #blue
+- Lesson 3: You Are Responsible for Creating the Energy in the Room ([Location 348](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=348))
+    - **Tags:** #pink
+- Strong instructional design also creates the conditions for powerful learning. As a teacher, I was introduced to the concepts of scaffolding and the zone of proximal development. The latter concept, credited to psychologist Lev Vygotsky, addresses the gap between what learners can achieve on their own and what they can achieve with encouragement and guidance from an expert.7 ([Location 371](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=371))
+    - **Tags:** #blue
+- Vygotsky’s work also asks us to think about how we layer and build out information to teach others. To ensure learners are supported throughout the process, we have to meet them where they are, add to and acknowledge their existing knowledge, and guide them through expanding on that knowledge. Scaffolding is a great metaphor for the ancillary activities led by a trainer or subject-matter expert to support students as they navigate the zone of proximal ([Location 374](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=374))
+    - **Note:** The ability to meet people where they are is important, and I like the idea of scaffolding - it fits with what I’ve been thinking about recently. Especially as people enter the industry through non-traditional paths, self-taught, etc - assuming that everyone knows the exact same thing and has the same ‘foundational knowledge’ is a misstep.
+- I’m a huge fan of communications expert Nancy Duarte and her books on visual presentation design. I keep ordering more and more copies of her slide:ology: The Art and Science of Creating Great Presentations as new people join our team because her design principles help us ensure that learning efficacy takes center stage and is bolstered by the design.8 ([Location 380](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=380))
+    - **Tags:** #blue
+- Lesson 4: Fear Is the Learning Killer ([Location 386](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=386))
+    - **Tags:** #pink
+- If a student’s affective filter is up because they’re embarrassed or feel judged, Krashen posited, his or her ability to acquire language is constrained.9 ([Location 390](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=390))
+    - **Tags:** #explore
+    - **Note:** .explore the idea of the affective filter more —- how does this relate to psychologically safe environments? Something that I have noticed in the past - is over time, a culture can start to form where people are afraid to ask questions, or admit that they don’t know something. Is this an aspect of the affective filter?
+- But fear doesn’t have to come from within. Here, I’m specifically talking about high-performance work cultures in which people believe they’re expected to be perfect. ([Location 398](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=398))
+    - **Note:** Paralyzed by perfection
+- We all have the capacity to learn and grow, but we have to understand that it’s a process, not an outcome or goal. ([Location 403](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=403))
+    - **Tags:** #blue
+- Lesson 5: Don’t Make a Fish Climb a Ladder ([Location 408](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=408))
+    - **Tags:** #pink
+- “Everyone is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.” ([Location 409](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=409))
+    - **Tags:** #blue
+- At the top of Maslow’s pyramid is self-actualization, which is the idea that individuals seek to be the best versions of themselves. We get there via continuous self-improvement. ([Location 420](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=420))
+    - **Tags:** #tk
+    - **Note:** .tk look up the Kim Clayton tweet where she mentioned how this was appropriated - and what the original was, how does that change things?
+- Maslow also formulated the theory of having peak experiences,10 moments of pure joy felt by those who’ve achieved self-actualization. Individuals having a peak experience will feel that they:     ■ Have lost track of time and space     ■ Are a whole and harmonious self, free of dissociation or inner conflict     ■ Are making full use of their capacities and capabilities and reaching their highest potential     ■ Are functioning effortlessly and easily without strain or struggle     ■ Are totally in command of their perceptions and behaviors     ■ Are without inhibition, fear, doubt, and self-criticism     ■ Are spontaneous, expressive, and “in the flow” of whatever they’re doing     ■ Are open and receptive to creative thoughts and ideas     ■ Are present in the moment and uninfluenced by past or expected future experiences     ■ Are experiencing pleasant physical sensations ([Location 424](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=424))
+    - **Tags:** #blue
+- differentiated instruction (tailoring experience to individual needs) ([Location 447](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=447))
+    - **Tags:** #blue
+- Lesson 6: Learners Need to Put Some Skin in the Game ([Location 450](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=450))
+    - **Tags:** #pink
+- other, less obvious ways to gamify a learning experience to make it more compelling and engaging. In fact, plenty of products or apps you use every day leverage gamification techniques. ([Location 458](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=458))
+    - **Note:** Think of the game loop - most gamification tends to focus on rewards / badges / etc - which, eh. But, think about game design, a tight gameplay loop - what are the game loops of Dark Souls that encourages players to learn about the the game? —- what are the learning loops? - learning loops as in game loops - tk
+- useful way for L&D practitioners to think about how to begin designing gamified experiences. Fogg also came up with his B = MAP model,11 which examines how motivation, ability, and prompts must work in concert to produce a behavior (Figure 2.5). FIGURE 2.5 Fogg Behavior Model ([Location 461](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=461))
+    - **Tags:** #orange
+- also like Yu-kai Chou’s Octalysis framework for gamification,12 which identifies what he calls the eight “core drives” of human motivation ([Location 468](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=468))
+    - **Tags:** #blue
+- FIGURE 2.6 Yu-kai Chou’s Octalysis gamification framework ([Location 472](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=472))
+    - **Tags:** #pink
+- My team thinks about BJ Fogg’s model, Yu-kai Chou’s motivation drivers, and Bartle’s player types as we seek to understand people’s motivations and how we can provide the right triggers within learning experiences appropriate to 39their ability level. Who are these people? What player type are they? What will motivate them to change their behavior? ([Location 480](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=480))
+    - **Tags:** #blue
+- Lesson 7: You Don’t Learn How to Swim in a Library ([Location 501](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=501))
+    - **Tags:** #pink
+- And, as lesson 1 explained, we don’t learn unless we’re in the position to have spaced repetition and actual on-the-job opportunities to practice. Yet so much of typical corporate learning is event based. ([Location 504](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=504))
+    - **Tags:** #blue
+- This is where we need to follow a communicative-language teaching approach.13 ([Location 506](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=506))
+    - **Tags:** #blue
+- Another thing to keep in mind when you’re teaching working adults is Malcolm Knowles’s theory of andragogy.14 Although I borrow many lessons and insights from my time in the classroom, I have to acknowledge what’s different when it comes to L&D at a company. Knowles studied this and concluded that, when you’re instructing adults:     ■ They need to know why they should learn something.     ■ They learn by doing (experiential).     ■ They see learning as a way to solve problems.     ■ They learn best in the moment of need. ([Location 515](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=515))
+    - **Tags:** #expandon, #blue
+    - **Note:** .expandOn the value of learning as a way to solve problems - I think this is a key way to help leverage peer to peer teaching, and finding ways to learn in the flow of work
+- No longer does the L&D instructor possess the knowledge and choose when and how to share it—that is, the “instructivist” model of learning. Today, especially for adult learners, we need to shift to a “constructionist” vision, where learners own and control their experiences, thereby investing themselves personally in the process and retaining more knowledge over the long haul. ([Location 525](https://readwise.io/to_kindle?action=open&asin=B082992DV9&location=525))
+    - **Tags:** #expandon
+    - **Note:** .expandOn Instrunctionist vs Construnivist methods of learning - spelling, meh - I wish kindle would have notes appear in side bar and not overlay the text, oh well.

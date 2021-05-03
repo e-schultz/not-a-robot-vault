@@ -4,7 +4,7 @@
 	- source:  2021-02-04 - The Evening Ramble
 %%
 
-+ [[alternaties to uncle box]]
++ [[alternaties to uncle bob]]
 
 Uncle Bob is problematic, and it's pretty common that his books Clean Code, and Clean Architecture get recommended. 
 
