@@ -1,3 +1,3 @@
-+[[Leadership Skills MOC]]
++[[+ Leadership Skills MOC]]
 
 # Diversity and Inclusion

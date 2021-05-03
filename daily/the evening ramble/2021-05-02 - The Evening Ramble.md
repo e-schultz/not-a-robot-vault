@@ -6,7 +6,7 @@ Although that is always going to be the case during lock-down, although I've not
 
 Ahwell, went for a walk this afternoon - and on the way back bumped into PDS who I used to work with at Rangle, and got talking about how things are going - and he had heard that I had left PartnerStack recently.
 
-Talked a bit about what I was thinking on, including the TL;DR of [[Building Not A Robot MoC]] - PDS worked with me on the [[RoboIns engagement]], and especially in the earlier days of that project, it was
+Talked a bit about what I was thinking on, including the TL;DR of [[+ Building Not A Robot MoC]] - PDS worked with me on the [[RoboIns engagement]], and especially in the earlier days of that project, it was
 
 - one of the most enjoyable times at work we had
 	- also is a bit of a mini-model/example of the 'helping grow learning cultures'

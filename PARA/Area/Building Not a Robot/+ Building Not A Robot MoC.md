@@ -1,4 +1,4 @@
-[[+Home]]
+[[+ Home]]
 %% - metadata
 	- tags:  #MOC #a/bnar
 	%%
@@ -14,12 +14,12 @@ This came after my experience
 
 
 ### Related MOC
-- [[L&D Careers MOC]]
+- [[+ L&D Careers MOC]]
 - [[L&D and DEI MoC]]
 - [[Training and Development Software MOC]]
-- [[Learning Ecosystem MOC]]
+- [[+ Learning Ecosystem MOC]]
 #### Working at Rangle
-- [[What I Actually Did At Rangle MOC]]
+- [[+ What I Actually Did At Rangle MOC]]
 
 
 #### Assumptions 

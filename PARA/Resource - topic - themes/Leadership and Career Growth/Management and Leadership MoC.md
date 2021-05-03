@@ -1,4 +1,4 @@
-[[+Home]]
+[[+ Home]]
 
 ##### Keywords
 - [[Management]], [[Leadership]]

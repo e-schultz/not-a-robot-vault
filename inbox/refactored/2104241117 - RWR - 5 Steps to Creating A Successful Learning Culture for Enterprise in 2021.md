@@ -25,7 +25,7 @@ UUID: 2104241117
 
 There are countless other Fuse customer examples that **demonstrate the power of leadership role modeling, and one thing many of them have in common is ==leadership’s dedication to creating learning content. In a successful learning culture==, leadership isn’t just watching from the sidelines: they are ==participating in learning and their content is on the platform==.**
 ##### Notes
-- connect to 🔌 - [[Building Not A Robot MoC]] - questions - How are we doing leadership role modeling?
+- connect to 🔌 - [[+ Building Not A Robot MoC]] - questions - How are we doing leadership role modeling?
 
 
 ## Footnotes & Resources

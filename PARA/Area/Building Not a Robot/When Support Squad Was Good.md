@@ -2,7 +2,7 @@
 aliases: ['Support Squad']
 ---
 
-+[[What I Actually Did At Rangle MOC]]
++[[+ What I Actually Did At Rangle MOC]]
 
 - What was Support Squad
 - What was it's 'good days'

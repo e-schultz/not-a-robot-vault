@@ -2,7 +2,7 @@
 tags: ["status/reading"]
 ---
 
-- [[Building Not A Robot MoC]]
+- [[+ Building Not A Robot MoC]]
 
 # [[The Upskilling Imparative]]
 

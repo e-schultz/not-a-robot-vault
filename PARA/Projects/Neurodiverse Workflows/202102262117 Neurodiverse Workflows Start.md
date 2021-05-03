@@ -46,7 +46,7 @@ tags: ["inbox/readwise-review/bookreview/b8011693", "p/ndw/inbox"]
 		- I can end up 'surfing my notes'
 - Notes as working memory
 - Influences
-	- Smart Notes / Zettelkasten / etc
+	- Smart Notes / [[💡 - Zettelkasten|Zettelkasten]] / etc
 - Neurodiverse accommodations
 	- what is impacted, why / how
 	- how do these help

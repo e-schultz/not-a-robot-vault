@@ -77,7 +77,7 @@ In this report, you'll learn:
 	- [[Interpersonal Feedback]]
 
 
-##### [[Leadership Skills MOC|Leadership Skills]]
+##### [[+ Leadership Skills MOC|Leadership Skills]]
 - [[Diversity and Inclusion]]
 - [[Decision Making]]
 - [[Strategic Thinking]]

@@ -1,4 +1,4 @@
-[[+Home]]
+[[+ JavaScript MoC]]
 %% - metadata
 	- tags:  #MOC %%
 

@@ -2,7 +2,7 @@
 type: ['webinar/notes']
 ---
 
-- +[[Building Not A Robot MoC]]
+- +[[+ Building Not A Robot MoC]]
 	- date: [[2021-04-14]]
 	- otter transcript: [Every organization needs a CLO Transcript](https://otter.ai/u/oPh7N52Q7XYRvQJtR1_-vs5o6jQ?f=)
 		- public link: [otter](https://otter.ai/u/oPh7N52Q7XYRvQJtR1_-vs5o6jQ)

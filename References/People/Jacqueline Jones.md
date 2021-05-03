@@ -2,7 +2,7 @@
 tags: [person]
 ---
 
-Head of Strategic Partnerships -[[Diversity Equity Inclusion|Diversity, Inclusion & Belonging]] at LinkedIn
+Head of Strategic Partnerships -[[+ Diversity Equity Inclusion|Diversity, Inclusion & Belonging]] at LinkedIn
 
 - LinkedIn:  [jacquelinejones3](https://www.linkedin.com/in/jacquelinejones3/)
 

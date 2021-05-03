@@ -10,7 +10,7 @@
 
 Especially if I couldn't remember on the spot, and had to jog my own memory a bit to get back to the detail.
 
-Coming to a better understanding of this, has also played a role in how I approach note-taking, and building out my own personal knowledge management system / second brain / whatever.
+Coming to a better understanding of this, has also played a role in how I approach note-taking, and building out my own [[personal knowledge management]] system / second brain / whatever.
 
 This is a process of building a system to help me with recall, and has been really useful at work.
 

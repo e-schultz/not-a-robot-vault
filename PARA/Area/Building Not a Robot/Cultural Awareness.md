@@ -1,3 +1,3 @@
-+[[Leadership Skills MOC]]
++[[+ Leadership Skills MOC]]
 
 # Cultural Awareness

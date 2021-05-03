@@ -1,7 +1,5 @@
----
-aliases: ['Knowledge Management']
----
-[[+Home]]
+
+[[+ Home]]
 
 %%
 - meta
@@ -9,3 +7,7 @@ aliases: ['Knowledge Management']
 %%
 
 # Knowledge Management MoC
+- [[Knowledge Management]]
+- [[personal knowledge management]]
+- [[Collaborative Knowledge Management]]
+- [[+Obsidian Workflow MoC]]

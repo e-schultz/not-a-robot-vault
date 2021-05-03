@@ -2,7 +2,7 @@
 tags: ["p/learning-ecosystem/inbox"]
 ---
 
-+ [[Building Not A Robot MoC]]
++ [[+ Building Not A Robot MoC]]
 
 # Notes for [[@chanOurRoadmapBecoming|Our Roadmap for Becoming a Strategic]]
 

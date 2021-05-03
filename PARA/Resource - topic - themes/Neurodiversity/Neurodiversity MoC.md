@@ -1,7 +1,7 @@
 ---
 aliases: ['Neurodiversity MoC']
 ---
-[[+Home]]
+[[+ Home]]
 %%
 - meta
 	- tags: #MOC

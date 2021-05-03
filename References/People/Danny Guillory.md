@@ -2,7 +2,7 @@
 tags: [tk]
 ---
 
-Head of Global [[Diversity Equity Inclusion|Diversity, Equity and Inclusion]] at Dropbox. Interested in leadership, creativity and diversity....helping people achieve the extraordinary.
+Head of Global [[+ Diversity Equity Inclusion|Diversity, Equity and Inclusion]] at Dropbox. Interested in leadership, creativity and diversity....helping people achieve the extraordinary.
 
 - twitter: [@DanielSGuillory](https://twitter.com/danielsguillory)
 - LinkedIn: [dannyguillory](https://www.linkedin.com/in/dannyguillory/)

@@ -27,7 +27,7 @@
   - blogs / articles 
   - my other notes
 - At times during a meeting I'll remember "oh yeah that thing" - quickly find a link to it, and add it to the transcript.
-  It starts to build into a densely linked personal knowledge management system / map.
+  It starts to build into a densely linked [[personal knowledge management]] system / map.
 - This combined with my other note taking methods - helps me find / surface information, and within the context that makes sense to me.
   Bookmarks are useless for me, as they tend to exist without context.
 - Having information and notes get (somewhat) naturally surfaced where I expect to find it vs needing to go searching for it all the time = one of the best things I started to do for myself in 2020.

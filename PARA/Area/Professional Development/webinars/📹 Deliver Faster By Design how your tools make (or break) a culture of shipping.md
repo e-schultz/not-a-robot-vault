@@ -5,7 +5,7 @@ tags ['webinar']
 ###### meta
 - [[2021-05-06]] @ 2:30pm
 # 📹 Deliver: Faster By Design how your tools make (or break) a culture of shipping
-- [[Professional Development MOC]] | [[JavaScript Frameworks MoC]]
+- [[Professional Development MOC]] | [[+ JavaScript Frameworks MoC]]
 
 ##### Description
 The headless approach has taken the digital marketing and e-commerce landscape by storm. This is due to the efficiencies gained by front-end JavaScript frameworks and the benefits of clean content that can be consumed from multiple devices and channels.

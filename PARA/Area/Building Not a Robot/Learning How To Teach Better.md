@@ -10,7 +10,7 @@ But, in one of the rare few times I've decided on a specific goal - it's that [[
 When I was working at Rangle.io, I wore many hats - but some of the things that I enjoyed the most, and found most rewarding was things related to
 
 ### The Many Hats
-related: [[What I Actually Did At Rangle MOC]]
+related: [[+ What I Actually Did At Rangle MOC]]
 - teaching
 - mentoring
 - workshops

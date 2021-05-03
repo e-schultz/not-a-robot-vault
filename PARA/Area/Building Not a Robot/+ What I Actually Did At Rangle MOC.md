@@ -1,6 +1,9 @@
-+ [[Building Not A Robot MoC]]
-%% - metadata
-	- tags:  #MOC %%
++ [[+ Building Not A Robot MoC]]
+%% 
+- metadata
+	- tags:  #MOC 
+	- 
+%%
 # What I Actually Did At Rangle MOC
 
  - Internal 

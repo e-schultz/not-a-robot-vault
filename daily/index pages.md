@@ -6,6 +6,6 @@
 - [[Neurodiverse Twitter]]
 - [[Autism]]
 - [[Management]]
-- [[Diversity Equity Inclusion|DEI]]
+- [[+ Diversity Equity Inclusion|DEI]]
 - [[expand on]]
 - [[Rigid Consistency]]

@@ -1,7 +1,7 @@
 ---
 aliases: ['CLO', 'Strategic Learning Officer', 'Strategic Chef Learning Officer'] 
 ---
-+[[L&D Careers MOC]]
++[[+ L&D Careers MOC]]
 # Definition
 > A **Chief Learning Officer**, **CLO** for short, is a senior-level executive who oversees all **learning** and employee development programs within an organization. They create **learning** strategies, oversee their execution, and ensure that all educational programs align with larger company goals. [^360clo]
 

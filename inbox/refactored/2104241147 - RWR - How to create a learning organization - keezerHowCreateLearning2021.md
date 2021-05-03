@@ -11,7 +11,7 @@ UUID: 2104241147
 %%
 
 ##### TL;DR
-- +[[Building Not A Robot MoC]] | [[Learning Organizations]] | [[learning culture]] 
+- +[[+ Building Not A Robot MoC]] | [[Learning Organizations]] | [[learning culture]] 
 
 # RWR - How to create a learning organization  
 - [[@keezerHowCreateLearning2021]]

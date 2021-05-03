@@ -6,7 +6,7 @@
 - URL: https://360learning.com/blog/learning-ecosystems/
 - Cover: ![](https://readwise-assets.s3.amazonaws.com/static/images/article1.be68295a7e40.png)
 
-- [[Learning Ecosystem MOC]]
+- [[+ Learning Ecosystem MOC]]
 ### Highlights first exported February 10, 2021 at 8:38 AM
 
 - In the context of L&D, learning ecosystem gives us a way to talk about your organization’s learning infrastructure: all the people, systems, tools, and technology that enable learning at your organization.

@@ -4,64 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "57d1a8de9a45795c",
+        "id": "3278282cf534e686",
         "type": "leaf",
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PARA/Resource - topic - themes/meta-pages/+meta-pages.md",
-            "mode": "preview"
+            "file": "daily/the morning pages/2021-05-03 - The Morning Pages.md",
+            "mode": "source"
           },
           "pinned": true
-        },
-        "group": "8929c588a8a05378"
+        }
       },
       {
-        "id": "147e4d8029cbb000",
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "localgraph",
-          "state": {
-            "file": "PARA/Resource - topic - themes/meta-pages/+meta-pages.md",
-            "options": {
-              "collapse-filter": true,
-              "search": "",
-              "localJumps": 3,
-              "localBacklinks": true,
-              "localForelinks": true,
-              "localInterlinks": true,
-              "showTags": false,
-              "showAttachments": false,
-              "hideUnresolved": false,
-              "collapse-color-groups": true,
-              "colorGroups": [],
-              "collapse-display": true,
-              "showArrow": false,
-              "textFadeMultiplier": 0,
-              "nodeSizeMultiplier": 1,
-              "lineSizeMultiplier": 1,
-              "collapse-forces": true,
-              "centerStrength": 0.518713248970312,
-              "repelStrength": 10,
-              "linkStrength": 1,
-              "linkDistance": 250,
-              "scale": 2.5239168410420136,
-              "close": false
-            }
-          },
-          "pinned": true
-        },
-        "group": "8929c588a8a05378"
-      },
-      {
-        "id": "49cef258692d55b3",
+        "id": "ac26e2df9c6784b7",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily/the evening ramble/2021-02-03 - The Evening Ramble.md",
+            "file": "References/Apps - Tools/Daylio.md",
             "mode": "preview"
           }
         }
@@ -91,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "line:question",
+                "query": "line:\"slack eats\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -112,8 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 583,
-    "collapsed": true
+    "width": 583
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -129,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily/the evening ramble/2021-02-03 - The Evening Ramble.md",
+                "file": "References/Apps - Tools/Daylio.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -157,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily/the evening ramble/2021-02-03 - The Evening Ramble.md"
+                "file": "References/Apps - Tools/Daylio.md"
               }
             }
           },
@@ -177,23 +137,25 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 366
+    "width": 366,
+    "collapsed": true
   },
-  "active": "49cef258692d55b3",
+  "active": "ac26e2df9c6784b7",
   "lastOpenFiles": [
-    "daily/the evening ramble/2021-02-03 - The Evening Ramble.md",
-    "PARA/Resource - topic - themes/meta-pages/+meta-pages.md",
-    "PARA/Area/Professional Development/webinars/📹 Deliver Faster By Design how your tools make (or break) a culture of shipping.md",
-    "PARA/Area/Professional Development/Professional Development MOC.md",
-    "PARA/Area/Professional Development/coursera - Learning How To Learn.md",
-    "PARA/Resource - topic - themes/meta-pages/connect to.md",
-    "PARA/Resource - topic - themes/meta-pages/I like the idea.md",
-    "PARA/Resource - topic - themes/meta-pages/⁉️.md",
-    "inbox/readwise imports/Books/books - Lichtenbergianism.md",
-    "PARA/Resource - topic - themes/meta-pages/phrase.md"
+    "References/Apps - Tools/Daylio.md",
+    "References/Apps - Tools/Instapaper.md",
+    "References/Apps - Tools/Notion.md",
+    "References/Apps - Tools/Obsidian.md",
+    "References/Apps - Tools/oTranscribe.md",
+    "References/Apps - Tools/Otter.ai.md",
+    "References/Apps - Tools/Readwise.md",
+    "References/Apps - Tools/Roam Research.md",
+    "References/Apps - Tools/Slack.md",
+    "References/Apps - Tools/Zotero.md"
   ]
 }

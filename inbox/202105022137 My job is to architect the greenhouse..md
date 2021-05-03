@@ -1,7 +1,7 @@
 ---
 aliases: ['My job is to architect the greenhouse.']
 ---
-- [[Building Not A Robot MoC]]
+- [[+ Building Not A Robot MoC]]
 
 # My job is to architect the greenhouse
 

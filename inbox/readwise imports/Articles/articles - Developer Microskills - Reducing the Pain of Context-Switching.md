@@ -37,8 +37,8 @@
 - You can put these in physical journals, one app, or multiple apps. I’ve found that no single app can adequately do everything I need. In fact, I have 3 main Sources of Truth:
   Notion for timely status updates
   Drafts for jotting down ideas or notes that I can categorize later (a huge blocker for creativity is that mental setup of having to think about where to put an idea as you’re having it)
-  Obsidian for archives, notes, and research (aka “knowledge management”)
-  You can go really deep into knowledge management; just google Zettelkasten and you’ll see what I mean. If you want to check out Obsidian for yourself, here’s a great tutorial on Obsidian for beginners. Many people who get into this space also recommend learning about how to take good notes. I haven’t done this myself yet, but a book that always comes up is How to Take Smart Notes. ([View Highlight](https://instapaper.com/read/1390900503/15654909))
+  Obsidian for archives, notes, and research (aka “[[Knowledge Management]]”)
+  You can go really deep into knowledge management; just google [[💡 - Zettelkasten|Zettelkasten]] and you’ll see what I mean. If you want to check out Obsidian for yourself, here’s a great tutorial on Obsidian for beginners. Many people who get into this space also recommend learning about how to take good notes. I haven’t done this myself yet, but a book that always comes up is How to Take Smart Notes. ([View Highlight](https://instapaper.com/read/1390900503/15654909))
     - **Note:** The other night I was writing more about my personal knowledge stack
 - Review Regularly
   Centralizing your inputs is only half the battle here. Probably the most overlooked but most productive thing you can do to help with context-switching is reviewing your projects and notes regularly. ([View Highlight](https://instapaper.com/read/1390900503/15654912))

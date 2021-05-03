@@ -31,7 +31,7 @@ Figure \[f:arch-model\] is a simplified model of human cognitive architecture.
 
 Roughly speaking, Cognitive Architecture is the process of moving things from short-term to long-term memory, how we receive visual / verbal inputs, how that gets encoded for long term memory, and then retrieved.
 
-- [[Learning How To Teach Better]] | [[Building Not A Robot MoC]]
+- [[Learning How To Teach Better]] | [[+ Building Not A Robot MoC]]
 
 How does this relate to things like:
 - [[cognitive load]] 

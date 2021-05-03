@@ -1,4 +1,4 @@
-the folder hierarchy does not dictate the relationship of notes, and this is one of the common pitfalls of file-based structure for knowledge management.
+the folder hierarchy does not dictate the relationship of notes, and this is one of the common pitfalls of file-based structure for [[Knowledge Management]].
 
 Often a piece of information: 
 - can belong to more than one idea / location / concept 

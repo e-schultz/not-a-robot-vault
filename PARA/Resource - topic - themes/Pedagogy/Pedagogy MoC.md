@@ -1,7 +1,7 @@
 ---
 tags: ['MOC']
 ---
-[[+Home]]
+[[+ Home]]
 # [[Pedagogy MoC]]
 + [[Pedagogy]]
 + [[ungrading]]

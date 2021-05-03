@@ -171,7 +171,7 @@ I'll also often save a link along to the slack thread / conversation, the meetin
 
 It helps retain so much context - I can see the comment in my notes, jump to the slack thread - read the rest of the conversation, gain the context around that. 
 
-# Slack Eats History
+# [[Slack Eats History]]
 
 As much as I love slack for some things, I hate slack for so many other things.  Everything is real-time urgency in the chat.  So much information get's lost in chat history - but it's not saved anywhere else. 
 

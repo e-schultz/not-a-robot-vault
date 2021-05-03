@@ -1,8 +1,8 @@
-[[+Home]]
+[[+ Home]]
 %% - metadata
 	- tags:  #MOC %%
 	
-+[[Building Not A Robot MoC]]
++[[+ Building Not A Robot MoC]]
 
 
 - [[How DEI and Employee Development are related]]

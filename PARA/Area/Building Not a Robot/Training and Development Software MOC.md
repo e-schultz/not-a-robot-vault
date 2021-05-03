@@ -1,4 +1,4 @@
-+[[Building Not A Robot MoC]]
++[[+ Building Not A Robot MoC]]
 
 - [[What are the current top LMS systems]]
 - [[Compare LMS to LXP]]

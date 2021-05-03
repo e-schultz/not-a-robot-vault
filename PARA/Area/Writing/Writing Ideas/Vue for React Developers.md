@@ -1,0 +1,23 @@
+###### Misc
+- [[Vue for X Developers]]
+# Vue for React Developers
+- keywords: [[VueJS|Vue]], [[React]]
+- [[How React concepts map to Vue ]]
+	- State
+		- Local component state
+		- [[Redux vs Vuex]]
+		- [[React State Management]]
+			- [[React Component State]]
+			- [[React + Redux]]
+			- [[React + MobX]]
+			- React + What is the current state of react state management 
+	- Data Flow
+		- "data down -> events up" - how does that look in React and Vue
+	- [[React Props -> Vue Props]]
+		- prop type checking
+		- prop validation 
+		- passing props down 
+	- Hooks vs Vue Composition API
+	- Children -> Slots 
+	- Render Props -> ? Named / Scoped Slots?
+	- Routing Options
