@@ -1,6 +1,3 @@
-+[[+ L&D Careers MOC]]
+[[+ L&D Careers MOC]]
 
-%%
-- meta
-	- tags: #MOC 
-%%
+# Learning Facilitator Roles

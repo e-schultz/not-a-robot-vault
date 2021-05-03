@@ -1,3 +1,7 @@
+---
+aliases: ["RoboIns", "RoboIns Engagement"]
+---
+
 - in CLE
 - Worked with R&D team
 - [[Angular]]

@@ -1,4 +1,4 @@
-[[+Knowledge Management MoC]]
+[[+ Knowledge Management MoC]]
 # Personal vs Collaborative Knowledge Management
 
 This is when I started to use [[Roam Research]] - initially it had started out as me basically using it like an Notes entry on the daily pages, and over time - built up quite a robust [[personal knowledge management]] system.

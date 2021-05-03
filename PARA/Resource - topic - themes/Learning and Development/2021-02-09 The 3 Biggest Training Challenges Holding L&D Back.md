@@ -1,3 +1,5 @@
+
+[[+ Learning & Development MoC]]
 # The 3 Biggest Training Challenges Holding L&D Back (and How to Overcome Them)
 - via [360Learning](https://360learning.com/blog/training-challenges/)
 

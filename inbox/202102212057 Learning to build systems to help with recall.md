@@ -1,7 +1,7 @@
 ---
 tags: ['a/nd','p/ndw']
 ---
-##### [[Neurodiversity MoC]]
+##### [[+ Neurodiversity MoC]]
 
 In short - it's a form of [[personal knowledge management]], but thinking in terms of how this fits in with ADHD / neurodiversity.
 

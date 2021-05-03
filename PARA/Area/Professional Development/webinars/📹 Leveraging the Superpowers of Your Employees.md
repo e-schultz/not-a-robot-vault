@@ -4,7 +4,7 @@ tags: ['webinar']
 
 ###### meta
 - webinar date: [[2021-05-06]]
-- [[Management and Leadership MoC]] | [[Professional Development MOC]]
+- [[+ Management  MoC]] | [[Professional Development MOC]]
 # 📹 Leveraging the Superpowers of Your Employees
 
 ##### Description

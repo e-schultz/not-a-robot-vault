@@ -1,3 +1,3 @@
-# ADHD
+[[+ ADHD MoC]]
 
-[[neurodivergent|neurodiverse]]
+# ADHD

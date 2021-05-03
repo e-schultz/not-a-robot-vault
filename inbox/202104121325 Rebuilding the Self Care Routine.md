@@ -1,4 +1,4 @@
-+ [[Self Care MoC]]
++ [[+ Self Care MoC]]
 # Rebuilding the Self Care Routine
 
 [[202103091935 that time I burned out at Rangle|When I burned out at Rangle]], it took me awhile to get back on my feet - and even then, it was never quite a fully recovery, and it took a long time until I could get back into a full work schedule, even once I did return to work. ^677a07

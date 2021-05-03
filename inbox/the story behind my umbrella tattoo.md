@@ -1,6 +1,8 @@
 ---
 tags: ["storytime/inbox"]
 ---
+[[+ Writing Inbox MoC]]
+
 exposing blind spots
 poke me in the eye and collect the tears
 so we can learn for a better tomorrow.

@@ -2,7 +2,7 @@
 tags: ['output/public-speaking']
 author: ['Evan Schultz']
 ---
-+ [[Public Speaking]]
++ [[+ My Public Speaking]]
 
 # Building Angular 2 Applications with Redux @ Angular Camp
 - [[Angular]] | [[Redux]]

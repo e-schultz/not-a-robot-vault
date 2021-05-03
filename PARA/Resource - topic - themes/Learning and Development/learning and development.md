@@ -1,1 +1,6 @@
-# learning and development
+---
+aliases: ['learning & development', 'l&d']
+---
+[[+ Learning & Development MoC]]
+
+# Learning & Development and 

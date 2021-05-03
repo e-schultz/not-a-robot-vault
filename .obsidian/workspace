@@ -4,25 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "3278282cf534e686",
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "daily/the morning pages/2021-05-03 - The Morning Pages.md",
-            "mode": "source"
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "ac26e2df9c6784b7",
+        "id": "b643bbde7959bf8a",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "References/Apps - Tools/Daylio.md",
+            "file": "PARA/Resource - topic - themes/Management and Leadership/+ Management  MoC.md",
             "mode": "preview"
           }
         }
@@ -73,7 +60,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 583
+    "width": 453
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -89,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "References/Apps - Tools/Daylio.md",
+                "file": "PARA/Resource - topic - themes/Management and Leadership/+ Management  MoC.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -117,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "References/Apps - Tools/Daylio.md"
+                "file": "PARA/Resource - topic - themes/Management and Leadership/+ Management  MoC.md"
               }
             }
           },
@@ -137,25 +124,23 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 366,
-    "collapsed": true
+    "width": 366
   },
-  "active": "ac26e2df9c6784b7",
+  "active": "b643bbde7959bf8a",
   "lastOpenFiles": [
-    "References/Apps - Tools/Daylio.md",
-    "References/Apps - Tools/Instapaper.md",
-    "References/Apps - Tools/Notion.md",
-    "References/Apps - Tools/Obsidian.md",
-    "References/Apps - Tools/oTranscribe.md",
-    "References/Apps - Tools/Otter.ai.md",
-    "References/Apps - Tools/Readwise.md",
-    "References/Apps - Tools/Roam Research.md",
-    "References/Apps - Tools/Slack.md",
-    "References/Apps - Tools/Zotero.md"
+    "PARA/Resource - topic - themes/Management and Leadership/+ Management  MoC.md",
+    "PARA/Resource - topic - themes/Management and Leadership/20210217 - under performing - but why.md",
+    "PARA/Resource - topic - themes/Management and Leadership/2103160943 - Career Growth.md",
+    "PARA/Resource - topic - themes/Management and Leadership/Career Jungle Gym vs Career Ladder.md",
+    "daily/the morning pages/_notes/The Morning Pages.md",
+    "daily/the evening ramble/2021-02-09 - The Evening Ramble.md",
+    "daily/the evening ramble/2021-02-05 - The Evening Ramble.md",
+    "+ Home.md",
+    "PARA/Resource - topic - themes/Neurodiversity/+ Neurodiversity MoC.md",
+    "PARA/Resource - topic - themes/Neurodiversity/+ ADHD MoC.md"
   ]
 }

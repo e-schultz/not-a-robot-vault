@@ -1,10 +1,12 @@
 ---
 tags: ['unfuckdei']
+UID: 2103170758
 ---
+[[+ Interviewing MoC]] | [[+ Diversity Equity Inclusion]]
 %%
 - meta
 	- UID: 2103170758
-	- title: [2103170758 - Interviews - Don't Be Ableist]
+	- title: 2103170758 - Interviews - Don't Be Ableist
 	- created: 2021-03-17 19:58
 	- last updated: 
 %%
@@ -13,7 +15,7 @@ tags: ['unfuckdei']
 When I've been thinking about DEI recently, I've noticed a lack of information around [[neurodiversity]] and disability in general, and find that abelist can find it's way into the interview, feedback, performance management aspects as well.
 [[Abelism]] - [[abelism at work]]
 
-# [[Interviews]] - Don't Be Ableist
+# [[Interviewing]] - Don't Be Ableist
 - [[Abelism]]
 I've also written about [[the difficulties of adjusting to remote work while Neurodiverse]] quite a bit, some of those notes are not collected into here (yet)
 
@@ -70,7 +72,7 @@ There also times where if I'm getting stuck on something, I'll end up just liter
 
 If I'm having a bad mouth day during an interview, ouf. 
 
-But, at the same time - I've done allot of [[Public Speaking]] and really enjoy it. 
+But, at the same time - I've done allot of [[+ My Public Speaking]] and really enjoy it. 
 
 When I've had the opportunity to travel to Barcelona to speak about [[How to create Vuetiful Data-Driven User Interface - JSCamp 2018]],  but I could still totally have an off day during an interview.
 

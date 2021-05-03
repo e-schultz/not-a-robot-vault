@@ -1,4 +1,4 @@
-[[+Knowledge Management MoC]]
+[[+ Knowledge Management MoC]]
 
 %%
 - meta

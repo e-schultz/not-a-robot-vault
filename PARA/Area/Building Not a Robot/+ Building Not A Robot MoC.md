@@ -15,7 +15,7 @@ This came after my experience
 
 ### Related MOC
 - [[+ L&D Careers MOC]]
-- [[L&D and DEI MoC]]
+- [[+ L&D and DEI MoC]]
 - [[Training and Development Software MOC]]
 - [[+ Learning Ecosystem MOC]]
 #### Working at Rangle

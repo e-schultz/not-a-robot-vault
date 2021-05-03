@@ -1,6 +1,6 @@
 ---
 aliases: ["Evergreen Notes"]
 ---
-[[+Knowledge Management MoC]]
+[[+ Knowledge Management MoC]]
 
 # Evergreen Notes

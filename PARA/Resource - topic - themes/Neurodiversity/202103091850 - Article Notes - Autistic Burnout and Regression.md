@@ -11,6 +11,7 @@ tags: ["a/nd/inbox"]
 %%
 
 ##### [[Autism|autistic]] [[autistic burnout]]
++ [[+ Autism MoC]]
 ## Reading Notes
 
 Reading [Autistic Burnout & Regression](https://iammyownexperience.com/2017/08/01/autistic-burnout-regression/) [^rossAutisticBurnoutRegression2017], and one of the quotes that really jumped out at me.

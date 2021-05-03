@@ -1,7 +1,7 @@
 ---
 aliases: ["zettelkasten"]
 ---
-[[+Knowledge Management MoC]]
+[[+ Knowledge Management MoC]]
 
 # Zettelkasten
 - TBC

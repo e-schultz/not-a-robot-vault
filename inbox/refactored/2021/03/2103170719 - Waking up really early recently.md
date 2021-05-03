@@ -18,4 +18,4 @@ On the way in from my walk, picked up my new work laptop from the concierge
 
 ---
 
-Link to original note: [[202103170658 The Morning Pages]]
+Link to original note: [[2021-03-17 The Morning Pages]]

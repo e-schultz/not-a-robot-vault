@@ -21,7 +21,7 @@ It can be easy to fall into the trap of feeling like you need to have every hour
 
 If I am jumping from meeting to meeting about different things - the context switching is hard, and then if I am having a one-on-one as well - I enter that meeting distracted, and it's not fair for the people who are reporting to me.
 
-![[21-02-02 - Driving Change How to Create a More Equitable and Inclusive Workspace]] 
+![[📹 21-02-02 - Driving Change How to Create a More Equitable and Inclusive Workspace]] 
 
 
 

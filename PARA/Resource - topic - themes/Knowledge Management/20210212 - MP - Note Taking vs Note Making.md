@@ -1,4 +1,4 @@
-[[+Knowledge Management MoC]]
+[[+ Knowledge Management MoC]]
 ##### Related 
 - [[🔍 - note taking|note-taking]] vs [[🔍 - note taking|note-making]]
 # Note-taking vs Note-making 

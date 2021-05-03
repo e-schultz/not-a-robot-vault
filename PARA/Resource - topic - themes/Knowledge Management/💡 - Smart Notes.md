@@ -1,6 +1,6 @@
 ---
 aliases: ["smart notes"]
 ---
-[[+Knowledge Management MoC]]
+[[+ Knowledge Management MoC]]
 
 # Smart Notes

@@ -49,4 +49,4 @@ Been noticing that recently my work laptop has been running slow, even after reb
 
 ---
 
-Link to original note: [[202103170658 The Morning Pages]]
+Link to original note: [[2021-03-17 The Morning Pages]]

@@ -1,6 +1,7 @@
 ---
 tags: [DRAFT, "inbox/writing"]
 ---
+- [[+ Writing Inbox MoC]]
 - initial notes: [[2021-02-03 - The Evening Ramble#^b1ce2d]]
 - first created: 2021-02-16
 - updates:

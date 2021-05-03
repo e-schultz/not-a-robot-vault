@@ -17,7 +17,7 @@
 	- [[When We Accidentally Wrote an Angular Book]]
 - Bridge
 - [[Guilds at Rangle]]
-- [[Public Speaking]]
+- [[+ My Public Speaking]]
 - Rangle is when I started to try and reframe things as a [[Learning Culture vs Teaching Culture|Teaching Culture instead of a Learning Culture]]
 - [[When Support Squad Was Good]]
 - [[RoboIns engagement]]

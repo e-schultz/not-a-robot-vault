@@ -1,0 +1,4 @@
+---
+aliases: ['interview']
+---
+# Interviewing

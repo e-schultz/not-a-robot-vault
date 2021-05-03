@@ -78,26 +78,14 @@ Then - even after that, I got thinking about Rule 6.
 
 [[Coach The Team Not The Player - adapting to change]] - and reflecting on some of the differences I've had being a manager at Rangle, and being a manager at [[PartnerStack]].
 
-Then there was the notes from the [[21-02-02 - Driving Change How to Create a More Equitable and Inclusive Workspace|Driving Change How to Create a More Equitable and Inclusive Workspace]]
+Then there was the notes from the [[📹 21-02-02 - Driving Change How to Create a More Equitable and Inclusive Workspace|Driving Change How to Create a More Equitable and Inclusive Workspace]]
 
 The idea of [[Interview Out vs Interview In]] really got my attention, and also reminds me a bit of some of the challenges I've had hiring senior engineers in the past. 
 
 A bit of that is - can they still be coached?
 
-### Interviewing In, and Technical Interviews 
-
-It also reminded me of a good article by [[@laurieontech]] - [Senior Interviews != Three Junior Interviews In a Trench Coat](https://laurieontech.com/posts/senior-interviews/) - and identifies some of the pitfalls that we can fall into when interviewing for senior roles. 
-
-I've made this mistake in the past myself - applying the same approach as a junior interview to a senior interview, and it just doesn't work. There are very different skill sets that I'm looking for.  
-
-So, now when thinking about Interviewing In, Inclusive Interviewing, and the differences between interviewing for junior and senior.
-
-- What considerations do we need for Interviewing In for junior?
-- What considerations do we need for Interviewing In for senior?
-- What supports do we need to provide for them to be successful once joining?
-- What does this look like in a remote-first world?
-
-I don't know the answers to these - but it's something that's on my mind, and I'll probably continue to expand on in this journal. 
+### Interviewing In and Technical Interviews 
+![[Interviewing In and Technical Interviews#^b58c6d]]
 
 # Interviews - Don't be Abelist
 

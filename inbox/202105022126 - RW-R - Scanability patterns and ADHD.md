@@ -16,4 +16,4 @@ this is a summary of the [[benefits of a scannable interface]]
 
 if better scalability can help with recall. and we have people on the team with ADHD, could this help?
 
-Question:  [[what are some other ways we can better support neurodiverse people at work]]? [[Neurodiverse tech]]
+Question:  [[what are some other ways we can better support neurodiverse people at work]]? [[Neurodiverse Tech]]

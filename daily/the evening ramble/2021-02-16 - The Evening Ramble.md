@@ -27,7 +27,7 @@ read more -> [[🌱 - When good notes made my Vue Talk easy]]
 
 # Some Note Cleanup
 
--  [[Self Care MoC]]
+-  [[+ Self Care MoC]]
 	-  had a few notes linking to this page. When working in the Obsidian editor - backlinks / etc show up fine, but have noticed when in publish mode - unless you have some content in the file, the page is blank - and can't discover things that are linking back to it.
 -  [[Rangle.io]]
 	-  When writing about work/etc, been mentioning Rangle - so created a little stub page to start being able to surface things to expand on later

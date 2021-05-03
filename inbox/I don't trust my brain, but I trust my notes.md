@@ -1,3 +1,4 @@
++[[🔍 - note taking|note taking]]
 # I don't trust my brain, but I trust my notes.
 
 ## Notes

@@ -1,3 +1,3 @@
-[[+Knowledge Management MoC]]
+[[+ Knowledge Management MoC]]
 
 # Collaborative Knowledge Management

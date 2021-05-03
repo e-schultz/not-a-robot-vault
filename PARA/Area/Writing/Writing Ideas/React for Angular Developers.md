@@ -1,4 +1,4 @@
-[[+Writing Ideas]]
+[[+ Writing Ideas]]
 
 ###### Misc
 - [[React]], [[Angular]]

@@ -1,2 +1,2 @@
-[[+Knowledge Management MoC]]
+[[+ Knowledge Management MoC]]
 # Knowledge Management

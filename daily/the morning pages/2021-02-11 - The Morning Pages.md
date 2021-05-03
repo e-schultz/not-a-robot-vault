@@ -14,7 +14,7 @@ Took one of my long lasting ADHD meds that takes awhile to kick in, and got cozy
 
 Spent some time doing my [[Readwise Review]], and also catching up on some things that I've saved to [[Instapaper]] and trying to empty that inbox.
 
-### Bit off a [[Self Care MoC]] - [[morning routine]] reflection 
+### Bit off a [[+ Self Care MoC]] - [[morning routine]] reflection 
 
 - The last week or two, had tried to make it a point to at least have enough food in the house for breakfast, so I could:
 	- wake up 
