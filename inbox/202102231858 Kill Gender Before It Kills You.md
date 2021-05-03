@@ -11,7 +11,7 @@ Kill gender before it kills you [^1], Between Gender Reveal parties starting for
 	frameborder=0
 	height=550
 	width=550  
-	src="https://twitframe.com/show?url=ttps%3A%2F%2Ftwitter.com%2Fevan_just_evan%2Fstatus%2F1364036692219289609">
+	src="https://twitframe.com/show?url=https%3A%2F%2Ftwitter.com%2Fevan_just_evan%2Fstatus%2F1364036692219289609">
 </iframe>
 
 ^b0e5bf

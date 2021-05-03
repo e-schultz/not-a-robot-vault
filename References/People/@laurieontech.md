@@ -1,4 +1,3 @@
-# Laurie On Tech
+# [[Laurie Barth]]
 
 - twitter: [@laurieontech](https://twitter.com/laurieontech)
-- website: [laureontech.com](https://laureontech.com)

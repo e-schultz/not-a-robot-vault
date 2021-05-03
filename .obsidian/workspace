@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "b643bbde7959bf8a",
+        "id": "646e927b3251d962",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PARA/Resource - topic - themes/Management and Leadership/+ Management  MoC.md",
+            "file": "PARA/Resource - topic - themes/JavaScript/+ JavaScript MoC.md",
             "mode": "preview"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "line:\"slack eats\"",
+                "query": "tag:#source/tweet",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -60,7 +60,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 453
+    "width": 659,
+    "collapsed": true
   },
   "right": {
     "id": "ae0222fa3723fc85",
@@ -76,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PARA/Resource - topic - themes/Management and Leadership/+ Management  MoC.md",
+                "file": "PARA/Resource - topic - themes/JavaScript/+ JavaScript MoC.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime",
@@ -104,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PARA/Resource - topic - themes/Management and Leadership/+ Management  MoC.md"
+                "file": "PARA/Resource - topic - themes/JavaScript/+ JavaScript MoC.md"
               }
             }
           },
@@ -130,17 +131,17 @@
     "direction": "horizontal",
     "width": 366
   },
-  "active": "b643bbde7959bf8a",
+  "active": "646e927b3251d962",
   "lastOpenFiles": [
-    "PARA/Resource - topic - themes/Management and Leadership/+ Management  MoC.md",
-    "PARA/Resource - topic - themes/Management and Leadership/20210217 - under performing - but why.md",
-    "PARA/Resource - topic - themes/Management and Leadership/2103160943 - Career Growth.md",
-    "PARA/Resource - topic - themes/Management and Leadership/Career Jungle Gym vs Career Ladder.md",
-    "daily/the morning pages/_notes/The Morning Pages.md",
-    "daily/the evening ramble/2021-02-09 - The Evening Ramble.md",
-    "daily/the evening ramble/2021-02-05 - The Evening Ramble.md",
-    "+ Home.md",
-    "PARA/Resource - topic - themes/Neurodiversity/+ Neurodiversity MoC.md",
-    "PARA/Resource - topic - themes/Neurodiversity/+ ADHD MoC.md"
+    "PARA/Resource - topic - themes/JavaScript/+ JavaScript MoC.md",
+    "PARA/Resource - topic - themes/JavaScript/Redux.md",
+    "PARA/Resource - topic - themes/JavaScript/State Management.md",
+    "MobX.md",
+    "React + MobX.md",
+    "PARA/Resource - topic - themes/JavaScript/React.md",
+    "daily/journal entries/2021-05-03 - Journal - More Productive Than Expected.md",
+    "daily/journal entries/@evan_just_evan thinking of creating Vue for React Developers Content.md",
+    "daily/journal entries/@rothecoder - saying they would appreciate some content like that - and will let me know if they hit a roadblock.md",
+    "daily/journal entries/+ Journal MoC.md"
   ]
 }

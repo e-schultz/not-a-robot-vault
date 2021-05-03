@@ -1,5 +1,5 @@
 ---
-aliases: ['Vue']
+aliases: ['Vue', 'VueJS']
 ---
 
 # VueJS
